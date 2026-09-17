@@ -14,17 +14,20 @@ COPY packages/engine packages/engine
 COPY apps/api apps/api
 RUN uv sync --frozen --no-dev --no-editable
 
+# The migration SQL ships with the image so `app.cli migrate` can run against it.
+COPY database database
+
 FROM python:3.13-slim AS runtime
 RUN useradd --create-home --uid 10001 app
 WORKDIR /srv
 COPY --from=builder --chown=app:app /srv/.venv /srv/.venv
 COPY --from=builder --chown=app:app /srv/database /srv/database
-ENV PATH="/srv/.venv/bin:$PATH" PYTHONUNBUFFERED=1
+ENV PATH="/srv/.venv/bin:$PATH" PYTHONUNBUFFERED=1 MIGRATIONS_DIR=/srv/database/migrations
 USER app
 EXPOSE 8000
 
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s \
-  CMD python -c "import urllib.request;urllib.request.urlopen('http://127.0.0.1:8000/health')"
+  CMD python -c "import urllib.request;urllib.request.urlopen('http://127.0.0.1:8000/health',timeout=4)"
 
 # Override the command to run the worker: arq app.worker.WorkerSettings
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]

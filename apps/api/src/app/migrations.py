@@ -8,6 +8,7 @@ diverging from the deployed schema.
 from __future__ import annotations
 
 import hashlib
+import os
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -15,7 +16,21 @@ import asyncpg
 
 from app.config import Settings, get_settings
 
-MIGRATIONS_DIR = Path(__file__).resolve().parents[4] / "database" / "migrations"
+
+def default_migrations_dir() -> Path:
+    """Where the numbered SQL lives.
+
+    Walking up from this file finds it in a source checkout. An installed
+    (non-editable) copy sits in site-packages, where that walk lands nowhere
+    useful, so a deployed image sets MIGRATIONS_DIR instead.
+    """
+    override = os.environ.get("MIGRATIONS_DIR")
+    if override:
+        return Path(override)
+    return Path(__file__).resolve().parents[4] / "database" / "migrations"
+
+
+MIGRATIONS_DIR = default_migrations_dir()
 
 _LEDGER = """
 CREATE TABLE IF NOT EXISTS public.schema_migrations (
@@ -37,7 +52,12 @@ class Migration:
         return hashlib.sha256(self.sql.encode()).hexdigest()
 
 
-def discover(directory: Path = MIGRATIONS_DIR) -> list[Migration]:
+def discover(directory: Path | None = None) -> list[Migration]:
+    directory = directory or default_migrations_dir()
+    if not directory.is_dir():
+        # Returning [] here would report "Schema is up to date" and deploy a
+        # database with no tables in it.
+        raise RuntimeError(f"no migrations directory at {directory}; set MIGRATIONS_DIR")
     return [
         Migration(version=path.stem, path=path, sql=path.read_text())
         for path in sorted(directory.glob("*.sql"))
