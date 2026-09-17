@@ -1,0 +1,698 @@
+# UTME 2004, Mathematics — extracted from the text layer and the rendered
+# figures of docs/questions/utme/mathematics/MATHEMATICS-questions.pdf.
+#
+# 38 questions kept, 11 rejected,
+# 16 carrying a diagram cropped from the page.
+#
+# THERE ARE NO ANSWERS. The compilation prints no key, and this importer does
+# not invent one: every question loads with no correct option and
+# answer_source 'unverified'. Approval is impossible until someone works them
+# out. Skill mappings are proposed from the wording, since the paper prints no
+# directions of its own.
+format_version: 1
+source:
+  file: docs/questions/utme/mathematics/MATHEMATICS-questions.pdf
+  exam_year: 2004
+  paper_label: UTME 2004 Mathematics (objective)
+  paper_code: UTME-2004-MATH
+  question_count: 50
+  answer_source: unverified
+passages: []
+questions:
+- number: 2
+  page: 61
+  stem: Find p, if 451 – p = 305 6 7 6
+  options:
+    A: '611'
+    B: 142 7 7
+    C: '116'
+    D: 62 7 7
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/ccafbd4791d9b570216bdbab9957b2533c4812579721a54a3d52e16a67c50938.png
+    sha256: ccafbd4791d9b570216bdbab9957b2533c4812579721a54a3d52e16a67c50938
+    width: 800
+    height: 143
+    byte_size: 13798
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 61, crop (30,698)-(306,737)pt
+- number: 4
+  page: 61
+  stem: A farmer planted 5000 grains of maize and harvested 5000 cobs, each bearing 500 grains. What is
+    the ratio of the number of grains sowed to the number harvested?
+  options:
+    A: 1:500
+    B: 1:5000
+    C: 1:25000
+    D: 1:250000
+  proposed_skill: MATH.I.2.iii
+  skill_reason: Proposed from the wording of the question, which is about fractions, decimals, approximation
+    or percentages. The paper prints no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/e40162708200bbc5c3a5cfdbbe5cf142fee332497f417497051d5afa4537a2ce.png
+    sha256: e40162708200bbc5c3a5cfdbbe5cf142fee332497f417497051d5afa4537a2ce
+    width: 786
+    height: 236
+    byte_size: 35631
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 61, crop (314,566)-(585,639)pt
+- number: 5
+  page: 61
+  stem: Three teachers shared a packet of chalk. The first teacher got 2/5 of the chalk and the second
+    teacher received 2/15of the remainder. What fraction did the third teacher receive?
+  options:
+    A: 11/
+    B: 12/ 25 25
+    C: 13/
+    D: 8/ 25 15
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/5e5b28e19f198e565d0f5f9fbf16ce28e70acf1d2945d50d97a4db47011cc2fd.png
+    sha256: 5e5b28e19f198e565d0f5f9fbf16ce28e70acf1d2945d50d97a4db47011cc2fd
+    width: 786
+    height: 243
+    byte_size: 34374
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 61, crop (314,650)-(585,725)pt
+- number: 6
+  page: 61
+  stem: Given that 3√42x, find the value of x
+  options:
+    A: '2'
+    B: '3'
+    C: '4'
+    D: '6'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 7
+  page: 62
+  stem: Simplify 1/√3 + 2 in the form a + b√3
+  options:
+    A: -2 - 3
+    B: –2+ 3
+    C: 2- 3
+    D: 2+ 3
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 10
+  page: 62
+  stem: In a class of 40 students, each student offers at least one of Physics and Chemistry. If the number
+    of students that offer Physics is three times the number that offer both subjects and the number that
+    offers Chemistryistwice the number that offer Physics, find the number of students that offer Physics
+    only.
+  options:
+    A: '25'
+    B: '15'
+    C: '10'
+    D: '5'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 11
+  page: 62
+  stem: Find the values of x where the curve y = x3 + 2x2 – 5x – 6 crosses the x-axis.
+  options:
+    A: -2, -1 and 3
+    B: -2, 1 and –3
+    C: 2, -1 and –3
+    D: 2, 1 and 3
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 12
+  page: 62
+  stem: Find the remainder when 3x3 + 5x2 – 11x + is divided by x + 3
+  options:
+    A: '4'
+    B: '1'
+    C: –1
+    D: –4
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 13
+  page: 62
+  stem: Factorize completely ac – 2bc – a2 + 4b2
+  options:
+    A: (a – 2b)(c + a – 2b)
+    B: (a – 2b)(c - a – 2b)
+    C: (a – 2b)(c + a + 2b)
+    D: (a – 2b)(c - a + 2b)
+  proposed_skill: MATH.II.1.i
+  skill_reason: Proposed from the wording of the question, which is about polynomials. The paper prints
+    no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/a7cceb46e15d555c7b9e0ad400180b80995720809cce23c65f431bd793cd3570.png
+    sha256: a7cceb46e15d555c7b9e0ad400180b80995720809cce23c65f431bd793cd3570
+    width: 822
+    height: 204
+    byte_size: 22004
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 62, crop (30,542)-(314,603)pt
+- number: 14
+  page: 62
+  stem: yis inverselyproportional to x and y= 4 when x = 1/ 2 . find x when y = 10
+  options:
+    A: 1/10
+    B: 1/5
+    C: '2'
+    D: '10'
+  proposed_skill: MATH.I.2.iii
+  skill_reason: Proposed from the wording of the question, which is about fractions, decimals, approximation
+    or percentages. The paper prints no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/8e35074780a99d10623a8abdbff45ae58657f474bcfc7459b8ff2a1e4417e6ae.png
+    sha256: 8e35074780a99d10623a8abdbff45ae58657f474bcfc7459b8ff2a1e4417e6ae
+    width: 822
+    height: 169
+    byte_size: 17349
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 62, crop (30,614)-(314,663)pt
+- number: 15
+  page: 62
+  stem: The length L ofa simple pendulum varies directlyas the square of its period T. if a pendulum with
+    period 4 secs is 64cm long, find the length of a pendulum whose period is 9 sec.
+  options:
+    A: 36cm
+    B: 96ccm
+    C: 144cm
+    D: 324cm y
+  proposed_skill: MATH.II.2.i
+  skill_reason: Proposed from the wording of the question, which is about variation. The paper prints
+    no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/8470f0f163d5615c953a12071506f3ad110bda1243fea9be7f037874e4e875c7.png
+    sha256: 8470f0f163d5615c953a12071506f3ad110bda1243fea9be7f037874e4e875c7
+    width: 822
+    height: 230
+    byte_size: 35948
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 62, crop (30,674)-(314,745)pt
+- number: 17
+  page: 62
+  stem: What are the integral values of x which satisfy the inequality –1 < 3 – 2x ≤ 5?
+  options:
+    A: -2, 1, 0, -1
+    B: -1, 0, 1, 2
+    C: -1, 0, 1,
+    D: 0, 1, 2
+  proposed_skill: MATH.II.3.i
+  skill_reason: Proposed from the wording of the question, which is about inequalities. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 18
+  page: 62
+  stem: The nth terms of two sequences are Q – 3.2n-2 and n U = 3.22m–3. find the product of Q and U m
+    2 2
+  options:
+    A: '3'
+    B: '6'
+    C: '12'
+    D: '18'
+  proposed_skill: MATH.II.4.i
+  skill_reason: Proposed from the wording of the question, which is about progression. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 19
+  page: 62
+  stem: Given that the first and fourth terms of a G.P are 6 and 162 respectively, find the sum of the
+    first three terms of the progression.
+  options:
+    A: '8'
+    B: '27'
+    C: '48'
+    D: '78'
+  proposed_skill: MATH.II.4.i
+  skill_reason: Proposed from the wording of the question, which is about progression. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 20
+  page: 62
+  stem: Find the sum to infinity of the series ½, 1/6, 1/ 18,……………
+  options:
+    A: '1'
+    B: ¾
+    C: 2/3
+    D: 1/3+
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/c9eca26c01271f551e675d2be7cb328edaf1603dae4d4564b6e00a157358b2a2.png
+    sha256: c9eca26c01271f551e675d2be7cb328edaf1603dae4d4564b6e00a157358b2a2
+    width: 763
+    height: 169
+    byte_size: 14463
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 62, crop (322,438)-(585,487)pt
+- number: 21
+  page: 62
+  stem: If the operation * on the set of integers is defined by p*q = “pq, find the value of 4*(8*32).
+  options:
+    A: '16'
+    B: '8'
+    C: '4'
+    D: '3'
+  proposed_skill: MATH.I.4.iv
+  skill_reason: Proposed from the wording of the question, which is about sets. The paper prints no direction
+    to read instead.
+  notation_suspect: false
+  figures: []
+- number: 22
+  page: 62
+  stem: The inverse of the matrix (2 1) (1 1) is
+  options:
+    A: (1 1)
+    B: (1 -1) (-12) (1 2)
+    C: (1 1)
+    D: (1 -1) (1 2) (-12)
+  proposed_skill: MATH.II.6.ii
+  skill_reason: Proposed from the wording of the question, which is about matrices and determinants. The
+    paper prints no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/e74245ce3c52693d8e2d72cc5ed0162c1726101234dabf0e11be19c69147312a.png
+    sha256: e74245ce3c52693d8e2d72cc5ed0162c1726101234dabf0e11be19c69147312a
+    width: 763
+    height: 336
+    byte_size: 16280
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 62, crop (322,558)-(585,667)pt
+- number: 23
+  page: 62
+  stem: If P = 1 0 -1 3 4 5 -1 0 1 then /P/ is
+  options:
+    A: '-8'
+    B: '0'
+    C: '4'
+    D: '8'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/e722b90dfa4212e8d813d5ac873f131b12e4e040919841e9f313a72eb1bc9cd9.png
+    sha256: e722b90dfa4212e8d813d5ac873f131b12e4e040919841e9f313a72eb1bc9cd9
+    width: 763
+    height: 202
+    byte_size: 11766
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 62, crop (322,678)-(585,739)pt
+- number: 28
+  page: 63
+  stem: An arc of a circle of length 22cm subtends an angle of 3x0 at the centre of the circle. Find the
+    value of x if the diameter of the circle is 14cm.
+  options:
+    A: '300'
+    B: '600'
+    C: '1200'
+    D: '1800'
+  proposed_skill: MATH.III.1.ii
+  skill_reason: Proposed from the wording of the question, which is about Euclidean geometry. The paper
+    prints no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/ce774020efa90e93598a83c41d5d6f4deaf651d06f186ef3f59fd1434c5b240a.png
+    sha256: ce774020efa90e93598a83c41d5d6f4deaf651d06f186ef3f59fd1434c5b240a
+    width: 805
+    height: 202
+    byte_size: 28427
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 63, crop (30,426)-(308,487)pt
+- number: 29
+  page: 63
+  stem: Determine the locus ofa point inside a square PQRS which is equidistant from PQ and QR
+  options:
+    A: ThediagonalPR.
+    B: ThediagonalQS
+    C: SideSR
+    D: TheperpendicularbisectorofPQ.
+  proposed_skill: MATH.III.3.i
+  skill_reason: Proposed from the wording of the question, which is about loci. The paper prints no direction
+    to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/e49acc7d1349204a9b333e86827a2494ea5bd1c5974f43a3198280b6692ec7e5.png
+    sha256: e49acc7d1349204a9b333e86827a2494ea5bd1c5974f43a3198280b6692ec7e5
+    width: 805
+    height: 202
+    byte_size: 34152
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 63, crop (30,498)-(308,559)pt
+- number: 30
+  page: 63
+  stem: The locus of a point which is 5cm from the line LM is a
+  options:
+    A: pair of lines on opposite sides of LM and parallel to it, each distances 5cm form LM
+    B: line parallel to LM and 5cm from LM
+    C: pair of parallel lines on one side of LM and parallel to LM
+    D: line distance 10cm from LM and parallel to LM.
+  proposed_skill: MATH.III.3.i
+  skill_reason: Proposed from the wording of the question, which is about loci. The paper prints no direction
+    to read instead.
+  notation_suspect: false
+  figures: []
+- number: 31
+  page: 63
+  stem: Find the value of α2 + β2if a + b = and the distance between the points (1, α) ands (β, 1) is
+    3 units.
+  options:
+    A: '3'
+    B: '5'
+    C: '11'
+    D: '14'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 34
+  page: 63
+  stem: The shadow of a pole 5√3 m high is 5m. find the angle of elevation of the sun.
+  options:
+    A: '300'
+    B: '450'
+    C: '600'
+    D: '750'
+  proposed_skill: MATH.III.5.i
+  skill_reason: Proposed from the wording of the question, which is about trigonometry. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 35
+  page: 63
+  stem: Find the derivative of (2 + 3x)(1 - x) with respect to x
+  options:
+    A: 6x – 1
+    B: 1 – 6x
+    C: '6'
+    D: –3
+  proposed_skill: MATH.IV.1.ii
+  skill_reason: Proposed from the wording of the question, which is about differentiation. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 36
+  page: 63
+  stem: Find the derivative of the function y = 2x2(2x - 1) at the point x= -1
+  options:
+    A: '-6'
+    B: –4
+    C: '16'
+    D: '18'
+  proposed_skill: MATH.IV.1.ii
+  skill_reason: Proposed from the wording of the question, which is about differentiation. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 37
+  page: 63
+  stem: If y – 3 cos (x/ ), find dy/ when x = 3π/ 3 dx 2
+  options:
+    A: '2'
+    B: '1'
+    C: –1
+    D: –3
+  proposed_skill: MATH.III.5.i
+  skill_reason: Proposed from the wording of the question, which is about trigonometry. The paper prints
+    no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/df04cdf8dc2f550b18b9e8e741cac563075943ce03f4074954cdbec26ccf409b.png
+    sha256: df04cdf8dc2f550b18b9e8e741cac563075943ce03f4074954cdbec26ccf409b
+    width: 780
+    height: 137
+    byte_size: 11510
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 63, crop (316,355)-(585,393)pt
+- number: 38
+  page: 63
+  stem: What is the rate of change of the volume v of hemisphere with respect to its radius r when r =
+    2?
+  options:
+    A: 2π
+    B: 4π
+    C: 8π
+    D: 16π
+  proposed_skill: MATH.IV.1.ii
+  skill_reason: Proposed from the wording of the question, which is about differentiation. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 39
+  page: 63
+  stem: Evaluate ^3 (x2 - 1) dx 1
+  options:
+    A: 62/
+    B: ^2/ 3 3
+    C: -2/
+    D: -62/ 3 3
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/9f0779475025298deff62b5e3f5c7331e9c78e75efc92bbde63eb8058d73de0d.png
+    sha256: 9f0779475025298deff62b5e3f5c7331e9c78e75efc92bbde63eb8058d73de0d
+    width: 241
+    height: 241
+    byte_size: 17044
+    alt_text: 'Diagram from the paper, carrying the labels: Be ^a ^n Other s s 60 ° Ma ize 150 ° M i lle
+      t. Not yet checked by a person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 63, crop (374,541)-(449,616)pt
+  - file: docs/questions/utme/mathematics/figures/3ca7cfb64622ea7d0afb593f828f074b3f5a28b0b79b95b4705bbd271be3dd2f.png
+    sha256: 3ca7cfb64622ea7d0afb593f828f074b3f5a28b0b79b95b4705bbd271be3dd2f
+    width: 780
+    height: 176
+    byte_size: 11336
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 63, crop (316,483)-(585,535)pt
+- number: 40
+  page: 63
+  stem: The pie chart above shows the distribution of the crops harvested from a farmland in a year. If
+    3000 tonnes of millet is harvested, what amount of beans is harvested?
+  options:
+    A: 9000 tonnes
+    B: 6000 tonnes
+    C: 1500 tonnes
+    D: 1200 tonnes
+  proposed_skill: MATH.V.1.ii
+  skill_reason: Proposed from the wording of the question, which is about representation of data. The
+    paper prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 41
+  page: 63
+  stem: I. Rectangular bars of equal width II. The height of each rectangular bar is proportional to the
+    frequency of the3 corresponding class interval. III. Rectangular bars have common sides with no gaps
+    in between. A histogram is described by
+  options:
+    A: I and II
+    B: I and III
+    C: I,II and III
+    D: II and III®
+  proposed_skill: MATH.I.2.iii
+  skill_reason: Proposed from the wording of the question, which is about fractions, decimals, approximation
+    or percentages. The paper prints no direction to read instead.
+  notation_suspect: false
+  figures:
+  - file: docs/questions/utme/mathematics/figures/c6d5c67fe54813fecf0888363f952de7ebf0300ca6e17650d8e2cc43583ae0d3.png
+    sha256: c6d5c67fe54813fecf0888363f952de7ebf0300ca6e17650d8e2cc43583ae0d3
+    width: 593
+    height: 249
+    byte_size: 19353
+    alt_text: Diagram from the paper, with no text labels. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 64, crop (84,78)-(285,156)pt
+- number: 43
+  page: 64
+  stem: Themean ageofa group ofstudentsis15 years.When the age of a teacher, 45 years old, is added to
+    the ages of the students, the mean of their ages becomes 18 years. Find the number of students in
+    the group.
+  options:
+    A: '7'
+    B: '9'
+    C: '15'
+    D: '42'
+  proposed_skill: MATH.V.2.i
+  skill_reason: Proposed from the wording of the question, which is about measures of location. The paper
+    prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 44
+  page: 64
+  stem: The weights of 10 pupils in a class are 15kg, 16kg, 17kg, 18kg, 16kg, 17kg, 17kg, 17kg, 18kg and
+    16kg. What is the range of this distribution?
+  options:
+    A: '1'
+    B: '2'
+    C: '3'
+    D: '4'
+  proposed_skill: MATH.V.3.i
+  skill_reason: Proposed from the wording of the question, which is about measures of dispersion. The
+    paper prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 45
+  page: 64
+  stem: Find the mean deviation of 1, 2, 3 and 4
+  options:
+    A: '1.0'
+    B: '1.5'
+    C: '2.0'
+    D: '2.5'
+  proposed_skill: MATH.V.3.i
+  skill_reason: Proposed from the wording of the question, which is about measures of dispersion. The
+    paper prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 46
+  page: 64
+  stem: In how many ways can 2 students be selected from a group of 5 students in a debating competition?
+  options:
+    A: 10 ways.
+    B: 15 ways.
+    C: 20 ways
+    D: 25 ways.
+  proposed_skill: MATH.V.4.i
+  skill_reason: Proposed from the wording of the question, which is about permutation and combination.
+    The paper prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 47
+  page: 64
+  stem: A committee ofsix is to be formedbya state governor from nine state commissioners and three members
+    of the state house of assembly. In how many ways can the members ofthe committee be chosen so as to
+    include one member of the house of assembly?
+  options:
+    A: 924 ways
+    B: 840 ways
+    C: 462 ways
+    D: 378 ways
+  proposed_skill: MATH.V.4.i
+  skill_reason: Proposed from the wording of the question, which is about permutation and combination.
+    The paper prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 48
+  page: 64
+  stem: Some white balls were put in a basket containing twelve red balls and sixteen black balls. If
+    the probabilityof picking a white ball from the basket is 3/7, how manywhite balls were introduced?
+  options:
+    A: '32'
+    B: '28'
+    C: '21'
+    D: '12'
+  proposed_skill: MATH.V.5.i
+  skill_reason: Proposed from the wording of the question, which is about probability. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 49
+  page: 64
+  stem: 'An unbiased die is rolled 100 times and the outcome is tabulated as follows: What is the probability
+    of obtaining 5?'
+  options:
+    A: 1/
+    B: 1/ 6 5
+    C: ¼
+    D: ½
+  proposed_skill: MATH.V.5.i
+  skill_reason: Proposed from the wording of the question, which is about probability. The paper prints
+    no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/eb2ad31de87028ad669c97889ea6a29e58c4a3a629a21850b0ecac4d6a0f3375.png
+    sha256: eb2ad31de87028ad669c97889ea6a29e58c4a3a629a21850b0ecac4d6a0f3375
+    width: 561
+    height: 147
+    byte_size: 17204
+    alt_text: 'Diagram from the paper, carrying the labels: is tabulated as follows:. Not yet checked
+      by a person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 64, crop (351,287)-(541,328)pt
+  - file: docs/questions/utme/mathematics/figures/d1d7b119c36f88665085fc520722a325488c89a107554ebe6a75b7cd5ab9018d.png
+    sha256: d1d7b119c36f88665085fc520722a325488c89a107554ebe6a75b7cd5ab9018d
+    width: 763
+    height: 369
+    byte_size: 35927
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 64, crop (322,273)-(585,394)pt
+- number: 50
+  page: 64
+  stem: A container has 30 gold medals, 22 silver medalsand 18 bronze medals. If one medal is selected
+    at random from the container, what is the probability that it is not a gold medal?
+  options:
+    A: 4/
+    B: 3/ 7 7
+    C: 11/
+    D: 9/ 35 35
+  proposed_skill: MATH.V.5.i
+  skill_reason: Proposed from the wording of the question, which is about probability. The paper prints
+    no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/8979b090b482f4be946916c8b5226ba1f9bbcbb0a754d27afc46f1dc3c5d5a03.png
+    sha256: 8979b090b482f4be946916c8b5226ba1f9bbcbb0a754d27afc46f1dc3c5d5a03
+    width: 763
+    height: 243
+    byte_size: 33716
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 64, crop (322,405)-(585,481)pt

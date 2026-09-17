@@ -1,0 +1,759 @@
+# UTME 2002, Mathematics — extracted from the text layer and the rendered
+# figures of docs/questions/utme/mathematics/MATHEMATICS-questions.pdf.
+#
+# 43 questions kept, 7 rejected,
+# 18 carrying a diagram cropped from the page.
+#
+# THERE ARE NO ANSWERS. The compilation prints no key, and this importer does
+# not invent one: every question loads with no correct option and
+# answer_source 'unverified'. Approval is impossible until someone works them
+# out. Skill mappings are proposed from the wording, since the paper prints no
+# directions of its own.
+format_version: 1
+source:
+  file: docs/questions/utme/mathematics/MATHEMATICS-questions.pdf
+  exam_year: 2002
+  paper_label: UTME 2002 Mathematics (objective)
+  paper_code: UTME-2002-MATH
+  question_count: 50
+  answer_source: unverified
+passages: []
+questions:
+- number: 1
+  page: 56
+  stem: 'A trader bought goats for #4 000 each. He sold them for #180 000 at a loss of 25%. How many goats
+    did he buy?'
+  options:
+    A: '36'
+    B: '45'
+    C: '50'
+    D: '60'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 2
+  page: 56
+  stem: Simplify (√0.7 + √70)2
+  options:
+    A: '217.7'
+    B: '168.7'
+    C: '84.7'
+    D: '70.7'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 3
+  page: 56
+  stem: Evaluate (0.21 x 0.072 x 0.0054)/ (0.006 x 1.68 x 0.063) correct to four significant figures.
+  options:
+    A: '0.1286'
+    B: '0.1285'
+    C: '0.01286'
+    D: '0.01285'
+  proposed_skill: MATH.I.2.iii
+  skill_reason: Proposed from the wording of the question, which is about fractions, decimals, approximation
+    or percentages. The paper prints no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/70358e86b35928db2c8320c6d817485bb389ede8144d43b6e589daf192619e73.png
+    sha256: 70358e86b35928db2c8320c6d817485bb389ede8144d43b6e589daf192619e73
+    width: 822
+    height: 202
+    byte_size: 22786
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 56, crop (30,364)-(314,425)pt
+- number: 4
+  page: 56
+  stem: In a school, 220 students offer Biology or Mathematics or both. 125 offer Biology and 110 Mathematics.
+    How many offer Biology but not Mathematics?
+  options:
+    A: '125'
+    B: '110'
+    C: '95'
+    D: '80'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 5
+  page: 56
+  stem: Simplify 52.4 – 5.7 – 3.45 – 1.75
+  options:
+    A: '42.2'
+    B: '42.1'
+    C: '41.5'
+    D: '41.4'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 6
+  page: 56
+  stem: Without using tables, evaluate (343)1/3 x (0.14)-1 x (25)1/2
+  options:
+    A: '7'
+    B: '8'
+    C: '10'
+    D: '12'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures:
+  - file: docs/questions/utme/mathematics/figures/389eb46ec61e3726c582d617ea4f575ce3fbe4138b445e8c28841e1640798d8f.png
+    sha256: 389eb46ec61e3726c582d617ea4f575ce3fbe4138b445e8c28841e1640798d8f
+    width: 193
+    height: 193
+    byte_size: 12807
+    alt_text: 'Diagram from the paper, carrying the labels: R O r. Not yet checked by a person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 56, crop (127,625)-(184,683)pt
+- number: 8
+  page: 56
+  stem: Find the value of & if the line 2y - &x + 4 = 0 is perpendicular to the line y+ 1/ x – 7 = 4 0
+  options:
+    A: '-8'
+    B: –4
+    C: '4'
+    D: '8'
+  proposed_skill: MATH.III.4.iv
+  skill_reason: Proposed from the wording of the question, which is about coordinate geometry. The paper
+    prints no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/20c9af7b7d302b0dff41dbaa8785589a1755c33c8e25383430af8660617b6739.png
+    sha256: 20c9af7b7d302b0dff41dbaa8785589a1755c33c8e25383430af8660617b6739
+    width: 763
+    height: 202
+    byte_size: 19625
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 56, crop (322,245)-(585,306)pt
+- number: 9
+  page: 56
+  stem: A bucket is 12cm in diameter at the top, 8cm in diameter at the bottom and 4cm deep. Calculates
+    its volume.
+  options:
+    A: 144πcm3
+    B: 304πcm3/3
+    C: 72πcm3
+    D: 128πcm3/
+  proposed_skill: MATH.III.2.i
+  skill_reason: Proposed from the wording of the question, which is about mensuration. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures:
+  - file: docs/questions/utme/mathematics/figures/127b554d50cd5069d3093c240c665d75b27d09e3b72c49da791a379dd7e354e5.png
+    sha256: 127b554d50cd5069d3093c240c665d75b27d09e3b72c49da791a379dd7e354e5
+    width: 223
+    height: 228
+    byte_size: 6957
+    alt_text: 'Diagram from the paper, carrying the labels: Z Y O X. Not yet checked by a person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 56, crop (400,386)-(469,456)pt
+- number: 11
+  page: 56
+  stem: Find the coordinate of the midpoint of x and y intercepts of the line 2y = 4x - 8
+  options:
+    A: (-1, -2)
+    B: (1, 2)
+    C: (2, 0)
+    D: (1, -2)
+  proposed_skill: MATH.III.4.iv
+  skill_reason: Proposed from the wording of the question, which is about coordinate geometry. The paper
+    prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 12
+  page: 56
+  stem: A chord of a circle subtends an angle of 1200 at the centre of a circle of diameter 4Ö3cm. Calculate
+    the area of the major sector.
+  options:
+    A: 32πcm2
+    B: 16πcm2
+    C: 8πcm2
+    D: 4πcm2
+  proposed_skill: MATH.III.2.i
+  skill_reason: Proposed from the wording of the question, which is about mensuration. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 15
+  page: 57
+  stem: The locus of a point P which is equidistant from two given points S and T is
+  options:
+    A: a perpendicular toST
+    B: a line parallel to ST
+    C: the angle bisector of PS and ST
+    D: the perpendicular bisector ST
+  proposed_skill: MATH.III.3.i
+  skill_reason: Proposed from the wording of the question, which is about loci. The paper prints no direction
+    to read instead.
+  notation_suspect: false
+  figures: []
+- number: 16
+  page: 57
+  stem: A solid hemisphere has radius 7cm. Find the total surface area.
+  options:
+    A: 462cm2
+    B: 400cm2
+    C: 308cm2
+    D: 66cm2
+  proposed_skill: MATH.III.2.i
+  skill_reason: Proposed from the wording of the question, which is about mensuration. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures:
+  - file: docs/questions/utme/mathematics/figures/b3a8390917e487a4e3a0069a16c5459dc9bd0cbc6e1e4213b746fec377b2e097.png
+    sha256: b3a8390917e487a4e3a0069a16c5459dc9bd0cbc6e1e4213b746fec377b2e097
+    width: 313
+    height: 219
+    byte_size: 10140
+    alt_text: 'Diagram from the paper, carrying the labels: Q 50 ° 128 ° R P. Not yet checked by a person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 57, crop (92,226)-(193,293)pt
+- number: 17
+  page: 57
+  stem: The angle PGR below is
+  options:
+    A: a scalene triangle
+    B: an isosceles triangle
+    C: an equilateral triangle
+    D: an obtuse – angled triangle
+  proposed_skill: MATH.III.1.ii
+  skill_reason: Proposed from the wording of the question, which is about Euclidean geometry. The paper
+    prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 18
+  page: 57
+  stem: The sum of the interior angles of a polygon is 20 right angles. How manysides does the polygon
+    have?
+  options:
+    A: '10'
+    B: '12'
+    C: '20'
+    D: '40'
+  proposed_skill: MATH.III.1.ii
+  skill_reason: Proposed from the wording of the question, which is about Euclidean geometry. The paper
+    prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 19
+  page: 57
+  stem: Find the equation of the set of points which are equidistant from the parallel lines x = 1 and
+    x = 7
+  options:
+    A: y = 4
+    B: y = 3
+    C: x = 3
+    D: x = 4
+  proposed_skill: MATH.I.4.iv
+  skill_reason: Proposed from the wording of the question, which is about sets. The paper prints no direction
+    to read instead.
+  notation_suspect: false
+  figures:
+  - file: docs/questions/utme/mathematics/figures/2b4e8fdc9a51c763e58d8a770f61ecd70875905bb4715fbb5189fc7a0d0ef592.png
+    sha256: 2b4e8fdc9a51c763e58d8a770f61ecd70875905bb4715fbb5189fc7a0d0ef592
+    width: 173
+    height: 225
+    byte_size: 6988
+    alt_text: 'Diagram from the paper, carrying the labels: 3cm 23cm. Not yet checked by a person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 57, crop (96,490)-(147,559)pt
+- number: 21
+  page: 57
+  stem: A hunter 1.6m tall, views a bird on top ofa tree at an angle of 450. If the distance between the
+    hunter and the tree is 10.4m, find the height of the tree.
+  options:
+    A: 8.8m
+    B: 9.0m
+    C: 10.4m
+    D: 12.0m
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 22
+  page: 57
+  stem: The mean of a set ofsix numbers is 60. if the mean of the first five is 50, Find the sixth number
+    in the set.
+  options:
+    A: '110'
+    B: '105'
+    C: '100'
+    D: '95'
+  proposed_skill: MATH.I.4.iv
+  skill_reason: Proposed from the wording of the question, which is about sets. The paper prints no direction
+    to read instead.
+  notation_suspect: false
+  figures: []
+- number: 23
+  page: 57
+  stem: The range ofthedata k+ 2, k– 3, k +4, k –2, k, k – 5, k + 3, k – 1 and k + 6 is.
+  options:
+    A: '6'
+    B: '8'
+    C: '10'
+    D: '11'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures:
+  - file: docs/questions/utme/mathematics/figures/8731cdf7dafa92718bcd8115fa44545c8abf645f52f2f8eda989734250571147.png
+    sha256: 8731cdf7dafa92718bcd8115fa44545c8abf645f52f2f8eda989734250571147
+    width: 561
+    height: 129
+    byte_size: 9815
+    alt_text: Diagram from the paper, with no text labels. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 57, crop (340,75)-(530,109)pt
+- number: 24
+  page: 57
+  stem: The distribution above shows the number of days a group of 260 students were absent from school
+    in a particular term. How manystudents were absent for at least four days in the term?
+  options:
+    A: '40'
+    B: '120'
+    C: '160'
+    D: '210'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures:
+  - file: docs/questions/utme/mathematics/figures/f578de91d4822cc2f9d76635e8e3fae6e7e24523dbf7325e72f67a44d98ff2cc.png
+    sha256: f578de91d4822cc2f9d76635e8e3fae6e7e24523dbf7325e72f67a44d98ff2cc
+    width: 379
+    height: 185
+    byte_size: 12488
+    alt_text: 'Diagram from the paper, carrying the labels: 30 -x x 40 -x U 80 History 20 Music. Not yet
+      checked by a person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 57, crop (357,210)-(482,265)pt
+- number: 26
+  page: 57
+  stem: Find the mean of the data 7,-3,4,-2,5,-9,4,8,-6,12
+  options:
+    A: '1'
+    B: '2'
+    C: '3'
+    D: '4'
+  proposed_skill: MATH.V.2.i
+  skill_reason: Proposed from the wording of the question, which is about measures of location. The paper
+    prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 27
+  page: 57
+  stem: The probabilityofa student passing anyexamination is 2/3. if the student takes three examination,
+    what is the probabilitythat he will not pass anyof them?
+  options:
+    A: 1/27
+    B: 8/27
+    C: 4/9
+    D: 2/3
+  proposed_skill: MATH.V.5.i
+  skill_reason: Proposed from the wording of the question, which is about probability. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 28
+  page: 57
+  stem: How manythree-digit numbers can be formed from 32564 without digit being repeated?
+  options:
+    A: '10'
+    B: '20'
+    C: '60'
+    D: '120'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 29
+  page: 57
+  stem: Theacresfor rice, principle, cassava, cocoa and palm oil, in a certain district are given respectivelyas2,5,3,
+    11 and 9. what is the angle of the sector for cassava in a pie chart?
+  options:
+    A: '360'
+    B: '600'
+    C: '1080'
+    D: '1800'
+  proposed_skill: MATH.V.1.ii
+  skill_reason: Proposed from the wording of the question, which is about representation of data. The
+    paper prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 30
+  page: 57
+  stem: Calculate the mean deviation of the set of numbers 7,3,14,9,7 and 8
+  options:
+    A: 21/
+    B: 21/ 2 3
+    C: 21/
+    D: 11/ 6 6
+  proposed_skill: MATH.I.4.iv
+  skill_reason: Proposed from the wording of the question, which is about sets. The paper prints no direction
+    to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/f536d3a4bde8d1db1f7ed0197c669cd6d4147edaad1a23b019a897b811677191.png
+    sha256: f536d3a4bde8d1db1f7ed0197c669cd6d4147edaad1a23b019a897b811677191
+    width: 780
+    height: 176
+    byte_size: 16952
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 57, crop (316,630)-(585,681)pt
+- number: 31
+  page: 57
+  stem: Find the maximum value of yin the equation y = 1 – 2x – 3x2
+  options:
+    A: 5/3
+    B: 4/3
+    C: 5/4
+    D: ¾
+  proposed_skill: MATH.IV.2.i
+  skill_reason: Proposed from the wording of the question, which is about application of differentiation.
+    The paper prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 32
+  page: 57
+  stem: If the 9th term of an
+  options:
+    A: a + 2d = 0
+    B: a + 3d = 0
+    C: 3a + 5d = 0
+    D: 2a + d = 0
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 33
+  page: 58
+  stem: The time taken to do a piece of work is inversely proportional to the number of men employed.
+    If it takes 45men to do a piece of work in 5 days, how long will take 25 men?
+  options:
+    A: 5 days
+    B: 9 days
+    C: 12 days
+    D: 15 days
+  proposed_skill: MATH.I.2.iii
+  skill_reason: Proposed from the wording of the question, which is about fractions, decimals, approximation
+    or percentages. The paper prints no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/d4f88841b16c222d00ed98bedeed048b1221a2d93fb4a2d97fccc91e88c206fc.png
+    sha256: d4f88841b16c222d00ed98bedeed048b1221a2d93fb4a2d97fccc91e88c206fc
+    width: 822
+    height: 236
+    byte_size: 36015
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 58, crop (30,54)-(314,127)pt
+- number: 34
+  page: 58
+  stem: The binaryoperation is defined on the set of integers p and q by p*q = pq + p + q. find 2 (3*4)
+  options:
+    A: '19'
+    B: '38'
+    C: '59'
+    D: '67'
+  proposed_skill: MATH.I.4.iv
+  skill_reason: Proposed from the wording of the question, which is about sets. The paper prints no direction
+    to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/203adfc4413f884214c44ec67d65a1a491c935722fe13dc7d434e4efc64d7fd0.png
+    sha256: 203adfc4413f884214c44ec67d65a1a491c935722fe13dc7d434e4efc64d7fd0
+    width: 822
+    height: 169
+    byte_size: 20427
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 58, crop (30,138)-(314,187)pt
+- number: 35
+  page: 58
+  stem: If –2 is the solution of the equation 2x + 1 – 3c = 2c + 3x – 7, find the value of c.
+  options:
+    A: '1'
+    B: '2'
+    C: '3'
+    D: '4'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 36
+  page: 58
+  stem: If N = 3 5 -4 6 -3 -5 -2 2 1, find /N/
+  options:
+    A: '91'
+    B: '65'
+    C: '23'
+    D: '17'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/0ff5bfe7fa66485abc9241554ad7b2154794c84b422cafcbe1fcf5f5bf14ab35.png
+    sha256: 0ff5bfe7fa66485abc9241554ad7b2154794c84b422cafcbe1fcf5f5bf14ab35
+    width: 822
+    height: 236
+    byte_size: 13190
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 58, crop (30,258)-(314,331)pt
+- number: 37
+  page: 58
+  stem: Use the graph below to find the values of p and q if px + qy < 4 y (0,2) (-4,0) x
+  options:
+    A: p = 1, q = 2
+    B: p = 2, q = 1
+    C: p = -1, q = 2
+    D: p = 2, q = -1
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/fa6238735cb3b4db8890b7dc35979961224ee19e1eaebe146152b640a48d4a1f.png
+    sha256: fa6238735cb3b4db8890b7dc35979961224ee19e1eaebe146152b640a48d4a1f
+    width: 391
+    height: 235
+    byte_size: 25469
+    alt_text: 'Diagram from the paper, carrying the labels: + qy < 4 y x (0,2) (-4,0). Not yet checked
+      by a person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 58, crop (101,368)-(230,441)pt
+  - file: docs/questions/utme/mathematics/figures/728912d58d43037a1b37f5b93e2d1c5ad1bf760572773a0c58c908dce78d1713.png
+    sha256: 728912d58d43037a1b37f5b93e2d1c5ad1bf760572773a0c58c908dce78d1713
+    width: 822
+    height: 369
+    byte_size: 42271
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 58, crop (30,354)-(314,475)pt
+- number: 38
+  page: 58
+  stem: The inverse of the function f(x) = 3x + 4 is
+  options:
+    A: 1/3(x + 4)
+    B: 1/4(x + 3)
+    C: 1/5(x - 5)
+    D: 1/3(x - 4)
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 39
+  page: 58
+  stem: Solve for x in the equation x3 – 5x2 - x + 5 = 0
+  options:
+    A: 1, 1 or 5
+    B: –1, 1 or –5
+    C: 1, 1 or –5
+    D: 1, -1 or 5
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 41
+  page: 58
+  stem: Find the range of values of x for which x + 2/4 – 2x – 3/3 <4
+  options:
+    A: x > -3
+    B: x < 4
+    C: x > -6
+    D: x < 8
+  proposed_skill: MATH.V.3.i
+  skill_reason: Proposed from the wording of the question, which is about measures of dispersion. The
+    paper prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 42
+  page: 58
+  stem: Ifx varies directlyas n and x = 9 when n = 9, find x when n = 17/9
+  options:
+    A: '27'
+    B: '17'
+    C: '4'
+    D: '3'
+  proposed_skill: MATH.II.2.i
+  skill_reason: Proposed from the wording of the question, which is about variation. The paper prints
+    no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/ac1b74691c37ef9a2e1da4cea4f88ba57c8bd484b779f17f19df37131019d6f3.png
+    sha256: ac1b74691c37ef9a2e1da4cea4f88ba57c8bd484b779f17f19df37131019d6f3
+    width: 763
+    height: 169
+    byte_size: 16996
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 58, crop (322,108)-(585,157)pt
+- number: 43
+  page: 58
+  stem: The sum of infinity of the series 1 + 1/3 + 1/9 + 1/27 + ……………… is
+  options:
+    A: 3/2
+    B: 5/2
+    C: 10/3
+    D: 11/3
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 44
+  page: 58
+  stem: Make r the subject of the formula x/r + a = a/r
+  options:
+    A: a/(x – a)
+    B: (a/x + a
+    C: a2/(x – a)
+    D: a2/(x + a)
+  proposed_skill: MATH.II.1.i
+  skill_reason: Proposed from the wording of the question, which is about polynomials. The paper prints
+    no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/3bc892e6253417042e5045dbb3c6f688cc7c599cbe61c3e667d2dc35f05e2359.png
+    sha256: 3bc892e6253417042e5045dbb3c6f688cc7c599cbe61c3e667d2dc35f05e2359
+    width: 763
+    height: 169
+    byte_size: 15652
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 58, crop (322,222)-(585,271)pt
+- number: 45
+  page: 58
+  stem: If y = x2 – 1/x, find dy/dx
+  options:
+    A: 2x + x2
+    B: 2x – x2
+    C: 2x – 1/x2
+    D: 2x – 1/x2
+  proposed_skill: MATH.IV.1.ii
+  skill_reason: Proposed from the wording of the question, which is about differentiation. The paper prints
+    no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/6f05335f3ecf9b2c40fa9874aa6294fe23a332ac1e9814fb5f8f19c69ec4af17.png
+    sha256: 6f05335f3ecf9b2c40fa9874aa6294fe23a332ac1e9814fb5f8f19c69ec4af17
+    width: 763
+    height: 137
+    byte_size: 9925
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 58, crop (322,281)-(585,319)pt
+- number: 46
+  page: 58
+  stem: Evaluate sin3xdx
+  options:
+    A: -2/3 cos 3x + c
+    B: –1/3 cos 3x + c
+    C: 1/3 cos 3x + c
+    D: 2/3 cos 3x + c
+  proposed_skill: MATH.III.5.i
+  skill_reason: Proposed from the wording of the question, which is about trigonometry. The paper prints
+    no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/d0b3026d6e4d78b478cc10489bc9f9737a6f97660439c5f895a0b794f7726334.png
+    sha256: d0b3026d6e4d78b478cc10489bc9f9737a6f97660439c5f895a0b794f7726334
+    width: 763
+    height: 168
+    byte_size: 16696
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 58, crop (322,350)-(585,399)pt
+- number: 47
+  page: 58
+  stem: A circle with a radius 5cm has its radius increasing at therate of0.2cms-1. what will bethe corresponding
+    increase in the area?
+  options:
+    A: 5p
+    B: 4p
+    C: 2p
+    D: p
+  proposed_skill: MATH.III.2.i
+  skill_reason: Proposed from the wording of the question, which is about mensuration. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 48
+  page: 58
+  stem: If dy/dx = 2x – 3 and y = 3 when x = 0, find y in terms of x.
+  options:
+    A: x2 – 3x
+    B: x2 – 3x + 3
+    C: 2x2 – 3x
+    D: x2 – 3x – 3
+  proposed_skill: MATH.IV.1.ii
+  skill_reason: Proposed from the wording of the question, which is about differentiation. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 49
+  page: 58
+  stem: Find the derivative of y = sin2(5x) with respect to x
+  options:
+    A: 2 sin 5x cos 5x
+    B: 5 sin 5x cos 5x
+    C: 10 sin 5x cos 5x
+    D: 15 sin 5x cos 5x
+  proposed_skill: MATH.IV.1.ii
+  skill_reason: Proposed from the wording of the question, which is about differentiation. The paper prints
+    no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/9b42f7cd2978a1178bf4919c25a1ed46717fe3e4fc7be18beb29beb43267649d.png
+    sha256: 9b42f7cd2978a1178bf4919c25a1ed46717fe3e4fc7be18beb29beb43267649d
+    width: 763
+    height: 137
+    byte_size: 18035
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 58, crop (322,542)-(585,579)pt
+- number: 50
+  page: 58
+  stem: The slope of the tangent to the curve y = 3x2 – 2x + 5 at the point (1, 6) is
+  options:
+    A: '1'
+    B: '4'
+    C: '5'
+    D: '61.'
+  proposed_skill: MATH.III.5.i
+  skill_reason: Proposed from the wording of the question, which is about trigonometry. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []

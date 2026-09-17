@@ -120,7 +120,8 @@ def load_levels(path: Path | None) -> dict[int, dict[str, Any]]:
 
 
 def prepare(
-    doc: dict[str, Any], skills: dict[str, str], allow_incomplete: bool = False
+    doc: dict[str, Any], skills: dict[str, str], allow_incomplete: bool = False,
+    allow_unanswered: bool = False,
 ) -> Prepared:
     """Validate every transcribed question. Bad rows are rejected, not written."""
     prepared = Prepared()
@@ -179,19 +180,24 @@ def prepare(
                 continue
             incomplete = True
 
-        answer = str(raw.get("proposed_answer") or "").strip().upper()
-        if answer not in OPTION_KEYS:
-            prepared.rejections.append(
-                Rejection(number, f"proposed answer {answer!r} is not one of A-D")
-            )
-            continue
-
-        confidence = str(raw.get("answer_confidence") or "").strip().lower()
-        if confidence not in {"low", "medium", "high"}:
-            prepared.rejections.append(
-                Rejection(number, f"answer_confidence {confidence!r} is not low/medium/high")
-            )
-            continue
+        answer: str | None = str(raw.get("proposed_answer") or "").strip().upper() or None
+        confidence: str | None = str(raw.get("answer_confidence") or "").strip().lower() or None
+        # A paper that ships no answer key leaves the question unanswered rather than
+        # guessed: no option is marked correct, and the database refuses to approve it. The
+        # JAMB Mathematics compilation is the first source like this.
+        if allow_unanswered and answer is None:
+            confidence = None
+        else:
+            if answer not in OPTION_KEYS:
+                prepared.rejections.append(
+                    Rejection(number, f"proposed answer {answer!r} is not one of A-D")
+                )
+                continue
+            if confidence not in {"low", "medium", "high"}:
+                prepared.rejections.append(
+                    Rejection(number, f"answer_confidence {confidence!r} is not low/medium/high")
+                )
+                continue
 
         skill_code = str(raw.get("proposed_skill") or "").strip()
         if skill_code not in skills:
@@ -247,6 +253,7 @@ def prepare(
                 or "Proposed by a model during import; not yet reviewed.",
                 "passage_ref": str(passage_ref) if passage_ref is not None else None,
                 "incomplete": incomplete,
+                "figures": raw.get("figures") or [],
                 "content_hash": digest,
             }
         )
@@ -327,7 +334,8 @@ async def load(args: argparse.Namespace) -> int:
     try:
         await conn.execute("SET search_path = stackprep, public")
         subject, skills = await resolve_target(conn, args.subject, args.syllabus_version)
-        prepared = prepare(doc, skills, allow_incomplete=args.allow_incomplete_passages)
+        prepared = prepare(doc, skills, allow_incomplete=args.allow_incomplete_passages,
+                           allow_unanswered=answer_source == "unverified")
         levels = load_levels(Path(args.levels).resolve() if args.levels else None)
         if levels:
             missing = [q["number"] for q in prepared.questions if q["number"] not in levels]
@@ -631,6 +639,28 @@ async def load(args: argparse.Namespace) -> int:
                         item["options"][key],
                         key == item["answer"],
                         position,
+                    )
+                for figure in item["figures"]:
+                    if not figure.get("file"):
+                        continue
+                    await conn.execute(
+                        """
+                        INSERT INTO question_assets (id, question_version_id, storage_uri,
+                          mime_type, byte_size, width, height, alt_text, alt_text_source,
+                          source_location, licence_status, display_order)
+                        VALUES ($1, $2, $3, 'image/png', $4, $5, $6, $7, $8, $9, 'pending', $10)
+                        ON CONFLICT (id) DO NOTHING
+                        """,
+                        uuid_for(f"asset:{version_id}:{figure.get('sha256')}"),
+                        version_id,
+                        str(figure["file"]),
+                        figure.get("byte_size"),
+                        figure.get("width"),
+                        figure.get("height"),
+                        figure.get("alt_text"),
+                        str(figure.get("alt_text_source") or "unverified"),
+                        figure.get("source_location"),
+                        figure.get("display_order", 0),
                     )
                 await conn.execute(
                     """

@@ -1,0 +1,706 @@
+# UTME 2000, Mathematics — extracted from the text layer and the rendered
+# figures of docs/questions/utme/mathematics/MATHEMATICS-questions.pdf.
+#
+# 44 questions kept, 6 rejected,
+# 10 carrying a diagram cropped from the page.
+#
+# THERE ARE NO ANSWERS. The compilation prints no key, and this importer does
+# not invent one: every question loads with no correct option and
+# answer_source 'unverified'. Approval is impossible until someone works them
+# out. Skill mappings are proposed from the wording, since the paper prints no
+# directions of its own.
+format_version: 1
+source:
+  file: docs/questions/utme/mathematics/MATHEMATICS-questions.pdf
+  exam_year: 2000
+  paper_label: UTME 2000 Mathematics (objective)
+  paper_code: UTME-2000-MATH
+  question_count: 50
+  answer_source: unverified
+passages: []
+questions:
+- number: 1
+  page: 50
+  stem: Let P = {1,2,u,v,w,x} R= {2,3,u,v,w,5,6,y} and R=(2,3,4,v,x,y) Determine (P - Q) ∩ R.
+  options:
+    A: '{1, x}'
+    B: '{x, y}'
+    C: '{x}'
+    D: φ
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 2
+  page: 50
+  stem: If the population of a town was 240000 in January 1998 and it increased by 2% each year, what
+    would be the population of the town in January2000?
+  options:
+    A: 480 000
+    B: 249 696
+    C: 249 600
+    D: 244 800
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 3
+  page: 50
+  stem: If 2√3 - √2/√3 + 2√2 = m + n√6, Find the values of m and n respectively
+  options:
+    A: 1, -2
+    B: –2, 1 2000
+    C: –2/5, 1
+    D: 2, 3/5
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures:
+  - file: docs/questions/utme/mathematics/figures/d9ae94816d33235af106aa1e946adffaaf354aacf7a11f2faebf88a9173c2c33.png
+    sha256: d9ae94816d33235af106aa1e946adffaaf354aacf7a11f2faebf88a9173c2c33
+    width: 633
+    height: 993
+    byte_size: 126467
+    alt_text: Diagram from the paper, with no text labels. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 50, crop (360,138)-(576,484)pt
+- number: 4
+  page: 50
+  stem: In a youth club with 94 members, 60 like modern music and 50 like like traditional music. The
+    number of members who like both traditional and modern music is three times who do not like any type
+    of music. How many members like only one type of music?
+  options:
+    A: '8'
+    B: '24'
+    C: '62'
+    D: '86'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 5
+  page: 50
+  stem: Evaluate (2.813 x 10-3) x 1.063 5.637 x 10-2 reducing each number totwosignificant figures and
+    leaving your answers in two significant figures.
+  options:
+    A: '0.056'
+    B: '0.055'
+    C: '0.054'
+    D: '0.54'
+  proposed_skill: MATH.I.2.iii
+  skill_reason: Proposed from the wording of the question, which is about fractions, decimals, approximation
+    or percentages. The paper prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 6
+  page: 51
+  stem: 'A man wishes to keep some money in a savings deposit at 25% compound interest so that after 3
+    years he can buya car for #150,000. how much does he need to deposit now?'
+  options:
+    A: '#112,000.50.'
+    B: '#96,000.00'
+    C: '#85,714.28'
+    D: '#76,800.00'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 7
+  page: 51
+  stem: If 314 – 256 = 340 , find x 10 7 x
+  options:
+    A: 2n + 1
+    B: 2n – 1
+    C: '4'
+    D: ¼
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 8
+  page: 51
+  stem: 'Audu bought an article for #50 000 and sold it to Femi at a loss of x%. Femi later sold the article
+    to Oche at a profit of 40%. If Femi made a profit of #10,000, find the value of x.'
+  options:
+    A: '60'
+    B: '50'
+    C: '40'
+    D: '20'
+  proposed_skill: MATH.I.2.iii
+  skill_reason: Proposed from the wording of the question, which is about fractions, decimals, approximation
+    or percentages. The paper prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 9
+  page: 51
+  stem: Simplify 3(2n+1) – 4(2n-1)/2(n+1) – 2n
+  options:
+    A: 2n + 1
+    B: 2n - 1
+    C: '4'
+    D: ¼
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 10
+  page: 51
+  stem: If P344 – 23P2 = 2PP2 , find the value of digit P. 6 6 6
+  options:
+    A: '2'
+    B: '3'
+    C: '4'
+    D: '5'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/02f75e0e48ec2e0a777726ec9277dc30512f6ea9c511acf7e41a9ca890825aa6.png
+    sha256: 02f75e0e48ec2e0a777726ec9277dc30512f6ea9c511acf7e41a9ca890825aa6
+    width: 805
+    height: 136
+    byte_size: 13137
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 51, crop (30,282)-(308,319)pt
+- number: 11
+  page: 51
+  stem: Evaluate 5-3log52x 22log23
+  options:
+    A: '8'
+    B: 11/ 8
+    C: 2/5
+    D: 1/8
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/a23caa33cb4890421391410a733e4684dc34cf02a2f0b810555c605068fd1ccc.png
+    sha256: a23caa33cb4890421391410a733e4684dc34cf02a2f0b810555c605068fd1ccc
+    width: 805
+    height: 137
+    byte_size: 11338
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 51, crop (30,329)-(308,367)pt
+- number: 12
+  page: 51
+  stem: A binary operation * is defined by a * b = ab. ifa * 2 = 2 –a, find the possible values of a.
+  options:
+    A: 1, -1
+    B: 1, 2
+    C: 2, -2
+    D: 1, -2
+  proposed_skill: MATH.II.5.i
+  skill_reason: Proposed from the wording of the question, which is about binary operations. The paper
+    prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 13
+  page: 51
+  stem: The 3rd term of an
+  options:
+    A: 19x - 17y
+    B: 8x - 4y
+    C: x – y
+    D: 2x
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 14
+  page: 51
+  stem: Find the inverse ofp under the binaryoperation * by p * q= p + q – pq, where p and q are real
+    numbers and zero is the identity.
+  options:
+    A: p
+    B: p – 1
+    C: p/p – 1
+    D: p/p+1 (a, b)
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/fa483004256fa122f36e467b1dd8b38de87e3d7829e409d26c8742618e5cf461.png
+    sha256: fa483004256fa122f36e467b1dd8b38de87e3d7829e409d26c8742618e5cf461
+    width: 805
+    height: 269
+    byte_size: 33424
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 51, crop (30,498)-(308,583)pt
+- number: 15
+  page: 51
+  stem: Amatrix P(a, b) is such that PT= p, where (c, d) PT is the transpose of P, if b = 1, then P is
+  options:
+    A: (0, 1)
+    B: (0, 1) (1, 0) (-1, 0)
+    C: (0, 1)
+    D: (1, 1) (1, 1) (-1,0)
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/323f830c6809dcae0fde75940ca7a99947ab9dcb3a01440fd5dbe51143475ed4.png
+    sha256: 323f830c6809dcae0fde75940ca7a99947ab9dcb3a01440fd5dbe51143475ed4
+    width: 805
+    height: 270
+    byte_size: 26780
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 51, crop (30,581)-(308,667)pt
+- number: 16
+  page: 51
+  stem: Evaluate (1/2 – ¼ + 1/8 – 1/16 + …….) -1
+  options:
+    A: 2/3
+    B: '0'
+    C: –2/3
+    D: –1
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 18
+  page: 51
+  stem: Find the values of t for which the determinant ofthe matrix (t -4 0 0 ) (-1 t+t 1 ) is zero (
+    3 4 t-2)
+  options:
+    A: 0, 2, 3
+    B: –4, 2, 3
+    C: –4, -2, -3
+    D: 4, -2, 3
+  proposed_skill: MATH.II.6.ii
+  skill_reason: Proposed from the wording of the question, which is about matrices and determinants. The
+    paper prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 19
+  page: 51
+  stem: If (x - 1), (x + 1) and (x - 2) are factors of the polynomial ax3+ bx2+cx –1, finda, b, c, respectively
+  options:
+    A: -1/2, 1, ½
+    B: ½, 1, ½
+    C: ½, 1, -1/2
+    D: ½, -1, ½
+  proposed_skill: MATH.II.1.i
+  skill_reason: Proposed from the wording of the question, which is about polynomials. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 20
+  page: 51
+  stem: A trader realizes 10x –x2naira profit from the sale of x bags of corn. How many bags will give
+    him the maximum profit?
+  options:
+    A: '4'
+    B: '5'
+    C: '6'
+    D: '7'
+  proposed_skill: MATH.I.2.iii
+  skill_reason: Proposed from the wording of the question, which is about fractions, decimals, approximation
+    or percentages. The paper prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 21
+  page: 51
+  stem: Solve the inequality 2 – x > x2
+  options:
+    A: x<-2orx>1
+    B: x>2orx<-1
+    C: –1<x>2
+    D: –2<x<1
+  proposed_skill: MATH.II.3.i
+  skill_reason: Proposed from the wording of the question, which is about inequalities. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 22
+  page: 51
+  stem: If a and bare the roots ofthe equation 3x2 + 5x – 2 = 0, find the value of 1/α + 1/β
+  options:
+    A: -5/2
+    B: –2/3
+    C: ½
+    D: 5/2
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 23
+  page: 51
+  stem: Find the minimum value of the function f(θ) = 2/3 – cosθfor ο≤θ≤2π.
+  options:
+    A: ½
+    B: 2/3
+    C: '1'
+    D: '2'
+  proposed_skill: MATH.IV.2.i
+  skill_reason: Proposed from the wording of the question, which is about application of differentiation.
+    The paper prints no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/a67eee8d66657e8ecbf22d1df81aab23b9c3ebb99811e115c5e499e002318184.png
+    sha256: a67eee8d66657e8ecbf22d1df81aab23b9c3ebb99811e115c5e499e002318184
+    width: 780
+    height: 169
+    byte_size: 17267
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 51, crop (316,522)-(585,571)pt
+- number: 24
+  page: 51
+  stem: Afrustum ofa pyramid with square base has its upper and lower sections as squares of sizes 2m
+    and 5m respectivelyand the distance between them 6m. find the height of the pyramid from which the
+    frustum was obtained.
+  options:
+    A: 8.0m
+    B: 8.4m
+    C: 9.0m
+    D: 10.0m
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/a8083b093fe458645bf4c143adf054a7ab58494bb57ddc66b633d336100bfd1d.png
+    sha256: a8083b093fe458645bf4c143adf054a7ab58494bb57ddc66b633d336100bfd1d
+    width: 780
+    height: 269
+    byte_size: 43207
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 51, crop (316,582)-(585,667)pt
+- number: 25
+  page: 51
+  stem: P is a point on one side of the straight line UV and P moves in the same direction as UV. If the
+    straight line ST is on the locus ofP and ∠ VUS = 500, find ∠ UST.
+  options:
+    A: '3100'
+    B: '1300'
+    C: '800'
+    D: '500'
+  proposed_skill: MATH.III.3.i
+  skill_reason: Proposed from the wording of the question, which is about loci. The paper prints no direction
+    to read instead.
+  notation_suspect: false
+  figures: []
+- number: 26
+  page: 52
+  stem: A ship sails a distance of 50km in the direction S50E and then sails a distance of 50km in the
+    direction N400E. find the bearing of the ship from its original position.
+  options:
+    A: S900E
+    B: N400E
+    C: S950E
+    D: N850E
+  proposed_skill: MATH.III.5.i
+  skill_reason: Proposed from the wording of the question, which is about trigonometry. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 27
+  page: 52
+  stem: An equilateral triangle of side √3 cm is inscribed in a circle. Find the radius of the circle.
+  options:
+    A: 2/3cm
+    B: 2cm
+    C: 1cm
+    D: 3cm
+  proposed_skill: MATH.III.1.ii
+  skill_reason: Proposed from the wording of the question, which is about Euclidean geometry. The paper
+    prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 31
+  page: 52
+  stem: If P and Q are fixed points and X is a point which moves so that XP = XQ, the locus of X is
+  options:
+    A: astraightline
+    B: acircle
+    C: thebisector∠ PXQ
+    D: theperpendicular bisectorofPQ
+  proposed_skill: MATH.III.3.i
+  skill_reason: Proposed from the wording of the question, which is about loci. The paper prints no direction
+    to read instead.
+  notation_suspect: false
+  figures: []
+- number: 32
+  page: 52
+  stem: In a regular polygon, each interior angle doubles its corresponding exterior angle. Find the number
+    of sides of the polygon.
+  options:
+    A: '87'
+    B: '6'
+    C: '4'
+    D: '3'
+  proposed_skill: MATH.III.1.ii
+  skill_reason: Proposed from the wording of the question, which is about Euclidean geometry. The paper
+    prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 35
+  page: 52
+  stem: Find the value of π(cos2θ – 1/sin2θ) dθ
+  options:
+    A: π
+    B: π/ 0
+    C: -π/
+    D: π 0
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/90e602ad7b6cc8ed979c25ac54c423166f3f730e4a37826dd4536640cd43e97c.png
+    sha256: 90e602ad7b6cc8ed979c25ac54c423166f3f730e4a37826dd4536640cd43e97c
+    width: 763
+    height: 167
+    byte_size: 13435
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 52, crop (322,204)-(585,252)pt
+- number: 36
+  page: 52
+  stem: If y = 2y cos 2x – sin 2x, find dy/dx when x = ë/4
+  options:
+    A: π
+    B: – π
+    C: π/2
+    D: – π/2
+  proposed_skill: MATH.IV.1.ii
+  skill_reason: Proposed from the wording of the question, which is about differentiation. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 37
+  page: 52
+  stem: A bowl is designed byrevolving completelythe area enclosed by y = x2 – 1, y= 0, y = 3 and x ³
+    0 around the y-axis. What is the volume of this bowl?
+  options:
+    A: 7πcubicunits.
+    B: 15π/2cubicunits
+    C: 8πcubic units
+    D: 17π/2cubicunits.
+  proposed_skill: MATH.III.2.i
+  skill_reason: Proposed from the wording of the question, which is about mensuration. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 38
+  page: 52
+  stem: Ifthe volumeofa hemisphere isincreasingat a steady rate of 8 πm3s-1, at what rate is its radius
+    changing when it is 6m?
+  options:
+    A: 2.50ms-1
+    B: 2.00ms-1
+    C: 0.25ms-1
+    D: 0.20ms-1
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 39
+  page: 52
+  stem: A function f(x) passes through the origin and its first derivative is 3x + 2. what is f(x)
+  options:
+    A: y = 3/2x2 + 2x
+    B: y = 3/2 x2 + x
+    C: y = 3 x2 + x/2
+    D: y = 3 x2+2x
+  proposed_skill: MATH.IV.1.ii
+  skill_reason: Proposed from the wording of the question, which is about differentiation. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 40
+  page: 52
+  stem: The expression ax2 + bx + c equals 5 at x = 1. if its derivative is 2x + 1, what are the values
+    of a, b, c, respectively?
+  options:
+    A: 1, 3, 1
+    B: 1, 2, 1
+    C: 2, 1, 1
+    D: 1, 1, 3
+  proposed_skill: MATH.IV.1.ii
+  skill_reason: Proposed from the wording of the question, which is about differentiation. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 41
+  page: 52
+  stem: X and Y are two events. The probability of X and Y is 0.7 and the probability of X is 0.4. If
+    X and Y are independent, find the probabilityofY.
+  options:
+    A: '0.30'
+    B: '0.50'
+    C: '0.57'
+    D: '1.80'
+  proposed_skill: MATH.V.5.i
+  skill_reason: Proposed from the wording of the question, which is about probability. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 42
+  page: 52
+  stem: If the mean of the numbers 0, x + 2, 3x + 6 and 4x + 8 is 4, find their mean deviation.
+  options:
+    A: '0'
+    B: '2'
+    C: '3'
+    D: '4'
+  proposed_skill: MATH.V.3.i
+  skill_reason: Proposed from the wording of the question, which is about measures of dispersion. The
+    paper prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 43
+  page: 52
+  stem: In how many ways can the word MATHEMATICS be arranged?
+  options:
+    A: 11!/9! 2!
+    B: 11!/9! 2! 2!
+    C: 11!/2! 2! 2!
+    D: 11!/2! 2!
+  proposed_skill: MATH.V.4.i
+  skill_reason: Proposed from the wording of the question, which is about permutation and combination.
+    The paper prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 44
+  page: 53
+  stem: A dice is rolled 240 times and the result depicted in the table above. If a pie chart is constructed
+    to represent the data, the angle corresponding to 4 is
+  options:
+    A: '100'
+    B: '160'
+    C: '400'
+    D: '600'
+  proposed_skill: MATH.V.5.i
+  skill_reason: Proposed from the wording of the question, which is about probability. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 45
+  page: 53
+  stem: 'If U = {x : x is an integer and {1 ≤ x ≤ 20} E = {x : x is a multiple of 3} 1 E = {x : x is a
+    multiple of 4} 2 And an integer is picked at random from U, find the probabilitythat it is not in
+    E 2'
+  options:
+    A: ¾
+    B: 3/10
+    C: ¼
+    D: 1/20
+  proposed_skill: MATH.V.5.i
+  skill_reason: Proposed from the wording of the question, which is about probability. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 46
+  page: 53
+  stem: The cumulative frequency curve above represents the ages of students in a school. Which are group
+    do 70% of the students belong?
+  options:
+    A: 15.5–18.5
+    B: 15.5–19.5
+    C: 16.5 – 19.5
+    D: 17.5 – 20.5
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures:
+  - file: docs/questions/utme/mathematics/figures/e931742bd3748b25994ff8ecb0c13836ef9c2e9dd3a0d6c66f32cb65795abf17.png
+    sha256: e931742bd3748b25994ff8ecb0c13836ef9c2e9dd3a0d6c66f32cb65795abf17
+    width: 585
+    height: 401
+    byte_size: 20845
+    alt_text: Diagram from the paper, with no text labels. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 53, crop (72,274)-(271,406)pt
+- number: 47
+  page: 53
+  stem: The variance of x, 2x, 3x 4x and 5x is
+  options:
+    A: x√2
+    B: 2x2
+    C: x2
+    D: 3x
+  proposed_skill: MATH.V.3.i
+  skill_reason: Proposed from the wording of the question, which is about measures of dispersion. The
+    paper prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 48
+  page: 53
+  stem: Find the sum of the range and the mode of the set of numbers 10, 5, 10, 9, 8, 7, 7, 10, 8, 10,
+    8, 4, 6, 9, 10, 9, 10, 9, 7, 10, 6, 5
+  options:
+    A: '16'
+    B: '14'
+    C: '12'
+    D: '10'
+  proposed_skill: MATH.I.4.iv
+  skill_reason: Proposed from the wording of the question, which is about sets. The paper prints no direction
+    to read instead.
+  notation_suspect: false
+  figures: []
+- number: 49
+  page: 53
+  stem: In how many ways can a delegation of 3 be chosen from among 5 men and 3 women, if at least one
+    man at least one woman must be included?
+  options:
+    A: '15'
+    B: '28'
+    C: '30'
+    D: '45'
+  proposed_skill: MATH.V.4.i
+  skill_reason: Proposed from the wording of the question, which is about permutation and combination.
+    The paper prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 50
+  page: 53
+  stem: No . Of Pupils The table above shows the frequency distribution of the ages (in years) of pupils
+    in a certain secondary school. What percentage ofthe total number ofpupils is over 15 years but less
+    than 21 years?
+  options:
+    A: 35%
+    B: 45%
+    C: 50%
+    D: 60%
+  proposed_skill: MATH.V.1.ii
+  skill_reason: Proposed from the wording of the question, which is about representation of data. The
+    paper prints no direction to read instead.
+  notation_suspect: false
+  figures:
+  - file: docs/questions/utme/mathematics/figures/457cc51944e31fadef7792156c4985b7245195d1611664e9d879c05c8a257d7d.png
+    sha256: 457cc51944e31fadef7792156c4985b7245195d1611664e9d879c05c8a257d7d
+    width: 585
+    height: 201
+    byte_size: 13601
+    alt_text: 'Diagram from the paper, carrying the labels: No . Of Pupils. Not yet checked by a person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 53, crop (334,285)-(533,346)pt
