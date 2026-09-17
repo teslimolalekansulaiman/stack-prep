@@ -1,0 +1,91 @@
+# Score Pilot on the shared Hetzner box (ADR-0016).
+#
+# Nothing here is published to the internet. The API binds to 127.0.0.1 only and
+# Caddy, already running on the host, is the one thing facing outward. PostgreSQL
+# and Redis are not published at all — they are reachable only from the other
+# containers on this network.
+#
+# Every service is capped, following the convention the box already uses for its
+# other tenant (see /etc/systemd/system/aep-prod.service.d/memory.conf). This is a
+# 4 GB machine shared with another project; an unbounded PostgreSQL here would take
+# that project down with us.
+#
+#   docker compose --env-file .env.local -f compose.yml up -d
+
+name: score-pilot
+
+services:
+  postgres:
+    image: postgres:18
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: scorepilot
+      POSTGRES_DB: scorepilot
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?POSTGRES_PASSWORD is not set in .env.local}
+    # Tuned for a small shared box, not for throughput.
+    command: >
+      postgres
+      -c shared_buffers=128MB
+      -c effective_cache_size=384MB
+      -c max_connections=50
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U scorepilot -d scorepilot']
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 20s
+    mem_limit: 256m
+
+  redis:
+    image: redis:8
+    restart: unless-stopped
+    # Job queue only; nothing here needs to survive a restart.
+    command: redis-server --save "" --appendonly no --maxmemory 48mb --maxmemory-policy allkeys-lru
+    healthcheck:
+      test: ['CMD', 'redis-cli', 'ping']
+      interval: 10s
+      timeout: 3s
+      retries: 10
+    mem_limit: 64m
+
+  api:
+    image: ${IMAGE:?IMAGE is not set — the deploy workflow passes the tag to publish}
+    restart: unless-stopped
+    env_file: .env.local
+    environment:
+      APP_ENV: staging
+      DATABASE_URL: postgresql+asyncpg://scorepilot:${POSTGRES_PASSWORD}@postgres:5432/scorepilot
+      DATABASE_SCHEMA: stackprep
+      REDIS_URL: redis://redis:6379/0
+      CORS_ORIGINS: https://stackprep.binaax.app
+    ports:
+      # Host-local only. Caddy reaches this; the internet does not.
+      - '127.0.0.1:8010:8000'
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    mem_limit: 384m
+
+  worker:
+    image: ${IMAGE:?IMAGE is not set — the deploy workflow passes the tag to publish}
+    restart: unless-stopped
+    command: ['arq', 'app.worker.WorkerSettings']
+    env_file: .env.local
+    environment:
+      APP_ENV: staging
+      DATABASE_URL: postgresql+asyncpg://scorepilot:${POSTGRES_PASSWORD}@postgres:5432/scorepilot
+      DATABASE_SCHEMA: stackprep
+      REDIS_URL: redis://redis:6379/0
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    mem_limit: 256m
+
+volumes:
+  postgres-data:

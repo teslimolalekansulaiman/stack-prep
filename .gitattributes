@@ -1,0 +1,11 @@
+# This repository is worked on from Windows and macOS but deploys to Linux.
+# A CRLF in a shell script fails there with `$'\r': command not found`, and
+# release.sh runs on the server, so pin line endings for everything executable
+# or machine-read.
+*.sh        text eol=lf
+*.yml       text eol=lf
+*.yaml      text eol=lf
+*.sql       text eol=lf
+Makefile    text eol=lf
+Dockerfile  text eol=lf
+*.pdf       binary
