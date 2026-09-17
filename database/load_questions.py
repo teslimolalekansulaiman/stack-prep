@@ -7,7 +7,8 @@
         --dry-run
 
 Everything it writes is a draft: questions are unreviewed, their answers are recorded as
-`model_proposed`, and their skill mappings as `proposed_by = 'model'`. The database will
+`model_proposed` (or as `published_key` when the paper prints its own answer key and the
+transcription says so), and their skill mappings as `proposed_by = 'model'`. The database will
 not let any of it reach a student until a person verifies the answer and approves both the
 question and its classification.
 
@@ -302,6 +303,17 @@ async def load(args: argparse.Namespace) -> int:
     pdf_sha = hashlib.sha256(pdf_path.read_bytes()).hexdigest()
     transcription_sha = hashlib.sha256(transcription_path.read_bytes()).hexdigest()
     paper_code = str(source.get("paper_code") or f"{source['exam_year']}-OBJ")
+    # Where the answers came from. A model's proposal is the default because that is what a
+    # transcription produces; a paper that prints its own key says so and gets recorded as
+    # such. Neither can be approved without a person — the database sees to that — but a
+    # reviewer checking a key is doing a different job from a reviewer checking a guess.
+    answer_source = str(source.get("answer_source") or "model_proposed").strip()
+    if answer_source not in ("unverified", "model_proposed", "published_key"):
+        fail(
+            f"source.answer_source {answer_source!r} is not one of unverified, "
+            "model_proposed, published_key; a key that needs no checking is not something "
+            "an import may claim"
+        )
     duration_minutes = source.get("duration_minutes")
     total_marks = source.get("marks")
 
@@ -343,6 +355,23 @@ async def load(args: argparse.Namespace) -> int:
             if duration_minutes
             else None
         )
+        # The note has to describe THIS source. The WAEC papers print duration and marks on
+        # the cover; the JAMB compilation prints neither, and saying otherwise would put a
+        # false citation next to a defaulted number.
+        printed = [
+            name for name, value in
+            (("duration", duration_minutes), ("marks", total_marks)) if value
+        ]
+        confirmation_note = (
+            (f"{' and '.join(printed).capitalize()} as printed with the paper. "
+             if printed else "")
+            + ("Marks are not printed with this paper; score_out_of is the schema default. "
+               if not total_marks else "")
+            + ("Duration is not printed with this paper. " if not duration_minutes else "")
+            + "The question count is what the transcription contains and has not been "
+              "checked against the paper."
+        )
+        print(f"Answers recorded as {answer_source}.")
         print(
             f"Paper {paper_code}: {marks_each if marks_each else 'unknown'} marks and "
             f"{seconds_each if seconds_each else 'unknown'} seconds per question."
@@ -391,7 +420,10 @@ async def load(args: argparse.Namespace) -> int:
                 INSERT INTO exam_papers (id, subject_id, paper_code, name, response_mode,
                   question_count, duration_minutes, options_per_question, score_out_of,
                   values_confirmed, confirmation_note, pilot_support_status, status)
-                VALUES ($1, $2, $3, $4, 'objective', $5, $6, 4, $7, false, $8,
+                -- score_out_of is NOT NULL with a default of 100. A paper that does not
+                -- print its mark allocation gets that default, and the note below says so
+                -- rather than letting the number pass for a fact about the paper.
+                VALUES ($1, $2, $3, $4, 'objective', $5, $6, 4, coalesce($7, 100), false, $8,
                   'undecided', 'draft')
                 -- A later, fuller transcription of the same paper corrects the count. A
                 -- structure a reviewer has confirmed is never overwritten.
@@ -411,8 +443,7 @@ async def load(args: argparse.Namespace) -> int:
                 paper_questions,
                 duration_minutes,
                 total_marks,
-                "Duration and marks are as printed on the paper's cover; the question count "
-                "is what the transcription contains and has not been checked against the paper.",
+                confirmation_note,
             )
             await conn.execute(
                 """
@@ -544,7 +575,7 @@ async def load(args: argparse.Namespace) -> int:
                       answer_source, answer_confidence, mastery_level_number, level_source,
                       level_confidence, review_status)
                     VALUES ($1, $2, $3, 1, $4, $5, $6, 'mcq_single', 'auto_key', '[]'::jsonb,
-                      '[]'::jsonb, $7, $8, 4, $9, $10, 'model_proposed', $11, $12, $13, $14,
+                      '[]'::jsonb, $7, $8, 4, $9, $10, $15, $11, $12, $13, $14,
                       'draft')
                     """,
                     version_id,
@@ -561,6 +592,7 @@ async def load(args: argparse.Namespace) -> int:
                     (levels.get(item["number"]) or {}).get("level"),
                     "model_proposed" if levels.get(item["number"]) else "unverified",
                     (levels.get(item["number"]) or {}).get("confidence"),
+                    answer_source,
                 )
                 if levels.get(item["number"]):
                     levelled += 1
@@ -649,7 +681,7 @@ async def load(args: argparse.Namespace) -> int:
                 "see question_reports."
             )
         print(
-            "All rows are drafts. Answers are recorded as model_proposed and cannot be "
+            f"All rows are drafts. Answers are recorded as {answer_source} and cannot be "
             "approved until a person verifies them (see stackprep.questions_awaiting_answer_check)."
         )
     finally:

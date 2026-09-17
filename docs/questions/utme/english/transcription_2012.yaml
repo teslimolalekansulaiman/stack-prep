@@ -1,0 +1,1614 @@
+# UTME 2012, Use of English — extracted from the text layer of
+# docs/questions/utme/english/JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf.
+#
+# 91 questions kept, 9 rejected.
+# Answers come from the key printed with the paper, which is a compiler's, not
+# JAMB's: they load as `published_key` and still need a person to check them.
+# Skill mappings follow the paper's own printed directions where it prints one;
+# 15 comprehension items had none and were mapped from the stem instead.
+format_version: 1
+source:
+  file: docs/questions/utme/english/JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf
+  exam_year: 2012
+  paper_label: UTME 2012 Use of English (objective)
+  paper_code: UTME-2012-ENG
+  question_count: 100
+  answer_source: published_key
+passages:
+- id: cloze_2012
+  label: CLOZE PASSAGE
+  text: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options are
+    provided. Choose the most appropriate options for each gap. Each question carries 3 marks The medical
+    definition of miscarriage is the spontaneous loss of a pregnancy before twenty-four weeks. Miscarriage
+    is very common, occurring in ten to twenty per cent, of conformed pregnancies. Most of these feature
+    …16… [A. In the penultimate B. In the first C. around D. For] twelve week of pregnancy. The most common
+    …17… [A. type B. Cause C. Period D. Symptom] is vaginal bleeding, which can range from light spotting
+    to heavier than a period. You may see blood clots, brown discharge or other tissues that are not …18…
+    [A. clearly B. naturally C. directly D. Medically] identifiable. Sometimes a sac-like structure is
+    seen. Often, there is cramping with pelvic or back pain. You may find that the usual symptoms of pregnancy,
+    such as breast tenderness, feeling sick and urine more …19… having to pass [A. painfully B. frequently
+    C. gradually D. Commonly] than usual stop unexpectedly. Sometimes there are no signs or symptoms of
+    miscarriage and pregnancy symptoms continue, only …20… and the miscarriage is [A. prevented B. managed
+    C. discovered D. Stopped] in a routine scan. About half of all early miscarriages happen because of
+    a problem in the way the genetic material from the egg and sperm combined during …21… [A. have pregnancy
+    B. incubation C. mating D. Fertilization]. It can be difficult to find out why this has …22… [A. occurred
+    B. enlarged C. continued D. emerged], but it is more likely to be due to random chance than to any
+    underlying problem with either parent. Imbalances in pregnancy hormones, problems in the immune …23…
+    [A. syndrome B. process C. response D. system], and some serious infections are also thought to make
+    miscarriages more likely. The risk …24… [A. increases of miscarriage B. starts C. reduces D. appears]
+- id: passage_2012_passage_i
+  label: PASSAGE_I
+  text: 'Religion in its various forms is very strong in Nigeria. In order words, Nigerian people are
+    very religious. Most of them believe that there is an unseen supernatural world, apart from the natural
+    world we see around us. This other world is inhabited by beings who are the source of our knowledge
+    of good and evil. They watch and judge us and if we offend them they may have to be appeased with
+    prayers and sacrifices. Certain individuals in the natural world-priest, prophets and – diviners are
+    believed to be ENGLISH QUESTIONS endowed with special powers to make contact with the other world.
+    These individuals lay down ceremonies or rituals which must be observed if due honour is to be paid
+    to the unseen beings. The religious beliefs and practices of Nigerians can be classified under three
+    main headings: Traditional religion, Islam and Christianity. In this passage, our focus in on Traditional
+    Religion. Traditional or indigenous religion continues to exert a strong influence on many people''s
+    mind partly because of its association with their birth places and families. Each ethnic group has
+    its own religious traditions, and these are often linked to some sacred spots in the ethnic homeland.
+    Yet the various traditional religions have much in common: a remote but benevolent high god; under
+    him, a number of lesser gods who interact with mankind; and below them various spirits who inhabit
+    natural objects (trees, streams, rocks, etc.); below them again, and closest to living men and women,
+    the spirits of the ancestors. In Yoruba tradition, for example, there are more than 400 lesser deities
+    presided over by the high god, Olorun. Because he is remote from mankind, shrines are not built to
+    him and worship is not offered to him directly. The lesser gods, on the other hand, are the subject
+    of special cults, each with its own priest and devotees. Eshu, the messenger of the Gods; Ifa, the
+    god of divination; Shango, the god of thunder, and so on. Traditional religion was also strong in
+    other parts of Nigeria. In igbo Traditional religion, there were fewer gods. Although there was a
+    remote high god, the most important figure was Ala or Ani, the goddess of the earth. In Hausa land,
+    traditional religion has largely gone underground owing to the influence of Islam, existence of ''Bori''
+    but belief in the spirits and their power to possess people, especially women, is strong in some areas.
+    Each spirit is associated with certain type of behaviour, which is manifested by the possessed individual.
+    – Divination the discovery of what is unknown or is yet to happen by – supernatural or magical means
+    is an important element of traditional religion. It is often one of ''medicine men'' of the function
+    or ''herbalists''. In Igboland, there also used to be several oracles which people consulted in order
+    to seek solutions to their problems. With the coming of Christianity, their influence has however
+    waned, but in areas like Arochukwu and Okija, the influence of such oracles is still strongly felt.
+    (Adapted from Grant, Nnamonu and Jowitt (1997), Senior English Project: For Senior Secondary School
+    Students)'
+- id: passage_2012_passage_ii
+  label: PASSAGE_II
+  text: Recently, literally research reveals that Nigerians hardly have time to read. In essence, the
+    reading culture in Nigeria is now at a low ebb. It is disturbing, however, that the few Nigerians
+    that read concentrates on foreign books than indigenous productions. Most Nigerian authors of novels,
+    storybooks, fiction and non-fiction series have decried, on different occasions, their woes. They
+    were bitter in the way most owners of bookshops and publishers treat them. It was gathered that most
+    renowned bookshops in Nigeria hardly sell books written by indigenous authors. They preferred to stock
+    foreign books. When contacted by DAILY INDEPENDENT, the general manager of popular bookstore in Lagos
+    Island declared that most of the bookshops preferred to stock foreign books because of higher demands
+    for them, the question that bothers most Nigerian authors is, while their overseas counterparts are
+    being rewarded with great international honours, why are Nigerians not according them such recognition
+    in their own country? Recently, Nigerian novelist, Chimamanda Ngozi Adichie won the 2007 Orange Prize
+    Award, the literary world's top award for fiction in English written by women. The award carries a
+    prize tag of $30,000. It was reported in Publishers Weekly, Half of a Yellow Sun, the book that earned
+    her the award, was profoundly gripping. According to the reviewer, the book is a 'transcendent novel
+    of many descriptive triumph, most notably its diction of the impact of war brutalities on peasant
+    and intellectuals alike. It is a searing history in fictional form, intensely evocative and immensely
+    absorbing'. Chinua Achebe, 'Father of Modern African Literature', also won the second ever Man Booker
+    international 'Prize of "£60,000 with his first novel Things Fall published in 1958.' Apart, When
+    Professor Wole Soyinka won the Nobel Prize for Literature in 1986, the fame confirmed the relevance
+    of Nigerians in the world of classical excellence. Ben Okri won the 1991 Booker Prize with his work,
+    The Famished Road, and the world celebrated Nigeria as the giant of Africa. It was also gathered that
+    most of the publishers hurriedly produce books and in the process marred their good contents. Most
+    of the books are not properly edited and actually become substandard when compared with the foreign
+    products. The extent to which book publishing standard has fallen in Nigerian is alarming. Often Nigerian
+    publishers have been blamed for this. It is instructive that none of the books mentioned had been
+    published in Nigerian. It was discovered that most students in tertiary institutions depends on dictations
+    from their lecturers and/or handouts. A science lecturer in one of the Nigerian universities, who
+    had been a victim of handout sales scandal, told DAILY INDEPENDENT the reality of campus challenges
+    in relation to books. 'I was to dictate notes slowly to students who hung on every word in the absence
+    of textbooks in a library that had, to all intent and purpose, stopped buying new books when the local
+    currency devalued. But what other alternative does one have? Adapted from DAILY INDEPENDENT, Monday,
+    20 August, 2007
+- id: passage_2012_passage_iii
+  label: PASSAGE_III
+  text: It is said that experience is the best teacher, but to learn consciously through wisdom may even
+    be a better and more convenient way. To learn by experience is to learn from mistakes. It means you
+    have burnt your 'your eyes are fingers and now open'. This is a tough, costly and inconvenient way
+    to learn. Rather than leaving our learning to experience, why do we not learn consciously through
+    wisdom? We can learn by consciously going out of our way to acquire knowledge and wisdom rather than
+    leave our learning to chance. Surely, we can learn from mistakes but why wait till when we make mistakes
+    before we learn? We should give more premium to learning by wisdom than by experience. This will involve
+    one making up ones' mind to be decisive in learning. We must decide to learn consciously and not necessarily
+    from negative experiences. The first step is to realize that life is simply the outcomes and outplay
+    of decisions. Our life now is the sum total of our decisions and our future will be determined by
+    our decision of today. If we decide to learn today, we are not likely to make mistakes and when we
+    do not make mistakes. Experience need not to be our best teacher. To avoid making experience our best
+    teacher will take more than a decision. We must couple our decision with a complete and wholehearted
+    devotion. We must be resolved, resolute and resilient in our bid to learn by wisdom and not necessarily
+    by experience. This is crucial because situations and circumstances will want us to make a detour
+    and leave our learning and life to chance. We must therefore be disciplined to remain with our resolve
+    to make a clean break with experience as our best teacher. Discipline in this regard means learning
+    something new every day by wisdom rather than experience. It means consciously getting better by the
+    day in you chosen field. Discipline will demand taking advantage of every learning opportunity that
+    comes our way. It will mean we must pay the price for learning by – wisdom invest in books, magazines,
+    seminars and other means by which we may become wiser. It is much easier and cheaper to learn consciously
+    by wisdom than to learn by experience. When we learn by experience, the deed is done and we are just
+    picking up the pieces – learning in regret how to avoid such predicament next time. Consider the child
+    who grasps a burning coal, he has learned the hard way through the painful experience, but his fingers
+    will remain burnt. Thus, the saying, that experience is the best teacher, may not be justifiable after
+    all. Adapted from Sunday Tribune, July 2007
+questions:
+- number: 1
+  page: 48
+  section: null
+  instruction: null
+  stem: Which Question Paper Type of Uses of English as indicated above is given to you?
+  options:
+    A: Type Green
+    B: Type Purple
+    C: Type Red
+    D: Type Yellow
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2012_passage_i
+- number: 2
+  page: 48
+  section: null
+  instruction: null
+  stem: From the passage, one can say that all ethnic groups have
+  options:
+    A: different traditional religions with some elements of similarities
+    B: completely different religious practices
+    C: the same traditional religion
+    D: the same religious manifestations with common deities
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2012_passage_i
+- number: 3
+  page: 48
+  section: null
+  instruction: null
+  stem: According to the first paragraph, Nigerians believe that the
+  options:
+    A: supernatural and natural world co-exist
+    B: natural and supernatural worlds are antagonistic
+    C: supernatural world controls the natural world
+    D: supernatural world exploits the natural world
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2012_passage_i
+- number: 4
+  page: 48
+  section: null
+  instruction: null
+  stem: Traditional religion has waned in Nigeria owing to the
+  options:
+    A: influence of Islam over Bori spirits
+    B: influence of Christianity over local oracles
+    C: decline of the interest in traditional religions
+    D: influence of non-traditional religions
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2012_passage_i
+- number: 5
+  page: 48
+  section: null
+  instruction: null
+  stem: Which factor is common to all traditional religions as mentioned in the passage?
+  options:
+    A: Prayer only
+    B: Divination
+    C: Sacrifice only
+    D: Rituals
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2012_passage_i
+- number: 6
+  page: 51
+  section: null
+  instruction: null
+  stem: It can be inferred from the passage that
+  options:
+    A: Nigerians have access to foreign books only
+    B: Nigerian undergraduates do not read textbooks
+    C: Nigerians read foreign and indigenous books alike
+    D: Nigerians read mostly foreign books
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.3.i
+  skill_reason: 'Stem asks for a deduction or inference. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2012_passage_ii
+- number: 7
+  page: 51
+  section: null
+  instruction: null
+  stem: The reason for lack of indigenous books in most renowned bookshops, according to the passage,
+  options:
+    A: Nigerians prefer reading foreign books
+    B: foreign books attracts more buyers
+    C: indigenous books are sometimes not available
+    D: the low quality of indigenous books
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2012_passage_ii
+- number: 8
+  page: 51
+  section: null
+  instruction: null
+  stem: The expression ________ that earned her the award is profoundly gripping, as used in the passage,
+    means that the book
+  options:
+    A: is highly interesting and captures attention
+    B: is of high quality to the writer
+    C: attracts many indigenous and foreign readers
+    D: is widely acknowledged by many authors
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.2.i
+  skill_reason: 'Stem asks what a word or expression means in the passage. Mapped from the stem: no direction
+    is printed for comprehension items.'
+  passage_ref: passage_2012_passage_ii
+- number: 9
+  page: 51
+  section: null
+  instruction: null
+  stem: The university science lecturer gives his reason for issuing handouts as
+  options:
+    A: lack of teaching aids among students
+    B: low purchasing power
+    C: low quality of books
+    D: lack of sufficient time
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2012_passage_ii
+- number: 10
+  page: 52
+  section: null
+  instruction: null
+  stem: A suitable title for this passage is
+  options:
+    A: Nigerian Literary Writers
+    B: Nigerian Publishers and International Awards
+    C: Poor reading Culture in Nigeria
+    D: Why Nigerian Lecturers Sell Handouts
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2012_passage_ii
+- number: 11
+  page: 53
+  section: null
+  instruction: null
+  stem: The attitude of the writer of the passage can best be described as
+  options:
+    A: objective
+    B: critical
+    C: non-committal
+    D: emotional
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.3.i
+  skill_reason: 'Stem asks about the writer''s attitude, mood or intention. Mapped from the stem: no direction
+    is printed for comprehension items.'
+  passage_ref: passage_2012_passage_iii
+- number: 12
+  page: 54
+  section: null
+  instruction: null
+  stem: It can be deduced from the passage that
+  options:
+    A: all experiences are best teachers
+    B: learning through pains in better
+    C: experience is superior to wisdom
+    D: wise thoughts are more desirable than experience
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.3.i
+  skill_reason: 'Stem asks for a deduction or inference. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2012_passage_iii
+- number: 13
+  page: 54
+  section: null
+  instruction: null
+  stem: Which of the following states is true according to the passage?
+  options:
+    A: man must make mistake in order to survive
+    B: The totality of our actions should be decided by our judgement
+    C: If we do not make mistakes, experience must be our teacher
+    D: Our future would be judged by our past mistakes
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2012_passage_iii
+- number: 14
+  page: 54
+  section: null
+  instruction: null
+  stem: According to the passage, we be disciplined to
+  options:
+    A: make experience our best teacher in reality
+    B: learn from experience in future
+    C: chose the learning opportunity that comes our way
+    D: decide against making experience our teacher
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2012_passage_iii
+- number: 15
+  page: 54
+  section: null
+  instruction: null
+  stem: The phrase a complete and wholehearted devotion, as used in the passage, means
+  options:
+    A: acting without doubt
+    B: learning with tension
+    C: learning without pains
+    D: teaching with ease
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.2.i
+  skill_reason: 'Stem asks what a word or expression means in the passage. Mapped from the stem: no direction
+    is printed for comprehension items.'
+  passage_ref: passage_2012_passage_iii
+- number: 16
+  page: 55
+  section: Cloze passage
+  instruction: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options
+    are provided. Choose the most appropriate options for each gap. Each question carries 3 marks The
+    medical definition of miscarriage is the spontaneous loss of a pregnancy before twenty-four weeks.
+    Miscarriage is very common, occurring in ten to twenty per cent, of conformed pregnancies. Most of
+    these feature …16… [A. In the penultimate B. In the first C. around D. For] twelve week of pregnancy.
+    The most common …17… [A. type
+  stem: Gap 16 in the cloze passage.
+  options:
+    A: In the penultimate
+    B: In the first
+    C: around
+    D: For
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2012
+- number: 17
+  page: 55
+  section: Cloze passage
+  instruction: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options
+    are provided. Choose the most appropriate options for each gap. Each question carries 3 marks The
+    medical definition of miscarriage is the spontaneous loss of a pregnancy before twenty-four weeks.
+    Miscarriage is very common, occurring in ten to twenty per cent, of conformed pregnancies. Most of
+    these feature …16… [A. In the penultimate B. In the first C. around D. For] twelve week of pregnancy.
+    The most common …17… [A. type
+  stem: Gap 17 in the cloze passage.
+  options:
+    A: type
+    B: Cause
+    C: Period
+    D: Symptom
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2012
+- number: 18
+  page: 55
+  section: Cloze passage
+  instruction: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options
+    are provided. Choose the most appropriate options for each gap. Each question carries 3 marks The
+    medical definition of miscarriage is the spontaneous loss of a pregnancy before twenty-four weeks.
+    Miscarriage is very common, occurring in ten to twenty per cent, of conformed pregnancies. Most of
+    these feature …16… [A. In the penultimate B. In the first C. around D. For] twelve week of pregnancy.
+    The most common …17… [A. type
+  stem: Gap 18 in the cloze passage.
+  options:
+    A: clearly
+    B: naturally
+    C: directly
+    D: Medically
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2012
+- number: 19
+  page: 55
+  section: Cloze passage
+  instruction: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options
+    are provided. Choose the most appropriate options for each gap. Each question carries 3 marks The
+    medical definition of miscarriage is the spontaneous loss of a pregnancy before twenty-four weeks.
+    Miscarriage is very common, occurring in ten to twenty per cent, of conformed pregnancies. Most of
+    these feature …16… [A. In the penultimate B. In the first C. around D. For] twelve week of pregnancy.
+    The most common …17… [A. type
+  stem: Gap 19 in the cloze passage.
+  options:
+    A: painfully
+    B: frequently
+    C: gradually
+    D: Commonly
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2012
+- number: 20
+  page: 55
+  section: Cloze passage
+  instruction: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options
+    are provided. Choose the most appropriate options for each gap. Each question carries 3 marks The
+    medical definition of miscarriage is the spontaneous loss of a pregnancy before twenty-four weeks.
+    Miscarriage is very common, occurring in ten to twenty per cent, of conformed pregnancies. Most of
+    these feature …16… [A. In the penultimate B. In the first C. around D. For] twelve week of pregnancy.
+    The most common …17… [A. type
+  stem: Gap 20 in the cloze passage.
+  options:
+    A: prevented
+    B: managed
+    C: discovered
+    D: Stopped
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2012
+- number: 21
+  page: 55
+  section: Cloze passage
+  instruction: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options
+    are provided. Choose the most appropriate options for each gap. Each question carries 3 marks The
+    medical definition of miscarriage is the spontaneous loss of a pregnancy before twenty-four weeks.
+    Miscarriage is very common, occurring in ten to twenty per cent, of conformed pregnancies. Most of
+    these feature …16… [A. In the penultimate B. In the first C. around D. For] twelve week of pregnancy.
+    The most common …17… [A. type
+  stem: Gap 21 in the cloze passage.
+  options:
+    A: have pregnancy
+    B: incubation
+    C: mating
+    D: Fertilization
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2012
+- number: 22
+  page: 55
+  section: Cloze passage
+  instruction: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options
+    are provided. Choose the most appropriate options for each gap. Each question carries 3 marks The
+    medical definition of miscarriage is the spontaneous loss of a pregnancy before twenty-four weeks.
+    Miscarriage is very common, occurring in ten to twenty per cent, of conformed pregnancies. Most of
+    these feature …16… [A. In the penultimate B. In the first C. around D. For] twelve week of pregnancy.
+    The most common …17… [A. type
+  stem: Gap 22 in the cloze passage.
+  options:
+    A: occurred
+    B: enlarged
+    C: continued
+    D: emerged
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2012
+- number: 23
+  page: 55
+  section: Cloze passage
+  instruction: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options
+    are provided. Choose the most appropriate options for each gap. Each question carries 3 marks The
+    medical definition of miscarriage is the spontaneous loss of a pregnancy before twenty-four weeks.
+    Miscarriage is very common, occurring in ten to twenty per cent, of conformed pregnancies. Most of
+    these feature …16… [A. In the penultimate B. In the first C. around D. For] twelve week of pregnancy.
+    The most common …17… [A. type
+  stem: Gap 23 in the cloze passage.
+  options:
+    A: syndrome
+    B: process
+    C: response
+    D: system
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2012
+- number: 24
+  page: 56
+  section: Cloze passage
+  instruction: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options
+    are provided. Choose the most appropriate options for each gap. Each question carries 3 marks The
+    medical definition of miscarriage is the spontaneous loss of a pregnancy before twenty-four weeks.
+    Miscarriage is very common, occurring in ten to twenty per cent, of conformed pregnancies. Most of
+    these feature …16… [A. In the penultimate B. In the first C. around D. For] twelve week of pregnancy.
+    The most common …17… [A. type
+  stem: Gap 24 in the cloze passage.
+  options:
+    A: increases of miscarriage
+    B: starts
+    C: reduces
+    D: appears
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2012
+- number: 26
+  page: 56
+  section: null
+  instruction: In each of question 26 to 35, select the option that best explains the information conveyed
+    in the sentence. Each question carries 2 marks
+  stem: Hardworking students must not have a finger in very pie at school
+  options:
+    A: Hardworking students must not have a role to play in most activities in the school
+    B: Only hardworking students must participate in all activities in the school
+    C: Hardworking students do not participate in all activities in the school
+    D: Hardworking students must ask others to participate in school activities
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 27
+  page: 56
+  section: null
+  instruction: In each of question 26 to 35, select the option that best explains the information conveyed
+    in the sentence. Each question carries 2 marks
+  stem: The vice chancellor is riding the crest of the last quarter of his administration
+  options:
+    A: The vice chancellor enjoys the acknowledgement of the success of his administration
+    B: The vice chancellor does not people's criticism of his enjoy the administration
+    C: The vice chancellor hopes to overcome soon, the poor comments on his administration
+    D: The vice chancellor does not talk of his successes on office
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 28
+  page: 57
+  section: null
+  instruction: In each of question 26 to 35, select the option that best explains the information conveyed
+    in the sentence. Each question carries 2 marks
+  stem: She was absolved by the course from the charge
+  options:
+    A: She was convicted for the charge
+    B: She was blamed and charged to court
+    C: Her case was resolved by the court
+    D: She was declared free from the charge
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 29
+  page: 57
+  section: null
+  instruction: In each of question 26 to 35, select the option that best explains the information conveyed
+    in the sentence. Each question carries 2 marks
+  stem: The landlord is fond of throwing his weight about
+  options:
+    A: The landlord likes healthy exercise
+    B: The landlord is overweight
+    C: The landlord gives orders to people
+    D: The landlord is respected by his tenants
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 30
+  page: 57
+  section: null
+  instruction: In each of question 26 to 35, select the option that best explains the information conveyed
+    in the sentence. Each question carries 2 marks
+  stem: The company ought to have issued warrants for one billion shares
+  options:
+    A: The company has issued one billion shares
+    B: The management expected the company to issue more than one billion shares
+    C: Members of the company bought less than one billion shares
+    D: The company did not issue one billion shares
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 31
+  page: 57
+  section: null
+  instruction: In each of question 26 to 35, select the option that best explains the information conveyed
+    in the sentence. Each question carries 2 marks
+  stem: He needed not to have played in the position of quarterback in the volley ball
+  options:
+    A: He participated in the game in his unusual position
+    B: Nobody expected him to have participated in the game
+    C: He wanted to play in a position other than the one he was offered
+    D: Someone did not want him to play in the position that he played
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 32
+  page: 58
+  section: null
+  instruction: In each of question 26 to 35, select the option that best explains the information conveyed
+    in the sentence. Each question carries 2 marks
+  stem: I wouldn't have responded to his rude talk, if I were you
+  options:
+    A: The advice was taken by the respondent, so he did not respond to the talk
+    B: The adviser put himself in the respondent's position, so he did not respond to the talk
+    C: The respondent replied to the speaker's talk, although he ought not have done so
+    D: What was advisable was that the respondent gave it back to the speaker
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 33
+  page: 58
+  section: null
+  instruction: In each of question 26 to 35, select the option that best explains the information conveyed
+    in the sentence. Each question carries 2 marks
+  stem: He could not speak out because he had a feet of clay
+  options:
+    A: His feet was muddy
+    B: He was weak and cowardly
+    C: He was clumsy and lazy
+    D: He was shy and timid
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 34
+  page: 58
+  section: null
+  instruction: In each of question 26 to 35, select the option that best explains the information conveyed
+    in the sentence. Each question carries 2 marks
+  stem: The player wasted a golden opportunity during the penalty shoot-out
+  options:
+    A: The player first the bar
+    B: The player did not score the shot
+    C: The player scored the shot that made them win the gold cup
+    D: Instead of a silver cup, they received the golden one
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 36
+  page: 59
+  section: null
+  instruction: In each of question 36 to 50, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: As an idiot, the boy is weak in class
+  options:
+    A: a deviant
+    B: a dunce
+    C: an expert
+    D: a genius
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 37
+  page: 59
+  section: null
+  instruction: In each of question 36 to 50, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: We were shocked by the news that he had lost the money
+  options:
+    A: astonished
+    B: disconcerted
+    C: unconcerned
+    D: surprised
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 38
+  page: 59
+  section: null
+  instruction: In each of question 36 to 50, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: The principal was advised to be flexible on critical issues
+  options:
+    A: livid
+    B: cautious
+    C: evasive
+    D: rigid
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 39
+  page: 59
+  section: null
+  instruction: In each of question 36 to 50, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: Bola always looks sober
+  options:
+    A: excited
+    B: serious
+    C: worried
+    D: helpless
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 40
+  page: 59
+  section: null
+  instruction: In each of question 36 to 50, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: Dupe was promoted for her efficiency
+  options:
+    A: ability
+    B: incompetence
+    C: inconsistency
+    D: rudeness
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 41
+  page: 59
+  section: null
+  instruction: In each of question 36 to 50, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: The management wants to consider her reticent behaviour in due course
+  options:
+    A: disapproving
+    B: disciplinarian
+    C: contemplative
+    D: loquacious
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 42
+  page: 59
+  section: null
+  instruction: In each of question 36 to 50, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: Election process often become volatile
+  options:
+    A: calm
+    B: strange
+    C: sudden
+    D: latent
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 43
+  page: 60
+  section: null
+  instruction: In each of question 36 to 50, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: Oche entered the principal's office in a rather abrasive manner
+  options:
+    A: gentle
+    B: rude
+    C: lackadaisical
+    D: indifferent
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 44
+  page: 60
+  section: null
+  instruction: In each of question 36 to 50, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: Otokpa is a member of the ad committee on stock hoc acquisition
+  options:
+    A: improvised
+    B: formal
+    C: temporary
+    D: fact-finding
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 45
+  page: 60
+  section: null
+  instruction: In each of question 36 to 50, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: His gift to the poor was always infinitesimal
+  options:
+    A: large
+    B: small
+    C: supportive
+    D: shameful
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 46
+  page: 60
+  section: null
+  instruction: In each of question 36 to 50, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: The economist concluded that several factors have been adduced to explain the fall in the birth
+    rate
+  options:
+    A: affirmed
+    B: diffused
+    C: mentioned
+    D: refuted
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 47
+  page: 60
+  section: null
+  instruction: In each of question 36 to 50, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: The presidential system is an antidote to some political ailments
+  options:
+    A: an answer
+    B: a reply
+    C: an injury
+    D: an obstacle
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 48
+  page: 60
+  section: null
+  instruction: In each of question 36 to 50, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: Ola thought that her father was very callous
+  options:
+    A: parlous
+    B: compassionate
+    C: wicked
+    D: cheerful
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 49
+  page: 60
+  section: null
+  instruction: In each of question 36 to 50, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: He was very much respected, though he had no temporal power
+  options:
+    A: spiritual
+    B: mundane
+    C: permanent
+    D: ephemeral
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 50
+  page: 61
+  section: null
+  instruction: In each of question 36 to 50, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: The way the worship was organized was rather hit-and- miss
+  options:
+    A: systematic
+    B: hasty
+    C: slow
+    D: funny
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 51
+  page: 61
+  section: null
+  instruction: In each of question 51 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: Some men will continue to cause offences until they are given a taste of their own medicine
+  options:
+    A: placated
+    B: revenged on
+    C: recompensed for
+    D: cured
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 52
+  page: 61
+  section: null
+  instruction: In each of question 51 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: Okibe was rusticated for his derogated remark about the principal
+  options:
+    A: complimentary
+    B: unsavoury
+    C: unwarranted
+    D: lacklustre
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 53
+  page: 61
+  section: null
+  instruction: In each of question 51 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: Justice is difficult to enforce because people are unwilling to accept any loss of sovereignty
+  options:
+    A: autonomy
+    B: position
+    C: leadership
+    D: kingdom
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 54
+  page: 61
+  section: null
+  instruction: In each of question 51 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: There are still women virtuous in our society today
+  options:
+    A: clever
+    B: upright
+    C: devilish
+    D: intelligent
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 55
+  page: 61
+  section: null
+  instruction: In each of question 51 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: The type of response is typical of a lazy teacher
+  options:
+    A: symptomatic
+    B: characteristic
+    C: universal
+    D: incontestable
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 56
+  page: 62
+  section: null
+  instruction: In each of question 51 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: Akin is an gambler inveterate
+  options:
+    A: a selfish and self-centred
+    B: an extremely unlucky but popular
+    C: an incurable but fearful
+    D: a long time and incorrigible
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 57
+  page: 62
+  section: null
+  instruction: In each of question 51 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: He was too petrified to give the closing remarks at the conference
+  options:
+    A: frightened
+    B: delighted
+    C: agitated
+    D: happy
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 58
+  page: 62
+  section: null
+  instruction: In each of question 51 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: During a particular time of the day, the road in the shimmers heat
+  options:
+    A: darkens
+    B: lightens
+    C: shines
+    D: beams
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 59
+  page: 62
+  section: null
+  instruction: In each of question 51 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: Every human being is vulnerable to communicable diseases
+  options:
+    A: liable
+    B: lifted
+    C: immuned
+    D: closed
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 60
+  page: 62
+  section: null
+  instruction: In each of question 51 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: Mariam looks rather furtive to Shehu
+  options:
+    A: intoxicated
+    B: unfriendly
+    C: sad
+    D: sly
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 61
+  page: 62
+  section: null
+  instruction: In each of question 51 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: The student's union leader delivered his speech extempore
+  options:
+    A: out-of-hand
+    B: off the cuff
+    C: accurately
+    D: courageously
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 62
+  page: 63
+  section: null
+  instruction: In each of question 51 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: His story gave us an inkling of what he passed through during the strike
+  options:
+    A: a possible idea
+    B: a taste
+    C: a summary
+    D: the right view
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 63
+  page: 63
+  section: null
+  instruction: In each of question 51 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: These policies have been by the ruling party expoused
+  options:
+    A: condemned
+    B: rejected
+    C: supported
+    D: outlined
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 64
+  page: 63
+  section: null
+  instruction: In each of question 51 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: We must not foreclose reconciliation as the purpose of his trip
+  options:
+    A: exclude
+    B: consider
+    C: underestimate
+    D: forgo
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 65
+  page: 63
+  section: null
+  instruction: In each of question 51 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: Her finding widely exploded held beliefs about learning
+  options:
+    A: challenged
+    B: debunked
+    C: projected
+    D: confirmed
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 67
+  page: 63
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap(s)
+  stem: Vacancies in the company will be notified by __
+  options:
+    A: bulletin
+    B: publication
+    C: publicity
+    D: advertisement
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 68
+  page: 63
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap(s)
+  stem: The driver was short of petrol, so he __ ...... down the hills with the engine switched off
+  options:
+    A: glided
+    B: coasted
+    C: wheeled
+    D: taxied
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 71
+  page: 64
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap(s)
+  stem: One should be careful how the public, shouldn't __behaves in __ ...... ?
+  options:
+    A: one/one
+    B: he/he
+    C: she/one
+    D: one/he
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 72
+  page: 64
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap(s)
+  stem: __ ...... , a good leader must have two characteristics
+  options:
+    A: First and formost
+    B: First and formust
+    C: First and farmost
+    D: First and foremost
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 73
+  page: 64
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap(s)
+  stem: We visited his house__ ...... three times
+  options:
+    A: like
+    B: for like
+    C: about
+    D: for about
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 75
+  page: 64
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap(s)
+  stem: Everyone makes mistakes occasionally; nobody is__
+  options:
+    A: incorrigible
+    B: Imperfect
+    C: Infallible
+    D: indestructible
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 78
+  page: 64
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap(s)
+  stem: The professor of __ medicine has__ ...... the mystery of flu
+  options:
+    A: vetinary / unraveled
+    B: vertrinary/unravelled
+    C: veterinary/unraveled
+    D: veterinary/unravelled
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 79
+  page: 64
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap(s)
+  stem: Her mother brought her some __
+  options:
+    A: clothes
+    B: yards
+    C: cloth
+    D: clothing
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 80
+  page: 64
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap(s)
+  stem: Many workers were__ ...... as a result of the textile closure
+  options:
+    A: laid down
+    B: laid off
+    C: laid out
+    D: laid up
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 81
+  page: 64
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap(s)
+  stem: The driver died in the __ ...... road accident
+  options:
+    A: fatal
+    B: brutal
+    C: serious
+    D: pathetic
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 82
+  page: 64
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap(s)
+  stem: __ your parents frown __ ...... our friendship, we shouldn't see each other anymore
+  options:
+    A: Because / over
+    B: Since / at
+    C: Although /at
+    D: As / upon
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 83
+  page: 65
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap(s)
+  stem: For more productivity, the company is focusing attention on the possible___ ...... of available
+    recourses
+  options:
+    A: synergy
+    B: tapping
+    C: alignment
+    D: arrangement
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 84
+  page: 65
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap(s)
+  stem: __ ...... she didn't trust him, she married him
+  options:
+    A: After
+    B: Much as
+    C: Since
+    D: Though
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 86
+  page: 65
+  section: null
+  instruction: In each of question 86 to 88, choose the option that has the same vowel sound as the one
+    represented by the letter(s) underlined
+  stem: book
+  options:
+    A: cool
+    B: cook
+    C: fool
+    D: tool
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.C.1.i
+  skill_reason: Printed direction asks for the same vowel sound.
+  passage_ref: null
+- number: 87
+  page: 65
+  section: null
+  instruction: In each of question 86 to 88, choose the option that has the same vowel sound as the one
+    represented by the letter(s) underlined
+  stem: village
+  options:
+    A: page
+    B: pig
+    C: made
+    D: came
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.C.1.i
+  skill_reason: Printed direction asks for the same vowel sound.
+  passage_ref: null
+- number: 88
+  page: 65
+  section: null
+  instruction: In each of question 86 to 88, choose the option that has the same vowel sound as the one
+    represented by the letter(s) underlined
+  stem: patch
+  options:
+    A: starch
+    B: fare
+    C: mad
+    D: brave
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.C.1.i
+  skill_reason: Printed direction asks for the same vowel sound.
+  passage_ref: null
+- number: 89
+  page: 65
+  section: null
+  instruction: In each of question 89 to 91, choose the option that has the same consonant sound as the
+    one represented by the letter(s) underlined
+  stem: tangerine
+  options:
+    A: gear
+    B: danger
+    C: girl
+    D: ignore
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.C.2.i
+  skill_reason: Printed direction asks for the same consonant sound.
+  passage_ref: null
+- number: 90
+  page: 66
+  section: null
+  instruction: In each of question 89 to 91, choose the option that has the same consonant sound as the
+    one represented by the letter(s) underlined
+  stem: hair
+  options:
+    A: heir
+    B: hour
+    C: honest
+    D: house
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.C.2.i
+  skill_reason: Printed direction asks for the same consonant sound.
+  passage_ref: null
+- number: 91
+  page: 66
+  section: null
+  instruction: In each of question 89 to 91, choose the option that has the same consonant sound as the
+    one represented by the letter(s) underlined
+  stem: edition
+  options:
+    A: bash
+    B: catch
+    C: bastion
+    D: rating
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.C.2.i
+  skill_reason: Printed direction asks for the same consonant sound.
+  passage_ref: null
+- number: 92
+  page: 66
+  section: null
+  instruction: In each of questions, 92 to 94, choose the appropriate stress pattern from the options.
+    The syllables are written in capital letters
+  stem: demarcation
+  options:
+    A: demarCAtion
+    B: DEmarcation
+    C: deMARcation
+    D: demarcaTION
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.C.4.i
+  skill_reason: Printed direction asks for the stress pattern.
+  passage_ref: null
+- number: 93
+  page: 66
+  section: null
+  instruction: In each of questions, 92 to 94, choose the appropriate stress pattern from the options.
+    The syllables are written in capital letters
+  stem: impossible
+  options:
+    A: imPOSible
+    B: IMposible
+    C: imposSIble
+    D: impossiBLE
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.C.4.i
+  skill_reason: Printed direction asks for the stress pattern.
+  passage_ref: null
+- number: 94
+  page: 66
+  section: null
+  instruction: In each of questions, 92 to 94, choose the appropriate stress pattern from the options.
+    The syllables are written in capital letters
+  stem: imperialism
+  options:
+    A: IMperialism
+    B: imPErialism
+    C: impeRIAlism
+    D: imperialiSM
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.C.4.i
+  skill_reason: Printed direction asks for the stress pattern.
+  passage_ref: null
+- number: 95
+  page: 66
+  section: null
+  instruction: In each of questions 95 to 97, choose the option that has the stress on the first syllable
+  stem: Gap 95 in the cloze passage.
+  options:
+    A: madam
+    B: eighteen
+    C: invent
+    D: command
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: null
+- number: 96
+  page: 66
+  section: null
+  instruction: In each of questions 95 to 97, choose the option that has the stress on the first syllable
+  stem: Gap 96 in the cloze passage.
+  options:
+    A: nineteen
+    B: mother
+    C: estate
+    D: announce
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: null
+- number: 97
+  page: 66
+  section: null
+  instruction: In each of questions 95 to 97, choose the option that has the stress on the first syllable
+  stem: Gap 97 in the cloze passage.
+  options:
+    A: commute
+    B: import (verb)
+    C: intend
+    D: export (noun)
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: null
+- number: 98
+  page: 67
+  section: null
+  instruction: In each of questions 98 to 100, the word in capital letters has the emphatic stress. Choose
+    the option to which the given sentence relates
+  stem: The traditional chief NARRATED the story to the children
+  options:
+    A: The children heard the story from the traditional chief
+    B: Who narrated the story to the children?
+    C: The children could not listen to the story by the traditional chief
+    D: Did the chief hide the story from the children?
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.C.5.i
+  skill_reason: 'Printed direction is the emphatic-stress format: which question the sentence answers.'
+  passage_ref: null
+- number: 99
+  page: 67
+  section: null
+  instruction: In each of questions 98 to 100, the word in capital letters has the emphatic stress. Choose
+    the option to which the given sentence relates
+  stem: The ACCOUNTANT paid the workers' July salary in September
+  options:
+    A: When were the workers paid
+    B: Did the cashier pay the workers' salary in September
+    C: Workers received their July salary in September?
+    D: The September salary was paid in July?
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.C.5.i
+  skill_reason: 'Printed direction is the emphatic-stress format: which question the sentence answers.'
+  passage_ref: null
+- number: 100
+  page: 67
+  section: null
+  instruction: In each of questions 98 to 100, the word in capital letters has the emphatic stress. Choose
+    the option to which the given sentence relates
+  stem: The cat DEVOURED the rat
+  options:
+    A: Did the rat devoured the cat?
+    B: What devoured the rat?
+    C: Did the cat pet the rat?
+    D: Is this the rat the cat devoured?
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.C.5.i
+  skill_reason: 'Printed direction is the emphatic-stress format: which question the sentence answers.'
+  passage_ref: null

@@ -1,0 +1,1665 @@
+# UTME 2010, Use of English — extracted from the text layer of
+# docs/questions/utme/english/JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf.
+#
+# 97 questions kept, 3 rejected.
+# Answers come from the key printed with the paper, which is a compiler's, not
+# JAMB's: they load as `published_key` and still need a person to check them.
+# Skill mappings follow the paper's own printed directions where it prints one;
+# 14 comprehension items had none and were mapped from the stem instead.
+format_version: 1
+source:
+  file: docs/questions/utme/english/JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf
+  exam_year: 2010
+  paper_label: UTME 2010 Use of English (objective)
+  paper_code: UTME-2010-ENG
+  question_count: 100
+  answer_source: published_key
+passages:
+- id: cloze_2010
+  label: CLOZE PASSAGE
+  text: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options are
+    provided. Choose the most appropriate option for each gap. Each question carries 2 marks Drought is
+    a word that invokes strong emotions. This is not surprising as the … 16 … [A. ideology B. phenomenon
+    C. idea D. component] is usually accompanied by a number of unpleasant developments. These developments
+    have … 17 … [A. feedback B. Results C. Implications D. outcomes] for all citizens, starting from the
+    peasant farmers to the state and federal governments which may be plunged into emergency and crises
+    situations which, if not successfully …18… [A. managed B. examined D. studied] could result in social
+    unrest. The timeliness of the onset of the rains in various regions of the country and their adequate
+    distribution thereafter have …19… [A. objects B. become subjects C. issues D. topics] of considerable
+    anxiety to all people. The fact, however, is that periodic normal …20… [A. reduction in amount B.
+    supply C. size D. flood] of rainfall in the country is not new. Since large areas of the country are
+    drought prone, the consequences are …21… [A. effective B. disastrous C. evident D. inevitable]. Dry
+    spells could be very severe. There are two aspects of coping with drought. One has to do with emergency
+    measures and the other with …22… [A. routine B. organized C. urgent D. delayed] measures. An immediate
+    consequence of any drought would be famine. In addition, where whole populations are forced to abandon
+    their lands or pastures in search of food, there are bound to be …23… [A. other lasting and longitudinal
+    B. objective C. simultaneous D. parallel] consequences such as distress, sales of cattle by livestock
+    owners in order to buy food. Government should provide farmers with agricultural inputs and ensure
+    that they have easy access to these inputs under the …24… [A. action B. process relief C. scheme D.
+    plan].
+- id: passage_2010_passage_i
+  label: PASSAGE_I
+  text: 'One of the interesting things to me about spaceship is that it is a mechanical vehicle, just
+    as an automobile. If you own a car, you realize that you must put oil and gas into it, and you must
+    put water in the radiator and take care of the care as a whole. You begin to develop quite a little
+    thermodynamic sense. You know that you are either going to have to keep the machine in a good order
+    or it is going to be in trouble and fail to function. We have not been seeing our Spaceship Earth
+    as an integrally designed machine which to be persistently successful, must be comprehended and serviced
+    in total. ENGLISH QUESTIONS Now there is one outstanding important fact regarding Spaceship Earth,
+    and this is that no instruction book came with it. I think it is very significant that there is no
+    instruction book, for successfully operating of our ship, in view of the infinite attention to all
+    other details displayed by our ship. It must be taken as deliberate and purposeful that an instruction
+    book was omitted. Lack of instruction has forces us to find out that there are two kinds of – mangoes
+    unripe mangoes that will kill us and ripped mangoes which will nourish us. And we had to find out
+    ways of telling which-was-which mangoes before we ate it or otherwise we would die. So we were forced,
+    because of this to devise scientific experimental procedures and to interpret effectively the significance
+    of the experimental findings. Thus, because the instruction manual was missing, we are learning how
+    we can safely survive on the planet. Quite clearly, all living being are utterly helpless at the moment
+    of birth. The human child stays helpless longer that the young of any species. Apparently, it is part
+    of ''invention'' that man is meant to be utterly helpless through certain anthropological phases.
+    When he begins to be able to get on a little better, he is meant to discover some of the physical
+    principles inherent in the universe as well as the many recourses around him which will further multiply
+    his knowledge. Designed into this Spaceship Earth''s total wealth was a big safety factor. This allowed
+    man to be very ignorant for a long time until he had amassed enough experiences from which to extract
+    progressively the system of generalized principles governing increase of energy. The design omission
+    of the instruction book forced man to discover retrospectively just what his most important capabilities
+    are. He learned to generalize fundamental principles of universe. Adapted from Oluikpe, B.O. et al
+    (2005) Intensive English for Senior Secondary School 2, Onitsha: AFP'
+- id: passage_2010_passage_ii
+  label: PASSAGE_II
+  text: Stress is by far the most common cause of ill health in our society, and may be the underlying
+    cause of as many as 70-80% of all visits to family doctors. It is also the problem that every doctor
+    shares with patients. Experts note that stress is an issue everyone can relate to experimentally.
+    In studying and better understanding about stress, we can derive personal as well as professional
+    benefits. Stress can be overcome without undergoing duress. They often say anyone who wants to help
+    someone deal with his/her stress should learn to handle his/hers first. The manifestations of stress
+    are legion. It can contribute or mimic just about any symptom you can think of. However, the main
+    symptoms are physical, mental, emotional and behavioural. The causes of stress are multiple and varied
+    but they can be classified into external and internal. External stressors can include relatively getting
+    sick or dying, jobs being lost or people criticising or one becoming angry. However, most of the stress
+    people experience is self- generated. Experts tell us that we create the majority of our upset indicating
+    that because we cause most of our own stress, we can do something about it. This gives us a measure
+    of choice and control that we do not always have when outside forces acts on us. This also leads to
+    a basic premise about stress reduction. To master stress-change, you have to figure out what you are
+    doing that is contributing to your problem and change it. These changes fall into behaviour, thinking,
+    lifestyle choices and / or situations you are in. By getting to the root cause of your stress, you
+    can prevent recurrences. As a way of draining off stress energy, nothing beats aerobic exercise. To
+    understand why, we need to review what stress is. People often think of stress as pressure at work,
+    a demanding boss, a sick child or rush-hour traffic. These may be triggers but stress is actually
+    the body reaction to factors such as these. Stress is the fight-or-flight response in the body, mediated
+    be adrenaline and other stress hormones, and comprised such physiologic changes as increased in heart
+    rate and blood pressure, faster breathing, muscle tension, dilated pupils, dry mouth and increased
+    blood sugar. In order word, stress is the state of increased arousal necessary for an organism to
+    defend itself at a time of danger. Exercise is the most logical way to dissipate the excess energy.
+    It is what our bodies are trying to do when we pace around or tap our legs and fingers. It is much
+    better to channel it into a more complete form of exercise like a brisk walk, a run, a bike ride,
+    or a game of squash. Just as we are all capable of mounting up and sustaining a stress reaction, we
+    have also inherited the ability to put our bodies into a state of deep relaxation called the 'relaxation
+    response'. In this state, all the physiologic events in the stress reaction are reversed. Pulse slows,
+    blood pressure falls, breathing slows and muscle relax. Adopted from VANGUARD, 19TH March, 2008
+- id: passage_2010_passage_iii
+  label: PASSAGE_III
+  text: There are many indicators with which to assess or measure corruption. One of them is the affluent
+    living habit of the public official compared to his / her income. Corruption occurs when a public
+    official expects to be induced to perform an act which that public officials is ordinarily required
+    to do by law. Corruption can slow down development. One of the most widely discussed consequences
+    of corruption is the distortion of governmental expenditure. This often results in public money being
+    wasted on white elephant projects, rather than people oriented services, such as health and education.
+    As a result, more opportunities are presented for corrupt use or diversion of funds. Raising the ethical
+    standard of governance can lead to many benefits especially for the economic, political and social
+    development of a country. Fighting corruption and promoting governance is therefore crucial to developing
+    an environment that facilitates the social, political and economic development of the people. However,
+    while there are often general statement made about the effect of corruption on poverty and development.
+    There is not an explicit recognition that corruption is more than just wealth misappropriation or
+    abuse of power. Corruption impoverishes countries and deprives their citizens of good governance.
+    It destabilizes economic systems. When crime and other illegal activities flourish, basic public functions
+    are eroded and the quality of life of the people is reduced. Bribery, for example, is universally
+    regarded as a crime, but it also reflects socio-economic problems that require broad-based preventive
+    measures, and the involvement of the society at large. Another implication of global measures against
+    corruption in making government work better by improving the economy. Finally, redesigning political
+    and regulatory structures will reduce corruption and other anti-system players that encourage corrupt
+    practice
+questions:
+- number: 2
+  page: 3
+  section: null
+  instruction: null
+  stem: According to the writer, the exciting thing about Spaceship Earth is that
+  options:
+    A: has no instruction manual
+    B: it is not difficult to maintain
+    C: is peculiar to other automobiles
+    D: is relatively easy to operate
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.3.i
+  skill_reason: 'Stem asks about the writer''s attitude, mood or intention. Mapped from the stem: no direction
+    is printed for comprehension items.'
+  passage_ref: passage_2010_passage_i
+- number: 3
+  page: 4
+  section: null
+  instruction: null
+  stem: The absence of instruction manual in Spaceship Earth has
+  options:
+    A: made the operation of the Spaceship Earth difficult
+    B: forced man to devise other means of travelling in spacecraft
+    C: challenged man's inquisitiveness
+    D: made man helpless
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2010_passage_i
+- number: 4
+  page: 4
+  section: null
+  instruction: null
+  stem: From the passage, it can be deduced that man
+  options:
+    A: learns by experiment and education
+    B: learns by chance and accidentally
+    C: is incapable of solving all his problems
+    D: by his nature is in constant search of knowledge
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.3.i
+  skill_reason: 'Stem asks for a deduction or inference. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2010_passage_i
+- number: 5
+  page: 4
+  section: null
+  instruction: null
+  stem: The writer's mood in the passage is that of
+  options:
+    A: non-committal
+    B: pessimism
+    C: optimism
+    D: frustration
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.3.i
+  skill_reason: 'Stem asks about the writer''s attitude, mood or intention. Mapped from the stem: no direction
+    is printed for comprehension items.'
+  passage_ref: passage_2010_passage_i
+- number: 6
+  page: 6
+  section: null
+  instruction: null
+  stem: The expression, … stress is an issue everybody can relate to experimentally, means that
+  options:
+    A: it is better understood when experienced
+    B: its problem can be solved by everybody
+    C: everybody avoids it
+    D: everybody encounters it
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.2.i
+  skill_reason: 'Stem asks what a word or expression means in the passage. Mapped from the stem: no direction
+    is printed for comprehension items.'
+  passage_ref: passage_2010_passage_ii
+- number: 7
+  page: 6
+  section: null
+  instruction: null
+  stem: Which of the following is true according to the passage?
+  options:
+    A: Stress is mostly caused by internal factors
+    B: Stress can only be avoided during relaxation
+    C: Stress is better handled by the individual
+    D: The issues of stress can be solved with no effort
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2010_passage_ii
+- number: 8
+  page: 6
+  section: null
+  instruction: null
+  stem: According to the passage, the major step in controlling stress is
+  options:
+    A: changing one's attitude to stressors
+    B: understanding the history of disease
+    C: visiting family doctors for check-up and treatment
+    D: constant exercise to dissipate every energy
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2010_passage_ii
+- number: 9
+  page: 7
+  section: null
+  instruction: null
+  stem: The experts feel one can control one's stress because
+  options:
+    A: its causes are understandable
+    B: it is not difficult to control
+    C: external factors contribute less stress
+    D: it is individually initiated
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2010_passage_ii
+- number: 10
+  page: 7
+  section: null
+  instruction: null
+  stem: From the passage, it can be deduced that stress is
+  options:
+    A: hormonal disorder in the body system
+    B: individually induced problems
+    C: bodily reaction to internal factors
+    D: bodily reaction to external factors
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.3.i
+  skill_reason: 'Stem asks for a deduction or inference. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2010_passage_ii
+- number: 11
+  page: 8
+  section: null
+  instruction: null
+  stem: According to the writer, corruption is triggered off by
+  options:
+    A: unnecessary affluence
+    B: selfish interest
+    C: private officials
+    D: public officers
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.3.i
+  skill_reason: 'Stem asks about the writer''s attitude, mood or intention. Mapped from the stem: no direction
+    is printed for comprehension items.'
+  passage_ref: passage_2010_passage_iii
+- number: 12
+  page: 8
+  section: null
+  instruction: null
+  stem: From the passage, one of the consequences of corruption is that
+  options:
+    A: large projects are executed
+    B: it is beneficial to wealth people whole stole public wealth
+    C: it impedes the progress of a nation
+    D: people get what they want with so much money to spend
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2010_passage_iii
+- number: 13
+  page: 9
+  section: null
+  instruction: null
+  stem: Who, according to the writer should prevent corruption?
+  options:
+    A: Lawyers and Police
+    B: Corrupt public officers
+    C: The government
+    D: The people
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.3.i
+  skill_reason: 'Stem asks about the writer''s attitude, mood or intention. Mapped from the stem: no direction
+    is printed for comprehension items.'
+  passage_ref: passage_2010_passage_iii
+- number: 14
+  page: 9
+  section: null
+  instruction: null
+  stem: Which of the following is an indication of ethical standard of governance?
+  options:
+    A: Fundamental human right
+    B: Socio-economic instability
+    C: Democratic governance
+    D: Bloated expenditure
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2010_passage_iii
+- number: 15
+  page: 9
+  section: null
+  instruction: null
+  stem: The essence of fighting corruption, according to the passage, is to
+  options:
+    A: send the corrupt to yell
+    B: promote good governance
+    C: punish corrupt politicians
+    D: make people richer
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2010_passage_iii
+- number: 16
+  page: 9
+  section: Cloze passage
+  instruction: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks Drought
+    is a word that invokes strong emotions. This is not surprising as the … 16 …
+  stem: Gap 16 in the cloze passage.
+  options:
+    A: ideology
+    B: phenomenon
+    C: idea
+    D: component
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2010
+- number: 17
+  page: 9
+  section: Cloze passage
+  instruction: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks Drought
+    is a word that invokes strong emotions. This is not surprising as the … 16 …
+  stem: Gap 17 in the cloze passage.
+  options:
+    A: feedback
+    B: Results
+    C: Implications
+    D: outcomes
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2010
+- number: 19
+  page: 10
+  section: Cloze passage
+  instruction: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks Drought
+    is a word that invokes strong emotions. This is not surprising as the … 16 …
+  stem: Gap 19 in the cloze passage.
+  options:
+    A: objects
+    B: become subjects
+    C: issues
+    D: topics
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2010
+- number: 20
+  page: 10
+  section: Cloze passage
+  instruction: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks Drought
+    is a word that invokes strong emotions. This is not surprising as the … 16 …
+  stem: Gap 20 in the cloze passage.
+  options:
+    A: reduction in amount
+    B: supply
+    C: size
+    D: flood
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2010
+- number: 21
+  page: 10
+  section: Cloze passage
+  instruction: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks Drought
+    is a word that invokes strong emotions. This is not surprising as the … 16 …
+  stem: Gap 21 in the cloze passage.
+  options:
+    A: effective
+    B: disastrous
+    C: evident
+    D: inevitable
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2010
+- number: 22
+  page: 10
+  section: Cloze passage
+  instruction: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks Drought
+    is a word that invokes strong emotions. This is not surprising as the … 16 …
+  stem: Gap 22 in the cloze passage.
+  options:
+    A: routine
+    B: organized
+    C: urgent
+    D: delayed
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2010
+- number: 23
+  page: 10
+  section: Cloze passage
+  instruction: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks Drought
+    is a word that invokes strong emotions. This is not surprising as the … 16 …
+  stem: Gap 23 in the cloze passage.
+  options:
+    A: other lasting and longitudinal
+    B: objective
+    C: simultaneous
+    D: parallel
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2010
+- number: 24
+  page: 10
+  section: Cloze passage
+  instruction: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks Drought
+    is a word that invokes strong emotions. This is not surprising as the … 16 …
+  stem: Gap 24 in the cloze passage.
+  options:
+    A: action
+    B: process relief
+    C: scheme
+    D: plan
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2010
+- number: 26
+  page: 11
+  section: null
+  instruction: In each of questions 26 to 35, select the option that best explains the information conveyed
+    in the sentence. Each question carries 2 marks
+  stem: Though Mr. Iro is a new chairman, he views other members with jaundiced eye
+  options:
+    A: He takes a rather forceful position on dealing with his members
+    B: He takes an unfavourable position concerning his members
+    C: He takes a sickly view of his members
+    D: He takes a rather hazy view of his members
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 27
+  page: 11
+  section: null
+  instruction: In each of questions 26 to 35, select the option that best explains the information conveyed
+    in the sentence. Each question carries 2 marks
+  stem: People are not interested in who rules
+  options:
+    A: People are not ruled by the leaders they want
+    B: People are not concerned about who rules them
+    C: The rulers are not concerned about the people
+    D: People who rule are not interested in the ruled
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 28
+  page: 11
+  section: null
+  instruction: In each of questions 26 to 35, select the option that best explains the information conveyed
+    in the sentence. Each question carries 2 marks
+  stem: It was good to steer a middle course in whatever one does
+  options:
+    A: It is always good to get midway in anything one does
+    B: It is always good to act with moderation
+    C: It is always good to move away from the forefront
+    D: It is always good to work very hard
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 29
+  page: 11
+  section: null
+  instruction: In each of questions 26 to 35, select the option that best explains the information conveyed
+    in the sentence. Each question carries 2 marks
+  stem: The witness said he had no axe to grind with his brothers
+  options:
+    A: He had no hatred for the brothers
+    B: He had no axe and therefore stole the matchet
+    C: He had no axe and therefore borrowed their matchet
+    D: He had no vested interest in the brothers
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 30
+  page: 12
+  section: null
+  instruction: In each of questions 26 to 35, select the option that best explains the information conveyed
+    in the sentence. Each question carries 2 marks
+  stem: The footballers moved with their tails between their legs
+  options:
+    A: they moved happily because they won the match
+    B: they were unhappy because they had been despised by their opponents
+    C: they were ashamed because they had been defeated
+    D: they moved with their tails between their legs
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 31
+  page: 12
+  section: null
+  instruction: In each of questions 26 to 35, select the option that best explains the information conveyed
+    in the sentence. Each question carries 2 marks
+  stem: The headmaster managed to talk his way out of having to give a speech
+  options:
+    A: he delivered a speech despite the difficulty
+    B: he managed to give a speech out of a difficult situation
+    C: he managed to get himself out of a difficult situation
+    D: he managed to talk on his way
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 32
+  page: 12
+  section: null
+  instruction: In each of questions 26 to 35, select the option that best explains the information conveyed
+    in the sentence. Each question carries 2 marks
+  stem: As regards the matter, we have crossed the rubicon
+  options:
+    A: we are completely at a loss
+    B: we are irrevocably committed
+    C: we are already qualified
+    D: we are perfectly committed
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 33
+  page: 12
+  section: null
+  instruction: In each of questions 26 to 35, select the option that best explains the information conveyed
+    in the sentence. Each question carries 2 marks
+  stem: Uche is full of himself
+  options:
+    A: He is conceited
+    B: He is complete
+    C: He is a rich man
+    D: He is careful
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 34
+  page: 12
+  section: null
+  instruction: In each of questions 26 to 35, select the option that best explains the information conveyed
+    in the sentence. Each question carries 2 marks
+  stem: As debutants in that tournament, the Super Eagles were up against their first opponents by three
+    goals to nill
+  options:
+    A: The Super Eagles were playing in the tournament for the first time, but they won their match by
+      three goals to nothing
+    B: Though the Super Eagles were rated as the weakest side in the tournament, they won their first
+      match by three goals to nill
+    C: Even though the Super Eagles were playing without some of their regulars, they won their match
+      by three goals to nill
+    D: As the best attackers in the match, the Super Eagles easily defeated their opponents by three goals
+      to nothing
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 35
+  page: 13
+  section: null
+  instruction: In each of questions 26 to 35, select the option that best explains the information conveyed
+    in the sentence. Each question carries 2 marks
+  stem: The woman was mournful as her husband was found dead drunk
+  options:
+    A: She was sad because of her husband was absolutely drunk
+    B: She was apprehensive that her husband would drink again as soon he recovered from the drunken stupor
+    C: She was sad because her husband was drunk and always as helpless as a dead man
+    D: She was mourning because her husband drank and died
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 36
+  page: 13
+  section: null
+  instruction: In each of question 36 to 50, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: I am optimistic about the interview though it was a mind- exercise bending
+  options:
+    A: An enervating
+    B: A debilitating
+    C: A difficult
+    D: An easy
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 37
+  page: 13
+  section: null
+  instruction: In each of question 36 to 50, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: The trader was amused by the rush for the goods cut-throat
+  options:
+    A: Worrisome
+    B: Strange
+    C: Lacklustre
+    D: Mad
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 38
+  page: 13
+  section: null
+  instruction: In each of question 36 to 50, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: The teacher said that Ali's essay was full of many redundant details
+  options:
+    A: Unexplained
+    B: Strange
+    C: Necessary
+    D: Useful
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 39
+  page: 14
+  section: null
+  instruction: In each of question 36 to 50, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: His father surmounted the of obstacles on his way myriad
+  options:
+    A: Most
+    B: Few
+    C: All
+    D: Many
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 40
+  page: 14
+  section: null
+  instruction: In each of question 36 to 50, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: Her ingenuous smile drew our attention
+  options:
+    A: Witty
+    B: Naïve
+    C: Clever
+    D: Arrogant
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 41
+  page: 14
+  section: null
+  instruction: In each of question 36 to 50, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: Ndeni gave a flawless speech at the party
+  options:
+    A: A wonderful
+    B: A careless
+    C: An interesting
+    D: An imperfect
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 42
+  page: 14
+  section: null
+  instruction: In each of question 36 to 50, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: Beneath Ado's guff exterior, he's really very kind-hearted
+  options:
+    A: Nice
+    B: Harsh
+    C: Rough
+    D: Gentle
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 43
+  page: 14
+  section: null
+  instruction: In each of question 36 to 50, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: The captain says sports is being debased by commercial sponsorship
+  options:
+    A: Localized
+    B: Perverted
+    C: Elevated
+    D: Overvalued
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 44
+  page: 14
+  section: null
+  instruction: In each of question 36 to 50, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: Governing a country is not always as as straightforward people sometimes imagine
+  options:
+    A: Complicated
+    B: Troublesome
+    C: Untoward
+    D: Irksome
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 45
+  page: 14
+  section: null
+  instruction: In each of question 36 to 50, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: The crowd was very receptive to the speaker's suggestion
+  options:
+    A: Disobedient
+    B: Repellent
+    C: Alert
+    D: Hostile
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 46
+  page: 15
+  section: null
+  instruction: In each of question 36 to 50, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: There was a general on the new drug law acquiescence
+  options:
+    A: Resistance
+    B: Discrepancy
+    C: Compromise
+    D: Agreement
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 47
+  page: 15
+  section: null
+  instruction: In each of question 36 to 50, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: Aisha seems to feel ambivalent about her future
+  options:
+    A: Decisive
+    B: Anxious
+    C: Ambitious
+    D: Inconsiderate
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 48
+  page: 15
+  section: null
+  instruction: In each of question 36 to 50, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: The report of the committee contained a plethora of details
+  options:
+    A: Shortage
+    B: Simplicity
+    C: Multitude
+    D: Spectrum
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 49
+  page: 15
+  section: null
+  instruction: In each of question 36 to 50, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: The weather was still very heavy and sultry
+  options:
+    A: Wintry and shadowy
+    B: Cold and friendly
+    C: Cloudy and thundery
+    D: Hot and uncomfortable
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 50
+  page: 15
+  section: null
+  instruction: In each of question 36 to 50, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: Ada gave her husband a look that made words superfluous
+  options:
+    A: Redundant
+    B: Spurious
+    C: Unnecessary
+    D: Scanty
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 51
+  page: 15
+  section: null
+  instruction: In each of questions 51 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: A political Impasse does not offer the best opportunity for merrymaking
+  options:
+    A: manifesto
+    B: party
+    C: gridlock
+    D: rally
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 52
+  page: 16
+  section: null
+  instruction: In each of questions 51 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: We were all enthusiastic as we awaited the result of the election
+  options:
+    A: bemused
+    B: agitated
+    C: elated
+    D: nervous
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 53
+  page: 16
+  section: null
+  instruction: In each of questions 51 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: The uniform makes the guards look absurd
+  options:
+    A: dirty
+    B: smart
+    C: sensible
+    D: ridiculous
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 54
+  page: 16
+  section: null
+  instruction: In each of questions 51 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: The law is often tardy in reacting to changing attitude
+  options:
+    A: quick
+    B: slow
+    C: exclusive
+    D: generous
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 55
+  page: 16
+  section: null
+  instruction: In each of questions 51 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: Isa and llu ate sumptuous meal on their brother's wedding day
+  options:
+    A: expensive
+    B: foreign
+    C: insipid
+    D: cheap
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 56
+  page: 16
+  section: null
+  instruction: In each of questions 51 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: Kaltume over the crouched paper on her desk
+  options:
+    A: wrote on
+    B: stood on
+    C: walked over
+    D: bent over for a country's
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 57
+  page: 16
+  section: null
+  instruction: In each of questions 51 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: The panacea economic mess lies in systematic planning and hardwork
+  options:
+    A: cure
+    B: hope
+    C: foresight
+    D: trouble
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 58
+  page: 16
+  section: null
+  instruction: In each of questions 51 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: Thousands of workers have been victims of retrenchment since the military came back to power
+  options:
+    A: Unemployment
+    B: Trench mentality
+    C: Suffering
+    D: Increase in penury
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 59
+  page: 17
+  section: null
+  instruction: In each of questions 51 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: The principal gave his speech offhand at the sports meeting
+  options:
+    A: calmly
+    B: beautifully
+    C: unconcerned
+    D: unprepared
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 60
+  page: 17
+  section: null
+  instruction: In each of questions 51 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: Jankoli was dressed in an old assortment of clothes
+  options:
+    A: Avalanche
+    B: Homogeneity
+    C: Sameness
+    D: Melange
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 61
+  page: 17
+  section: null
+  instruction: In each of questions 51 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: The girl's father was astounded to see her appear from the shrine
+  options:
+    A: collected
+    B: Overwhelmed
+    C: embarrassed
+    D: Astonished
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 62
+  page: 17
+  section: null
+  instruction: In each of questions 51 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: The director's remark was extremely apposite to the issue being discussed
+  options:
+    A: Appropriate
+    B: Inconsequential
+    C: Emphatic
+    D: Adequate
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 63
+  page: 17
+  section: null
+  instruction: In each of questions 51 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: Her reputation is without a blemish
+  options:
+    A: Struggle
+    B: Problem
+    C: Fault
+    D: Blessing
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 64
+  page: 17
+  section: null
+  instruction: In each of questions 51 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: Ugo is eligible for the post of secretary
+  options:
+    A: Nominated
+    B: Invited
+    C: Qualified
+    D: Intelligent
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 65
+  page: 17
+  section: null
+  instruction: In each of questions 51 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: This is an abridged version of No Longer at Ease
+  options:
+    A: An outdated
+    B: An enlarged
+    C: An illustrated
+    D: A shortened
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 66
+  page: 18
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: Lemoti……… as a painter, but also as a sculptor
+  options:
+    A: is a gifted only not
+    B: is only not gifted
+    C: is gifted not only
+    D: is only gifted
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 67
+  page: 18
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: He can recall the important nation's history, it is dates in the interesting to listen as he rattles
+    ………
+  options:
+    A: 'off'
+    B: over
+    C: up
+    D: out
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 68
+  page: 18
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: The boy told his mother ……
+  options:
+    A: that was the girl he told her about
+    B: that was the girl I told you about her
+    C: that was the girl I told her about
+    D: that is the girl he told her about
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 69
+  page: 18
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: Last Monday his father asked me ……
+  options:
+    A: if I had come some days before
+    B: if I had come the day before
+    C: did you come yesterday
+    D: had I come yesterday
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 70
+  page: 18
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: His wife was badly injured in the fracas, but I think she will pull ……
+  options:
+    A: up
+    B: over
+    C: through
+    D: back
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 71
+  page: 18
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: A wide range of options …… made available to students in the final year last year
+  options:
+    A: is
+    B: were
+    C: are
+    D: was
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 72
+  page: 19
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: One of the women who …… in the premises ……. been ordered to quit
+  options:
+    A: sells/have
+    B: sell/has
+    C: sell/have
+    D: sells/has
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 73
+  page: 19
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: The new trade agreement facilitate……… should
+  options:
+    A: more economic rapid growth
+    B: economic more rapid growth
+    C: rapid economic more growth
+    D: more rapid economic growth
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 74
+  page: 19
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: The principal said that he was pleased……… my effort
+  options:
+    A: 'on'
+    B: of
+    C: with
+    D: about
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 75
+  page: 19
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: Paper is made……. Wood pulp
+  options:
+    A: 'on'
+    B: of
+    C: from
+    D: with
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 76
+  page: 19
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: Long after everyone…….. the hall, obi still sat inside
+  options:
+    A: left
+    B: is leaving
+    C: has left
+    D: had left
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 77
+  page: 19
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: They are the…….. dresses
+  options:
+    A: babys'
+    B: baby
+    C: babies
+    D: babies'
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 78
+  page: 19
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: The politician was sent…… Exile
+  options:
+    A: onto
+    B: into
+    C: 'on'
+    D: to
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 79
+  page: 20
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: When we looked up, we…… the plane some miles away
+  options:
+    A: site
+    B: cited
+    C: sited
+    D: sighted
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 80
+  page: 20
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: Vital….. is still spread….. word of mouth in most villages in Africa
+  options:
+    A: information/from
+    B: information/with
+    C: information/by
+    D: information/through
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 81
+  page: 20
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: Western education is one of the….. of colonial rule
+  options:
+    A: legacies
+    B: evidence
+    C: remnants
+    D: inheritance
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 82
+  page: 20
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: The federal government has…… child trafficking
+  options:
+    A: postulated
+    B: projected
+    C: prescribed
+    D: proscribed
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 83
+  page: 20
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: The man was happy that his son confessed his guilt and so the others were……
+  options:
+    A: Implicated
+    B: accused
+    C: punished
+    D: exonerated
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 84
+  page: 20
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: Based on the facts before me, alternative…… to hold I have no you responsible
+  options:
+    A: only
+    B: as
+    C: than
+    D: but
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 85
+  page: 20
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: Many people would always to……the law find reasons
+  options:
+    A: arrogate
+    B: debase
+    C: circumvent
+    D: circumspect
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 86
+  page: 21
+  section: null
+  instruction: In each of questions 86 to 88, choose the option that has the same Vowel sound as the one
+    represented by the letters underlined
+  stem: Coup
+  options:
+    A: whup
+    B: hoot
+    C: couple
+    D: scout
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.C.1.i
+  skill_reason: Printed direction asks for the same vowel sound.
+  passage_ref: null
+- number: 87
+  page: 21
+  section: null
+  instruction: In each of questions 86 to 88, choose the option that has the same Vowel sound as the one
+    represented by the letters underlined
+  stem: Indict
+  options:
+    A: bright
+    B: fish
+    C: pick
+    D: brick
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.C.1.i
+  skill_reason: Printed direction asks for the same vowel sound.
+  passage_ref: null
+- number: 88
+  page: 21
+  section: null
+  instruction: In each of questions 86 to 88, choose the option that has the same Vowel sound as the one
+    represented by the letters underlined
+  stem: Roared
+  options:
+    A: towered
+    B: coast
+    C: brought
+    D: rod
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.C.1.i
+  skill_reason: Printed direction asks for the same vowel sound.
+  passage_ref: null
+- number: 89
+  page: 21
+  section: null
+  instruction: In each of the questions 89 to 91, choose the option that has the same consonant sound
+    as the one represented by letter(s) underlined
+  stem: Sheath
+  options:
+    A: bathe
+    B: length
+    C: months
+    D: paths
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.C.2.i
+  skill_reason: Printed direction asks for the same consonant sound.
+  passage_ref: null
+- number: 90
+  page: 21
+  section: null
+  instruction: In each of the questions 89 to 91, choose the option that has the same consonant sound
+    as the one represented by letter(s) underlined
+  stem: High
+  options:
+    A: what
+    B: honest
+    C: who
+    D: vehicle
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.C.2.i
+  skill_reason: Printed direction asks for the same consonant sound.
+  passage_ref: null
+- number: 91
+  page: 21
+  section: null
+  instruction: In each of the questions 89 to 91, choose the option that has the same consonant sound
+    as the one represented by letter(s) underlined
+  stem: Of course
+  options:
+    A: plough
+    B: dough
+    C: over
+    D: orphan
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.C.2.i
+  skill_reason: Printed direction asks for the same consonant sound.
+  passage_ref: null
+- number: 92
+  page: 21
+  section: null
+  instruction: In each of question 92 to 94, choose the option that rhymes with the given word
+  stem: Boys
+  options:
+    A: stays
+    B: moist
+    C: noise
+    D: elbows
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.C.3.i
+  skill_reason: Printed direction asks which option rhymes with the given word.
+  passage_ref: null
+- number: 93
+  page: 22
+  section: null
+  instruction: In each of question 92 to 94, choose the option that rhymes with the given word
+  stem: Shine
+  options:
+    A: clean
+    B: fine
+    C: machine
+    D: lain
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.C.3.i
+  skill_reason: Printed direction asks which option rhymes with the given word.
+  passage_ref: null
+- number: 94
+  page: 22
+  section: null
+  instruction: In each of question 92 to 94, choose the option that rhymes with the given word
+  stem: Seer
+  options:
+    A: snare
+    B: spare
+    C: spear
+    D: square
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.C.3.i
+  skill_reason: Printed direction asks which option rhymes with the given word.
+  passage_ref: null
+- number: 95
+  page: 22
+  section: null
+  instruction: In each of question 95 to 97, choose the most appropriate stress pattern from the options.
+    The stressed syllables are written in capital letter(s)
+  stem: Political
+  options:
+    A: poliTIcal
+    B: PoLItical
+    C: POlitical
+    D: political
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.C.4.i
+  skill_reason: Printed direction asks for the stress pattern.
+  passage_ref: null
+- number: 96
+  page: 22
+  section: null
+  instruction: In each of question 95 to 97, choose the most appropriate stress pattern from the options.
+    The stressed syllables are written in capital letter(s)
+  stem: Satisfactory
+  options:
+    A: saTISfactory
+    B: satisFACtory
+    C: SATisfactory
+    D: satisfactory
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.C.4.i
+  skill_reason: Printed direction asks for the stress pattern.
+  passage_ref: null
+- number: 97
+  page: 22
+  section: null
+  instruction: In each of question 95 to 97, choose the most appropriate stress pattern from the options.
+    The stressed syllables are written in capital letter(s)
+  stem: captivity
+  options:
+    A: captiVIty
+    B: CAPtivity
+    C: capTIvity
+    D: CAPtiviTY
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.C.4.i
+  skill_reason: Printed direction asks for the stress pattern.
+  passage_ref: null
+- number: 98
+  page: 22
+  section: null
+  instruction: In each of question 98 to 100, the word in capital letters has the emphatic. Choose the
+    option to which the given sentence relates
+  stem: EMEKA finished his home work yesterday
+  options:
+    A: Was Emeka helped to do his homework?
+    B: Did Emeka do his homework?
+    C: When did Emeka finish his homework?
+    D: Who finished his home work yesterday?
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.C.5.i
+  skill_reason: 'Printed direction is the emphatic-stress format: which question the sentence answers.'
+  passage_ref: null
+- number: 99
+  page: 23
+  section: null
+  instruction: In each of question 98 to 100, the word in capital letters has the emphatic. Choose the
+    option to which the given sentence relates
+  stem: Taiwo SAILED to London
+  options:
+    A: Did Taiwo fly to London?
+    B: Did Taiwo sail to Brazil?
+    C: Did Taiwo sail to London?
+    D: Where did Taiwo sail to?
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.C.5.i
+  skill_reason: 'Printed direction is the emphatic-stress format: which question the sentence answers.'
+  passage_ref: null
+- number: 100
+  page: 23
+  section: null
+  instruction: In each of question 98 to 100, the word in capital letters has the emphatic. Choose the
+    option to which the given sentence relates
+  stem: My bag is made of LEATHER
+  options:
+    A: Whose bag is made of leather
+    B: Is my bag made of polythene?
+    C: Is Abu's bag made of leather?
+    D: Is my bag made of leather?
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.C.5.i
+  skill_reason: 'Printed direction is the emphatic-stress format: which question the sentence answers.'
+  passage_ref: null

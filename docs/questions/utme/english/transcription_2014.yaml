@@ -1,0 +1,1570 @@
+# UTME 2014, Use of English — extracted from the text layer of
+# docs/questions/utme/english/JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf.
+#
+# 92 questions kept, 6 rejected.
+# Answers come from the key printed with the paper, which is a compiler's, not
+# JAMB's: they load as `published_key` and still need a person to check them.
+# Skill mappings follow the paper's own printed directions where it prints one;
+# 10 comprehension items had none and were mapped from the stem instead.
+format_version: 1
+source:
+  file: docs/questions/utme/english/JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf
+  exam_year: 2014
+  paper_label: UTME 2014 Use of English (objective)
+  paper_code: UTME-2014-ENG
+  question_count: 100
+  answer_source: published_key
+passages:
+- id: cloze_2014
+  label: CLOZE PASSAGE
+  text: 'The passage below has gaps numbered 11 to 20. Immediately following each gap, four options are
+    provided. Choose the most appropriate option for each gap. Each question carries 2 marks. Setting
+    up a newspaper involves a lot of preparations. The .....11 .... [A. processor B. lithographer C. proprietor
+    D. sub-editor] has to employ a lot of people. Other people working with him are cartographers, editors,
+    typesetters, readers, who work in various ways to produce the text of the newspaper, .... 12 ....
+    [A. agents B. reporters C. analysts D. vendors ] who go out and collect stories and items of news,
+    and .... 13 ..... [A. correspondents B.distributors C. listeners D. newscasters ], who specialize
+    in one kind of topic. Another important person who works closely with the editor --in - - chief is
+    the ... 14 ... [A. announcer B. news editor C. proofreader D. reporter], who has to choose the most
+    important stories .... 15 .... [A. subeditors B. writers C. agents D. producers] go through stories
+    sent to make necessary adjustments The Editor-in-chief could determine for instance, whether a particular
+    journalist should write articles daily or weekly in a particular column. Such a journalist is known
+    as ..... 16 ..... [A. a freelancer B. a composer C. a columnist D. an essayist]. The editorials of
+    the newspaper will be coordinated by ..... 17 ..... [A. a guild of researchers B. an editorial board
+    C. all readers D. an agent]. The publisher could decide to establish ..... 18 ..... [A. an article
+    B. column C. magazine D. a gazetteer] which would be on sale weekly, fortnightly or monthly .....
+    19 ..... [A. a contrast from B. a contrast in C. a contrast to D. a contrast for] the eye catching,
+    screaming headlines and captions of newspapers on sale everyday from the ..... 20 ..... [A. readers
+    B.distributors C. pressmen D. salesmen] Adapted from idowu, et al. (1998) Round-up English: A complete
+    Course. Lagos: Longman Questions 21 to 30 are based on Chukwuemeka Ike’s The potters wheel.'
+- id: passage_2014_passage_i
+  label: PASSAGE_I
+  text: Political change and social transformation in the form of revolutions have radically altered the
+    course of human civilization and history. Today, the world is witnessing political and social changes
+    arising from the desire of people all over the globe for greater freedom and a voice in the way they
+    are governed and a better standard of living. Part of these struggles and processes have become more
+    pronounced in the third world since the end of the east west cold war in the late 1980s, and in the
+    face of the challenges being ENGLISH QUESTIONS posed by the ongoing process of globalization. While
+    political and social changes may appear to be distinct phenomena, they are analytically inseparable.
+    Political and social changes refer to alteration or transformations in human behaviour, norms and
+    politico- social institutions. Such changes are often a collective response to the need to change,
+    or as a tacit recognition of a shift in the prevalent power relations in the society. Therefore, the
+    coming to power of new sets of rulers, or the establishment of new structures and processes of governance
+    broadly typifies socio- political changes. It is important to note that change can either be positive
+    or negative. In most cases, political and social changes are caused by certain factors or reasons.
+    These push people to collectively organize themselves to struggle for a change in the existing power
+    relations. Another reason is to capture political power, in the hope of making life better for the
+    generality of the people. If politics is defined as who gets what, when and how; it then implies that
+    political change refers to an alteration in the form of power, and the identity of the group or class
+    which controls and wields state power Adapted from Anifowose, R. and Enemuo, F. (1999) Element of
+    politics
+- id: passage_2014_passage_ii
+  label: PASSAGE_II
+  text: Like all reptiles, snakes are cold- blooded, or more correctly, ectodermic- they cannot produce
+    their own body heat; instead, they rely on the sun to heat their bodies. Because they do not rely
+    on energy from food to generate body heat; snakes can survive on an extremely meagre diet. Some wait
+    for months between successive meals and a few survive by eating a large meal just once or twice a
+    year. When they do eat, snakes swallow their prey whole rather than biting off small pieces. Many
+    snakes have specialized jaws that enable them to swallow animals that are far larger than their own
+    heads. Although uncommon, some snakes, such as the African rock python, have been observed eating
+    animals as large as an antelope or a small cow. With over two thousand five hundred species belonging
+    to more than ten families, snakes are large and successful group. They owe much of this success to
+    their versatility snakes occupy habitat ranging from underground burrows to the top of the tree, to
+    ocean depths as great as one hundred and fifty meters. They are found on every continent except Antarctica
+    , and although they are most abundant in tropical areas, many survive in regions marked by extreme
+    cold. The only places without snakes are parts of the Polar Regions and isolated islands, such as
+    the republic of Ireland and New- Zealand as opposed to places in Nigeria like plateau and Gombe states
+    in the northern parts where there is a large population of snakes
+- id: passage_2014_passage_iii
+  label: PASSAGE_III
+  text: The passage below has gaps numbered 11 to 20. Immediately following each gap, four options are
+    provided. Choose the most appropriate option for each gap. Each question carries 2 marks. Setting
+    up a newspaper involves a lot of preparations. The .....11 .... [A. processor B. lithographer C. proprietor
+    D. sub-editor] has to employ a lot of people. Other people working with him are cartographers, editors,
+    typesetters, readers, who work in various ways to produce the text of the newspaper, .... 12 ....
+    [A. agents B. reporters C. analysts D. vendors ] who go out and collect stories and items of news,
+    and .... only if she worked harder B it would never be possible for her to pass C. He would have to
+    bribe her teachers to enable her to pass D. She would have to cheat in order to pass B. an original
+    C. a revised D. an annotated B. securing C. swapping D. strengthening choose the option that best
+    completes the gap
+questions:
+- number: 1
+  page: 89
+  section: null
+  instruction: null
+  stem: Which question paper type of use of English is given to you?
+  options:
+    A: Type F
+    B: Type E
+    C: Type L
+    D: Type S
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2014_passage_i
+- number: 2
+  page: 89
+  section: null
+  instruction: null
+  stem: Which of the following is true according to the passage?
+  options:
+    A: Change is inimitable
+    B: Change is inestimable
+    C: Change is invaluable
+    D: Change is inevitable
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2014_passage_i
+- number: 3
+  page: 89
+  section: null
+  instruction: null
+  stem: It can be deduced from the passage that political and social changes are
+  options:
+    A: Intertwined
+    B: Antithetical
+    C: Independent
+    D: Repulsive
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.3.i
+  skill_reason: 'Stem asks for a deduction or inference. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2014_passage_i
+- number: 4
+  page: 89
+  section: null
+  instruction: null
+  stem: A suitable title for this passage is
+  options:
+    A: Reasons for political change
+    B: The struggle for political power
+    C: Elements of politics
+    D: Social change and political empowerment
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2014_passage_i
+- number: 5
+  page: 89
+  section: null
+  instruction: null
+  stem: The word alteration, as used in the passage, means
+  options:
+    A: Multiplication
+    B: Recognition
+    C: Modification
+    D: Complication
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.2.i
+  skill_reason: 'Stem asks what a word or expression means in the passage. Mapped from the stem: no direction
+    is printed for comprehension items.'
+  passage_ref: passage_2014_passage_i
+- number: 6
+  page: 91
+  section: null
+  instruction: null
+  stem: It can be inferred from the passage that snakes are
+  options:
+    A: Heterogeneous creatures
+    B: Voracious cow eaters
+    C: Great insect eaters
+    D: Homogeneous reptiles
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.3.i
+  skill_reason: 'Stem asks for a deduction or inference. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2014_passage_ii
+- number: 7
+  page: 91
+  section: null
+  instruction: null
+  stem: The most notable thing about snakes, according to the passage, is that they
+  options:
+    A: Abound in gombe and plateau state
+    B: Are versatile in reproduction
+    C: Eat big but seldom
+    D: Exist in families
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2014_passage_ii
+- number: 8
+  page: 91
+  section: null
+  instruction: null
+  stem: Which of the following is true according to the passage?
+  options:
+    A: Snakes are not in the polar region
+    B: Snakes are endemic on every continent
+    C: There are countless number of snakes in the republic of Ireland
+    D: Snakes are seldom seen at the Antarctica
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2014_passage_ii
+- number: 9
+  page: 91
+  section: null
+  instruction: null
+  stem: It can be deduced from the passage that snakes have
+  options:
+    A: No external auditory organ
+    B: Visible internal locomotive organs
+    C: No visual sense of measurement
+    D: Large appetite for antelopes
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.3.i
+  skill_reason: 'Stem asks for a deduction or inference. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2014_passage_ii
+- number: 10
+  page: 91
+  section: null
+  instruction: null
+  stem: A suitable title for this passage is
+  options:
+    A: Feeding habits of snakes
+    B: Some characteristics of snakes
+    C: Snakes as legless, cold- blooded reptiles
+    D: Species of snakes in Nigeria and other lands
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2014_passage_ii
+- number: 11
+  page: 92
+  section: Cloze passage
+  instruction: The passage below has gaps numbered 11 to 20. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks. Setting
+    up a newspaper involves a lot of preparations. The .....11
+  stem: Gap 11 in the cloze passage.
+  options:
+    A: processor
+    B: lithographer
+    C: proprietor
+    D: sub-editor
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2014
+- number: 12
+  page: 92
+  section: Cloze passage
+  instruction: The passage below has gaps numbered 11 to 20. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks. Setting
+    up a newspaper involves a lot of preparations. The .....11
+  stem: Gap 12 in the cloze passage.
+  options:
+    A: agents
+    B: reporters
+    C: analysts
+    D: vendors
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2014
+- number: 14
+  page: 92
+  section: Cloze passage
+  instruction: The passage below has gaps numbered 11 to 20. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks. Setting
+    up a newspaper involves a lot of preparations. The .....11
+  stem: Gap 14 in the cloze passage.
+  options:
+    A: announcer
+    B: news editor
+    C: proofreader
+    D: reporter
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2014
+- number: 15
+  page: 92
+  section: Cloze passage
+  instruction: The passage below has gaps numbered 11 to 20. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks. Setting
+    up a newspaper involves a lot of preparations. The .....11
+  stem: Gap 15 in the cloze passage.
+  options:
+    A: subeditors
+    B: writers
+    C: agents
+    D: producers
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2014
+- number: 16
+  page: 92
+  section: Cloze passage
+  instruction: The passage below has gaps numbered 11 to 20. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks. Setting
+    up a newspaper involves a lot of preparations. The .....11
+  stem: Gap 16 in the cloze passage.
+  options:
+    A: a freelancer
+    B: a composer
+    C: a columnist
+    D: an essayist
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2014
+- number: 17
+  page: 92
+  section: Cloze passage
+  instruction: The passage below has gaps numbered 11 to 20. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks. Setting
+    up a newspaper involves a lot of preparations. The .....11
+  stem: Gap 17 in the cloze passage.
+  options:
+    A: a guild of researchers
+    B: an editorial board
+    C: all readers
+    D: an agent
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2014
+- number: 18
+  page: 92
+  section: Cloze passage
+  instruction: The passage below has gaps numbered 11 to 20. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks. Setting
+    up a newspaper involves a lot of preparations. The .....11
+  stem: Gap 18 in the cloze passage.
+  options:
+    A: an article
+    B: column
+    C: magazine
+    D: a gazetteer
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2014
+- number: 19
+  page: 91
+  section: Cloze passage
+  instruction: The passage below has gaps numbered 11 to 20. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks. Setting
+    up a newspaper involves a lot of preparations. The .....11
+  stem: Gap 19 in the cloze passage.
+  options:
+    A: a contrast from
+    B: a contrast in
+    C: a contrast to
+    D: a contrast for
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2014
+- number: 21
+  page: 93
+  section: null
+  instruction: The passage below has gaps numbered 11 to 20. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks. Setting
+    up a newspaper involves a lot of preparations. The .....11
+  stem: Chief Okeke Okafo decided to buy an 'iron horse' because it would
+  options:
+    A: Allow him to be the head of the clan
+    B: Raise his status in the clan
+    C: Minimize the strain of travel from one town to another
+    D: Give him the opportunity to act like the district commissioner
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Printed direction is the cloze passage.
+  passage_ref: passage_2014_passage_iii
+- number: 22
+  page: 93
+  section: null
+  instruction: The passage below has gaps numbered 11 to 20. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks. Setting
+    up a newspaper involves a lot of preparations. The .....11
+  stem: the vanquished dragon, spewing sand instead of fire gave a solemn and humiliating pledge that
+    he would never cross Obu`s path From the excerpt above, the word vanquished means
+  options:
+    A: Unflappable
+    B: Unconcerned
+    C: Sensitive
+    D: Subdued
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Printed direction is the cloze passage.
+  passage_ref: passage_2014_passage_iii
+- number: 23
+  page: 93
+  section: null
+  instruction: The passage below has gaps numbered 11 to 20. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks. Setting
+    up a newspaper involves a lot of preparations. The .....11
+  stem: In the novel, the suspicion that Obu was an `ogbanje` had revalued the
+  options:
+    A: Time Obu spent at teachers house
+    B: Disappearance of Obu in standard
+    C: Price tag Mazi Laza and his wife placed on Obu
+    D: Participation of Obu as a member of the masquerade group
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Printed direction is the cloze passage.
+  passage_ref: passage_2014_passage_iii
+- number: 24
+  page: 93
+  section: null
+  instruction: The passage below has gaps numbered 11 to 20. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks. Setting
+    up a newspaper involves a lot of preparations. The .....11
+  stem: According to the novel, a pupil who `carried his class` would be instructed to
+  options:
+    A: Dance on the assembly ground
+    B: Fetch firewood for the teachers
+    C: Carry a pad
+    D: Clean the latrines
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Printed direction is the cloze passage.
+  passage_ref: passage_2014_passage_iii
+- number: 25
+  page: 94
+  section: null
+  instruction: The passage below has gaps numbered 11 to 20. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks. Setting
+    up a newspaper involves a lot of preparations. The .....11
+  stem: If you get confused at any stage, let me know; I want this pottage to be well prepared The statement
+    above was meant to
+  options:
+    A: Distract Ada
+    B: Encourage Ada`s cooking habit
+    C: Confuse Obu
+    D: Test Obu`s cooking skills
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Printed direction is the cloze passage.
+  passage_ref: passage_2014_passage_iii
+- number: 26
+  page: 94
+  section: null
+  instruction: The passage below has gaps numbered 11 to 20. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks. Setting
+    up a newspaper involves a lot of preparations. The .....11
+  stem: According to the novel, Mazi laza would shout at any person standing in his way because his bicycle
+    in Umuatala clan was
+  options:
+    A: Had injury people on many occasions
+    B: Was manufacture by local engineers
+    C: Had faulty brakes and outdated pedals
+    D: Came from the same stock as chief Okeke`s
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Printed direction is the cloze passage.
+  passage_ref: null
+- number: 27
+  page: 94
+  section: null
+  instruction: The passage below has gaps numbered 11 to 20. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks. Setting
+    up a newspaper involves a lot of preparations. The .....11
+  stem: From the novel, the first person to own a bicycle in Umuatala clan was
+  options:
+    A: Chief Okeke Okafo
+    B: Polycarp's father
+    C: Mazi Lazarus
+    D: Teacher zacheaus kanu
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Printed direction is the cloze passage.
+  passage_ref: null
+- number: 28
+  page: 94
+  section: null
+  instruction: The passage below has gaps numbered 11 to 20. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks. Setting
+    up a newspaper involves a lot of preparations. The .....11
+  stem: In the novel, what did Mazi Laza do after putting a pinch of snuff into each nostril?
+  options:
+    A: He commended his wife
+    B: He gave the remaining to Nwobiara
+    C: He nodded with satisfaction
+    D: He complained of the stuff
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Printed direction is the cloze passage.
+  passage_ref: null
+- number: 29
+  page: 94
+  section: null
+  instruction: The passage below has gaps numbered 11 to 20. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks. Setting
+    up a newspaper involves a lot of preparations. The .....11
+  stem: From the novel, what was Ada`s punishment for fighting with madam
+  options:
+    A: She copied psalm 119 from start to finish
+    B: She fetched water from the stream with a basket
+    C: She ate only once a day for one week
+    D: she scrubbed the school latrine for one week
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Printed direction is the cloze passage.
+  passage_ref: null
+- number: 30
+  page: 95
+  section: null
+  instruction: The passage below has gaps numbered 11 to 20. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks. Setting
+    up a newspaper involves a lot of preparations. The .....11
+  stem: In the novel, Obu would not touch cocoyam soup because he claimed it
+  options:
+    A: had lost its taste
+    B: would get struck in his throat
+    C: would make him sick
+    D: was not well prepared Question 31 to 35 are based on Jerry Agada`s The Successors
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Printed direction is the cloze passage.
+  passage_ref: null
+- number: 31
+  page: 95
+  section: null
+  instruction: The passage below has gaps numbered 11 to 20. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks. Setting
+    up a newspaper involves a lot of preparations. The .....11
+  stem: The entertainment expenses for Okoh Ameh`s traditional marriage rites were paid for by
+  options:
+    A: Okoh amah`s parents
+    B: the bide`s parents
+    C: Okoh Ameh
+    D: Terkura Atsen
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Printed direction is the cloze passage.
+  passage_ref: null
+- number: 32
+  page: 95
+  section: null
+  instruction: The passage below has gaps numbered 11 to 20. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks. Setting
+    up a newspaper involves a lot of preparations. The .....11
+  stem: Mfa`s friend asserted that Bob Marley and other reggae stars were "good" because they
+  options:
+    A: smoked Indian hemp
+    B: were gainfully employed
+    C: listened to their parents
+    D: went to schools
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Printed direction is the cloze passage.
+  passage_ref: null
+- number: 33
+  page: 95
+  section: null
+  instruction: The passage below has gaps numbered 11 to 20. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks. Setting
+    up a newspaper involves a lot of preparations. The .....11
+  stem: From the novel, what did Terkura do with the balance of the money chief Ofega paid him?
+  options:
+    A: He married another wife
+    B: He brought a beautiful house
+    C: He invested it in his business
+    D: He bought two cars for his father
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Printed direction is the cloze passage.
+  passage_ref: null
+- number: 34
+  page: 95
+  section: null
+  instruction: The passage below has gaps numbered 11 to 20. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks. Setting
+    up a newspaper involves a lot of preparations. The .....11
+  stem: Makurdi became more prominent because of the
+  options:
+    A: Road
+    B: Bridge
+    C: International hotel
+    D: Railway station
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Printed direction is the cloze passage.
+  passage_ref: null
+- number: 35
+  page: 95
+  section: null
+  instruction: The passage below has gaps numbered 11 to 20. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Each question carries 2 marks. Setting
+    up a newspaper involves a lot of preparations. The .....11
+  stem: In the novel, Maria's tolerance of her husband spending half the night on duty at the hotel was
+    considered a
+  options:
+    A: Way of taking great risk
+    B: way to remedy all natural problems
+    C: necessary price to pay for the success of their marriage
+    D: bad thing that couple should discourage LEXIS, STRUCTURE AND ORAL FORMS
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Printed direction is the cloze passage.
+  passage_ref: null
+- number: 36
+  page: 96
+  section: null
+  instruction: In each of questions 36 to 45, select the option that best explains the information conveyed
+    in the sentence. Each question carries 2 marks
+  stem: The minister considered the ministry's budget to a drop in the ocean in view of the number of
+    projects in the pipeline
+  options:
+    A: The amount available may be inadequate for projected expenditure
+    B: The minister maybe dropped for failing to complete a number of projects
+    C: The money approved cannot compete the pipeline project across the ocean
+    D: The pipeline project across the ocean will be abandoned unless budgetary allocation improves
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 37
+  page: 96
+  section: null
+  instruction: In each of questions 36 to 45, select the option that best explains the information conveyed
+    in the sentence. Each question carries 2 marks
+  stem: The police are looking for the woman who framed her children out to her neighbours
+  options:
+    A: The woman and her children are in the habit of working in neighbour's farm and the police are not
+      well disposed to this
+    B: The police may arrest the woman for allowing her neighbours to take care of her children
+    C: The woman may be arrested for allowing her children to be a nuisance to her neighbours
+    D: The police wanted remarked for allowing her children to destroy her neighbour's crops 38 Jummai's
+      father remarked that pigs would fly before she passed
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 40
+  page: 97
+  section: null
+  instruction: In each of questions 36 to 45, select the option that best explains the information conveyed
+    in the sentence. Each question carries 2 marks
+  stem: Kunana is like a bear with a sore head
+  options:
+    A: He is a bully
+    B: He is grumpy
+    C: He is ugly
+    D: He is quiet
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 41
+  page: 97
+  section: null
+  instruction: In each of questions 36 to 45, select the option that best explains the information conveyed
+    in the sentence. Each question carries 2 marks
+  stem: Olu gave his brother a bumpy ride
+  options:
+    A: Olu's brother rode on Olu's back to success
+    B: Olu took his brother on a bumpy road
+    C: Olu gave his brother a difficult time
+    D: Olu gave his brother a ride in his car
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 42
+  page: 97
+  section: null
+  instruction: In each of questions 36 to 45, select the option that best explains the information conveyed
+    in the sentence. Each question carries 2 marks
+  stem: Adeola dosen't have to go the farm today
+  options:
+    A: Adeola may go to the farm today if he so wishes
+    B: Adeola ought not to have gone to the farm today
+    C: Adeola must not go to the farm today
+    D: Adeola should not go to the farm today
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 43
+  page: 97
+  section: null
+  instruction: In each of questions 36 to 45, select the option that best explains the information conveyed
+    in the sentence. Each question carries 2 marks
+  stem: My boss asked me to take my eyes off the ball
+  options:
+    A: I should stop paying attention to what is most important
+    B: I should be focused when I am about stay off football
+    C: I should stay off football after sustaining an injury
+    D: I should be focused when playing football
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 44
+  page: 98
+  section: null
+  instruction: In each of questions 36 to 45, select the option that best explains the information conveyed
+    in the sentence. Each question carries 2 marks
+  stem: The robber was hedged in by the people
+  options:
+    A: The robber was surrounded by the people
+    B: The robber was killed by the people
+    C: The robber was exposed by the people
+    D: The robber was caught by the people
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 45
+  page: 98
+  section: null
+  instruction: In each of questions 36 to 45, select the option that best explains the information conveyed
+    in the sentence. Each question carries 2 marks
+  stem: Many workers are not happy because they live a hand-to- mouth life
+  options:
+    A: They work hard with their hands
+    B: They are voracious and avaricious
+    C: They are barely surviving
+    D: They have rejected the use of spoons
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 46
+  page: 98
+  section: null
+  instruction: In each of questions 46 to 55, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: Prolonged strike action the industry debilitated
+  options:
+    A: invigorated
+    B: isolated
+    C: weakened
+    D: destroyed 47 One of the students bought a copy of the book plagiarized
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 48
+  page: 98
+  section: null
+  instruction: In each of questions 46 to 55, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: The young girl was taken by her father's gift of a car aback
+  options:
+    A: shocked
+    B: unmoved
+    C: surprised
+    D: nonplussed
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 49
+  page: 99
+  section: null
+  instruction: In each of questions 46 to 55, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: Musa is a gifted but erratic player
+  options:
+    A: strong
+    B: regular
+    C: unpredictable
+    D: unstable
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 50
+  page: 99
+  section: null
+  instruction: In each of questions 46 to 55, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: The lamp shades were translucent
+  options:
+    A: opaque
+    B: interested
+    C: luminous
+    D: transparent
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 51
+  page: 99
+  section: null
+  instruction: In each of questions 46 to 55, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: My niece has an unquenchable thirst for adventure stories
+  options:
+    A: a spurious
+    B: an illegitimate
+    C: a reduced
+    D: an inextinguishable
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 52
+  page: 99
+  section: null
+  instruction: In each of questions 46 to 55, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: Some of my neighbours have an antipathy to dogs
+  options:
+    A: enmity towards
+    B: affection for
+    C: acronym for
+    D: alarm for
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 53
+  page: 99
+  section: null
+  instruction: In each of questions 46 to 55, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: The dressmaker-...- unpicked the seam of the shirt
+  options:
+    A: threaded
+    B: sewed up
+    C: picked up
+    D: tore for
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 54
+  page: 99
+  section: null
+  instruction: In each of questions 46 to 55, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: The testimony of the witness was vague
+  options:
+    A: disturbing
+    B: 'true'
+    C: ambiguous
+    D: clear
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 55
+  page: 99
+  section: null
+  instruction: In each of questions 46 to 55, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: As a student, Isa tried communal living for a few years
+  options:
+    A: collective
+    B: general
+    C: shared
+    D: private
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 56
+  page: 100
+  section: null
+  instruction: In each of questions 56 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: The chairman admires incessant meetings
+  options:
+    A: unusual
+    B: planned
+    C: constant
+    D: irregular
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 57
+  page: 100
+  section: null
+  instruction: In each of questions 56 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: Today's weather is favourable for a game of tennis
+  options:
+    A: impartial
+    B: abnormal
+    C: encouraging
+    D: disapproving
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 58
+  page: 100
+  section: null
+  instruction: In each of questions 56 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: the candidates looked aghast at the first reading of the questions
+  options:
+    A: fulfilled
+    B: dismayed
+    C: satisfied
+    D: relaxed
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 59
+  page: 100
+  section: null
+  instruction: In each of questions 56 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: Joke gave Muhammed a smile jaunty
+  options:
+    A: a discouraging
+    B: an inviting
+    C: a frightful
+    D: a cheerful
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 60
+  page: 100
+  section: null
+  instruction: In each of questions 56 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: The first round of the tournament was a doddle
+  options:
+    A: easy
+    B: balanced
+    C: dodgy
+    D: exasperating
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 61
+  page: 100
+  section: null
+  instruction: In each of questions 56 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: The lazy man cast a lustful glance at his neighbour's wife
+  options:
+    A: hateful
+    B: quick
+    C: covetous
+    D: envious
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 62
+  page: 101
+  section: null
+  instruction: In each of questions 56 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: They accused him of fomenting political unrest
+  options:
+    A: inciting
+    B: discouraging
+    C: preventing
+    D: guiding
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 63
+  page: 101
+  section: null
+  instruction: In each of questions 56 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: You can learn a great deal just from watching other players
+  options:
+    A: invent
+    B: accumulate
+    C: allow
+    D: discover
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 66
+  page: 101
+  section: null
+  instruction: In each of questions 66 to 85, choose the option that best completes the gap
+  stem: The House and The Senate will __ At noon next Wednesday to hear address by the president
+  options:
+    A: convene
+    B: adjourn
+    C: rise
+    D: collude
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 67
+  page: 101
+  section: null
+  instruction: In each of questions 66 to 85, choose the option that best completes the gap
+  stem: At the --- of the century many ways of doing things were introduced
+  options:
+    A: turn
+    B: event
+    C: birth
+    D: sight
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 68
+  page: 101
+  section: null
+  instruction: In each of questions 66 to 85, choose the option that best completes the gap
+  stem: You may have the pencil, but you can't have the ballpoint
+  options:
+    A: either
+    B: furthermore
+    C: also
+    D: as well
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 69
+  page: 102
+  section: null
+  instruction: In each of questions 66 to 85, choose the option that best completes the gap
+  stem: The president said that the country was not out of the.... yet
+  options:
+    A: forest
+    B: fog
+    C: water
+    D: wood
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 70
+  page: 102
+  section: null
+  instruction: In each of questions 66 to 85, choose the option that best completes the gap
+  stem: He went to the restaurant to enjoy the special
+  options:
+    A: suite
+    B: cuisine
+    C: a la carte
+    D: chef
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 72
+  page: 102
+  section: null
+  instruction: In each of questions 66 to 85, choose the option that best completes the gap
+  stem: The guard spent all the night pacing---
+  options:
+    A: from and to
+    B: fro and to
+    C: to and from
+    D: to and fro
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 73
+  page: 102
+  section: null
+  instruction: In each of questions 66 to 85, choose the option that best completes the gap
+  stem: The woman refused to testify.... Her husband
+  options:
+    A: in
+    B: at
+    C: against
+    D: from
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 74
+  page: 102
+  section: null
+  instruction: In each of questions 66 to 85, choose the option that best completes the gap
+  stem: Abike must have found the very interesting movies quite
+  options:
+    A: absolving
+    B: absorbing
+    C: nauseating
+    D: perverting
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 75
+  page: 102
+  section: null
+  instruction: In each of questions 66 to 85, choose the option that best completes the gap
+  stem: The words___ divided between the end of one line
+  options:
+    A: have been
+    B: have being
+    C: has been
+    D: has being
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 76
+  page: 103
+  section: null
+  instruction: In each of questions 66 to 85, choose the option that best completes the gap
+  stem: Those___ are very beautiful
+  options:
+    A: flowers of her
+    B: flowers of her's
+    C: our flower
+    D: flowers ours
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 77
+  page: 103
+  section: null
+  instruction: In each of questions 66 to 85, choose the option that best completes the gap
+  stem: Cooking has never been Jumoke's---
+  options:
+    A: recital
+    B: purview
+    C: style
+    D: forte
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 78
+  page: 103
+  section: null
+  instruction: In each of questions 66 to 85, choose the option that best completes the gap
+  stem: When the strike is over, there will probably be an increase in wages and a __ increase in prices
+  options:
+    A: sporadic
+    B: concordant
+    C: concurrent
+    D: chronic
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 79
+  page: 103
+  section: null
+  instruction: In each of questions 66 to 85, choose the option that best completes the gap
+  stem: My mother was—annoyed with me for coming late
+  options:
+    A: very
+    B: neither
+    C: hotly
+    D: just
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 80
+  page: 103
+  section: null
+  instruction: In each of questions 66 to 85, choose the option that best completes the gap
+  stem: The chairman is too much--- an idealist for this government
+  options:
+    A: from
+    B: about
+    C: of
+    D: with 12 O'clock two
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 81
+  page: 103
+  section: null
+  instruction: In each of questions 66 to 85, choose the option that best completes the gap
+  stem: The clock--- hours ago
+  options:
+    A: strikes
+    B: strike
+    C: struck
+    D: striking
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 82
+  page: 103
+  section: null
+  instruction: In each of questions 66 to 85, choose the option that best completes the gap
+  stem: Whats is the jury's --- the matter
+  options:
+    A: verdict on
+    B: verdict from
+    C: verdict at
+    D: verdict with
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 83
+  page: 104
+  section: null
+  instruction: In each of questions 66 to 85, choose the option that best completes the gap
+  stem: The unconscious man was---- after receiving first aid
+  options:
+    A: reawakened
+    B: reformed
+    C: restored
+    D: revived –his
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 84
+  page: 104
+  section: null
+  instruction: In each of questions 66 to 85, choose the option that best completes the gap
+  stem: The laughter face for a moment
+  options:
+    A: improved
+    B: controlled
+    C: animated
+    D: remade
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 85
+  page: 104
+  section: null
+  instruction: In each of questions 66 to 85, choose the option that best completes the gap
+  stem: She traced her family history- --matrilineal descent
+  options:
+    A: in
+    B: by
+    C: with
+    D: at
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 86
+  page: 104
+  section: null
+  instruction: In each of questions 86 to 88, choose the option that has the same vowel sound as the one
+    represented by the letter(s) underlined
+  stem: cool
+  options:
+    A: full
+    B: luke
+    C: look
+    D: should
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.C.1.i
+  skill_reason: Printed direction asks for the same vowel sound.
+  passage_ref: null
+- number: 87
+  page: 104
+  section: null
+  instruction: In each of questions 86 to 88, choose the option that has the same vowel sound as the one
+    represented by the letter(s) underlined
+  stem: odour
+  options:
+    A: flow
+    B: sugar
+    C: hold
+    D: floor
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.C.1.i
+  skill_reason: Printed direction asks for the same vowel sound.
+  passage_ref: null
+- number: 88
+  page: 104
+  section: null
+  instruction: In each of questions 86 to 88, choose the option that has the same vowel sound as the one
+    represented by the letter(s) underlined
+  stem: palm
+  options:
+    A: ranch
+    B: florid
+    C: lunch
+    D: plait
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.C.1.i
+  skill_reason: Printed direction asks for the same vowel sound.
+  passage_ref: null
+- number: 89
+  page: 104
+  section: null
+  instruction: In each of questions 89 to 91, choose the option that has the same consonant sound as the
+    one represented by the letter(s) underlined
+  stem: vision
+  options:
+    A: instruction
+    B: mansion
+    C: nation
+    D: enclosure
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.C.2.i
+  skill_reason: Printed direction asks for the same consonant sound.
+  passage_ref: null
+- number: 90
+  page: 105
+  section: null
+  instruction: In each of questions 89 to 91, choose the option that has the same consonant sound as the
+    one represented by the letter(s) underlined
+  stem: gnash
+  options:
+    A: forge
+    B: new
+    C: king
+    D: ring
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.C.2.i
+  skill_reason: Printed direction asks for the same consonant sound.
+  passage_ref: null
+- number: 91
+  page: 105
+  section: null
+  instruction: In each of questions 89 to 91, choose the option that has the same consonant sound as the
+    one represented by the letter(s) underlined
+  stem: epitaph
+  options:
+    A: pseudo
+    B: fan
+    C: paper
+    D: pneumonia
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.C.2.i
+  skill_reason: Printed direction asks for the same consonant sound.
+  passage_ref: null
+- number: 92
+  page: 105
+  section: null
+  instruction: Choose the option that rhymes with the given word
+  stem: ever
+  options:
+    A: favour
+    B: fever
+    C: never
+    D: heavier
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.C.3.i
+  skill_reason: Printed direction asks which option rhymes with the given word.
+  passage_ref: null
+- number: 93
+  page: 105
+  section: null
+  instruction: Choose the option that rhymes with the given word
+  stem: keep
+  options:
+    A: reap
+    B: seethe
+    C: threat
+    D: dead
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.C.3.i
+  skill_reason: Printed direction asks which option rhymes with the given word.
+  passage_ref: null
+- number: 94
+  page: 105
+  section: null
+  instruction: Choose the option that rhymes with the given word
+  stem: tax
+  options:
+    A: box
+    B: lacks
+    C: back
+    D: ask
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.C.3.i
+  skill_reason: Printed direction asks which option rhymes with the given word.
+  passage_ref: null
+- number: 95
+  page: 105
+  section: null
+  instruction: In each of questions 95 to 97, choose the most appropriate stress pattern from the options.
+    The stressed syllables are written in capital letter
+  stem: valedictory
+  options:
+    A: valeDICtory
+    B: valedicTORY
+    C: VAledictory
+    D: vaLEdictory
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.C.4.i
+  skill_reason: Printed direction asks for the stress pattern.
+  passage_ref: null
+- number: 96
+  page: 105
+  section: null
+  instruction: In each of questions 95 to 97, choose the most appropriate stress pattern from the options.
+    The stressed syllables are written in capital letter
+  stem: congratulation
+  options:
+    A: congraTUlation
+    B: congratuLAtion
+    C: CONgratulation
+    D: conGRAtulation
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.C.4.i
+  skill_reason: Printed direction asks for the stress pattern.
+  passage_ref: null
+- number: 97
+  page: 106
+  section: null
+  instruction: In each of questions 95 to 97, choose the most appropriate stress pattern from the options.
+    The stressed syllables are written in capital letter
+  stem: conspiracy
+  options:
+    A: conspiRAcy
+    B: conspiraCY
+    C: consPIracy
+    D: CONspiracy
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.C.4.i
+  skill_reason: Printed direction asks for the stress pattern.
+  passage_ref: null
+- number: 98
+  page: 106
+  section: null
+  instruction: In each of questions 98 to 100, the world in capital letters has the emphatic stress. Choose
+    the option to which the given sentence relates
+  stem: My mother brought a BICYCLE yesterday
+  options:
+    A: What did you mother buy yesterday?
+    B: Whose mother bought a bicycle yesterday?
+    C: Did my mother steal a bicycle yesterday?
+    D: When did my mother buy a bicycle?
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.C.5.i
+  skill_reason: 'Printed direction is the emphatic-stress format: which question the sentence answers.'
+  passage_ref: null
+- number: 99
+  page: 106
+  section: null
+  instruction: In each of questions 98 to 100, the world in capital letters has the emphatic stress. Choose
+    the option to which the given sentence relates
+  stem: AMINA went to Abuja by air
+  options:
+    A: Is Amina going to Abuja by air?
+    B: Who went to Abuja by air?
+    C: Did Amina go to Abuja by road?
+    D: Did Amina go to Jos by air?
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.C.5.i
+  skill_reason: 'Printed direction is the emphatic-stress format: which question the sentence answers.'
+  passage_ref: null
+- number: 100
+  page: 106
+  section: null
+  instruction: In each of questions 98 to 100, the world in capital letters has the emphatic stress. Choose
+    the option to which the given sentence relates
+  stem: Musa is STAYING in Enugu
+  options:
+    A: Is Musa passing through Enugu?
+    B: Is Musa staying on the outskirt of Enugu?
+    C: Is Audu staying in Enugu?
+    D: Was Musa staying in Enugu?
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.C.5.i
+  skill_reason: 'Printed direction is the emphatic-stress format: which question the sentence answers.'
+  passage_ref: null

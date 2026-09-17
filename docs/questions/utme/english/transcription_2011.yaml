@@ -1,0 +1,1762 @@
+# UTME 2011, Use of English — extracted from the text layer of
+# docs/questions/utme/english/JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf.
+#
+# 90 questions kept, 9 rejected.
+# Answers come from the key printed with the paper, which is a compiler's, not
+# JAMB's: they load as `published_key` and still need a person to check them.
+# Skill mappings follow the paper's own printed directions where it prints one;
+# 14 comprehension items had none and were mapped from the stem instead.
+format_version: 1
+source:
+  file: docs/questions/utme/english/JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf
+  exam_year: 2011
+  paper_label: UTME 2011 Use of English (objective)
+  paper_code: UTME-2011-ENG
+  question_count: 100
+  answer_source: published_key
+passages:
+- id: cloze_2011
+  label: CLOZE PASSAGE
+  text: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options are
+    provided. Choose the most appropriate option for each gap. Believe it or not, change is to human existence
+    what the blood is to the human body. We live in an era of amazing ……16…. [A. well-define, B. fast-paced,
+    C. favourable, D. social] change spawned by advancing technology and industrialization. However, man’s…...17….
+    [A. Knowledge of, B. attitude to, C. commitment to, D. opinion of] promoting and defending change
+    in a deliberate effort to establish ….18… [A customs, B companies, C trade-zone, D variations] that
+    man’s stimulate advancement for concern is proving unfavourable to the climate with threatening ….19….
+    [A repercussions B clouds C pressure D implication] Human-induced climate change has awakened widespread
+    concern across the globe. As a matter of fact, climate change is now….20….. [A. an acceptable B a
+    foremost C the only D the last] globe issue. It is a major test of [A popularity B Africa’s….21… energy
+    C ingenuity D incapability]! The forth Assessment Report (AR4) of the intergovernmental panel of climate
+    change (IPCC) confirm that human action are changing the earth’s climate and creating major disturbance
+    in human….22….[A. geography B society C systems D life] and ecosystems. The IPCC reports that world
+    has warmed by an average of 0.760c since pre- Industrial times. The rising global …23…. [A command
+    B demand C warning D supply] for energy and the adverse changes on each were commensurate with the
+    level of ….24…. [ A structure greenhouse B paints C emulsion D emissions] it spews out, perhaps Africa
+    would have been spared and would probably be just an amused spectator. But as it, this is not the
+    case. Here again, we see well-meaning global citizen appealing for the rest of the world to take responsibility
+    for the problem of Africa, a strategy that cannot, ……25…. thus far, be termed [A notable B liable
+    C credible D flexible]. LEXIS, STRUCTURE AND ORAL FORMS In each of questions 26 to 35, select the
+    option that best explains the information conveyed in the sentence.
+- id: passage_2011_passage_i
+  label: PASSAGE_I
+  text: 'In 1962, a team of scientists produce a special radio station that had a range of fifteen miles.
+    Even though communication was being accomplished in space at a range of more than a million times
+    this distance, the new radio station caused much excitement among scientist. The reason: its power
+    supply was ''battery'' made of bacteria. For a the first time, practical amounts of electricity were
+    being produced by a form of life and put to use. Bio cell, the new power supply had a liquid fuel
+    containing tiny forms of life that changed the fuel directly into electric energy; this was far more
+    than an interesting ENGLISH QUESTIONS experiment. The bio cell is being develop as producers of electricity
+    for radio, for signal to guide ship, for lighting and other uses. Though the working bio cell is only
+    a few years old, some scientist feels that it will one day produce power cheaply as is now being done
+    by other method, and that the bio cell will use materials that would otherwise be consider a waste.
+    Early bio cells were powered with sugar, but a wide range of fuel can be used. Work is being done
+    using sea water to feed the bacteria. Electricity from living cells is no new idea. Man experience
+    the strange shock produce by some fish even before electricity was really discovered. Then in time,
+    there were other discoveries. Benjamin Franklin found that lightening in the sky was electricity.
+    Luigi Galvani found some electricity in the muscles and nerves of animals, but the African catfish
+    produce far more electricity than most other living creatures. And other fish, the electric eel, well
+    named, for it has an even greater electric charge. Research works also discovered that even humans
+    produce small amount of electricity in their bodies. Our heart produces a very small amount that can
+    be measured, so do our brain. The bio cell is completely new in the field of power production and
+    as yet, no mass-production models have begun to replace the older type of batteries. Its might be
+    wondered, then, what the excitement is all about'
+- id: passage_2011_passage_ii
+  label: PASSAGE_II
+  text: Like a clock with the pendulum in full swing, the mind moves as fast as time. But we ought to
+    mind our thoughts for if they turn to be our enemies, they will be too many for us and will drag us
+    down to ruin. But some people may say that they cannot help having bad thought even though they sting
+    like vipers. That may be so, but the question is, do they hate them or not? We cannot keep thieves
+    from looking in at our window, but if we open our doors to them and receive them joyfully, we are
+    as bad as they. We cannot help the birds flying over our head; but we may keep them from building
+    their nets in our hair. Vain thought will knock at the door but we must not open to them. Though bad
+    and evil thought rise in our hearts, they must not be allowed to reign. He who turns a morsel over
+    and over in his mouth dose so because he likes the flavour, and he who meditate upon evil, love it,
+    and is ripe to commit it. Think of the devil, and he will appear, turn your thought toward evil and
+    your hands will soon follow. Snails leaves their slime behind them, and so do vain thought. An arrow
+    may fly through the air, and leaves no trace, but an evil thought always leaves a trail like a serpent.
+    Where there is much traffic of bad thinking, there will be much mire and dirt. Every wave of wicked
+    thought adds something to the corruption which rots upon the shore of life. It is dreadful to think
+    that a vile imagination, once indulge, gets the key of our minds, and can get in again very easily,
+    whether or not we let it in, and what may follow, no one knows. Nurse evil on the laps of thought,
+    and it will grow into a giant. Therefore; there is wisdom in watching every day, the thought and imagination
+    of our heart. Good thoughts are blessed guest and should be welcome, and much sought after, but bad
+    thought must fly out as swiftly as they moved in
+- id: passage_2011_passage_iii
+  label: PASSAGE_III
+  text: Though assumption is the lowest level of knowledge; it is still a form of knowledge, and knowledge
+    is key. Assumptions are the foundation upon which interpretation and conclusion are built. Everything
+    in life operate under certain assumptions. We make management decisions based on the assumptions we
+    hold about how management ought to function and how people ought to be governed. For some of us, we
+    consciously imbibe assumptions and principles about life and consciously decide based on them; for
+    others, it is unconsciously but potent all the same. Our assumptions will either drown us or help
+    us soar through life. We have always seen life as an immense mansion with many rooms. Some rooms lead
+    to wealth, others to the opposite. Ultimately, we decide where we end up; and life, thus far, has
+    proved that not everyone of us decides well, we all behave differently where we have different levels
+    of understanding, and behave the way where our understanding is the same. We eat because we all understand
+    the consequences of not eating. We all wear clothes because each of us comprehends lunacy. The list
+    goes on and on. It is inevitable that some of us will make choices that get and keep us on the lower
+    rung of the ladder by reason of exposure, training or some others variables. Life is about role playing.
+    We choose our roles wisely or foolishly, consciously or unconsciously. Some of us get wiser to new
+    levels of self- awareness enough to redefine our roles, others make no effort to build further capacity
+    and therefore remain where they are. It is based on those realities that we draw the conclusion that
+    not everyone will be wealthy in life. We lead, inspire and motivate people to strive and succeed.
+    It is also important that we paint the full and true picture of life so that we can discourage vain
+    pursuits. Balance must be enthroned as a critical component of truth, and people know, for instance,
+    that 'the top' is not a place that all must ascend. Our greatest consolation lies in our deep conviction
+    that true prosperity is in fulfilment through hard work than in intangible acquisition. There are
+    set roles that some of us have been wired up to play in life but which we are not content enough to
+    play because society esteems such roles to be inferior. Take the almost scared office of a teacher
+    for instance; there are people who have the natural gifts and inclinations to be school teacher. But
+    teaching profession, as it is, does not appear to be lucrative. So we have people who could have been
+    more fulfilled and effective working as school teacher serving in banks
+questions:
+- number: 1
+  page: 25
+  section: null
+  instruction: null
+  stem: Which question paper type of use of English is giving to you?
+  options:
+    A: Type A
+    B: Type B
+    C: Type C
+    D: Type D
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2011_passage_i
+- number: 2
+  page: 25
+  section: null
+  instruction: null
+  stem: The writer's posture, as conveyed in the statement Electricity from living cells is no new idea,
+    can be describe as
+  options:
+    A: Ineffectual
+    B: Contentious
+    C: Logical
+    D: unguarded
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.3.i
+  skill_reason: 'Stem asks about the writer''s attitude, mood or intention. Mapped from the stem: no direction
+    is printed for comprehension items.'
+  passage_ref: passage_2011_passage_i
+- number: 3
+  page: 25
+  section: null
+  instruction: null
+  stem: Which of the following is true according to the passage?
+  options:
+    A: Scientist felt that bio-cell would produce very costly energy
+    B: Bio cell, at the beginning, derived their energy from sugar
+    C: Sugar and fuel were initially used as source of energy for bio cells
+    D: Bio cells were forms of power used by the scientists
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2011_passage_i
+- number: 4
+  page: 26
+  section: null
+  instruction: null
+  stem: The inventor of biocell justified the need for it by saying that would
+  options:
+    A: develop ways for changing bio cell into fuel for use
+    B: yield a source of energy without much spending
+    C: produce electricity for all type of machines
+    D: produce signal to guide all ship and other vessels
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2011_passage_i
+- number: 5
+  page: 26
+  section: null
+  instruction: null
+  stem: According to the passage, electricity was first discover in
+  options:
+    A: heart and brains
+    B: muscles of animals
+    C: lightning
+    D: fish
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2011_passage_i
+- number: 6
+  page: 27
+  section: null
+  instruction: null
+  stem: Which of the following represents the writer's view in the passage?
+  options:
+    A: evil thought may come but there is virtue in keeping them out
+    B: evil thought will continue to sting us likes vipers as long as there are enemies who cause offence
+    C: like the pendulum, evil thought will always come to our mind no matter what we do
+    D: like most birds, evil thoughts fly swiftly in our minds without perching
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.3.i
+  skill_reason: 'Stem asks about the writer''s attitude, mood or intention. Mapped from the stem: no direction
+    is printed for comprehension items.'
+  passage_ref: passage_2011_passage_ii
+- number: 7
+  page: 27
+  section: null
+  instruction: null
+  stem: Which of the following statement represent the view expressed by the writer in the first paragraph?
+  options:
+    A: evil thought will eventually ruin the evil man
+    B: if we do not stop the pendulum of thought from swinging, our thoughts will soon become our enemies
+    C: To many evil thoughts leave fatal consequences
+    D: it is possible to decide what control our thoughts
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.3.i
+  skill_reason: 'Stem asks about the writer''s attitude, mood or intention. Mapped from the stem: no direction
+    is printed for comprehension items.'
+  passage_ref: passage_2011_passage_ii
+- number: 8
+  page: 28
+  section: null
+  instruction: null
+  stem: From the argument in the second paragraph, it can be concluded that evil thought control the lives
+    of people who
+  options:
+    A: Are helpless because they fly out of their minds
+    B: cherries idle and slothful ways
+    C: are thieves with evil instincts
+    D: treasures and ruminate on them
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2011_passage_ii
+- number: 9
+  page: 28
+  section: null
+  instruction: null
+  stem: The expression 'Think of the appear…..., as devil and he will used in the passage suggests that
+  options:
+    A: likes the devil evil thoughts must not reign in our hearts
+    B: evil thoughts are fantasies in people's mind which exist only
+    C: uncontrolled evil thoughts may lead to evil deeds
+    D: the devil gives evil thoughts only to those who invite him in
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.2.i
+  skill_reason: 'Stem asks what a word or expression means in the passage. Mapped from the stem: no direction
+    is printed for comprehension items.'
+  passage_ref: passage_2011_passage_ii
+- number: 10
+  page: 28
+  section: null
+  instruction: null
+  stem: which of the following statement summarizes the argument of the fourth paragraph
+  options:
+    A: heavy traffic on a miry and dirty road may lead to evil thoughts
+    B: the more evil we think, the more vile we are likely to become
+    C: evil people should not be welcome as guest in our homes the same way we welcome good people
+    D: evil thoughts control the key to human heart and no one can keep them out
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2011_passage_ii
+- number: 11
+  page: 30
+  section: null
+  instruction: null
+  stem: According to the writer, people lead and motivate others because they want to
+  options:
+    A: project individual contribution
+    B: encourage selfless service
+    C: make the world a home
+    D: prevent empty search
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.3.i
+  skill_reason: 'Stem asks about the writer''s attitude, mood or intention. Mapped from the stem: no direction
+    is printed for comprehension items.'
+  passage_ref: passage_2011_passage_iii
+- number: 12
+  page: 30
+  section: null
+  instruction: null
+  stem: According to the passage, balance must be enthroned because it is
+  options:
+    A: a critical interdependent function
+    B: an amazing help for conscience
+    C: a critical part of fidelity
+    D: a serious way of ensuring success
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2011_passage_iii
+- number: 14
+  page: 31
+  section: null
+  instruction: null
+  stem: Which of the following statements is true according to the passage?
+  options:
+    A: greatness in life emerges when square pegs are put in round holes
+    B: people do certain things in life because they know the repercussion
+    C: people agree on all issues and behave the same way for the same reason
+    D: understanding life at different levels gives no account of visible acquisition
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2011_passage_iii
+- number: 15
+  page: 31
+  section: null
+  instruction: null
+  stem: From the passage, it can be inferred that
+  options:
+    A: People insincerely discuss facts that govern their behaviour
+    B: all managerial decisions are based on assumptions
+    C: people make conscious effort to acquire hidden knowledge
+    D: all things in life exist on some belies
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.3.i
+  skill_reason: 'Stem asks for a deduction or inference. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2011_passage_iii
+- number: 16
+  page: 31
+  section: Cloze passage
+  instruction: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Believe it or not, change is to human
+    existence what the blood is to the human body. We live in an era of amazing ……16…. [A. well-define,
+    B. fast-paced, C. favourable, D. social] change spawned by advancing technology and industrialization.
+    However, man's…...17…. [A. Knowledge of, B. attitude to, C. commitment to, D. opinion of] promoting
+    and defending change in a deliberate effort to establish ….18… [A customs, B companies, C trade-zone,
+    D variations] that man's stimulate advancement for concern is proving unfavourable to the climate
+    with threatening ….19…. [A repercussions B clouds C pressure D implication] Human-induced climate
+    change has awakened widespread concern across the globe. As a matter of fact, climate change is now….20…..
+    [A. an acceptable B a foremost C the only D the last] globe issue. It is a major test of [A popularity
+    B Africa's….21… energy C ingenuity D incapability]! The forth Assessment Report (AR4) of the intergovernmental
+    panel of climate change (IPCC) confirm that human action are changing the earth's climate and creating
+    major disturbance in human….22….[A. geography B society C systems D life] and ecosystems. The IPCC
+    reports that world has warmed by an average of 0.760c since pre- Industrial times. The rising global
+    …23…. [A command B demand C warning D supply] for energy and the adverse changes on each were commensurate
+    with the level of ….24…. [ A structure greenhouse B paints C emulsion D emissions] it spews out, perhaps
+    Africa would have been spared and would probably be just an amused spectator. But as it, this is not
+    the case. Here again, we see well-meaning global citizen appealing for the rest of the world to take
+    responsibility for the problem of Africa, a strategy that cannot, ……25…. thus far, be termed [A notable
+    B liable C credible D flexible]. LEXIS, STRUCTURE AND ORAL FORMS In each of questions 26 to 35, select
+    the option that best explains the information conveyed in the sentence
+  stem: Gap 16 in the cloze passage.
+  options:
+    A: well-define,
+    B: fast-paced,
+    C: favourable,
+    D: social
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2011
+- number: 17
+  page: 32
+  section: Cloze passage
+  instruction: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Believe it or not, change is to human
+    existence what the blood is to the human body. We live in an era of amazing ……16…. [A. well-define,
+    B. fast-paced, C. favourable, D. social] change spawned by advancing technology and industrialization.
+    However, man's…...17…. [A. Knowledge of, B. attitude to, C. commitment to, D. opinion of] promoting
+    and defending change in a deliberate effort to establish ….18… [A customs, B companies, C trade-zone,
+    D variations] that man's stimulate advancement for concern is proving unfavourable to the climate
+    with threatening ….19…. [A repercussions B clouds C pressure D implication] Human-induced climate
+    change has awakened widespread concern across the globe. As a matter of fact, climate change is now….20…..
+    [A. an acceptable B a foremost C the only D the last] globe issue. It is a major test of [A popularity
+    B Africa's….21… energy C ingenuity D incapability]! The forth Assessment Report (AR4) of the intergovernmental
+    panel of climate change (IPCC) confirm that human action are changing the earth's climate and creating
+    major disturbance in human….22….[A. geography B society C systems D life] and ecosystems. The IPCC
+    reports that world has warmed by an average of 0.760c since pre- Industrial times. The rising global
+    …23…. [A command B demand C warning D supply] for energy and the adverse changes on each were commensurate
+    with the level of ….24…. [ A structure greenhouse B paints C emulsion D emissions] it spews out, perhaps
+    Africa would have been spared and would probably be just an amused spectator. But as it, this is not
+    the case. Here again, we see well-meaning global citizen appealing for the rest of the world to take
+    responsibility for the problem of Africa, a strategy that cannot, ……25…. thus far, be termed [A notable
+    B liable C credible D flexible]. LEXIS, STRUCTURE AND ORAL FORMS In each of questions 26 to 35, select
+    the option that best explains the information conveyed in the sentence
+  stem: Gap 17 in the cloze passage.
+  options:
+    A: Knowledge of,
+    B: attitude to,
+    C: commitment to,
+    D: opinion of
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2011
+- number: 26
+  page: 33
+  section: null
+  instruction: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Believe it or not, change is to human
+    existence what the blood is to the human body. We live in an era of amazing ……16…. [A. well-define,
+    B. fast-paced, C. favourable, D. social] change spawned by advancing technology and industrialization.
+    However, man's…...17…. [A. Knowledge of, B. attitude to, C. commitment to, D. opinion of] promoting
+    and defending change in a deliberate effort to establish ….18… [A customs, B companies, C trade-zone,
+    D variations] that man's stimulate advancement for concern is proving unfavourable to the climate
+    with threatening ….19…. [A repercussions B clouds C pressure D implication] Human-induced climate
+    change has awakened widespread concern across the globe. As a matter of fact, climate change is now….20…..
+    [A. an acceptable B a foremost C the only D the last] globe issue. It is a major test of [A popularity
+    B Africa's….21… energy C ingenuity D incapability]! The forth Assessment Report (AR4) of the intergovernmental
+    panel of climate change (IPCC) confirm that human action are changing the earth's climate and creating
+    major disturbance in human….22….[A. geography B society C systems D life] and ecosystems. The IPCC
+    reports that world has warmed by an average of 0.760c since pre- Industrial times. The rising global
+    …23…. [A command B demand C warning D supply] for energy and the adverse changes on each were commensurate
+    with the level of ….24…. [ A structure greenhouse B paints C emulsion D emissions] it spews out, perhaps
+    Africa would have been spared and would probably be just an amused spectator. But as it, this is not
+    the case. Here again, we see well-meaning global citizen appealing for the rest of the world to take
+    responsibility for the problem of Africa, a strategy that cannot, ……25…. thus far, be termed [A notable
+    B liable C credible D flexible]. LEXIS, STRUCTURE AND ORAL FORMS In each of questions 26 to 35, select
+    the option that best explains the information conveyed in the sentence
+  stem: If he were here, it could be more fun
+  options:
+    A: He was expected but did not show up to make the occasion lively
+    B: There was no fun because he was not present
+    C: He did not show up and so the occasion lacked much fun
+    D: He was being expected to supply more fun
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 27
+  page: 33
+  section: null
+  instruction: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Believe it or not, change is to human
+    existence what the blood is to the human body. We live in an era of amazing ……16…. [A. well-define,
+    B. fast-paced, C. favourable, D. social] change spawned by advancing technology and industrialization.
+    However, man's…...17…. [A. Knowledge of, B. attitude to, C. commitment to, D. opinion of] promoting
+    and defending change in a deliberate effort to establish ….18… [A customs, B companies, C trade-zone,
+    D variations] that man's stimulate advancement for concern is proving unfavourable to the climate
+    with threatening ….19…. [A repercussions B clouds C pressure D implication] Human-induced climate
+    change has awakened widespread concern across the globe. As a matter of fact, climate change is now….20…..
+    [A. an acceptable B a foremost C the only D the last] globe issue. It is a major test of [A popularity
+    B Africa's….21… energy C ingenuity D incapability]! The forth Assessment Report (AR4) of the intergovernmental
+    panel of climate change (IPCC) confirm that human action are changing the earth's climate and creating
+    major disturbance in human….22….[A. geography B society C systems D life] and ecosystems. The IPCC
+    reports that world has warmed by an average of 0.760c since pre- Industrial times. The rising global
+    …23…. [A command B demand C warning D supply] for energy and the adverse changes on each were commensurate
+    with the level of ….24…. [ A structure greenhouse B paints C emulsion D emissions] it spews out, perhaps
+    Africa would have been spared and would probably be just an amused spectator. But as it, this is not
+    the case. Here again, we see well-meaning global citizen appealing for the rest of the world to take
+    responsibility for the problem of Africa, a strategy that cannot, ……25…. thus far, be termed [A notable
+    B liable C credible D flexible]. LEXIS, STRUCTURE AND ORAL FORMS In each of questions 26 to 35, select
+    the option that best explains the information conveyed in the sentence
+  stem: The secretary said that the postponement of the meeting was due to unforeseen circumstances
+  options:
+    A: The date of the meeting was shifted as a result of unexpected reasons
+    B: The meeting's date was put off for strange reasons
+    C: The meeting was called off as a result of obstacles hitherto unknown
+    D: The meeting broke off as a result of unusual difficulties
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 28
+  page: 33
+  section: null
+  instruction: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Believe it or not, change is to human
+    existence what the blood is to the human body. We live in an era of amazing ……16…. [A. well-define,
+    B. fast-paced, C. favourable, D. social] change spawned by advancing technology and industrialization.
+    However, man's…...17…. [A. Knowledge of, B. attitude to, C. commitment to, D. opinion of] promoting
+    and defending change in a deliberate effort to establish ….18… [A customs, B companies, C trade-zone,
+    D variations] that man's stimulate advancement for concern is proving unfavourable to the climate
+    with threatening ….19…. [A repercussions B clouds C pressure D implication] Human-induced climate
+    change has awakened widespread concern across the globe. As a matter of fact, climate change is now….20…..
+    [A. an acceptable B a foremost C the only D the last] globe issue. It is a major test of [A popularity
+    B Africa's….21… energy C ingenuity D incapability]! The forth Assessment Report (AR4) of the intergovernmental
+    panel of climate change (IPCC) confirm that human action are changing the earth's climate and creating
+    major disturbance in human….22….[A. geography B society C systems D life] and ecosystems. The IPCC
+    reports that world has warmed by an average of 0.760c since pre- Industrial times. The rising global
+    …23…. [A command B demand C warning D supply] for energy and the adverse changes on each were commensurate
+    with the level of ….24…. [ A structure greenhouse B paints C emulsion D emissions] it spews out, perhaps
+    Africa would have been spared and would probably be just an amused spectator. But as it, this is not
+    the case. Here again, we see well-meaning global citizen appealing for the rest of the world to take
+    responsibility for the problem of Africa, a strategy that cannot, ……25…. thus far, be termed [A notable
+    B liable C credible D flexible]. LEXIS, STRUCTURE AND ORAL FORMS In each of questions 26 to 35, select
+    the option that best explains the information conveyed in the sentence
+  stem: The hunter has a bird's-eye view of the animals
+  options:
+    A: He views the animal from a high position
+    B: He views the bird's eye
+    C: He views the birds on the tree with one eye
+    D: He watches animals and birds closely
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 29
+  page: 33
+  section: null
+  instruction: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Believe it or not, change is to human
+    existence what the blood is to the human body. We live in an era of amazing ……16…. [A. well-define,
+    B. fast-paced, C. favourable, D. social] change spawned by advancing technology and industrialization.
+    However, man's…...17…. [A. Knowledge of, B. attitude to, C. commitment to, D. opinion of] promoting
+    and defending change in a deliberate effort to establish ….18… [A customs, B companies, C trade-zone,
+    D variations] that man's stimulate advancement for concern is proving unfavourable to the climate
+    with threatening ….19…. [A repercussions B clouds C pressure D implication] Human-induced climate
+    change has awakened widespread concern across the globe. As a matter of fact, climate change is now….20…..
+    [A. an acceptable B a foremost C the only D the last] globe issue. It is a major test of [A popularity
+    B Africa's….21… energy C ingenuity D incapability]! The forth Assessment Report (AR4) of the intergovernmental
+    panel of climate change (IPCC) confirm that human action are changing the earth's climate and creating
+    major disturbance in human….22….[A. geography B society C systems D life] and ecosystems. The IPCC
+    reports that world has warmed by an average of 0.760c since pre- Industrial times. The rising global
+    …23…. [A command B demand C warning D supply] for energy and the adverse changes on each were commensurate
+    with the level of ….24…. [ A structure greenhouse B paints C emulsion D emissions] it spews out, perhaps
+    Africa would have been spared and would probably be just an amused spectator. But as it, this is not
+    the case. Here again, we see well-meaning global citizen appealing for the rest of the world to take
+    responsibility for the problem of Africa, a strategy that cannot, ……25…. thus far, be termed [A notable
+    B liable C credible D flexible]. LEXIS, STRUCTURE AND ORAL FORMS In each of questions 26 to 35, select
+    the option that best explains the information conveyed in the sentence
+  stem: Even though Susan was the last in the examination, her result wasn't too different from what had
+    been expected
+  options:
+    A: Her result was poor
+    B: Her result was a disappointment
+    C: Her result was as expected
+    D: She had not been serious with her studies
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 30
+  page: 34
+  section: null
+  instruction: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Believe it or not, change is to human
+    existence what the blood is to the human body. We live in an era of amazing ……16…. [A. well-define,
+    B. fast-paced, C. favourable, D. social] change spawned by advancing technology and industrialization.
+    However, man's…...17…. [A. Knowledge of, B. attitude to, C. commitment to, D. opinion of] promoting
+    and defending change in a deliberate effort to establish ….18… [A customs, B companies, C trade-zone,
+    D variations] that man's stimulate advancement for concern is proving unfavourable to the climate
+    with threatening ….19…. [A repercussions B clouds C pressure D implication] Human-induced climate
+    change has awakened widespread concern across the globe. As a matter of fact, climate change is now….20…..
+    [A. an acceptable B a foremost C the only D the last] globe issue. It is a major test of [A popularity
+    B Africa's….21… energy C ingenuity D incapability]! The forth Assessment Report (AR4) of the intergovernmental
+    panel of climate change (IPCC) confirm that human action are changing the earth's climate and creating
+    major disturbance in human….22….[A. geography B society C systems D life] and ecosystems. The IPCC
+    reports that world has warmed by an average of 0.760c since pre- Industrial times. The rising global
+    …23…. [A command B demand C warning D supply] for energy and the adverse changes on each were commensurate
+    with the level of ….24…. [ A structure greenhouse B paints C emulsion D emissions] it spews out, perhaps
+    Africa would have been spared and would probably be just an amused spectator. But as it, this is not
+    the case. Here again, we see well-meaning global citizen appealing for the rest of the world to take
+    responsibility for the problem of Africa, a strategy that cannot, ……25…. thus far, be termed [A notable
+    B liable C credible D flexible]. LEXIS, STRUCTURE AND ORAL FORMS In each of questions 26 to 35, select
+    the option that best explains the information conveyed in the sentence
+  stem: Mrs. Adasu does all her work with more haste, less speed
+  options:
+    A: She accepts whatever she does with more haste and speed
+    B: She approaches whatever she does hurriedly
+    C: She addresses everything she does very quickly to avoid mistakes
+    D: She does everything carefully to avoid mistakes
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 31
+  page: 34
+  section: null
+  instruction: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Believe it or not, change is to human
+    existence what the blood is to the human body. We live in an era of amazing ……16…. [A. well-define,
+    B. fast-paced, C. favourable, D. social] change spawned by advancing technology and industrialization.
+    However, man's…...17…. [A. Knowledge of, B. attitude to, C. commitment to, D. opinion of] promoting
+    and defending change in a deliberate effort to establish ….18… [A customs, B companies, C trade-zone,
+    D variations] that man's stimulate advancement for concern is proving unfavourable to the climate
+    with threatening ….19…. [A repercussions B clouds C pressure D implication] Human-induced climate
+    change has awakened widespread concern across the globe. As a matter of fact, climate change is now….20…..
+    [A. an acceptable B a foremost C the only D the last] globe issue. It is a major test of [A popularity
+    B Africa's….21… energy C ingenuity D incapability]! The forth Assessment Report (AR4) of the intergovernmental
+    panel of climate change (IPCC) confirm that human action are changing the earth's climate and creating
+    major disturbance in human….22….[A. geography B society C systems D life] and ecosystems. The IPCC
+    reports that world has warmed by an average of 0.760c since pre- Industrial times. The rising global
+    …23…. [A command B demand C warning D supply] for energy and the adverse changes on each were commensurate
+    with the level of ….24…. [ A structure greenhouse B paints C emulsion D emissions] it spews out, perhaps
+    Africa would have been spared and would probably be just an amused spectator. But as it, this is not
+    the case. Here again, we see well-meaning global citizen appealing for the rest of the world to take
+    responsibility for the problem of Africa, a strategy that cannot, ……25…. thus far, be termed [A notable
+    B liable C credible D flexible]. LEXIS, STRUCTURE AND ORAL FORMS In each of questions 26 to 35, select
+    the option that best explains the information conveyed in the sentence
+  stem: She stopped her education as her uncle left her in the lurch
+  options:
+    A: Her uncle deceived her
+    B: Her uncle disinherited her
+    C: Her uncle refused to help her
+    D: Her uncle disrespected her
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 32
+  page: 34
+  section: null
+  instruction: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Believe it or not, change is to human
+    existence what the blood is to the human body. We live in an era of amazing ……16…. [A. well-define,
+    B. fast-paced, C. favourable, D. social] change spawned by advancing technology and industrialization.
+    However, man's…...17…. [A. Knowledge of, B. attitude to, C. commitment to, D. opinion of] promoting
+    and defending change in a deliberate effort to establish ….18… [A customs, B companies, C trade-zone,
+    D variations] that man's stimulate advancement for concern is proving unfavourable to the climate
+    with threatening ….19…. [A repercussions B clouds C pressure D implication] Human-induced climate
+    change has awakened widespread concern across the globe. As a matter of fact, climate change is now….20…..
+    [A. an acceptable B a foremost C the only D the last] globe issue. It is a major test of [A popularity
+    B Africa's….21… energy C ingenuity D incapability]! The forth Assessment Report (AR4) of the intergovernmental
+    panel of climate change (IPCC) confirm that human action are changing the earth's climate and creating
+    major disturbance in human….22….[A. geography B society C systems D life] and ecosystems. The IPCC
+    reports that world has warmed by an average of 0.760c since pre- Industrial times. The rising global
+    …23…. [A command B demand C warning D supply] for energy and the adverse changes on each were commensurate
+    with the level of ….24…. [ A structure greenhouse B paints C emulsion D emissions] it spews out, perhaps
+    Africa would have been spared and would probably be just an amused spectator. But as it, this is not
+    the case. Here again, we see well-meaning global citizen appealing for the rest of the world to take
+    responsibility for the problem of Africa, a strategy that cannot, ……25…. thus far, be termed [A notable
+    B liable C credible D flexible]. LEXIS, STRUCTURE AND ORAL FORMS In each of questions 26 to 35, select
+    the option that best explains the information conveyed in the sentence
+  stem: The plan to upgrade the dispensary to a general hospital did not materialize
+  options:
+    A: The plan did not meet the required specifications
+    B: The arrangement did not work out as wished
+    C: It was difficult to obtained the materials
+    D: The materials purchased ware not the right ones
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 33
+  page: 34
+  section: null
+  instruction: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Believe it or not, change is to human
+    existence what the blood is to the human body. We live in an era of amazing ……16…. [A. well-define,
+    B. fast-paced, C. favourable, D. social] change spawned by advancing technology and industrialization.
+    However, man's…...17…. [A. Knowledge of, B. attitude to, C. commitment to, D. opinion of] promoting
+    and defending change in a deliberate effort to establish ….18… [A customs, B companies, C trade-zone,
+    D variations] that man's stimulate advancement for concern is proving unfavourable to the climate
+    with threatening ….19…. [A repercussions B clouds C pressure D implication] Human-induced climate
+    change has awakened widespread concern across the globe. As a matter of fact, climate change is now….20…..
+    [A. an acceptable B a foremost C the only D the last] globe issue. It is a major test of [A popularity
+    B Africa's….21… energy C ingenuity D incapability]! The forth Assessment Report (AR4) of the intergovernmental
+    panel of climate change (IPCC) confirm that human action are changing the earth's climate and creating
+    major disturbance in human….22….[A. geography B society C systems D life] and ecosystems. The IPCC
+    reports that world has warmed by an average of 0.760c since pre- Industrial times. The rising global
+    …23…. [A command B demand C warning D supply] for energy and the adverse changes on each were commensurate
+    with the level of ….24…. [ A structure greenhouse B paints C emulsion D emissions] it spews out, perhaps
+    Africa would have been spared and would probably be just an amused spectator. But as it, this is not
+    the case. Here again, we see well-meaning global citizen appealing for the rest of the world to take
+    responsibility for the problem of Africa, a strategy that cannot, ……25…. thus far, be termed [A notable
+    B liable C credible D flexible]. LEXIS, STRUCTURE AND ORAL FORMS In each of questions 26 to 35, select
+    the option that best explains the information conveyed in the sentence
+  stem: Okon's company took a hit last year
+  options:
+    A: His company improved last year
+    B: His company made a huge success last year
+    C: His company was badly damaged last year
+    D: His company was established last year
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 34
+  page: 34
+  section: null
+  instruction: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Believe it or not, change is to human
+    existence what the blood is to the human body. We live in an era of amazing ……16…. [A. well-define,
+    B. fast-paced, C. favourable, D. social] change spawned by advancing technology and industrialization.
+    However, man's…...17…. [A. Knowledge of, B. attitude to, C. commitment to, D. opinion of] promoting
+    and defending change in a deliberate effort to establish ….18… [A customs, B companies, C trade-zone,
+    D variations] that man's stimulate advancement for concern is proving unfavourable to the climate
+    with threatening ….19…. [A repercussions B clouds C pressure D implication] Human-induced climate
+    change has awakened widespread concern across the globe. As a matter of fact, climate change is now….20…..
+    [A. an acceptable B a foremost C the only D the last] globe issue. It is a major test of [A popularity
+    B Africa's….21… energy C ingenuity D incapability]! The forth Assessment Report (AR4) of the intergovernmental
+    panel of climate change (IPCC) confirm that human action are changing the earth's climate and creating
+    major disturbance in human….22….[A. geography B society C systems D life] and ecosystems. The IPCC
+    reports that world has warmed by an average of 0.760c since pre- Industrial times. The rising global
+    …23…. [A command B demand C warning D supply] for energy and the adverse changes on each were commensurate
+    with the level of ….24…. [ A structure greenhouse B paints C emulsion D emissions] it spews out, perhaps
+    Africa would have been spared and would probably be just an amused spectator. But as it, this is not
+    the case. Here again, we see well-meaning global citizen appealing for the rest of the world to take
+    responsibility for the problem of Africa, a strategy that cannot, ……25…. thus far, be termed [A notable
+    B liable C credible D flexible]. LEXIS, STRUCTURE AND ORAL FORMS In each of questions 26 to 35, select
+    the option that best explains the information conveyed in the sentence
+  stem: My eldest son, who is in Lagos is studying English
+  options:
+    A: Only my son is in Lagos studying English
+    B: My only son is in Lagos studying English
+    C: One of my son is in Lagos studying English
+    D: My sons are in Lagos but only one is studying English
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 35
+  page: 35
+  section: null
+  instruction: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options
+    are provided. Choose the most appropriate option for each gap. Believe it or not, change is to human
+    existence what the blood is to the human body. We live in an era of amazing ……16…. [A. well-define,
+    B. fast-paced, C. favourable, D. social] change spawned by advancing technology and industrialization.
+    However, man's…...17…. [A. Knowledge of, B. attitude to, C. commitment to, D. opinion of] promoting
+    and defending change in a deliberate effort to establish ….18… [A customs, B companies, C trade-zone,
+    D variations] that man's stimulate advancement for concern is proving unfavourable to the climate
+    with threatening ….19…. [A repercussions B clouds C pressure D implication] Human-induced climate
+    change has awakened widespread concern across the globe. As a matter of fact, climate change is now….20…..
+    [A. an acceptable B a foremost C the only D the last] globe issue. It is a major test of [A popularity
+    B Africa's….21… energy C ingenuity D incapability]! The forth Assessment Report (AR4) of the intergovernmental
+    panel of climate change (IPCC) confirm that human action are changing the earth's climate and creating
+    major disturbance in human….22….[A. geography B society C systems D life] and ecosystems. The IPCC
+    reports that world has warmed by an average of 0.760c since pre- Industrial times. The rising global
+    …23…. [A command B demand C warning D supply] for energy and the adverse changes on each were commensurate
+    with the level of ….24…. [ A structure greenhouse B paints C emulsion D emissions] it spews out, perhaps
+    Africa would have been spared and would probably be just an amused spectator. But as it, this is not
+    the case. Here again, we see well-meaning global citizen appealing for the rest of the world to take
+    responsibility for the problem of Africa, a strategy that cannot, ……25…. thus far, be termed [A notable
+    B liable C credible D flexible]. LEXIS, STRUCTURE AND ORAL FORMS In each of questions 26 to 35, select
+    the option that best explains the information conveyed in the sentence
+  stem: If I went to the village, I would visit the king
+  options:
+    A: If I go to the village I will visit the king
+    B: I did not go to the village and I did not visit the king
+    C: All the times I went to village I also visited the King
+    D: I will visit the king when I go to the village
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 36
+  page: 35
+  section: null
+  instruction: In each of questions 36 to 50, choose the option nearest in meaning to the word or phrases
+    in italics
+  stem: Since its in 1983, inception the newspaper has attracted thousands of readers
+  options:
+    A: renaissance
+    B: coming
+    C: commencement
+    D: publication
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 37
+  page: 35
+  section: null
+  instruction: In each of questions 36 to 50, choose the option nearest in meaning to the word or phrases
+    in italics
+  stem: Mrs. Asio wanted her sister to stop being so detached
+  options:
+    A: friendly
+    B: careless
+    C: indifferent
+    D: passionate
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 38
+  page: 35
+  section: null
+  instruction: In each of questions 36 to 50, choose the option nearest in meaning to the word or phrases
+    in italics
+  stem: Lantana dwelt in a ruined cottage on the hillside
+  options:
+    A: sat
+    B: worked
+    C: slept
+    D: lived
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 39
+  page: 35
+  section: null
+  instruction: In each of questions 36 to 50, choose the option nearest in meaning to the word or phrases
+    in italics
+  stem: The mistake brought the show to an ignominious end
+  options:
+    A: a good
+    B: a palatable
+    C: a disgraceful
+    D: a satisfactory
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 40
+  page: 36
+  section: null
+  instruction: In each of questions 36 to 50, choose the option nearest in meaning to the word or phrases
+    in italics
+  stem: He compliments me on my way of doing things
+  options:
+    A: complements
+    B: imitates
+    C: disgusts
+    D: praises
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 41
+  page: 36
+  section: null
+  instruction: In each of questions 36 to 50, choose the option nearest in meaning to the word or phrases
+    in italics
+  stem: The girl is angry with her friend who had ensnared her into this relationship
+  options:
+    A: tricked
+    B: encouraged
+    C: encouraged
+    D: forced
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 42
+  page: 36
+  section: null
+  instruction: In each of questions 36 to 50, choose the option nearest in meaning to the word or phrases
+    in italics
+  stem: Their new house was roofed with sheets corrugated
+  options:
+    A: folded
+    B: iron
+    C: aluminium
+    D: corrupted
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 43
+  page: 36
+  section: null
+  instruction: In each of questions 36 to 50, choose the option nearest in meaning to the word or phrases
+    in italics
+  stem: The stockbroker said it was an move to sell the shares astute then
+  options:
+    A: a bad
+    B: a shrewd
+    C: an unprofitable
+    D: an insincere
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 44
+  page: 36
+  section: null
+  instruction: In each of questions 36 to 50, choose the option nearest in meaning to the word or phrases
+    in italics
+  stem: The principal described Oche as the most tactful person he had ever worked with
+  options:
+    A: passionate
+    B: discrete
+    C: hard-working
+    D: innovate
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 45
+  page: 36
+  section: null
+  instruction: In each of questions 36 to 50, choose the option nearest in meaning to the word or phrases
+    in italics
+  stem: The old woman is suffering from dementia
+  options:
+    A: lucidity
+    B: senility
+    C: insanity
+    D: sagacity
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 46
+  page: 36
+  section: null
+  instruction: In each of questions 36 to 50, choose the option nearest in meaning to the word or phrases
+    in italics
+  stem: Some drugs have deleterious effect on a child's development
+  options:
+    A: debilitating
+    B: helpful
+    C: harmful
+    D: healing
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 47
+  page: 37
+  section: null
+  instruction: In each of questions 36 to 50, choose the option nearest in meaning to the word or phrases
+    in italics
+  stem: Fila has always described as belligerent
+  options:
+    A: beautiful
+    B: attractive
+    C: combative
+    D: innocent
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 48
+  page: 37
+  section: null
+  instruction: In each of questions 36 to 50, choose the option nearest in meaning to the word or phrases
+    in italics
+  stem: Laraba saw a forlorn little figure sitting outside the class
+  options:
+    A: wise and intelligent
+    B: lonely and unhappy
+    C: smart and healthy
+    D: short and ugly
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 49
+  page: 37
+  section: null
+  instruction: In each of questions 36 to 50, choose the option nearest in meaning to the word or phrases
+    in italics
+  stem: The circular supersedes all previous correspondence on the matter
+  options:
+    A: supports
+    B: displaces
+    C: eliminates
+    D: circumvent
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 50
+  page: 37
+  section: null
+  instruction: In each of questions 36 to 50, choose the option nearest in meaning to the word or phrases
+    in italics
+  stem: Her problem was exacerbated by the loss of her father
+  options:
+    A: exaggerated
+    B: solved
+    C: aggravated
+    D: infuriated
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 51
+  page: 37
+  section: null
+  instruction: In each of question 51 to 65, choose the word that is opposite in meaning to the word or
+    phrase in italics
+  stem: The warring communities were into negotiation a coerced settlement
+  options:
+    A: driven
+    B: compelled
+    C: persuaded
+    D: pressured
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 52
+  page: 37
+  section: null
+  instruction: In each of question 51 to 65, choose the word that is opposite in meaning to the word or
+    phrase in italics
+  stem: His father served as a mercenary in the army
+  options:
+    A: preacher
+    B: regular
+    C: recruit
+    D: officer
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 53
+  page: 37
+  section: null
+  instruction: In each of question 51 to 65, choose the word that is opposite in meaning to the word or
+    phrase in italics
+  stem: Jummai is to her cruel husband
+  options:
+    A: harsh
+    B: brutal
+    C: passionate
+    D: ferocious
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 54
+  page: 38
+  section: null
+  instruction: In each of question 51 to 65, choose the word that is opposite in meaning to the word or
+    phrase in italics
+  stem: The teacher who beat the student was treated with mercy
+  options:
+    A: disrespect
+    B: contempt
+    C: vengeance
+    D: kindness
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 55
+  page: 38
+  section: null
+  instruction: In each of question 51 to 65, choose the word that is opposite in meaning to the word or
+    phrase in italics
+  stem: His wife hated his garrulous attitude
+  options:
+    A: outspoken
+    B: unfriendly
+    C: reticent
+    D: thoughtful
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 56
+  page: 38
+  section: null
+  instruction: In each of question 51 to 65, choose the word that is opposite in meaning to the word or
+    phrase in italics
+  stem: Agoshito is a callow youth said the teacher
+  options:
+    A: An ignorant
+    B: An experience
+    C: An idle
+    D: An organized
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 57
+  page: 38
+  section: null
+  instruction: In each of question 51 to 65, choose the word that is opposite in meaning to the word or
+    phrase in italics
+  stem: What you are asking me to do is a herculean task
+  options:
+    A: a strenuous
+    B: a demanding
+    C: a lovely
+    D: an easy
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 58
+  page: 38
+  section: null
+  instruction: In each of question 51 to 65, choose the word that is opposite in meaning to the word or
+    phrase in italics
+  stem: Nkechi was a novice when she was first employed
+  options:
+    A: manager
+    B: clerk
+    C: supervisor
+    D: professional
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 59
+  page: 38
+  section: null
+  instruction: In each of question 51 to 65, choose the word that is opposite in meaning to the word or
+    phrase in italics
+  stem: '''I do not trust him ''he said, in a rare moment of candour'
+  options:
+    A: reproach
+    B: dishonesty
+    C: frankness
+    D: fairness
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 60
+  page: 38
+  section: null
+  instruction: In each of question 51 to 65, choose the word that is opposite in meaning to the word or
+    phrase in italics
+  stem: Mrs Akunilo looks anaemic today
+  options:
+    A: strange
+    B: sick
+    C: weak
+    D: strong
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 61
+  page: 39
+  section: null
+  instruction: In each of question 51 to 65, choose the word that is opposite in meaning to the word or
+    phrase in italics
+  stem: It is inconceivable that the sun shone in the night
+  options:
+    A: credible
+    B: unthinkable
+    C: impossible
+    D: contestable
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 62
+  page: 39
+  section: null
+  instruction: In each of question 51 to 65, choose the word that is opposite in meaning to the word or
+    phrase in italics
+  stem: She only gives a superficial impression of warmth and friendliness
+  options:
+    A: a strong
+    B: a fake
+    C: a deep
+    D: an unrealistic
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 63
+  page: 39
+  section: null
+  instruction: In each of question 51 to 65, choose the word that is opposite in meaning to the word or
+    phrase in italics
+  stem: As a prudent businessman, Adayi does not leave anything to chance
+  options:
+    A: A frugal
+    B: Shrewd
+    C: careless
+    D: unsuccessful
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 64
+  page: 39
+  section: null
+  instruction: In each of question 51 to 65, choose the word that is opposite in meaning to the word or
+    phrase in italics
+  stem: His antipathy affected the growth of his business
+  options:
+    A: hatred
+    B: receptiveness
+    C: loyalty
+    D: hostility
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 65
+  page: 39
+  section: null
+  instruction: In each of question 51 to 65, choose the word that is opposite in meaning to the word or
+    phrase in italics
+  stem: Okonkwo's lethal right foot did the magic in the football match
+  options:
+    A: Weak
+    B: wicked
+    C: fat
+    D: harmless
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 66
+  page: 39
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap
+  stem: When his car tyre ….. on the way, he did not know what to do
+  options:
+    A: has burst
+    B: had burst
+    C: bursted
+    D: burst
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 67
+  page: 40
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap
+  stem: Lami's father …. As a gardener when he was young, but now he is a driver
+  options:
+    A: had been working
+    B: use to work
+    C: has worked
+    D: used to work
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 68
+  page: 40
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap
+  stem: ……. He switches on the light, the shadow disappears
+  options:
+    A: whenever
+    B: except
+    C: since
+    D: until
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 69
+  page: 40
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap
+  stem: it is important that you clear the refuse in front of your house every ……
+  options:
+    A: fourtnight
+    B: fortnight
+    C: fourthnight
+    D: forthnight
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 70
+  page: 40
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap
+  stem: The policemen became hoodlums…… in suspicious as the their office
+  options:
+    A: ferreted
+    B: ferreted
+    C: ferreted about
+    D: ferreted about
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 71
+  page: 40
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap
+  stem: Suara needn't come with us...?
+  options:
+    A: does she
+    B: will she
+    C: can she
+    D: need she
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 72
+  page: 40
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap
+  stem: Unoka…. the whole house to find his missing wristwatch
+  options:
+    A: scourged
+    B: scoured
+    C: scored
+    D: scouted
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 73
+  page: 40
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap
+  stem: Ife asked me…
+  options:
+    A: what time it was
+    B: what is it by my time
+    C: what time is it
+    D: what time it is
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 74
+  page: 41
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap
+  stem: There are many ways to kill a should be …. In our rat, so we approach to the task ahead of us
+  options:
+    A: ecletic
+    B: eclectic
+    C: eclektic
+    D: eclectik
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 75
+  page: 41
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap
+  stem: Audu took these action purely…. His own career
+  options:
+    A: on furtherance of
+    B: in furtherance of
+    C: to furtherance in
+    D: in furtherance with
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 76
+  page: 41
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap
+  stem: Here is Mr. Odumusu who teaches English … in our school
+  options:
+    A: pronuntiation
+    B: pronounciation
+    C: pronunciation
+    D: pronountiation of… she lied
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 77
+  page: 41
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap
+  stem: Instead
+  options:
+    A: pleading
+    B: her to plead
+    C: her pleading
+    D: plead
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 78
+  page: 41
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap
+  stem: Of the three girls, Uka is the…
+  options:
+    A: so much notorious
+    B: notorious
+    C: naught
+    D: naughtiest
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 79
+  page: 41
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap
+  stem: I wonder how he will … being absent from school for a long time
+  options:
+    A: make in
+    B: make up
+    C: make off
+    D: make out
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 80
+  page: 41
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap
+  stem: Please sit on the…
+  options:
+    A: carier
+    B: career
+    C: carrier
+    D: carrear
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 81
+  page: 41
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap
+  stem: I want to … his chance to acquaint you with the latest development
+  options:
+    A: size
+    B: seize
+    C: sieze
+    D: cease
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 82
+  page: 42
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap
+  stem: Getting a well-paid job nowadays is on… task
+  options:
+    A: utmost
+    B: upbeat
+    C: uphill
+    D: upfield
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 83
+  page: 42
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap
+  stem: The secretary has no right to … my affairs
+  options:
+    A: spy from
+    B: meddle in
+    C: toy at
+    D: complain into
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 84
+  page: 42
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap
+  stem: Bola studiously avoided… the question
+  options:
+    A: parrying
+    B: answering
+    C: projecting
+    D: destroying
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 85
+  page: 42
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best complete the gap
+  stem: The school authority dismissed him for …. But I won't tell you about it yet
+  options:
+    A: certain reason
+    B: a reason
+    C: more reason
+    D: a certain reason
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 86
+  page: 42
+  section: null
+  instruction: In each of question 86 to 88, choose the option that has the same vowel sound as the one
+    represented by the letter(s) underlined
+  stem: bubble
+  options:
+    A: guy
+    B: bull
+    C: bumper
+    D: gurgle
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.C.1.i
+  skill_reason: Printed direction asks for the same vowel sound.
+  passage_ref: null
+- number: 87
+  page: 42
+  section: null
+  instruction: In each of question 86 to 88, choose the option that has the same vowel sound as the one
+    represented by the letter(s) underlined
+  stem: Weight
+  options:
+    A: whale
+    B: while
+    C: wheat
+    D: writhe
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.C.1.i
+  skill_reason: Printed direction asks for the same vowel sound.
+  passage_ref: null
+- number: 88
+  page: 43
+  section: null
+  instruction: In each of question 86 to 88, choose the option that has the same vowel sound as the one
+    represented by the letter(s) underlined
+  stem: Leach
+  options:
+    A: gear
+    B: cedar
+    C: cheer
+    D: death
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.C.1.i
+  skill_reason: Printed direction asks for the same vowel sound.
+  passage_ref: null
+- number: 89
+  page: 43
+  section: null
+  instruction: In each of question 89 to 91, choose the option that has the consonant sound as the one
+    represented by the letter(s) underlined
+  stem: mention
+  options:
+    A: that
+    B: machine
+    C: church
+    D: test
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.C.2.i
+  skill_reason: Printed direction asks for the same consonant sound.
+  passage_ref: null
+- number: 90
+  page: 43
+  section: null
+  instruction: In each of question 89 to 91, choose the option that has the consonant sound as the one
+    represented by the letter(s) underlined
+  stem: prestige
+  options:
+    A: bag
+    B: badge
+    C: reggae
+    D: leisure
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.C.2.i
+  skill_reason: Printed direction asks for the same consonant sound.
+  passage_ref: null
+- number: 91
+  page: 43
+  section: null
+  instruction: In each of question 89 to 91, choose the option that has the consonant sound as the one
+    represented by the letter(s) underlined
+  stem: knot
+  options:
+    A: cot
+    B: keep
+    C: norm
+    D: king In each question 92 to 94,
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.C.2.i
+  skill_reason: Printed direction asks for the same consonant sound.
+  passage_ref: null
+- number: 92
+  page: 43
+  section: null
+  instruction: choose the option that rhymes with the given word
+  stem: Fuel
+  options:
+    A: cruel
+    B: fool
+    C: rule
+    D: field 93 match
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.C.3.i
+  skill_reason: Printed direction asks which option rhymes with the given word.
+  passage_ref: null
+- number: 94
+  page: 43
+  section: null
+  instruction: choose the option that rhymes with the given word
+  stem: Sheer
+  options:
+    A: Sheila
+    B: care
+    C: ear
+    D: sherry
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.C.3.i
+  skill_reason: Printed direction asks which option rhymes with the given word.
+  passage_ref: null
+- number: 95
+  page: 44
+  section: null
+  instruction: In each of the question 95 to 97, choose the appropriate stress pattern from the option.
+    The syllables are written in capital letters
+  stem: Termination
+  options:
+    A: terminaTION
+    B: TERmination
+    C: termiNAtion
+    D: terMInation
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.C.4.i
+  skill_reason: Printed direction asks for the stress pattern.
+  passage_ref: null
+- number: 96
+  page: 44
+  section: null
+  instruction: In each of the question 95 to 97, choose the appropriate stress pattern from the option.
+    The syllables are written in capital letters
+  stem: meditative
+  options:
+    A: meDItative
+    B: mediTAtive
+    C: Meditative
+    D: meditaTIVE
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.C.4.i
+  skill_reason: Printed direction asks for the stress pattern.
+  passage_ref: null
+- number: 97
+  page: 44
+  section: null
+  instruction: In each of the question 95 to 97, choose the appropriate stress pattern from the option.
+    The syllables are written in capital letters
+  stem: Sugestible
+  options:
+    A: suggeSTIble
+    B: Suggestible
+    C: suGGEstible
+    D: suggestible
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.C.4.i
+  skill_reason: Printed direction asks for the stress pattern.
+  passage_ref: null
+- number: 98
+  page: 44
+  section: null
+  instruction: In each of the question 98 to 100, the word in capital letters has the emphatic stress.
+    Choose the option to which the given sentence relates
+  stem: Uche LOVES Toyota cars
+  options:
+    A: Who loves Toyota cars?
+    B: What brand of car does Uche love?
+    C: Does Uche hate Toyota cars?
+    D: Does Uche love bicycles?
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.C.5.i
+  skill_reason: 'Printed direction is the emphatic-stress format: which question the sentence answers.'
+  passage_ref: null
+- number: 99
+  page: 44
+  section: null
+  instruction: In each of the question 98 to 100, the word in capital letters has the emphatic stress.
+    Choose the option to which the given sentence relates
+  stem: The POLICE arrested the suspect
+  options:
+    A: Did the police placate the suspect?
+    B: Who arrested the suspect?
+    C: Who did the police arrest?
+    D: Did the police arrest the suspect?
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.C.5.i
+  skill_reason: 'Printed direction is the emphatic-stress format: which question the sentence answers.'
+  passage_ref: null
+- number: 100
+  page: 44
+  section: null
+  instruction: In each of the question 98 to 100, the word in capital letters has the emphatic stress.
+    Choose the option to which the given sentence relates
+  stem: Maiduguri is the CAPITAL of Borno state
+  options:
+    A: Is Maiduguri the capital of plateau state?
+    B: Which state is Maiduguri the capital of?
+    C: Is Maiduguri a town in Borno state?
+    D: What is the capital of Borno state?
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.C.5.i
+  skill_reason: 'Printed direction is the emphatic-stress format: which question the sentence answers.'
+  passage_ref: null

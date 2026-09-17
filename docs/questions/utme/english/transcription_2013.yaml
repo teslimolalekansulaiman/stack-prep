@@ -1,0 +1,1713 @@
+# UTME 2013, Use of English — extracted from the text layer of
+# docs/questions/utme/english/JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf.
+#
+# 97 questions kept, 2 rejected.
+# Answers come from the key printed with the paper, which is a compiler's, not
+# JAMB's: they load as `published_key` and still need a person to check them.
+# Skill mappings follow the paper's own printed directions where it prints one;
+# 23 comprehension items had none and were mapped from the stem instead.
+format_version: 1
+source:
+  file: docs/questions/utme/english/JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf
+  exam_year: 2013
+  paper_label: UTME 2013 Use of English (objective)
+  paper_code: UTME-2013-ENG
+  question_count: 100
+  answer_source: published_key
+passages:
+- id: cloze_2013
+  label: CLOZE PASSAGE
+  text: '2013 JAMB USE OF COMPREHENSION: Read each passage carefully and answer the questions that follow
+    it PASSAGE I In 1951, the Government decided to start a Pottery Training Centre where new and more
+    advanced technical methods, especially glazing, could be taught. The centre was intended to serve
+    the whole of the defunct Northern Region, and there were several reasons for choosing Abuja. The first
+    was the excellence of the traditional pottery made in the Emirate. Secondly, fire-wood is plentiful;
+    this is a most important consideration, because in the making of glazed pottery, more firewood than
+    clay is required. Thirdly, there are good clays, and good local sources for the raw materials needed
+    for the glazes. ENGLISH QUESTIONS Fourthly, water, which is an-other important raw material, is plentiful.
+    Finally, Abuja is in a central position for the whole region and is a town where learners from many
+    different parts can find a congenial temporary home, and where the Emir and his Council are actively
+    interested in the project. Nearly all the making is done by a process called ‘throwing’, so called
+    because the lumps of clay are thrown by the potter onto a wheel-head. They are weighed out so that
+    each pot will be roughly the same size; for example, for making pint-sized jugs, the lumps of clay
+    will be one and a half kilogrammes. The potter sits on the saddle of the wheel and spins it by pushing
+    a pedal with his left foot. He has a bowl of water, a loofah, a bamboo knife, a pointed stick or porcupine
+    quill, a wooden smoothing tool which potters call a rib, and a piece of wire-like object that is used
+    for wedging. He makes the wheel-head slightly damp, and throws the lumps into the middle. The first
+    work is to force the lump to the centre, then he presses his thumb into the middle of the lump, using
+    water to keep it slippery. When the bottom is of the right thickness, he begins to draw up the walls
+    until they are of the right height. Then he shapes the belly and shoulder of the pot. He trims off
+    any waste clay. In this way, a small and medium- sized pot can be made more quickly and accurately.
+    1. Which question Paper Type of Uses of English is given to you? A. Type D B. Type I C. Type B D.
+    Type U 2. Which of the following is true according to the passage? A. Anyone, with almost no training,
+    can run pots on a wheel. B. Pots can be made quickly and correctly. C. A pot thrown on a wheel is
+    less likely to break. D. The potter does not have to work hard if he uses the wheel. 3. From the passage,
+    how does a potter make several pots of almost identical size? A. By having the knowledge of different
+    pots. B. By weighing the lumps of clay. C. By having the right tools D. By knowing what to do from
+    experience. 4. The phrase trims off any waste clay, as used in the passage, means to--- A. cut away
+    unnecessary parts B. force the clay to the centre C. divide the clay into two D. wash away different
+    colours. 5. The word congenial, as used in the passage, means--- A. congested B. precise C. similar
+    D. nice PASSAGE II Music plays a vital role in human society. Good music provides entertainment and
+    emotional release, and it accompanies activities ranging from dances to religious ceremonies. Music
+    is heard everywhere; in auditoriums, homes, elevators, schools, sports arenas and on the streets.
+    Recorded performance is a sensational innovation elevation of the twentieth century. Thanks to modern
+    technology like compact disc (CD) digital video disc (DVD) and the MP 3 player, music can now be heard
+    in diverse places. Such places include living rooms and cars, jogging paths can also function as new
+    kinds of concert halls where we can hear what we want as often as we want. Live performances provide
+    a special excitement. In a live performance artistes put themselves on the line. To avoid embarrassment,
+    the artiste must train before hand and ensure that technical difficulties are avoided and that the
+    listeners are actively involved. What is performed, how it sounds to the excitement of such a moment
+    and feelings are exchanged between stage and hall. Our response to a musical performance or an artiste
+    is subjective and rooted in deep feelings. Even professional critics can differ strongly in their
+    evaluations of a performance. There is no one ''''Truth'''' about what we hear and feel. Does the
+    performed project a concept, an overall idea, or an emotion? Do some sections of a piece, but not
+    others, communicate something to you? Can you figure out why? It is up to us as listeners to evaluate
+    performances of music so that we can fully enjoy it. People listen to music in many different ways.
+    For instance, music can be a barely perceived background as in a film or a totally absorbing experience
+    as in a concert. Adapted from Roger, K. (1990) An Appreciation Music: Fourth Brief Edition, McGrow-Hill
+    Higher Education. 6. Which of the following is true according to the passage? A. Music can enhance
+    evaluation performance B. All listeners are music makers C. All artistes are objective in their feelings.
+    D. Music influences feelings at different levels 7. The expression…..stage and hall, as used in the
+    passage, means the A. artiste and his music B. artiste and the audience C. producer and the director
+    D. director and the audience 8. From the passage, it can be – deduced that music Is A. appreciated
+    as the environment dictates . B. better appreciated in a crowd C. better appreciated when we are happy
+    D. better appreciated by professional critics 9. According to the writer, live performances provide
+    a special excitement because they are A. stage-managed B. interactive C. error-free and original D.
+    educative 10. According to the passage, music plays a vital role in human society because— A. music
+    provides enjoyment and relief B. it is easy to appreciate music C. stage performance is the most popular
+    music opportunity. D. everybody can listen to music through the CD, MP3 and DVD. PASSAGE III Whatever
+    may be its wider imputations, the explosion of hydrogen bomb is, for the meteorologist, simply another
+    atmospheric disturbance. It should therefore be classified with certain rare natural…..11…… (A. programmes
+    B. occurrences C. resources D. laws), such as volcanic…12….[A. insurrection B. exhaustion C. eruption
+    D. expulsion]. But there are certain features of a man-made disturbance that requires special examination.
+    As with all events on this…13… [A. scanner B. skate C. snow D. scale), it is impossible to describe
+    what happens in details. However we can be reasonably sure of the main effects, and the most impressive
+    of these arises from…14….. (A. pressure waves B. pressure volume C. pressure air D. pressure gauge
+    ). The immediate result of the…15… (A. reduction B. commotion C. detonation D. distortion) is that
+    the air surrounding the bomb is raised very rapidly to an high…16… (A. enormously way B. temperature
+    C. class D. profile]. The hot gases expand violently as great…17…(A. firearms B. fireballs C. fireworks
+    D. firesmokes), compressing the air around them into what is called…18…[A. shock jocks B. shock therapy
+    C. shock waves D. shock troops), or blast wave that is responsible for much of terrible destructive
+    power of- the weapon. Another kind of wave arises because of the weight of the air. The force of the
+    explosion lifts the…19… (A. form B. atmosphere C. space D. height around the bomb. The gravity waves
+    can also resemble ordinary…..20….. (A. stream B. lake C. ocean D. river) waves. Waves of this type
+    are normally felt by human beings and they have their effect on the weather. Questions 21 to 30 are
+    based Ike’s The on Chukwuemeka Potter’s Wheel. 21. In their preparation for the masquerade, David
+    and others agreed to exercise extra caution in their dealings with Samuel because he would. A. force
+    them to dance with the masquerade. B. try his tricks on them to know their secrets C. prepare well
+    ahead of them D. put them to shame. 22. In the novel; Nwomiko was famous for her A. lack of fighting
+    spirit B. spiritual powers C. political struggles D. lack of spiritual values 23. With remarkable
+    agility, he mounted The Fallen Goliath and went on to stuff his mouth with earth. Who was the Fallen
+    Goliath in the excerpt above? A. Cromwell B. David C. Polycarp D. Samuel 24. If you have not beheld
+    your chi in his stark nakedness, be prepared to do so as soon as you in that man’s house. set foot
+    From the excerpt above, whose house was being referred to? A. Mazi Nwokike B. Teacher Zaccheus C.
+    Mazi Okeke D. Mazl Laze 25. In the novel, the people of Umuchukwu likened samuel to A. a swimmer B.
+    an ancestral spirit C. a chief priest D. a fisherman 26. Obu dashed out of the school building because
+    A. he was given a prize by the headmaster B. his teacher wanted to ‘flog him C. he came top of Standard
+    I D. his teacher sent him on an errand. 27. In the novel, Bright lived with Teacher because A. his
+    father had gone on a long journey B. he was Teacher’s nephew C. his father was indebted to Teacher
+    D. he wanted to become a teacher. 28. According to the novel, Obu was good at A. Jokes B. proverbs
+    C. cricket D. games 29. Uke was conscripted into the military because A. he wanted to travel to Burma
+    B. he was a social nuisance C. he loved the British soldiers D. his grandfather was a military man.
+    30. In the novel, the ‘pad’ was a symbol of A. love B. success C. unity D. failure Questions 31 to
+    35 are based on Jerry Agada’s The Successors. 31. It can be inferred from the novel that Mr Eze was
+    Terkura Atsen’s A. business partner B. uncle C. role model D. boss. 32. From the novel, David thought
+    Ifenne should be involved in politics because he wanted him to ……… A. make a ‘name’ for posterity
+    B. rig the election for someone C. take part in the election process D. extort money from the people.
+    33. The civil war created business opportunities for people like Owiocho because A. he became the
+    supplier of all essential commodities B. the Ibos were conscripted into the army C. the exit of the
+    Ibos created a vacuum D. the Ibos had ventured into other businesses. 34. My boy, your future is bright,
+    you can be anything you want to be …. The statement above was made because Ifenne had A. purchased
+    his first bus B. been working for others to make profit C. been planning to excel D. proven himself
+    faithful and committed. 35. The departure of Ibo competitors to the East had favoured A. Okoh’s marriage
+    B. Mama Okoh’s business C. Torkwase at Otukpo D. Sgt. Onyilo in the war front.'
+- id: passage_2013_passage_i
+  label: PASSAGE_I
+  text: In 1951, the Government decided to start a Pottery Training Centre where new and more advanced
+    technical methods, especially glazing, could be taught. The centre was intended to serve the whole
+    of the defunct Northern Region, and there were several reasons for choosing Abuja. The first was the
+    excellence of the traditional pottery made in the Emirate. Secondly, fire-wood is plentiful; this
+    is a most important consideration, because in the making of glazed pottery, more firewood than clay
+    is required. Thirdly, there are good clays, and good local sources for the raw materials needed for
+    the glazes. ENGLISH QUESTIONS Fourthly, water, which is an-other important raw material, is plentiful.
+    Finally, Abuja is in a central position for the whole region and is a town where learners from many
+    different parts can find a congenial temporary home, and where the Emir and his Council are actively
+    interested in the project. Nearly all the making is done by a process called 'throwing', so called
+    because the lumps of clay are thrown by the potter onto a wheel-head. They are weighed out so that
+    each pot will be roughly the same size; for example, for making pint-sized jugs, the lumps of clay
+    will be one and a half kilogrammes. The potter sits on the saddle of the wheel and spins it by pushing
+    a pedal with his left foot. He has a bowl of water, a loofah, a bamboo knife, a pointed stick or porcupine
+    quill, a wooden smoothing tool which potters call a rib, and a piece of wire-like object that is used
+    for wedging. He makes the wheel-head slightly damp, and throws the lumps into the middle. The first
+    work is to force the lump to the centre, then he presses his thumb into the middle of the lump, using
+    water to keep it slippery. When the bottom is of the right thickness, he begins to draw up the walls
+    until they are of the right height. Then he shapes the belly and shoulder of the pot. He trims off
+    any waste clay. In this way, a small and medium- sized pot can be made more quickly and accurately
+- id: passage_2013_passage_ii
+  label: PASSAGE_II
+  text: 'Music plays a vital role in human society. Good music provides entertainment and emotional release,
+    and it accompanies activities ranging from dances to religious ceremonies. Music is heard everywhere;
+    in auditoriums, homes, elevators, schools, sports arenas and on the streets. Recorded performance
+    is a sensational innovation elevation of the twentieth century. Thanks to modern technology like compact
+    disc (CD) digital video disc (DVD) and the MP 3 player, music can now be heard in diverse places.
+    Such places include living rooms and cars, jogging paths can also function as new kinds of concert
+    halls where we can hear what we want as often as we want. Live performances provide a special excitement.
+    In a live performance artistes put themselves on the line. To avoid embarrassment, the artiste must
+    train before hand and ensure that technical difficulties are avoided and that the listeners are actively
+    involved. What is performed, how it sounds to the excitement of such a moment and feelings are exchanged
+    between stage and hall. Our response to a musical performance or an artiste is subjective and rooted
+    in deep feelings. Even professional critics can differ strongly in their evaluations of a performance.
+    There is no one ''''Truth'''' about what we hear and feel. Does the performed project a concept, an
+    overall idea, or an emotion? Do some sections of a piece, but not others, communicate something to
+    you? Can you figure out why? It is up to us as listeners to evaluate performances of music so that
+    we can fully enjoy it. People listen to music in many different ways. For instance, music can be a
+    barely perceived background as in a film or a totally absorbing experience as in a concert. Adapted
+    from Roger, K. (1990) An Appreciation Music: Fourth Brief Edition, McGrow-Hill Higher Education'
+- id: passage_2013_passage_iii
+  label: PASSAGE_III
+  text: Whatever may be its wider imputations, the explosion of hydrogen bomb is, for the meteorologist,
+    simply another atmospheric disturbance. It should therefore be classified with certain rare natural…..11……
+    (A. programmes B. occurrences C. resources D. laws), such as volcanic…12….[A. insurrection B. exhaustion
+    C. eruption D. expulsion]. But there are certain features of a man-made disturbance that requires
+    special examination. As with all events on this…13… [A. scanner B. skate C. snow D. scale), it is
+    impossible to describe what happens in details. However we can be reasonably sure of the main effects,
+    and the most impressive of these arises from…14….. (A. pressure waves B. pressure volume C. pressure
+    air D. pressure gauge ). The immediate result of the…15… (A. reduction B. commotion C. detonation
+    D. distortion) is that the air surrounding the bomb is raised very rapidly to an high…16… (A. enormously
+    way B. temperature C. class D. profile]. The hot gases expand violently as great…17…(A. firearms B.
+    fireballs C. fireworks D. firesmokes), compressing the air around them into what is called…18…[A.
+    shock jocks B. shock therapy C. shock waves D. shock troops), or blast wave that is responsible for
+    much of terrible destructive power of- the weapon. Another kind of wave arises because of the weight
+    of the air. The force of the explosion lifts the…19… (A. form B. atmosphere C. space D. height around
+    the bomb. The gravity waves can also resemble ordinary…..20….. (A. stream B. lake C. ocean D. river)
+    waves. Waves of this type are normally felt by human beings and they have their effect on the weather.
+    Ike's The on Chukwuemeka Potter's Wheel. masquerade, David and others agreed to exercise extra caution
+    in their dealings with Samuel because he would. A. force them to dance with the masquerade. B. try
+    his tricks on them to know their secrets C. prepare well ahead of them D. put them to shame. famous
+    for her A. lack of fighting spirit B. spiritual powers C. political struggles D. lack of spiritual
+    values B. quiet C. loving D. weak
+questions:
+- number: 1
+  page: 70
+  section: null
+  instruction: null
+  stem: Which question Paper Type of Uses of English is given to you?
+  options:
+    A: Type D
+    B: Type I
+    C: Type B
+    D: Type U
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2013_passage_i
+- number: 2
+  page: 70
+  section: null
+  instruction: null
+  stem: Which of the following is true according to the passage?
+  options:
+    A: Anyone, with almost no training, can run pots on a wheel
+    B: Pots can be made quickly and correctly
+    C: A pot thrown on a wheel is less likely to break
+    D: The potter does not have to work hard if he uses the wheel
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2013_passage_i
+- number: 3
+  page: 70
+  section: null
+  instruction: null
+  stem: From the passage, how does a potter make several pots of almost identical size?
+  options:
+    A: By having the knowledge of different pots
+    B: By weighing the lumps of clay
+    C: By having the right tools
+    D: By knowing what to do from experience
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2013_passage_i
+- number: 4
+  page: 70
+  section: null
+  instruction: null
+  stem: The phrase trims off any waste clay, as used in the passage, means to---
+  options:
+    A: cut away unnecessary parts
+    B: force the clay to the centre
+    C: divide the clay into two
+    D: wash away different colours
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.2.i
+  skill_reason: 'Stem asks what a word or expression means in the passage. Mapped from the stem: no direction
+    is printed for comprehension items.'
+  passage_ref: passage_2013_passage_i
+- number: 5
+  page: 71
+  section: null
+  instruction: null
+  stem: The word congenial, as used in the passage, means---
+  options:
+    A: congested
+    B: precise
+    C: similar
+    D: nice
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.2.i
+  skill_reason: 'Stem asks what a word or expression means in the passage. Mapped from the stem: no direction
+    is printed for comprehension items.'
+  passage_ref: passage_2013_passage_i
+- number: 6
+  page: 72
+  section: null
+  instruction: null
+  stem: Which of the following is true according to the passage?
+  options:
+    A: Music can enhance evaluation performance
+    B: All listeners are music makers
+    C: All artistes are objective in their feelings
+    D: Music influences feelings at different levels
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2013_passage_ii
+- number: 7
+  page: 72
+  section: null
+  instruction: null
+  stem: The expression…..stage and hall, as used in the passage, means the
+  options:
+    A: artiste and his music
+    B: artiste and the audience
+    C: producer and the director
+    D: director and the audience
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.2.i
+  skill_reason: 'Stem asks what a word or expression means in the passage. Mapped from the stem: no direction
+    is printed for comprehension items.'
+  passage_ref: passage_2013_passage_ii
+- number: 8
+  page: 72
+  section: null
+  instruction: null
+  stem: From the passage, it can be – deduced that music Is
+  options:
+    A: appreciated as the environment dictates
+    B: better appreciated in a crowd
+    C: better appreciated when we are happy
+    D: better appreciated by professional critics
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.3.i
+  skill_reason: 'Stem asks for a deduction or inference. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2013_passage_ii
+- number: 9
+  page: 72
+  section: null
+  instruction: null
+  stem: According to the writer, live performances provide a special excitement because they are
+  options:
+    A: stage-managed
+    B: interactive
+    C: error-free and original
+    D: educative
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.3.i
+  skill_reason: 'Stem asks about the writer''s attitude, mood or intention. Mapped from the stem: no direction
+    is printed for comprehension items.'
+  passage_ref: passage_2013_passage_ii
+- number: 10
+  page: 73
+  section: null
+  instruction: null
+  stem: According to the passage, music plays a vital role in human society because—
+  options:
+    A: music provides enjoyment and relief
+    B: it is easy to appreciate music
+    C: stage performance is the most popular music opportunity
+    D: everybody can listen to music through the CD, MP3 and DVD
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2013_passage_ii
+- number: 11
+  page: 73
+  section: Cloze passage
+  instruction: ''
+  stem: Gap 11 in the cloze passage.
+  options:
+    A: programmes
+    B: occurrences
+    C: resources
+    D: laws), such as volcanic
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2013
+- number: 12
+  page: 73
+  section: Cloze passage
+  instruction: ''
+  stem: Gap 12 in the cloze passage.
+  options:
+    A: insurrection
+    B: exhaustion
+    C: eruption
+    D: expulsion
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2013
+- number: 13
+  page: 73
+  section: Cloze passage
+  instruction: ''
+  stem: Gap 13 in the cloze passage.
+  options:
+    A: scanner
+    B: skate
+    C: snow
+    D: scale), it is impossible to describe what happens in details. However we can be reasonably sure
+      of the main effects, and the most impressive of these arises from
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2013
+- number: 14
+  page: 73
+  section: Cloze passage
+  instruction: ''
+  stem: Gap 14 in the cloze passage.
+  options:
+    A: pressure waves
+    B: pressure volume
+    C: pressure air
+    D: pressure gauge ). The immediate result of the
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2013
+- number: 15
+  page: 73
+  section: Cloze passage
+  instruction: ''
+  stem: Gap 15 in the cloze passage.
+  options:
+    A: reduction
+    B: commotion
+    C: detonation
+    D: distortion) is that the air surrounding the bomb is raised very rapidly to an high
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2013
+- number: 16
+  page: 73
+  section: Cloze passage
+  instruction: ''
+  stem: Gap 16 in the cloze passage.
+  options:
+    A: enormously way
+    B: temperature
+    C: class
+    D: profile
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2013
+- number: 17
+  page: 73
+  section: Cloze passage
+  instruction: ''
+  stem: Gap 17 in the cloze passage.
+  options:
+    A: firearms
+    B: fireballs
+    C: fireworks
+    D: firesmokes), compressing the air around them into what is called
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2013
+- number: 19
+  page: 74
+  section: Cloze passage
+  instruction: ''
+  stem: Gap 19 in the cloze passage.
+  options:
+    A: form
+    B: atmosphere
+    C: space
+    D: height around the bomb. The gravity waves can also resemble ordinary
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2013
+- number: 20
+  page: 74
+  section: Cloze passage
+  instruction: ''
+  stem: Gap 20 in the cloze passage.
+  options:
+    A: stream
+    B: lake
+    C: ocean
+    D: river) waves. Waves of this type are normally felt by human beings and they have their effect on
+      the weather. Questions 21 to 30 are based Ike's The on Chukwuemeka Potter's Wheel
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2013
+- number: 21
+  page: 69
+  section: Cloze passage
+  instruction: ''
+  stem: Gap 21 in the cloze passage.
+  options:
+    A: force them to dance with the masquerade
+    B: try his tricks on them to know their secrets
+    C: prepare well ahead of them
+    D: put them to shame
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2013
+- number: 23
+  page: 74
+  section: null
+  instruction: null
+  stem: With remarkable agility, he mounted The Fallen Goliath and went on to stuff his mouth with earth
+    Who was the Fallen Goliath in the excerpt above?
+  options:
+    A: Cromwell
+    B: David
+    C: Polycarp
+    D: Samuel
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2013_passage_iii
+- number: 24
+  page: 75
+  section: null
+  instruction: null
+  stem: If you have not beheld your chi in his stark nakedness, be prepared to do so as soon as you in
+    that man's house set foot From the excerpt above, whose house was being referred to?
+  options:
+    A: Mazi Nwokike
+    B: Teacher Zaccheus
+    C: Mazi Okeke
+    D: Mazl Laze
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2013_passage_iii
+- number: 25
+  page: 75
+  section: null
+  instruction: null
+  stem: In the novel, the people of Umuchukwu likened samuel to
+  options:
+    A: a swimmer
+    B: an ancestral spirit
+    C: a chief priest
+    D: a fisherman
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2013_passage_iii
+- number: 26
+  page: 75
+  section: null
+  instruction: null
+  stem: Obu dashed out of the school building because
+  options:
+    A: he was given a prize by the headmaster
+    B: his teacher wanted to 'flog him
+    C: he came top of Standard I
+    D: his teacher sent him on an errand
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: null
+- number: 27
+  page: 75
+  section: null
+  instruction: null
+  stem: In the novel, Bright lived with Teacher because
+  options:
+    A: his father had gone on a long journey
+    B: he was Teacher's nephew
+    C: his father was indebted to Teacher
+    D: he wanted to become a teacher
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: null
+- number: 28
+  page: 75
+  section: null
+  instruction: null
+  stem: According to the novel, Obu was good at
+  options:
+    A: Jokes
+    B: proverbs
+    C: cricket
+    D: games
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: null
+- number: 29
+  page: 75
+  section: null
+  instruction: null
+  stem: Uke was conscripted into the military because
+  options:
+    A: he wanted to travel to Burma
+    B: he was a social nuisance
+    C: he loved the British soldiers
+    D: his grandfather was a military man
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: null
+- number: 30
+  page: 76
+  section: null
+  instruction: null
+  stem: In the novel, the 'pad' was a symbol of
+  options:
+    A: love
+    B: success
+    C: unity
+    D: failure Questions 31 to 35 are based on Jerry Agada's The Successors
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: null
+- number: 31
+  page: 76
+  section: null
+  instruction: null
+  stem: It can be inferred from the novel that Mr Eze was Terkura Atsen's
+  options:
+    A: business partner
+    B: uncle
+    C: role model
+    D: boss
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.3.i
+  skill_reason: 'Stem asks for a deduction or inference. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: null
+- number: 32
+  page: 76
+  section: null
+  instruction: null
+  stem: From the novel, David thought Ifenne should be involved in politics because he wanted him to ………
+  options:
+    A: make a 'name' for posterity
+    B: rig the election for someone
+    C: take part in the election process
+    D: extort money from the people
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: null
+- number: 33
+  page: 76
+  section: null
+  instruction: null
+  stem: The civil war created business opportunities for people like Owiocho because
+  options:
+    A: he became the supplier of all essential commodities
+    B: the Ibos were conscripted into the army
+    C: the exit of the Ibos created a vacuum
+    D: the Ibos had ventured into other businesses
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: null
+- number: 34
+  page: 76
+  section: null
+  instruction: null
+  stem: My boy, your future is bright, you can be anything you want to be … The statement above was made
+    because Ifenne had
+  options:
+    A: purchased his first bus
+    B: been working for others to make profit
+    C: been planning to excel
+    D: proven himself faithful and committed
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: null
+- number: 35
+  page: 77
+  section: null
+  instruction: null
+  stem: The departure of Ibo competitors to the East had favoured
+  options:
+    A: Okoh's marriage
+    B: Mama Okoh's business
+    C: Torkwase at Otukpo
+    D: Sgt. Onyilo in the war front LEXIS, STRUCTURE AND ORAL FORMS
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: null
+- number: 36
+  page: 77
+  section: null
+  instruction: In each of questions 36 to 45, select the option that best explains the information conveyed
+    in the sentence
+  stem: The team's poor performance at the tournament plumb the depths of horror
+  options:
+    A: The team's performance took them to the next round
+    B: The team's performance was enjoyed by all
+    C: The team's performance was full of disappointment
+    D: The team's performance was rewarded
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 37
+  page: 77
+  section: null
+  instruction: In each of questions 36 to 45, select the option that best explains the information conveyed
+    in the sentence
+  stem: Tolu and Chinedu live in each other's pockets
+  options:
+    A: They are long-term business partners
+    B: They steal from each other
+    C: They blackmail each other
+    D: They are very close to each other
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 38
+  page: 77
+  section: null
+  instruction: In each of questions 36 to 45, select the option that best explains the information conveyed
+    in the sentence
+  stem: As the drama unfolded, Olatinuke was advised
+  options:
+    A: She was advised to wear her shirt
+    B: She was advised to commit herself
+    C: She was advised to stay calm
+    D: She was advised to join the club
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 39
+  page: 77
+  section: null
+  instruction: In each of questions 36 to 45, select the option that best explains the information conveyed
+    in the sentence
+  stem: He is a clinging child
+  options:
+    A: He is a handsome young man
+    B: He is possessive
+    C: He likes to cling with his sister
+    D: He is a bully
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 40
+  page: 78
+  section: null
+  instruction: In each of questions 36 to 45, select the option that best explains the information conveyed
+    in the sentence
+  stem: Zinana's examination result was not unfavourable
+  options:
+    A: She failed her examination
+    B: Her examination did not meet her expectation
+    C: She was successful in the examination
+    D: Her result could not earn her admission
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 41
+  page: 78
+  section: null
+  instruction: In each of questions 36 to 45, select the option that best explains the information conveyed
+    in the sentence
+  stem: You need to brush up on your Spanish
+  options:
+    A: You need to study the history of Spain
+    B: You need to improve your skills
+    C: You need a brush from Spain
+    D: You need to learn to play with a Spainard
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 42
+  page: 78
+  section: null
+  instruction: In each of questions 36 to 45, select the option that best explains the information conveyed
+    in the sentence
+  stem: Amaka Would pass for a beauty queen
+  options:
+    A: She would pass the drink to the queen who is sitting next to her
+    B: She would be accepted by all as a beauty queen
+    C: She walked past the beauty queen
+    D: She was acting as a beauty queen
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 43
+  page: 78
+  section: null
+  instruction: In each of questions 36 to 45, select the option that best explains the information conveyed
+    in the sentence
+  stem: '''I can''t wait to become a mother,'' The new bride declared'
+  options:
+    A: She sees motherhood as a burden
+    B: She is excited about motherhood
+    C: She is not keen on becoming a mother
+    D: She will be patient as a mother
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 44
+  page: 78
+  section: null
+  instruction: In each of questions 36 to 45, select the option that best explains the information conveyed
+    in the sentence
+  stem: Usman needs to get his acts together if he wants to pass the examination
+  options:
+    A: He needs to put all points down in the examination
+    B: He needs to organize himself
+    C: He needs to be fast when writing the examination
+    D: He needs to put on his stage costume
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 45
+  page: 79
+  section: null
+  instruction: In each of questions 36 to 45, select the option that best explains the information conveyed
+    in the sentence
+  stem: Ramatu 'expressed her feelings in no uncertain terms
+  options:
+    A: She expressed it dearly and strongly
+    B: She expressed it secretly and courageously
+    C: She expressed it quietly and cautiously
+    D: She expressed it feebly and sickly
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
+  passage_ref: null
+- number: 46
+  page: 79
+  section: null
+  instruction: In each of questions 46 to 55, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: Chibuzor gave a curt nod and walked away
+  options:
+    A: gentle
+    B: rude
+    C: polite
+    D: shocking
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 47
+  page: 79
+  section: null
+  instruction: In each of questions 46 to 55, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: The girl took a cursory glance at the letter and hid it
+  options:
+    A: sententious
+    B: concise
+    C: brief
+    D: lasting
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 48
+  page: 79
+  section: null
+  instruction: In each of questions 46 to 55, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: The relationship between the couple has been frosty
+  options:
+    A: fraudulent
+    B: cordial
+    C: amenable
+    D: frugal activity
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 49
+  page: 79
+  section: null
+  instruction: In each of questions 46 to 55, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: The Nobel laureate's in the field of science is heinous
+  options:
+    A: indelible
+    B: laudable
+    C: deplorable
+    D: forgettable
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 50
+  page: 79
+  section: null
+  instruction: In each of questions 46 to 55, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: The accused was eventually convicted
+  options:
+    A: initially
+    B: consequently
+    C: subsequently
+    D: finally
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 51
+  page: 80
+  section: null
+  instruction: In each of questions 46 to 55, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: The plebs can be found in every society of the world
+  options:
+    A: masses
+    B: middle class
+    C: elite
+    D: politicians
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 52
+  page: 80
+  section: null
+  instruction: In each of questions 46 to 55, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: Everyone's condition was appalling
+  options:
+    A: simple
+    B: cloudy
+    C: pleasant
+    D: complex
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 53
+  page: 80
+  section: null
+  instruction: In each of questions 46 to 55, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: The man's mordant wit is apparent to the entire village
+  options:
+    A: Kind
+    B: scathing
+    C: caustic
+    D: withering
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 54
+  page: 80
+  section: null
+  instruction: In each of questions 46 to 55, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: The war against malaria keeps waxing
+  options:
+    A: happening
+    B: decreasing
+    C: increasing
+    D: wavering
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 55
+  page: 80
+  section: null
+  instruction: In each of questions 46 to 55, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: The soldiers tried in their dogged defence of the city
+  options:
+    A: indifferent
+    B: strong
+    C: miserable
+    D: classical
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 56
+  page: 80
+  section: null
+  instruction: In each of questions 56 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: Ayodeji is an supporter ardent of education for the girl child
+  options:
+    A: an optimistic
+    B: a cogent
+    C: a passionate
+    D: an ignorant
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 57
+  page: 80
+  section: null
+  instruction: In each of questions 56 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: The scholars' was epitaph demolished
+  options:
+    A: monument
+    B: embodiment
+    C: farmland
+    D: book
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 58
+  page: 81
+  section: null
+  instruction: In each of questions 56 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: Mohammed does his work with so much ardour
+  options:
+    A: enthusiasm
+    B: discouragement
+    C: knowledge
+    D: indifference
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 59
+  page: 81
+  section: null
+  instruction: In each of questions 56 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: The athlete is proud to be in the vanguard of sports development
+  options:
+    A: unforgettable position
+    B: leading position
+    C: destructive position
+    D: emerging position
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 60
+  page: 81
+  section: null
+  instruction: In each of questions 56 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: Nwankwo was on the verge of signing a two-year contract with the club
+  options:
+    A: shore
+    B: brink
+    C: summit
+    D: height
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 61
+  page: 81
+  section: null
+  instruction: In each of questions 56 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: I am tired of your eternal argument
+  options:
+    A: open
+    B: constant
+    C: strong
+    D: useless 62 The lamb is a little feeble animal
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 63
+  page: 81
+  section: null
+  instruction: In each of questions 56 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: The actress when screamed she noticed an object behind her
+  options:
+    A: wailed
+    B: protested
+    C: waded in
+    D: stormed out
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 64
+  page: 81
+  section: null
+  instruction: In each of questions 56 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: The was an eye exhibition opener to all
+  options:
+    A: dispatch
+    B: display
+    C: style
+    D: examination
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 65
+  page: 82
+  section: null
+  instruction: In each of questions 56 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: As a journalist, Bala has always had a nose for stories
+  options:
+    A: soft comment
+    B: cynical statement
+    C: an instinct
+    D: a command
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 66
+  page: 82
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: The girl says she is averse what others admire
+  options:
+    A: for
+    B: from
+    C: to
+    D: with
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 67
+  page: 82
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: Our teacher defined... in his introductory
+  options:
+    A: onomatopiea
+    B: onomatopoeia
+    C: onomatopoeia
+    D: onomatopea
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 68
+  page: 82
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: The philanthropist devoted himself... the poor
+  options:
+    A: to helping
+    B: in helping
+    C: by helping
+    D: to be helping
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 69
+  page: 82
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: Tinu likes apples... she does not like oranges
+  options:
+    A: or
+    B: for
+    C: so
+    D: but
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 70
+  page: 82
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: The students had a ... on Independence Day
+  options:
+    A: march past
+    B: match pass
+    C: march pass
+    D: match pass
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 71
+  page: 83
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: Do you mind ... another hour or two
+  options:
+    A: to wait
+    B: to have waited
+    C: wait
+    D: waiting
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 72
+  page: 83
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: The continuous rain has really ... the soil
+  options:
+    A: melted up
+    B: mopped up
+    C: satiated
+    D: saturated
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 73
+  page: 83
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: The police described the boy as being... hand
+  options:
+    A: on by
+    B: up to
+    C: over at
+    D: out of
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 74
+  page: 83
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: It was very easy for the two political parties to form a government
+  options:
+    A: co-operative
+    B: colonial
+    C: collusion
+    D: coalition
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 75
+  page: 83
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: All farmers were encouraged... carry out fumigation on their farms
+  options:
+    A: to
+    B: from
+    C: in
+    D: with
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 76
+  page: 83
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: There are lots of... in the park
+  options:
+    A: luxury buses moving fast
+    B: luxury buses fast moving
+    C: moving fast luxury buses
+    D: fast-moving luxury buses
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 77
+  page: 83
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: Yours is to command... is to obey
+  options:
+    A: their
+    B: theirs
+    C: theirs'
+    D: their's
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 78
+  page: 84
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: Local governments are authorized to pass ---
+  options:
+    A: bye's-law
+    B: bye-law
+    C: bye-laws
+    D: byes'-laws
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 79
+  page: 84
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: 'Umar: I have never visited the dentist Aliyu:___'
+  options:
+    A: neither have l
+    B: I also never
+    C: neither myself
+    D: I myself haven't
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 80
+  page: 84
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: Usman would have won the race
+  options:
+    A: if he had run faster faster
+    B: although he ran faster
+    C: only if he could run fast
+    D: if he had run faster
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 81
+  page: 84
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: My father told me to take the money from....it
+  options:
+    A: ever who offers
+    B: whoever offers
+    C: whomever offers
+    D: whomsoever offer
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 82
+  page: 84
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: Our teacher defined... as the killing of one's mother
+  options:
+    A: patriach
+    B: matricide
+    C: matriarch
+    D: patricide
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 83
+  page: 84
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: If you are confused anything, phone my office
+  options:
+    A: about
+    B: for
+    C: of
+    D: with
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 84
+  page: 84
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: We have a family mutiny our hands
+  options:
+    A: from
+    B: of
+    C: 'on'
+    D: for
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 85
+  page: 84
+  section: null
+  instruction: In each of question 66 to 85, choose the option that best completes the gap(s)
+  stem: We should try to help
+  options:
+    A: the less fortunate
+    B: this less fortunate
+    C: the less fortunate
+    D: less fortunate
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 86
+  page: 85
+  section: null
+  instruction: In each of question 86 to 88, choose the option that has the same vowel sound as the one
+    ran letter(s) underlined
+  stem: glasier
+  options:
+    A: gleam
+    B: flat
+    C: feign
+    D: glass
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.C.1.i
+  skill_reason: Printed direction asks for the same vowel sound.
+  passage_ref: null
+- number: 87
+  page: 85
+  section: null
+  instruction: In each of question 86 to 88, choose the option that has the same vowel sound as the one
+    ran letter(s) underlined
+  stem: laud
+  options:
+    A: lavatory
+    B: loud
+    C: lathe
+    D: core
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.C.1.i
+  skill_reason: Printed direction asks for the same vowel sound.
+  passage_ref: null
+- number: 88
+  page: 85
+  section: null
+  instruction: In each of question 86 to 88, choose the option that has the same vowel sound as the one
+    ran letter(s) underlined
+  stem: coma
+  options:
+    A: colonel
+    B: cogent
+    C: come
+    D: comma
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.C.1.i
+  skill_reason: Printed direction asks for the same vowel sound.
+  passage_ref: null
+- number: 89
+  page: 85
+  section: null
+  instruction: In each of questions 89 to 91, choose the option that has the same consonant sound as the
+    one represented by the letter(s) underlined
+  stem: lose
+  options:
+    A: mouse
+    B: nurse
+    C: noise
+    D: horse
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.C.2.i
+  skill_reason: Printed direction asks for the same consonant sound.
+  passage_ref: null
+- number: 90
+  page: 85
+  section: null
+  instruction: In each of questions 89 to 91, choose the option that has the same consonant sound as the
+    one represented by the letter(s) underlined
+  stem: guitar
+  options:
+    A: jam
+    B: strange
+    C: judge
+    D: rogue
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.C.2.i
+  skill_reason: Printed direction asks for the same consonant sound.
+  passage_ref: null
+- number: 91
+  page: 85
+  section: null
+  instruction: In each of questions 89 to 91, choose the option that has the same consonant sound as the
+    one represented by the letter(s) underlined
+  stem: loose
+  options:
+    A: sell
+    B: fuse
+    C: close
+    D: rouse
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.C.2.i
+  skill_reason: Printed direction asks for the same consonant sound.
+  passage_ref: null
+- number: 92
+  page: 86
+  section: null
+  instruction: In each of question 92 to 94, choose the option that rhymes with the given word
+  stem: rite
+  options:
+    A: list
+    B: wit
+    C: wright
+    D: rim
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.C.3.i
+  skill_reason: Printed direction asks which option rhymes with the given word.
+  passage_ref: null
+- number: 93
+  page: 86
+  section: null
+  instruction: In each of question 92 to 94, choose the option that rhymes with the given word
+  stem: Joys
+  options:
+    A: elbow
+    B: pots
+    C: boys
+    D: stays
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.C.3.i
+  skill_reason: Printed direction asks which option rhymes with the given word.
+  passage_ref: null
+- number: 94
+  page: 86
+  section: null
+  instruction: In each of question 92 to 94, choose the option that rhymes with the given word
+  stem: Call
+  options:
+    A: wall
+    B: quail
+    C: dull
+    D: slate
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.C.3.i
+  skill_reason: Printed direction asks which option rhymes with the given word.
+  passage_ref: null
+- number: 95
+  page: 86
+  section: null
+  instruction: In each of questions 95 to 97, choose the most appropriate stress pattern from the options.
+    The stressed syllables are written in capital letters
+  stem: dedication
+  options:
+    A: dedicaTION
+    B: deDlcation
+    C: dedication
+    D: Dedication
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.C.4.i
+  skill_reason: Printed direction asks for the stress pattern.
+  passage_ref: null
+- number: 96
+  page: 86
+  section: null
+  instruction: In each of questions 95 to 97, choose the most appropriate stress pattern from the options.
+    The stressed syllables are written in capital letters
+  stem: international
+  options:
+    A: interNAtional
+    B: internaTIONal
+    C: International
+    D: inTERnational
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.C.4.i
+  skill_reason: Printed direction asks for the stress pattern.
+  passage_ref: null
+- number: 97
+  page: 86
+  section: null
+  instruction: In each of questions 95 to 97, choose the most appropriate stress pattern from the options.
+    The stressed syllables are written in capital letters
+  stem: information
+  options:
+    A: information
+    B: information
+    C: information
+    D: Information
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.C.4.i
+  skill_reason: Printed direction asks for the stress pattern.
+  passage_ref: null
+- number: 98
+  page: 87
+  section: null
+  instruction: In each of question 98 to 100, the word in capital letters has the emphatic stress. Choose
+    the option to which the given sentence relates
+  stem: Adamu is leaving a CAR behind
+  options:
+    A: What is Adamu leaving behind?
+    B: Is Adamu driving the car in front?
+    C: Who is leaving a car behind?
+    D: Where is Adamu leaving a car?
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.C.5.i
+  skill_reason: 'Printed direction is the emphatic-stress format: which question the sentence answers.'
+  passage_ref: null
+- number: 99
+  page: 87
+  section: null
+  instruction: In each of question 98 to 100, the word in capital letters has the emphatic stress. Choose
+    the option to which the given sentence relates
+  stem: Lambusa TOOK OFF the wig
+  options:
+    A: Who took off the wig?
+    B: What did Lambusa do?
+    C: Did Lambusa take off a wig?
+    D: Did Lambusa take off the ring?
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.C.5.i
+  skill_reason: 'Printed direction is the emphatic-stress format: which question the sentence answers.'
+  passage_ref: null
+- number: 100
+  page: 87
+  section: null
+  instruction: In each of question 98 to 100, the word in capital letters has the emphatic stress. Choose
+    the option to which the given sentence relates
+  stem: The bed is IN the room
+  options:
+    A: Is the bed in the parlour?
+    B: Was the bed in the room?
+    C: What is in the room?
+    D: Where is the bed?
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.C.5.i
+  skill_reason: 'Printed direction is the emphatic-stress format: which question the sentence answers.'
+  passage_ref: null

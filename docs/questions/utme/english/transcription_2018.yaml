@@ -1,0 +1,835 @@
+# UTME 2018, Use of English — extracted from the text layer of
+# docs/questions/utme/english/JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf.
+#
+# 42 questions kept, 8 rejected.
+# Answers come from the key printed with the paper, which is a compiler's, not
+# JAMB's: they load as `published_key` and still need a person to check them.
+# Skill mappings follow the paper's own printed directions where it prints one;
+# 6 comprehension items had none and were mapped from the stem instead.
+format_version: 1
+source:
+  file: docs/questions/utme/english/JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf
+  exam_year: 2018
+  paper_label: UTME 2018 Use of English (objective)
+  paper_code: UTME-2018-ENG
+  question_count: 60
+  answer_source: published_key
+passages:
+- id: cloze_2018
+  label: CLOZE PASSAGE
+  text: The passage below has gaps immediately following each gap, four options are provided. Choose the
+    most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
+    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
+    others including ... 8... [A. catarrh B. runny-nose C. headache D. influenza] known also as the ...
+    9... cold [A. common B. sporadic C. universal D. regular]. Outbreaks of many of these diseases have
+    been brought under control in the last fifty years. Some 10... [A. pains B. fevers C. infection D.
+    traces] like measles and whooping cough still pose a great danger to younger children. The ...11...
+    symptoms B. appearance C. feels D. signs] of measles are more easily ... 12... [A. diagnosed B. treated
+    C. dealt with a handled] than those of whooping cough. Unlike that of many others, the virus of measles
+    more easily remain ...13... [A. unchanged B. constant C. undiscovered D. erratic] for hundreds of
+    years. However, once you have had an ...14...[A. epidemic B. encounter C. attack D. indisposition]
+    of this dreadful disease, you develop an ... 15... [ A. impurity B. armour C. immunity D. ability]
+    which is almost complete and long lasting. Modern science has made available ... 16 ...[A. injections
+    B. medicine C. tablets D. vaccines to prevent many childhood diseases and this is the only guarantee
+    of ... 17... [A. freedom B. discharge C. cure 0. protection] from these scourges. More effective treatment
+    of Complication arising from these childhood diseases using penicillin and other ...18... [A. relievers
+    B. treatments C. antibiotics D. Pills] has also helped to reduce the ... 19... [A. high B. mortality
+    C. killing D dangerous] rate among children. It is universally accepted that good ...20... [A. health
+    B. body C. sense D. development] is the right of every human being and children. You do not have to
+    die from these diseases which wiped out the whole ...21... [A. countries B. areas C. communities D.
+    states] in the middle Ages. We have today ...22... [A. bitter B. lovely C. potent D. marvellous] drugs
+    which give protection against most childhood diseases. After each of the following sentences, a list
+    of possible interpretations of the sentence is given. Choose the interpretation that you consider
+    appropriate for each sentence. 23. When asked to state her side of the story, Bunmi started by beating
+    about the bush. This means that Bunmi A. went straight to the point B. was lost in great thought C.
+    followed a bush path D. approached the subject without coming to the point. 24. The amount he donated
+    was small. He said it was his widow's mite. This means that A. he was a widow B. he was misery. C.
+    it was all he could honestly afford D. he could have given more. 25. The friendship between Segun
+    and Shehu has turned sour. This means that Segun and Shehu are A. no longer friends B. stilt friends
+    C. better friends now D. getting to understand each other. 26. The driver smelled a rat when the policemen
+    asked him to stop. This means that the driver was A. reckless B. suspicious C. careful D. offensive.
+    27. The students were as advised to face their studies and let the sleeping dog lie. This means that
+    the students should A. obey the authorities B. organise them properly C. leave matters as they are
+    now D. be as watchful as sleeping dogs. 28. From the way Ngozi behaves, it is obvious she is a greenhorn.
+    This means that Ngozi is A. arrogant B. cautious C. inexperienced D. uncivilised. 29. The economic
+    situation is so bad that many wage earners are hardly able to make both ends meet. This means that
+    A. people's income exceed their expenditure B. most people are extravagant with their income C. people's
+    earnings are not sufficient for their essential needs D. most people engage in activities that bring
+    them extra pay. 30. Since I found out his hypocritical nature, I have been keeping him at arm's length.
+    This means that I A. avoid being similar with him B. ignore his advice C. report him to the authority
+    D). stop visiting him. 31. I knew Okoronkwo's father very well and I must say that his son is a chip
+    off the old block. Thy means that Okoronkwo A. has Chosen the game career as its father B. is very
+    much like his father C. is a I extremely different sort of person from his lather. D. has taken up
+    a different profession from his father's. 32. The debating team was warned to make convincing points
+    and not to play to the gallery. This means that the team should not A. be selfish B. underrate opponents
+    C. be over-confident D. attempt to win cheap popularity. 33. Anyone who thinks that he can succeed
+    in life without working hard is living in a fool's paradise. This means is that such a person A. is
+    having an illusion B. thinks other people are fools C. thinks hat working is merely a joke. D. is
+    on the verge of insanity. From these questions, choose the options opposite in meaning to the words
+    or phrases in italics. 34. I am happy to inform you that your boys are conscientious A. industrious
+    B. carefree C. careful D. corrupt 35. My father is a very prosperous businessman. A. ungrateful B.
+    unscrupulous C. unskilled D. unsuccessful 36 My hostess greeted her guest in a very relaxed manner
+    A. energetic B. athletic C. stiff D. perplexed 37. Ayo takes his studies rather lightly A. humorously
+    B. tediously C. carefully D. seriously 38. The doctor was very gentle with his patients in the examining
+    room A. harsh B. rude C. rough D. unkind 39. The President took exception to the role the young man
+    ignoble played in the matter A. honourable B. embarrassing C dishonourable D. extraordinary 40. The
+    man who had been seriously ill was convalescing at a seaside resort A. regaining health B. deteriorating
+    in health C. recuperating D. relaxing 41. For millions of years, the world resources have remained
+    boundless A. unlimited B. scarce C. indomitable D. limited 42. The difference between the experimental
+    procedures was imperceptible to me A. negligible B. significant C. obvious D. obscure 43. His anti-apathy
+    to religion ideas makes him unpopular A. remedy B. Consciousness C. hostility D. receptiveness For
+    the questions, choose the options that best complete the gap(s). 44, He was ... [A. assisted B. duped
+    C. enjoined D. encouraged] ... by the trickster. 45. When the soldiers saw that resistance was ...
+    [A. inadequate B. inefficient C. futile D. successful] ..., they stopped fighting 46. You should read
+    all the ... [A. brochures B. prospectus C. tickets D. handouts] ... carefully before you decide where
+    to go on holiday. 47. The Emir and Conqueror of the enemy territories. ---[A. arrives B. are to arrive
+    C. arrive D. are arriving] --- next week. 48 We ought to have visited the Governor, ...[A. isn't it
+    B, oughtn't we C. shouldn't we D. haven't] 49. He didn't sense Obi's presence in the room, did he?...
+    [A. yes, he did B. No, he did C. Yes, he didn't D. No, he didn't] 50. You can stay here --- [A. as
+    long B. so long C. in a much D. for as long] --- as you are quiet. In each of these questions, choose
+    the option nearest in meaning to the word(s) or phrase in italics. 51. The witness that she averred
+    had seen Dosun at the scene of the crime A. argued B. confirmed C. denied D. affirmed 52. The high
+    cost of living these days calls for a lot of frugality A. extravagance B. economy C. recklessness
+    D. prudence. 53. Tunde's reaction underscores the points I was making. A. justifies B. summarizes
+    C. emphasizes D. clarifies 54. Everyone admired the manager's adroit handling of the crisis in the
+    company A. emphasised B. skilful C. tactless D. clumsy 55. The principal took exception to the ignoble
+    role the teacher plays d in the matter A. embarrassing B. honourable C. extraordinary D. dishonourable
+    In each of these questions, choose the option that has the same sound as the one represented by the
+    letter(s) underlined. 56. key A. sit B. bet C seat D. tread 57. taught A. law B. aunt C. count D.
+    plateau In each of these questions, choose the appropriate stress item from the options. The syllables
+    are written in capital letters. 58. comfortable A. COMfortable B. comFORtable C. comfortaBLE D. comforTABLE
+    59. incapacitate A. inCApacitate B. incaPAcitate C. INcapacitate D. incapaciTATE. 60. encouragement
+    A. Encouragement B. encouragement C. encouRAgement D. encouragement
+- id: passage_2018_passage_a
+  label: PASSAGE_A
+  text: 'Read the following passage and answer the questions that follow. Returning home after a decade
+    and half abroad, our Geography master remained incurably addicted to foreign ways and ideas for years
+    after landing here. He would forever stick to his theory of Africans suffering from a curse inflicted
+    on them by the Almighty God for some heinous sins committed centuries ago. He would, in support of
+    this theory, ask listeners: "Why would our mosquito inflict deadly malaria on us whereas the British
+    mosquito does not bite? Why aren''t there poisonous snakes in Britain whereas here most snakes are
+    deadly? Why should the deadly sickle cell disease be peculiar to the black race?" ENGLISH QUESTIONS
+    Of course, he hardly waits for answers to these and similar questions before jumping to the same inevitable
+    conclusion. However, he met his match one day when a new student joined the class and heard the litany
+    we were used to. The new boy calmly said, "Sir, I happen to know a few white men who suffer from the
+    sickle cell disease; some are Italians and some are Spanish. The mosquito is equally deadly in India,
+    South-east Asian Countries and South America. The United States and some other South American 5 Countries
+    have their deadly snakes. And, Sir, I know many white men, some of them British, who would prefer
+    our brilliant sunshine to their horribly cold winter." And he sat down. I had never, before that day,
+    seen our master so consumed with anger. He directed a burning look at the poor boy, who had no answer
+    to this new battle. Without as much as saying a single word, the master stalked out of the classroom.
+    Needless to say, our anger was turned on the new boy, who had decided to rock the boat without taking
+    the time to sound the water. A delegation was sent to the master to apologise to him. He was appeased.
+    But we all noticed something rather unusual thereafter never again did he dwell on the issue of Africans
+    being the cursed People'
+questions:
+- number: 1
+  page: 158
+  section: null
+  instruction: null
+  stem: What point of view is the Geography master fond of advancing?
+  options:
+    A: Africans are infested with all kinds of problem
+    B: Only the white men are free from deadly diseases
+    C: The Almighty God is punishing Africans for sins they committed long ago
+    D: God did not curse the white people
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2018_passage_a
+- number: 2
+  page: 158
+  section: null
+  instruction: null
+  stem: Which of the following arguments did he not use to support his vies?
+  options:
+    A: In Africa, the mosquito causes deadly malaria whereas in Britain, it doesn't bite or caw e malaria
+    B: There is malaria both in Britain and in African Countries
+    C: The snakes in Africa are deadly but those in Britain are harmless
+    D: The sickle cell disease is peculiar to the black race
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2018_passage_a
+- number: 3
+  page: 158
+  section: null
+  instruction: null
+  stem: '"...rock the boat" What figure of speech is this expression?'
+  options:
+    A: Simile
+    B: Metaphor
+    C: Personification
+    D: Hyperbole
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.2.i
+  skill_reason: 'Stem asks what a word or expression means in the passage. Mapped from the stem: no direction
+    is printed for comprehension items.'
+  passage_ref: passage_2018_passage_a
+- number: 4
+  page: 158
+  section: null
+  instruction: null
+  stem: What extra argument (lid the new boy offer after countering each of vie master's points?
+  options:
+    A: There are problems especially in Africa
+    B: There are deadly snakes be the in America and Africa
+    C: There are harmless snakes in Britain
+    D: Many white men prefer the African climate to their own
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2018_passage_a
+- number: 5
+  page: 159
+  section: null
+  instruction: null
+  stem: Why do you think the master fought back with his look rather than with further argument?
+  options:
+    A: He knew that the boy's points were valid
+    B: He had answers to the boy's argument
+    C: He went out to sort for the boy's argument
+    D: He already made up his mind on his points
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.1.i
+  skill_reason: 'Comprehension question on a set passage. Mapped from the stem: no direction is printed
+    for comprehension items.'
+  passage_ref: passage_2018_passage_a
+- number: 6
+  page: 159
+  section: null
+  instruction: null
+  stem: '"...who had no answer to this new battle" What grammatical name is given to the above passage
+    expression as it is used in the passage?'
+  options:
+    A: (non-defining) relative clause
+    B: Adverbial clause
+    C: Subordinate clause
+    D: Main clause
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.2.i
+  skill_reason: 'Stem asks what a word or expression means in the passage. Mapped from the stem: no direction
+    is printed for comprehension items.'
+  passage_ref: passage_2018_passage_a
+- number: 13
+  page: 160
+  section: Cloze passage
+  instruction: The passage below has gaps immediately following each gap, four options are provided. Choose
+    the most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
+    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
+    others including ... 8... [A. catarrh
+  stem: Gap 13 in the cloze passage.
+  options:
+    A: unchanged
+    B: constant
+    C: undiscovered
+    D: erratic
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2018
+- number: 14
+  page: 160
+  section: Cloze passage
+  instruction: The passage below has gaps immediately following each gap, four options are provided. Choose
+    the most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
+    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
+    others including ... 8... [A. catarrh
+  stem: Gap 14 in the cloze passage.
+  options:
+    A: epidemic
+    B: encounter
+    C: attack
+    D: indisposition
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2018
+- number: 15
+  page: 160
+  section: Cloze passage
+  instruction: The passage below has gaps immediately following each gap, four options are provided. Choose
+    the most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
+    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
+    others including ... 8... [A. catarrh
+  stem: Gap 15 in the cloze passage.
+  options:
+    A: impurity
+    B: armour
+    C: immunity
+    D: ability
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2018
+- number: 16
+  page: 160
+  section: Cloze passage
+  instruction: The passage below has gaps immediately following each gap, four options are provided. Choose
+    the most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
+    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
+    others including ... 8... [A. catarrh
+  stem: Gap 16 in the cloze passage.
+  options:
+    A: injections
+    B: medicine
+    C: tablets
+    D: vaccines to prevent many childhood diseases and this is the only guarantee of
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2018
+- number: 18
+  page: 160
+  section: Cloze passage
+  instruction: The passage below has gaps immediately following each gap, four options are provided. Choose
+    the most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
+    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
+    others including ... 8... [A. catarrh
+  stem: Gap 18 in the cloze passage.
+  options:
+    A: relievers
+    B: treatments
+    C: antibiotics
+    D: Pills
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2018
+- number: 20
+  page: 160
+  section: Cloze passage
+  instruction: The passage below has gaps immediately following each gap, four options are provided. Choose
+    the most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
+    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
+    others including ... 8... [A. catarrh
+  stem: Gap 20 in the cloze passage.
+  options:
+    A: health
+    B: body
+    C: sense
+    D: development
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2018
+- number: 21
+  page: 160
+  section: Cloze passage
+  instruction: The passage below has gaps immediately following each gap, four options are provided. Choose
+    the most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
+    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
+    others including ... 8... [A. catarrh
+  stem: Gap 21 in the cloze passage.
+  options:
+    A: countries
+    B: areas
+    C: communities
+    D: states
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2018
+- number: 22
+  page: 160
+  section: Cloze passage
+  instruction: The passage below has gaps immediately following each gap, four options are provided. Choose
+    the most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
+    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
+    others including ... 8... [A. catarrh
+  stem: Gap 22 in the cloze passage.
+  options:
+    A: bitter
+    B: lovely
+    C: potent
+    D: marvellous
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2018
+- number: 23
+  page: 159
+  section: Cloze passage
+  instruction: The passage below has gaps immediately following each gap, four options are provided. Choose
+    the most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
+    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
+    others including ... 8... [A. catarrh
+  stem: Gap 23 in the cloze passage.
+  options:
+    A: went straight to the point
+    B: was lost in great thought
+    C: followed a bush path
+    D: approached the subject without coming to the point
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2018
+- number: 24
+  page: 159
+  section: Cloze passage
+  instruction: The passage below has gaps immediately following each gap, four options are provided. Choose
+    the most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
+    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
+    others including ... 8... [A. catarrh
+  stem: Gap 24 in the cloze passage.
+  options:
+    A: he was a widow
+    B: he was misery
+    C: it was all he could honestly afford
+    D: he could have given more
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2018
+- number: 25
+  page: 159
+  section: Cloze passage
+  instruction: The passage below has gaps immediately following each gap, four options are provided. Choose
+    the most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
+    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
+    others including ... 8... [A. catarrh
+  stem: Gap 25 in the cloze passage.
+  options:
+    A: no longer friends
+    B: stilt friends
+    C: better friends now
+    D: getting to understand each other
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2018
+- number: 26
+  page: 159
+  section: Cloze passage
+  instruction: The passage below has gaps immediately following each gap, four options are provided. Choose
+    the most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
+    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
+    others including ... 8... [A. catarrh
+  stem: Gap 26 in the cloze passage.
+  options:
+    A: reckless
+    B: suspicious
+    C: careful
+    D: offensive
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2018
+- number: 27
+  page: 159
+  section: Cloze passage
+  instruction: The passage below has gaps immediately following each gap, four options are provided. Choose
+    the most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
+    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
+    others including ... 8... [A. catarrh
+  stem: Gap 27 in the cloze passage.
+  options:
+    A: obey the authorities
+    B: organise them properly
+    C: leave matters as they are now
+    D: be as watchful as sleeping dogs
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2018
+- number: 28
+  page: 159
+  section: Cloze passage
+  instruction: The passage below has gaps immediately following each gap, four options are provided. Choose
+    the most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
+    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
+    others including ... 8... [A. catarrh
+  stem: Gap 28 in the cloze passage.
+  options:
+    A: arrogant
+    B: cautious
+    C: inexperienced
+    D: uncivilised
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2018
+- number: 29
+  page: 159
+  section: Cloze passage
+  instruction: The passage below has gaps immediately following each gap, four options are provided. Choose
+    the most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
+    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
+    others including ... 8... [A. catarrh
+  stem: Gap 29 in the cloze passage.
+  options:
+    A: people's income exceed their expenditure
+    B: most people are extravagant with their income
+    C: people's earnings are not sufficient for their essential needs
+    D: most people engage in activities that bring them extra pay
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2018
+- number: 30
+  page: 162
+  section: null
+  instruction: The passage below has gaps immediately following each gap, four options are provided. Choose
+    the most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
+    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
+    others including ... 8... [A. catarrh
+  stem: Since I found out his hypocritical nature, I have been keeping him at arm's length. This means
+    that I
+  options:
+    A: avoid being similar with him
+    B: ignore his advice
+    C: report him to the authority
+    D: stop visiting him 31. I knew Okoronkwo's father very well and I must say that his son is a chip
+      off the old block. Thy means that Okoronkwo
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Printed direction is the cloze passage.
+  passage_ref: null
+- number: 31
+  page: 159
+  section: Cloze passage
+  instruction: The passage below has gaps immediately following each gap, four options are provided. Choose
+    the most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
+    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
+    others including ... 8... [A. catarrh
+  stem: Gap 31 in the cloze passage.
+  options:
+    A: has Chosen the game career as its father
+    B: is very much like his father
+    C: is a I extremely different sort of person from his lather
+    D: has taken up a different profession from his father's
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2018
+- number: 32
+  page: 159
+  section: Cloze passage
+  instruction: The passage below has gaps immediately following each gap, four options are provided. Choose
+    the most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
+    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
+    others including ... 8... [A. catarrh
+  stem: Gap 32 in the cloze passage.
+  options:
+    A: be selfish
+    B: underrate opponents
+    C: be over-confident
+    D: attempt to win cheap popularity
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2018
+- number: 33
+  page: 159
+  section: Cloze passage
+  instruction: The passage below has gaps immediately following each gap, four options are provided. Choose
+    the most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
+    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
+    others including ... 8... [A. catarrh
+  stem: Gap 33 in the cloze passage.
+  options:
+    A: is having an illusion
+    B: thinks other people are fools
+    C: thinks hat working is merely a joke
+    D: is on the verge of insanity. From these questions, choose the options opposite in meaning to the
+      words or phrases in italics
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.A.6.i
+  skill_reason: Gap in the cloze passage printed with the year's paper.
+  passage_ref: cloze_2018
+- number: 35
+  page: 163
+  section: null
+  instruction: choose the options opposite in meaning to the words or phrases in italics
+  stem: My father is a very prosperous businessman
+  options:
+    A: ungrateful
+    B: unscrupulous
+    C: unskilled
+    D: unsuccessful 36 My hostess greeted her guest in a very relaxed manner
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 37
+  page: 163
+  section: null
+  instruction: choose the options opposite in meaning to the words or phrases in italics
+  stem: Ayo takes his studies rather lightly
+  options:
+    A: humorously
+    B: tediously
+    C: carefully
+    D: seriously
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 38
+  page: 163
+  section: null
+  instruction: choose the options opposite in meaning to the words or phrases in italics
+  stem: The doctor was very gentle with his patients in the examining room
+  options:
+    A: harsh
+    B: rude
+    C: rough
+    D: unkind
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 40
+  page: 164
+  section: null
+  instruction: choose the options opposite in meaning to the words or phrases in italics
+  stem: The man who had been seriously ill was convalescing at a seaside resort
+  options:
+    A: regaining health
+    B: deteriorating in health
+    C: recuperating
+    D: relaxing
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 41
+  page: 164
+  section: null
+  instruction: choose the options opposite in meaning to the words or phrases in italics
+  stem: For millions of years, the world resources have remained boundless
+  options:
+    A: unlimited
+    B: scarce
+    C: indomitable
+    D: limited
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 42
+  page: 164
+  section: null
+  instruction: choose the options opposite in meaning to the words or phrases in italics
+  stem: The difference between the experimental procedures was imperceptible to me
+  options:
+    A: negligible
+    B: significant
+    C: obvious
+    D: obscure
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 43
+  page: 164
+  section: null
+  instruction: choose the options opposite in meaning to the words or phrases in italics
+  stem: His anti-apathy to religion ideas makes him unpopular
+  options:
+    A: remedy
+    B: Consciousness
+    C: hostility
+    D: receptiveness For the questions, choose the options that best complete the gap(s) 44, He was ...
+      [A. assisted B duped C. enjoined D. encouraged
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 50
+  page: 165
+  section: null
+  instruction: choose the options that best complete the gap(s). 44, He was ... [A. assisted B. duped
+    C. enjoined D. encouraged] ... by the trickster
+  stem: You can stay here --- ...... --- as you are quiet In each of these questions, choose the option
+    nearest in meaning to the word(s) or phrase in italics
+  options:
+    A: as long
+    B: so long
+    C: in a much
+    D: for as long
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 51
+  page: 165
+  section: null
+  instruction: In each of these questions, choose the option nearest in meaning to the word(s) or phrase
+    in italics
+  stem: The witness that she averred had seen Dosun at the scene of the crime
+  options:
+    A: argued
+    B: confirmed
+    C: denied
+    D: affirmed
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 52
+  page: 165
+  section: null
+  instruction: In each of these questions, choose the option nearest in meaning to the word(s) or phrase
+    in italics
+  stem: The high cost of living these days calls for a lot of frugality
+  options:
+    A: extravagance
+    B: economy
+    C: recklessness
+    D: prudence
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 53
+  page: 165
+  section: null
+  instruction: In each of these questions, choose the option nearest in meaning to the word(s) or phrase
+    in italics
+  stem: Tunde's reaction underscores the points I was making
+  options:
+    A: justifies
+    B: summarizes
+    C: emphasizes
+    D: clarifies
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 54
+  page: 165
+  section: null
+  instruction: In each of these questions, choose the option nearest in meaning to the word(s) or phrase
+    in italics
+  stem: Everyone admired the manager's adroit handling of the crisis in the company
+  options:
+    A: emphasised
+    B: skilful
+    C: tactless
+    D: clumsy
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 55
+  page: 166
+  section: null
+  instruction: In each of these questions, choose the option nearest in meaning to the word(s) or phrase
+    in italics
+  stem: The principal took exception to the ignoble role the teacher plays d in the matter
+  options:
+    A: embarrassing
+    B: honourable
+    C: extraordinary
+    D: dishonourable
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 57
+  page: 166
+  section: null
+  instruction: In each of these questions, choose the option that has the same sound as the one represented
+    by the letter(s) underlined
+  stem: taught
+  options:
+    A: law
+    B: aunt
+    C: count
+    D: plateau
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.C.3.i
+  skill_reason: Printed direction asks for the same sound as the underlined letters; it does not say whether
+    the sound is a vowel or a consonant.
+  passage_ref: null
+- number: 58
+  page: 166
+  section: null
+  instruction: In each of these questions, choose the appropriate stress item from the options. The syllables
+    are written in capital letters
+  stem: comfortable
+  options:
+    A: COMfortable
+    B: comFORtable
+    C: comfortaBLE
+    D: comforTABLE
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.C.4.i
+  skill_reason: Printed direction asks for the stress pattern.
+  passage_ref: null
+- number: 59
+  page: 166
+  section: null
+  instruction: In each of these questions, choose the appropriate stress item from the options. The syllables
+    are written in capital letters
+  stem: incapacitate
+  options:
+    A: inCApacitate
+    B: incaPAcitate
+    C: INcapacitate
+    D: incapaciTATE
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.C.4.i
+  skill_reason: Printed direction asks for the stress pattern.
+  passage_ref: null
+- number: 60
+  page: 166
+  section: null
+  instruction: In each of these questions, choose the appropriate stress item from the options. The syllables
+    are written in capital letters
+  stem: encouragement
+  options:
+    A: Encouragement
+    B: encouragement
+    C: encouRAgement
+    D: encouragement
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.C.4.i
+  skill_reason: Printed direction asks for the stress pattern.
+  passage_ref: null
