@@ -1,7 +1,10 @@
 # Student schema
 
-**Status: implemented in [`database/migrations/007_students.sql`](../database/migrations/007_students.sql),
-tested in [`database/tests/007_students.sql`](../database/tests/007_students.sql).**
+**Status: implemented in migrations
+[007](../database/migrations/007_students.sql) (students and evidence),
+[008](../database/migrations/008_assessments.sql) (exams) and
+[009](../database/migrations/009_learning_profile.sql) (the learning profile),
+each with tests of the same number.**
 Date: 17 September 2026
 
 The student side of the product: who is learning, what they consented to, what they did,
@@ -17,13 +20,68 @@ and [ADR-0013](adr/0013-auth-and-sessions.md).
 | `guardian_students` | One verified guardian–student link | Source of truth |
 | `consents` | One recorded consent decision | Source of truth |
 | `student_exam_goals` | One subject a student is preparing for, with a target out of 100 | Source of truth |
-| `study_sessions` | One sitting: practice, check-up or mock | Source of truth |
+| `study_sessions` | One learning sitting: practice, check-up, review | Source of truth |
 | `attempts` | **One answered question** | Source of truth, append-only |
+| `assessments` | One assembled paper | Source of truth |
+| `assessment_items` | One question's placement in a paper | Source of truth |
+| `assessment_sittings` | One student taking one paper once | Source of truth |
 | `skill_ratings` | What we believe about one student on one skill | Derived |
 | `review_state` | When a skill is due back | Derived |
 
-Two views: `student_skill_state` (what the planner reads) and `student_daily_activity`
-(counts for the teacher list and guardian digest — counts only, never answers).
+## Exams are not practice
+
+An exam has a form fixed before it starts, a deadline the server owns, no hints, and a score
+in which an unanswered question is not the same as a wrong one. Practice has none of that:
+items are chosen one at a time, hints are the point, and there is no score. One table cannot
+enforce both sets of rules, so **the administration of exams is separate** — `assessments`,
+`assessment_items`, `assessment_sittings` — and `study_sessions` is learning-only.
+
+**What is not split is the evidence.** `attempts` remains the single record of "this student
+answered this item, this way, in this long", because mastery, item statistics and calibration
+all read it. Splitting it would turn each of those into a union, and any query that forgot
+half would be quietly wrong. An attempt belongs to a study session **or** a sitting — never
+both, never neither.
+
+What the database enforces:
+
+- A published paper is frozen: its questions and marks cannot change, so two students'
+  results mean the same thing.
+- Publication checks every question is approved for delivery and comes from the pool the
+  assessment requires — a mock cannot contain a question students practise on.
+- The declared mark total must match the marks actually placed.
+- An answer must belong to an open sitting, to the right student, and to the question
+  actually placed at that position.
+- Hints and viewed solutions are impossible inside an exam.
+- Changing an answer writes a new attempt; `sitting_final_answers` takes the last one before
+  the deadline, and `sitting_results` reports how many answers were changed.
+- Unanswered questions are counted as unanswered, never as wrong.
+
+## The learning profile
+
+Migration 009 links a student to **everything in the syllabus they are preparing for**, with
+what they have done against it:
+
+| View | One row is |
+| --- | --- |
+| `student_syllabus_map` | One student × one curriculum item (topic, subtopic or skill), with rating and evidence. Untouched items appear with zeros — "not yet assessed" is something the planner needs to see |
+| `student_subtopic_state` | One student × subtopic: skills assessed vs total, mean and weakest mastery, attempts, right, wrong, next review |
+| `student_skill_evidence` | One student × skill: attempted, right, wrong, how fast, how recently |
+| `student_skill_answers` | Every answer, joined to the skill it tested |
+| `student_question_history` | Which questions the student has seen and how it went — the selector reads it to avoid repeats |
+| `student_recent_answers` | The last answers with stem, choice, correct option and the misconception behind a wrong choice — the context an AI tutor needs |
+
+**These are views, not tables.** A subtopic's state is an aggregate of evidence that already
+exists; storing it again creates a second source of truth that drifts the first time a job
+fails halfway. Trends over time are a different thing and get a snapshot table when the
+metrics work lands.
+
+**They expose mastery as a probability, never as a band.** "Weak" and "exam-ready" are the
+engine's thresholds ([packages/engine](../packages/engine)); duplicating them in SQL would
+let the database and the engine disagree about the same student.
+
+Two further views: `student_skill_state` (what the planner reads) and
+`student_daily_activity` (counts for the teacher list and guardian digest — counts only,
+never answers).
 
 ## Three rules the database enforces
 
@@ -72,7 +130,8 @@ is recomputed rather than migrated.
 
 - **Plans, plan items and score ranges** — they belong with the planner, and inventing their
   shape before the engine exists would guess at the wrong thing.
-- **Mock sessions and responses** — the CBT simulator defines them (roadmap M4).
+- **Per-subtopic snapshots over time** — the views above give the current state; trends need
+  a dated snapshot table, which arrives with the metrics work.
 - **Schools, classrooms and enrolment** — the POC is direct-to-student; `students.external_ref`
   holds a school's own identifier in the meantime.
 - **Authentication** — sessions and sign-in are ADR-0013, still proposed. Nothing here

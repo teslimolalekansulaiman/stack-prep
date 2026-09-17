@@ -21,6 +21,7 @@ DECLARE
   v_guardian uuid;
   v_link uuid;
   v_session uuid;
+  v_adult_session uuid;
   v_attempt uuid := gen_random_uuid();
   v_rejected boolean;
 BEGIN
@@ -160,9 +161,9 @@ BEGIN
   -- A marked attempt must say what was chosen.
   v_rejected := false;
   BEGIN
-    INSERT INTO attempts(id, student_id, question_version_id, context, is_correct,
-      answered_at_client)
-      VALUES (gen_random_uuid(), v_minor, v_qversion, 'practice', true, now());
+    INSERT INTO attempts(id, student_id, question_version_id, session_id, context,
+      is_correct, answered_at_client)
+      VALUES (gen_random_uuid(), v_minor, v_qversion, v_session, 'practice', true, now());
   EXCEPTION WHEN OTHERS THEN
     IF SQLERRM NOT LIKE '%violates check constraint%' THEN RAISE; END IF;
     v_rejected := true;
@@ -197,10 +198,14 @@ BEGIN
     RAISE EXCEPTION 'the erasure path did not remove the attempt';
   END IF;
 
-  -- A student who does not need guardian consent can answer straight away.
-  INSERT INTO attempts(id, student_id, question_version_id, context, selected_option_key,
-    is_correct, response_ms, answered_at_client)
-    VALUES (gen_random_uuid(), v_adult, v_qversion, 'practice', 'B', false, 52000, now());
+  -- A student who does not need guardian consent can answer straight away. Every learning
+  -- attempt belongs to a session (migration 008: an attempt is either learning or an exam).
+  INSERT INTO study_sessions(student_id, subject_id, session_type)
+    VALUES (v_adult, v_subject, 'practice') RETURNING id INTO v_adult_session;
+  INSERT INTO attempts(id, student_id, question_version_id, session_id, context,
+    selected_option_key, is_correct, response_ms, answered_at_client)
+    VALUES (gen_random_uuid(), v_adult, v_qversion, v_adult_session, 'practice', 'B', false,
+      52000, now());
 
   -- ------------------------------------------------------------ derived state
   INSERT INTO skill_ratings(student_id, skill_id, theta, scored_attempts, levels_seen,
