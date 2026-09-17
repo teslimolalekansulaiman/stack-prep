@@ -36,8 +36,10 @@
 #      examination rather than the curriculum.
 #
 #   5. The document prints no year or edition anywhere in its body — the filename claims
-#      2027, the file does not — so the version is `utme-undated` and document_year is null.
-#      Its page numbers (198–202) show it is an extract from a larger brochure.
+#      2027, the file does not. It is the 2027 syllabus on the authority of the person who
+#      supplied it, which is what the version label records; `authority_identifier` and
+#      `document_year` stay null, because those describe what the document says. Its page
+#      numbers (198–202) show it is an extract from a larger brochure.
 #
 #   6. Source typography is kept verbatim in excerpts, including "monothongs" for
 #      monophthongs and "5questions". The item names read correctly.
@@ -68,7 +70,7 @@ source_documents:
     document_type: syllabus
     title: UTME Syllabus — Use of English
     issuer: null                 # no issuer or date is printed in the extract
-    document_year: null          # the filename says 2027; the document does not
+    document_year: null          # the filename and the supplier say 2027; the document does not
     file_uri: docs/syllabus/utme-english-syllabus 2027.pdf
     file_sha256: f2b6bc4f2c30fc19ecf57bc14778100ce0deca59445beff9f7e10f34cbf7da18
     mime_type: application/pdf
@@ -81,7 +83,7 @@ source_documents:
     review_status: pending
 
 syllabus_versions:
-  - version_label: utme-undated
+  - version_label: utme-2027
     authority_identifier: null
     valid_from: null
     valid_to: null

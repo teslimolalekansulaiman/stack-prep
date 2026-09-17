@@ -20,8 +20,10 @@
 #     (e.g. "1050" -> "105º", "bar chat" -> "bar chart" is NOT fixed — see note 3).
 #
 # Extraction judgements, for the reviewer:
-#   1. The document prints no year, edition or version identifier, so the syllabus version is
-#      labelled `utme-undated` and `authority_identifier` is left null rather than guessed.
+#   1. The document itself prints no year, edition or version identifier anywhere. It is the
+#      2027 syllabus on the authority of the person who supplied it, and that is what the
+#      version label records. `authority_identifier` stays null and `document_year` stays
+#      null, because those describe what the document says, and it says nothing.
 #   2. The document does not state the examination's paper structure (how many questions, how
 #      long, how many marks). Nothing about paper structure is recorded from it.
 #   3. Typographic errors in the source are kept verbatim in excerpts: "bar chat" (page 5),
@@ -69,8 +71,8 @@ source_documents:
     review_status: pending
 
 syllabus_versions:
-  - version_label: utme-undated
-    authority_identifier: null   # no version or year printed in the document
+  - version_label: utme-2027
+    authority_identifier: null   # no version or year printed in the document itself
     valid_from: null
     valid_to: null
     source_document: utme_math_syllabus_pdf

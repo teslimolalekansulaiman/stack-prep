@@ -37,7 +37,7 @@ WITH subject AS (
 ),
 version AS (
   SELECT v.id FROM syllabus_versions v, subject
-  WHERE v.subject_id = subject.id AND v.version_label = 'utme-undated'
+  WHERE v.subject_id = subject.id AND v.version_label = 'utme-2027'
   LIMIT 1
 ),
 papers AS (
