@@ -1,0 +1,11 @@
+{
+  "name": "@score-pilot/api-client",
+  "version": "0.1.0",
+  "private": true,
+  "description": "TypeScript types generated from the API's OpenAPI schema (make openapi)",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "generate": "npm run generate --prefix ../.. --silent || echo 'run `make openapi` from the repository root'"
+  }
+}

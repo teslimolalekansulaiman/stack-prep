@@ -1,0 +1,504 @@
+format_version: 1
+paper:
+  exam_year: 2011
+  paper_code: "P3022"
+levels:
+  - number: 1
+    proposed_level: 3
+    level_confidence: high
+    reason: "Requires linking 'remorse' to the morphologically distant 'unrepentant'; the other three are character words that look plausible in the slot."
+
+  - number: 2
+    proposed_level: 3
+    level_confidence: medium
+    reason: "'Orthodox' is a genuine rival to 'conservative' as the opposite of 'liberal', so one real discrimination is needed."
+
+  - number: 3
+    proposed_level: 2
+    level_confidence: high
+    reason: "Turbulent/calm is an everyday pair; only 'motionless' is mildly tempting."
+
+  - number: 4
+    proposed_level: 2
+    level_confidence: high
+    reason: "Durable/fragile is common vocabulary; 'strong' traps only students who ignore the contrastive 'but'."
+
+  - number: 5
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Recommendation' competes phonologically with 'commendation', so the item rewards precise word shape as well as meaning."
+
+  - number: 6
+    proposed_level: 2
+    level_confidence: high
+    reason: "Computerized/manual is familiar everyday vocabulary; only 'electrical' is mildly plausible."
+
+  - number: 7
+    proposed_level: 4
+    level_confidence: low
+    reason: "'Quiet' is a strong rival to 'monotonous' as the opposite of 'excitement', and village life supports both readings."
+
+  - number: 8
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Frugal' is moderately formal, though extravagant is the only option that completes the contrast."
+
+  - number: 9
+    proposed_level: 4
+    level_confidence: high
+    reason: "Three near-synonyms (diminishing, declining, vanishing) all oppose 'flourishing'; only collocation with 'business' separates them."
+
+  - number: 10
+    proposed_level: 2
+    level_confidence: high
+    reason: "Seldom/always is basic frequency vocabulary; 'never' is the only trap and points the wrong way."
+
+  - number: 11
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Heir to the throne' is a fixed everyday phrase; 'claimant' is the only mild competitor."
+
+  - number: 12
+    proposed_level: 3
+    level_confidence: high
+    reason: "Turns on the legible/eligible confusable pair, a distinction many candidates blur."
+
+  - number: 13
+    proposed_level: 4
+    level_confidence: medium
+    reason: "Needs meeting-procedure register: correction, reading and amendment are all things done to minutes, so only 'adoption' fits 'no comment'."
+
+  - number: 14
+    proposed_level: 1
+    level_confidence: medium
+    reason: "Poor feeding to malnutrition is a direct everyday link; the distractors are diseases with no feeding connection."
+
+  - number: 15
+    proposed_level: 3
+    level_confidence: medium
+    reason: "'Of paramount importance' is a fixed phrase, but pre-eminent and prominent are near-synonyms that pull at unsure candidates."
+
+  - number: 16
+    proposed_level: 3
+    level_confidence: high
+    reason: "Depends on the collocation 'a handsome reward'; 'treat' and 'praise' are receivable things and compete."
+
+  - number: 17
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Popular among them' is common vocabulary; only 'jovial' is mildly plausible after 'loves all his students'."
+
+  - number: 18
+    proposed_level: 2
+    level_confidence: high
+    reason: "Magistrate-sentences-to-imprisonment is a familiar collocation; 'punished' is the one soft rival."
+
+  - number: 19
+    proposed_level: 3
+    level_confidence: low
+    reason: "'Account' and 'statement' are both natural after an accident, so the discrimination is fine and arguably arbitrary."
+
+  - number: 20
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Divulge' is formal vocabulary, though only it takes 'secret' in this sense; 'discuss' is the weak rival."
+
+  - number: 21
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Put up with' is a very common phrasal verb; option A offers a literal-housing trap but C is clear."
+
+  - number: 22
+    proposed_level: 2
+    level_confidence: high
+    reason: "'The cream of society' is a widely taught expression and no distractor is close in meaning."
+
+  - number: 23
+    proposed_level: 4
+    level_confidence: medium
+    reason: "'Play the ostrich' is a less familiar idiom and 'denied the reports' is a plausible near-miss for 'ignored the problem'."
+
+  - number: 24
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Once in a blue moon' is a staple idiom; only 'once a year' tempts a literal reading of 'once'."
+
+  - number: 25
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Nip in the bud' is commonly taught and only A states a stopped crisis."
+
+  - number: 26
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Bedlam' is uncommon, but the clause 'students are uncontrollable' glosses it for the candidate."
+
+  - number: 27
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Skeleton in the cupboard' is a staple idiom and the three literal distractors are absurd."
+
+  - number: 28
+    proposed_level: 5
+    level_confidence: high
+    reason: "'Send to Coventry' is a rare British idiom with no internal clue, and 'sent away' is a very plausible guess."
+
+  - number: 29
+    proposed_level: 2
+    level_confidence: low
+    reason: "The idiom is familiar, but option A paraphrases it literally and closely, which could push this to level 3."
+
+  - number: 30
+    proposed_level: 3
+    level_confidence: high
+    reason: "Two options are defensible; the candidate must pick D for intensity over the understated 'not happy'."
+
+  - number: 31
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Tumultuous' is moderately formal and the positive-sounding distractors suit 'welcome' contextually."
+
+  - number: 32
+    proposed_level: 3
+    level_confidence: medium
+    reason: "Inaccessible/unapproachable is morphologically transparent, but 'unfriendly' fits the conceited boss and competes."
+
+  - number: 33
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Halted' is a plausible rival; the candidate must notice that 'restrained ... from' requires 'prevented'."
+
+  - number: 34
+    proposed_level: 3
+    level_confidence: high
+    reason: "Hampered/hindered is the standard pair, but 'postponed' and 'discouraged' both fit an event short of funds."
+
+  - number: 35
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Virtuous' is moderately formal; 'famous' and 'clever' are plausible descriptions of men companies lack."
+
+  - number: 36
+    proposed_level: 2
+    level_confidence: high
+    reason: "Infuriated/enraged share a transparent anger sense and no distractor is close."
+
+  - number: 37
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Enduring' is a lookalike trap for 'alluring', and 'interesting' is a soft rival."
+
+  - number: 38
+    proposed_level: 4
+    level_confidence: high
+    reason: "'Inimical' is uncommon formal vocabulary and 'negative' is an attractive vague substitute for 'harmful'."
+
+  - number: 39
+    proposed_level: 2
+    level_confidence: high
+    reason: "Skeptical/doubtful is common vocabulary; the other options describe reactions, not disbelief."
+
+  - number: 40
+    proposed_level: 3
+    level_confidence: high
+    reason: "The morphology points to 'unbending', but 'unfeeling' fits a destructive father and competes."
+
+  - number: 41
+    proposed_level: 2
+    level_confidence: high
+    reason: "Standard concord with an intervening phrase; 'have' tempts anyone who agrees the verb with 'station'."
+
+  - number: 42
+    proposed_level: 4
+    level_confidence: medium
+    reason: "Requires holding 'every student' as grammatically singular against the now-common 'themselves', which most candidates hear as correct."
+
+  - number: 43
+    proposed_level: 3
+    level_confidence: high
+    reason: "Standard tag item, but 'don't they' is the classic error for a negative statement."
+
+  - number: 44
+    proposed_level: 4
+    level_confidence: high
+    reason: "'It is high time' + past subjunctive is a taught rule that contradicts intuition, so 'leave' draws many candidates."
+
+  - number: 45
+    proposed_level: 3
+    level_confidence: high
+    reason: "'When' also produces a grammatical sentence; only the simultaneity of the two actions picks out 'while'."
+
+  - number: 46
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Take over ... from' is a common phrasal verb; 'take up' is the only rival and cannot take 'from Ikem'."
+
+  - number: 47
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Round up' is a familiar particle collocation and no other option produces English."
+
+  - number: 48
+    proposed_level: 2
+    level_confidence: high
+    reason: "The 'too ... for' excess pattern is basic; 'so' and 'very' only work without the 'for' phrase."
+
+  - number: 49
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Open to criticism' is a common fixed preposition pairing with no strong competitor."
+
+  - number: 50
+    proposed_level: 3
+    level_confidence: high
+    reason: "The past perfect needs the participle 'run', and the irregular ran/run pair is a frequent candidate error."
+
+  - number: 51
+    proposed_level: 2
+    level_confidence: high
+    reason: "'It is useless to argue' is the plain infinitive pattern; the aspectual alternatives sound clearly odd."
+
+  - number: 52
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Whomever' is the designed trap; the candidate must see the word is subject of 'did'."
+
+  - number: 53
+    proposed_level: 4
+    level_confidence: high
+    reason: "Two-step reasoning: the tag attaches to the main clause 'I said', not the reported clause, and 'did they' is strongly attractive."
+
+  - number: 54
+    proposed_level: 3
+    level_confidence: high
+    reason: "Word-order item where three orderings sound possible; only 'however hard he tried' is well formed."
+
+  - number: 55
+    proposed_level: 3
+    level_confidence: high
+    reason: "The 'I wish' subjunctive is widely taught, but 'was' is what most candidates say in speech."
+
+  - number: 56
+    proposed_level: 4
+    level_confidence: high
+    reason: "Adjective ordering across three modifiers (opinion-free colour, origin, material) with no meaning clue to help."
+
+  - number: 57
+    proposed_level: 2
+    level_confidence: high
+    reason: "'The poor' as a class noun is basic; 'the poors' and bare 'poor' are obviously wrong."
+
+  - number: 58
+    proposed_level: 2
+    level_confidence: high
+    reason: "Compound-noun pluralisation is heavily drilled and the three distractors are all visibly malformed."
+
+  - number: 59
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Pull through' for recovery needs idiomatic familiarity; 'pull out' reads plausibly as giving up."
+
+  - number: 60
+    proposed_level: 2
+    level_confidence: high
+    reason: "Subject pronoun in a compound subject; 'Chris and myself' and 'I and Chris' are the standard, well-taught errors."
+
+  - number: 61
+    proposed_level: 4
+    level_confidence: medium
+    reason: "Perception verb plus bare infinitive, and 'was leaping' is grammatical in isolation, so only the taught pattern decides it."
+
+  - number: 62
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Heads of states' is a very common wrong form, so the item turns on where both plurals fall."
+
+  - number: 63
+    proposed_level: 2
+    level_confidence: high
+    reason: "Basic possessive; the item is really the its/it's spelling trap."
+
+  - number: 64
+    proposed_level: 2
+    level_confidence: high
+    reason: "Superlative with 'of all the girls' is straightforward; only the missing article in B tempts."
+
+  - number: 65
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Above the law' is a familiar fixed phrase and 'below' is the only mild pull."
+
+  - number: 66
+    proposed_level: 3
+    level_confidence: medium
+    reason: "Requires seeing the villagers blame themselves, not one another; both reciprocal options are contextually imaginable."
+
+  - number: 67
+    proposed_level: 2
+    level_confidence: high
+    reason: "'I wonder why' is the natural reading; only 'how' offers weak competition."
+
+  - number: 68
+    proposed_level: 4
+    level_confidence: medium
+    reason: "Subtle preposition split: 'confronted by' is right for people and 'confronted with' for evidence, a distinction most candidates never learn."
+
+  - number: 69
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Speak from experience' is fixed, but 'with' being absent leaves 'on' as a plausible-sounding alternative."
+
+  - number: 70
+    proposed_level: 3
+    level_confidence: high
+    reason: "Two steps: read 'the kind and gentle' as a plural class, then select the plural possessive over the tempting 'his'."
+
+  - number: 71
+    proposed_level: 2
+    level_confidence: high
+    reason: "Determiner agreement with the singular 'book' rules out the three plural quantifiers immediately."
+
+  - number: 72
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Stand down' needs idiomatic knowledge; 'stand by' and 'stand in' are familiar enough to compete."
+
+  - number: 73
+    proposed_level: 3
+    level_confidence: high
+    reason: "'However' before the adverb 'well' is the concessive pattern, but 'although' looks right to candidates reading for meaning only."
+
+  - number: 74
+    proposed_level: 3
+    level_confidence: low
+    reason: "Degree modifier choice where 'quite' and 'very'-like readings blur; 'too' and 'more' are each defensible with a different sense."
+
+  - number: 75
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Most popular form of government' points straight at democracy; the other three are known as unpopular systems."
+
+  - number: 76
+    proposed_level: 3
+    level_confidence: high
+    reason: "'System of government' is the set collocation, but 'kind' and 'variety' are grammatically fine and semantically close."
+
+  - number: 77
+    proposed_level: 4
+    level_confidence: medium
+    reason: "Needs the passage's democracy-as-norm argument to reject the surface-plausible 'non-governmental'."
+
+  - number: 78
+    proposed_level: 3
+    level_confidence: medium
+    reason: "'Alliances' is the international-relations term, but 'talks' and 'combinations' both fit 'among nations'."
+
+  - number: 79
+    proposed_level: 4
+    level_confidence: medium
+    reason: "'Corroboration' is a lookalike trap for 'collaboration' and 'conformity' echoes the previous sentence."
+
+  - number: 80
+    proposed_level: 4
+    level_confidence: medium
+    reason: "The gap must be something that yields concessions, so the candidate has to read forward through the sentence to reject 'agreement'."
+
+  - number: 81
+    proposed_level: 4
+    level_confidence: medium
+    reason: "'Concessions' is formal diplomatic vocabulary, and 'compensations' and 'allowances' are superficially plausible results."
+
+  - number: 82
+    proposed_level: 4
+    level_confidence: medium
+    reason: "'Primary interests' is the register-specific phrase; 'aspirations' and 'desires' are close enough that general English does not decide it."
+
+  - number: 83
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Geographical, economic and political factors' is a stock phrase and the rivals do not take that triple modifier."
+
+  - number: 84
+    proposed_level: 5
+    level_confidence: low
+    reason: "Both 'very seriously considered' and 'very highly considered' are idiomatic, so the gap resolves only on fine register judgement."
+
+  - number: 85
+    proposed_level: 4
+    level_confidence: high
+    reason: "Needs the passage contrast between consultation and going alone plus knowledge of the formal word 'unilateral'."
+
+  - number: 86
+    proposed_level: 4
+    level_confidence: low
+    reason: "The noun must sum up the whole passage's argument, and 'method' and 'rule' are hard to eliminate without that overview."
+
+  - number: 87
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Beneficial to all nations' follows the passage's positive close; 'complementary' is the only real competitor."
+
+  - number: 88
+    proposed_level: 3
+    level_confidence: medium
+    reason: "'Tournament' is right for the whole competition, but 'series' and 'qualifiers' both read acceptably after 'African Nations Cup'."
+
+  - number: 89
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Soccer analysts' is the natural modifier and the sport is named throughout the passage."
+
+  - number: 90
+    proposed_level: 3
+    level_confidence: high
+    reason: "Coaches' fault points to 'tactical', but 'management' and 'physical' are plausible kinds of deficiency."
+
+  - number: 91
+    proposed_level: 1
+    level_confidence: medium
+    reason: "'Substitution of players' is obvious to anyone who follows football; the other three are never substituted."
+
+  - number: 92
+    proposed_level: 4
+    level_confidence: low
+    reason: "'Coaches and their wards' is a Nigerian journalistic register; 'fans' is a strong everyday pull for readers who do not know it."
+
+  - number: 93
+    proposed_level: 4
+    level_confidence: medium
+    reason: "Turns on transitivity: 'won' cannot take 'the rest of Africa' as object, a reasoning step many candidates skip."
+
+  - number: 94
+    proposed_level: 3
+    level_confidence: medium
+    reason: "'Soccer action' is the journalistic collocation, but 'team-work' and 'running' both fit 120 minutes loosely."
+
+  - number: 95
+    proposed_level: 2
+    level_confidence: high
+    reason: "Penalty shoot-out after 120 minutes is common football knowledge and no distractor precedes 'shoot-out'."
+
+  - number: 96
+    proposed_level: 2
+    level_confidence: high
+    reason: "Strikers score goals; 'blasted' is the only journalistic rival and reads oddly with 'in some of the group matches'."
+
+  - number: 97
+    proposed_level: 4
+    level_confidence: medium
+    reason: "'Group stages' and 'group matches' are both standard football phrases, so the gap needs a fine collocational call."
+
+  - number: 98
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Feeble shots' fits 'parried', but 'kicks' is a reasonable rival in a penalty context."
+
+  - number: 99
+    proposed_level: 2
+    level_confidence: high
+    reason: "Only goalkeepers parry, and the verb makes the answer transparent to any football follower."
+
+  - number: 100
+    proposed_level: 3
+    level_confidence: high
+    reason: "Requires seeing the loss ends the larger ambition, not one game; 'game' and 'match' are the designed near-misses."

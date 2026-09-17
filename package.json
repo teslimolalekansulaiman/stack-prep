@@ -1,0 +1,20 @@
+{
+  "name": "score-pilot",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Score Pilot JavaScript workspaces",
+  "workspaces": [
+    "apps/web",
+    "packages/engine-ts",
+    "packages/api-client"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @score-pilot/web",
+    "build": "npm run build --workspace @score-pilot/web",
+    "test": "npm run test --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

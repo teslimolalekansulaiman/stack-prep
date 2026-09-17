@@ -1,0 +1,33 @@
+.local/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# JavaScript
+node_modules/
+dist/
+.vite/
+*.tsbuildinfo
+playwright-report/
+test-results/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Editors and OS
+.DS_Store
+.idea/workspace.xml
+
+# Generated
+packages/api-client/openapi.json
+packages/api-client/src/schema.ts
+docs/score-pilot-plan.html

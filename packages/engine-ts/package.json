@@ -1,0 +1,18 @@
+{
+  "name": "@score-pilot/engine",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Offline slice of the Score Pilot engine, kept in parity with packages/engine (ADR-0005)",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.6",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4"
+  }
+}

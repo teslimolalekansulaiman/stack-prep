@@ -1,0 +1,1168 @@
+# NECO GCE Mathematics syllabus — draft seed data for database/migrations/001_curriculum.sql
+#
+# Extracted from docs/Math-syllabus.pdf (Chapter Two, PDF pages 8–13; grading from page 15).
+# Everything here is a DRAFT. Nothing is approved; a reviewer must approve rows in the
+# order described in docs/syllabus-database.md.
+#
+# Loader conventions (so rows below stay short):
+#   * Every curriculum item gets the values in `item_defaults` unless it overrides them.
+#   * `parent` is the parent item's code; the loader resolves it to parent_id.
+#   * display_order = position among siblings in this file, starting at 1.
+#   * `location` + `excerpt` become one curriculum_evidence row:
+#       evidence_kind = inclusion, source_document = the syllabus document below,
+#       source_location = location, source_excerpt = excerpt, review_status = pending.
+#   * Excerpts are the source wording with line breaks joined and PDF text artefacts
+#     fixed (e.g. "10k" -> "10^k", "360o" -> "360°", "ax2" -> "ax²").
+#   * Codes follow the syllabus numbering: MATH.<topic>.<subtopic>.<point>. Points shown
+#     with a dash in the source are numbered i, ii, iii in order of appearance.
+
+format_version: 1
+
+validation:
+  source_page_range: [8, 13]     # Chapter Two, the only pages this extraction may cite
+  expected_topic_count: 9
+
+examination:
+  # Product target; the third-party PDF itself does not establish the exact external track.
+  name: NECO Senior School Certificate Examination (External) — GCE
+  short_name: SSCE_EXT
+  exam_body: National Examinations Council (NECO)
+  country_code: NG
+  description: >-
+    Senior School Certificate Examination for external (private) candidates,
+    commonly called NECO GCE.
+  status: draft
+  grading_system:              # source claim only; loader does not publish this as verified grading
+    source_location: PDF pages 15–16, Chapter Four "NECO Grading System"
+    bands:
+      - { min: 75, max: 100, grade: A1, remark: Excellent }
+      - { min: 70, max: 74, grade: B2, remark: Very Good }
+      - { min: 65, max: 69, grade: B3, remark: Good }
+      - { min: 60, max: 64, grade: C4, remark: Credit }
+      - { min: 55, max: 59, grade: C5, remark: Credit }
+      - { min: 50, max: 54, grade: C6, remark: Credit }
+      - { min: 45, max: 49, grade: D7, remark: Pass }
+      - { min: 40, max: 44, grade: E8, remark: Pass }
+      - { min: 0, max: 39, grade: F9, remark: Fail }
+
+subject:
+  code: MATH
+  name: General Mathematics
+  status: draft
+
+source_documents:
+  - key: math_syllabus_pdf
+    document_type: syllabus
+    title: NECO General Mathematics Syllabus
+    issuer: Syllabus NG (syllabus.ng), reproducing the NECO syllabus
+    document_year: null          # PDF modification date is not a syllabus publication year
+    file_uri: docs/Math-syllabus.pdf
+    file_sha256: 340c27793556e7c65fb921851d478692dedb093e64e3e4c591c971e5bfaddbdc
+    mime_type: application/pdf
+    page_count: 18
+    licence_status: pending      # the schema blocks all permissions until this is 'verified'
+    storage_permission: false
+    student_delivery_permission: false
+    model_context_permission: false
+    processing_status: processed
+    review_status: pending
+
+syllabus_versions:
+  - version_label: syllabus-ng-2024
+    authority_identifier: null   # no official NECO version or code printed in the document
+    valid_from: null
+    valid_to: null
+    source_document: math_syllabus_pdf
+    status: draft
+    is_current: false
+
+# Content from the document that has no table in the current schema.
+# Kept here so it is not lost; see "Schema gaps" in the accompanying notes.
+unmapped:
+  paper_structure:
+    source_location: PDF page 7, "Marking Guides & Sections"
+    papers:
+      - code: P1
+        format: multiple_choice
+        questions: 50
+        answer: all
+        duration_minutes: 90
+        marks: 50
+        drawn_from: common areas of the syllabus
+      - code: P2
+        format: essay
+        questions: 13
+        answer: 10
+        duration_minutes: 150
+        marks: 100
+        sections:
+          - code: A
+            questions: 5
+            answer: all (compulsory)
+            marks: 40
+            description: elementary questions drawn from the common areas of the syllabus
+          - code: B
+            questions: 8
+            answer: 5
+            marks: 60
+            description: >-
+              Questions of greater length and difficulty; a maximum of two drawn from
+              parts of the syllabuses which may not be peculiar to candidates' home countries.
+  recommended_textbooks:
+    source_location: PDF page 14, Chapter Three
+    items:
+      - Adelodun A. A. (2000) Distinction in Mathematics: Comprehensive Revision Text (3rd Edition), Ado-Ekiti, FNPL
+      - Anyebe, J. A. B. (1998) Basic Mathematics for Senior Secondary Schools and Remedial Students in Higher Institutions, Lagos, Kenny Moore
+      - Channon, J. B., Smith, A. M. (2001) New General Mathematics for West Africa SSS 1 to 3, Lagos, Longman
+      - David-Osuagwu, M. et al. (2000) New School Mathematics for Senior Secondary Schools, Onitsha, Africana-FIRST Publishers
+      - Egbe, E. et al. (2000) Further Mathematics, Onitsha, Africana-FIRST Publishers
+      - Ibude, S. O. et al. (2003) Algebra and Calculus for Schools and Colleges, LINCEL Publishers
+      - Tuttuh-Adegun, M. R. et al. (1997) Further Mathematics Project Books 1 to 3, Ibadan, NPS Educational
+
+item_defaults:
+  syllabus_status: uncertain    # official scope/version has not been verified
+  pilot_support_status: undecided     # pick the 12–18 pilot skills later
+  review_status: draft
+  learning_objective: null
+  examinable_scope: null
+  expected_depth: null
+  boundary_notes: null
+
+curriculum_items:
+  # ───────────────────────── 1 NUMBER AND NUMERATION ─────────────────────────
+  - code: MATH.1
+    type: topic
+    name: Number and Numeration
+    location: PDF page 8, section 1
+    excerpt: "NUMBER AND NUMERATION"
+
+  - code: MATH.1.1
+    parent: MATH.1
+    type: subtopic
+    name: Number bases
+    location: PDF page 8, 1.1
+    excerpt: "Number bases"
+  - code: MATH.1.1.i
+    parent: MATH.1.1
+    type: skill
+    name: Convert numbers from one base to another
+    location: PDF page 8, 1.1(i)
+    excerpt: "conversion of numbers from one base to another"
+  - code: MATH.1.1.ii
+    parent: MATH.1.1
+    type: skill
+    name: Perform basic operations in number bases
+    location: PDF page 8, 1.1(ii)
+    excerpt: "Basic operations on number bases"
+
+  - code: MATH.1.2
+    parent: MATH.1
+    type: subtopic
+    name: Modular arithmetic
+    location: PDF page 8, 1.2
+    excerpt: "Modular Arithmetic"
+  - code: MATH.1.2.i
+    parent: MATH.1.2
+    type: skill
+    name: Explain the concept of modulo arithmetic
+    location: PDF page 8, 1.2(i)
+    excerpt: "Concept of Modulo Arithmetic."
+  - code: MATH.1.2.ii
+    parent: MATH.1.2
+    type: skill
+    name: Add, subtract and multiply in modulo arithmetic
+    location: PDF page 8, 1.2(ii)
+    excerpt: "Addition, subtraction and multiplication operations in modulo arithmetic."
+  - code: MATH.1.2.iii
+    parent: MATH.1.2
+    type: skill
+    name: Apply modulo arithmetic to daily life
+    location: PDF page 8, 1.2(iii)
+    excerpt: "Application to daily life."
+
+  - code: MATH.1.3
+    parent: MATH.1
+    type: subtopic
+    name: Fractions, decimals and approximations
+    location: PDF page 8, 1.3
+    excerpt: "Fractions, Decimals and Approximations"
+  - code: MATH.1.3.i
+    parent: MATH.1.3
+    type: skill
+    name: Perform basic operations on fractions and decimals
+    location: PDF page 8, 1.3(i)
+    excerpt: "Basic operations on fractions and decimals."
+  - code: MATH.1.3.ii
+    parent: MATH.1.3
+    type: skill
+    name: Approximate numbers and use significant figures
+    location: PDF page 8, 1.3(ii)
+    excerpt: "Approximations and significant figures"
+
+  - code: MATH.1.4
+    parent: MATH.1
+    type: subtopic
+    name: Indices
+    location: PDF page 8, 1.4
+    excerpt: "Indices"
+  - code: MATH.1.4.i
+    parent: MATH.1.4
+    type: skill
+    name: Apply the laws of indices
+    location: PDF page 8, 1.4(i)
+    excerpt: "Laws of indices"
+  - code: MATH.1.4.ii
+    parent: MATH.1.4
+    type: skill
+    name: Write numbers in standard form
+    location: PDF page 8, 1.4(ii)
+    excerpt: "Numbers in standard form (scientific notation)"
+
+  - code: MATH.1.5
+    parent: MATH.1
+    type: subtopic
+    name: Logarithms
+    location: PDF page 8, 1.5
+    excerpt: "Logarithms"
+  - code: MATH.1.5.i
+    parent: MATH.1.5
+    type: skill
+    name: Relate indices and logarithms
+    location: PDF page 8, 1.5(i)
+    excerpt: "Relationship between indices and logarithms e.g. y = 10^k implies log₁₀ y = k."
+  - code: MATH.1.5.ii
+    parent: MATH.1.5
+    type: skill
+    name: Apply the basic rules of logarithms
+    location: PDF page 8, 1.5(ii)
+    excerpt: "Basic rules of logarithms e.g. log₁₀(pq) = log₁₀ p + log₁₀ q; log₁₀(p/q) = log₁₀ p – log₁₀ q; log₁₀ pⁿ = n log₁₀ p."
+  - code: MATH.1.5.iii
+    parent: MATH.1.5
+    type: skill
+    name: Use tables of logarithms and antilogarithms
+    location: PDF page 8, 1.5(iii)
+    excerpt: "Use of tables of logarithms and antilogarithms."
+    boundary_notes: Confirm whether calculators are permitted alongside tables in the exam.
+
+  - code: MATH.1.6
+    parent: MATH.1
+    type: subtopic
+    name: Sequence and series
+    location: PDF page 8, 1.6
+    excerpt: "Sequence and Series"
+  - code: MATH.1.6.i
+    parent: MATH.1.6
+    type: skill
+    name: Identify patterns of sequences
+    location: PDF page 8, 1.6(i)
+    excerpt: "Patterns of sequences."
+  - code: MATH.1.6.ii
+    parent: MATH.1.6
+    type: skill
+    name: Work with arithmetic and geometric progressions
+    location: PDF page 8, 1.6(ii)
+    excerpt: "Arithmetic progression (A.P.) Geometric Progression (G.P.)"
+    boundary_notes: Source does not say whether nth term, sum of n terms, or sum to infinity are included.
+
+  - code: MATH.1.7
+    parent: MATH.1
+    type: subtopic
+    name: Sets
+    location: PDF page 8, 1.7
+    excerpt: "Sets"
+  - code: MATH.1.7.i
+    parent: MATH.1.7
+    type: skill
+    name: Use set ideas and notation (union, intersection, complement)
+    location: PDF page 8, 1.7(i)
+    excerpt: "Idea of sets, universal sets, finite and infinite sets, subsets, empty sets and disjoint sets. Idea of and notation for union, intersection and complement of sets."
+  - code: MATH.1.7.ii
+    parent: MATH.1.7
+    type: skill
+    name: Solve classification problems using Venn diagrams
+    location: PDF page 8, 1.7(ii)
+    excerpt: "Solution of practical problems involving classification using Venn diagrams."
+
+  - code: MATH.1.8
+    parent: MATH.1
+    type: subtopic
+    name: Logical reasoning
+    location: PDF page 8, 1.8
+    excerpt: "Logical Reasoning"
+  - code: MATH.1.8.i
+    parent: MATH.1.8
+    type: skill
+    name: Reason with simple statements, negations and implications
+    location: PDF page 8, 1.8
+    excerpt: "Simple statements. True and false statements. Negation of statements, implications."
+
+  - code: MATH.1.9
+    parent: MATH.1
+    type: subtopic
+    name: Positive and negative integers, rational numbers
+    location: PDF page 8, 1.9
+    excerpt: "Positive and negative integers, rational numbers"
+  - code: MATH.1.9.i
+    parent: MATH.1.9
+    type: skill
+    name: Perform the four basic operations on rational numbers
+    location: PDF page 8, 1.9
+    excerpt: "The four basic operations on rational numbers."
+
+  - code: MATH.1.10
+    parent: MATH.1
+    type: subtopic
+    name: Surds
+    location: PDF page 8, 1.10
+    excerpt: "Surds (Radicals)"
+  - code: MATH.1.10.i
+    parent: MATH.1.10
+    type: skill
+    name: Simplify and rationalise simple surds
+    location: PDF page 8, 1.10
+    excerpt: "Simplification and rationalization of simple surds."
+
+  - code: MATH.1.11
+    parent: MATH.1
+    type: subtopic
+    name: Matrices and determinants
+    location: PDF page 8, 1.11
+    excerpt: "Matrices and Determinants"
+  - code: MATH.1.11.i
+    parent: MATH.1.11
+    type: skill
+    name: Identify order, notation and types of matrices
+    location: PDF page 8, 1.11(i)
+    excerpt: "Identification of order, notation and types of matrices."
+  - code: MATH.1.11.ii
+    parent: MATH.1.11
+    type: skill
+    name: Add, subtract and multiply matrices
+    location: PDF page 8, 1.11(ii)
+    excerpt: "Addition, subtraction, scalar multiplication and multiplication of matrices."
+  - code: MATH.1.11.iii
+    parent: MATH.1.11
+    type: skill
+    name: Find the determinant of a matrix
+    location: PDF page 8, 1.11(iii)
+    excerpt: "Determinant of a matrix"
+    boundary_notes: Source does not state the maximum matrix order (2×2 or 3×3).
+
+  - code: MATH.1.12
+    parent: MATH.1
+    type: subtopic
+    name: Ratio, proportions and rates
+    location: PDF page 8, 1.12
+    excerpt: "Ratio, Proportions and Rates"
+  - code: MATH.1.12.i
+    parent: MATH.1.12
+    type: skill
+    name: Find the ratio between two similar quantities
+    location: PDF page 8, 1.12
+    excerpt: "Ratio between two similar quantities."
+  - code: MATH.1.12.ii
+    parent: MATH.1.12
+    type: skill
+    name: Find proportions between similar quantities
+    location: PDF page 8, 1.12
+    excerpt: "Proportion between two or more similar quantities."
+  - code: MATH.1.12.iii
+    parent: MATH.1.12
+    type: skill
+    name: Solve rate problems (partnerships, work, costs, taxes, exchange, density, speed)
+    location: PDF page 8, 1.12
+    excerpt: "Financial partnerships, rates of work, costs, taxes, foreign exchange, density (e.g. population), mass, distance, time and speed."
+
+  # ───────────────────────── 2 ALGEBRAIC PROCESSES ─────────────────────────
+  - code: MATH.2
+    type: topic
+    name: Algebraic Processes
+    location: PDF page 9, section 2
+    excerpt: "ALGEBRAIC PROCESSES"
+
+  - code: MATH.2.1
+    parent: MATH.2
+    type: subtopic
+    name: Algebraic expressions
+    location: PDF page 9, 2.1
+    excerpt: "Algebraic expressions"
+  - code: MATH.2.1.i
+    parent: MATH.2.1
+    type: skill
+    name: Formulate algebraic expressions from given situations
+    location: PDF page 9, 2.1(i)
+    excerpt: "Formulating algebraic expressions from given situations"
+  - code: MATH.2.1.ii
+    parent: MATH.2.1
+    type: skill
+    name: Evaluate algebraic expressions
+    location: PDF page 9, 2.1(ii)
+    excerpt: "Evaluation of algebraic expressions"
+
+  - code: MATH.2.2
+    parent: MATH.2
+    type: subtopic
+    name: Simple operations on algebraic expressions
+    location: PDF page 9, 2.2
+    excerpt: "Simple operations on algebraic expressions"
+  - code: MATH.2.2.i
+    parent: MATH.2.2
+    type: skill
+    name: Expand algebraic expressions
+    location: PDF page 9, 2.2(i)
+    excerpt: "Expansion"
+  - code: MATH.2.2.ii
+    parent: MATH.2.2
+    type: skill
+    name: Factorise algebraic expressions
+    location: PDF page 9, 2.2(ii)
+    excerpt: "Factorization"
+  - code: MATH.2.2.iii
+    parent: MATH.2.2
+    type: skill
+    name: Evaluate binary operations
+    location: PDF page 9, 2.2(iii)
+    excerpt: "Binary Operations"
+    boundary_notes: Source does not say whether identity, inverse, closure, commutativity or associativity are included.
+
+  - code: MATH.2.3
+    parent: MATH.2
+    type: subtopic
+    name: Solution of linear equations
+    location: PDF page 9, 2.3
+    excerpt: "Solution of Linear Equations"
+  - code: MATH.2.3.i
+    parent: MATH.2.3
+    type: skill
+    name: Solve linear equations in one variable
+    location: PDF page 9, 2.3(i)
+    excerpt: "Linear equations in one variable"
+  - code: MATH.2.3.ii
+    parent: MATH.2.3
+    type: skill
+    name: Solve simultaneous linear equations in two variables
+    location: PDF page 9, 2.3(ii)
+    excerpt: "Simultaneous linear equations in two variables."
+
+  - code: MATH.2.4
+    parent: MATH.2
+    type: subtopic
+    name: Change of subject of a formula
+    location: PDF page 9, 2.4
+    excerpt: "Change of Subject of a Formula/Relation"
+  - code: MATH.2.4.i
+    parent: MATH.2.4
+    type: skill
+    name: Change the subject of a formula or relation
+    location: PDF page 9, 2.4(i)
+    excerpt: "Change of subject of a formula/relation"
+  - code: MATH.2.4.ii
+    parent: MATH.2.4
+    type: skill
+    name: Substitute values into a formula
+    location: PDF page 9, 2.4(ii)
+    excerpt: "Substitution"
+
+  - code: MATH.2.5
+    parent: MATH.2
+    type: subtopic
+    name: Quadratic equations
+    location: PDF page 9, 2.5
+    excerpt: "Quadratic Equations"
+  - code: MATH.2.5.i
+    parent: MATH.2.5
+    type: skill
+    name: Solve quadratic equations
+    location: PDF page 9, 2.5(i)
+    excerpt: "Solution of quadratic equations"
+    boundary_notes: Source does not list the methods (factorisation, completing the square, formula).
+  - code: MATH.2.5.ii
+    parent: MATH.2.5
+    type: skill
+    name: Form a quadratic equation from given roots
+    location: PDF page 9, 2.5(ii)
+    excerpt: "Forming quadratic equation with given roots."
+  - code: MATH.2.5.iii
+    parent: MATH.2.5
+    type: skill
+    name: Apply quadratic equations to practical problems
+    location: PDF page 9, 2.5(iii)
+    excerpt: "Application of solution of quadratic equation in practical problems."
+
+  - code: MATH.2.6
+    parent: MATH.2
+    type: subtopic
+    name: Graphs of linear and quadratic functions
+    location: PDF page 9, 2.6
+    excerpt: "Graphs of Linear and Quadratic functions"
+  - code: MATH.2.6.i
+    parent: MATH.2.6
+    type: skill
+    name: Draw and interpret quadratic graphs and read roots from them
+    location: PDF page 9, 2.6(i)
+    excerpt: "Interpretation of graphs, coordinate of points, table of values, drawing quadratic graphs and obtaining roots from graphs."
+  - code: MATH.2.6.ii
+    parent: MATH.2.6
+    type: skill
+    name: Solve a quadratic and a linear equation simultaneously by graph
+    location: PDF page 9, 2.6(ii)
+    excerpt: "Graphical solution of a pair of equations of the form: y = ax² + bx + c and y = mx + k"
+  - code: MATH.2.6.iii
+    parent: MATH.2.6
+    type: skill
+    name: Draw tangents to curves to find the gradient at a point
+    location: PDF page 9, 2.6(iii)
+    excerpt: "Drawing tangents to curves to determine the gradient at a given point."
+
+  - code: MATH.2.7
+    parent: MATH.2
+    type: subtopic
+    name: Linear inequalities
+    location: PDF page 9, 2.7
+    excerpt: "Linear Inequalities"
+  - code: MATH.2.7.i
+    parent: MATH.2.7
+    type: skill
+    name: Solve linear inequalities in one variable and show them on a number line
+    location: PDF page 9, 2.7(i)
+    excerpt: "Solution of linear inequalities in one variable and representation on the number line."
+  - code: MATH.2.7.ii
+    parent: MATH.2.7
+    type: skill
+    name: Solve linear inequalities in two variables graphically
+    location: PDF page 9, 2.7(ii)
+    excerpt: "Graphical solution of linear inequalities in two variables."
+  - code: MATH.2.7.iii
+    parent: MATH.2.7
+    type: skill
+    name: Solve simultaneous linear inequalities in two variables graphically
+    location: PDF page 9, 2.7(iii)
+    excerpt: "Graphical solution of simultaneous linear inequalities in two variables"
+
+  - code: MATH.2.8
+    parent: MATH.2
+    type: subtopic
+    name: Algebraic fractions
+    location: PDF page 9, 2.8
+    excerpt: "Algebraic Fractions — Operations on algebraic fractions with:"
+  - code: MATH.2.8.i
+    parent: MATH.2.8
+    type: skill
+    name: Operate on algebraic fractions with monomial denominators
+    location: PDF page 9, 2.8(i)
+    excerpt: "Monomial denominators"
+  - code: MATH.2.8.ii
+    parent: MATH.2.8
+    type: skill
+    name: Operate on algebraic fractions with binomial denominators
+    location: PDF page 9, 2.8(ii)
+    excerpt: "Binomial denominators"
+
+  - code: MATH.2.9
+    parent: MATH.2
+    type: subtopic
+    name: Functions and relations
+    location: PDF page 9, 2.9
+    excerpt: "Functions and Relations"
+  - code: MATH.2.9.i
+    parent: MATH.2.9
+    type: skill
+    name: Identify types of functions
+    location: PDF page 9, 2.9
+    excerpt: "Types of Functions."
+    boundary_notes: Source does not list which types (e.g. one-to-one, onto, many-to-one).
+
+  # ───────────────────────── 3 MENSURATION ─────────────────────────
+  - code: MATH.3
+    type: topic
+    name: Mensuration
+    location: PDF page 10, section 3
+    excerpt: "MENSURATION"
+
+  - code: MATH.3.1
+    parent: MATH.3
+    type: subtopic
+    name: Lengths and perimeters
+    location: PDF page 10, 3.1
+    excerpt: "Lengths and Perimeters"
+  - code: MATH.3.1.i
+    parent: MATH.3.1
+    type: skill
+    name: Find lengths and distances using Pythagoras, sine and cosine rules
+    location: PDF page 10, 3.1(i)
+    excerpt: "Use of Pythagoras theorem, sine and cosine rules to determine lengths and distances."
+  - code: MATH.3.1.ii
+    parent: MATH.3.1
+    type: skill
+    name: Find arc lengths and perimeters of sectors and segments
+    location: PDF page 10, 3.1(ii)
+    excerpt: "Lengths of arcs of circles, perimeters of sectors and segments."
+  - code: MATH.3.1.iii
+    parent: MATH.3.1
+    type: skill
+    name: Solve problems on longitudes and latitudes
+    location: PDF page 10, 3.1(iii)
+    excerpt: "Longitudes and Latitudes."
+
+  - code: MATH.3.2
+    parent: MATH.3
+    type: subtopic
+    name: Areas
+    location: PDF page 10, 3.2
+    excerpt: "Areas"
+  - code: MATH.3.2.i
+    parent: MATH.3.2
+    type: skill
+    name: Find areas of triangles and special quadrilaterals
+    location: PDF page 10, 3.2(i)
+    excerpt: "Triangles and special quadrilaterals – rectangles, parallelograms and trapeziums."
+  - code: MATH.3.2.ii
+    parent: MATH.3.2
+    type: skill
+    name: Find areas of circles, sectors and segments
+    location: PDF page 10, 3.2(ii)
+    excerpt: "Circles, sectors and segments of circles."
+  - code: MATH.3.2.iii
+    parent: MATH.3.2
+    type: skill
+    name: Find surface areas of solids
+    location: PDF page 10, 3.2(iii)
+    excerpt: "Surface areas of cubes, cuboids, cylinder, pyramids, right triangular prisms, cones and spheres."
+
+  - code: MATH.3.3
+    parent: MATH.3
+    type: subtopic
+    name: Volumes
+    location: PDF page 10, 3.3
+    excerpt: "Volumes"
+  - code: MATH.3.3.i
+    parent: MATH.3.3
+    type: skill
+    name: Find volumes of solids
+    location: PDF page 10, 3.3(i)
+    excerpt: "Volumes of cubes, cuboids, cylinders, cones, right pyramids and spheres."
+  - code: MATH.3.3.ii
+    parent: MATH.3.3
+    type: skill
+    name: Find volumes of similar solids
+    location: PDF page 10, 3.3(ii)
+    excerpt: "Volumes of similar solids"
+
+  # ───────────────────────── 4 PLANE GEOMETRY ─────────────────────────
+  - code: MATH.4
+    type: topic
+    name: Plane Geometry
+    location: PDF page 11, section 4
+    excerpt: "PLANE GEOMETRY"
+
+  - code: MATH.4.1
+    parent: MATH.4
+    type: subtopic
+    name: Angles
+    location: PDF page 11, 4.1
+    excerpt: "Angles"
+  - code: MATH.4.1.i
+    parent: MATH.4.1
+    type: skill
+    name: Use angles at a point
+    location: PDF page 11, 4.1(i)
+    excerpt: "Angles at a point add up to 360°."
+  - code: MATH.4.1.ii
+    parent: MATH.4.1
+    type: skill
+    name: Use adjacent angles on a straight line
+    location: PDF page 11, 4.1(ii)
+    excerpt: "Adjacent angles on a straight line are supplementary."
+  - code: MATH.4.1.iii
+    parent: MATH.4.1
+    type: skill
+    name: Use vertically opposite angles
+    location: PDF page 11, 4.1(iii)
+    excerpt: "Vertically opposite angles are equal."
+
+  - code: MATH.4.2
+    parent: MATH.4
+    type: subtopic
+    name: Angles and intercepts on parallel lines
+    location: PDF page 11, 4.2
+    excerpt: "Angles and intercepts on parallel lines"
+  - code: MATH.4.2.i
+    parent: MATH.4.2
+    type: skill
+    name: Use alternate angles
+    location: PDF page 11, 4.2(i)
+    excerpt: "Alternate angles are equal."
+  - code: MATH.4.2.ii
+    parent: MATH.4.2
+    type: skill
+    name: Use corresponding angles
+    location: PDF page 11, 4.2(ii)
+    excerpt: "Corresponding angles are equal."
+  - code: MATH.4.2.iii
+    parent: MATH.4.2
+    type: skill
+    name: Use interior opposite angles
+    location: PDF page 11, 4.2(iii)
+    excerpt: "Interior opposite angles are supplementary"
+  - code: MATH.4.2.iv
+    parent: MATH.4.2
+    type: skill
+    name: Apply the intercept theorem
+    location: PDF page 11, 4.2(iv)
+    excerpt: "Intercept theorem."
+
+  - code: MATH.4.3
+    parent: MATH.4
+    type: subtopic
+    name: Triangles and polygons
+    location: PDF page 11, 4.3
+    excerpt: "Triangles and Polygons"
+  - code: MATH.4.3.i
+    parent: MATH.4.3
+    type: skill
+    name: Use the angle sum of a triangle
+    location: PDF page 11, 4.3(i)
+    excerpt: "The sum of the angles of a triangle is 2 right angles."
+  - code: MATH.4.3.ii
+    parent: MATH.4.3
+    type: skill
+    name: Use the exterior angle of a triangle
+    location: PDF page 11, 4.3(ii)
+    excerpt: "The exterior angle of a triangle equals the sum of the two interior opposite angles."
+  - code: MATH.4.3.iii
+    parent: MATH.4.3
+    type: skill
+    name: Identify and use congruent triangles
+    location: PDF page 11, 4.3(iii)
+    excerpt: "Congruent triangles."
+  - code: MATH.4.3.iv
+    parent: MATH.4.3
+    type: skill
+    name: Use properties of special triangles
+    location: PDF page 11, 4.3(iv)
+    excerpt: "Properties of special triangles - Isosceles, equilateral, right-angled, etc"
+  - code: MATH.4.3.v
+    parent: MATH.4.3
+    type: skill
+    name: Use properties of special quadrilaterals
+    location: PDF page 11, 4.3(v)
+    excerpt: "Properties of special quadrilaterals – parallelogram, rhombus, square, rectangle, trapezium."
+  - code: MATH.4.3.vi
+    parent: MATH.4.3
+    type: skill
+    name: Use properties of similar triangles
+    location: PDF page 11, 4.3(vi)
+    excerpt: "Properties of similar triangles."
+  - code: MATH.4.3.vii
+    parent: MATH.4.3
+    type: skill
+    name: Use the angle sum of a polygon
+    location: PDF page 11, 4.3(vii)
+    excerpt: "The sum of the angles of a polygon"
+  - code: MATH.4.3.viii
+    parent: MATH.4.3
+    type: skill
+    name: Use the exterior angles of a polygon
+    location: PDF page 11, 4.3(viii)
+    excerpt: "Property of exterior angles of a polygon."
+  - code: MATH.4.3.ix
+    parent: MATH.4.3
+    type: skill
+    name: Use equal areas of parallelograms on the same base and between the same parallels
+    location: PDF page 11, 4.3(ix)
+    excerpt: "Parallelograms on the same base and between the same parallels are equal in area."
+
+  - code: MATH.4.4
+    parent: MATH.4
+    type: subtopic
+    name: Circles
+    location: PDF page 11, 4.4
+    excerpt: "Circles"
+  - code: MATH.4.4.i
+    parent: MATH.4.4
+    type: skill
+    name: Use properties of chords
+    location: PDF page 11, 4.4(i)
+    excerpt: "Chords."
+  - code: MATH.4.4.ii
+    parent: MATH.4.4
+    type: skill
+    name: Use angle at the centre is twice the angle at the circumference
+    location: PDF page 11, 4.4(ii)
+    excerpt: "The angle which an arc of a circle subtends at the centre of the circle is twice that which it subtends at any point on the remaining part of the circumference."
+  - code: MATH.4.4.iii
+    parent: MATH.4.4
+    type: skill
+    name: Use angle in a semicircle is a right angle
+    location: PDF page 11, 4.4(iii)
+    excerpt: "Any angle subtended at the circumference by a diameter is a right angle."
+  - code: MATH.4.4.iv
+    parent: MATH.4.4
+    type: skill
+    name: Use angles in the same segment
+    location: PDF page 11, 4.4(iv)
+    excerpt: "Angles in the same segment are equal."
+  - code: MATH.4.4.v
+    parent: MATH.4.4
+    type: skill
+    name: Use angles in opposite segments (cyclic quadrilateral)
+    location: PDF page 11, 4.4(v)
+    excerpt: "Angles in opposite segments are supplementary."
+  - code: MATH.4.4.vi
+    parent: MATH.4.4
+    type: skill
+    name: Use perpendicularity of tangent and radius
+    location: PDF page 11, 4.4(vi)
+    excerpt: "Perpendicularity of tangent and radius."
+  - code: MATH.4.4.vii
+    parent: MATH.4.4
+    type: skill
+    name: Use the alternate segment theorem
+    location: PDF page 11, 4.4(vii)
+    excerpt: "If a tangent is drawn to a circle and from the point of contact a chord is drawn, each angle which this chord makes with the tangent is equal to the angle in the alternate segment."
+
+  - code: MATH.4.5
+    parent: MATH.4
+    type: subtopic
+    name: Construction
+    location: PDF page 11, 4.5
+    excerpt: "Construction"
+  - code: MATH.4.5.i
+    parent: MATH.4.5
+    type: skill
+    name: Construct bisectors of angles and line segments
+    location: PDF page 11, 4.5(i)
+    excerpt: "Bisectors of angles and line segments"
+  - code: MATH.4.5.ii
+    parent: MATH.4.5
+    type: skill
+    name: Construct a line parallel or perpendicular to a given line
+    location: PDF page 11, 4.5(ii)
+    excerpt: "Line parallel or perpendicular to a given line."
+  - code: MATH.4.5.iii
+    parent: MATH.4.5
+    type: skill
+    name: Construct angles (90°, 60°, 45°, 30°, equal to a given angle)
+    location: PDF page 11, 4.5(iii)
+    excerpt: "Angles e.g. 90°, 60°, 45°, 30°, and an angle equal to a given angle."
+  - code: MATH.4.5.iv
+    parent: MATH.4.5
+    type: skill
+    name: Construct triangles and quadrilaterals from sufficient data
+    location: PDF page 11, 4.5(iv)
+    excerpt: "Triangles and quadrilaterals from sufficient data."
+
+  - code: MATH.4.6
+    parent: MATH.4
+    type: subtopic
+    name: Loci
+    location: PDF page 11, 4.6
+    excerpt: "Loci — Knowledge of the loci listed below and their intersections in 2 dimensions."
+    examinable_scope: The four loci below and their intersections, in 2 dimensions.
+  - code: MATH.4.6.i
+    parent: MATH.4.6
+    type: skill
+    name: Locus of points at a given distance from a point
+    location: PDF page 11, 4.6(i)
+    excerpt: "Points at a given distance from a given point."
+  - code: MATH.4.6.ii
+    parent: MATH.4.6
+    type: skill
+    name: Locus of points equidistant from two points
+    location: PDF page 11, 4.6(ii)
+    excerpt: "Points equidistant from two given points."
+  - code: MATH.4.6.iii
+    parent: MATH.4.6
+    type: skill
+    name: Locus of points equidistant from two straight lines
+    location: PDF page 11, 4.6(iii)
+    excerpt: "Points equidistant from two given straight lines."
+  - code: MATH.4.6.iv
+    parent: MATH.4.6
+    type: skill
+    name: Locus of points at a given distance from a straight line
+    location: PDF page 11, 4.6(iv)
+    excerpt: "Points at a given distance from a given straight line."
+
+  # ───────────────────────── 5 COORDINATE GEOMETRY OF STRAIGHT LINES ─────────────────────────
+  - code: MATH.5
+    type: topic
+    name: Coordinate Geometry of Straight Lines
+    location: PDF page 12, section 5
+    excerpt: "COORDINATE GEOMETRY OF STRAIGHT LINES"
+    boundary_notes: Source lists only the two points below (no gradient, distance, midpoint or line equation).
+
+  # The source has no subtopic heading here; the schema requires skills to sit under a subtopic.
+  - code: MATH.5.1
+    parent: MATH.5
+    type: subtopic
+    name: The x-y plane
+    syllabus_status: implied
+    location: PDF page 12, section 5
+    excerpt: "COORDINATE GEOMETRY OF STRAIGHT LINES"
+    boundary_notes: Structural subtopic added for the schema; not a heading in the source.
+  - code: MATH.5.1.i
+    parent: MATH.5.1
+    type: skill
+    name: Explain the x-y plane
+    location: PDF page 12, 5(i)
+    excerpt: "Concept of the x-y plane."
+  - code: MATH.5.1.ii
+    parent: MATH.5.1
+    type: skill
+    name: Plot and read coordinates of points
+    location: PDF page 12, 5(ii)
+    excerpt: "Coordinates of points on the x-y plane."
+
+  # ───────────────────────── 6 TRIGONOMETRY ─────────────────────────
+  - code: MATH.6
+    type: topic
+    name: Trigonometry
+    location: PDF page 12, section 6
+    excerpt: "TRIGONOMETRY"
+
+  - code: MATH.6.1
+    parent: MATH.6
+    type: subtopic
+    name: Sine, cosine and tangent of an angle
+    location: PDF page 12, 6.1
+    excerpt: "Sine, Cosine and Tangent of an angle"
+  - code: MATH.6.1.i
+    parent: MATH.6.1
+    type: skill
+    name: Find sine, cosine and tangent of acute angles
+    location: PDF page 12, 6.1(i)
+    excerpt: "Sine, Cosine and Tangent of acute angles."
+  - code: MATH.6.1.ii
+    parent: MATH.6.1
+    type: skill
+    name: Use tables of trigonometric ratios
+    location: PDF page 12, 6.1(ii)
+    excerpt: "Use of tables of trigonometric ratios."
+  - code: MATH.6.1.iii
+    parent: MATH.6.1
+    type: skill
+    name: Use exact trigonometric ratios of 30°, 45° and 60°
+    location: PDF page 12, 6.1(iii)
+    excerpt: "Trigonometric ratios of 30°, 45° and 60°."
+  - code: MATH.6.1.iv
+    parent: MATH.6.1
+    type: skill
+    name: Find sine, cosine and tangent of angles from 0° to 360°
+    location: PDF page 12, 6.1(iv)
+    excerpt: "Sine, cosine and tangent of angles from 0° to 360°."
+  - code: MATH.6.1.v
+    parent: MATH.6.1
+    type: skill
+    name: Draw and interpret graphs of sine and cosine
+    location: PDF page 12, 6.1(v)
+    excerpt: "Graphs of sine and cosine."
+  - code: MATH.6.1.vi
+    parent: MATH.6.1
+    type: skill
+    name: Draw and interpret graphs of trigonometric ratios
+    location: PDF page 12, 6.1(vi)
+    excerpt: "Graphs of trigonometric ratios"
+    boundary_notes: Overlaps 6.1(v); confirm whether this adds tangent graphs or other ratios.
+
+  - code: MATH.6.2
+    parent: MATH.6
+    type: subtopic
+    name: Angles of elevation and depression
+    location: PDF page 12, 6.2
+    excerpt: "Angles of elevation and depression"
+  - code: MATH.6.2.i
+    parent: MATH.6.2
+    type: skill
+    name: Calculate angles of elevation and depression
+    location: PDF page 12, 6.2(i)
+    excerpt: "Calculating angles of elevation and depression."
+  - code: MATH.6.2.ii
+    parent: MATH.6.2
+    type: skill
+    name: Apply elevation and depression to heights and distances
+    location: PDF page 12, 6.2(ii)
+    excerpt: "Application to heights and distances."
+
+  - code: MATH.6.3
+    parent: MATH.6
+    type: subtopic
+    name: Bearings
+    location: PDF page 12, 6.3
+    excerpt: "Bearings"
+  - code: MATH.6.3.i
+    parent: MATH.6.3
+    type: skill
+    name: Find the bearing of one point from another
+    location: PDF page 12, 6.3(i)
+    excerpt: "Bearing of one point from another."
+  - code: MATH.6.3.ii
+    parent: MATH.6.3
+    type: skill
+    name: Calculate distances and angles from bearings
+    location: PDF page 12, 6.3(ii)
+    excerpt: "Calculation of distances and angles"
+
+  # ───────────────────────── 7 INTRODUCTORY CALCULUS ─────────────────────────
+  - code: MATH.7
+    type: topic
+    name: Introductory Calculus
+    location: PDF page 12, section 7
+    excerpt: "INTRODUCTORY CALCULUS"
+
+  # The source has no subtopic heading here; the schema requires skills to sit under a subtopic.
+  - code: MATH.7.1
+    parent: MATH.7
+    type: subtopic
+    name: Differentiation and integration
+    syllabus_status: implied
+    location: PDF page 12, section 7
+    excerpt: "INTRODUCTORY CALCULUS"
+    boundary_notes: Structural subtopic added for the schema; not a heading in the source.
+  - code: MATH.7.1.i
+    parent: MATH.7.1
+    type: skill
+    name: Differentiate algebraic functions
+    location: PDF page 12, 7(i)
+    excerpt: "Differentiation of algebraic functions."
+    boundary_notes: Source does not say whether first principles, product/quotient rules or applications (gradient, maxima/minima) are included.
+  - code: MATH.7.1.ii
+    parent: MATH.7.1
+    type: skill
+    name: Integrate simple algebraic functions
+    location: PDF page 12, 7(ii)
+    excerpt: "Integration of simple Algebraic functions."
+    boundary_notes: Source does not say whether definite integrals or area under a curve are included.
+
+  # ───────────────────────── 8 STATISTICS AND PROBABILITY ─────────────────────────
+  - code: MATH.8
+    type: topic
+    name: Statistics and Probability
+    location: PDF page 13, section 8
+    excerpt: "STATISTICS AND PROBABILITY"
+
+  - code: MATH.8.1
+    parent: MATH.8
+    type: subtopic
+    name: Statistics
+    location: PDF page 13, 8.1
+    excerpt: "Statistics"
+  - code: MATH.8.1.i
+    parent: MATH.8.1
+    type: skill
+    name: Construct frequency distributions
+    location: PDF page 13, 8.1(i)
+    excerpt: "Frequency distribution"
+  - code: MATH.8.1.ii
+    parent: MATH.8.1
+    type: skill
+    name: Draw and interpret pie charts, bar charts, histograms and frequency polygons
+    location: PDF page 13, 8.1(ii)
+    excerpt: "Pie charts, bar charts, histograms and frequency polygons"
+  - code: MATH.8.1.iii
+    parent: MATH.8.1
+    type: skill
+    name: Find mean, median and mode of discrete and grouped data
+    location: PDF page 13, 8.1(iii)
+    excerpt: "Mean, median and mode for both discrete and grouped data."
+  - code: MATH.8.1.iv
+    parent: MATH.8.1
+    type: skill
+    name: Draw and use a cumulative frequency curve (ogive)
+    location: PDF page 13, 8.1(iv)
+    excerpt: "Cumulative frequency curve (Ogive)."
+  - code: MATH.8.1.v
+    parent: MATH.8.1
+    type: skill
+    name: Calculate measures of dispersion
+    location: PDF page 13, 8.1(v)
+    excerpt: "Measures of Dispersion: range, semi inter-quartile/interquartile range, variance, mean deviation and standard deviation."
+
+  - code: MATH.8.2
+    parent: MATH.8
+    type: subtopic
+    name: Probability
+    location: PDF page 13, 8.2
+    excerpt: "Probability"
+  - code: MATH.8.2.i
+    parent: MATH.8.2
+    type: skill
+    name: Find experimental and theoretical probability
+    location: PDF page 13, 8.2(i)
+    excerpt: "Experimental and theoretical probability."
+  - code: MATH.8.2.ii
+    parent: MATH.8.2
+    type: skill
+    name: Add probabilities of events
+    location: PDF page 13, 8.2(ii)
+    excerpt: "Addition of probabilities for mutually exclusive and independent events."
+    boundary_notes: The addition rule normally applies to mutually exclusive events; confirm the intended scope for independent events.
+  - code: MATH.8.2.iii
+    parent: MATH.8.2
+    type: skill
+    name: Multiply probabilities of independent events
+    location: PDF page 13, 8.2(iii)
+    excerpt: "Multiplication of probabilities for independent events."
+
+  # ───────────────────────── 9 VECTORS AND TRANSFORMATION ─────────────────────────
+  - code: MATH.9
+    type: topic
+    name: Vectors and Transformation
+    location: PDF page 13, section 9
+    excerpt: "VECTORS AND TRANSFORMATION"
+
+  - code: MATH.9.1
+    parent: MATH.9
+    type: subtopic
+    name: Vectors in a plane
+    location: PDF page 13, 9.1
+    excerpt: "Vectors in a Plane"
+  - code: MATH.9.1.i
+    parent: MATH.9.1
+    type: skill
+    name: Represent a vector as a directed line segment
+    location: PDF page 13, 9.1
+    excerpt: "Vectors as a directed line segment."
+  - code: MATH.9.1.ii
+    parent: MATH.9.1
+    type: skill
+    name: Use Cartesian components of a vector
+    location: PDF page 13, 9.1
+    excerpt: "Cartesian components of a vector"
+  - code: MATH.9.1.iii
+    parent: MATH.9.1
+    type: skill
+    name: Find magnitude; add, subtract and scale vectors
+    location: PDF page 13, 9.1
+    excerpt: "Magnitude of a vector, equal vectors, addition and subtraction of vectors, zero vector, parallel vectors, multiplication of a vector by scalar."
+
+  - code: MATH.9.2
+    parent: MATH.9
+    type: subtopic
+    name: Transformation in the Cartesian plane
+    location: PDF page 13, 9.2
+    excerpt: "Transformation in the Cartesian Plane"
+  - code: MATH.9.2.i
+    parent: MATH.9.2
+    type: skill
+    name: Reflect points and shapes
+    location: PDF page 13, 9.2
+    excerpt: "Reflection of points and shapes in the Cartesian Plane."
+  - code: MATH.9.2.ii
+    parent: MATH.9.2
+    type: skill
+    name: Rotate points and shapes
+    location: PDF page 13, 9.2
+    excerpt: "Rotation of points and shapes in the Cartesian Plane."
+  - code: MATH.9.2.iii
+    parent: MATH.9.2
+    type: skill
+    name: Translate points and shapes
+    location: PDF page 13, 9.2
+    excerpt: "Translation of points and shapes in the Cartesian Plane."
+  - code: MATH.9.2.iv
+    parent: MATH.9.2
+    type: skill
+    name: Enlarge points and shapes
+    location: PDF page 13, 9.2
+    excerpt: "Enlargement"

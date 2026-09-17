@@ -1,0 +1,709 @@
+# WAEC English Language syllabus (2027) — draft seed data for database/migrations/001_curriculum.sql
+#
+# Extracted from "docs/syllabus/waec - English 2027.pdf" (PDF pages 2–9; the aims and the
+# examination scheme on page 1 are recorded under `unmapped`, not as curriculum items).
+# Everything here is a DRAFT. Nothing is approved; a reviewer must approve rows in the
+# order described in docs/syllabus-database.md.
+#
+# Loader conventions (identical to the NECO seed):
+#   * Every curriculum item gets `item_defaults` unless it overrides them.
+#   * `parent` is the parent item's code; the loader resolves it to parent_id.
+#   * display_order = position among siblings in this file, starting at 1.
+#   * `location` + `excerpt` become one curriculum_evidence row.
+#   * A subtopic with `syllabus_status: implied` is a structural container this schema
+#     needs but the document does not print; it is recorded as an academic_boundary
+#     decision, not as syllabus inclusion.
+#   * Excerpts are the source wording with line breaks joined.
+#
+# Known extraction judgements, for the reviewer:
+#   1. The document is organised by paper (1, 2, 3), not by topic. Topics below follow the
+#      named sections of each paper: Lexis, Structure, Essay Writing, Comprehension,
+#      Summary and Oral English.
+#   2. Comprehension and Summary print a list of tested abilities with no named middle
+#      level, so one structural subtopic is added to each.
+#   3. Paper 3 has two alternatives. Nigeria and Liberia take the Test of Orals; Ghana,
+#      The Gambia and Sierra Leone take Listening Comprehension. Both are recorded; the
+#      alternative that does not apply to Nigerian candidates carries a boundary note.
+
+format_version: 1
+
+validation:
+  source_page_range: [2, 9]      # syllabus content; page 1 is aims and examination scheme
+  expected_topic_count: 6
+
+examination:
+  # Product target. The document does not state which WASSCE track (school candidates or
+  # private candidates) it governs, so the track is not claimed here.
+  name: West African Senior School Certificate Examination (WASSCE)
+  short_name: WASSCE
+  exam_body: West African Examinations Council (WAEC)
+  country_code: NG
+  description: >-
+    WAEC 2027 syllabus, written for candidates in The Gambia, Ghana, Liberia, Nigeria and
+    Sierra Leone. Our target market is Nigeria; country-specific papers are marked in the
+    items below. The document does not state the examination track.
+  status: draft
+
+subject:
+  code: ENG
+  name: English Language
+  status: draft
+
+source_documents:
+  - key: english_syllabus_pdf
+    document_type: syllabus
+    title: WAEC 2027 Syllabus — English Language
+    issuer: null                 # no issuer or publisher is printed in the document
+    document_year: null          # "2027" names the examination year, not a publication year
+    file_uri: docs/syllabus/waec - English 2027.pdf
+    file_sha256: 0d03fe71142e55f93beae6f3bbc0d4b077183220463ab2ced6c18793d787c4e4
+    mime_type: application/pdf
+    page_count: 9
+    licence_status: pending      # the schema blocks all permissions until this is 'verified'
+    storage_permission: false
+    student_delivery_permission: false
+    model_context_permission: false
+    processing_status: processed
+    review_status: pending
+
+syllabus_versions:
+  - version_label: waec-2027
+    authority_identifier: null   # no official WAEC version or code printed in the document
+    valid_from: null
+    valid_to: null
+    source_document: english_syllabus_pdf
+    status: draft
+    is_current: false
+
+# Content from the document that has no table in the current schema.
+unmapped:
+  paper_structure:
+    source_location: PDF page 1, examination scheme
+    papers:
+      - code: P1
+        format: multiple_choice
+        questions: 80
+        answer: all
+        duration_minutes: 60
+        marks: 40
+        options_per_question: 4
+        description: >-
+          Forty lexical and forty structural questions, each with four options lettered
+          A to D. For candidates in The Gambia, Nigeria, Sierra Leone and Liberia only.
+      - code: P2
+        format: essay_and_passages
+        duration_minutes: 120
+        marks: 100
+        sections:
+          - code: A
+            name: Essay writing
+            questions: 5
+            answer: 1
+            marks: 50
+            minutes: 50
+            minimum_words: 450
+          - code: B
+            name: Comprehension
+            questions: null
+            answer: all
+            marks: 20
+            minutes: 30
+            passage_minimum_words: 350
+          - code: C
+            name: Summary
+            questions: null
+            answer: all
+            marks: 30
+            minutes: 40
+            passage_words: 500
+      - code: P3
+        format: multiple_choice
+        questions: 60
+        answer: all
+        duration_minutes: 45
+        marks: 30
+        description: >-
+          Test of Orals for candidates in Nigeria and Liberia; Listening Comprehension
+          Test for candidates in Ghana, The Gambia and Sierra Leone.
+  aims:
+    source_location: PDF page 1, objectives (i)–(xii)
+    note: >-
+      Twelve stated abilities the examination sets out to measure. They describe the
+      examination's purpose rather than assessable units, so they are not imported as
+      curriculum items.
+
+item_defaults:
+  syllabus_status: uncertain          # official scope/version has not been verified
+  pilot_support_status: undecided     # pick the pilot skills after review
+  review_status: draft
+  learning_objective: null
+  examinable_scope: null
+  expected_depth: null
+  boundary_notes: null
+
+curriculum_items:
+  # ───────────────────────────────── 1 LEXIS ─────────────────────────────────
+  - code: ENG.1
+    type: topic
+    name: Lexis
+    location: PDF page 2, Paper 1 section A
+    excerpt: "A. LEXIS"
+
+  - code: ENG.1.1
+    parent: ENG.1
+    type: subtopic
+    name: Vocabulary of everyday usage
+    location: PDF page 2, Paper 1 section A
+    excerpt: "items testing knowledge of the vocabulary of everyday usage (i.e home, social relationships, and common core school subjects)"
+  - code: ENG.1.1.i
+    parent: ENG.1.1
+    type: skill
+    name: Use the vocabulary of everyday usage
+    location: PDF page 2, Paper 1 section A
+    excerpt: "the vocabulary of everyday usage (i.e home, social relationships, and common core school subjects)"
+
+  - code: ENG.1.2
+    parent: ENG.1
+    type: subtopic
+    name: General vocabulary of fields of human activity
+    location: PDF page 2, Paper 1 section A(I)
+    excerpt: "questions will be set to test candidates' ability in the use of the general vocabulary associated with the following fields of human activity"
+  - code: ENG.1.2.i
+    parent: ENG.1.2
+    type: skill
+    name: Vocabulary of building and building construction
+    location: PDF page 2, Paper 1 section A(I)(a)
+    excerpt: "Building and Building Construction"
+  - code: ENG.1.2.ii
+    parent: ENG.1.2
+    type: skill
+    name: Vocabulary of agriculture
+    location: PDF page 2, Paper 1 section A(I)(b)
+    excerpt: "Agriculture"
+  - code: ENG.1.2.iii
+    parent: ENG.1.2
+    type: skill
+    name: Vocabulary of fishing
+    location: PDF page 2, Paper 1 section A(I)(c)
+    excerpt: "Fishing"
+  - code: ENG.1.2.iv
+    parent: ENG.1.2
+    type: skill
+    name: Vocabulary of the stock exchange
+    location: PDF page 2, Paper 1 section A(I)(d)
+    excerpt: "Stock exchange"
+  - code: ENG.1.2.v
+    parent: ENG.1.2
+    type: skill
+    name: Vocabulary of health
+    location: PDF page 2, Paper 1 section A(I)(e)
+    excerpt: "Health"
+  - code: ENG.1.2.vi
+    parent: ENG.1.2
+    type: skill
+    name: Vocabulary of the environment
+    location: PDF page 2, Paper 1 section A(I)(f)
+    excerpt: "Environment"
+  - code: ENG.1.2.vii
+    parent: ENG.1.2
+    type: skill
+    name: Vocabulary of culture, institutions and ceremonies
+    location: PDF page 2, Paper 1 section A(I)(g)
+    excerpt: "Culture, Institutions and Ceremonies"
+  - code: ENG.1.2.viii
+    parent: ENG.1.2
+    type: skill
+    name: Vocabulary of law and order
+    location: PDF page 2, Paper 1 section A(I)(h)
+    excerpt: "Law and Order"
+  - code: ENG.1.2.ix
+    parent: ENG.1.2
+    type: skill
+    name: Vocabulary of motor vehicles and travelling
+    location: PDF page 2, Paper 1 section A(I)(i)
+    excerpt: "Motor Vehicles and Travelling"
+  - code: ENG.1.2.x
+    parent: ENG.1.2
+    type: skill
+    name: Vocabulary of government and administration
+    location: PDF page 2, Paper 1 section A(I)(j)
+    excerpt: "Government and Administration"
+  - code: ENG.1.2.xi
+    parent: ENG.1.2
+    type: skill
+    name: Vocabulary of sports
+    location: PDF page 2, Paper 1 section A(I)(k)
+    excerpt: "Sports"
+  - code: ENG.1.2.xii
+    parent: ENG.1.2
+    type: skill
+    name: Vocabulary of religion
+    location: PDF page 2, Paper 1 section A(I)(l)
+    excerpt: "Religion"
+  - code: ENG.1.2.xiii
+    parent: ENG.1.2
+    type: skill
+    name: Vocabulary of science and technology
+    location: PDF page 2, Paper 1 section A(I)(m)
+    excerpt: "Science and Technology"
+  - code: ENG.1.2.xiv
+    parent: ENG.1.2
+    type: skill
+    name: Vocabulary of animal husbandry
+    location: PDF page 2, Paper 1 section A(I)(n)
+    excerpt: "Animal husbandry"
+  - code: ENG.1.2.xv
+    parent: ENG.1.2
+    type: skill
+    name: Vocabulary of advertising
+    location: PDF page 2, Paper 1 section A(I)(o)
+    excerpt: "Advertising"
+  - code: ENG.1.2.xvi
+    parent: ENG.1.2
+    type: skill
+    name: Vocabulary of the human internal body system and its functions
+    location: PDF page 2, Paper 1 section A(I)(p)
+    excerpt: "Human Internal Body system and function"
+
+  - code: ENG.1.3
+    parent: ENG.1
+    type: subtopic
+    name: Idioms and collocations
+    location: PDF page 2, Paper 1 section A(II)
+    excerpt: "Idioms, i.e. idiomatic expressions and collocations (e.g. 'hook, line and sinker', 'every Tom, Dick and Harry' etc.) the total meaning of which cannot be arrived at simply by consideration of the dictionary meanings of the words in the structures in which they appear."
+  - code: ENG.1.3.i
+    parent: ENG.1.3
+    type: skill
+    name: Interpret idiomatic expressions and collocations
+    location: PDF page 2, Paper 1 section A(II)
+    excerpt: "idiomatic expressions and collocations ... the total meaning of which cannot be arrived at simply by consideration of the dictionary meanings of the words"
+
+  - code: ENG.1.4
+    parent: ENG.1
+    type: subtopic
+    name: Structural elements of English
+    location: PDF page 2, Paper 1 section A(III)
+    excerpt: "Structural elements of English e.g. sequence of tenses, matching of pronouns with their antecedents, correct use of prepositions etc."
+  - code: ENG.1.4.i
+    parent: ENG.1.4
+    type: skill
+    name: Apply the sequence of tenses
+    location: PDF page 2, Paper 1 section A(III)
+    excerpt: "sequence of tenses"
+  - code: ENG.1.4.ii
+    parent: ENG.1.4
+    type: skill
+    name: Match pronouns with their antecedents
+    location: PDF page 2, Paper 1 section A(III)
+    excerpt: "matching of pronouns with their antecedents"
+  - code: ENG.1.4.iii
+    parent: ENG.1.4
+    type: skill
+    name: Use prepositions correctly
+    location: PDF page 2, Paper 1 section A(III)
+    excerpt: "correct use of prepositions"
+
+  - code: ENG.1.5
+    parent: ENG.1
+    type: subtopic
+    name: Figurative usage
+    location: PDF page 2, Paper 1 section A(IV)
+    excerpt: "Figurative Usage"
+  - code: ENG.1.5.i
+    parent: ENG.1.5
+    type: skill
+    name: Interpret figurative usage
+    location: PDF page 2, Paper 1 section A(IV)
+    excerpt: "Figurative Usage"
+
+  # ─────────────────────────────── 2 STRUCTURE ───────────────────────────────
+  - code: ENG.2
+    type: topic
+    name: Structure
+    location: PDF page 2, Paper 1 section B
+    excerpt: "B. STRUCTURE"
+
+  - code: ENG.2.1
+    parent: ENG.2
+    type: subtopic
+    name: Patterns of change in word-forms
+    location: PDF page 2, Paper 1 section B(i)
+    excerpt: "The patterns of changes in word-forms which indicate number, tense, degree, etc"
+  - code: ENG.2.1.i
+    parent: ENG.2.1
+    type: skill
+    name: Use word-forms that indicate number, tense and degree
+    location: PDF page 2, Paper 1 section B(i)
+    excerpt: "patterns of changes in word-forms which indicate number, tense, degree, etc"
+
+  - code: ENG.2.2
+    parent: ENG.2
+    type: subtopic
+    name: Patterns of word combination into groups and sentences
+    location: PDF page 2, Paper 1 section B(ii)
+    excerpt: "The patterns in which different categories of words regularly combine to form groups and these groups in turn combine to form sentences"
+  - code: ENG.2.2.i
+    parent: ENG.2.2
+    type: skill
+    name: Combine word categories into groups and sentences
+    location: PDF page 2, Paper 1 section B(ii)
+    excerpt: "different categories of words regularly combine to form groups and these groups in turn combine to form sentences"
+
+  - code: ENG.2.3
+    parent: ENG.2
+    type: subtopic
+    name: Structural words
+    location: PDF page 2, Paper 1 section B(iii)
+    excerpt: "The use of structural words e.g. conjunctions, determiners, prepositions, etc."
+  - code: ENG.2.3.i
+    parent: ENG.2.3
+    type: skill
+    name: Use conjunctions, determiners and prepositions
+    location: PDF page 2, Paper 1 section B(iii)
+    excerpt: "structural words e.g. conjunctions, determiners, prepositions, etc."
+
+  # ────────────────────────────── 3 ESSAY WRITING ────────────────────────────
+  - code: ENG.3
+    type: topic
+    name: Essay writing
+    location: PDF page 3, Paper 2 Section A
+    excerpt: "SECTION A: ESSAY WRITING (50 marks)"
+    boundary_notes: >-
+      Candidates answer one of five questions in 50 minutes; the minimum length is 450 words.
+
+  - code: ENG.3.1
+    parent: ENG.3
+    type: subtopic
+    name: Kinds of writing demanded by the topics
+    location: PDF page 3, Paper 2 Section A
+    excerpt: "The topics will demand the following kinds of writing"
+  - code: ENG.3.1.i
+    parent: ENG.3.1
+    type: skill
+    name: Write a letter
+    location: PDF page 3, Paper 2 Section A(i)
+    excerpt: "letter"
+  - code: ENG.3.1.ii
+    parent: ENG.3.1
+    type: skill
+    name: Write a speech
+    location: PDF page 3, Paper 2 Section A(ii)
+    excerpt: "speech"
+  - code: ENG.3.1.iii
+    parent: ENG.3.1
+    type: skill
+    name: Write a narration
+    location: PDF page 3, Paper 2 Section A(iii)
+    excerpt: "narration"
+  - code: ENG.3.1.iv
+    parent: ENG.3.1
+    type: skill
+    name: Write a description
+    location: PDF page 3, Paper 2 Section A(iv)
+    excerpt: "description"
+  - code: ENG.3.1.v
+    parent: ENG.3.1
+    type: skill
+    name: Write an argument or debate
+    location: PDF page 3, Paper 2 Section A(v)
+    excerpt: "argument/debate"
+  - code: ENG.3.1.vi
+    parent: ENG.3.1
+    type: skill
+    name: Write a report
+    location: PDF page 3, Paper 2 Section A(vi)
+    excerpt: "report"
+  - code: ENG.3.1.vii
+    parent: ENG.3.1
+    type: skill
+    name: Write an article
+    location: PDF page 3, Paper 2 Section A(vii)
+    excerpt: "article"
+  - code: ENG.3.1.viii
+    parent: ENG.3.1
+    type: skill
+    name: Write an exposition
+    location: PDF page 3, Paper 2 Section A(viii)
+    excerpt: "exposition"
+  - code: ENG.3.1.ix
+    parent: ENG.3.1
+    type: skill
+    name: Produce creative writing
+    location: PDF page 3, Paper 2 Section A(ix)
+    excerpt: "creative writing"
+
+  - code: ENG.3.2
+    parent: ENG.3
+    type: subtopic
+    name: Qualities the essay is marked on
+    location: PDF page 3, Paper 2 Section A
+    excerpt: "Marks will be awarded for: (i) Content; (ii) Organization; (iii) Expression; (iv) Mechanical Accuracy"
+  - code: ENG.3.2.i
+    parent: ENG.3.2
+    type: skill
+    name: Select ideas relevant to the topic (content)
+    location: PDF page 3, Paper 2 Section A
+    excerpt: "Content: relevance of ideas to the topic"
+  - code: ENG.3.2.ii
+    parent: ENG.3.2
+    type: skill
+    name: Organise material in paragraphs with appropriate emphasis (organization)
+    location: PDF page 3, Paper 2 Section A
+    excerpt: "Organization: formal features (where applicable), good paragraphing, appropriate emphasis and arrangement of ideas"
+  - code: ENG.3.2.iii
+    parent: ENG.3.2
+    type: skill
+    name: Control vocabulary and sentence structure (expression)
+    location: PDF page 3, Paper 2 Section A
+    excerpt: "Expression: effective control of vocabulary and sentence structure"
+  - code: ENG.3.2.iv
+    parent: ENG.3.2
+    type: skill
+    name: Write with correct grammar, punctuation and spelling (mechanical accuracy)
+    location: PDF page 3, Paper 2 Section A
+    excerpt: "Mechanical Accuracy: correct grammar, punctuation, spelling etc."
+
+  # ─────────────────────────────── 4 COMPREHENSION ───────────────────────────
+  - code: ENG.4
+    type: topic
+    name: Comprehension
+    location: PDF page 3, Paper 2 Section B
+    excerpt: "SECTION B: COMPREHENSION (20 marks)"
+    boundary_notes: >-
+      One passage of at least 350 words, answered in 30 minutes. At least four questions
+      test factual content.
+
+  - code: ENG.4.1
+    parent: ENG.4
+    type: subtopic
+    name: Abilities tested on the comprehension passage
+    syllabus_status: implied
+    location: PDF page 3, Paper 2 Section B
+    excerpt: "The questions will test candidates' ability to ..."
+    boundary_notes: >-
+      Structural container. The document lists the tested abilities directly under the
+      section with no named middle level; this subtopic exists only so the schema's
+      topic → subtopic → skill hierarchy can hold them.
+  - code: ENG.4.1.i
+    parent: ENG.4.1
+    type: skill
+    name: Find appropriate equivalents for selected words or phrases
+    location: PDF page 3, Paper 2 Section B(i)
+    excerpt: "find appropriate equivalents for selected words or phrases"
+  - code: ENG.4.1.ii
+    parent: ENG.4.1
+    type: skill
+    name: Understand the factual content of a passage
+    location: PDF page 3, Paper 2 Section B(ii)
+    excerpt: "understand the factual content"
+  - code: ENG.4.1.iii
+    parent: ENG.4.1
+    type: skill
+    name: Make inferences from the content of a passage
+    location: PDF page 3, Paper 2 Section B(iii)
+    excerpt: "make inferences from the content of the passage"
+  - code: ENG.4.1.iv
+    parent: ENG.4.1
+    type: skill
+    name: Understand expressions that reveal sentiment, emotion or attitude
+    location: PDF page 3, Paper 2 Section B(iv)
+    excerpt: "understand the use of English expressions that reveal/reflect sentiments/emotions/attitudes"
+  - code: ENG.4.1.v
+    parent: ENG.4.1
+    type: skill
+    name: Identify grammatical structures and explain their function in context
+    location: PDF page 3, Paper 2 Section B(v)
+    excerpt: "identify and label basic grammatical structures, words, phrases or clauses and explain their functions as they appear in the context"
+  - code: ENG.4.1.vi
+    parent: ENG.4.1
+    type: skill
+    name: Identify and explain basic literary terms and expressions
+    location: PDF page 3, Paper 2 Section B(vi)
+    excerpt: "identify and explain basic literary terms and expressions"
+  - code: ENG.4.1.vii
+    parent: ENG.4.1
+    type: skill
+    name: Recast phrases or sentences into grammatical alternatives
+    location: PDF page 3, Paper 2 Section B(vii)
+    excerpt: "recast phrases or sentences into grammatical alternatives"
+
+  # ─────────────────────────────────── 5 SUMMARY ─────────────────────────────
+  - code: ENG.5
+    type: topic
+    name: Summary
+    location: PDF page 4, Paper 2 Section C
+    excerpt: "SECTION C: SUMMARY (30 marks)"
+    boundary_notes: >-
+      One prose passage of about 500 words, answered in 40 minutes.
+
+  - code: ENG.5.1
+    parent: ENG.5
+    type: subtopic
+    name: Abilities tested on the summary passage
+    syllabus_status: implied
+    location: PDF page 4, Paper 2 Section C
+    excerpt: "The section will consist of one prose passage of about five hundred (500) words and will test candidates' ability to ..."
+    boundary_notes: >-
+      Structural container, added for the same reason as ENG.4.1.
+  - code: ENG.5.1.i
+    parent: ENG.5.1
+    type: skill
+    name: Extract relevant information from a passage
+    location: PDF page 4, Paper 2 Section C(i)
+    excerpt: "extract relevant information"
+  - code: ENG.5.1.ii
+    parent: ENG.5.1
+    type: skill
+    name: Summarise points concisely without repetition or redundancy
+    location: PDF page 4, Paper 2 Section C(ii)
+    excerpt: "summarize the points demanded in clear concise English, avoiding repetition and redundancy"
+  - code: ENG.5.1.iii
+    parent: ENG.5.1
+    type: skill
+    name: Summarise specific aspects or portions of a passage
+    location: PDF page 4, Paper 2 Section C(iii)
+    excerpt: "present a summary of specific aspects or portions of the passage"
+
+  # ────────────────────────────── 6 ORAL ENGLISH ─────────────────────────────
+  - code: ENG.6
+    type: topic
+    name: Oral English
+    location: PDF page 4, Paper 3
+    excerpt: "PAPER 3: ORAL ENGLISH (30 marks)"
+    boundary_notes: >-
+      Sixty multiple-choice questions in 45 minutes. Candidates in Nigeria and Liberia take
+      the Test of Orals; candidates in Ghana, The Gambia and Sierra Leone take a Listening
+      Comprehension Test.
+
+  - code: ENG.6.1
+    parent: ENG.6
+    type: subtopic
+    name: Consonants
+    location: PDF page 5, Paper 3 features (1)
+    excerpt: "1. CONSONANTS (a) Single Consonants ... (b) Consonant Clusters"
+  - code: ENG.6.1.i
+    parent: ENG.6.1
+    type: skill
+    name: Recognise and produce single consonant contrasts
+    location: PDF page 5, Paper 3 features 1(a)
+    excerpt: "Candidates should be able to recognize and produce all significant sound contrasts in the consonantal system of English."
+  - code: ENG.6.1.ii
+    parent: ENG.6.1
+    type: skill
+    name: Recognise and produce consonant clusters in the correct order
+    location: PDF page 5, Paper 3 features 1(b)
+    excerpt: "Candidates should be able to produce and recognize consonant clusters which may occur both initially and finally in a syllable. They should also be able to recognize and produce the consonant sounds in a consonant cluster in the right order."
+
+  - code: ENG.6.2
+    parent: ENG.6
+    type: subtopic
+    name: Vowels
+    location: PDF page 6, Paper 3 features (II)
+    excerpt: "II. VOWELS (a) Pure Vowels (b) Diphthongs (c) Triphthongs"
+  - code: ENG.6.2.i
+    parent: ENG.6.2
+    type: skill
+    name: Recognise and produce pure vowel contrasts
+    location: PDF page 6, Paper 3 features II(a)
+    excerpt: "Pure Vowels ... recognize and produce all the significant sound contrasts in the vowel system of English"
+  - code: ENG.6.2.ii
+    parent: ENG.6.2
+    type: skill
+    name: Recognise and produce diphthongs
+    location: PDF page 6, Paper 3 features II(b)
+    excerpt: "Diphthongs"
+  - code: ENG.6.2.iii
+    parent: ENG.6.2
+    type: skill
+    name: Recognise and produce triphthongs
+    location: PDF page 6, Paper 3 features II(c)
+    excerpt: "Triphthongs"
+
+  - code: ENG.6.3
+    parent: ENG.6
+    type: subtopic
+    name: Stress
+    location: PDF page 7, Paper 3 features (III)
+    excerpt: "III. STRESS (a) Word Stress ... (b) Sentence Stress ... (c) Emphatic stress"
+  - code: ENG.6.3.i
+    parent: ENG.6.3
+    type: skill
+    name: Contrast stressed and unstressed syllables in words
+    location: PDF page 7, Paper 3 features III(a)
+    excerpt: "Candidates should be able to contrast stressed and unstressed syllables in words which are not otherwise distinguished ... shifting stress from one syllable to another in different derivations of the same word with consequent change in vowel quality."
+  - code: ENG.6.3.ii
+    parent: ENG.6.3
+    type: skill
+    name: Apply sentence stress
+    location: PDF page 7, Paper 3 features III(b)
+    excerpt: "stress in sentences in English tends to occur at regular intervals in time ... only nouns, main verbs (not auxiliaries), adjectives and adverbs are stressed"
+  - code: ENG.6.3.iii
+    parent: ENG.6.3
+    type: skill
+    name: Use emphatic stress to indicate contrast
+    location: PDF page 8, Paper 3 features III(c)
+    excerpt: "Candidates should be aware of the use of emphatic stress, most commonly to indicate a contrast, which is realized partly as a change in pitch within the intonational pattern."
+  - code: ENG.6.3.iv
+    parent: ENG.6.3
+    type: skill
+    name: Identify syllable structure
+    location: PDF page 9, Test of Orals area 4
+    excerpt: "Word stress/Syllable Structure"
+
+  - code: ENG.6.4
+    parent: ENG.6
+    type: subtopic
+    name: Intonation
+    location: PDF page 8, Paper 3 features (IV)
+    excerpt: "IV. INTONATION : Candidates should be made aware of the different forms that English intonation takes in relation to the grammar of the language and the attitudes conveyed by the speaker."
+  - code: ENG.6.4.i
+    parent: ENG.6.4
+    type: skill
+    name: Recognise the falling intonation pattern
+    location: PDF page 8, Paper 3 features IV(a)
+    excerpt: "Falling Pattern: They ar'rived to'day. - Statement; 'Where did he 'go? - WH question; 'Come 'here! - Command"
+  - code: ENG.6.4.ii
+    parent: ENG.6.4
+    type: skill
+    name: Recognise the rising intonation pattern
+    location: PDF page 8, Paper 3 features IV(b)
+    excerpt: "Rising Pattern: Did he 'see the 'principal? - Yes/No question; When the 'train arrived. - Incomplete; They arrived to'day? - Question"
+
+  - code: ENG.6.5
+    parent: ENG.6
+    type: subtopic
+    name: Further areas tested in the Test of Orals
+    location: PDF page 9, Test of Orals
+    excerpt: "The test will cover the following areas: 1. Vowels – pure vowels and diphthongs; 2. Consonants and clusters; 3. Rhymes; 4. Word stress/Syllable Structure; 5. Emphatic Stress/Intonation Patterns; 6. Phonetic Symbols"
+    boundary_notes: >-
+      Areas 1, 2, 4 and 5 are already covered by ENG.6.1 to ENG.6.4. This subtopic holds
+      the areas the earlier sections do not name.
+  - code: ENG.6.5.i
+    parent: ENG.6.5
+    type: skill
+    name: Identify rhymes
+    location: PDF page 9, Test of Orals area 3
+    excerpt: "Rhymes"
+  - code: ENG.6.5.ii
+    parent: ENG.6.5
+    type: skill
+    name: Read and interpret phonetic symbols
+    location: PDF page 9, Test of Orals area 6
+    excerpt: "Phonetic Symbols"
+
+  - code: ENG.6.6
+    parent: ENG.6
+    type: subtopic
+    name: Listening Comprehension Test (other countries' alternative)
+    location: PDF page 4, Paper 3 alternative
+    excerpt: "Listening Comprehension Test (For candidates in Ghana, The Gambia and Sierra Leone) ... sixty multiple choice objective questions on: Consonants, consonant clusters, vowels, diphthongs, stress and intonation patterns, dialogues and narratives."
+    boundary_notes: >-
+      Does not apply to candidates in Nigeria, who take the Test of Orals. Recorded so the
+      import matches the document; a reviewer should mark it unsupported for a Nigerian
+      pilot.
+  - code: ENG.6.6.i
+    parent: ENG.6.6
+    type: skill
+    name: Understand the content of longer dialogues and narratives
+    location: PDF page 5, Listening Comprehension Section 7
+    excerpt: "Section 7: Test of understanding of the content of longer dialogues and narratives"

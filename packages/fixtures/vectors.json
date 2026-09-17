@@ -1,0 +1,610 @@
+{
+  "engine_version": "0.2.0",
+  "generated_by": "packages/engine (make fixtures)",
+  "tolerance": 1e-09,
+  "cases": [
+    {
+      "id": "mastery/cold-start-correct-l3",
+      "kind": "mastery.update",
+      "input": {
+        "rating": {
+          "theta": 0.0,
+          "scored_attempts": 0,
+          "levels_seen": []
+        },
+        "attempt": {
+          "is_correct": true,
+          "level": 3,
+          "response_ms": 70000,
+          "expected_seconds": 90,
+          "hint_used": false,
+          "solution_viewed_before_answer": false
+        }
+      },
+      "expected": {
+        "rating": {
+          "theta": 0.2,
+          "scored_attempts": 1,
+          "levels_seen": [
+            3
+          ]
+        },
+        "displayed_mastery": 0.549833997312478,
+        "band": "not_assessed",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "mastery/cold-start-wrong-l3",
+      "kind": "mastery.update",
+      "input": {
+        "rating": {
+          "theta": 0.0,
+          "scored_attempts": 0,
+          "levels_seen": []
+        },
+        "attempt": {
+          "is_correct": false,
+          "level": 3,
+          "response_ms": 120000,
+          "expected_seconds": 90,
+          "hint_used": false,
+          "solution_viewed_before_answer": false
+        }
+      },
+      "expected": {
+        "rating": {
+          "theta": -0.2,
+          "scored_attempts": 1,
+          "levels_seen": [
+            3
+          ]
+        },
+        "displayed_mastery": 0.45016600268752216,
+        "band": "not_assessed",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "mastery/experienced-correct-l4",
+      "kind": "mastery.update",
+      "input": {
+        "rating": {
+          "theta": 0.8,
+          "scored_attempts": 24,
+          "levels_seen": [
+            2,
+            3,
+            4
+          ]
+        },
+        "attempt": {
+          "is_correct": true,
+          "level": 4,
+          "response_ms": 95000,
+          "expected_seconds": 120,
+          "hint_used": false,
+          "solution_viewed_before_answer": false
+        }
+      },
+      "expected": {
+        "rating": {
+          "theta": 0.8573532474724459,
+          "scored_attempts": 25,
+          "levels_seen": [
+            2,
+            3,
+            4
+          ]
+        },
+        "displayed_mastery": 0.7021073754362455,
+        "band": "exam_ready",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "mastery/correct-with-hint",
+      "kind": "mastery.update",
+      "input": {
+        "rating": {
+          "theta": 0.2,
+          "scored_attempts": 6,
+          "levels_seen": [
+            2,
+            3
+          ]
+        },
+        "attempt": {
+          "is_correct": true,
+          "level": 3,
+          "response_ms": 80000,
+          "expected_seconds": 90,
+          "hint_used": true,
+          "solution_viewed_before_answer": false
+        }
+      },
+      "expected": {
+        "rating": {
+          "theta": 0.18754150067188052,
+          "scored_attempts": 7,
+          "levels_seen": [
+            2,
+            3
+          ]
+        },
+        "displayed_mastery": 0.54674843647629,
+        "band": "developing",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "mastery/suspected-guess",
+      "kind": "mastery.update",
+      "input": {
+        "rating": {
+          "theta": -0.5,
+          "scored_attempts": 4,
+          "levels_seen": [
+            1,
+            2
+          ]
+        },
+        "attempt": {
+          "is_correct": true,
+          "level": 4,
+          "response_ms": 5000,
+          "expected_seconds": 120,
+          "hint_used": false,
+          "solution_viewed_before_answer": false
+        }
+      },
+      "expected": {
+        "rating": {
+          "theta": -0.3889571626893298,
+          "scored_attempts": 5,
+          "levels_seen": [
+            1,
+            2,
+            4
+          ]
+        },
+        "displayed_mastery": 0.4039683677416653,
+        "band": "developing",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "mastery/solution-viewed-first",
+      "kind": "mastery.update",
+      "input": {
+        "rating": {
+          "theta": 0.1,
+          "scored_attempts": 9,
+          "levels_seen": [
+            2,
+            3
+          ]
+        },
+        "attempt": {
+          "is_correct": true,
+          "level": 3,
+          "response_ms": 40000,
+          "expected_seconds": 90,
+          "hint_used": false,
+          "solution_viewed_before_answer": true
+        }
+      },
+      "expected": {
+        "rating": {
+          "theta": 0.1,
+          "scored_attempts": 9,
+          "levels_seen": [
+            2,
+            3
+          ]
+        },
+        "displayed_mastery": 0.52497918747894,
+        "band": "developing",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "mastery/wrong-at-foundation",
+      "kind": "mastery.update",
+      "input": {
+        "rating": {
+          "theta": -1.2,
+          "scored_attempts": 11,
+          "levels_seen": [
+            1,
+            2
+          ]
+        },
+        "attempt": {
+          "is_correct": false,
+          "level": 1,
+          "response_ms": 45000,
+          "expected_seconds": 60,
+          "hint_used": false,
+          "solution_viewed_before_answer": false
+        }
+      },
+      "expected": {
+        "rating": {
+          "theta": -1.3094176222498397,
+          "scored_attempts": 12,
+          "levels_seen": [
+            1,
+            2
+          ]
+        },
+        "displayed_mastery": 0.21258431331120423,
+        "band": "weak",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "retention/fresh",
+      "kind": "mastery.retained",
+      "input": {
+        "mastery": 0.82,
+        "days_since_success": 0.0,
+        "half_life_days": 3.0,
+        "chance_level": 0.25
+      },
+      "expected": {
+        "retained_mastery": 0.82
+      }
+    },
+    {
+      "id": "retention/one-half-life",
+      "kind": "mastery.retained",
+      "input": {
+        "mastery": 0.82,
+        "days_since_success": 3.0,
+        "half_life_days": 3.0,
+        "chance_level": 0.25
+      },
+      "expected": {
+        "retained_mastery": 0.5349999999999999
+      }
+    },
+    {
+      "id": "retention/three-half-lives",
+      "kind": "mastery.retained",
+      "input": {
+        "mastery": 0.82,
+        "days_since_success": 21.0,
+        "half_life_days": 7.0,
+        "chance_level": 0.25
+      },
+      "expected": {
+        "retained_mastery": 0.32125
+      }
+    },
+    {
+      "id": "retention/long-gap-strong-skill",
+      "kind": "mastery.retained",
+      "input": {
+        "mastery": 0.94,
+        "days_since_success": 60.0,
+        "half_life_days": 30.0,
+        "chance_level": 0.25
+      },
+      "expected": {
+        "retained_mastery": 0.4225
+      }
+    },
+    {
+      "id": "retention/five-option-item",
+      "kind": "mastery.retained",
+      "input": {
+        "mastery": 0.82,
+        "days_since_success": 3.0,
+        "half_life_days": 3.0,
+        "chance_level": 0.2
+      },
+      "expected": {
+        "retained_mastery": 0.51
+      }
+    },
+    {
+      "id": "chance-level/2-options",
+      "kind": "mastery.chance_level",
+      "input": {
+        "option_count": 2
+      },
+      "expected": {
+        "chance_level": 0.5
+      }
+    },
+    {
+      "id": "chance-level/3-options",
+      "kind": "mastery.chance_level",
+      "input": {
+        "option_count": 3
+      },
+      "expected": {
+        "chance_level": 0.3333333333333333
+      }
+    },
+    {
+      "id": "chance-level/4-options",
+      "kind": "mastery.chance_level",
+      "input": {
+        "option_count": 4
+      },
+      "expected": {
+        "chance_level": 0.25
+      }
+    },
+    {
+      "id": "chance-level/5-options",
+      "kind": "mastery.chance_level",
+      "input": {
+        "option_count": 5
+      },
+      "expected": {
+        "chance_level": 0.2
+      }
+    },
+    {
+      "id": "chance-level/6-options",
+      "kind": "mastery.chance_level",
+      "input": {
+        "option_count": 6
+      },
+      "expected": {
+        "chance_level": 0.16666666666666666
+      }
+    },
+    {
+      "id": "ladder/two-correct-moves-up",
+      "kind": "ladder.next_level",
+      "input": {
+        "current_level": 2,
+        "recent_outcomes": [
+          true,
+          true
+        ]
+      },
+      "expected": {
+        "next_level": 3,
+        "needs_prerequisite_probe": false
+      }
+    },
+    {
+      "id": "ladder/two-wrong-moves-down",
+      "kind": "ladder.next_level",
+      "input": {
+        "current_level": 4,
+        "recent_outcomes": [
+          true,
+          false,
+          false
+        ]
+      },
+      "expected": {
+        "next_level": 3,
+        "needs_prerequisite_probe": false
+      }
+    },
+    {
+      "id": "ladder/mixed-holds",
+      "kind": "ladder.next_level",
+      "input": {
+        "current_level": 3,
+        "recent_outcomes": [
+          true,
+          false,
+          true
+        ]
+      },
+      "expected": {
+        "next_level": 3,
+        "needs_prerequisite_probe": false
+      }
+    },
+    {
+      "id": "ladder/ceiling",
+      "kind": "ladder.next_level",
+      "input": {
+        "current_level": 5,
+        "recent_outcomes": [
+          true,
+          true
+        ]
+      },
+      "expected": {
+        "next_level": 5,
+        "needs_prerequisite_probe": false
+      }
+    },
+    {
+      "id": "ladder/floor",
+      "kind": "ladder.next_level",
+      "input": {
+        "current_level": 1,
+        "recent_outcomes": [
+          false,
+          false
+        ]
+      },
+      "expected": {
+        "next_level": 1,
+        "needs_prerequisite_probe": true
+      }
+    },
+    {
+      "id": "ladder/single-answer-holds",
+      "kind": "ladder.next_level",
+      "input": {
+        "current_level": 3,
+        "recent_outcomes": [
+          true
+        ]
+      },
+      "expected": {
+        "next_level": 3,
+        "needs_prerequisite_probe": false
+      }
+    },
+    {
+      "id": "ladder/start-theta--2.0",
+      "kind": "ladder.starting_level",
+      "input": {
+        "rating": {
+          "theta": -2.0,
+          "scored_attempts": 10,
+          "levels_seen": [
+            2,
+            3
+          ]
+        }
+      },
+      "expected": {
+        "starting_level": 1
+      }
+    },
+    {
+      "id": "ladder/start-theta--1.0",
+      "kind": "ladder.starting_level",
+      "input": {
+        "rating": {
+          "theta": -1.0,
+          "scored_attempts": 10,
+          "levels_seen": [
+            2,
+            3
+          ]
+        }
+      },
+      "expected": {
+        "starting_level": 1
+      }
+    },
+    {
+      "id": "ladder/start-theta-0.0",
+      "kind": "ladder.starting_level",
+      "input": {
+        "rating": {
+          "theta": 0.0,
+          "scored_attempts": 10,
+          "levels_seen": [
+            2,
+            3
+          ]
+        }
+      },
+      "expected": {
+        "starting_level": 2
+      }
+    },
+    {
+      "id": "ladder/start-theta-0.75",
+      "kind": "ladder.starting_level",
+      "input": {
+        "rating": {
+          "theta": 0.75,
+          "scored_attempts": 10,
+          "levels_seen": [
+            2,
+            3
+          ]
+        }
+      },
+      "expected": {
+        "starting_level": 3
+      }
+    },
+    {
+      "id": "ladder/start-theta-2.0",
+      "kind": "ladder.starting_level",
+      "input": {
+        "rating": {
+          "theta": 2.0,
+          "scored_attempts": 10,
+          "levels_seen": [
+            2,
+            3
+          ]
+        }
+      },
+      "expected": {
+        "starting_level": 4
+      }
+    },
+    {
+      "id": "help/strong-slip",
+      "kind": "help.action",
+      "input": {
+        "mastery": 0.86,
+        "wrong_in_session": 1,
+        "hint_shown": false
+      },
+      "expected": {
+        "action": "check_again"
+      }
+    },
+    {
+      "id": "help/strong-slip-after-hint",
+      "kind": "help.action",
+      "input": {
+        "mastery": 0.86,
+        "wrong_in_session": 1,
+        "hint_shown": true
+      },
+      "expected": {
+        "action": "worked_solution"
+      }
+    },
+    {
+      "id": "help/developing-first-miss",
+      "kind": "help.action",
+      "input": {
+        "mastery": 0.55,
+        "wrong_in_session": 1,
+        "hint_shown": false
+      },
+      "expected": {
+        "action": "hint"
+      }
+    },
+    {
+      "id": "help/developing-second-miss",
+      "kind": "help.action",
+      "input": {
+        "mastery": 0.55,
+        "wrong_in_session": 2,
+        "hint_shown": false
+      },
+      "expected": {
+        "action": "worked_solution"
+      }
+    },
+    {
+      "id": "help/weak-first-miss",
+      "kind": "help.action",
+      "input": {
+        "mastery": 0.31,
+        "wrong_in_session": 1,
+        "hint_shown": false
+      },
+      "expected": {
+        "action": "micro_lesson"
+      }
+    },
+    {
+      "id": "help/third-miss-teaches",
+      "kind": "help.action",
+      "input": {
+        "mastery": 0.7,
+        "wrong_in_session": 3,
+        "hint_shown": false
+      },
+      "expected": {
+        "action": "micro_lesson"
+      }
+    }
+  ]
+}

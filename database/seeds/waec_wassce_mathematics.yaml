@@ -1,0 +1,1290 @@
+# WAEC General Mathematics syllabus (2027) — draft seed data for database/migrations/001_curriculum.sql
+#
+# Extracted from "docs/syllabus/waec -Mathematics 2027.pdf", section 2 "DETAILED SYLLABUS"
+# (PDF pages 1–18). Pages 19–29 restate the same content as a TOPICS/CONTENTS/NOTES table;
+# pages 29–31 hold units, currencies and other information. Only the prose section is
+# imported, so no content is counted twice.
+#
+# Everything here is a DRAFT. Nothing is approved; a reviewer must approve rows in the
+# order described in docs/syllabus-database.md.
+#
+# Loader conventions (identical to the NECO seed):
+#   * Every curriculum item gets `item_defaults` unless it overrides them.
+#   * `parent` is the parent item's code; the loader resolves it to parent_id.
+#   * display_order = position among siblings in this file, starting at 1.
+#   * `location` + `excerpt` become one curriculum_evidence row.
+#   * Excerpts are the source wording with line breaks joined and PDF text artefacts
+#     fixed: the export writes LaTeX fragments such as "a\(^x\)" and "\(\frac{1}{x}\)",
+#     which are rendered here as a^x and 1/x.
+#
+# Known extraction judgements, for the reviewer:
+#   1. Topic letters follow the summary table on PDF pages 19–29. The first topic prints
+#      as "NUMBER AND NUMERATION" without its letter in the prose section; the table shows
+#      it as A.
+#   2. MATH.B.f (Graphs of Linear and Quadratic functions) prints the same three Contents
+#      lines as MATH.B.g (Linear Inequalities). The printed wording is imported as-is and
+#      flagged; its Notes describe graph work, so the source appears to have an error.
+#   3. MATH.D.c and MATH.G.a each print one Contents line twice. The duplicate is imported
+#      once and noted.
+#   4. Some items in the summary table carry an asterisk. The document prints no legend
+#      for it, so it is not interpreted here.
+
+format_version: 1
+
+validation:
+  source_page_range: [1, 18]     # section 2, "DETAILED SYLLABUS"
+  expected_topic_count: 9
+
+examination:
+  # Product target. The document does not state which WASSCE track (school candidates or
+  # private candidates) it governs, so the track is not claimed here.
+  name: West African Senior School Certificate Examination (WASSCE)
+  short_name: WASSCE
+  exam_body: West African Examinations Council (WAEC)
+  country_code: NG
+  description: >-
+    WAEC 2027 syllabus, written for candidates in The Gambia, Ghana, Liberia, Nigeria and
+    Sierra Leone. Our target market is Nigeria. The document does not state the
+    examination track.
+  status: draft
+
+subject:
+  code: MATH
+  name: General Mathematics
+  status: draft
+
+source_documents:
+  - key: math_syllabus_pdf
+    document_type: syllabus
+    title: WAEC 2027 Syllabus — Mathematics
+    issuer: null                 # no issuer or publisher is printed in the document
+    document_year: null          # "2027" names the examination year, not a publication year
+    file_uri: docs/syllabus/waec -Mathematics 2027.pdf
+    file_sha256: 4ddbe29055ecae154966724543abc6b161fce4b713ae227e8abe3718af62fec2
+    mime_type: application/pdf
+    page_count: 31
+    licence_status: pending      # the schema blocks all permissions until this is 'verified'
+    storage_permission: false
+    student_delivery_permission: false
+    model_context_permission: false
+    processing_status: processed
+    review_status: pending
+
+syllabus_versions:
+  - version_label: waec-2027
+    authority_identifier: null   # no official WAEC version or code printed in the document
+    valid_from: null
+    valid_to: null
+    source_document: math_syllabus_pdf
+    status: draft
+    is_current: false
+
+unmapped:
+  paper_structure:
+    source_location: PDF page 1, section 1 "EXAMINATION SCHEME"
+    papers:
+      - code: P1
+        format: multiple_choice
+        questions: 50
+        answer: all
+        duration_minutes: 90
+        marks: 50
+        drawn_from: common areas of the syllabus
+      - code: P2
+        format: essay
+        questions: 13
+        answer: 10
+        duration_minutes: 150
+        marks: 100
+        sections:
+          - code: A
+            questions: 5
+            answer: all (compulsory)
+            marks: 40
+            description: elementary questions drawn from the common areas of the syllabus
+          - code: B
+            questions: 8
+            answer: 5
+            marks: 60
+            description: >-
+              Questions of greater length and difficulty, including a maximum of two drawn
+              from parts of the syllabuses that may not be peculiar to candidates' home
+              countries.
+  aims:
+    source_location: PDF page 1, aims (1)–(5)
+    note: >-
+      Five stated aims. They describe the examination's purpose rather than assessable
+      units, so they are not imported as curriculum items.
+  units_and_currencies:
+    source_location: PDF pages 29–30, section 3
+    note: >-
+      Units of length, area, capacity and mass, and the currencies of the member countries.
+      Held here until a units table exists.
+  other_information:
+    source_location: PDF pages 30–31, section 4
+    note: >-
+      Use of mathematical and statistical tables approved by WAEC, use of calculators and
+      other examination-room rules.
+
+item_defaults:
+  syllabus_status: uncertain          # official scope/version has not been verified
+  pilot_support_status: undecided     # pick the pilot skills after review
+  review_status: draft
+  learning_objective: null
+  examinable_scope: null
+  expected_depth: null
+  boundary_notes: null
+
+curriculum_items:
+  # ─────────────────────── A NUMBER AND NUMERATION ───────────────────────
+  - code: MATH.A
+    type: topic
+    name: Number and Numeration
+    location: PDF page 1, section 2
+    excerpt: "NUMBER AND NUMERATION"
+
+  - code: MATH.A.a
+    parent: MATH.A
+    type: subtopic
+    name: Number bases
+    location: PDF page 1, A(a)
+    excerpt: "(a) Number bases"
+  - code: MATH.A.a.i
+    parent: MATH.A.a
+    type: skill
+    name: Convert numbers from one base to another
+    location: PDF page 1, A(a)(i)
+    excerpt: "conversion of numbers from one base to another"
+    boundary_notes: "Conversion from one base to base 10 and vice versa; conversion from one base to another base."
+  - code: MATH.A.a.ii
+    parent: MATH.A.a
+    type: skill
+    name: Perform basic operations on number bases
+    location: PDF page 1, A(a)(ii)
+    excerpt: "Basic operations on number bases"
+    boundary_notes: "Addition, subtraction, and multiplication of number bases."
+
+  - code: MATH.A.b
+    parent: MATH.A
+    type: subtopic
+    name: Modular Arithmetic
+    location: PDF page 2, A(b)
+    excerpt: "(b) Modular Arithmetic"
+  - code: MATH.A.b.i
+    parent: MATH.A.b
+    type: skill
+    name: Interpret the concept of modulo arithmetic
+    location: PDF page 2, A(b)(i)
+    excerpt: "Concept of Modulo Arithmetic."
+    boundary_notes: "Interpretation of modulo arithmetic e.g. 6 + 4 = k(mod 7), 3 x 5 = b(mod 6), m = 2(mod 3), etc."
+  - code: MATH.A.b.ii
+    parent: MATH.A.b
+    type: skill
+    name: Add, subtract and multiply in modulo arithmetic
+    location: PDF page 2, A(b)(ii)
+    excerpt: "Addition, subtraction, and multiplication operations in modulo arithmetic."
+  - code: MATH.A.b.iii
+    parent: MATH.A.b
+    type: skill
+    name: Apply modulo arithmetic to daily life
+    location: PDF page 2, A(b)(iii)
+    excerpt: "Application to daily life"
+    boundary_notes: "Relate to market days, clock, shift duty, etc."
+
+  - code: MATH.A.c
+    parent: MATH.A
+    type: subtopic
+    name: Fractions, Decimals and Approximations
+    location: PDF page 2, A(c)
+    excerpt: "(c) Fractions, Decimals, and Approximations"
+  - code: MATH.A.c.i
+    parent: MATH.A.c
+    type: skill
+    name: Perform basic operations on fractions and decimals
+    location: PDF page 2, A(c)(i)
+    excerpt: "Basic operations on fractions and decimals."
+  - code: MATH.A.c.ii
+    parent: MATH.A.c
+    type: skill
+    name: Use approximations and significant figures
+    location: PDF page 2, A(c)(ii)
+    excerpt: "Approximations and significant figures."
+    boundary_notes: "Approximations should be realistic, e.g. a road is not measured correctly to the nearest cm."
+
+  - code: MATH.A.d
+    parent: MATH.A
+    type: subtopic
+    name: Indices
+    location: PDF page 2, A(d)
+    excerpt: "(d) Indices"
+  - code: MATH.A.d.i
+    parent: MATH.A.d
+    type: skill
+    name: Apply the laws of indices
+    location: PDF page 3, A(d)(i)
+    excerpt: "Laws of indices"
+    boundary_notes: "e.g. a^x x a^y = a^(x+y), a^x ÷ a^y = a^(x-y), (a^x)^y = a^(xy), where x, y are real numbers and a ≠ 0. Include simple examples of negative and fractional indices."
+  - code: MATH.A.d.ii
+    parent: MATH.A.d
+    type: skill
+    name: Write numbers in standard form
+    location: PDF page 3, A(d)(ii)
+    excerpt: "Numbers in standard form ( scientific notation)"
+    boundary_notes: "Expression of large and small numbers in standard form, e.g. 375300000 = 3.753 x 10^8, 0.00000035 = 3.5 x 10^-7. Use of tables of squares, square roots, and reciprocals is accepted."
+
+  - code: MATH.A.e
+    parent: MATH.A
+    type: subtopic
+    name: Logarithms
+    location: PDF page 3, A(e)
+    excerpt: "(e) Logarithms"
+  - code: MATH.A.e.i
+    parent: MATH.A.e
+    type: skill
+    name: Relate indices and logarithms
+    location: PDF page 3, A(e)(i)
+    excerpt: "Relationship between indices and logarithms, e.g. y = 10^k implies log_10 y = k."
+  - code: MATH.A.e.ii
+    parent: MATH.A.e
+    type: skill
+    name: Apply the basic rules of logarithms
+    location: PDF page 3, A(e)(ii)
+    excerpt: "Basic rules of logarithms e.g. log_10(pq) = log_10 p + log_10 q, log_10(p/q) = log_10 p – log_10 q, log_10 p^n = n log_10 p."
+  - code: MATH.A.e.iii
+    parent: MATH.A.e
+    type: skill
+    name: Use tables of logarithms and anti-logarithms
+    location: PDF page 3, A(e)(iii)
+    excerpt: "Use of tables of logarithms and anti-logarithms."
+    boundary_notes: "Calculations involve multiplication, division, powers, and roots."
+
+  - code: MATH.A.f
+    parent: MATH.A
+    type: subtopic
+    name: Sequence and Series
+    location: PDF page 3, A(f)
+    excerpt: "(f) Sequence and Series"
+  - code: MATH.A.f.i
+    parent: MATH.A.f
+    type: skill
+    name: Identify patterns of sequences
+    location: PDF page 3, A(f)(i)
+    excerpt: "Patterns of sequences."
+    boundary_notes: "Determine any term of a given sequence. The notation Un = the nth term of a sequence may be used."
+  - code: MATH.A.f.ii
+    parent: MATH.A.f
+    type: skill
+    name: Work with arithmetic and geometric progressions
+    location: PDF page 3, A(f)(ii)
+    excerpt: "Arithmetic progression (A.P.) Geometric Progression (G.P.)"
+    boundary_notes: "Simple cases only, including word problems. Include sum for A.P. and exclude sum for G.P."
+
+  - code: MATH.A.g
+    parent: MATH.A
+    type: subtopic
+    name: Sets
+    location: PDF page 4, A(g)
+    excerpt: "(g) Sets"
+  - code: MATH.A.g.i
+    parent: MATH.A.g
+    type: skill
+    name: Use set ideas and notation
+    location: PDF page 4, A(g)(i)
+    excerpt: "Idea of sets, universal sets, finite and infinite sets, subsets, empty sets, and disjoint sets. Idea of and notation for union, intersection and complement of sets."
+    boundary_notes: "Notations: ℰ, ⊂, ∪, ∩, { }, ∅, P' (the complement of P). Properties, e.g. commutative, associative, and distributive."
+  - code: MATH.A.g.ii
+    parent: MATH.A.g
+    type: skill
+    name: Solve classification problems using Venn diagrams
+    location: PDF page 4, A(g)(ii)
+    excerpt: "Solution of practical problems involving classification using Venn diagrams."
+    boundary_notes: "Use of Venn diagrams restricted to at most 3 sets."
+
+  - code: MATH.A.h
+    parent: MATH.A
+    type: subtopic
+    name: Logical Reasoning
+    location: PDF page 4, A(h)
+    excerpt: "(h) Logical Reasoning"
+  - code: MATH.A.h.i
+    parent: MATH.A.h
+    type: skill
+    name: Work with simple statements, negation and implication
+    location: PDF page 4, A(h)
+    excerpt: "Simple statements. True and false statements. Negation of statements, implications."
+    boundary_notes: "Use of symbols: ⟹, ⇐, use of Venn diagrams."
+
+  - code: MATH.A.i
+    parent: MATH.A
+    type: subtopic
+    name: Positive and negative integers, rational numbers
+    location: PDF page 4, A(i)
+    excerpt: "(i) Positive and negative integers, rational numbers"
+  - code: MATH.A.i.i
+    parent: MATH.A.i
+    type: skill
+    name: Perform the four basic operations on rational numbers
+    location: PDF page 4, A(i)
+    excerpt: "The four basic operations on rational numbers."
+    boundary_notes: "Match rational numbers with points on the number line. Notation: Natural numbers (N), Integers (Z), Rational numbers (Q)."
+
+  - code: MATH.A.j
+    parent: MATH.A
+    type: subtopic
+    name: Surds (Radicals)
+    location: PDF page 4, A(j)
+    excerpt: "(j) Surds (Radicals)"
+  - code: MATH.A.j.i
+    parent: MATH.A.j
+    type: skill
+    name: Simplify and rationalise simple surds
+    location: PDF page 4, A(j)
+    excerpt: "Simplification and rationalisation of simple surds"
+    boundary_notes: "Surds of the form a/√b, a√b and a ± √b where a is a rational number and b is a positive integer. Basic operations on surds; exclude surds of the form a/(b + c√d)."
+
+  - code: MATH.A.k
+    parent: MATH.A
+    type: subtopic
+    name: Matrices and Determinants
+    location: PDF page 5, A(k)
+    excerpt: "(k) Matrices and Determinants"
+  - code: MATH.A.k.i
+    parent: MATH.A.k
+    type: skill
+    name: Identify the order, notation and types of matrices
+    location: PDF page 5, A(k)(i)
+    excerpt: "Identification of order, notation, and types of matrices."
+    boundary_notes: "Not more than 3 x 3 matrices. Idea of columns and rows."
+  - code: MATH.A.k.ii
+    parent: MATH.A.k
+    type: skill
+    name: Add, subtract and multiply matrices
+    location: PDF page 5, A(k)(ii)
+    excerpt: "Addition, subtraction, scalar multiplication, and multiplication of matrices."
+    boundary_notes: "Restrict to 2 x 2 matrices."
+  - code: MATH.A.k.iii
+    parent: MATH.A.k
+    type: skill
+    name: Find the determinant of a matrix
+    location: PDF page 5, A(k)(iii)
+    excerpt: "Determinant of a matrix"
+    boundary_notes: "Application to solving simultaneous linear equations in two variables. Restrict to 2 x 2 matrices."
+
+  - code: MATH.A.l
+    parent: MATH.A
+    type: subtopic
+    name: Ratio, Proportions and Rates
+    location: PDF page 5, A(l)
+    excerpt: "(l) Ratio, Proportions, and Rates"
+  - code: MATH.A.l.i
+    parent: MATH.A.l
+    type: skill
+    name: Work with ratio and proportion between similar quantities
+    location: PDF page 5, A(l)
+    excerpt: "Ratio between two similar quantities. The proportion between two or more similar quantities."
+    boundary_notes: "Relate to real-life situations."
+  - code: MATH.A.l.ii
+    parent: MATH.A.l
+    type: skill
+    name: Solve problems on rates, costs, taxes and speed
+    location: PDF page 5, A(l)
+    excerpt: "Financial partnerships, rates of work, costs, taxes, foreign exchange, density (e.g. population), mass, distance, time, and speed."
+    boundary_notes: "Include average rates and taxes, e.g. VAT, withholding tax."
+
+  - code: MATH.A.m
+    parent: MATH.A
+    type: subtopic
+    name: Percentages
+    location: PDF page 5, A(m)
+    excerpt: "(m) Percentages"
+  - code: MATH.A.m.i
+    parent: MATH.A.m
+    type: skill
+    name: Solve percentage problems in commerce and finance
+    location: PDF page 6, A(m)
+    excerpt: "Simple interest, commission, discount, depreciation, profit and loss, compound interest, hire purchase, and percentage error."
+    boundary_notes: "Limit compound interest to a maximum of 3 years."
+
+  - code: MATH.A.n
+    parent: MATH.A
+    type: subtopic
+    name: Financial Arithmetic
+    location: PDF page 6, A(n)
+    excerpt: "(n) Financial Arithmetic"
+  - code: MATH.A.n.i
+    parent: MATH.A.n
+    type: skill
+    name: Calculate depreciation and amortisation
+    location: PDF page 6, A(n)(i)
+    excerpt: "Depreciation/Amortisation"
+    boundary_notes: "Definition/meaning, calculation of depreciation on fixed assets, computation of amortisation on capitalised assets."
+  - code: MATH.A.n.ii
+    parent: MATH.A.n
+    type: skill
+    name: Solve simple problems on annuities
+    location: PDF page 6, A(n)(ii)
+    excerpt: "Annuities"
+    boundary_notes: "Definition/meaning; solve simple problems on annuities."
+  - code: MATH.A.n.iii
+    parent: MATH.A.n
+    type: skill
+    name: Solve problems on capital market instruments
+    location: PDF page 6, A(n)(iii)
+    excerpt: "Capital Market Instruments"
+    boundary_notes: "Shares/stocks, debentures, bonds, simple problems on interest on bonds and debentures."
+
+  - code: MATH.A.o
+    parent: MATH.A
+    type: subtopic
+    name: Variation
+    location: PDF page 6, A(o)
+    excerpt: "(o) Variation"
+  - code: MATH.A.o.i
+    parent: MATH.A.o
+    type: skill
+    name: Work with direct, inverse, partial and joint variation
+    location: PDF page 6, A(o)
+    excerpt: "Direct, inverse, partial, and joint variations"
+    boundary_notes: "Expression of various types of variation in mathematical symbols, e.g. direct (z ∝ n), inverse (z ∝ 1/n). Application to simple practical problems."
+
+  # ─────────────────────── B ALGEBRAIC PROCESSES ─────────────────────────
+  - code: MATH.B
+    type: topic
+    name: Algebraic Processes
+    location: PDF page 6, section B
+    excerpt: "B. ALGEBRAIC PROCESSES"
+
+  - code: MATH.B.a
+    parent: MATH.B
+    type: subtopic
+    name: Algebraic expressions
+    location: PDF page 6, B(a)
+    excerpt: "(a) Algebraic expressions"
+  - code: MATH.B.a.i
+    parent: MATH.B.a
+    type: skill
+    name: Formulate algebraic expressions from given situations
+    location: PDF page 7, B(a)(i)
+    excerpt: "Formulating algebraic expressions from given situations"
+    boundary_notes: "E.g. find an expression for the cost C Naira of 4 pens at x Naira each and 3 oranges at y Naira each. Solution: C = 4x + 3y."
+  - code: MATH.B.a.ii
+    parent: MATH.B.a
+    type: skill
+    name: Evaluate algebraic expressions
+    location: PDF page 7, B(a)(ii)
+    excerpt: "Evaluation of algebraic expressions"
+    boundary_notes: "E.g. if x = 60 and y = 20, find C. C = 4(60) + 3(20) = 300 naira."
+
+  - code: MATH.B.b
+    parent: MATH.B
+    type: subtopic
+    name: Simple operations on algebraic expressions
+    location: PDF page 7, B(b)
+    excerpt: "(b) Simple operations on algebraic expressions"
+  - code: MATH.B.b.i
+    parent: MATH.B.b
+    type: skill
+    name: Expand algebraic expressions
+    location: PDF page 7, B(b)(i)
+    excerpt: "Expansion"
+    boundary_notes: "e.g. (a + b)(c + d), (a + 3)(c - 4), etc."
+  - code: MATH.B.b.ii
+    parent: MATH.B.b
+    type: skill
+    name: Factorise algebraic expressions
+    location: PDF page 7, B(b)(ii)
+    excerpt: "Factorisation"
+    boundary_notes: "Factorisation of expressions of the form ax + ay, a(b + c) + d(b + c), a² – b², ax² + bx + c where a, b, c are integers. Application of difference of two squares, e.g. 49² – 47² = (49 + 47)(49 – 47) = 192. The notes also require binary operations on real numbers, such as a*b = 2a + b – ab."
+
+  - code: MATH.B.c
+    parent: MATH.B
+    type: subtopic
+    name: Solution of Linear Equations
+    location: PDF page 7, B(c)
+    excerpt: "(c) Solution of Linear Equations"
+  - code: MATH.B.c.i
+    parent: MATH.B.c
+    type: skill
+    name: Solve linear equations in one variable
+    location: PDF page 7, B(c)(i)
+    excerpt: "Linear equations in one variable"
+    boundary_notes: "Solving/finding the truth set (solution set) for linear equations in one variable."
+  - code: MATH.B.c.ii
+    parent: MATH.B.c
+    type: skill
+    name: Solve simultaneous linear equations in two variables
+    location: PDF page 7, B(c)(ii)
+    excerpt: "Simultaneous linear equations in two variables"
+    boundary_notes: "By elimination, substitution and graphical methods. Word problems involving one or two variables."
+
+  - code: MATH.B.d
+    parent: MATH.B
+    type: subtopic
+    name: Change of Subject of a Formula or Relation
+    location: PDF page 8, B(d)
+    excerpt: "(d) Change of Subject of a Formula/Relation"
+  - code: MATH.B.d.i
+    parent: MATH.B.d
+    type: skill
+    name: Change the subject of a formula or relation
+    location: PDF page 8, B(d)(i)
+    excerpt: "Change of subject of a formula/relation"
+    boundary_notes: "e.g. if 1/f = 1/u + 1/v, find v."
+  - code: MATH.B.d.ii
+    parent: MATH.B.d
+    type: skill
+    name: Substitute values into a formula
+    location: PDF page 8, B(d)(ii)
+    excerpt: "Substitution"
+    boundary_notes: "Finding the value of a variable, e.g. evaluating v given the values of u and f."
+
+  - code: MATH.B.e
+    parent: MATH.B
+    type: subtopic
+    name: Quadratic Equations
+    location: PDF page 8, B(e)
+    excerpt: "(e) Quadratic Equations"
+  - code: MATH.B.e.i
+    parent: MATH.B.e
+    type: skill
+    name: Solve quadratic equations
+    location: PDF page 8, B(e)(i)
+    excerpt: "Solution of quadratic equations"
+    boundary_notes: "Using factorisation, i.e. ab = 0 ⇒ either a = 0 or b = 0; by completing the square and use of the formula."
+  - code: MATH.B.e.ii
+    parent: MATH.B.e
+    type: skill
+    name: Form a quadratic equation with given roots
+    location: PDF page 8, B(e)(ii)
+    excerpt: "Forming a quadratic equation with given roots."
+    boundary_notes: "Simple rational roots only, e.g. forming a quadratic equation whose roots are -3 and 5/2 ⇒ (x + 3)(x - 5/2) = 0."
+  - code: MATH.B.e.iii
+    parent: MATH.B.e
+    type: skill
+    name: Apply quadratic equations to practical problems
+    location: PDF page 8, B(e)(iii)
+    excerpt: "Application of the solution of quadratic equation in practical problems."
+
+  - code: MATH.B.f
+    parent: MATH.B
+    type: subtopic
+    name: Graphs of Linear and Quadratic functions
+    location: PDF page 8, B(f)
+    excerpt: "(f) Graphs of Linear and Quadratic functions."
+    boundary_notes: >-
+      Source inconsistency for the reviewer: the three Contents lines printed under this
+      subtopic repeat those of MATH.B.g (Linear Inequalities). The Notes printed here
+      describe graph work — maximum and minimum points, intercepts, axis of symmetry,
+      recognising sketched graphs, using quadratic graphs to solve related equations, and
+      determining the gradient by drawing relevant triangles. The printed Contents are
+      imported unchanged; the skills they should describe need a reviewer's decision.
+  - code: MATH.B.f.i
+    parent: MATH.B.f
+    type: skill
+    name: Read maximum and minimum points from a graph
+    location: PDF page 8, B(f) notes
+    excerpt: "Finding: (i) the coordinates of maximum and minimum points on the graph."
+  - code: MATH.B.f.ii
+    parent: MATH.B.f
+    type: skill
+    name: Identify intercepts, the axis of symmetry and sketched graphs
+    location: PDF page 8, B(f) notes
+    excerpt: "(ii) intercepts on the axes, identifying the axis of symmetry, recognising sketched graphs."
+  - code: MATH.B.f.iii
+    parent: MATH.B.f
+    type: skill
+    name: Use quadratic graphs to solve related equations and find gradients
+    location: PDF page 9, B(f) notes
+    excerpt: "Use of quadratic graphs to solve related equations, e.g. graph of y = x² + 5x + 6 to solve x² + 5x + 4 = 0. Determining the gradient by drawing relevant triangles."
+
+  - code: MATH.B.g
+    parent: MATH.B
+    type: subtopic
+    name: Linear Inequalities
+    location: PDF page 9, B(g)
+    excerpt: "(g) Linear Inequalities"
+  - code: MATH.B.g.i
+    parent: MATH.B.g
+    type: skill
+    name: Solve linear inequalities in one variable and show them on the number line
+    location: PDF page 9, B(g)(i)
+    excerpt: "Solution of linear inequalities in one variable and representation on the number line."
+    boundary_notes: "A truth set is also required. Simple practical problems."
+  - code: MATH.B.g.ii
+    parent: MATH.B.g
+    type: skill
+    name: Solve linear inequalities in two variables graphically
+    location: PDF page 9, B(g)(ii)
+    excerpt: "Graphical solution of linear inequalities in two variables."
+  - code: MATH.B.g.iii
+    parent: MATH.B.g
+    type: skill
+    name: Solve simultaneous linear inequalities in two variables graphically
+    location: PDF page 9, B(g)(iii)
+    excerpt: "Graphical solution of simultaneous linear inequalities in two variables."
+    boundary_notes: "Maximum and minimum values. Application to real-life situations, e.g. minimum cost, maximum profit, linear programming."
+
+  - code: MATH.B.h
+    parent: MATH.B
+    type: subtopic
+    name: Algebraic Fractions
+    location: PDF page 9, B(h)
+    excerpt: "(h) Algebraic Fractions"
+  - code: MATH.B.h.i
+    parent: MATH.B.h
+    type: skill
+    name: Operate on algebraic fractions with monomial denominators
+    location: PDF page 9, B(h)(i)
+    excerpt: "Monomial denominators"
+    boundary_notes: "Simple cases only, e.g. 1/x + 1/y = (x + y)/xy (x ≠ 0, y ≠ 0)."
+  - code: MATH.B.h.ii
+    parent: MATH.B.h
+    type: skill
+    name: Operate on algebraic fractions with binomial denominators
+    location: PDF page 9, B(h)(ii)
+    excerpt: "Binomial denominators"
+    boundary_notes: "Simple cases only, e.g. 1/(x-a) + 1/(x-b) = (2x - a - b)/((x-a)(x-b)) where a and b are constants and x ≠ a or b. Values for which a fraction is undefined, e.g. 1/(x+3) is not defined for x = -3."
+
+  - code: MATH.B.i
+    parent: MATH.B
+    type: subtopic
+    name: Functions and Relations
+    location: PDF page 9, B(i)
+    excerpt: "(i) Functions and Relations"
+  - code: MATH.B.i.i
+    parent: MATH.B.i
+    type: skill
+    name: Identify types of functions and determine the rule of a mapping
+    location: PDF page 10, B(i)
+    excerpt: "Types of functions"
+    boundary_notes: "One-to-one, one-to-many, many-to-one, many-to-many. Functions as a mapping; determination of the rule of a given mapping/function."
+
+  # ───────────────────────────── C MENSURATION ───────────────────────────
+  - code: MATH.C
+    type: topic
+    name: Mensuration
+    location: PDF page 10, section C
+    excerpt: "C. MENSURATION"
+
+  - code: MATH.C.a
+    parent: MATH.C
+    type: subtopic
+    name: Lengths and Perimeters
+    location: PDF page 10, C(a)
+    excerpt: "(a) Lengths and Perimeters"
+  - code: MATH.C.a.i
+    parent: MATH.C.a
+    type: skill
+    name: Use Pythagoras' theorem and the sine and cosine rules to find lengths and distances
+    location: PDF page 10, C(a)(i)
+    excerpt: "Use of Pythagoras' theorem, sine and cosine rules to determine lengths and distances."
+    boundary_notes: "No formal proofs of the theorem and rules are required."
+  - code: MATH.C.a.ii
+    parent: MATH.C.a
+    type: skill
+    name: Find lengths of arcs and perimeters of sectors and segments
+    location: PDF page 10, C(a)(ii)
+    excerpt: "Lengths of arcs of circles, perimeters of sectors and segments."
+  - code: MATH.C.a.iii
+    parent: MATH.C.a
+    type: skill
+    name: Calculate distances along longitudes and latitudes
+    location: PDF page 10, C(a)(iii)
+    excerpt: "Longitudes and Latitudes."
+    boundary_notes: "Distances along latitudes and longitudes and their corresponding angles."
+
+  - code: MATH.C.b
+    parent: MATH.C
+    type: subtopic
+    name: Areas
+    location: PDF page 10, C(b)
+    excerpt: "(b) Areas"
+  - code: MATH.C.b.i
+    parent: MATH.C.b
+    type: skill
+    name: Find areas of triangles and special quadrilaterals
+    location: PDF page 10, C(b)(i)
+    excerpt: "Triangles and special quadrilaterals – rectangles, parallelograms and trapeziums"
+    boundary_notes: "Include area of triangle = ½ base x height and ½ab sinC. Areas of similar figures and compound shapes."
+  - code: MATH.C.b.ii
+    parent: MATH.C.b
+    type: skill
+    name: Find areas of circles, sectors and segments
+    location: PDF page 10, C(b)(ii)
+    excerpt: "Circles, sectors and segments of circles."
+  - code: MATH.C.b.iii
+    parent: MATH.C.b
+    type: skill
+    name: Find surface areas of solids
+    location: PDF page 10, C(b)(iii)
+    excerpt: "Surface areas of cubes, cuboids, cylinders, pyramids, right triangular prisms, cones and spheres"
+    boundary_notes: "Relationship between the sector of a circle and the surface area of a cone."
+
+  - code: MATH.C.c
+    parent: MATH.C
+    type: subtopic
+    name: Volumes
+    location: PDF page 11, C(c)
+    excerpt: "(c) Volumes"
+  - code: MATH.C.c.i
+    parent: MATH.C.c
+    type: skill
+    name: Find volumes of cubes, cuboids, cylinders, cones, pyramids and spheres
+    location: PDF page 11, C(c)(i)
+    excerpt: "Volumes of cubes, cuboids, cylinders, cones, right pyramids and spheres."
+    boundary_notes: "Include volumes of compound shapes."
+  - code: MATH.C.c.ii
+    parent: MATH.C.c
+    type: skill
+    name: Find volumes of similar solids
+    location: PDF page 11, C(c)(ii)
+    excerpt: "Volumes of similar solids"
+
+  # ──────────────────────────── D PLANE GEOMETRY ─────────────────────────
+  - code: MATH.D
+    type: topic
+    name: Plane Geometry
+    location: PDF page 11, section D
+    excerpt: "D. PLANE GEOMETRY"
+
+  - code: MATH.D.a
+    parent: MATH.D
+    type: subtopic
+    name: Angles
+    location: PDF page 11, D(a)
+    excerpt: "(a) Angles"
+    boundary_notes: "The degree as a unit of measure. Consider acute, obtuse and reflex angles."
+  - code: MATH.D.a.i
+    parent: MATH.D.a
+    type: skill
+    name: Use the fact that angles at a point add up to 360°
+    location: PDF page 11, D(a)(i)
+    excerpt: "Angles at a point add up to 360°."
+  - code: MATH.D.a.ii
+    parent: MATH.D.a
+    type: skill
+    name: Use supplementary adjacent angles on a straight line
+    location: PDF page 11, D(a)(ii)
+    excerpt: "Adjacent angles on a straight line are supplementary."
+  - code: MATH.D.a.iii
+    parent: MATH.D.a
+    type: skill
+    name: Use equal vertically opposite angles
+    location: PDF page 11, D(a)(iii)
+    excerpt: "Vertically opposite angles are equal."
+
+  - code: MATH.D.b
+    parent: MATH.D
+    type: subtopic
+    name: Angles and intercepts on parallel lines
+    location: PDF page 11, D(b)
+    excerpt: "(b) Angles and intercepts on parallel lines."
+  - code: MATH.D.b.i
+    parent: MATH.D.b
+    type: skill
+    name: Use equal alternate angles
+    location: PDF page 11, D(b)(i)
+    excerpt: "Alternate angles are equal."
+  - code: MATH.D.b.ii
+    parent: MATH.D.b
+    type: skill
+    name: Use equal corresponding angles
+    location: PDF page 11, D(b)(ii)
+    excerpt: "Corresponding angles are equal."
+  - code: MATH.D.b.iii
+    parent: MATH.D.b
+    type: skill
+    name: Use supplementary interior opposite angles
+    location: PDF page 11, D(b)(iii)
+    excerpt: "Interior opposite angles are supplementary"
+  - code: MATH.D.b.iv
+    parent: MATH.D.b
+    type: skill
+    name: Apply the intercept theorem
+    location: PDF page 11, D(b)(iv)
+    excerpt: "Intercept theorem."
+    boundary_notes: "Application to proportional division of a line segment."
+
+  - code: MATH.D.c
+    parent: MATH.D
+    type: subtopic
+    name: Triangles and Polygons
+    location: PDF page 12, D(c)
+    excerpt: "(c) Triangles and Polygons."
+    boundary_notes: >-
+      The source prints "(v) Properties of special quadrilaterals" twice; it is imported
+      once. The Notes state that formal proofs of the underlined statements may be
+      required, but the underlining is not preserved in the text extraction, so which
+      statements they are must be confirmed against the PDF.
+  - code: MATH.D.c.i
+    parent: MATH.D.c
+    type: skill
+    name: Use the angle sum of a triangle
+    location: PDF page 12, D(c)(i)
+    excerpt: "The sum of the angles of a triangle is 2 right angles."
+  - code: MATH.D.c.ii
+    parent: MATH.D.c
+    type: skill
+    name: Use the exterior angle of a triangle
+    location: PDF page 12, D(c)(ii)
+    excerpt: "The exterior angle of a triangle equals the sum of the two interior opposite angles."
+  - code: MATH.D.c.iii
+    parent: MATH.D.c
+    type: skill
+    name: Identify congruent triangles
+    location: PDF page 12, D(c)(iii)
+    excerpt: "Congruent triangles."
+    boundary_notes: "Conditions to be known but proofs not required, e.g. SSS, SAS."
+  - code: MATH.D.c.iv
+    parent: MATH.D.c
+    type: skill
+    name: Use properties of special triangles
+    location: PDF page 12, D(c)(iv)
+    excerpt: "Properties of special triangles - Isosceles, equilateral, right-angled, etc"
+    boundary_notes: "Use symmetry where applicable."
+  - code: MATH.D.c.v
+    parent: MATH.D.c
+    type: skill
+    name: Use properties of special quadrilaterals
+    location: PDF page 12, D(c)(v)
+    excerpt: "Properties of special quadrilaterals – parallelogram, rhombus, square, rectangle, trapezium."
+  - code: MATH.D.c.vi
+    parent: MATH.D.c
+    type: skill
+    name: Use properties of similar triangles
+    location: PDF page 12, D(c)(vi)
+    excerpt: "Properties of similar triangles."
+    boundary_notes: "Equiangular properties and ratio of sides and areas."
+  - code: MATH.D.c.vii
+    parent: MATH.D.c
+    type: skill
+    name: Find the angle sum of a polygon
+    location: PDF page 12, D(c)(vii)
+    excerpt: "The sum of the angles of a polygon"
+    boundary_notes: "Sum of interior angles = (n - 2)180º or (2n – 4) right angles, where n is the number of sides."
+  - code: MATH.D.c.viii
+    parent: MATH.D.c
+    type: skill
+    name: Use the property of exterior angles of a polygon
+    location: PDF page 12, D(c)(viii)
+    excerpt: "Property of exterior angles of a polygon."
+  - code: MATH.D.c.ix
+    parent: MATH.D.c
+    type: skill
+    name: Use equal areas of parallelograms on the same base
+    location: PDF page 12, D(c)(ix)
+    excerpt: "Parallelograms on the same base and between the same parallels are equal in area."
+
+  - code: MATH.D.d
+    parent: MATH.D
+    type: subtopic
+    name: Circles
+    location: PDF page 12, D(d)
+    excerpt: "(d) Circles"
+    boundary_notes: "The Notes state that formal proofs of the underlined statements may be required; the underlining is not preserved in the text extraction."
+  - code: MATH.D.d.i
+    parent: MATH.D.d
+    type: skill
+    name: Work with chords
+    location: PDF page 13, D(d)(i)
+    excerpt: "Chords."
+    boundary_notes: "Angles subtended by chords in a circle and at the centre. Perpendicular bisectors of chords."
+  - code: MATH.D.d.ii
+    parent: MATH.D.d
+    type: skill
+    name: Use the angle at the centre and at the circumference
+    location: PDF page 13, D(d)(ii)
+    excerpt: "The angle which an arc of a circle subtends at the centre of the circle is twice that which it subtends at any point on the remaining part of the circumference."
+  - code: MATH.D.d.iii
+    parent: MATH.D.d
+    type: skill
+    name: Use the angle in a semicircle
+    location: PDF page 13, D(d)(iii)
+    excerpt: "Any angle subtended at the circumference by a diameter is a right angle."
+  - code: MATH.D.d.iv
+    parent: MATH.D.d
+    type: skill
+    name: Use equal angles in the same segment
+    location: PDF page 13, D(d)(iv)
+    excerpt: "Angles in the same segment are equal."
+  - code: MATH.D.d.v
+    parent: MATH.D.d
+    type: skill
+    name: Use supplementary angles in opposite segments
+    location: PDF page 13, D(d)(v)
+    excerpt: "Angles in opposite segments are supplementary."
+  - code: MATH.D.d.vi
+    parent: MATH.D.d
+    type: skill
+    name: Use the perpendicularity of tangent and radius
+    location: PDF page 13, D(d)(vi)
+    excerpt: "Perpendicularity of tangent and radius."
+  - code: MATH.D.d.vii
+    parent: MATH.D.d
+    type: skill
+    name: Apply the tangent-chord (alternate segment) property
+    location: PDF page 13, D(d)(vii)
+    excerpt: "If a tangent is drawn to a circle and from the point of contact a chord is drawn, each angle which this chord makes with the tangent is equal to the angle in the alternate segment"
+
+  - code: MATH.D.e
+    parent: MATH.D
+    type: subtopic
+    name: Construction
+    location: PDF page 13, D(e)
+    excerpt: "(e) Construction"
+  - code: MATH.D.e.i
+    parent: MATH.D.e
+    type: skill
+    name: Construct bisectors of angles and line segments
+    location: PDF page 13, D(e)(i)
+    excerpt: "Bisectors of angles and line segments"
+  - code: MATH.D.e.ii
+    parent: MATH.D.e
+    type: skill
+    name: Construct a line parallel or perpendicular to a given line
+    location: PDF page 13, D(e)(ii)
+    excerpt: "Line parallel or perpendicular to a given line."
+  - code: MATH.D.e.iii
+    parent: MATH.D.e
+    type: skill
+    name: Construct angles of 90°, 60°, 45° and 30° and an angle equal to a given angle
+    location: PDF page 13, D(e)(iii)
+    excerpt: "Angles e.g. 90°, 60°, 45°, 30°, and an angle equal to a given angle."
+    boundary_notes: "Include a combination of these angles, e.g. 75°, 105°, 135°."
+  - code: MATH.D.e.iv
+    parent: MATH.D.e
+    type: skill
+    name: Construct triangles and quadrilaterals from sufficient data
+    location: PDF page 13, D(e)(iv)
+    excerpt: "Triangles and quadrilaterals from sufficient data."
+
+  - code: MATH.D.f
+    parent: MATH.D
+    type: subtopic
+    name: Loci
+    location: PDF page 13, D(f)
+    excerpt: "(f) Loci — Knowledge of the loci listed below and their intersections in 2 dimensions."
+    boundary_notes: "Consider parallel and intersecting lines. Application to real-life situations."
+  - code: MATH.D.f.i
+    parent: MATH.D.f
+    type: skill
+    name: Find the locus of points at a given distance from a point
+    location: PDF page 14, D(f)(i)
+    excerpt: "Points at a given distance from a given point."
+  - code: MATH.D.f.ii
+    parent: MATH.D.f
+    type: skill
+    name: Find the locus of points equidistant from two points
+    location: PDF page 14, D(f)(ii)
+    excerpt: "Points equidistant from two given points."
+  - code: MATH.D.f.iii
+    parent: MATH.D.f
+    type: skill
+    name: Find the locus of points equidistant from two straight lines
+    location: PDF page 14, D(f)(iii)
+    excerpt: "Points equidistant from two given straight lines."
+  - code: MATH.D.f.iv
+    parent: MATH.D.f
+    type: skill
+    name: Find the locus of points at a given distance from a straight line
+    location: PDF page 14, D(f)(iv)
+    excerpt: "Points at a given distance from a given straight line."
+
+  # ────────────────── E COORDINATE GEOMETRY OF STRAIGHT LINES ────────────
+  - code: MATH.E
+    type: topic
+    name: Coordinate Geometry of Straight Lines
+    location: PDF page 14, section E
+    excerpt: "E. COORDINATE GEOMETRY OF STRAIGHT LINES"
+
+  - code: MATH.E.a
+    parent: MATH.E
+    type: subtopic
+    name: Coordinate geometry of straight lines
+    location: PDF page 14, E(a)
+    excerpt: "(a) Coordinate geometry of straight lines"
+  - code: MATH.E.a.i
+    parent: MATH.E.a
+    type: skill
+    name: Work with the x-y plane
+    location: PDF page 14, E(a)(i)
+    excerpt: "Concept of the x-y plane."
+  - code: MATH.E.a.ii
+    parent: MATH.E.a
+    type: skill
+    name: Use coordinates to find midpoints, distances, gradients and equations of lines
+    location: PDF page 14, E(a)(ii)
+    excerpt: "Coordinates of points on the x-y plane."
+    boundary_notes: "The midpoint of two points; distance between two points, |PQ| = √((x₂ - x₁)² + (y₂ - y₁)²); gradient (slope) m = (y₂ - y₁)/(x₂ - x₁); equation of a line in the form y = mx + c and y - y₁ = m(x - x₁)."
+
+  # ───────────────────────────── F TRIGONOMETRY ──────────────────────────
+  - code: MATH.F
+    type: topic
+    name: Trigonometry
+    location: PDF page 14, section F
+    excerpt: "F. TRIGONOMETRY"
+
+  - code: MATH.F.a
+    parent: MATH.F
+    type: subtopic
+    name: Sine, Cosine and Tangent of an angle
+    location: PDF page 14, F(a)
+    excerpt: "(a) Sine, Cosine and Tangent of an angle."
+  - code: MATH.F.a.i
+    parent: MATH.F.a
+    type: skill
+    name: Find sine, cosine and tangent of acute angles
+    location: PDF page 14, F(a)(i)
+    excerpt: "Sine, Cosine and Tangent of acute angles."
+    boundary_notes: "Use of right-angled triangles."
+  - code: MATH.F.a.ii
+    parent: MATH.F.a
+    type: skill
+    name: Use tables of trigonometric ratios
+    location: PDF page 14, F(a)(ii)
+    excerpt: "Use of tables of trigonometric ratios."
+  - code: MATH.F.a.iii
+    parent: MATH.F.a
+    type: skill
+    name: Use the trigonometric ratios of 30°, 45° and 60°
+    location: PDF page 14, F(a)(iii)
+    excerpt: "Trigonometric ratios of 30°, 45° and 60°."
+    boundary_notes: "Without the use of tables."
+  - code: MATH.F.a.iv
+    parent: MATH.F.a
+    type: skill
+    name: Find sine, cosine and tangent of angles from 0° to 360°
+    location: PDF page 15, F(a)(iv)
+    excerpt: "Sine, cosine and tangent of angles from 0° to 360°."
+    boundary_notes: "Relate to the unit circle, 0º ≤ x ≤ 360º."
+  - code: MATH.F.a.v
+    parent: MATH.F.a
+    type: skill
+    name: Draw and read graphs of sine and cosine
+    location: PDF page 15, F(a)(v)
+    excerpt: "Graphs of sine and cosine."
+    boundary_notes: "e.g. y = a sin x, y = b cos x."
+  - code: MATH.F.a.vi
+    parent: MATH.F.a
+    type: skill
+    name: Use graphs of trigonometric ratios to solve equations
+    location: PDF page 15, F(a)(vi)
+    excerpt: "Graphs of trigonometric ratios"
+    boundary_notes: "Graphs of simultaneous linear and trigonometric equations, e.g. y = a sin x + b cos x."
+
+  - code: MATH.F.b
+    parent: MATH.F
+    type: subtopic
+    name: Angles of elevation and depression
+    location: PDF page 15, F(b)
+    excerpt: "(b) Angles of elevation and depression"
+    boundary_notes: "Simple problems only."
+  - code: MATH.F.b.i
+    parent: MATH.F.b
+    type: skill
+    name: Calculate angles of elevation and depression
+    location: PDF page 15, F(b)(i)
+    excerpt: "Calculating angles of elevation and depression."
+  - code: MATH.F.b.ii
+    parent: MATH.F.b
+    type: skill
+    name: Apply angles of elevation and depression to heights and distances
+    location: PDF page 15, F(b)(ii)
+    excerpt: "Application to heights and distances."
+
+  - code: MATH.F.c
+    parent: MATH.F
+    type: subtopic
+    name: Bearings
+    location: PDF page 15, F(c)
+    excerpt: "(c) Bearings"
+    boundary_notes: "Notation e.g. 035º, N35ºE. Simple problems only; use of a diagram is required. Sine and cosine rules may be used."
+  - code: MATH.F.c.i
+    parent: MATH.F.c
+    type: skill
+    name: Find the bearing of one point from another
+    location: PDF page 15, F(c)(i)
+    excerpt: "Bearing of one point from another."
+  - code: MATH.F.c.ii
+    parent: MATH.F.c
+    type: skill
+    name: Calculate distances and angles from bearings
+    location: PDF page 15, F(c)(ii)
+    excerpt: "Calculation of distances and angles"
+
+  # ────────────────────────── G INTRODUCTORY CALCULUS ────────────────────
+  - code: MATH.G
+    type: topic
+    name: Introductory Calculus
+    location: PDF page 16, section G
+    excerpt: "G. INTRODUCTORY CALCULUS"
+
+  - code: MATH.G.a
+    parent: MATH.G
+    type: subtopic
+    name: Introductory calculus
+    location: PDF page 16, G(a)
+    excerpt: "(a) Introductory calculus"
+    boundary_notes: >-
+      The source prints "(i) Differentiation of algebraic functions." twice; it is imported
+      once.
+  - code: MATH.G.a.i
+    parent: MATH.G.a
+    type: skill
+    name: Differentiate algebraic functions
+    location: PDF page 16, G(a)(i)
+    excerpt: "Differentiation of algebraic functions."
+    boundary_notes: "Concept/meaning of differentiation and the derived function dy/dx; relationship between the gradient of a curve at a point and the differential coefficient. Standard derivatives, e.g. if y = x², dy/dx = 2x; if s = 2t³ + 4, ds/dt = v = 6t². Application to real-life situations such as maximum and minimum values and rates of change."
+  - code: MATH.G.a.ii
+    parent: MATH.G.a
+    type: skill
+    name: Integrate simple algebraic functions
+    location: PDF page 16, G(a)(ii)
+    excerpt: "Integration of simple Algebraic functions."
+    boundary_notes: "Meaning/concept of integration; evaluation of simple definite algebraic equations."
+
+  # ───────────────────── H STATISTICS AND PROBABILITY ────────────────────
+  - code: MATH.H
+    type: topic
+    name: Statistics and Probability
+    location: PDF page 16, section H
+    excerpt: "H. STATISTICS AND PROBABILITY."
+
+  - code: MATH.H.a
+    parent: MATH.H
+    type: subtopic
+    name: Statistics
+    location: PDF page 16, H(a)
+    excerpt: "(a) Statistic"
+  - code: MATH.H.a.i
+    parent: MATH.H.a
+    type: skill
+    name: Construct and read frequency distributions
+    location: PDF page 16, H(a)(i)
+    excerpt: "Frequency distribution"
+    boundary_notes: "Construction of frequency distribution tables; concept of class intervals, class mark and class boundary."
+  - code: MATH.H.a.ii
+    parent: MATH.H.a
+    type: skill
+    name: Draw and interpret pie charts, bar charts, histograms and frequency polygons
+    location: PDF page 16, H(a)(ii)
+    excerpt: "Pie charts, bar charts, histograms and frequency polygons"
+    boundary_notes: "Reading and drawing simple inferences from graphs; interpreting data in histograms. Exclude unequal class intervals."
+  - code: MATH.H.a.iii
+    parent: MATH.H.a
+    type: skill
+    name: Calculate mean, median and mode for discrete and grouped data
+    location: PDF page 16, H(a)(iii)
+    excerpt: "Mean, median and mode for both discrete and grouped data."
+    boundary_notes: "Use of an assumed mean is acceptable but not required. For grouped data the mode is estimated from the histogram, while the median, quartiles and percentiles are estimated from the cumulative frequency curve."
+  - code: MATH.H.a.iv
+    parent: MATH.H.a
+    type: skill
+    name: Draw and use the cumulative frequency curve
+    location: PDF page 16, H(a)(iv)
+    excerpt: "Cumulative frequency curve (Ogive)."
+    boundary_notes: "Application of the cumulative frequency curve to everyday life."
+  - code: MATH.H.a.v
+    parent: MATH.H.a
+    type: skill
+    name: Calculate measures of dispersion
+    location: PDF page 16, H(a)(v)
+    excerpt: "Measures of Dispersion: range, semi-interquartile/interquartile range, variance, mean deviation and standard deviation."
+    boundary_notes: "Mean deviation is the mean of the absolute deviations from the mean; variance is the square of the standard deviation. Includes standard deviation of grouped data."
+
+  - code: MATH.H.b
+    parent: MATH.H
+    type: subtopic
+    name: Probability
+    location: PDF page 17, H(b)
+    excerpt: "(b) Probability"
+    boundary_notes: "Simple practical problems only. Interpretation of 'and' and 'or' in probability."
+  - code: MATH.H.b.i
+    parent: MATH.H.b
+    type: skill
+    name: Find experimental and theoretical probability
+    location: PDF page 17, H(b)(i)
+    excerpt: "Experimental and theoretical probability."
+    boundary_notes: "Include equally likely events, e.g. probability of throwing a six with a fair die or a head when tossing a fair coin."
+  - code: MATH.H.b.ii
+    parent: MATH.H.b
+    type: skill
+    name: Add probabilities for mutually exclusive and independent events
+    location: PDF page 17, H(b)(ii)
+    excerpt: "Addition of probabilities for mutually exclusive and independent events."
+  - code: MATH.H.b.iii
+    parent: MATH.H.b
+    type: skill
+    name: Multiply probabilities for independent events
+    location: PDF page 17, H(b)(iii)
+    excerpt: "Multiplication of probabilities for independent events."
+    boundary_notes: "With replacement and without replacement."
+
+  # ────────────────────── I VECTORS AND TRANSFORMATION ───────────────────
+  - code: MATH.I
+    type: topic
+    name: Vectors and Transformation
+    location: PDF page 17, section I
+    excerpt: "I. VECTORS AND TRANSFORMATION"
+
+  - code: MATH.I.a
+    parent: MATH.I
+    type: subtopic
+    name: Vectors in a Plane
+    location: PDF page 17, I(a)
+    excerpt: "(a) Vectors in a Plane"
+    boundary_notes: "Knowledge of graphical representation is necessary."
+  - code: MATH.I.a.i
+    parent: MATH.I.a
+    type: skill
+    name: Treat vectors as directed line segments
+    location: PDF page 17, I(a)
+    excerpt: "Vectors as a directed line segments."
+  - code: MATH.I.a.ii
+    parent: MATH.I.a
+    type: skill
+    name: Find the Cartesian components of a vector
+    location: PDF page 17, I(a)
+    excerpt: "Cartesian components of a vector"
+    boundary_notes: "e.g. (5, 060º) written as the column vector (5 sin 60°, 5 cos 60°)."
+  - code: MATH.I.a.iii
+    parent: MATH.I.a
+    type: skill
+    name: Operate on vectors
+    location: PDF page 18, I(a)
+    excerpt: "Magnitude of a vector, equal vectors, addition and subtraction of vectors, zero vector, parallel vectors, multiplication of a vector by a scalar."
+
+  - code: MATH.I.b
+    parent: MATH.I
+    type: subtopic
+    name: Transformation in the Cartesian Plane
+    location: PDF page 18, I(b)
+    excerpt: "(b) Transformation in the Cartesian Plane"
+  - code: MATH.I.b.i
+    parent: MATH.I.b
+    type: skill
+    name: Reflect points and shapes in the Cartesian plane
+    location: PDF page 18, I(b)
+    excerpt: "Reflection of points and shapes in the Cartesian Plane."
+    boundary_notes: "Restrict to the x and y axes and the lines x = k, y = x and y = kx, where k is an integer. Determination of mirror lines (symmetry)."
+  - code: MATH.I.b.ii
+    parent: MATH.I.b
+    type: skill
+    name: Rotate points and shapes in the Cartesian plane
+    location: PDF page 18, I(b)
+    excerpt: "Rotation of points and shapes in the Cartesian Plane."
+    boundary_notes: "Rotation about the origin and about a point other than the origin. Determination of the angle of rotation; restrict angles of rotation to -180º to 180º."
+  - code: MATH.I.b.iii
+    parent: MATH.I.b
+    type: skill
+    name: Translate points and shapes in the Cartesian plane
+    location: PDF page 18, I(b)
+    excerpt: "Translation of points and shapes in the Cartesian Plane."
+    boundary_notes: "Translation using a translation vector."
+  - code: MATH.I.b.iv
+    parent: MATH.I.b
+    type: skill
+    name: Enlarge plane figures by a given scale factor
+    location: PDF page 18, I(b)
+    excerpt: "Enlargement."
+    boundary_notes: "Draw the images of plane figures under enlargement with a given centre for a given scale factor. Use the given scales to enlarge or reduce plane figures."

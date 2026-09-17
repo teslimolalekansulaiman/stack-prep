@@ -1,0 +1,412 @@
+# Difficulty levels (1-5) for WASSCE November 2013, English Language 2 (Objective Test).
+#
+# Judged against a typical Nigerian SS3 candidate. Source items:
+# docs/questions/waec/english/transcription_2013.yaml
+#
+# Questions 76-100 are cloze items whose passage prose is cropped in the scan; where the
+# missing text would change the judgement, level_confidence is low.
+format_version: 1
+paper:
+  exam_year: 2013
+  paper_code: "302213"
+levels:
+  - number: 1
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Complicated' and 'simple' are everyday words; only 'light' is even mildly distracting."
+  - number: 2
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Compulsion' is moderately formal and 'command' competes as a near-synonym of forced action."
+  - number: 3
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Accidentally' versus 'deliberately' is a common everyday pair and no other option is an adverb of intent."
+  - number: 4
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Predecessors' is a strong trap because it also refers to people who came before."
+  - number: 5
+    proposed_level: 4
+    level_confidence: high
+    reason: "Requires knowing 'pragmatic' means practical, with 'logical' and 'subjective' both plausible to a guesser."
+  - number: 6
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Commend'/'condemn' is a formal near-homophone pair and 'abuse' is a plausible negative alternative."
+  - number: 7
+    proposed_level: 3
+    level_confidence: high
+    reason: "All four options are 'dis-/des-' abstract nouns, so 'distress' and 'disgust' compete with 'despair'."
+  - number: 8
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Take-off' is everyday aviation vocabulary; only 'descent' distracts, and it means the same as landing."
+  - number: 9
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Approximate' and 'appropriate' look alike, so the item tests careful reading as much as meaning."
+  - number: 10
+    proposed_level: 4
+    level_confidence: high
+    reason: "'Unhappy' is a very strong distractor; only the precise antonym of 'content' (dissatisfied) fits the welfare context."
+  - number: 11
+    proposed_level: 3
+    level_confidence: high
+    reason: "Four confusables (stationary/stagnant/stationed/stationery) with 'stationed' genuinely tempting."
+  - number: 12
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Win' is the habitual error here; the item turns on which verb takes a direct object."
+  - number: 13
+    proposed_level: 1
+    level_confidence: high
+    reason: "Basic school vocabulary: a poem has stanzas and the other three units belong to prose."
+  - number: 14
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Imitating' and 'copying' are close in sense; only 'impersonating' carries the criminal meaning."
+  - number: 15
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Inherited' is everyday; 'acquired' is the only mildly plausible rival."
+  - number: 16
+    proposed_level: 4
+    level_confidence: high
+    reason: "'Console' competes strongly on meaning, so the answer turns on which verb takes 'with' plus the less common 'commiserate'."
+  - number: 17
+    proposed_level: 3
+    level_confidence: high
+    reason: "The near-homophone 'faithful' catches many, and 'frightful' also fits a disaster loosely."
+  - number: 18
+    proposed_level: 3
+    level_confidence: high
+    reason: "Depends on knowing the fixed phrase 'come to the limelight'; 'front' is otherwise attractive."
+  - number: 19
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Approved' competes because governments also approve things; 'authorized' is the precise fit before an infinitive."
+  - number: 20
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Gallantly' is standard war vocabulary and only it matches being honoured."
+  - number: 21
+    proposed_level: 3
+    level_confidence: high
+    reason: "'The one after the last' is a deliberate mirror-image trap for 'the last but one'."
+  - number: 22
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Smell a rat' is one of the best-known idioms and the literal option is obviously wrong."
+  - number: 23
+    proposed_level: 4
+    level_confidence: high
+    reason: "Two-step reasoning about a non-defining relative clause; option A is highly plausible without that rule."
+  - number: 24
+    proposed_level: 3
+    level_confidence: high
+    reason: "'A tall story' is fairly familiar, but the literal 'too long' reading catches weaker candidates."
+  - number: 25
+    proposed_level: 4
+    level_confidence: high
+    reason: "'Keep the wolf from the door' needs real idiom familiarity, and 'working harder than before' fits the surface sense."
+  - number: 26
+    proposed_level: 5
+    level_confidence: medium
+    reason: "Turns on the fine contrast between 'little' and 'a little', and even the keyed answer is arguable against option A."
+  - number: 27
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Could not but' is a formal structure, though 'inevitable' stands out once the double negative is unpacked."
+  - number: 28
+    proposed_level: 4
+    level_confidence: high
+    reason: "'Forlorn' is uncommon and option C restates the surface action of shouting for help."
+  - number: 29
+    proposed_level: 3
+    level_confidence: high
+    reason: "'A shot in the dark' is reasonably common; the literal shooting option is the only real trap."
+  - number: 30
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Stop short of' is a moderately subtle idiom, with 'arrested him then released him' as the competing near-miss."
+  - number: 31
+    proposed_level: 5
+    level_confidence: medium
+    reason: "'Limited', 'confined' and 'controlled' are all defensible in the frame, so the distinction is very fine."
+  - number: 32
+    proposed_level: 4
+    level_confidence: high
+    reason: "'Abortive' is formal and low-frequency, while 'senseless' matches a loose reading of 'futile'."
+  - number: 33
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Skilful' is a real competitor because 'craft' also means skill; context supplies the negative sense."
+  - number: 34
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Unsuitable' maps directly onto 'inappropriate' and the other options shift meaning noticeably."
+  - number: 35
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Calamity' is common WASSCE vocabulary; only 'accident' distracts, and it understates the clash."
+  - number: 36
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Harmoniously' is somewhat formal, though the contrast with 'warring factions' rules out the others."
+  - number: 37
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Consistency' and 'resolution' both overlap in sense; 'persistence' is the exact match."
+  - number: 38
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Headstrong' is widely known and 'stubborn' is its everyday gloss."
+  - number: 39
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Punished' is a strong distractor because a matron may do both; 'rebuked' is verbal only."
+  - number: 40
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Enlighten' means educate in everyday Nigerian usage and no other option fits 'about the project'."
+  - number: 41
+    proposed_level: 4
+    level_confidence: high
+    reason: "Two decisions at once: collective subject takes a singular verb, and the active 'advised' rules out the 'been' forms."
+  - number: 42
+    proposed_level: 4
+    level_confidence: high
+    reason: "'Run across' also means to meet by chance, so the item rests on a fine collocational preference."
+  - number: 43
+    proposed_level: 2
+    level_confidence: high
+    reason: "The short answer simply repeats subject-verb order; 'are they' is the only inversion trap."
+  - number: 44
+    proposed_level: 2
+    level_confidence: high
+    reason: "The 'so ... that' result pattern is routine; 'too' is the one competing intensifier."
+  - number: 45
+    proposed_level: 4
+    level_confidence: high
+    reason: "The tag must attach to the main clause 'My father insisted', not the nearer 'we should be' that pulls toward 'shouldn't we'."
+  - number: 46
+    proposed_level: 3
+    level_confidence: high
+    reason: "'To' is the natural-sounding error; the answer depends on the fixed pattern 'leave X for Y'."
+  - number: 47
+    proposed_level: 2
+    level_confidence: high
+    reason: "A habitual 'whenever' clause with a present main verb makes 'hear' straightforward."
+  - number: 48
+    proposed_level: 2
+    level_confidence: high
+    reason: "'If I were ... I would' is the most drilled conditional pattern in the syllabus."
+  - number: 49
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Hung' is the everyday form and the only rival; the item needs the execution-specific 'hanged'."
+  - number: 50
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Sentenced to' is a common collocation; 'for' is the only mildly plausible alternative."
+  - number: 51
+    proposed_level: 2
+    level_confidence: high
+    reason: "The past 'was impeached' forces 'had'; only 'has had' offers any temptation."
+  - number: 52
+    proposed_level: 2
+    level_confidence: high
+    reason: "'The' plus a family-wide comparison signals the superlative; 'cleverer' is the single trap."
+  - number: 53
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Who' is very tempting since the choices are people; 'which' is required for a closed set of three."
+  - number: 54
+    proposed_level: 3
+    level_confidence: high
+    reason: "Inverted 'Had I been' signals the third conditional, though 'would sack' attracts those who miss the inversion."
+  - number: 55
+    proposed_level: 2
+    level_confidence: high
+    reason: "The earlier of two past events takes the past perfect; 'received' is the only real competitor."
+  - number: 56
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Break off' is a genuine rival since engagements break off, so the item tests a specific collocation."
+  - number: 57
+    proposed_level: 2
+    level_confidence: high
+    reason: "The parallel with 'his brother's' makes the possessive pronoun 'his' clear; 'he's' is a spelling trap only."
+  - number: 58
+    proposed_level: 3
+    level_confidence: high
+    reason: "Depends entirely on recognising the fixed expression 'as and when due'; nothing in the grammar helps."
+  - number: 59
+    proposed_level: 3
+    level_confidence: high
+    reason: "'His' and 'her' both sound natural for a baby, and 'it's' adds a spelling trap alongside 'its'."
+  - number: 60
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Accuse somebody of' is a high-frequency preposition pattern; 'for' is the usual slip."
+  - number: 61
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Who' is the common spoken choice; the answer needs the object form after the preposition 'to'."
+  - number: 62
+    proposed_level: 4
+    level_confidence: high
+    reason: "Cleft sentence agreement: the verb must track 'you' rather than 'it', and the present tense must be kept, so two steps."
+  - number: 63
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Everyone' is singular and 'entitled' demands 'be', which eliminates three options quickly."
+  - number: 64
+    proposed_level: 4
+    level_confidence: high
+    reason: "'Many a' looks plural, so the singular verb is counter-intuitive without the specific rule."
+  - number: 65
+    proposed_level: 3
+    level_confidence: high
+    reason: "'No' after the already-negative 'did not have' is the double-negative trap the item is built on."
+  - number: 66
+    proposed_level: 2
+    level_confidence: high
+    reason: "'In' with a month and year is basic; 'on' is the only distractor with any pull."
+  - number: 67
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Had better' plus bare infinitive is a common structure and 'to turn' is the single likely slip."
+  - number: 68
+    proposed_level: 3
+    level_confidence: high
+    reason: "The hypercorrect 'Bisi and I' is a very strong pull against the required object form 'me'."
+  - number: 69
+    proposed_level: 3
+    level_confidence: high
+    reason: "'A talkative' is widespread Nigerian usage, so the item tests resisting a familiar local form."
+  - number: 70
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Confide with' sounds natural by analogy with 'share with'; only 'confide in' is standard."
+  - number: 71
+    proposed_level: 3
+    level_confidence: high
+    reason: "Needs the positive 'a little' against the near-negative 'little', with 'some' also arguable after 'just'."
+  - number: 72
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Much better' is the only standard form; the other three are recognisably non-standard."
+  - number: 73
+    proposed_level: 4
+    level_confidence: high
+    reason: "'All too soon' is a low-frequency fixed expression and 'much'/'rather' both sound acceptable after 'all'."
+  - number: 74
+    proposed_level: 3
+    level_confidence: high
+    reason: "'His' and 'their' are common substitutes; consistency with the indefinite 'one' requires \"one's\"."
+  - number: 75
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Run down' must be separated from 'run up' and 'run about'; the particle carries the whole meaning."
+  - number: 76
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Establishments' and 'Organizations' both fit schools loosely; 'Institutions' is the precise term."
+  - number: 77
+    proposed_level: 3
+    level_confidence: high
+    reason: "Requires matching 'specially built' with 'purposefully designed'; 'partially' and 'promptly' are weak but not absurd."
+  - number: 78
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Teaching and learning' is a fixed school pairing that most candidates supply automatically."
+  - number: 79
+    proposed_level: 4
+    level_confidence: low
+    reason: "Several options are defensible for what is 'carefully planned and well structured', and the cropped line removes the deciding context."
+  - number: 80
+    proposed_level: 4
+    level_confidence: low
+    reason: "Hinges on reading the truncated 'of w...' as 'of work'; without it, 'programmes' competes directly with 'schemes'."
+  - number: 81
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Time tables' completes an obvious list of school planning documents."
+  - number: 82
+    proposed_level: 3
+    level_confidence: high
+    reason: "Needs one backward step to the next sentence's 'Non-formal education' contrast; 'proper' is otherwise tempting."
+  - number: 83
+    proposed_level: 4
+    level_confidence: low
+    reason: "The intended contrast is cut off at the margin, so 'simple', 'new' and 'sophisticated' are all arguable."
+  - number: 84
+    proposed_level: 3
+    level_confidence: low
+    reason: "'Activity' and 'arrangement' both collocate with 'organized learning', and the clause deciding between them is cropped."
+  - number: 85
+    proposed_level: 3
+    level_confidence: high
+    reason: "Depends on pairing 'meet' with 'needs' in the next gap, so it is one linked step rather than a lone word choice."
+  - number: 86
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Wants', 'desires' and 'demands' all fit the sense; only 'needs' collocates with 'meet'."
+  - number: 87
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Natural' must be inferred from 'devoid of planning'; 'artificial' is the opposite-pole trap."
+  - number: 88
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Consciously' sits right beside the answer, so the candidate must carry the unplanned-learning idea across the sentence."
+  - number: 89
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Continued spread' of diseases is a familiar health collocation and 'control' contradicts the worry."
+  - number: 90
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Community' fits locally but the worldwide framing of the sentence requires the broader 'society'."
+  - number: 91
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Symptoms' and 'aspects' compete; 'effects' is confirmed only by the following social and economic problems."
+  - number: 92
+    proposed_level: 4
+    level_confidence: low
+    reason: "The line is cut at the margin, so the frame around the gap is missing and 'sensitive' or 'chaotic' cannot be excluded."
+  - number: 93
+    proposed_level: 4
+    level_confidence: high
+    reason: "'Sterility' is formal medical vocabulary and 'inability' is a plausible vaguer choice for a weak candidate."
+  - number: 94
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Complications in pregnancy' is a familiar health phrase and the other 'con-' options are clearly off-topic."
+  - number: 95
+    proposed_level: 4
+    level_confidence: high
+    reason: "'Haemorrhage' is rare vocabulary; 'labour' is highly tempting next to 'post-natal' for anyone not reading to 'death'."
+  - number: 96
+    proposed_level: 3
+    level_confidence: high
+    reason: "'Stigmatization' is formal but strongly cued by 'among friends and relatives'."
+  - number: 97
+    proposed_level: 3
+    level_confidence: high
+    reason: "Needs the participial frame after 'end up'; 'biased' is the main distractor for a careless reader."
+  - number: 98
+    proposed_level: 2
+    level_confidence: high
+    reason: "'Marriages break up' is an everyday phrasal verb and the other three are unrelated forms."
+  - number: 99
+    proposed_level: 2
+    level_confidence: high
+    reason: "'STD infection' is the only sensible pairing; 'infusion' and 'projection' are pure noise."
+  - number: 100
+    proposed_level: 4
+    level_confidence: high
+    reason: "'Controllable' is a strong trap because it echoes 'can be managed'; only 'curable' completes the intended contrast."

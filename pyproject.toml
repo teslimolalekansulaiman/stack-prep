@@ -1,0 +1,58 @@
+[project]
+name = "score-pilot"
+version = "0.0.0"
+description = "Score Pilot workspace root (not a published package)"
+requires-python = ">=3.12"
+dependencies = [
+    "score-pilot-api",
+    "score-pilot-engine",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3",
+    "pytest-asyncio>=0.24",
+    "httpx>=0.27",
+    "hypothesis>=6.112",
+    "ruff>=0.6",
+    "mypy>=1.11",
+    "pyyaml>=6.0",          # database/load_questions.py
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.workspace]
+members = ["apps/api", "packages/engine"]
+
+[tool.uv.sources]
+score-pilot-api = { workspace = true }
+score-pilot-engine = { workspace = true }
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = ["apps/api/src", "packages/engine/src"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.mypy]
+python_version = "3.12"
+warn_unused_ignores = true
+warn_redundant_casts = true
+
+[[tool.mypy.overrides]]
+module = "engine.*"
+strict = true
+
+[[tool.mypy.overrides]]
+module = ["asyncpg.*", "arq.*"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["packages/engine/tests", "apps/api/tests"]
+asyncio_mode = "auto"
+markers = [
+    "integration: needs a running PostgreSQL (make db-start)",
+]

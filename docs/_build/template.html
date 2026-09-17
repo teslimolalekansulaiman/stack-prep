@@ -1,0 +1,378 @@
+<title>Score Pilot Product Plan</title>
+<meta name="description" content="Score Pilot v2 product specification and delivery plan: milestones, sprints and acceptance criteria from September 2026 to September 2027.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+  :root {
+    --ground: #F2F5F3;
+    --surface: #FFFFFF;
+    --ink: #14201B;
+    --muted: #55655E;
+    --rule: #D4DDD8;
+    --rule-strong: #14201B;
+    --accent: #0D6A4F;
+    --accent-soft: #DDEEE6;
+    --band: rgba(154, 91, 18, 0.14);
+    --band-ink: #8A5211;
+    --code-bg: #E8EDEA;
+    --bar: #0D6A4F;
+    --bar-alt: #4F8F79;
+
+    --f-display: "Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --f-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --f-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #0D1311;
+      --surface: #141C19;
+      --ink: #E2E9E6;
+      --muted: #95A69F;
+      --rule: #27322E;
+      --rule-strong: #C9D4CF;
+      --accent: #5DC29E;
+      --accent-soft: #163128;
+      --band: rgba(224, 164, 88, 0.14);
+      --band-ink: #E0A458;
+      --code-bg: #19221F;
+      --bar: #5DC29E;
+      --bar-alt: #3E8A70;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #0D1311;
+    --surface: #141C19;
+    --ink: #E2E9E6;
+    --muted: #95A69F;
+    --rule: #27322E;
+    --rule-strong: #C9D4CF;
+    --accent: #5DC29E;
+    --accent-soft: #163128;
+    --band: rgba(224, 164, 88, 0.14);
+    --band-ink: #E0A458;
+    --code-bg: #19221F;
+    --bar: #5DC29E;
+    --bar-alt: #3E8A70;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-padding-top: 20px; }
+  @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--f-body);
+    font-size: 17px;
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+
+  /* ---------- Masthead ---------- */
+  .masthead { border-bottom: 1px solid var(--rule); background: var(--surface); }
+  .masthead-inner { max-width: 1240px; margin: 0 auto; padding: 36px 32px 28px; display: grid; gap: 14px; }
+  .wordmark { display: flex; align-items: center; gap: 10px; font-family: var(--f-display); font-weight: 600; font-size: 15px; letter-spacing: 0.01em; }
+  .wordmark .dot { width: 14px; height: 14px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+  .masthead h1 { margin: 0; font-family: var(--f-display); font-weight: 700; font-size: clamp(30px, 4vw, 42px); line-height: 1.1; letter-spacing: -0.015em; text-wrap: balance; max-width: 22ch; }
+  .masthead .lede { margin: 0; color: var(--muted); max-width: 64ch; }
+  .facts { display: flex; flex-wrap: wrap; gap: 0; margin: 8px 0 0; padding: 0; border-top: 1px solid var(--rule); }
+  .facts div { padding: 12px 28px 0 0; margin-right: 28px; display: grid; gap: 2px; }
+  .facts dt { font-family: var(--f-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+  .facts dd { margin: 0; font-family: var(--f-display); font-size: 15px; font-weight: 500; }
+
+  /* ---------- Shell ---------- */
+  .shell { max-width: 1240px; margin: 0 auto; padding: 0 32px 96px; display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 56px; }
+  nav.toc { position: sticky; top: 0; align-self: start; max-height: 100vh; overflow-y: auto; padding: 28px 0 40px; font-family: var(--f-display); font-size: 14px; }
+  .toc-group { display: grid; gap: 2px; margin-bottom: 24px; }
+  .toc-label { font-family: var(--f-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 6px; }
+  .toc a { color: var(--ink); text-decoration: none; padding: 3px 0 3px 10px; border-left: 2px solid transparent; line-height: 1.35; }
+  .toc a:hover { color: var(--accent); }
+  .toc a.active { border-left-color: var(--accent); color: var(--accent); }
+  .toc .chips { display: flex; flex-wrap: wrap; gap: 4px; padding: 2px 0 6px 12px; }
+  .toc .chips a { font-family: var(--f-mono); font-size: 11px; padding: 1px 5px; border: 1px solid var(--rule); border-radius: 3px; color: var(--muted); }
+  .toc .chips a:hover { border-color: var(--accent); color: var(--accent); }
+  .toc-mobile { display: none; }
+
+  main { min-width: 0; padding-top: 12px; }
+
+  /* ---------- Parts & prose ---------- */
+  .part { padding-top: 32px; }
+  .part + .part { margin-top: 72px; border-top: 1px solid var(--rule); }
+  .part-head { display: grid; gap: 6px; margin-bottom: 8px; }
+  .eyebrow { font-family: var(--f-mono); font-size: 12px; text-transform: uppercase; letter-spacing: 0.09em; color: var(--accent); }
+  .part-head h1 { margin: 0; font-family: var(--f-display); font-size: 34px; font-weight: 700; letter-spacing: -0.01em; line-height: 1.15; text-wrap: balance; }
+  .doc-meta { font-family: var(--f-mono); font-size: 13px; color: var(--muted); margin: 0 0 8px; }
+  .doc-meta strong { font-weight: 400; }
+
+  .prose > p, .prose li, .prose blockquote { max-width: 68ch; }
+  .prose p { margin: 0 0 14px; }
+  .prose ul, .prose ol { padding-left: 22px; margin: 0 0 16px; }
+  .prose li { margin: 4px 0; }
+  .prose li > p { margin: 0; }
+  .prose h2 { font-family: var(--f-display); font-size: 25px; font-weight: 700; line-height: 1.2; letter-spacing: -0.01em; margin: 52px 0 14px; text-wrap: balance; }
+  .prose h3 { font-family: var(--f-display); font-size: 19px; font-weight: 600; margin: 32px 0 10px; text-wrap: balance; }
+  .prose h4 { font-family: var(--f-display); font-size: 16px; font-weight: 600; margin: 24px 0 8px; }
+  .prose strong { font-weight: 600; }
+  .prose hr { border: 0; height: 0; margin: 8px 0; }
+  .prose code { font-family: var(--f-mono); font-size: 0.84em; background: var(--code-bg); padding: 1px 5px; border-radius: 3px; }
+  .prose pre { background: var(--code-bg); border-radius: 6px; padding: 14px 18px; overflow-x: auto; margin: 0 0 18px; }
+  .prose pre code { background: none; padding: 0; font-size: 13px; line-height: 1.6; white-space: pre; }
+
+  .table-wrap { overflow-x: auto; margin: 4px 0 22px; border-top: 1.5px solid var(--rule-strong); }
+  .prose table { border-collapse: collapse; width: 100%; font-family: var(--f-display); font-size: 14px; line-height: 1.45; font-variant-numeric: tabular-nums; }
+  .prose th { text-align: left; font-family: var(--f-mono); font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); padding: 10px 14px 8px 0; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+  .prose td { padding: 9px 14px 9px 0; border-bottom: 1px solid var(--rule); vertical-align: top; min-width: 110px; }
+  .prose td code { font-size: 12px; }
+
+  /* Answer-sheet bubbles for criteria */
+  .prose ul.checks { list-style: none; padding-left: 0; display: grid; gap: 7px; margin: 0 0 6px; }
+  .prose ul.checks li { position: relative; padding-left: 28px; margin: 0; }
+  .bubble { position: absolute; left: 3px; top: 0.36em; width: 14px; height: 14px; border-radius: 50%; border: 1.5px solid var(--accent); }
+
+  /* ---------- Roadmap ---------- */
+  .milestone { margin-top: 64px; padding-top: 18px; border-top: 2px solid var(--rule-strong); }
+  .milestone > h2 { margin-top: 6px; font-size: 30px; }
+  .ms-range { font-family: var(--f-mono); font-size: 13px; color: var(--muted); }
+  .ms-range strong { font-weight: 500; color: var(--ink); }
+  .label { font-family: var(--f-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 14px 0 6px !important; }
+  .label strong { font-weight: 500; }
+  .exit { background: var(--accent-soft); border-radius: 6px; padding: 4px 20px 14px; margin: 14px 0 8px; }
+
+  .sprint { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 18px 22px 16px; margin: 18px 0; }
+  .sprint-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; margin-bottom: 8px; }
+  .sprint-id { font-family: var(--f-mono); font-size: 12px; font-weight: 500; color: var(--accent); background: var(--accent-soft); padding: 2px 7px; border-radius: 3px; }
+  .sprint-head h3 { margin: 0; font-size: 19px; }
+  .sprint-dates { font-family: var(--f-mono); font-size: 12.5px; color: var(--muted); margin-left: auto; white-space: nowrap; }
+  .sprint .goal { font-size: 16.5px; }
+  .sprint .goal strong { font-family: var(--f-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 500; margin-right: 4px; }
+  .sprint ul { font-size: 15.5px; }
+
+  /* ---------- Timeline ---------- */
+  .timeline { margin: 18px 0 8px; overflow-x: auto; }
+  .tl { min-width: 760px; display: grid; grid-template-columns: 190px 1fr; font-family: var(--f-display); font-size: 13px; }
+  .tl-cell { height: 32px; display: flex; align-items: center; }
+  .tl-name { padding-right: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .tl-name b { font-family: var(--f-mono); font-weight: 500; font-size: 11.5px; color: var(--accent); margin-right: 8px; }
+  .tl-track { position: relative; border-bottom: 1px solid var(--rule); }
+  .tl-axis { position: relative; height: 26px; border-bottom: 1px solid var(--rule-strong); }
+  .tl-month { position: absolute; bottom: 5px; font-family: var(--f-mono); font-size: 11px; color: var(--muted); transform: translateX(3px); }
+  .tl-tick { position: absolute; top: 0; bottom: 0; width: 1px; background: var(--rule); }
+  .tl-bar { position: absolute; top: 9px; height: 14px; border-radius: 2px; background: var(--bar); }
+  .tl-bar.alt { background: var(--bar-alt); }
+  .tl-band { position: absolute; top: 0; bottom: 0; background: var(--band); }
+  .tl-line { position: absolute; top: 0; bottom: 0; width: 0; border-left: 1.5px dashed var(--muted); }
+  .tl-notes { position: relative; height: 50px; }
+  .tl-note { position: absolute; font-family: var(--f-mono); font-size: 11px; color: var(--muted); white-space: nowrap; transform: translateX(-2px); border-left: 1.5px dashed var(--muted); padding-left: 5px; height: 22px; line-height: 22px; }
+  .tl-note.row2 { top: 24px; }
+  .tl-note.end { transform: translateX(calc(-100% + 1.5px)); border-left: 0; border-right: 1.5px dashed var(--muted); padding: 0 5px 0 0; }
+  .tl-note.band { color: var(--band-ink); border-left: 6px solid var(--band); }
+  .tl-caption { font-family: var(--f-display); font-size: 13px; color: var(--muted); margin: 6px 0 0; }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 960px) {
+    .shell { grid-template-columns: minmax(0, 1fr); gap: 0; padding: 0 20px 72px; }
+    nav.toc { display: none; }
+    .toc-mobile { display: block; margin: 20px 0 0; font-family: var(--f-display); font-size: 15px; border: 1px solid var(--rule); border-radius: 6px; background: var(--surface); }
+    .toc-mobile summary { padding: 10px 14px; cursor: pointer; font-weight: 600; }
+    .toc-mobile .toc { padding: 0 14px 12px; display: grid; }
+    .masthead-inner { padding: 28px 20px 22px; }
+    .sprint { padding: 16px 16px 14px; }
+    .sprint-dates { margin-left: 0; }
+  }
+</style>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="wordmark"><span class="dot" aria-hidden="true"></span>Score Pilot</div>
+    <h1>Product spec and delivery plan</h1>
+    <p class="lede">Version 2.0 of the product, and the engineering plan that builds it: from platform foundations to a tested adaptive engine, CBT mocks, and a platform ready for more exams.</p>
+    <dl class="facts">
+      <div><dt>First market</dt><dd>SS3 UTME candidates, via schools</dd></div>
+      <div><dt>Subjects</dt><dd>Use of English · Mathematics</dd></div>
+      <div><dt>Proof</dt><dd>Randomised pilot, 3–5 schools</dd></div>
+      <div><dt>Engineering plan</dt><dd>7 milestones · 26 sprints · 3 releases</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="shell">
+  <nav class="toc" id="toc" aria-label="Contents"></nav>
+  <main>
+    <details class="toc-mobile"><summary>Contents</summary><div class="toc" id="toc-mobile"></div></details>
+    <article class="part prose" id="part-spec" data-part="Part 1 · Specification"></article>
+    <article class="part prose" id="part-plan" data-part="Part 2 · Delivery"></article>
+  </main>
+</div>
+
+<script type="text/markdown" id="md-spec"><!--SPEC--></script>
+<script type="text/markdown" id="md-plan"><!--ROADMAP--></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script>
+(function () {
+  const slug = (s, prefix) => prefix + '-' + s.toLowerCase().replace(/[^\w\s-]/g, '').trim().replace(/\s+/g, '-').slice(0, 60);
+
+  function renderPart(mdId, mountId, prefix) {
+    const mount = document.getElementById(mountId);
+    const md = document.getElementById(mdId).textContent;
+    if (!window.marked) { const pre = document.createElement('pre'); pre.textContent = md; mount.appendChild(pre); return mount; }
+    mount.innerHTML = marked.parse(md, { gfm: true });
+
+    // Part header from the document's h1 + meta line
+    const h1 = mount.querySelector('h1');
+    if (h1) {
+      const head = document.createElement('div');
+      head.className = 'part-head';
+      const eb = document.createElement('div');
+      eb.className = 'eyebrow';
+      eb.textContent = mount.dataset.part;
+      h1.textContent = h1.textContent.replace(/^Score Pilot\s+—\s+/, '');
+      h1.id = prefix;
+      h1.before(head);
+      head.append(eb, h1);
+      const meta = head.nextElementSibling;
+      if (meta && meta.tagName === 'P') meta.classList.add('doc-meta');
+    }
+
+    mount.querySelectorAll('h2, h3').forEach(h => { h.id = slug(h.textContent, prefix); });
+    mount.querySelectorAll('table').forEach(t => { const w = document.createElement('div'); w.className = 'table-wrap'; t.before(w); w.appendChild(t); });
+    mount.querySelectorAll('li > input[type="checkbox"]').forEach(inp => {
+      const li = inp.parentElement;
+      li.parentElement.classList.add('checks');
+      const b = document.createElement('span'); b.className = 'bubble'; b.setAttribute('aria-hidden', 'true');
+      inp.replaceWith(b);
+    });
+    mount.querySelectorAll('p > strong:only-child').forEach(s => {
+      const p = s.parentElement;
+      if (p.textContent.trim() === s.textContent.trim()) p.classList.add('label');
+    });
+    return mount;
+  }
+
+  function wrapUntil(start, stopTest, className) {
+    const sec = document.createElement('section');
+    sec.className = className;
+    start.before(sec);
+    let node = start;
+    while (node && !(node !== start && stopTest(node))) {
+      const next = node.nextElementSibling;
+      sec.appendChild(node);
+      node = next;
+    }
+    return sec;
+  }
+
+  const spec = renderPart('md-spec', 'part-spec', 'spec');
+  const plan = renderPart('md-plan', 'part-plan', 'plan');
+
+  // Milestones and sprints
+  const sprints = {};
+  if (window.marked) {
+    [...plan.querySelectorAll('h2')].filter(h => /^M\d+ · /.test(h.textContent)).forEach(h2 => {
+      const [code, name] = h2.textContent.split(' · ');
+      const sec = wrapUntil(h2, n => n.tagName === 'H2', 'milestone');
+      const eb = document.createElement('div'); eb.className = 'eyebrow'; eb.textContent = 'Milestone ' + code;
+      h2.textContent = name; h2.before(eb);
+      const range = h2.nextElementSibling;
+      if (range && range.tagName === 'P') range.classList.add('ms-range');
+      const exitLabel = [...sec.querySelectorAll(':scope > p.label')].find(p => /Exit criteria/.test(p.textContent));
+      if (exitLabel && exitLabel.nextElementSibling) {
+        const box = document.createElement('div'); box.className = 'exit';
+        exitLabel.before(box); const list = exitLabel.nextElementSibling; box.append(exitLabel, list);
+      }
+      sprints[h2.id] = { code, name, items: [] };
+      [...sec.querySelectorAll(':scope > h3')].forEach(h3 => {
+        const m = h3.textContent.match(/^(S\d+) · (.+?) · (.+)$/);
+        if (!m) return;
+        const card = wrapUntil(h3, n => n.tagName === 'H3' || n.tagName === 'H2' || n.tagName === 'HR', 'sprint');
+        const head = document.createElement('div'); head.className = 'sprint-head';
+        const id = document.createElement('span'); id.className = 'sprint-id'; id.textContent = m[1];
+        const dates = document.createElement('span'); dates.className = 'sprint-dates'; dates.textContent = m[2];
+        h3.textContent = m[3];
+        h3.before(head); head.append(id, h3, dates);
+        const goal = head.nextElementSibling;
+        if (goal && goal.tagName === 'P' && /^Goal:/.test(goal.textContent)) goal.classList.add('goal');
+        sprints[h2.id].items.push({ id: h3.id, code: m[1] });
+      });
+    });
+    plan.querySelectorAll('hr').forEach(hr => hr.remove());
+  }
+
+  // Timeline
+  const tlMount = document.getElementById('timeline');
+  if (tlMount) {
+    const d = s => new Date(s + 'T00:00:00Z').getTime();
+    const T0 = d('2026-09-14'), T1 = d('2027-09-13');
+    const pct = s => ((d(s) - T0) / (T1 - T0) * 100).toFixed(3) + '%';
+    const span = (a, b) => ((d(b) - d(a)) / (T1 - T0) * 100).toFixed(3) + '%';
+    const ms = [
+      ['M0', 'Platform foundations', '2026-09-14', '2026-10-12'],
+      ['M1', 'Core practice loop', '2026-10-12', '2026-11-23'],
+      ['M2', 'Personalisation engine', '2026-11-23', '2027-01-04'],
+      ['M3', 'Assessment · experiments', '2027-01-04', '2027-02-15'],
+      ['M4', 'Exam simulation', '2027-02-15', '2027-04-26'],
+      ['M5', 'Data · multi-exam', '2027-04-26', '2027-06-21'],
+      ['M6', 'Scale · maturity', '2027-06-21', '2027-09-13']
+    ];
+    const band = ['2027-04-24', '2027-05-16'];
+    const lines = [['2026-11-16', 'v0.1', 1], ['2027-01-11', 'v1.0', 2], ['2027-03-08', 'Group switch', 1], ['2027-04-12', 'Code freeze', 2], ['2027-09-06', 'v2.0', 1]];
+    const months = ['2026-09-14','2026-10-01','2026-11-01','2026-12-01','2027-01-01','2027-02-01','2027-03-01','2027-04-01','2027-05-01','2027-06-01','2027-07-01','2027-08-01','2027-09-01'];
+    const mName = s => new Date(s + 'T00:00:00Z').toLocaleString('en-GB', { month: 'short', timeZone: 'UTC' }) + (s.slice(5, 7) === '01' || s === '2026-09-14' ? ' ’' + s.slice(2, 4) : '');
+
+    const overlays = () => `<div class="tl-band" style="left:${pct(band[0])};width:${span(band[0], band[1])}"></div>` +
+      lines.map(l => `<div class="tl-line" style="left:${pct(l[0])}"></div>`).join('') +
+      months.slice(1).map(m => `<div class="tl-tick" style="left:${pct(m)}"></div>`).join('');
+
+    let html = '<div class="tl" role="img" aria-label="Timeline of seven milestones from September 2026 to September 2027, with the assumed UTME window in late April to mid May 2027">';
+    html += '<div class="tl-cell"></div><div class="tl-axis">' + months.map(m => `<span class="tl-month" style="left:${pct(m)}">${mName(m)}</span>`).join('') + '</div>';
+    ms.forEach((m, i) => {
+      html += `<div class="tl-cell tl-name"><b>${m[0]}</b>${m[1]}</div>`;
+      html += `<div class="tl-cell tl-track">${overlays()}<div class="tl-bar${i % 2 ? ' alt' : ''}" style="left:${pct(m[2])};width:${span(m[2], m[3])}"></div></div>`;
+    });
+    html += '<div></div><div class="tl-notes">' +
+      lines.map(l => `<span class="tl-note${l[2] === 2 ? ' row2' : ''}${parseFloat(pct(l[0])) > 85 ? ' end' : ''}" style="left:${pct(l[0])}">${l[1]}</span>`).join('') +
+      `<span class="tl-note band row2" style="left:${pct(band[0])}">UTME window (assumed)</span></div>`;
+    html += '</div>';
+    tlMount.className = 'timeline';
+    tlMount.innerHTML = html + '<p class="tl-caption">Shaded: assumed UTME 2027 window. Move the plan when JAMB publishes dates; the freeze stays two weeks before the window opens.</p>';
+  }
+
+  // Contents
+  function buildToc(target) {
+    const groups = [[spec, 'Specification'], [plan, 'Delivery plan']];
+    target.innerHTML = '';
+    groups.forEach(([part, label]) => {
+      const g = document.createElement('div'); g.className = 'toc-group';
+      const l = document.createElement('div'); l.className = 'toc-label'; l.textContent = label; g.appendChild(l);
+      part.querySelectorAll('h2').forEach(h2 => {
+        const a = document.createElement('a'); a.href = '#' + h2.id;
+        const s = sprints[h2.id];
+        a.textContent = s ? s.code + ' · ' + s.name : h2.textContent;
+        g.appendChild(a);
+        if (s && s.items.length) {
+          const chips = document.createElement('div'); chips.className = 'chips';
+          s.items.forEach(it => { const c = document.createElement('a'); c.href = '#' + it.id; c.textContent = it.code; chips.appendChild(c); });
+          g.appendChild(chips);
+        }
+      });
+      target.appendChild(g);
+    });
+  }
+  buildToc(document.getElementById('toc'));
+  buildToc(document.getElementById('toc-mobile'));
+
+  // Highlight current section
+  const links = new Map([...document.querySelectorAll('#toc > .toc-group > a')].map(a => [a.hash.slice(1), a]));
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        links.forEach(a => a.classList.remove('active'));
+        const a = links.get(e.target.id); if (a) a.classList.add('active');
+      });
+    }, { rootMargin: '0px 0px -75% 0px' });
+    document.querySelectorAll('main h2').forEach(h => io.observe(h));
+  }
+})();
+</script>

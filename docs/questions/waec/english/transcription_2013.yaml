@@ -1,0 +1,1666 @@
+# WASSCE November 2013, English Language 2 (Objective Test) — questions 1-100.
+#
+# Transcribed from the page images of
+# docs/questions/waec/english/WASSCE_2013_ENGLISH_LANGUAGE_2_Objective_test.pdf.
+# Questions 1-14 were read directly; 15-100 by a transcription pass over pages 5-16.
+#
+# Questions 76-100 (Section 6, the two cloze passages) carry [unclear] markers: pages 14
+# and 15 of the scan are cropped at the right margin, so the passage prose is incomplete.
+# The loader rejects those until a cleaner scan of those two pages replaces them; their
+# option columns are transcribed in full and will be reused then.
+#
+# Answers are PROPOSED, not verified. The loader records them as `model_proposed`, and the
+# database refuses to approve a question whose answer no person has checked.
+format_version: 1
+source:
+  file: docs/questions/waec/english/WASSCE_2013_ENGLISH_LANGUAGE_2_Objective_test.pdf
+  exam_year: 2013
+  series: November
+  paper_label: English Language 2 (Objective Test)
+  paper_code: '302213'
+  duration_minutes: 60
+  marks: 100
+  page_count: 16
+passages:
+- id: passage_a
+  page: 14
+  label: PASSAGE A
+  section: SECTION 6
+  text: '— 76 — such as schools and colleges are specially built and — 77 — designed for teaching and
+    — 78 — [unclear]
+
+    Also, the — 79 — are carefully planned and well structured through the use of syllabuses, — 80 — of
+    w[unclear]
+
+    course outlines, lesson plans and — 81 — tables. This is the — 82 — type of education. Non-formal
+    educa[unclear]
+
+    on the other hand, often takes place in a — 83 — society. It refers to any organized learning — 84
+    — that [unclear]
+
+    the structure of the formal education. The purpose is to — 85 — the specific learning — 86 — of parti[unclear]
+
+    groups of people in society. The third type is the informal which is — 87 — and devoid of planning
+    [unclear]
+
+    structuring. Much of the learning comes — 88 —.'
+- id: passage_b
+  page: 14
+  label: PASSAGE B
+  section: SECTION 6
+  note: The passage begins on page 14 and its last three lines are printed at the top of page 15.
+  text: 'Well-meaning individuals the world over are worried about the continued — 89 — of Sexually Trans[unclear]
+
+    Diseases (STDs) especially as no section of — 90 — is spared their ugly — 91 —. Some of these are
+    — [unclear]
+
+    and range from social to economic problems. STDs can bring about — 93 — in men and — 94 — [unclear]
+
+    pregnancy, sometimes leading to post-natal — 95 — and ultimately death. Some patients face — 96 —
+    among
+
+    friends and relatives and end up — 97 —, while some marriages — 98 — as a result of STD— 99 —. Though
+
+    some of these diseases can be managed, they are not yet — 100 —.'
+questions:
+- number: 1
+  page: 2
+  section: SECTION 1
+  instruction: In each of the following sentences, there is one underlined word and one gap. From the
+    list of words lettered A to D, choose the one that is most nearly opposite in meaning to the underlined
+    word and that will, at the same time, correctly fill the gap in the sentence.
+  stem: Our instructor gave us the impression that the problem was complicated but we found it ______.
+  options:
+    A: light
+    B: mysterious
+    C: simple
+    D: hard
+  proposed_answer: C
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: Antonym of 'complicated' that also fits the gap.
+- number: 2
+  page: 2
+  section: SECTION 1
+  instruction: In each of the following sentences, there is one underlined word and one gap. From the
+    list of words lettered A to D, choose the one that is most nearly opposite in meaning to the underlined
+    word and that will, at the same time, correctly fill the gap in the sentence.
+  stem: It is no longer a matter of choice but ______ to have basic education in our country.
+  options:
+    A: request
+    B: command
+    C: determination
+    D: compulsion
+  proposed_answer: D
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: '''Compulsion'' is the opposite of ''choice'' and fits the construction.'
+- number: 3
+  page: 3
+  section: SECTION 1
+  instruction: In each of the following sentences, there is one underlined word and one gap. From the
+    list of words lettered A to D, choose the one that is most nearly opposite in meaning to the underlined
+    word and that will, at the same time, correctly fill the gap in the sentence.
+  stem: Despite Inyang's claim that he killed the dog ______, the owner insists that he did it deliberately.
+  options:
+    A: instantly
+    B: accidentally
+    C: angrily
+    D: forcefully
+  proposed_answer: B
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: '''Accidentally'' is the opposite of ''deliberately''.'
+- number: 4
+  page: 3
+  section: SECTION 1
+  instruction: In each of the following sentences, there is one underlined word and one gap. From the
+    list of words lettered A to D, choose the one that is most nearly opposite in meaning to the underlined
+    word and that will, at the same time, correctly fill the gap in the sentence.
+  stem: If our ancestors preserved the culture for us, why can't we do the same for our ______?
+  options:
+    A: siblings
+    B: kinsmen
+    C: predecessors
+    D: descendants
+  proposed_answer: D
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: '''Descendants'' is the opposite of ''ancestors''.'
+- number: 5
+  page: 3
+  section: SECTION 1
+  instruction: In each of the following sentences, there is one underlined word and one gap. From the
+    list of words lettered A to D, choose the one that is most nearly opposite in meaning to the underlined
+    word and that will, at the same time, correctly fill the gap in the sentence.
+  stem: While Mr. Samson is theoretical about the upbringing of children, his wife is ______.
+  options:
+    A: pragmatic
+    B: subjective
+    C: sceptical
+    D: logical
+  proposed_answer: A
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: '''Pragmatic'' (practical) is the opposite of ''theoretical''.'
+- number: 6
+  page: 3
+  section: SECTION 1
+  instruction: In each of the following sentences, there is one underlined word and one gap. From the
+    list of words lettered A to D, choose the one that is most nearly opposite in meaning to the underlined
+    word and that will, at the same time, correctly fill the gap in the sentence.
+  stem: Whether you commend the boys or ______ them, they are determined to do their best.
+  options:
+    A: control
+    B: confuse
+    C: condemn
+    D: abuse
+  proposed_answer: C
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: '''Condemn'' is the opposite of ''commend''.'
+- number: 7
+  page: 3
+  section: SECTION 1
+  instruction: In each of the following sentences, there is one underlined word and one gap. From the
+    list of words lettered A to D, choose the one that is most nearly opposite in meaning to the underlined
+    word and that will, at the same time, correctly fill the gap in the sentence.
+  stem: The hope with which he assumed office contrasts with the ______ with which he is leaving.
+  options:
+    A: disgust
+    B: distress
+    C: distrust
+    D: despair
+  proposed_answer: D
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: '''Despair'' is the opposite of ''hope''.'
+- number: 8
+  page: 3
+  section: SECTION 1
+  instruction: In each of the following sentences, there is one underlined word and one gap. From the
+    list of words lettered A to D, choose the one that is most nearly opposite in meaning to the underlined
+    word and that will, at the same time, correctly fill the gap in the sentence.
+  stem: The landing of a plane is more frightening than its ______.
+  options:
+    A: taxiing
+    B: take-off
+    C: flying
+    D: descent
+  proposed_answer: B
+  answer_confidence: high
+  proposed_skill: ENG.1.2.ix
+  skill_reason: Vocabulary of travelling; 'take-off' is the opposite of 'landing'.
+- number: 9
+  page: 4
+  section: SECTION 1
+  instruction: In each of the following sentences, there is one underlined word and one gap. From the
+    list of words lettered A to D, choose the one that is most nearly opposite in meaning to the underlined
+    word and that will, at the same time, correctly fill the gap in the sentence.
+  stem: I prefer the exact rather than an ______ figure.
+  options:
+    A: elusive
+    B: appropriate
+    C: approximate
+    D: inflated
+  proposed_answer: C
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: '''Approximate'' is the opposite of ''exact''.'
+- number: 10
+  page: 4
+  section: SECTION 1
+  instruction: In each of the following sentences, there is one underlined word and one gap. From the
+    list of words lettered A to D, choose the one that is most nearly opposite in meaning to the underlined
+    word and that will, at the same time, correctly fill the gap in the sentence.
+  stem: Although the students were content with the new welfare arrangement, their representatives were
+    ______ with it.
+  options:
+    A: annoyed
+    B: unhappy
+    C: discouraged
+    D: dissatisfied
+  proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.1.1.i
+  skill_reason: '''Dissatisfied'' is the direct opposite of ''content''; ''unhappy'' is a plausible distractor,
+    so a reviewer should confirm.'
+- number: 11
+  page: 4
+  section: SECTION 2
+  instruction: From the words lettered A to D, choose the word that best completes each of the following
+    sentences.
+  stem: The car crashed into a ______ vehicle when the driver lost control.
+  options:
+    A: stationary
+    B: stagnant
+    C: stationed
+    D: stationery
+  proposed_answer: A
+  answer_confidence: high
+  proposed_skill: ENG.1.2.ix
+  skill_reason: Vocabulary of motor vehicles; distinguishes 'stationary' from its near-homophones.
+- number: 12
+  page: 4
+  section: SECTION 2
+  instruction: From the words lettered A to D, choose the word that best completes each of the following
+    sentences.
+  stem: I told you before the match started that my team would ______ yours.
+  options:
+    A: win
+    B: lose
+    C: beat
+    D: score
+  proposed_answer: C
+  answer_confidence: high
+  proposed_skill: ENG.1.2.xi
+  skill_reason: Vocabulary of sports; only 'beat' takes a direct object here.
+- number: 13
+  page: 4
+  section: SECTION 2
+  instruction: From the words lettered A to D, choose the word that best completes each of the following
+    sentences.
+  stem: The Literature teacher instructed us to memorize the first and second ______ of the poem.
+  options:
+    A: stanzas
+    B: chapters
+    C: paragraphs
+    D: sections
+  proposed_answer: A
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: 'Common-core school vocabulary: a poem is divided into stanzas.'
+- number: 14
+  page: 4
+  section: SECTION 2
+  instruction: From the words lettered A to D, choose the word that best completes each of the following
+    sentences.
+  stem: Gambo was arrested while ______ his late brother as a military officer.
+  options:
+    A: imitating
+    B: personifying
+    C: impersonating
+    D: copying
+  proposed_answer: C
+  answer_confidence: high
+  proposed_skill: ENG.1.2.viii
+  skill_reason: Vocabulary of law and order; 'impersonating' is the offence described.
+- number: 15
+  page: 5
+  section: SECTION 2
+  instruction: From the words lettered A to D, choose the word that best completes each of the following
+    sentences.
+  stem: He said he would not sell the piece of land because it was the only thing he ______ from his late
+    father.
+  options:
+    A: earned
+    B: deserved
+    C: acquired
+    D: inherited
+  proposed_answer: D
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: 'Everyday vocabulary: property passed on from a dead parent is inherited.'
+- number: 16
+  page: 5
+  section: SECTION 2
+  instruction: From the words lettered A to D, choose the word that best completes each of the following
+    sentences.
+  stem: Some church members came to ______ with me on the death of my father.
+  options:
+    A: counsel
+    B: console
+    C: commiserate
+    D: associate
+  proposed_answer: C
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: Everyday vocabulary of social relationships; only 'commiserate' takes 'with' in this frame.
+- number: 17
+  page: 5
+  section: SECTION 2
+  instruction: From the words lettered A to D, choose the word that best completes each of the following
+    sentences.
+  stem: On that ______ day, nearly five hundred people died in a pipeline explosion.
+  options:
+    A: faithful
+    B: unhappy
+    C: fateful
+    D: frightful
+  proposed_answer: C
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: 'Everyday vocabulary: ''fateful'' collocates with a day of disaster (and contrasts with
+    the near-homophone ''faithful'').'
+- number: 18
+  page: 5
+  section: SECTION 2
+  instruction: From the words lettered A to D, choose the word that best completes each of the following
+    sentences.
+  stem: He came to the ______ only two years ago when he won a gold medal.
+  options:
+    A: show
+    B: front
+    C: limelight
+    D: position
+  proposed_answer: C
+  answer_confidence: high
+  proposed_skill: ENG.1.3.i
+  skill_reason: Fixed expression 'come to the limelight'.
+- number: 19
+  page: 5
+  section: SECTION 2
+  instruction: From the words lettered A to D, choose the word that best completes each of the following
+    sentences.
+  stem: The Road Safety officials will soon be ______ by the government to carry guns.
+  options:
+    A: authorized
+    B: expected
+    C: invited
+    D: approved
+  proposed_answer: A
+  answer_confidence: high
+  proposed_skill: ENG.1.2.viii
+  skill_reason: 'Vocabulary of law and order: official permission to bear arms is authorization.'
+- number: 20
+  page: 5
+  section: SECTION 2
+  instruction: From the words lettered A to D, choose the word that best completes each of the following
+    sentences.
+  stem: The man was honoured for fighting ______ in the war.
+  options:
+    A: properly
+    B: gallantly
+    C: furiously
+    D: practically
+  proposed_answer: B
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: 'Everyday vocabulary: ''fight gallantly'' is the adverb that matches being honoured.'
+- number: 21
+  page: 6
+  section: SECTION 3
+  instruction: After each of the following sentences, a list of possible interpretations is given. Choose
+    the interpretation [unclear] you consider most appropriate for each sentence.
+  stem: Our house is the last but one on that street. This means that our house is
+  options:
+    A: the very last house.
+    B: one of the last houses.
+    C: the one after the last.
+    D: the one before the last.
+  proposed_answer: D
+  answer_confidence: high
+  proposed_skill: ENG.2.2.i
+  skill_reason: Interpreting the meaning of the phrase pattern 'the last but one'.
+- number: 22
+  page: 6
+  section: SECTION 3
+  instruction: After each of the following sentences, a list of possible interpretations is given. Choose
+    the interpretation [unclear] you consider most appropriate for each sentence.
+  stem: George said he would not attend the meeting because he smelt a rat. This means that he
+  options:
+    A: was disturbed by the smell of a rat.
+    B: was suspicious.
+    C: felt insecure.
+    D: was very angry.
+  proposed_answer: B
+  answer_confidence: high
+  proposed_skill: ENG.1.3.i
+  skill_reason: Idiom 'smell a rat' means to suspect something wrong.
+- number: 23
+  page: 6
+  section: SECTION 3
+  instruction: After each of the following sentences, a list of possible interpretations is given. Choose
+    the interpretation [unclear] you consider most appropriate for each sentence.
+  stem: My brother, who lives in Ghana, is a footballer. This means that
+  options:
+    A: only one of my brothers lives in Ghana and he is a footballer.
+    B: all my brothers are footballers and one lives in Ghana.
+    C: my only brother is a footballer and he lives in Ghana.
+    D: all my brothers live in Ghana but only one is a footballer.
+  proposed_answer: C
+  answer_confidence: high
+  proposed_skill: ENG.2.2.i
+  skill_reason: The non-defining relative clause (set off by commas) shows there is only one brother.
+- number: 24
+  page: 6
+  section: SECTION 3
+  instruction: After each of the following sentences, a list of possible interpretations is given. Choose
+    the interpretation [unclear] you consider most appropriate for each sentence.
+  stem: The teacher described Edward's account of the incident as a tall story. This means that
+  options:
+    A: Edward's story was too long.
+    B: the teacher could not understand the story.
+    C: Edward's story was uninteresting.
+    D: the teacher found Edward's story unbelievable.
+  proposed_answer: D
+  answer_confidence: high
+  proposed_skill: ENG.1.3.i
+  skill_reason: Idiom 'a tall story' means an unbelievable account.
+- number: 25
+  page: 6
+  section: SECTION 3
+  instruction: After each of the following sentences, a list of possible interpretations is given. Choose
+    the interpretation [unclear] you consider most appropriate for each sentence.
+  stem: For the past four years, I have been working hard just to keep the wolf from the door. This means
+    that
+  options:
+    A: I have not been strong enough to attack the wolf.
+    B: I have been able to provide only the basic needs.
+    C: I have been working harder than before.
+    D: my job has been to prevent the wolf from entering the house.
+  proposed_answer: B
+  answer_confidence: high
+  proposed_skill: ENG.1.3.i
+  skill_reason: Idiom 'keep the wolf from the door' means to earn just enough to avoid hunger.
+- number: 26
+  page: 6
+  section: SECTION 3
+  instruction: After each of the following sentences, a list of possible interpretations is given. Choose
+    the interpretation [unclear] you consider most appropriate for each sentence.
+  stem: Ekpong knew there was little food for him at home. This means that
+  options:
+    A: Ekpong was sure of some food.
+    B: Ekpong was not sure of any food.
+    C: Ekpong had hidden some food before going out.
+    D: Ekpong's share of the food would not be given to him.
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.2.3.i
+  skill_reason: Turns on the determiner 'little' (without 'a'), which means hardly any.
+- number: 27
+  page: 7
+  section: SECTION 3
+  instruction: After each of the following sentences, a list of possible interpretations is given. Choose
+    the interpretation [unclear] you consider most appropriate for each sentence.
+  stem: The judge said that he could not but sentence the criminal to death. This means that
+  options:
+    A: the judge found it difficult to sentence him to death.
+    B: the judge lacked the power to sentence him to death.
+    C: the death sentence was inevitable.
+    D: it was possible to set the criminal free.
+  proposed_answer: C
+  answer_confidence: high
+  proposed_skill: ENG.1.3.i
+  skill_reason: Fixed expression 'could not but' means had no alternative.
+- number: 28
+  page: 7
+  section: SECTION 3
+  instruction: After each of the following sentences, a list of possible interpretations is given. Choose
+    the interpretation [unclear] you consider most appropriate for each sentence.
+  stem: The captive shouted several times for help but he knew it was a forlorn hope. This means that
+    he
+  options:
+    A: was certain that help would come.
+    B: had lost hope of any help coming.
+    C: hoped that somebody would hear him.
+    D: had lost hope in the captors.
+  proposed_answer: B
+  answer_confidence: high
+  proposed_skill: ENG.1.3.i
+  skill_reason: Fixed expression 'a forlorn hope' means a hope with no chance of success.
+- number: 29
+  page: 7
+  section: SECTION 3
+  instruction: After each of the following sentences, a list of possible interpretations is given. Choose
+    the interpretation [unclear] you consider most appropriate for each sentence.
+  stem: The explanation he gave for the customer's action was a shot in the dark. This means that
+  options:
+    A: he only guessed why the customer acted that way.
+    B: he knew that the customer liked shooting in the dark.
+    C: the customer had told him why he acted that way.
+    D: the customer apologized to him in the dark.
+  proposed_answer: A
+  answer_confidence: high
+  proposed_skill: ENG.1.3.i
+  skill_reason: Idiom 'a shot in the dark' means a mere guess.
+- number: 30
+  page: 7
+  section: SECTION 3
+  instruction: After each of the following sentences, a list of possible interpretations is given. Choose
+    the interpretation [unclear] you consider most appropriate for each sentence.
+  stem: Akande stopped short of arresting the man who stole his shoes. This means that Akande
+  options:
+    A: arrested him for a while but released him.
+    B: thought he was too dangerous to be arrested.
+    C: had no option but to arrest him.
+    D: was about to arrest him but changed his mind.
+  proposed_answer: D
+  answer_confidence: high
+  proposed_skill: ENG.1.3.i
+  skill_reason: Idiom 'stop short of' means to come close to doing something but not do it.
+- number: 31
+  page: 7
+  section: SECTION 4
+  instruction: From the words lettered A to D below each of the following sentences, choose the word that
+    is nearest in meaning to the underlined word as it is used in the sentence.
+  stem: The sale of certain drugs is restricted to adults.
+  underlined_word: restricted
+  options:
+    A: limited
+    B: confined
+    C: extended
+    D: controlled
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.1.1.i
+  skill_reason: Synonym in context; 'limited to' is the closest match, though 'confined to' is a near
+    rival.
+- number: 32
+  page: 7
+  section: SECTION 4
+  instruction: From the words lettered A to D below each of the following sentences, choose the word that
+    is nearest in meaning to the underlined word as it is used in the sentence.
+  stem: His attempts to claim the child proved futile.
+  underlined_word: futile
+  options:
+    A: uncertain
+    B: abortive
+    C: senseless
+    D: risky
+  proposed_answer: B
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: 'Synonym in context: futile attempts are abortive.'
+- number: 33
+  page: 8
+  section: SECTION 4
+  instruction: From the words lettered A to D below each of the following sentences, choose the word that
+    is nearest in meaning to the underlined word as it is used in the sentence.
+  stem: These days, most businessmen are very crafty.
+  underlined_word: crafty
+  options:
+    A: extravagant
+    B: skilful
+    C: cunning
+    D: wise
+  proposed_answer: C
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: 'Synonym in context: crafty means cunning.'
+- number: 34
+  page: 8
+  section: SECTION 4
+  instruction: From the words lettered A to D below each of the following sentences, choose the word that
+    is nearest in meaning to the underlined word as it is used in the sentence.
+  stem: This type of music is inappropriate for such a solemn ceremony.
+  underlined_word: inappropriate
+  options:
+    A: unfashionable
+    B: indecent
+    C: unsuitable
+    D: insufficient
+  proposed_answer: C
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: 'Synonym in context: inappropriate means unsuitable.'
+- number: 35
+  page: 8
+  section: SECTION 4
+  instruction: From the words lettered A to D below each of the following sentences, choose the word that
+    is nearest in meaning to the underlined word as it is used in the sentence.
+  stem: The clash between the two communities was a great calamity.
+  underlined_word: calamity
+  options:
+    A: shame
+    B: disaster
+    C: accident
+    D: problem
+  proposed_answer: B
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: 'Synonym in context: calamity means disaster.'
+- number: 36
+  page: 8
+  section: SECTION 4
+  instruction: From the words lettered A to D below each of the following sentences, choose the word that
+    is nearest in meaning to the underlined word as it is used in the sentence.
+  stem: The negotiations ended amicably to the surprise of the warring factions.
+  underlined_word: amicably
+  options:
+    A: violently
+    B: abruptly
+    C: harmoniously
+    D: suspiciously
+  proposed_answer: C
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: 'Synonym in context: amicably means harmoniously.'
+- number: 37
+  page: 8
+  section: SECTION 4
+  instruction: From the words lettered A to D below each of the following sentences, choose the word that
+    is nearest in meaning to the underlined word as it is used in the sentence.
+  stem: One needs perseverance to succeed in this job.
+  underlined_word: perseverance
+  options:
+    A: persistence
+    B: consistency
+    C: concentration
+    D: resolution
+  proposed_answer: A
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: 'Synonym in context: perseverance is persistence.'
+- number: 38
+  page: 8
+  section: SECTION 4
+  instruction: From the words lettered A to D below each of the following sentences, choose the word that
+    is nearest in meaning to the underlined word as it is used in the sentence.
+  stem: We did not like him because he was headstrong.
+  underlined_word: headstrong
+  options:
+    A: wicked
+    B: rude
+    C: unreliable
+    D: stubborn
+  proposed_answer: D
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: 'Synonym in context: headstrong means stubborn.'
+- number: 39
+  page: 8
+  section: SECTION 4
+  instruction: From the words lettered A to D below each of the following sentences, choose the word that
+    is nearest in meaning to the underlined word as it is used in the sentence.
+  stem: The matron reprimanded Stella for bullying the new girl.
+  underlined_word: reprimanded
+  options:
+    A: reported
+    B: insulted
+    C: punished
+    D: rebuked
+  proposed_answer: D
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: 'Synonym in context: reprimand means rebuke.'
+- number: 40
+  page: 9
+  section: SECTION 4
+  instruction: From the words lettered A to D below each of the following sentences, choose the word that
+    is nearest in meaning to the underlined word as it is used in the sentence.
+  stem: His mission was to enlighten his people about the proposed project.
+  underlined_word: enlighten
+  options:
+    A: strengthen
+    B: remind
+    C: educate
+    D: task
+  proposed_answer: C
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: 'Synonym in context: to enlighten people is to educate them.'
+- number: 41
+  page: 9
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: The Council of Elders ______ advised youths to desist from telling lies.
+  options:
+    A: have
+    B: have been
+    C: has
+    D: has been
+  proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.2.1.i
+  skill_reason: 'Number agreement: the collective subject ''Council'' takes the singular auxiliary in
+    the active voice.'
+- number: 42
+  page: 9
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: On my way to the airport, I ______ an old classmate.
+  options:
+    A: ran in
+    B: ran by
+    C: ran into
+    D: ran across
+  proposed_answer: C
+  answer_confidence: high
+  proposed_skill: ENG.1.3.i
+  skill_reason: Phrasal verb 'run into' means to meet by chance.
+- number: 43
+  page: 9
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: Their ideas are similar, aren't they? Yes, ______ .
+  options:
+    A: are they
+    B: there are
+    C: they are
+    D: it is
+  proposed_answer: C
+  answer_confidence: high
+  proposed_skill: ENG.2.2.i
+  skill_reason: Short-answer pattern after a question tag keeps subject-verb order.
+- number: 44
+  page: 9
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: She danced ______ gracefully that the Guest of Honour promised her a special gift.
+  options:
+    A: very
+    B: too
+    C: more
+    D: so
+  proposed_answer: D
+  answer_confidence: high
+  proposed_skill: ENG.2.3.i
+  skill_reason: Structural pair 'so ... that' introducing a result clause.
+- number: 45
+  page: 9
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: My father insisted that we should be civil, ______?
+  options:
+    A: should we
+    B: isn't it
+    C: didn't he
+    D: shouldn't we
+  proposed_answer: C
+  answer_confidence: high
+  proposed_skill: ENG.2.2.i
+  skill_reason: The question tag must match the main clause 'My father insisted'.
+- number: 46
+  page: 10
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: The team was to leave Lagos ______ Accra at 4.15 a.m. on Tuesday.
+  options:
+    A: for
+    B: to
+    C: from
+    D: by
+  proposed_answer: A
+  answer_confidence: high
+  proposed_skill: ENG.1.4.iii
+  skill_reason: 'Preposition: ''leave (a place) for (a destination)''.'
+- number: 47
+  page: 10
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: Whenever we ______ our names, we stand up to answer.
+  options:
+    A: hear
+    B: heard
+    C: were hearing
+    D: are hearing
+  proposed_answer: A
+  answer_confidence: high
+  proposed_skill: ENG.1.4.i
+  skill_reason: 'Sequence of tenses: simple present in both clauses for a habitual action.'
+- number: 48
+  page: 10
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: If I were you, I ______ my identity.
+  options:
+    A: will not hide
+    B: will not have hidden
+    C: cannot hide
+    D: would not hide
+  proposed_answer: D
+  answer_confidence: high
+  proposed_skill: ENG.1.4.i
+  skill_reason: 'Sequence of tenses in the second conditional: ''If I were ... I would ...''.'
+- number: 49
+  page: 10
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: The judge ruled that the three men should be ______ publicly.
+  options:
+    A: hanged
+    B: hung
+    C: hang
+    D: hanging
+  proposed_answer: A
+  answer_confidence: high
+  proposed_skill: ENG.2.1.i
+  skill_reason: 'Word form: the past participle for execution is ''hanged'', not ''hung''.'
+- number: 50
+  page: 10
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: Their only child has been sentenced ______ fifteen years' imprisonment.
+  options:
+    A: from
+    B: to
+    C: for
+    D: into
+  proposed_answer: B
+  answer_confidence: high
+  proposed_skill: ENG.1.4.iii
+  skill_reason: 'Preposition: ''sentenced to'' a term of imprisonment.'
+- number: 51
+  page: 10
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: The governor ______ a good reason to resign before he was impeached.
+  options:
+    A: has
+    B: had
+    C: has had
+    D: will have
+  proposed_answer: B
+  answer_confidence: high
+  proposed_skill: ENG.1.4.i
+  skill_reason: 'Sequence of tenses: the past ''was impeached'' requires the past ''had''.'
+- number: 52
+  page: 10
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: Tunde is the ______ in our family.
+  options:
+    A: more clever
+    B: cleverer
+    C: cleverest
+    D: clever
+  proposed_answer: C
+  answer_confidence: high
+  proposed_skill: ENG.2.1.i
+  skill_reason: 'Degree: ''the'' before the adjective requires the superlative form.'
+- number: 53
+  page: 11
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: I wanted to know ______ of the three boys will represent the school.
+  options:
+    A: which
+    B: whom
+    C: who
+    D: whose
+  proposed_answer: A
+  answer_confidence: high
+  proposed_skill: ENG.2.3.i
+  skill_reason: 'Structural word: ''which'' is used for a choice within a known, limited set.'
+- number: 54
+  page: 11
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: Had I been his employer, I ______ him.
+  options:
+    A: would sack
+    B: will sack
+    C: will have sacked
+    D: would have sacked
+  proposed_answer: D
+  answer_confidence: high
+  proposed_skill: ENG.1.4.i
+  skill_reason: 'Sequence of tenses in the inverted third conditional: ''Had I been ... I would have ...''.'
+- number: 55
+  page: 11
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: Before she started crying, she ______ two phone calls.
+  options:
+    A: has received
+    B: have received
+    C: had received
+    D: received
+  proposed_answer: C
+  answer_confidence: high
+  proposed_skill: ENG.1.4.i
+  skill_reason: 'Sequence of tenses: the earlier of two past events takes the past perfect.'
+- number: 56
+  page: 11
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: The marriage broke ______ after two years.
+  options:
+    A: up
+    B: through
+    C: 'off'
+    D: out
+  proposed_answer: A
+  answer_confidence: high
+  proposed_skill: ENG.1.3.i
+  skill_reason: 'Phrasal verb: a marriage ''breaks up''.'
+- number: 57
+  page: 11
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: Shehu claimed that the money was ______ and not his brother's.
+  options:
+    A: he's
+    B: for him
+    C: his
+    D: to him
+  proposed_answer: C
+  answer_confidence: high
+  proposed_skill: ENG.1.4.ii
+  skill_reason: Possessive pronoun matching the antecedent Shehu, parallel to 'his brother's'.
+- number: 58
+  page: 11
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: Employers are expected to pay salaries as ______ when due.
+  options:
+    A: at
+    B: and
+    C: for
+    D: 'on'
+  proposed_answer: B
+  answer_confidence: high
+  proposed_skill: ENG.1.3.i
+  skill_reason: Fixed expression 'as and when due'.
+- number: 59
+  page: 11
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: The baby became happy when ______ mother returned.
+  options:
+    A: her
+    B: its
+    C: his
+    D: it's
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.1.4.ii
+  skill_reason: 'Pronoun-antecedent: the sex of ''the baby'' is not given, so the neuter possessive ''its''
+    is used.'
+- number: 60
+  page: 12
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: Jane accused her husband ______ dishonesty.
+  options:
+    A: about
+    B: for
+    C: 'on'
+    D: of
+  proposed_answer: D
+  answer_confidence: high
+  proposed_skill: ENG.1.4.iii
+  skill_reason: 'Preposition: ''accuse somebody of something''.'
+- number: 61
+  page: 12
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: This is the boy to ______ many awards were given on the graduation day.
+  options:
+    A: whom
+    B: who
+    C: which
+    D: whose
+  proposed_answer: A
+  answer_confidence: high
+  proposed_skill: ENG.2.2.i
+  skill_reason: 'Relative clause pattern: the object form ''whom'' follows the preposition ''to''.'
+- number: 62
+  page: 12
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: The Principal says that it is you who ______ to conduct the assembly next week.
+  options:
+    A: were
+    B: are
+    C: is
+    D: was
+  proposed_answer: B
+  answer_confidence: high
+  proposed_skill: ENG.2.1.i
+  skill_reason: 'Agreement in a cleft sentence: the verb agrees with ''you'' and stays in the present.'
+- number: 63
+  page: 12
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: Everyone of our students ______ entitled to free medical treatment.
+  options:
+    A: are
+    B: is
+    C: has
+    D: have
+  proposed_answer: B
+  answer_confidence: high
+  proposed_skill: ENG.2.1.i
+  skill_reason: 'Number agreement: ''everyone'' is singular and ''entitled'' needs the verb ''be''.'
+- number: 64
+  page: 12
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: Many a student ______ examinations due to lack of preparation.
+  options:
+    A: fails
+    B: fail
+    C: have failed
+    D: are failing
+  proposed_answer: A
+  answer_confidence: high
+  proposed_skill: ENG.2.1.i
+  skill_reason: 'Number agreement: ''many a + singular noun'' takes a singular verb.'
+- number: 65
+  page: 12
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: The old woman did not eat for three days because she did not have ______ money for feeding.
+  options:
+    A: more
+    B: some
+    C: 'no'
+    D: any
+  proposed_answer: D
+  answer_confidence: high
+  proposed_skill: ENG.2.3.i
+  skill_reason: 'Determiner: ''any'' is the form used after a negative verb.'
+- number: 66
+  page: 12
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: We were appointed electoral officers ______ October 2009.
+  options:
+    A: 'on'
+    B: in
+    C: at
+    D: from
+  proposed_answer: B
+  answer_confidence: high
+  proposed_skill: ENG.1.4.iii
+  skill_reason: 'Preposition of time: ''in'' with a month and year.'
+- number: 67
+  page: 13
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: You had better ______ off the television.
+  options:
+    A: turned
+    B: turning
+    C: turn
+    D: to turn
+  proposed_answer: C
+  answer_confidence: high
+  proposed_skill: ENG.2.2.i
+  skill_reason: '''Had better'' is followed by the bare infinitive.'
+- number: 68
+  page: 13
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: The lady promised to take Bisi and ______ abroad for employment.
+  options:
+    A: me
+    B: myself
+    C: we
+    D: I
+  proposed_answer: A
+  answer_confidence: high
+  proposed_skill: ENG.1.4.ii
+  skill_reason: 'Pronoun case: the object form ''me'' is required after the verb ''take''.'
+- number: 69
+  page: 13
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: We do not discuss important issues with her because she is ______ .
+  options:
+    A: very talkative
+    B: a talkative
+    C: well talkative
+    D: just a talkative
+  proposed_answer: A
+  answer_confidence: high
+  proposed_skill: ENG.2.2.i
+  skill_reason: '''Talkative'' is an adjective, so it takes the intensifier ''very'', not the article
+    ''a''.'
+- number: 70
+  page: 13
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: Her friends are afraid to confide ______ her.
+  options:
+    A: for
+    B: by
+    C: with
+    D: in
+  proposed_answer: D
+  answer_confidence: high
+  proposed_skill: ENG.1.4.iii
+  skill_reason: 'Preposition: ''confide in somebody''.'
+- number: 71
+  page: 13
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: Just ______ milk will improve the taste of this tea.
+  options:
+    A: a little
+    B: some
+    C: little
+    D: few
+  proposed_answer: A
+  answer_confidence: high
+  proposed_skill: ENG.2.3.i
+  skill_reason: 'Determiner with an uncountable noun: ''a little'' means a small positive quantity.'
+- number: 72
+  page: 13
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: The teacher told Aminata that she would do ______ in English Language if she took her assignments
+    seriously.
+  options:
+    A: much better
+    B: very better
+    C: more better
+    D: almost better
+  proposed_answer: A
+  answer_confidence: high
+  proposed_skill: ENG.2.1.i
+  skill_reason: 'Degree: comparatives are intensified with ''much'', not ''very'' or ''more''.'
+- number: 73
+  page: 13
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: Our tour of the tower came to an end all ______ soon.
+  options:
+    A: much
+    B: rather
+    C: too
+    D: more
+  proposed_answer: C
+  answer_confidence: high
+  proposed_skill: ENG.1.3.i
+  skill_reason: Fixed expression 'all too soon'.
+- number: 74
+  page: 13
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: It is important for one to identify with ______ own culture.
+  options:
+    A: his
+    B: her
+    C: their
+    D: one's
+  proposed_answer: D
+  answer_confidence: high
+  proposed_skill: ENG.1.4.ii
+  skill_reason: 'Pronoun-antecedent: the indefinite pronoun ''one'' is followed by ''one''s''.'
+- number: 75
+  page: 14
+  section: SECTION 5
+  instruction: From the word or group of words lettered A to D, choose the word or group of words that
+    best completes each of the following sentences.
+  stem: You can't expect someone who is always running her friends ______ to be popular.
+  options:
+    A: up
+    B: down
+    C: out
+    D: about
+  proposed_answer: B
+  answer_confidence: high
+  proposed_skill: ENG.1.3.i
+  skill_reason: Phrasal verb 'run somebody down' means to speak ill of them.
+- number: 76
+  page: 14
+  section: SECTION 6
+  passage_ref: passage_a
+  instruction: In the following passages, the numbered gaps indicate missing words. Against each number
+    in the list b[unclear] each passage, four options are given in columns lettered A to D. Choose the
+    word that is the most suitab[unclear] fill the numbered gaps in the passages.
+  stem: ______ such as schools and colleges are specially built and — 77 — designed for teaching and —
+    78 — [unclear]
+  options:
+    A: Establishments
+    B: Organizations
+    C: Institutions
+    D: Formations
+  proposed_answer: C
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: 'Vocabulary of school life: schools and colleges are institutions.'
+- number: 77
+  page: 14
+  section: SECTION 6
+  passage_ref: passage_a
+  instruction: In the following passages, the numbered gaps indicate missing words. Against each number
+    in the list b[unclear] each passage, four options are given in columns lettered A to D. Choose the
+    word that is the most suitab[unclear] fill the numbered gaps in the passages.
+  stem: — 76 — such as schools and colleges are specially built and ______ designed for teaching and —
+    78 — [unclear]
+  options:
+    A: promptly
+    B: purposefully
+    C: possibly
+    D: partially
+  proposed_answer: B
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: 'Collocation with ''specially built'': the buildings are purposefully designed.'
+- number: 78
+  page: 14
+  section: SECTION 6
+  passage_ref: passage_a
+  instruction: In the following passages, the numbered gaps indicate missing words. Against each number
+    in the list b[unclear] each passage, four options are given in columns lettered A to D. Choose the
+    word that is the most suitab[unclear] fill the numbered gaps in the passages.
+  stem: — 76 — such as schools and colleges are specially built and — 77 — designed for teaching and ______
+    [unclear]
+  options:
+    A: information
+    B: messages
+    C: coaching
+    D: learning
+  proposed_answer: D
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: 'Fixed pairing in school vocabulary: ''teaching and learning''.'
+- number: 79
+  page: 14
+  section: SECTION 6
+  passage_ref: passage_a
+  instruction: In the following passages, the numbered gaps indicate missing words. Against each number
+    in the list b[unclear] each passage, four options are given in columns lettered A to D. Choose the
+    word that is the most suitab[unclear] fill the numbered gaps in the passages.
+  stem: Also, the ______ are carefully planned and well structured through the use of syllabuses, — 80
+    — of w[unclear] course outlines, lesson plans and — 81 — tables.
+  options:
+    A: instructions
+    B: practices
+    C: books
+    D: systems
+  proposed_answer: A
+  answer_confidence: low
+  proposed_skill: ENG.1.1.i
+  skill_reason: Vocabulary of school life; the cut-off right margin removes context, and 'instructions',
+    'practices' and 'systems' are all arguable.
+- number: 80
+  page: 14
+  section: SECTION 6
+  passage_ref: passage_a
+  instruction: In the following passages, the numbered gaps indicate missing words. Against each number
+    in the list b[unclear] each passage, four options are given in columns lettered A to D. Choose the
+    word that is the most suitab[unclear] fill the numbered gaps in the passages.
+  stem: Also, the — 79 — are carefully planned and well structured through the use of syllabuses, ______
+    of w[unclear] course outlines, lesson plans and — 81 — tables.
+  options:
+    A: schemes
+    B: manuals
+    C: orders
+    D: programmes
+  proposed_answer: A
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: 'The truncated ''of w...'' is ''of work'': the school document is a scheme of work.'
+- number: 81
+  page: 14
+  section: SECTION 6
+  passage_ref: passage_a
+  instruction: In the following passages, the numbered gaps indicate missing words. Against each number
+    in the list b[unclear] each passage, four options are given in columns lettered A to D. Choose the
+    word that is the most suitab[unclear] fill the numbered gaps in the passages.
+  stem: Also, the — 79 — are carefully planned and well structured through the use of syllabuses, — 80
+    — of w[unclear] course outlines, lesson plans and ______ tables.
+  options:
+    A: action
+    B: study
+    C: time
+    D: teaching
+  proposed_answer: C
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: 'Vocabulary of school life: ''time tables'' completes the list of planning documents.'
+- number: 82
+  page: 14
+  section: SECTION 6
+  passage_ref: passage_a
+  instruction: In the following passages, the numbered gaps indicate missing words. Against each number
+    in the list b[unclear] each passage, four options are given in columns lettered A to D. Choose the
+    word that is the most suitab[unclear] fill the numbered gaps in the passages.
+  stem: This is the ______ type of education.
+  options:
+    A: proper
+    B: formal
+    C: strict
+    D: serious
+  proposed_answer: B
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: The next sentence contrasts it with 'Non-formal education', so this is the formal type.
+- number: 83
+  page: 14
+  section: SECTION 6
+  passage_ref: passage_a
+  instruction: In the following passages, the numbered gaps indicate missing words. Against each number
+    in the list b[unclear] each passage, four options are given in columns lettered A to D. Choose the
+    word that is the most suitab[unclear] fill the numbered gaps in the passages.
+  stem: Non-formal educa[unclear] on the other hand, often takes place in a ______ society.
+  options:
+    A: solid
+    B: sophisticated
+    C: simple
+    D: new
+  proposed_answer: C
+  answer_confidence: low
+  proposed_skill: ENG.1.1.i
+  skill_reason: Adjective choice in context; the sentence is cut at the right margin, so the intended
+    contrast is not fully recoverable.
+- number: 84
+  page: 14
+  section: SECTION 6
+  passage_ref: passage_a
+  instruction: In the following passages, the numbered gaps indicate missing words. Against each number
+    in the list b[unclear] each passage, four options are given in columns lettered A to D. Choose the
+    word that is the most suitab[unclear] fill the numbered gaps in the passages.
+  stem: It refers to any organized learning ______ that [unclear] the structure of the formal education.
+  options:
+    A: activity
+    B: class
+    C: arrangement
+    D: meeting
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.1.1.i
+  skill_reason: Collocation 'learning activity'; the clause after 'that' is cut off.
+- number: 85
+  page: 14
+  section: SECTION 6
+  passage_ref: passage_a
+  instruction: In the following passages, the numbered gaps indicate missing words. Against each number
+    in the list b[unclear] each passage, four options are given in columns lettered A to D. Choose the
+    word that is the most suitab[unclear] fill the numbered gaps in the passages.
+  stem: The purpose is to ______ the specific learning — 86 — of parti[unclear] groups of people in society.
+  options:
+    A: allow
+    B: offer
+    C: observe
+    D: meet
+  proposed_answer: D
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: Collocation 'meet needs' with gap 86.
+- number: 86
+  page: 14
+  section: SECTION 6
+  passage_ref: passage_a
+  instruction: In the following passages, the numbered gaps indicate missing words. Against each number
+    in the list b[unclear] each passage, four options are given in columns lettered A to D. Choose the
+    word that is the most suitab[unclear] fill the numbered gaps in the passages.
+  stem: The purpose is to — 85 — the specific learning ______ of parti[unclear] groups of people in society.
+  options:
+    A: wants
+    B: needs
+    C: desires
+    D: demands
+  proposed_answer: B
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: Collocation 'meet the specific learning needs'.
+- number: 87
+  page: 14
+  section: SECTION 6
+  passage_ref: passage_a
+  instruction: In the following passages, the numbered gaps indicate missing words. Against each number
+    in the list b[unclear] each passage, four options are given in columns lettered A to D. Choose the
+    word that is the most suitab[unclear] fill the numbered gaps in the passages.
+  stem: The third type is the informal which is ______ and devoid of planning [unclear] structuring.
+  options:
+    A: artificial
+    B: abnormal
+    C: unacceptable
+    D: natural
+  proposed_answer: D
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: Informal learning that lacks planning is described as natural.
+- number: 88
+  page: 14
+  section: SECTION 6
+  passage_ref: passage_a
+  instruction: In the following passages, the numbered gaps indicate missing words. Against each number
+    in the list b[unclear] each passage, four options are given in columns lettered A to D. Choose the
+    word that is the most suitab[unclear] fill the numbered gaps in the passages.
+  stem: Much of the learning comes ______.
+  options:
+    A: specially
+    B: consciously
+    C: unconsciously
+    D: quickly
+  proposed_answer: C
+  answer_confidence: high
+  proposed_skill: ENG.1.1.i
+  skill_reason: Informal learning is unplanned, so it comes unconsciously.
+- number: 89
+  page: 15
+  section: SECTION 6
+  passage_ref: passage_b
+  instruction: In the following passages, the numbered gaps indicate missing words. Against each number
+    in the list b[unclear] each passage, four options are given in columns lettered A to D. Choose the
+    word that is the most suitab[unclear] fill the numbered gaps in the passages.
+  stem: Well-meaning individuals the world over are worried about the continued ______ of Sexually Trans[unclear]
+    Diseases (STDs) especially as no section of — 90 — is spared their ugly — 91 —.
+  options:
+    A: control
+    B: state
+    C: spread
+    D: attack
+  proposed_answer: C
+  answer_confidence: high
+  proposed_skill: ENG.1.2.v
+  skill_reason: 'Vocabulary of health: diseases have a continued spread.'
+- number: 90
+  page: 15
+  section: SECTION 6
+  passage_ref: passage_b
+  instruction: In the following passages, the numbered gaps indicate missing words. Against each number
+    in the list b[unclear] each passage, four options are given in columns lettered A to D. Choose the
+    word that is the most suitab[unclear] fill the numbered gaps in the passages.
+  stem: Well-meaning individuals the world over are worried about the continued — 89 — of Sexually Trans[unclear]
+    Diseases (STDs) especially as no section of ______ is spared their ugly — 91 —.
+  options:
+    A: society
+    B: community
+    C: town
+    D: city
+  proposed_answer: A
+  answer_confidence: high
+  proposed_skill: ENG.1.2.v
+  skill_reason: 'Matches the worldwide scope: no section of society is spared.'
+- number: 91
+  page: 15
+  section: SECTION 6
+  passage_ref: passage_b
+  instruction: In the following passages, the numbered gaps indicate missing words. Against each number
+    in the list b[unclear] each passage, four options are given in columns lettered A to D. Choose the
+    word that is the most suitab[unclear] fill the numbered gaps in the passages.
+  stem: Well-meaning individuals the world over are worried about the continued — 89 — of Sexually Trans[unclear]
+    Diseases (STDs) especially as no section of — 90 — is spared their ugly ______.
+  options:
+    A: aspects
+    B: causes
+    C: effects
+    D: symptoms
+  proposed_answer: C
+  answer_confidence: high
+  proposed_skill: ENG.1.2.v
+  skill_reason: 'Vocabulary of health: diseases have ugly effects, and the next sentence lists social
+    and economic problems.'
+- number: 92
+  page: 15
+  section: SECTION 6
+  passage_ref: passage_b
+  instruction: In the following passages, the numbered gaps indicate missing words. Against each number
+    in the list b[unclear] each passage, four options are given in columns lettered A to D. Choose the
+    word that is the most suitab[unclear] fill the numbered gaps in the passages.
+  stem: Some of these are ______ [unclear] and range from social to economic problems.
+  options:
+    A: chaotic
+    B: traumatic
+    C: sensitive
+    D: punitive
+  proposed_answer: B
+  answer_confidence: medium
+  proposed_skill: ENG.1.2.v
+  skill_reason: Vocabulary of health; the line is cut at the right margin, so the full frame around the
+    gap is not visible.
+- number: 93
+  page: 15
+  section: SECTION 6
+  passage_ref: passage_b
+  instruction: In the following passages, the numbered gaps indicate missing words. Against each number
+    in the list b[unclear] each passage, four options are given in columns lettered A to D. Choose the
+    word that is the most suitab[unclear] fill the numbered gaps in the passages.
+  stem: STDs can bring about ______ in men and — 94 — [unclear] pregnancy, sometimes leading to post-natal
+    — 95 — and ultimately death.
+  options:
+    A: inability
+    B: sterility
+    C: handicap
+    D: inconsistency
+  proposed_answer: B
+  answer_confidence: high
+  proposed_skill: ENG.1.2.v
+  skill_reason: 'Vocabulary of health: STDs cause sterility in men.'
+- number: 94
+  page: 15
+  section: SECTION 6
+  passage_ref: passage_b
+  instruction: In the following passages, the numbered gaps indicate missing words. Against each number
+    in the list b[unclear] each passage, four options are given in columns lettered A to D. Choose the
+    word that is the most suitab[unclear] fill the numbered gaps in the passages.
+  stem: STDs can bring about — 93 — in men and ______ [unclear] pregnancy, sometimes leading to post-natal
+    — 95 — and ultimately death.
+  options:
+    A: confusion
+    B: concession
+    C: condemnation
+    D: complications
+  proposed_answer: D
+  answer_confidence: high
+  proposed_skill: ENG.1.2.v
+  skill_reason: 'Vocabulary of health: complications in pregnancy.'
+- number: 95
+  page: 15
+  section: SECTION 6
+  passage_ref: passage_b
+  instruction: In the following passages, the numbered gaps indicate missing words. Against each number
+    in the list b[unclear] each passage, four options are given in columns lettered A to D. Choose the
+    word that is the most suitab[unclear] fill the numbered gaps in the passages.
+  stem: STDs can bring about — 93 — in men and — 94 — [unclear] pregnancy, sometimes leading to post-natal
+    ______ and ultimately death.
+  options:
+    A: injury
+    B: labour
+    C: haemorrhage
+    D: hardship
+  proposed_answer: C
+  answer_confidence: high
+  proposed_skill: ENG.1.2.v
+  skill_reason: 'Vocabulary of health: post-natal haemorrhage is the condition that leads to death.'
+- number: 96
+  page: 15
+  section: SECTION 6
+  passage_ref: passage_b
+  instruction: In the following passages, the numbered gaps indicate missing words. Against each number
+    in the list b[unclear] each passage, four options are given in columns lettered A to D. Choose the
+    word that is the most suitab[unclear] fill the numbered gaps in the passages.
+  stem: Some patients face ______ among friends and relatives and end up — 97 —, while some marriages
+    — 98 — as a result of STD— 99 —.
+  options:
+    A: stigmatization
+    B: refusal
+    C: corruption
+    D: inferiority
+  proposed_answer: A
+  answer_confidence: high
+  proposed_skill: ENG.1.2.v
+  skill_reason: 'Vocabulary of health: patients face stigmatization.'
+- number: 97
+  page: 15
+  section: SECTION 6
+  passage_ref: passage_b
+  instruction: In the following passages, the numbered gaps indicate missing words. Against each number
+    in the list b[unclear] each passage, four options are given in columns lettered A to D. Choose the
+    word that is the most suitab[unclear] fill the numbered gaps in the passages.
+  stem: Some patients face — 96 — among friends and relatives and end up ______, while some marriages
+    — 98 — as a result of STD— 99 —.
+  options:
+    A: banned
+    B: suspended
+    C: biased
+    D: frustrated
+  proposed_answer: D
+  answer_confidence: high
+  proposed_skill: ENG.1.2.v
+  skill_reason: '''End up frustrated'' is the state that follows stigmatization.'
+- number: 98
+  page: 15
+  section: SECTION 6
+  passage_ref: passage_b
+  instruction: In the following passages, the numbered gaps indicate missing words. Against each number
+    in the list b[unclear] each passage, four options are given in columns lettered A to D. Choose the
+    word that is the most suitab[unclear] fill the numbered gaps in the passages.
+  stem: Some patients face — 96 — among friends and relatives and end up — 97 —, while some marriages
+    ______ as a result of STD— 99 —.
+  options:
+    A: breakout
+    B: break in
+    C: breakthrough
+    D: break up
+  proposed_answer: D
+  answer_confidence: high
+  proposed_skill: ENG.1.3.i
+  skill_reason: 'Phrasal verb: marriages ''break up''.'
+- number: 99
+  page: 15
+  section: SECTION 6
+  passage_ref: passage_b
+  instruction: In the following passages, the numbered gaps indicate missing words. Against each number
+    in the list b[unclear] each passage, four options are given in columns lettered A to D. Choose the
+    word that is the most suitab[unclear] fill the numbered gaps in the passages.
+  stem: Some patients face — 96 — among friends and relatives and end up — 97 —, while some marriages
+    — 98 — as a result of STD ______.
+  options:
+    A: action
+    B: infection
+    C: infusion
+    D: projection
+  proposed_answer: B
+  answer_confidence: high
+  proposed_skill: ENG.1.2.v
+  skill_reason: 'Vocabulary of health: ''STD infection''.'
+- number: 100
+  page: 15
+  section: SECTION 6
+  passage_ref: passage_b
+  instruction: In the following passages, the numbered gaps indicate missing words. Against each number
+    in the list b[unclear] each passage, four options are given in columns lettered A to D. Choose the
+    word that is the most suitab[unclear] fill the numbered gaps in the passages.
+  stem: Though some of these diseases can be managed, they are not yet ______.
+  options:
+    A: curable
+    B: controllable
+    C: preventable
+    D: detectable
+  proposed_answer: A
+  answer_confidence: high
+  proposed_skill: ENG.1.2.v
+  skill_reason: 'Contrast with ''can be managed'': they are manageable but not curable.'

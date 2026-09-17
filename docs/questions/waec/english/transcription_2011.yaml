@@ -1,0 +1,1556 @@
+format_version: 1
+source:
+  file: docs/questions/waec/english/WASSCE_English-Lang2_2011.pdf
+  exam_year: 2011
+  series: "November"
+  paper_label: "ENGLISH LANGUAGE 2 — Objective Test"
+  paper_code: "P3022"
+  duration_minutes: 60
+  marks: 100
+
+passages:
+  - id: SECTION6_PASSAGE_A
+    label: "PASSAGE A"
+    page: 14
+    text: |-
+      In international law and relations, — 75 — has come to be accepted as the most popular — 76 — of government. Therefore other — 77 — types have gradually been seen as unacceptable. This affects — 78 — and — 79 — among nations.
+
+      Consequently, we have — 80 — with resultant — 81 — based on each government's primary — 82 —. Geographical, economic and political — 83 — are very — 84 — considered with a view to averting the debilitating impacts which — 85 — decisions of nations could cause.
+
+      Thus, this — 86 — is — 87 — to all the nations of the world.
+  - id: SECTION6_PASSAGE_B
+    label: "PASSAGE B"
+    page: 14
+    text: |-
+      Mixed reactions have continued to trail most countries' performance in the last African Nations Cup — 88 —. Although many — 89 — analysts blamed the coaches for the outcome of the semi-final matches, attributing it to — 90 — deficiencies and wrong substitution of — 91 —, some of the coaches have remained unrepentant.
+
+      For some coaches and their — 92 — the dream of clinching the African Nations Cup as they had individually done in the past when they — 93 — the rest of Africa, could not be realized.
+
+      After a pulsating 120 minutes of soccer — 94 — the resultant — 95 — shoot-out saw some strikers who had — 96 — goals in some of the group — 97 — failing to score, as their feeble — 98 — were easily parried by their opponents' — 99 —. The loss effectively ended some of the countries' dreams of winning the — 100 —.
+
+questions:
+  - number: 1
+    page: 2
+    section: "SECTION 1"
+    instruction: "In each of the following sentences, there is one underlined word and one gap. From the list of words lettered A to D, choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence."
+    stem: "The secretary showed no remorse for misbehaving; she remained ______."
+    options:
+      A: "aggressive"
+      B: "saucy"
+      C: "unrepentant"
+      D: "snobbish"
+    proposed_answer: C
+    answer_confidence: high
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Antonym of 'remorse' that also fits the gap: remorse versus remaining unrepentant."
+
+  - number: 2
+    page: 2
+    section: "SECTION 1"
+    instruction: "In each of the following sentences, there is one underlined word and one gap. From the list of words lettered A to D, choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence."
+    stem: "Once in a while, we ought to be liberal and not ______."
+    options:
+      A: "critical"
+      B: "harsh"
+      C: "conservative"
+      D: "orthodox"
+    proposed_answer: C
+    answer_confidence: medium
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Antonym of 'liberal'; 'orthodox' is a near rival, so the choice is the standard liberal/conservative pair."
+
+  - number: 3
+    page: 3
+    section: "SECTION 1"
+    instruction: "In each of the following sentences, there is one underlined word and one gap. From the list of words lettered A to D, choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence."
+    stem: "The sea which was turbulent an hour-ago is now ______."
+    options:
+      A: "cool"
+      B: "deep"
+      C: "calm"
+      D: "motionless"
+    proposed_answer: C
+    answer_confidence: high
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Antonym of 'turbulent' that fits a description of the sea."
+
+  - number: 4
+    page: 3
+    section: "SECTION 1"
+    instruction: "In each of the following sentences, there is one underlined word and one gap. From the list of words lettered A to D, choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence."
+    stem: "Yao's old car is durable but this new one looks ______."
+    options:
+      A: "flashy"
+      B: "fragile"
+      C: "strong"
+      D: "spacious"
+    proposed_answer: B
+    answer_confidence: high
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Antonym of 'durable' that also completes the contrast with 'but'."
+
+  - number: 5
+    page: 3
+    section: "SECTION 1"
+    instruction: "In each of the following sentences, there is one underlined word and one gap. From the list of words lettered A to D, choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence."
+    stem: "Some parents have room only for condemnation and not ______."
+    options:
+      A: "probation"
+      B: "recommendation"
+      C: "commendation"
+      D: "punishment"
+    proposed_answer: C
+    answer_confidence: high
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Antonym of 'condemnation'; commendation is its direct opposite."
+
+  - number: 6
+    page: 3
+    section: "SECTION 1"
+    instruction: "In each of the following sentences, there is one underlined word and one gap. From the list of words lettered A to D, choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence."
+    stem: "Nowadays computerized services are taking the place of ______ operations."
+    options:
+      A: "manual"
+      B: "electrical"
+      C: "daily"
+      D: "efficient"
+    proposed_answer: A
+    answer_confidence: high
+    proposed_skill: ENG.1.2.xiii
+    skill_reason: "Computerized versus manual operations is science-and-technology vocabulary used as an antonym pair."
+
+  - number: 7
+    page: 3
+    section: "SECTION 1"
+    instruction: "In each of the following sentences, there is one underlined word and one gap. From the list of words lettered A to D, choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence."
+    stem: "After enjoying the excitement of city life for twenty years, Olu found it difficult to adjust to the ______ life of his village."
+    options:
+      A: "quiet"
+      B: "rustic"
+      C: "monotonous"
+      D: "busy"
+    proposed_answer: C
+    answer_confidence: medium
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Antonym of 'excitement'; monotony is its opposite, though 'quiet' is a plausible rival."
+
+  - number: 8
+    page: 3
+    section: "SECTION 1"
+    instruction: "In each of the following sentences, there is one underlined word and one gap. From the list of words lettered A to D, choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence."
+    stem: "Kobina's eldest wife was very frugal but the youngest was rather ______."
+    options:
+      A: "foolish"
+      B: "extravagant"
+      C: "childish"
+      D: "callous"
+    proposed_answer: B
+    answer_confidence: high
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Antonym of 'frugal' that also completes the contrast."
+
+  - number: 9
+    page: 4
+    section: "SECTION 1"
+    instruction: "In each of the following sentences, there is one underlined word and one gap. From the list of words lettered A to D, choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence."
+    stem: "Modou's business which was flourishing up to last week is now ______."
+    options:
+      A: "closing"
+      B: "diminishing"
+      C: "declining"
+      D: "vanishing"
+    proposed_answer: C
+    answer_confidence: medium
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Antonym of 'flourishing'; 'declining' is the closest opposite, with 'diminishing' a near rival."
+
+  - number: 10
+    page: 4
+    section: "SECTION 1"
+    instruction: "In each of the following sentences, there is one underlined word and one gap. From the list of words lettered A to D, choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence."
+    stem: "Okon seldom goes to school because he is ______ afraid of meeting his class teacher."
+    options:
+      A: "never"
+      B: "quite"
+      C: "always"
+      D: "terribly"
+    proposed_answer: C
+    answer_confidence: high
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Antonym of the frequency adverb 'seldom' that also fits the gap before 'afraid'."
+
+  - number: 11
+    page: 4
+    section: "SECTION 2"
+    instruction: "From the words lettered A to D, choose the word that best completes each of the following sentences."
+    stem: "Charles, the king's eldest son, is indisputably the ______ to the throne."
+    options:
+      A: "owner"
+      B: "claimant"
+      C: "guard"
+      D: "heir"
+    proposed_answer: D
+    answer_confidence: high
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Word meaning in context: 'heir to the throne' is the fixed everyday collocation."
+
+  - number: 12
+    page: 4
+    section: "SECTION 2"
+    instruction: "From the words lettered A to D, choose the word that best completes each of the following sentences."
+    stem: "The teacher found it difficult to read Hassan's work and so he advised him to make it ______"
+    options:
+      A: "legible"
+      B: "easier"
+      C: "large"
+      D: "eligible"
+    proposed_answer: A
+    answer_confidence: high
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Word meaning in context; 'legible' contrasts with difficulty in reading (and with the distractor 'eligible')."
+
+  - number: 13
+    page: 4
+    section: "SECTION 2"
+    instruction: "From the words lettered A to D, choose the word that best completes each of the following sentences."
+    stem: "No one had any comment to make on the minutes and so the chairman asked for its ______"
+    options:
+      A: "correction"
+      B: "reading"
+      C: "adoption"
+      D: "amendment"
+    proposed_answer: C
+    answer_confidence: high
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Word meaning in context: minutes with no comments are adopted."
+
+  - number: 14
+    page: 4
+    section: "SECTION 2"
+    instruction: "From the words lettered A to D, choose the word that best completes each of the following sentences."
+    stem: "Poor feeding has caused children of this village to suffer from ______"
+    options:
+      A: "malnutrition"
+      B: "malaria"
+      C: "convulsion"
+      D: "meningitis"
+    proposed_answer: A
+    answer_confidence: high
+    proposed_skill: ENG.1.2.v
+    skill_reason: "Health vocabulary: poor feeding causes malnutrition."
+
+  - number: 15
+    page: 5
+    section: "SECTION 2"
+    instruction: "From the words lettered A to D, choose the word that best completes each of the following sentences."
+    stem: "In a child-centred classroom, the interest of the child is of ______ importance."
+    options:
+      A: "permanent"
+      B: "pre-eminent"
+      C: "prominent"
+      D: "paramount"
+    proposed_answer: D
+    answer_confidence: high
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Everyday collocation 'of paramount importance'."
+
+  - number: 16
+    page: 5
+    section: "SECTION 2"
+    instruction: "From the words lettered A to D, choose the word that best completes each of the following sentences."
+    stem: "Each of the under-seventeen players received a handsome ______ from the president."
+    options:
+      A: "reward"
+      B: "praise"
+      C: "treat"
+      D: "kit"
+    proposed_answer: A
+    answer_confidence: high
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Collocation 'a handsome reward'; only 'reward' is something received from a person in this sense."
+
+  - number: 17
+    page: 5
+    section: "SECTION 2"
+    instruction: "From the words lettered A to D, choose the word that best completes each of the following sentences."
+    stem: "Dele loves all his students and so he is very ______ among them."
+    options:
+      A: "humble"
+      B: "jovial"
+      C: "popular"
+      D: "simple"
+    proposed_answer: C
+    answer_confidence: high
+    proposed_skill: ENG.1.1.i
+    skill_reason: "'Popular among them' is the phrase the sentence requires."
+
+  - number: 18
+    page: 5
+    section: "SECTION 2"
+    instruction: "From the words lettered A to D, choose the word that best completes each of the following sentences."
+    stem: "Since Ebou was found guilty of the crime, the magistrate ______ him to two years' imprisonment."
+    options:
+      A: "sentenced"
+      B: "confined"
+      C: "punished"
+      D: "confirmed"
+    proposed_answer: A
+    answer_confidence: high
+    proposed_skill: ENG.1.2.viii
+    skill_reason: "Law-and-order vocabulary: a magistrate sentences an offender to imprisonment."
+
+  - number: 19
+    page: 5
+    section: "SECTION 2"
+    instruction: "From the words lettered A to D, choose the word that best completes each of the following sentences."
+    stem: "Mary's ______ of the accident is very different from yours."
+    options:
+      A: "summary"
+      B: "outline"
+      C: "account"
+      D: "statement"
+    proposed_answer: C
+    answer_confidence: medium
+    proposed_skill: ENG.1.1.i
+    skill_reason: "'Account of the accident' is the usual collocation, though 'statement' is a near rival."
+
+  - number: 20
+    page: 5
+    section: "SECTION 2"
+    instruction: "From the words lettered A to D, choose the word that best completes each of the following sentences."
+    stem: "You were not expected to ______ this secret to the police."
+    options:
+      A: "divulge"
+      B: "display"
+      C: "write"
+      D: "discuss"
+    proposed_answer: A
+    answer_confidence: high
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Word meaning in context: a secret is divulged."
+
+  - number: 21
+    page: 6
+    section: "SECTION 3"
+    instruction: "After each of the following sentences, a list of possible interpretations is given. Choose the interpretation that you consider most appropriate for each sentence."
+    stem: "Tunde is very troublesome and so his neighbours find it difficult to put up with him. This means that his neighbours"
+    options:
+      A: "cannot live with him under the same roof."
+      B: "cannot rely on him."
+      C: "cannot tolerate him."
+      D: "hate him immensely."
+    proposed_answer: C
+    answer_confidence: high
+    proposed_skill: ENG.1.3.i
+    skill_reason: "Idiomatic expression 'put up with' means tolerate."
+
+  - number: 22
+    page: 6
+    section: "SECTION 3"
+    instruction: "After each of the following sentences, a list of possible interpretations is given. Choose the interpretation that you consider most appropriate for each sentence."
+    stem: "The President's birthday party was attended by the cream of society. This means that"
+    options:
+      A: "the most important people were at the party."
+      B: "all the civil servants were at the party."
+      C: "other presidents attended the party."
+      D: "only invited guests attended the party."
+    proposed_answer: A
+    answer_confidence: high
+    proposed_skill: ENG.1.3.i
+    skill_reason: "Fixed expression 'the cream of society' means the most important people."
+
+  - number: 23
+    page: 6
+    section: "SECTION 3"
+    instruction: "After each of the following sentences, a list of possible interpretations is given. Choose the interpretation that you consider most appropriate for each sentence."
+    stem: "The principal played the ostrich when she got reports of malpractices in the examination hall. This means that the principal"
+    options:
+      A: "became vigilant."
+      B: "behaved like an ostrich."
+      C: "ignored the problem."
+      D: "denied the reports"
+    proposed_answer: C
+    answer_confidence: high
+    proposed_skill: ENG.1.3.i
+    skill_reason: "Idiom 'play the ostrich' means to ignore an obvious problem."
+
+  - number: 24
+    page: 6
+    section: "SECTION 3"
+    instruction: "After each of the following sentences, a list of possible interpretations is given. Choose the interpretation that you consider most appropriate for each sentence."
+    stem: "Our uncle visits us only once in a blue moon. This means that our uncle"
+    options:
+      A: "visits us only when the moon is blue."
+      B: "seldom visits us."
+      C: "visits us once a year."
+      D: "finds it difficult to visit us."
+    proposed_answer: B
+    answer_confidence: high
+    proposed_skill: ENG.1.3.i
+    skill_reason: "Idiom 'once in a blue moon' means very rarely."
+
+  - number: 25
+    page: 6
+    section: "SECTION 3"
+    instruction: "After each of the following sentences, a list of possible interpretations is given. Choose the interpretation that you consider most appropriate for each sentence."
+    stem: "The Principal's prompt intervention nipped last week's crisis in the bud. This means that"
+    options:
+      A: "the crisis was averted."
+      B: "the students were chased away."
+      C: "no one was willing to be part of the crisis."
+      D: "the students decided to obey the Principal's orders."
+    proposed_answer: A
+    answer_confidence: high
+    proposed_skill: ENG.1.3.i
+    skill_reason: "Idiom 'nip in the bud' means to stop something before it develops."
+
+  - number: 26
+    page: 6
+    section: "SECTION 3"
+    instruction: "After each of the following sentences, a list of possible interpretations is given. Choose the interpretation that you consider most appropriate for each sentence."
+    stem: "The school next door is virtually a bedlam as its students are uncontrollable. This means that"
+    options:
+      A: "the school is a playground for everybody."
+      B: "the students move up and down in the compound."
+      C: "no student is willing to stay in the classroom."
+      D: "the school is a place of noise and confusion."
+    proposed_answer: D
+    answer_confidence: high
+    proposed_skill: ENG.1.5.i
+    skill_reason: "Figurative use of 'a bedlam' for a scene of noise and confusion."
+
+  - number: 27
+    page: 7
+    section: "SECTION 3"
+    instruction: "After each of the following sentences, a list of possible interpretations is given. Choose the interpretation that you consider most appropriate for each sentence."
+    stem: "Mary should not criticize anybody since she too has a skeleton in her cupboard. This means that she"
+    options:
+      A: "has a secret."
+      B: "loves to play with skeletons."
+      C: "studies skeletons."
+      D: "does not want anybody to steal from her cupboard."
+    proposed_answer: A
+    answer_confidence: high
+    proposed_skill: ENG.1.3.i
+    skill_reason: "Idiom 'a skeleton in the cupboard' means a hidden, discreditable secret."
+
+  - number: 28
+    page: 7
+    section: "SECTION 3"
+    instruction: "After each of the following sentences, a list of possible interpretations is given. Choose the interpretation that you consider most appropriate for each sentence."
+    stem: "Araba's friends decided to send her to coventry. This means that"
+    options:
+      A: "Araba was to be sent to a convent."
+      B: "she was to be sent away."
+      C: "her friends decided to ignore her."
+      D: "her friends decided to forgive her."
+    proposed_answer: C
+    answer_confidence: high
+    proposed_skill: ENG.1.3.i
+    skill_reason: "Idiom 'send to Coventry' means to refuse to speak to or deliberately ignore someone."
+
+  - number: 29
+    page: 7
+    section: "SECTION 3"
+    instruction: "After each of the following sentences, a list of possible interpretations is given. Choose the interpretation that you consider most appropriate for each sentence."
+    stem: "The widow works her fingers to the bone to take care of her children. This means that the widow"
+    options:
+      A: "wears out her fingers with work."
+      B: "is lazy."
+      C: "massages her bones."
+      D: "works extremely hard."
+    proposed_answer: D
+    answer_confidence: high
+    proposed_skill: ENG.1.3.i
+    skill_reason: "Idiom 'work one's fingers to the bone' means to work extremely hard."
+
+  - number: 30
+    page: 7
+    section: "SECTION 3"
+    instruction: "After each of the following sentences, a list of possible interpretations is given. Choose the interpretation that you consider most appropriate for each sentence."
+    stem: "The way the boys beat up their friends made my blood boil. This means that"
+    options:
+      A: "I was not happy with the boys."
+      B: "I hated the boys."
+      C: "my blood boiled."
+      D: "I was thoroughly agitated by the action of the boys."
+    proposed_answer: D
+    answer_confidence: high
+    proposed_skill: ENG.1.3.i
+    skill_reason: "Idiom 'make one's blood boil' means to be made extremely angry; D captures the intensity that A understates."
+
+  - number: 31
+    page: 7
+    section: "SECTION 4"
+    instruction: "From the words lettered A to D below each of the following sentences, choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence."
+    stem: "Popular leaders are always given tumultuous welcome when they visit their supporters."
+    options:
+      A: "pleasant"
+      B: "friendly"
+      C: "noisy"
+      D: "encouraging"
+    proposed_answer: C
+    answer_confidence: high
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Synonym in context: a tumultuous welcome is a noisy one."
+
+  - number: 32
+    page: 7
+    section: "SECTION 4"
+    instruction: "From the words lettered A to D below each of the following sentences, choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence."
+    stem: "Conceited bosses are often inaccessible."
+    options:
+      A: "unfriendly"
+      B: "unapproachable"
+      C: "selfish"
+      D: "apathetic"
+    proposed_answer: B
+    answer_confidence: high
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Synonym in context: inaccessible people are unapproachable."
+
+  - number: 33
+    page: 8
+    section: "SECTION 4"
+    instruction: "From the words lettered A to D below each of the following sentences, choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence."
+    stem: "The good neighbours restrained the impatient landlord from ejecting his tenant."
+    options:
+      A: "prevented"
+      B: "forced"
+      C: "compelled"
+      D: "halted"
+    proposed_answer: A
+    answer_confidence: high
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Synonym in context: 'restrained ... from' equals 'prevented ... from'."
+
+  - number: 34
+    page: 8
+    section: "SECTION 4"
+    instruction: "From the words lettered A to D below each of the following sentences, choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence."
+    stem: "The inauguration of the political party has been hampered by lack of funds."
+    options:
+      A: "cancelled"
+      B: "postponed"
+      C: "discouraged"
+      D: "hindered"
+    proposed_answer: D
+    answer_confidence: high
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Synonym in context: hampered means hindered."
+
+  - number: 35
+    page: 8
+    section: "SECTION 4"
+    instruction: "From the words lettered A to D below each of the following sentences, choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence."
+    stem: "Unfortunately, many of our companies lack virtuous men."
+    options:
+      A: "upright"
+      B: "famous"
+      C: "clever"
+      D: "wealthy"
+    proposed_answer: A
+    answer_confidence: high
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Synonym in context: virtuous means morally upright."
+
+  - number: 36
+    page: 8
+    section: "SECTION 4"
+    instruction: "From the words lettered A to D below each of the following sentences, choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence."
+    stem: "The wife's comments further infuriated her already angry husband."
+    options:
+      A: "frightened"
+      B: "moved"
+      C: "enraged"
+      D: "challenged"
+    proposed_answer: C
+    answer_confidence: high
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Synonym in context: infuriated means enraged."
+
+  - number: 37
+    page: 8
+    section: "SECTION 4"
+    instruction: "From the words lettered A to D below each of the following sentences, choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence."
+    stem: "Esiri's father has an alluring personality which endears him to many people."
+    options:
+      A: "enduring"
+      B: "honourable"
+      C: "attractive"
+      D: "interesting"
+    proposed_answer: C
+    answer_confidence: high
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Synonym in context: alluring means attractive."
+
+  - number: 38
+    page: 8
+    section: "SECTION 4"
+    instruction: "From the words lettered A to D below each of the following sentences, choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence."
+    stem: "Bribery and corruption are inimical to Africa's economic advancement."
+    options:
+      A: "common"
+      B: "unavoidable"
+      C: "harmful"
+      D: "negative"
+    proposed_answer: C
+    answer_confidence: high
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Synonym in context: inimical to means harmful to."
+
+  - number: 39
+    page: 8
+    section: "SECTION 4"
+    instruction: "From the words lettered A to D below each of the following sentences, choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence."
+    stem: "We are skeptical about Sana's story that he saw four lions at the roundabout."
+    options:
+      A: "concerned"
+      B: "doubtful"
+      C: "amazed"
+      D: "terrified"
+    proposed_answer: B
+    answer_confidence: high
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Synonym in context: skeptical means doubtful."
+
+  - number: 40
+    page: 9
+    section: "SECTION 4"
+    instruction: "From the words lettered A to D below each of the following sentences, choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence."
+    stem: "An inflexible father ends up destroying himself and his family."
+    options:
+      A: "unbending"
+      B: "aggressive"
+      C: "unfeeling"
+      D: "ignorant"
+    proposed_answer: A
+    answer_confidence: high
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Synonym in context: inflexible means unbending."
+
+  - number: 41
+    page: 9
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "The most recent explosion at the railway station ______ caused panic in the city."
+    options:
+      A: "have"
+      B: "has"
+      C: "had"
+      D: "haven't"
+    proposed_answer: B
+    answer_confidence: high
+    proposed_skill: ENG.2.1.i
+    skill_reason: "Word-form showing number and tense: a singular subject takes 'has' in the present perfect."
+
+  - number: 42
+    page: 9
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "The teacher expects every student to respect ______"
+    options:
+      A: "themselves"
+      B: "ourselves"
+      C: "himself"
+      D: "oneself"
+    proposed_answer: C
+    answer_confidence: medium
+    proposed_skill: ENG.1.4.ii
+    skill_reason: "Reflexive pronoun matching the singular antecedent 'every student'."
+
+  - number: 43
+    page: 9
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "Monkeys don't talk, ______ ?"
+    options:
+      A: "don't they"
+      B: "they do"
+      C: "didn't they"
+      D: "do they"
+    proposed_answer: D
+    answer_confidence: high
+    proposed_skill: ENG.2.2.i
+    skill_reason: "Question-tag pattern: a negative statement takes a positive tag in the same tense."
+
+  - number: 44
+    page: 9
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "It is high time we ______ for the airport."
+    options:
+      A: "left"
+      B: "leave"
+      C: "are leaving"
+      D: "had left"
+    proposed_answer: A
+    answer_confidence: high
+    proposed_skill: ENG.1.4.i
+    skill_reason: "Sequence of tenses: 'it is high time' is followed by the past subjunctive."
+
+  - number: 45
+    page: 9
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "______ we waited, Bisi went to look for the dog."
+    options:
+      A: "When"
+      B: "Why"
+      C: "While"
+      D: "Where"
+    proposed_answer: C
+    answer_confidence: high
+    proposed_skill: ENG.2.3.i
+    skill_reason: "Structural word: the conjunction 'while' introduces the simultaneous clause."
+
+  - number: 46
+    page: 10
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "Balogun is being trained to ______ the post of manager from Ikem."
+    options:
+      A: "take away"
+      B: "take up"
+      C: "take over"
+      D: "take in"
+    proposed_answer: C
+    answer_confidence: high
+    proposed_skill: ENG.1.3.i
+    skill_reason: "Phrasal verb: one takes over a post from someone else."
+
+  - number: 47
+    page: 10
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "The police have succeeded in rounding ______ all the thieves in our area."
+    options:
+      A: "up"
+      B: "over"
+      C: "in"
+      D: "off"
+    proposed_answer: A
+    answer_confidence: high
+    proposed_skill: ENG.1.3.i
+    skill_reason: "Phrasal verb: 'round up' means to gather or arrest a group."
+
+  - number: 48
+    page: 10
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "Your suit is ______ bright for the occasion we are to attend."
+    options:
+      A: "very"
+      B: "so"
+      C: "too"
+      D: "quite"
+    proposed_answer: C
+    answer_confidence: high
+    proposed_skill: ENG.2.3.i
+    skill_reason: "Structural word: 'too ... for' expresses excess, which the sentence requires."
+
+  - number: 49
+    page: 10
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "Wise people are open ______ criticism."
+    options:
+      A: "to"
+      B: "for"
+      C: "in"
+      D: "about"
+    proposed_answer: A
+    answer_confidence: high
+    proposed_skill: ENG.1.4.iii
+    skill_reason: "Correct preposition after the adjective 'open'."
+
+  - number: 50
+    page: 10
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "The athletics captain asked me whether I had ever ______ the hundred metres."
+    options:
+      A: "runs"
+      B: "running"
+      C: "ran"
+      D: "run"
+    proposed_answer: D
+    answer_confidence: high
+    proposed_skill: ENG.1.4.i
+    skill_reason: "Sequence of tenses: the past perfect requires the past participle 'run'."
+
+  - number: 51
+    page: 10
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "It is useless ______ with a man who holds on to only his own opinion."
+    options:
+      A: "to have argued"
+      B: "argued"
+      C: "to argue"
+      D: "to be arguing"
+    proposed_answer: C
+    answer_confidence: high
+    proposed_skill: ENG.2.2.i
+    skill_reason: "Sentence pattern: 'it is useless' takes a plain to-infinitive."
+
+  - number: 52
+    page: 10
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "______ did this disgraceful thing will not go unpunished."
+    options:
+      A: "Whichever"
+      B: "Whoever"
+      C: "Whomever"
+      D: "Whatsoever"
+    proposed_answer: B
+    answer_confidence: high
+    proposed_skill: ENG.2.2.i
+    skill_reason: "Clause pattern: the nominal clause needs the subject form 'whoever'."
+
+  - number: 53
+    page: 11
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "I said they did not steal the money, ______ ?"
+    options:
+      A: "did they"
+      B: "did I"
+      C: "didn't I"
+      D: "didn't it"
+    proposed_answer: C
+    answer_confidence: high
+    proposed_skill: ENG.2.2.i
+    skill_reason: "Question tag takes the positive main clause 'I said', so the tag is negative and matches 'I'."
+
+  - number: 54
+    page: 11
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "He never passed his Mathematics, ______"
+    options:
+      A: "he tried however hard"
+      B: "he however tried hard"
+      C: "however hard he tried"
+      D: "however he tried hard"
+    proposed_answer: C
+    answer_confidence: high
+    proposed_skill: ENG.2.2.i
+    skill_reason: "Clause pattern: 'however' + adjective/adverb + subject + verb."
+
+  - number: 55
+    page: 11
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "I wish Joseph ______ here to witness this."
+    options:
+      A: "were"
+      B: "was"
+      C: "is"
+      D: "are"
+    proposed_answer: A
+    answer_confidence: high
+    proposed_skill: ENG.1.4.i
+    skill_reason: "Sequence of tenses: 'I wish' takes the past subjunctive 'were'."
+
+  - number: 56
+    page: 11
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "Mary has misplaced her ______."
+    options:
+      A: "American blue leather bag"
+      B: "blue leather American bag"
+      C: "American leather blue bag"
+      D: "blue American leather bag"
+    proposed_answer: D
+    answer_confidence: high
+    proposed_skill: ENG.2.2.i
+    skill_reason: "Order of adjectives in a noun group: colour, then origin, then material."
+
+  - number: 57
+    page: 11
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "Our social club sets aside money for ______"
+    options:
+      A: "poor"
+      B: "the poors"
+      C: "some poor"
+      D: "the poor"
+    proposed_answer: D
+    answer_confidence: high
+    proposed_skill: ENG.2.3.i
+    skill_reason: "Determiner use: 'the' + adjective names a class of people."
+
+  - number: 58
+    page: 11
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "I have found out that all your ______ like you."
+    options:
+      A: "brothers –in–law"
+      B: "brother–in–law's"
+      C: "brothers–in–laws"
+      D: "brother–in–laws"
+    proposed_answer: A
+    answer_confidence: high
+    proposed_skill: ENG.2.1.i
+    skill_reason: "Word-form showing number: the plural of a compound noun falls on the head word."
+
+  - number: 59
+    page: 11
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "My grandfather was very sick and could not ______."
+    options:
+      A: "pull away"
+      B: "pull through"
+      C: "pull over"
+      D: "pull out"
+    proposed_answer: B
+    answer_confidence: high
+    proposed_skill: ENG.1.3.i
+    skill_reason: "Phrasal verb: to 'pull through' is to recover from illness."
+
+  - number: 60
+    page: 12
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "______ were selected to represent our school in the forum on Blind Abuse."
+    options:
+      A: "Chris and I"
+      B: "Chris and myself"
+      C: "Myself and Chris"
+      D: "I and Chris"
+    proposed_answer: A
+    answer_confidence: high
+    proposed_skill: ENG.1.4.ii
+    skill_reason: "Pronoun form in a compound subject: the subject pronoun 'I' comes after the other person."
+
+  - number: 61
+    page: 12
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "The witness said he saw the thief ______ over the wall."
+    options:
+      A: "had leapt"
+      B: "leapt"
+      C: "leap"
+      D: "was leaping"
+    proposed_answer: C
+    answer_confidence: high
+    proposed_skill: ENG.2.2.i
+    skill_reason: "Verb pattern: the perception verb 'saw' is followed by a bare infinitive."
+
+  - number: 62
+    page: 12
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "All the ______ are expected to attend this special summit on corruption in Africa."
+    options:
+      A: "Head of states"
+      B: "Heads of state"
+      C: "Heads of states"
+      D: "Head of state"
+    proposed_answer: B
+    answer_confidence: high
+    proposed_skill: ENG.2.1.i
+    skill_reason: "Word-form showing number: the compound pluralises as 'Heads of state'."
+
+  - number: 63
+    page: 12
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "The dog barked angrily when Bamiyo stepped on ______ tail."
+    options:
+      A: "their"
+      B: "its"
+      C: "it's"
+      D: "the"
+    proposed_answer: B
+    answer_confidence: high
+    proposed_skill: ENG.1.4.ii
+    skill_reason: "Possessive pronoun matching the singular antecedent 'the dog'."
+
+  - number: 64
+    page: 12
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "Mimi is by far ______ of all the girls in her class."
+    options:
+      A: "the most studious"
+      B: "most studious"
+      C: "the studious"
+      D: "the more studious"
+    proposed_answer: A
+    answer_confidence: high
+    proposed_skill: ENG.2.1.i
+    skill_reason: "Word-form showing degree: the superlative is required for a comparison among all the girls."
+
+  - number: 65
+    page: 12
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "In a really democratic country no one is ______ the law."
+    options:
+      A: "within"
+      B: "above"
+      C: "against"
+      D: "below"
+    proposed_answer: B
+    answer_confidence: high
+    proposed_skill: ENG.1.4.iii
+    skill_reason: "Correct preposition: the fixed phrase is 'above the law'."
+
+  - number: 66
+    page: 12
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "The villagers will have to blame ______ for this year's poor harvest."
+    options:
+      A: "each other"
+      B: "ourselves"
+      C: "themselves"
+      D: "one another"
+    proposed_answer: C
+    answer_confidence: high
+    proposed_skill: ENG.1.4.ii
+    skill_reason: "Reflexive pronoun matching the third-person plural antecedent 'the villagers'."
+
+  - number: 67
+    page: 13
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "I wonder ______ the man did not defend himself."
+    options:
+      A: "how"
+      B: "when"
+      C: "why"
+      D: "then"
+    proposed_answer: C
+    answer_confidence: high
+    proposed_skill: ENG.2.2.i
+    skill_reason: "Clause pattern: 'why' introduces the noun clause after 'I wonder', giving the reason sense the sentence needs."
+
+  - number: 68
+    page: 13
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "He was confronted ______ the evidence of his guilt."
+    options:
+      A: "with"
+      B: "at"
+      C: "by"
+      D: "on"
+    proposed_answer: A
+    answer_confidence: high
+    proposed_skill: ENG.1.4.iii
+    skill_reason: "Correct preposition after 'confronted' when naming what someone is faced with."
+
+  - number: 69
+    page: 13
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "The village elder spoke ______ experience."
+    options:
+      A: "on"
+      B: "for"
+      C: "from"
+      D: "in"
+    proposed_answer: C
+    answer_confidence: high
+    proposed_skill: ENG.1.4.iii
+    skill_reason: "Correct preposition: the fixed phrase is 'speak from experience'."
+
+  - number: 70
+    page: 13
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "The kind and gentle deserve ______ peace of mind."
+    options:
+      A: "its"
+      B: "their"
+      C: "his"
+      D: "our"
+    proposed_answer: B
+    answer_confidence: high
+    proposed_skill: ENG.1.4.ii
+    skill_reason: "Possessive pronoun matching the plural antecedent 'the kind and gentle'."
+
+  - number: 71
+    page: 13
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "Joseph says he has read ______ book in the library."
+    options:
+      A: "a lot of"
+      B: "all"
+      C: "every"
+      D: "lots of"
+    proposed_answer: C
+    answer_confidence: high
+    proposed_skill: ENG.2.3.i
+    skill_reason: "Determiner agreeing with the singular count noun 'book'."
+
+  - number: 72
+    page: 13
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "David was asked to stand ______ in favour of another candidate."
+    options:
+      A: "by"
+      B: "in"
+      C: "up"
+      D: "down"
+    proposed_answer: D
+    answer_confidence: high
+    proposed_skill: ENG.1.3.i
+    skill_reason: "Phrasal verb: to 'stand down' is to withdraw in favour of another."
+
+  - number: 73
+    page: 13
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "I am going to beat him, ______ well he prepares for the contest."
+    options:
+      A: "however"
+      B: "although"
+      C: "so"
+      D: "whichever"
+    proposed_answer: A
+    answer_confidence: high
+    proposed_skill: ENG.2.3.i
+    skill_reason: "Structural word: the concessive conjunct 'however' precedes the adverb 'well'."
+
+  - number: 74
+    page: 13
+    section: "SECTION 5"
+    instruction: "From the word or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences."
+    stem: "The dress she wore was ______ appropriate for the party."
+    options:
+      A: "much"
+      B: "quite"
+      C: "too"
+      D: "more"
+    proposed_answer: B
+    answer_confidence: high
+    proposed_skill: ENG.2.3.i
+    skill_reason: "Structural word: 'quite' is the degree modifier that fits the absolute adjective 'appropriate'."
+
+  - number: 75
+    page: 14
+    section: "SECTION 6"
+    passage_ref: SECTION6_PASSAGE_A
+    instruction: "In the following passages, the numbered gaps indicate missing words. Against each number in the list below each passage, four options are offered in columns lettered A to D. Choose the word that is the most suitable to fill the numbered gaps in the passages."
+    stem: "In international law and relations, — 75 — has come to be accepted as the most popular — 76 — of government."
+    options:
+      A: "oligarchy"
+      B: "autocracy"
+      C: "theocracy"
+      D: "democracy"
+    proposed_answer: D
+    answer_confidence: high
+    proposed_skill: ENG.1.2.x
+    skill_reason: "Government-and-administration vocabulary: democracy is the accepted popular form of government."
+
+  - number: 76
+    page: 14
+    section: "SECTION 6"
+    passage_ref: SECTION6_PASSAGE_A
+    instruction: "In the following passages, the numbered gaps indicate missing words. Against each number in the list below each passage, four options are offered in columns lettered A to D. Choose the word that is the most suitable to fill the numbered gaps in the passages."
+    stem: "In international law and relations, — 75 — has come to be accepted as the most popular — 76 — of government."
+    options:
+      A: "system"
+      B: "variety"
+      C: "process"
+      D: "kind"
+    proposed_answer: A
+    answer_confidence: high
+    proposed_skill: ENG.1.2.x
+    skill_reason: "Government vocabulary: 'system of government' is the standard collocation."
+
+  - number: 77
+    page: 14
+    section: "SECTION 6"
+    passage_ref: SECTION6_PASSAGE_A
+    instruction: "In the following passages, the numbered gaps indicate missing words. Against each number in the list below each passage, four options are offered in columns lettered A to D. Choose the word that is the most suitable to fill the numbered gaps in the passages."
+    stem: "Therefore other — 77 — types have gradually been seen as unacceptable."
+    options:
+      A: "non-committal"
+      B: "non-aggressive"
+      C: "non-conforming"
+      D: "non-governmental"
+    proposed_answer: C
+    answer_confidence: medium
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Word meaning in context: types that do not conform to the democratic norm."
+
+  - number: 78
+    page: 14
+    section: "SECTION 6"
+    passage_ref: SECTION6_PASSAGE_A
+    instruction: "In the following passages, the numbered gaps indicate missing words. Against each number in the list below each passage, four options are offered in columns lettered A to D. Choose the word that is the most suitable to fill the numbered gaps in the passages."
+    stem: "This affects — 78 — and — 79 — among nations."
+    options:
+      A: "combinations"
+      B: "alliances"
+      C: "mergers"
+      D: "talks"
+    proposed_answer: B
+    answer_confidence: medium
+    proposed_skill: ENG.1.2.x
+    skill_reason: "Government-and-international-relations vocabulary: nations form alliances."
+
+  - number: 79
+    page: 14
+    section: "SECTION 6"
+    passage_ref: SECTION6_PASSAGE_A
+    instruction: "In the following passages, the numbered gaps indicate missing words. Against each number in the list below each passage, four options are offered in columns lettered A to D. Choose the word that is the most suitable to fill the numbered gaps in the passages."
+    stem: "This affects — 78 — and — 79 — among nations."
+    options:
+      A: "conformity"
+      B: "consent"
+      C: "collaboration"
+      D: "corroboration"
+    proposed_answer: C
+    answer_confidence: medium
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Word meaning in context: collaboration pairs naturally with alliances among nations."
+
+  - number: 80
+    page: 14
+    section: "SECTION 6"
+    passage_ref: SECTION6_PASSAGE_A
+    instruction: "In the following passages, the numbered gaps indicate missing words. Against each number in the list below each passage, four options are offered in columns lettered A to D. Choose the word that is the most suitable to fill the numbered gaps in the passages."
+    stem: "Consequently, we have — 80 — with resultant — 81 — based on each government's primary — 82 —."
+    options:
+      A: "consultations"
+      B: "speeches"
+      C: "discourse"
+      D: "agreement"
+    proposed_answer: A
+    answer_confidence: medium
+    proposed_skill: ENG.1.2.x
+    skill_reason: "Government-and-administration vocabulary: governments hold consultations."
+
+  - number: 81
+    page: 14
+    section: "SECTION 6"
+    passage_ref: SECTION6_PASSAGE_A
+    instruction: "In the following passages, the numbered gaps indicate missing words. Against each number in the list below each passage, four options are offered in columns lettered A to D. Choose the word that is the most suitable to fill the numbered gaps in the passages."
+    stem: "Consequently, we have — 80 — with resultant — 81 — based on each government's primary — 82 —."
+    options:
+      A: "options"
+      B: "concessions"
+      C: "allowances"
+      D: "compensations"
+    proposed_answer: B
+    answer_confidence: medium
+    proposed_skill: ENG.1.2.x
+    skill_reason: "Government vocabulary: consultations between governments yield concessions."
+
+  - number: 82
+    page: 14
+    section: "SECTION 6"
+    passage_ref: SECTION6_PASSAGE_A
+    instruction: "In the following passages, the numbered gaps indicate missing words. Against each number in the list below each passage, four options are offered in columns lettered A to D. Choose the word that is the most suitable to fill the numbered gaps in the passages."
+    stem: "Consequently, we have — 80 — with resultant — 81 — based on each government's primary — 82 —."
+    options:
+      A: "interests"
+      B: "aspirations"
+      C: "views"
+      D: "desires"
+    proposed_answer: A
+    answer_confidence: medium
+    proposed_skill: ENG.1.2.x
+    skill_reason: "Government vocabulary: a government's primary interests, the usual term in international relations."
+
+  - number: 83
+    page: 14
+    section: "SECTION 6"
+    passage_ref: SECTION6_PASSAGE_A
+    instruction: "In the following passages, the numbered gaps indicate missing words. Against each number in the list below each passage, four options are offered in columns lettered A to D. Choose the word that is the most suitable to fill the numbered gaps in the passages."
+    stem: "Geographical, economic and political — 83 — are very — 84 — considered with a view to averting the debilitating impacts which — 85 — decisions of nations could cause."
+    options:
+      A: "factors"
+      B: "indices"
+      C: "reasons"
+      D: "points"
+    proposed_answer: A
+    answer_confidence: high
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Word meaning in context: geographical, economic and political factors."
+
+  - number: 84
+    page: 14
+    section: "SECTION 6"
+    passage_ref: SECTION6_PASSAGE_A
+    instruction: "In the following passages, the numbered gaps indicate missing words. Against each number in the list below each passage, four options are offered in columns lettered A to D. Choose the word that is the most suitable to fill the numbered gaps in the passages."
+    stem: "Geographical, economic and political — 83 — are very — 84 — considered with a view to averting the debilitating impacts which — 85 — decisions of nations could cause."
+    options:
+      A: "graphically"
+      B: "swiftly"
+      C: "seriously"
+      D: "highly"
+    proposed_answer: C
+    answer_confidence: low
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Adverb of manner in context; 'very seriously considered' and 'very highly considered' are both idiomatic, so the choice is genuinely uncertain."
+
+  - number: 85
+    page: 14
+    section: "SECTION 6"
+    passage_ref: SECTION6_PASSAGE_A
+    instruction: "In the following passages, the numbered gaps indicate missing words. Against each number in the list below each passage, four options are offered in columns lettered A to D. Choose the word that is the most suitable to fill the numbered gaps in the passages."
+    stem: "Geographical, economic and political — 83 — are very — 84 — considered with a view to averting the debilitating impacts which — 85 — decisions of nations could cause."
+    options:
+      A: "collaborative"
+      B: "unilateral"
+      C: "singular"
+      D: "unique"
+    proposed_answer: B
+    answer_confidence: high
+    proposed_skill: ENG.1.2.x
+    skill_reason: "International-relations vocabulary: unilateral decisions are the ones with debilitating impacts."
+
+  - number: 86
+    page: 14
+    section: "SECTION 6"
+    passage_ref: SECTION6_PASSAGE_A
+    instruction: "In the following passages, the numbered gaps indicate missing words. Against each number in the list below each passage, four options are offered in columns lettered A to D. Choose the word that is the most suitable to fill the numbered gaps in the passages."
+    stem: "Thus, this — 86 — is — 87 — to all the nations of the world."
+    options:
+      A: "process"
+      B: "rule"
+      C: "avenue"
+      D: "method"
+    proposed_answer: A
+    answer_confidence: medium
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Word meaning in context: the noun sums up the consultation described, i.e. a process."
+
+  - number: 87
+    page: 14
+    section: "SECTION 6"
+    passage_ref: SECTION6_PASSAGE_A
+    instruction: "In the following passages, the numbered gaps indicate missing words. Against each number in the list below each passage, four options are offered in columns lettered A to D. Choose the word that is the most suitable to fill the numbered gaps in the passages."
+    stem: "Thus, this — 86 — is — 87 — to all the nations of the world."
+    options:
+      A: "complementary"
+      B: "consoling"
+      C: "beneficial"
+      D: "sufficient"
+    proposed_answer: C
+    answer_confidence: high
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Word meaning in context: the process is beneficial to all nations."
+
+  - number: 88
+    page: 15
+    section: "SECTION 6"
+    passage_ref: SECTION6_PASSAGE_B
+    instruction: "In the following passages, the numbered gaps indicate missing words. Against each number in the list below each passage, four options are offered in columns lettered A to D. Choose the word that is the most suitable to fill the numbered gaps in the passages."
+    stem: "Mixed reactions have continued to trail most countries' performance in the last African Nations Cup — 88 —."
+    options:
+      A: "knock-out"
+      B: "series"
+      C: "tournament"
+      D: "qualifiers"
+    proposed_answer: C
+    answer_confidence: medium
+    proposed_skill: ENG.1.2.xi
+    skill_reason: "Sports vocabulary: the African Nations Cup tournament."
+
+  - number: 89
+    page: 15
+    section: "SECTION 6"
+    passage_ref: SECTION6_PASSAGE_B
+    instruction: "In the following passages, the numbered gaps indicate missing words. Against each number in the list below each passage, four options are offered in columns lettered A to D. Choose the word that is the most suitable to fill the numbered gaps in the passages."
+    stem: "Although many — 89 — analysts blamed the coaches for the outcome of the semi-final matches, attributing it to — 90 — deficiencies and wrong substitution of — 91 —, some of the coaches have remained unrepentant."
+    options:
+      A: "play"
+      B: "match"
+      C: "soccer"
+      D: "league"
+    proposed_answer: C
+    answer_confidence: high
+    proposed_skill: ENG.1.2.xi
+    skill_reason: "Sports vocabulary: 'soccer analysts' is the natural noun modifier."
+
+  - number: 90
+    page: 15
+    section: "SECTION 6"
+    passage_ref: SECTION6_PASSAGE_B
+    instruction: "In the following passages, the numbered gaps indicate missing words. Against each number in the list below each passage, four options are offered in columns lettered A to D. Choose the word that is the most suitable to fill the numbered gaps in the passages."
+    stem: "Although many — 89 — analysts blamed the coaches for the outcome of the semi-final matches, attributing it to — 90 — deficiencies and wrong substitution of — 91 —, some of the coaches have remained unrepentant."
+    options:
+      A: "group"
+      B: "tactical"
+      C: "physical"
+      D: "management"
+    proposed_answer: B
+    answer_confidence: high
+    proposed_skill: ENG.1.2.xi
+    skill_reason: "Sports vocabulary: coaches are blamed for tactical deficiencies."
+
+  - number: 91
+    page: 15
+    section: "SECTION 6"
+    passage_ref: SECTION6_PASSAGE_B
+    instruction: "In the following passages, the numbered gaps indicate missing words. Against each number in the list below each passage, four options are offered in columns lettered A to D. Choose the word that is the most suitable to fill the numbered gaps in the passages."
+    stem: "Although many — 89 — analysts blamed the coaches for the outcome of the semi-final matches, attributing it to — 90 — deficiencies and wrong substitution of — 91 —, some of the coaches have remained unrepentant."
+    options:
+      A: "teams"
+      B: "squad"
+      C: "officials"
+      D: "players"
+    proposed_answer: D
+    answer_confidence: high
+    proposed_skill: ENG.1.2.xi
+    skill_reason: "Sports vocabulary: it is players who are substituted."
+
+  - number: 92
+    page: 15
+    section: "SECTION 6"
+    passage_ref: SECTION6_PASSAGE_B
+    instruction: "In the following passages, the numbered gaps indicate missing words. Against each number in the list below each passage, four options are offered in columns lettered A to D. Choose the word that is the most suitable to fill the numbered gaps in the passages."
+    stem: "For some coaches and their — 92 — the dream of clinching the African Nations Cup as they had individually done in the past when they — 93 — the rest of Africa, could not be realized."
+    options:
+      A: "wards"
+      B: "fans"
+      C: "managers"
+      D: "organizer"
+    proposed_answer: A
+    answer_confidence: medium
+    proposed_skill: ENG.1.2.xi
+    skill_reason: "Sports vocabulary: 'coaches and their wards' is the usual way of naming the players under them."
+
+  - number: 93
+    page: 15
+    section: "SECTION 6"
+    passage_ref: SECTION6_PASSAGE_B
+    instruction: "In the following passages, the numbered gaps indicate missing words. Against each number in the list below each passage, four options are offered in columns lettered A to D. Choose the word that is the most suitable to fill the numbered gaps in the passages."
+    stem: "For some coaches and their — 92 — the dream of clinching the African Nations Cup as they had individually done in the past when they — 93 — the rest of Africa, could not be realized."
+    options:
+      A: "won"
+      B: "resisted"
+      C: "conquered"
+      D: "eliminated"
+    proposed_answer: C
+    answer_confidence: medium
+    proposed_skill: ENG.1.1.i
+    skill_reason: "Word meaning in context: one conquers the rest of Africa; 'won' cannot take that object."
+
+  - number: 94
+    page: 15
+    section: "SECTION 6"
+    passage_ref: SECTION6_PASSAGE_B
+    instruction: "In the following passages, the numbered gaps indicate missing words. Against each number in the list below each passage, four options are offered in columns lettered A to D. Choose the word that is the most suitable to fill the numbered gaps in the passages."
+    stem: "After a pulsating 120 minutes of soccer — 94 — the resultant — 95 — shoot-out saw some strikers who had — 96 — goals in some of the group — 97 — failing to score, as their feeble — 98 — were easily parried by their opponents' — 99 —."
+    options:
+      A: "operation"
+      B: "action"
+      C: "team-work"
+      D: "running"
+    proposed_answer: B
+    answer_confidence: medium
+    proposed_skill: ENG.1.2.xi
+    skill_reason: "Sports vocabulary: '120 minutes of soccer action'."
+
+  - number: 95
+    page: 15
+    section: "SECTION 6"
+    passage_ref: SECTION6_PASSAGE_B
+    instruction: "In the following passages, the numbered gaps indicate missing words. Against each number in the list below each passage, four options are offered in columns lettered A to D. Choose the word that is the most suitable to fill the numbered gaps in the passages."
+    stem: "After a pulsating 120 minutes of soccer — 94 — the resultant — 95 — shoot-out saw some strikers who had — 96 — goals in some of the group — 97 — failing to score, as their feeble — 98 — were easily parried by their opponents' — 99 —."
+    options:
+      A: "intense"
+      B: "qualifying"
+      C: "penalty"
+      D: "playing"
+    proposed_answer: C
+    answer_confidence: high
+    proposed_skill: ENG.1.2.xi
+    skill_reason: "Sports vocabulary: after 120 minutes comes a penalty shoot-out."
+
+  - number: 96
+    page: 15
+    section: "SECTION 6"
+    passage_ref: SECTION6_PASSAGE_B
+    instruction: "In the following passages, the numbered gaps indicate missing words. Against each number in the list below each passage, four options are offered in columns lettered A to D. Choose the word that is the most suitable to fill the numbered gaps in the passages."
+    stem: "After a pulsating 120 minutes of soccer — 94 — the resultant — 95 — shoot-out saw some strikers who had — 96 — goals in some of the group — 97 — failing to score, as their feeble — 98 — were easily parried by their opponents' — 99 —."
+    options:
+      A: "defended"
+      B: "scored"
+      C: "blasted"
+      D: "posted"
+    proposed_answer: B
+    answer_confidence: medium
+    proposed_skill: ENG.1.2.xi
+    skill_reason: "Sports vocabulary: strikers score goals; 'blasted' is a possible journalistic rival."
+
+  - number: 97
+    page: 15
+    section: "SECTION 6"
+    passage_ref: SECTION6_PASSAGE_B
+    instruction: "In the following passages, the numbered gaps indicate missing words. Against each number in the list below each passage, four options are offered in columns lettered A to D. Choose the word that is the most suitable to fill the numbered gaps in the passages."
+    stem: "After a pulsating 120 minutes of soccer — 94 — the resultant — 95 — shoot-out saw some strikers who had — 96 — goals in some of the group — 97 — failing to score, as their feeble — 98 — were easily parried by their opponents' — 99 —."
+    options:
+      A: "ratings"
+      B: "plays"
+      C: "matches"
+      D: "stages"
+    proposed_answer: C
+    answer_confidence: medium
+    proposed_skill: ENG.1.2.xi
+    skill_reason: "Sports vocabulary: goals are scored in group matches; 'stages' is a near rival."
+
+  - number: 98
+    page: 15
+    section: "SECTION 6"
+    passage_ref: SECTION6_PASSAGE_B
+    instruction: "In the following passages, the numbered gaps indicate missing words. Against each number in the list below each passage, four options are offered in columns lettered A to D. Choose the word that is the most suitable to fill the numbered gaps in the passages."
+    stem: "After a pulsating 120 minutes of soccer — 94 — the resultant — 95 — shoot-out saw some strikers who had — 96 — goals in some of the group — 97 — failing to score, as their feeble — 98 — were easily parried by their opponents' — 99 —."
+    options:
+      A: "defences"
+      B: "shots"
+      C: "tackles"
+      D: "kicks"
+    proposed_answer: B
+    answer_confidence: high
+    proposed_skill: ENG.1.2.xi
+    skill_reason: "Sports vocabulary: feeble shots are what a goalkeeper parries."
+
+  - number: 99
+    page: 15
+    section: "SECTION 6"
+    passage_ref: SECTION6_PASSAGE_B
+    instruction: "In the following passages, the numbered gaps indicate missing words. Against each number in the list below each passage, four options are offered in columns lettered A to D. Choose the word that is the most suitable to fill the numbered gaps in the passages."
+    stem: "After a pulsating 120 minutes of soccer — 94 — the resultant — 95 — shoot-out saw some strikers who had — 96 — goals in some of the group — 97 — failing to score, as their feeble — 98 — were easily parried by their opponents' — 99 —."
+    options:
+      A: "strikers"
+      B: "mid-fielders"
+      C: "goal-keepers"
+      D: "defenders"
+    proposed_answer: C
+    answer_confidence: high
+    proposed_skill: ENG.1.2.xi
+    skill_reason: "Sports vocabulary: it is goalkeepers who parry shots in a shoot-out."
+
+  - number: 100
+    page: 15
+    section: "SECTION 6"
+    passage_ref: SECTION6_PASSAGE_B
+    instruction: "In the following passages, the numbered gaps indicate missing words. Against each number in the list below each passage, four options are offered in columns lettered A to D. Choose the word that is the most suitable to fill the numbered gaps in the passages."
+    stem: "The loss effectively ended some of the countries' dreams of winning the — 100 —."
+    options:
+      A: "game"
+      B: "championship"
+      C: "medal"
+      D: "match"
+    proposed_answer: B
+    answer_confidence: high
+    proposed_skill: ENG.1.2.xi
+    skill_reason: "Sports vocabulary: a loss in the semi-final ends the dream of winning the championship, not a single match."

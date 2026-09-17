@@ -1,0 +1,49 @@
+"""Score Pilot API.
+
+Routes are thin: validate, call the engine or SQL, return typed models. Decisions
+live in packages/engine so they can be tested and replayed (ADR-0005).
+"""
+
+from __future__ import annotations
+
+from collections.abc import AsyncIterator
+from contextlib import asynccontextmanager
+
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
+from app.config import get_settings
+from app.db import dispose_engine
+from app.routers import curriculum, health, review
+
+API_VERSION = "0.1.0"
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI) -> AsyncIterator[None]:
+    yield
+    await dispose_engine()
+
+
+def create_app() -> FastAPI:
+    settings = get_settings()
+    app = FastAPI(
+        title="Score Pilot API",
+        version=API_VERSION,
+        summary="Adaptive exam preparation: curriculum, practice, mastery and plans",
+        lifespan=lifespan,
+    )
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=settings.cors_origin_list,
+        allow_credentials=True,
+        allow_methods=["GET", "POST", "PATCH", "DELETE"],
+        allow_headers=["content-type", "authorization"],
+    )
+    app.include_router(health.router)
+    app.include_router(curriculum.router)
+    app.include_router(review.router)
+    return app
+
+
+app = create_app()
