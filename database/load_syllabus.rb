@@ -193,7 +193,11 @@ items.each do |item|
   item_id = uuid_for("item:#{version_id}:#{item.fetch('code')}")
   parent_id = item['parent'] && uuid_for("item:#{version_id}:#{item['parent']}")
   note = item['boundary_notes'] || defaults['boundary_notes']
-  structural = item['type'] == 'subtopic' && item['syllabus_status'] == 'implied'
+  # An item marked 'implied' is ours, not the document's: it is recorded as an academic
+  # boundary decision carrying a rationale, so a reviewer can see every inference we made.
+  # Skills need this as much as subtopics do — UTME Use of English prints its objectives
+  # per section rather than per content line, so some skills are our reading of the content.
+  structural = %w[subtopic skill].include?(item['type']) && item['syllabus_status'] == 'implied'
   sql << insert_statement('curriculum_items', {
     id: item_id, syllabus_version_id: version_id, subject_id: subject_id,
     parent_id: parent_id, item_type: item.fetch('type'), code: item.fetch('code'),

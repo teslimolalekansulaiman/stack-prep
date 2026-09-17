@@ -1,0 +1,466 @@
+# UTME Use of English syllabus — draft seed data for database/migrations/001_curriculum.sql
+#
+# Extracted from "docs/syllabus/utme-english-syllabus 2027.pdf" (5 PDF pages; the syllabus
+# body is pages 1–3, and pages 4–5 are the recommended-texts list). Everything here is a
+# DRAFT. Nothing is approved.
+#
+# Mapping used:
+#   * topic     = a printed section (A Comprehension and Summary, B Lexis and Structure,
+#                 C Oral Forms)
+#   * subtopic  = a printed content line inside that section
+#   * skill     = a printed objective ("Candidates should be able to: i. ...")
+#
+# Where this document differs from the Mathematics syllabus, and what that forced:
+#
+#   1. Its objectives are printed PER SECTION, not per content line. So each objective is
+#      attached to the content line it plainly concerns, and content lines the objectives
+#      never reach (the reading text, summary, cloze, word classes, concord, word stress,
+#      emphatic stress) carry a skill marked `syllabus_status: implied`. Those eight items
+#      are OUR reading, not the Board's sentence; the loader records each as an
+#      academic_boundary decision with a rationale, so a reviewer sees every one of them.
+#      Items without that flag are the examiner's own wording.
+#
+#   2. Objective B.ii ("determine similar and opposite meanings of words") covers two
+#      printed content lines, synonyms and antonyms, which the examination tests as separate
+#      five-question parts. It is therefore split across the two, each citing the whole
+#      objective. The split is the only judgement; both halves are printed.
+#
+#   3. Section A's printed content list — description, narration, exposition,
+#      argumentation/persuasion — names the kinds of passage that may be set, not things a
+#      candidate is asked to do. They are recorded on the topic as boundary_notes rather
+#      than imported as subtopics, since a question is never "on narration".
+#
+#   4. Unlike Mathematics, this syllabus DOES state the structure of the paper (page 3:
+#      60 questions, itemised). That is loaded separately, by
+#      database/seeds/utme_use_of_english_paper_structure.sql, because it describes the
+#      examination rather than the curriculum.
+#
+#   5. The document prints no year or edition anywhere in its body — the filename claims
+#      2027, the file does not — so the version is `utme-undated` and document_year is null.
+#      Its page numbers (198–202) show it is an extract from a larger brochure.
+#
+#   6. Source typography is kept verbatim in excerpts, including "monothongs" for
+#      monophthongs and "5questions". The item names read correctly.
+
+format_version: 1
+
+validation:
+  source_page_range: [1, 3]      # syllabus body; pages 4–5 are recommended texts
+  expected_topic_count: 3
+
+examination:
+  name: Unified Tertiary Matriculation Examination (UTME)
+  short_name: UTME
+  exam_body: Joint Admissions and Matriculation Board (JAMB)
+  country_code: NG
+  description: >-
+    Nigeria's university matriculation examination. Use of English is the compulsory subject
+    taken by every candidate.
+  status: draft
+
+subject:
+  code: ENG
+  name: Use of English
+  status: draft
+
+source_documents:
+  - key: utme_english_syllabus_pdf
+    document_type: syllabus
+    title: UTME Syllabus — Use of English
+    issuer: null                 # no issuer or date is printed in the extract
+    document_year: null          # the filename says 2027; the document does not
+    file_uri: docs/syllabus/utme-english-syllabus 2027.pdf
+    file_sha256: f2b6bc4f2c30fc19ecf57bc14778100ce0deca59445beff9f7e10f34cbf7da18
+    mime_type: application/pdf
+    page_count: 5
+    licence_status: pending
+    storage_permission: false
+    student_delivery_permission: false
+    model_context_permission: false
+    processing_status: processed
+    review_status: pending
+
+syllabus_versions:
+  - version_label: utme-undated
+    authority_identifier: null
+    valid_from: null
+    valid_to: null
+    source_document: utme_english_syllabus_pdf
+    status: draft
+    is_current: false
+
+unmapped:
+  general_objectives:
+    source_location: PDF page 1, "1. GENERAL OBJECTIVES"
+    aims:
+      - communicate effectively in both written and spoken English
+      - use English Language for learning at the tertiary level
+    note: >-
+      The stated purpose of the syllabus rather than assessable units, so not imported as
+      curriculum items.
+  examination_structure:
+    source_location: PDF page 3, "D. THE STRUCTURE OF THE EXAMINATION"
+    note: >-
+      60 questions, itemised by part: Section A 25 (comprehension 5, summary 5, cloze 10,
+      reading text 5), Section B 25 (sentence interpretation 5, antonyms 5, synonyms 5,
+      basic grammar 10), Section C 10 (vowels, consonants, rhymes, word stress and emphatic
+      stress, 2 each). Loaded into exam_papers and exam_paper_sections by
+      database/seeds/utme_use_of_english_paper_structure.sql; it is a fact about the
+      examination, not a curriculum item.
+  approved_reading_text:
+    source_location: PDF page 1, "(d) Approved Reading Text."
+    note: >-
+      The syllabus does not name the prescribed text; it is announced separately for each
+      cycle. The subtopic is imported so its five questions have somewhere to hang, but the
+      actual text has to come from another source before any question can be written.
+  recommended_texts:
+    source_location: PDF pages 4–5, "RECOMMENDED TEXTS"
+    item_count: 19
+    note: >-
+      Nineteen titles, from Adedimeji's Doses of Grammar (2021) to Ukwuegbu et al.'s
+      Catch-up English for SSCE/UME (2002). Not imported; recorded here so the list is not
+      silently lost.
+
+item_defaults:
+  syllabus_status: uncertain
+  pilot_support_status: undecided
+  review_status: draft
+  learning_objective: null
+  examinable_scope: null
+  expected_depth: null
+  boundary_notes: null
+
+curriculum_items:
+  # ───────────────────── A COMPREHENSION AND SUMMARY ─────────────────────
+  - code: ENG.A
+    type: topic
+    name: Comprehension and Summary
+    location: PDF page 1, Section A
+    excerpt: "A. Comprehension and Summary: (a) description; (b) narration; (c) exposition; (d) argumentation/persuasion."
+    boundary_notes: >-
+      Printed content list (a)–(d) names the kinds of passage that may be set — description,
+      narration, exposition, argumentation/persuasion — not candidate tasks, so they are
+      held here rather than imported as subtopics. Three passages are set, one of them a
+      cloze test, each about 200 words and drawn from various disciplines.
+
+  - code: ENG.A.1
+    parent: ENG.A
+    type: subtopic
+    name: Comprehension of a passage as a whole or in part
+    location: PDF page 1, A(ii)(a)
+    excerpt: "Comprehension of the whole or part of each passage."
+  - code: ENG.A.1.i
+    parent: ENG.A.1
+    type: skill
+    name: Identify main points and topic sentences in a passage
+    location: PDF page 1, Section A objective i
+    excerpt: "identify main points/topic sentences in passages;"
+
+  - code: ENG.A.2
+    parent: ENG.A
+    type: subtopic
+    name: Comprehension of words, phrases, clauses, sentences, figures of speech and idioms in context
+    location: PDF page 1, A(ii)(b)
+    excerpt: "Comprehension of words, phrases, clauses, sentences, figures of speech and idioms as used in the passages."
+  - code: ENG.A.2.i
+    parent: ENG.A.2
+    type: skill
+    name: Determine implied meanings
+    location: PDF page 1, Section A objective ii
+    excerpt: "determine implied meanings;"
+  - code: ENG.A.2.ii
+    parent: ENG.A.2
+    type: skill
+    name: Identify the grammatical functions of words, phrases, clauses and figurative or idiomatic expressions
+    location: PDF page 1, Section A objective iii
+    excerpt: "identify the grammatical functions of words, phrases, clauses and figurative /idiomatic expressions; and"
+
+  - code: ENG.A.3
+    parent: ENG.A
+    type: subtopic
+    name: Coherence and logical reasoning
+    location: PDF page 1, A(ii)(c)
+    excerpt: "Coherence and logical reasoning (deductions, inferences, etc.)."
+  - code: ENG.A.3.i
+    parent: ENG.A.3
+    type: skill
+    name: Deduce or infer the writer's intention, mood, attitude and opinion
+    location: PDF page 1, Section A objective iv
+    excerpt: "deduce or infer the writers' intentions including mood, attitude to the subject matter and opinion."
+
+  - code: ENG.A.4
+    parent: ENG.A
+    type: subtopic
+    name: Approved Reading Text
+    location: PDF page 1, A(ii)(d)
+    excerpt: "Approved Reading Text."
+    boundary_notes: >-
+      The syllabus does not name the text; it is announced per cycle. Five questions are set
+      on it (page 3).
+  - code: ENG.A.4.i
+    parent: ENG.A.4
+    type: skill
+    syllabus_status: implied
+    name: Answer questions on the approved reading text
+    location: PDF page 1, A(ii)(d)
+    excerpt: "Approved Reading Text."
+    boundary_notes: >-
+      OUR INFERENCE. No objective is printed for the reading text, but page 3 sets five
+      questions on it, so a skill is needed for those questions to classify to. Its wording
+      cannot be made specific until the prescribed text for a cycle is known.
+
+  - code: ENG.A.5
+    parent: ENG.A
+    type: subtopic
+    name: Synthesis of ideas
+    location: PDF page 1, A(ii)(e)
+    excerpt: "Synthesis of ideas from the passages."
+    boundary_notes: >-
+      Defined by the syllabus (PDF page 2, NOTE): "Synthesis of ideas means the art of
+      combining distinct or separate pieces of information to form a complete whole as
+      summary."
+  - code: ENG.A.5.i
+    parent: ENG.A.5
+    type: skill
+    syllabus_status: implied
+    name: Combine separate pieces of information into a complete whole as a summary
+    location: PDF page 2, NOTE on Section A
+    excerpt: "Synthesis of ideas means the art of combining distinct or separate pieces of information to form a complete whole as summary."
+    boundary_notes: >-
+      OUR INFERENCE, taken from the syllabus's own definition of synthesis rather than from
+      an objective, which is not printed for summary. Five summary questions are set
+      (page 3).
+
+  - code: ENG.A.6
+    parent: ENG.A
+    type: subtopic
+    syllabus_status: implied
+    name: Cloze passage
+    location: PDF page 1, A(i)
+    excerpt: "Each of the three passages to be set (one will be a cloze test) should reflect various disciplines and be about 200 words long."
+    boundary_notes: >-
+      OUR INFERENCE. The cloze test appears only as a parenthesis in the passage-setting
+      note, yet it is the single largest part of the paper at ten questions (page 3), so it
+      is imported as a subtopic of its own.
+  - code: ENG.A.6.i
+    parent: ENG.A.6
+    type: skill
+    syllabus_status: implied
+    name: Supply the word or expression that correctly completes a gap in a continuous passage
+    location: PDF page 1, A(i)
+    excerpt: "Each of the three passages to be set (one will be a cloze test) should reflect various disciplines and be about 200 words long."
+    boundary_notes: >-
+      OUR INFERENCE, describing what a cloze item asks. No objective is printed for it.
+
+  # ─────────────────────── B LEXIS AND STRUCTURE ─────────────────────────
+  - code: ENG.B
+    type: topic
+    name: Lexis and Structure
+    location: PDF page 2, Section B
+    excerpt: "B. Lexis and Structure"
+
+  - code: ENG.B.1
+    parent: ENG.B
+    type: subtopic
+    name: Synonyms
+    location: PDF page 2, B(a)
+    excerpt: "synonyms"
+  - code: ENG.B.1.i
+    parent: ENG.B.1
+    type: skill
+    name: Determine similar meanings of words
+    location: PDF page 2, Section B objective ii
+    excerpt: "determine similar and opposite meanings of words;"
+    boundary_notes: >-
+      Half of printed objective ii, which covers both synonyms and antonyms. The examination
+      tests them as separate five-question parts (page 3), so the objective is split across
+      the two printed content lines.
+
+  - code: ENG.B.2
+    parent: ENG.B
+    type: subtopic
+    name: Antonyms
+    location: PDF page 2, B(b)
+    excerpt: "antonyms"
+  - code: ENG.B.2.i
+    parent: ENG.B.2
+    type: skill
+    name: Determine opposite meanings of words
+    location: PDF page 2, Section B objective ii
+    excerpt: "determine similar and opposite meanings of words;"
+    boundary_notes: >-
+      The other half of printed objective ii; see ENG.B.1.i.
+
+  - code: ENG.B.3
+    parent: ENG.B
+    type: subtopic
+    name: Clause and sentence patterns
+    location: PDF page 2, B(c)
+    excerpt: "clause and sentence patterns"
+  - code: ENG.B.3.i
+    parent: ENG.B.3
+    type: skill
+    name: Identify various grammatical patterns in use
+    location: PDF page 2, Section B objective iv
+    excerpt: "identify various grammatical patterns in use; and"
+  - code: ENG.B.3.ii
+    parent: ENG.B.3
+    type: skill
+    name: Interpret information conveyed in sentences
+    location: PDF page 2, Section B objective v
+    excerpt: "interpret information conveyed in sentences."
+    boundary_notes: >-
+      This is what the examination calls "Sentence interpretation", five questions (page 3).
+
+  - code: ENG.B.4
+    parent: ENG.B
+    type: subtopic
+    name: Word classes and their functions
+    location: PDF page 2, B(d)
+    excerpt: "word classes and their functions"
+  - code: ENG.B.4.i
+    parent: ENG.B.4
+    type: skill
+    syllabus_status: implied
+    name: Identify word classes and their functions in a sentence
+    location: PDF page 2, B(d)
+    excerpt: "word classes and their functions"
+    boundary_notes: >-
+      OUR INFERENCE, restating the content line as a task. Printed objective iv ("identify
+      various grammatical patterns in use") is broad enough to cover this, but attaching it
+      here as well as to clause and sentence patterns would double-count one objective.
+
+  - code: ENG.B.5
+    parent: ENG.B
+    type: subtopic
+    name: Mood, tense, aspect, number, concord, degree and question tags
+    location: PDF page 2, B(e)
+    excerpt: "mood, tense, aspect, number, agreement/concord, degree (positive, comparative and superlative) and question tags"
+  - code: ENG.B.5.i
+    parent: ENG.B.5
+    type: skill
+    syllabus_status: implied
+    name: Apply mood, tense, aspect, number, concord, degree and question tags correctly
+    location: PDF page 2, B(e)
+    excerpt: "mood, tense, aspect, number, agreement/concord, degree (positive, comparative and superlative) and question tags"
+    boundary_notes: >-
+      OUR INFERENCE, restating the content line as a task; no objective names these
+      directly. Together with word classes and sentence patterns this is what the
+      examination calls "Basic Grammar", ten questions (page 3).
+
+  - code: ENG.B.6
+    parent: ENG.B
+    type: subtopic
+    name: Mechanics
+    location: PDF page 2, B(f)
+    excerpt: "mechanics"
+    boundary_notes: >-
+      The printed objective reaches only spelling; "mechanics" conventionally also covers
+      punctuation and capitalisation. Nothing beyond spelling is imported, because nothing
+      beyond spelling is printed.
+  - code: ENG.B.6.i
+    parent: ENG.B.6
+    type: skill
+    name: Differentiate between correct and incorrect spellings
+    location: PDF page 2, Section B objective iii
+    excerpt: "differentiate between correct and incorrect spellings;"
+
+  - code: ENG.B.7
+    parent: ENG.B
+    type: subtopic
+    name: Ordinary, figurative and idiomatic usage
+    location: PDF page 2, B(g)
+    excerpt: "ordinary usage, figurative usage and idiomatic usage."
+    boundary_notes: >-
+      Syllabus NOTE (PDF page 2): "Idioms to be tested are those that are formal and
+      expressed in Standard British English. (SBE)."
+  - code: ENG.B.7.i
+    parent: ENG.B.7
+    type: skill
+    name: Identify words and expressions in their ordinary, figurative and idiomatic contexts
+    location: PDF page 2, Section B objective i
+    excerpt: "identify words and expressions in their ordinary, figurative and idiomatic contexts;"
+
+  # ───────────────────────────── C ORAL FORMS ────────────────────────────
+  - code: ENG.C
+    type: topic
+    name: Oral Forms
+    location: PDF page 2, Section C
+    excerpt: "C. Oral Forms"
+
+  - code: ENG.C.1
+    parent: ENG.C
+    type: subtopic
+    name: Vowels (monophthongs, diphthongs and triphthongs)
+    location: PDF page 2, C(a)
+    excerpt: "Vowels (monothongs, diphthongs and triphthongs)"
+  - code: ENG.C.1.i
+    parent: ENG.C.1
+    type: skill
+    name: Make distinctions among vowel types
+    location: PDF page 2, Section C objective i
+    excerpt: "make distinctions among vowel types;"
+
+  - code: ENG.C.2
+    parent: ENG.C
+    type: subtopic
+    name: Consonants (including clusters)
+    location: PDF page 2, C(b)
+    excerpt: "Consonants (including clusters)"
+  - code: ENG.C.2.i
+    parent: ENG.C.2
+    type: skill
+    name: Differentiate among consonant types
+    location: PDF page 2, Section C objective ii
+    excerpt: "differentiate among consonant types; and"
+
+  - code: ENG.C.3
+    parent: ENG.C
+    type: subtopic
+    name: Rhymes (including homophones)
+    location: PDF page 2, C(c)
+    excerpt: "Rhymes (including homophones)"
+  - code: ENG.C.3.i
+    parent: ENG.C.3
+    type: skill
+    name: Identify correct pronunciation of individual words and articulation of connected speech
+    location: PDF page 2, Section C objective iii
+    excerpt: "identify correct pronunciation of individual words and articulation of connected speech."
+
+  - code: ENG.C.4
+    parent: ENG.C
+    type: subtopic
+    name: Word stress (monosyllabic and polysyllabic)
+    location: PDF page 2, C(d)
+    excerpt: "Word stress (monosyllabic and polysyllabic)"
+  - code: ENG.C.4.i
+    parent: ENG.C.4
+    type: skill
+    syllabus_status: implied
+    name: Identify the stressed syllable in monosyllabic and polysyllabic words
+    location: PDF page 2, C(d)
+    excerpt: "Word stress (monosyllabic and polysyllabic)"
+    boundary_notes: >-
+      OUR INFERENCE, restating the content line as a task. Objective iii mentions
+      articulation of connected speech but names no stress skill, and two questions are set
+      on word stress (page 3).
+
+  - code: ENG.C.5
+    parent: ENG.C
+    type: subtopic
+    name: Emphatic stress (in connected speech)
+    location: PDF page 2, C(e)
+    excerpt: "Emphatic stress (in connected speech)"
+    boundary_notes: >-
+      Syllabus NOTE (PDF page 2): "Emphatic stress involves the placement of stress on words
+      in an utterance for the purpose of emphasis."
+  - code: ENG.C.5.i
+    parent: ENG.C.5
+    type: skill
+    syllabus_status: implied
+    name: Identify the word carrying emphatic stress in an utterance
+    location: PDF page 2, NOTE on Section C
+    excerpt: "Emphatic stress involves the placement of stress on words in an utterance for the purpose of emphasis."
+    boundary_notes: >-
+      OUR INFERENCE, taken from the syllabus's own definition of emphatic stress rather than
+      from an objective. Two questions are set on it (page 3).
