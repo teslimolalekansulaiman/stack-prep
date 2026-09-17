@@ -64,10 +64,13 @@ sudo chown deploy:deploy /opt/score-pilot
 
 umask 077
 cat > /opt/score-pilot/.env.local <<'ENV'
-POSTGRES_PASSWORD=<generate one: openssl rand -base64 32>
+POSTGRES_PASSWORD=<generate one: openssl rand -hex 32>
 ANTHROPIC_API_KEY=
 ENV
 ```
+
+Hex, not base64: this value is interpolated into the `DATABASE_URL` in
+`compose.yml`, and base64's `/`, `+` and `=` break URL parsing.
 
 The same convention the other project on this box uses: a `.env.local` inside the
 project directory. It is never in git and never leaves the server.
