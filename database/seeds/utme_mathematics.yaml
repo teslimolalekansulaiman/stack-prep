@@ -1,0 +1,729 @@
+# UTME Mathematics syllabus — draft seed data for database/migrations/001_curriculum.sql
+#
+# Extracted from docs/syllabus/utme-Mathematics.pdf (PDF pages 1–5; page 6 is the
+# recommended-texts list). Everything here is a DRAFT. Nothing is approved; a reviewer must
+# approve rows in the order described in docs/syllabus-database.md.
+#
+# Mapping used, which this syllabus makes unusually clean:
+#   * topic     = a numbered SECTION (I–V)
+#   * subtopic  = a numbered topic inside a section, with its lettered contents recorded in
+#                 boundary_notes
+#   * skill     = one printed objective ("Candidates should be able to: i. …"). These are the
+#                 syllabus's own statements of what a candidate must do, so they are imported
+#                 as skills verbatim rather than being invented.
+#
+# Loader conventions (identical to the other seeds):
+#   * `parent` is the parent item's code; the loader resolves it to parent_id.
+#   * display_order = position among siblings in this file, starting at 1.
+#   * `location` + `excerpt` become one curriculum_evidence row.
+#   * Excerpts are the source wording with line breaks joined and PDF artefacts fixed
+#     (e.g. "1050" -> "105º", "bar chat" -> "bar chart" is NOT fixed — see note 3).
+#
+# Extraction judgements, for the reviewer:
+#   1. The document prints no year, edition or version identifier, so the syllabus version is
+#      labelled `utme-undated` and `authority_identifier` is left null rather than guessed.
+#   2. The document does not state the examination's paper structure (how many questions, how
+#      long, how many marks). Nothing about paper structure is recorded from it.
+#   3. Typographic errors in the source are kept verbatim in excerpts: "bar chat" (page 5),
+#      "cylinders. cones" (page 4), "1050" for 105º (page 4). The skill names read correctly.
+#   4. Section IV numbers its first subtopic "I." and the next two "2." and "3."; the numbering
+#      is normalised to 1, 2, 3 in the codes and noted here.
+
+format_version: 1
+
+validation:
+  source_page_range: [1, 5]      # detailed syllabus; page 6 is recommended texts
+  expected_topic_count: 5
+
+examination:
+  name: Unified Tertiary Matriculation Examination (UTME)
+  short_name: UTME
+  exam_body: Joint Admissions and Matriculation Board (JAMB)
+  country_code: NG
+  description: >-
+    Nigeria's university matriculation examination. This document is the Mathematics
+    syllabus; it states the subject's content and objectives but not the structure of the
+    examination paper.
+  status: draft
+
+subject:
+  code: MATH
+  name: Mathematics
+  status: draft
+
+source_documents:
+  - key: utme_math_syllabus_pdf
+    document_type: syllabus
+    title: UTME Syllabus — Mathematics
+    issuer: null                 # no issuer, publisher or date is printed in the document
+    document_year: null
+    file_uri: docs/syllabus/utme-Mathematics.pdf
+    file_sha256: aff7a7c2cc46036902dda38db1d1567d10982de709305cfbfc90dc437329754f
+    mime_type: application/pdf
+    page_count: 6
+    licence_status: pending      # the schema blocks all permissions until this is 'verified'
+    storage_permission: false
+    student_delivery_permission: false
+    model_context_permission: false
+    processing_status: processed
+    review_status: pending
+
+syllabus_versions:
+  - version_label: utme-undated
+    authority_identifier: null   # no version or year printed in the document
+    valid_from: null
+    valid_to: null
+    source_document: utme_math_syllabus_pdf
+    status: draft
+    is_current: false
+
+unmapped:
+  general_objectives:
+    source_location: PDF page 1, "GENERAL OBJECTIVES"
+    aims:
+      - acquire computational and manipulative skills
+      - develop precise, logical and formal reasoning skills
+      - develop deductive skills in interpretation of graphs, diagrams and data
+      - apply mathematical concepts to resolve issues in daily living
+    note: >-
+      Four stated aims of the syllabus. They describe its purpose rather than assessable
+      units, so they are not imported as curriculum items.
+  paper_structure:
+    note: >-
+      This document does not state how many questions the paper has, how long it lasts or
+      how it is marked. Nothing about paper structure is recorded from it; exam_papers rows
+      need a source that actually prints those numbers.
+  recommended_texts:
+    source_location: PDF page 6, "RECOMMENDED TEXTS"
+    items:
+      - Adelodun A. A. (2000) Distinction in Mathematics: Comprehensive Revision Text (3rd Edition), Ado-Ekiti, FNPL
+      - Anyebe, J. A. B. (1998) Basic Mathematics for Senior Secondary Schools and Remedial Students in Higher Institutions, Lagos, Kenny Moore
+      - Channon, J. B., Smith, A. M. (2001) New General Mathematics for West Africa SSS 1 to 3, Lagos, Longman
+      - David-Osuagwu, M. et al. (2000) New School Mathematics for Senior Secondary Schools, Onitsha, Africana-FIRST Publishers
+      - Egbe, E. et al. (2000) Further Mathematics, Onitsha, Africana-FIRST Publishers
+      - Ibude, S. O. et al. (2003) Algebra and Calculus for Schools and Colleges, LINCEL Publishers
+      - Tuttuh-Adegun, M. R. et al. (1997) Further Mathematics Project Books 1 to 3, Ibadan, NPS Educational
+      - Wisdomline Pass at Once JAMB
+
+item_defaults:
+  syllabus_status: uncertain          # official scope/version has not been verified
+  pilot_support_status: undecided     # pick the pilot skills after review
+  review_status: draft
+  learning_objective: null
+  examinable_scope: null
+  expected_depth: null
+  boundary_notes: null
+
+curriculum_items:
+  # ───────────────────── I NUMBER AND NUMERATION ─────────────────────
+  - code: MATH.I
+    type: topic
+    name: Number and Numeration
+    location: PDF page 2, Section I
+    excerpt: "SECTION I: NUMBER AND NUMERATION"
+
+  - code: MATH.I.1
+    parent: MATH.I
+    type: subtopic
+    name: Number bases and Modular Arithmetic
+    location: PDF page 2, I.1
+    excerpt: "Number bases/Modular Arithmetic"
+    boundary_notes: "(a) operations in different number bases from 2 to 10; (b) conversion from one base to another including fractional parts; (c) modular arithmetic."
+  - code: MATH.I.1.i
+    parent: MATH.I.1
+    type: skill
+    name: Perform the four basic operations in different number bases
+    location: PDF page 2, I.1 objective i
+    excerpt: "perform four basic operations (x,+,-,÷)"
+  - code: MATH.I.1.ii
+    parent: MATH.I.1
+    type: skill
+    name: Convert numbers from one base to another
+    location: PDF page 2, I.1 objective ii
+    excerpt: "convert one base to another"
+  - code: MATH.I.1.iii
+    parent: MATH.I.1
+    type: skill
+    name: Perform operations in modulo arithmetic
+    location: PDF page 2, I.1 objective iii
+    excerpt: "perform operations in modulo arithmetic."
+
+  - code: MATH.I.2
+    parent: MATH.I
+    type: subtopic
+    name: Fractions, Decimals, Approximations and Percentages
+    location: PDF page 2, I.2
+    excerpt: "Fractions, Decimals, Approximations and Percentages"
+    boundary_notes: "(a) fractions and decimals; (b) significant figures; (c) decimal places; (d) percentage errors; (e) simple interest; (f) profit and loss percent; (g) ratio, proportion and rate; (h) shares and valued added tax (VAT)."
+  - code: MATH.I.2.i
+    parent: MATH.I.2
+    type: skill
+    name: Perform basic operations on fractions and decimals
+    location: PDF page 2, I.2 objective i
+    excerpt: "perform basic operations (x,+,-,÷) on fractions and decimals"
+  - code: MATH.I.2.ii
+    parent: MATH.I.2
+    type: skill
+    name: Express numbers to a given number of significant figures and decimal places
+    location: PDF page 2, I.2 objective ii
+    excerpt: "express to specified number of significant figures and decimal places"
+  - code: MATH.I.2.iii
+    parent: MATH.I.2
+    type: skill
+    name: Calculate simple interest, profit and loss per cent, ratio, proportion, rate and percentage error
+    location: PDF page 2, I.2 objective iii
+    excerpt: "calculate simple interest, profit and loss per cent; ratio proportion, rate and percentage error"
+  - code: MATH.I.2.iv
+    parent: MATH.I.2
+    type: skill
+    name: Solve problems involving shares and VAT
+    location: PDF page 2, I.2 objective iv
+    excerpt: "solve problems involving share and VAT."
+
+  - code: MATH.I.3
+    parent: MATH.I
+    type: subtopic
+    name: Indices, Logarithms and Surds
+    location: PDF page 2, I.3
+    excerpt: "Indices, Logarithms and Surds"
+    boundary_notes: "(a) laws of indices; (b) equations involving indices; (c) standard form; (d) laws of logarithm; (e) logarithm of any positive number to a given base; (f) change of bases in logarithm and application; (g) relationship between indices and logarithm; (h) Surds."
+  - code: MATH.I.3.i
+    parent: MATH.I.3
+    type: skill
+    name: Apply the laws of indices in calculation
+    location: PDF page 2, I.3 objective i
+    excerpt: "apply the laws of indices in calculation"
+  - code: MATH.I.3.ii
+    parent: MATH.I.3
+    type: skill
+    name: Relate indices and logarithms in solving problems
+    location: PDF page 2, I.3 objective ii
+    excerpt: "establish the relationship between indices and logarithms in solving problems"
+  - code: MATH.I.3.iii
+    parent: MATH.I.3
+    type: skill
+    name: Solve equations involving indices
+    location: PDF page 2, I.3 objective iii
+    excerpt: "solve equations involving indices"
+  - code: MATH.I.3.iv
+    parent: MATH.I.3
+    type: skill
+    name: Solve problems in different bases in logarithms
+    location: PDF page 2, I.3 objective iv
+    excerpt: "solve problems in different bases in logarithms"
+  - code: MATH.I.3.v
+    parent: MATH.I.3
+    type: skill
+    name: Simplify and rationalise surds
+    location: PDF page 2, I.3 objective v
+    excerpt: "simplify and rationalize surds"
+  - code: MATH.I.3.vi
+    parent: MATH.I.3
+    type: skill
+    name: Perform basic operations on surds
+    location: PDF page 2, I.3 objective vi
+    excerpt: "perform basic operations on surds."
+
+  - code: MATH.I.4
+    parent: MATH.I
+    type: subtopic
+    name: Sets
+    location: PDF page 2, I.4
+    excerpt: "Sets"
+    boundary_notes: "(a) types of sets; (b) algebra of sets; (c) Venn diagrams and their applications."
+  - code: MATH.I.4.i
+    parent: MATH.I.4
+    type: skill
+    name: Identify types of sets
+    location: PDF page 2, I.4 objective i
+    excerpt: "identify types of sets, i.e. empty, universal, complements, subsets, finite, infinite and disjoint sets"
+  - code: MATH.I.4.ii
+    parent: MATH.I.4
+    type: skill
+    name: Solve problems involving cardinality of sets
+    location: PDF page 2, I.4 objective ii
+    excerpt: "solve problems involving cardinality of sets"
+  - code: MATH.I.4.iii
+    parent: MATH.I.4
+    type: skill
+    name: Solve set problems using symbols
+    location: PDF page 2, I.4 objective iii
+    excerpt: "solve set problems using symbols"
+  - code: MATH.I.4.iv
+    parent: MATH.I.4
+    type: skill
+    name: Use Venn diagrams to solve problems involving not more than three sets
+    location: PDF page 2, I.4 objective iv
+    excerpt: "use Venn diagrams to solve problems involving not more than 3 sets."
+
+  # ────────────────────────────── II ALGEBRA ──────────────────────────
+  - code: MATH.II
+    type: topic
+    name: Algebra
+    location: PDF page 2, Section II
+    excerpt: "SECTION II: ALGEBRA"
+
+  - code: MATH.II.1
+    parent: MATH.II
+    type: subtopic
+    name: Polynomials
+    location: PDF page 2, II.1
+    excerpt: "Polynomials"
+    boundary_notes: "(a) change of subject of formula; (b) addition, subtraction, multiplication and division of polynomials; (c) factorization of polynomials of degree not exceeding 3; (d) roots of polynomials not exceeding degree 3; (e) factor and remainder theorems; (f) simultaneous equations including one linear one quadratic; (g) graphs of polynomials of degree not greater than 3."
+  - code: MATH.II.1.i
+    parent: MATH.II.1
+    type: skill
+    name: Find the subject of the formula of a given equation
+    location: PDF page 2, II.1 objective i
+    excerpt: "find the subject of the formula of a given equation"
+  - code: MATH.II.1.ii
+    parent: MATH.II.1
+    type: skill
+    name: Apply the factor and remainder theorems to factorise an expression
+    location: PDF page 2, II.1 objective ii
+    excerpt: "apply factor and remainder theorem to factorize a given expression"
+  - code: MATH.II.1.iii
+    parent: MATH.II.1
+    type: skill
+    name: Multiply and divide polynomials of degree not more than three
+    location: PDF page 2, II.1 objective iii
+    excerpt: "multiply, divide polynomials of degree not more than 3 and determine values of defined and undefined expression"
+  - code: MATH.II.1.iv
+    parent: MATH.II.1
+    type: skill
+    name: Factorise by regrouping, difference of two squares, perfect squares and cubic expressions
+    location: PDF page 3, II.1 objective iv
+    excerpt: "factorize by regrouping difference of two squares, perfect squares and cubic expressions; etc."
+  - code: MATH.II.1.v
+    parent: MATH.II.1
+    type: skill
+    name: Solve simultaneous equations with one linear and one quadratic
+    location: PDF page 3, II.1 objective v
+    excerpt: "solve simultaneous equations – one linear, one quadratic"
+  - code: MATH.II.1.vi
+    parent: MATH.II.1
+    type: skill
+    name: Interpret graphs of polynomials, including maximum and minimum values
+    location: PDF page 3, II.1 objective vi
+    excerpt: "interpret graphs of polynomials including applications to maximum and minimum values."
+
+  - code: MATH.II.2
+    parent: MATH.II
+    type: subtopic
+    name: Variation
+    location: PDF page 3, II.2
+    excerpt: "Variation"
+    boundary_notes: "(a) direct; (b) inverse; (c) joint; (d) partial; (e) percentage increase and decrease."
+  - code: MATH.II.2.i
+    parent: MATH.II.2
+    type: skill
+    name: Solve problems involving direct, inverse, joint and partial variation
+    location: PDF page 3, II.2 objective i
+    excerpt: "solve problems involving direct, inverse, joint and partial variations"
+  - code: MATH.II.2.ii
+    parent: MATH.II.2
+    type: skill
+    name: Solve problems on percentage increase and decrease in variation
+    location: PDF page 3, II.2 objective ii
+    excerpt: "solve problems on percentage increase and decrease in variation."
+
+  - code: MATH.II.3
+    parent: MATH.II
+    type: subtopic
+    name: Inequalities
+    location: PDF page 3, II.3
+    excerpt: "Inequalities"
+    boundary_notes: "(a) analytical and graphical solutions of linear inequalities; (b) quadratic inequalities with integral roots only."
+  - code: MATH.II.3.i
+    parent: MATH.II.3
+    type: skill
+    name: Solve problems on linear and quadratic inequalities
+    location: PDF page 3, II.3 objective i
+    excerpt: "solve problems on linear and quadratic inequalities"
+  - code: MATH.II.3.ii
+    parent: MATH.II.3
+    type: skill
+    name: Interpret graphs of inequalities
+    location: PDF page 3, II.3 objective ii
+    excerpt: "interpret graphs of inequalities."
+
+  - code: MATH.II.4
+    parent: MATH.II
+    type: subtopic
+    name: Progression
+    location: PDF page 3, II.4
+    excerpt: "Progression"
+    boundary_notes: "(a) nth term of a progression; (b) sum of A. P. and G. P."
+  - code: MATH.II.4.i
+    parent: MATH.II.4
+    type: skill
+    name: Determine the nth term of a progression
+    location: PDF page 3, II.4 objective i
+    excerpt: "determine the nth term of a progression"
+  - code: MATH.II.4.ii
+    parent: MATH.II.4
+    type: skill
+    name: Compute the sum of an A.P. and a G.P.
+    location: PDF page 3, II.4 objective ii
+    excerpt: "compute the sum of A. P. and G.P"
+  - code: MATH.II.4.iii
+    parent: MATH.II.4
+    type: skill
+    name: Find the sum to infinity of a given G.P.
+    location: PDF page 3, II.4 objective iii
+    excerpt: "sum to infinity of a given G.P."
+
+  - code: MATH.II.5
+    parent: MATH.II
+    type: subtopic
+    name: Binary Operations
+    location: PDF page 3, II.5
+    excerpt: "Binary Operations"
+    boundary_notes: "(a) properties of closure, commutativity, associativity and distributivity; (b) identity and inverse elements (simple cases only)."
+  - code: MATH.II.5.i
+    parent: MATH.II.5
+    type: skill
+    name: Solve problems involving closure, commutativity, associativity and distributivity
+    location: PDF page 3, II.5 objective i
+    excerpt: "solve problems involving closure, commutativity, associativity and distributivity"
+  - code: MATH.II.5.ii
+    parent: MATH.II.5
+    type: skill
+    name: Solve problems involving identity and inverse elements
+    location: PDF page 3, II.5 objective ii
+    excerpt: "solve problems involving identity and inverse elements."
+
+  - code: MATH.II.6
+    parent: MATH.II
+    type: subtopic
+    name: Matrices and Determinants
+    location: PDF page 3, II.6
+    excerpt: "Matrices and Determinants"
+    boundary_notes: "(a) algebra of matrices not exceeding 3 x 3; (b) determinants of matrices not exceeding 3 x 3; (c) inverses of 2 x 2 matrices [excluding quadratic and higher degree equations]."
+  - code: MATH.II.6.i
+    parent: MATH.II.6
+    type: skill
+    name: Perform basic operations on matrices
+    location: PDF page 3, II.6 objective i
+    excerpt: "perform basic operations (x,+,-,÷) on matrices"
+  - code: MATH.II.6.ii
+    parent: MATH.II.6
+    type: skill
+    name: Calculate determinants
+    location: PDF page 3, II.6 objective ii
+    excerpt: "calculate determinants"
+  - code: MATH.II.6.iii
+    parent: MATH.II.6
+    type: skill
+    name: Compute inverses of 2 x 2 matrices
+    location: PDF page 3, II.6 objective iii
+    excerpt: "compute inverses of 2 x 2 matrices."
+
+  # ───────────────────── III GEOMETRY AND TRIGONOMETRY ─────────────────
+  - code: MATH.III
+    type: topic
+    name: Geometry and Trigonometry
+    location: PDF page 3, Section III
+    excerpt: "SECTION III: GEOMETRY AND TRIGONOMETRY"
+
+  - code: MATH.III.1
+    parent: MATH.III
+    type: subtopic
+    name: Euclidean Geometry
+    location: PDF page 3, III.1
+    excerpt: "Euclidean Geometry"
+    boundary_notes: "(a) Properties of angles and lines; (b) Polygons: triangles, quadrilaterals and general polygons; (c) Circles: angle properties, cyclic quadrilaterals and intersecting chords; (d) construction."
+  - code: MATH.III.1.i
+    parent: MATH.III.1
+    type: skill
+    name: Identify various types of lines and angles
+    location: PDF page 3, III.1 objective i
+    excerpt: "identify various types of lines and angles"
+  - code: MATH.III.1.ii
+    parent: MATH.III.1
+    type: skill
+    name: Solve problems involving polygons
+    location: PDF page 3, III.1 objective ii
+    excerpt: "solve problems involving polygons"
+  - code: MATH.III.1.iii
+    parent: MATH.III.1
+    type: skill
+    name: Calculate angles using circle theorems
+    location: PDF page 3, III.1 objective iii
+    excerpt: "calculate angles using circle theorems"
+  - code: MATH.III.1.iv
+    parent: MATH.III.1
+    type: skill
+    name: Identify construction procedures of special angles
+    location: PDF page 3, III.1 objective iv
+    excerpt: "identify construction procedures of special angles, e.g. 30º, 45º, 60º, 75º, 90º etc."
+
+  - code: MATH.III.2
+    parent: MATH.III
+    type: subtopic
+    name: Mensuration
+    location: PDF page 4, III.2
+    excerpt: "Mensuration"
+    boundary_notes: "(a) lengths and areas of plane geometrical figures; (b) lengths of arcs and chords of a circle; (c) Perimeters and areas of sectors and segments of circles; (d) surface areas and volumes of simple solids and composite figures; (e) the earth as a sphere: longitudes and latitudes."
+  - code: MATH.III.2.i
+    parent: MATH.III.2
+    type: skill
+    name: Calculate perimeters and areas of plane figures
+    location: PDF page 4, III.2 objective i
+    excerpt: "calculate the perimeters and areas of triangles, quadrilaterals, circles and composite figures"
+  - code: MATH.III.2.ii
+    parent: MATH.III.2
+    type: skill
+    name: Find lengths of arcs and chords, and areas of sectors and segments
+    location: PDF page 4, III.2 objective ii
+    excerpt: "find the length of an arc, a chord, perimeters and areas of sectors and segments of circles"
+  - code: MATH.III.2.iii
+    parent: MATH.III.2
+    type: skill
+    name: Calculate surface areas and volumes of solids
+    location: PDF page 4, III.2 objective iii
+    excerpt: "calculate total surface areas and volumes of cuboids, cylinders. cones, pyramids, prisms, spheres and composite figures"
+  - code: MATH.III.2.iv
+    parent: MATH.III.2
+    type: skill
+    name: Determine the distance between two points on the earth's surface
+    location: PDF page 4, III.2 objective iv
+    excerpt: "determine the distance between two points on the earth's surface."
+
+  - code: MATH.III.3
+    parent: MATH.III
+    type: subtopic
+    name: Loci
+    location: PDF page 4, III.3
+    excerpt: "Loci: locus in 2 dimensions based on geometric principles relating to lines and curves."
+  - code: MATH.III.3.i
+    parent: MATH.III.3
+    type: skill
+    name: Identify and interpret loci relating to lines, bisectors and circles
+    location: PDF page 4, III.3 objective
+    excerpt: "identify and interpret loci relating to parallel lines, perpendicular bisectors, angle bisectors and circles."
+
+  - code: MATH.III.4
+    parent: MATH.III
+    type: subtopic
+    name: Coordinate Geometry
+    location: PDF page 4, III.4
+    excerpt: "Coordinate Geometry"
+    boundary_notes: "(a) midpoint and gradient of a line segment; (b) distance between two points; (c) parallel and perpendicular lines; (d) equations of straight lines."
+  - code: MATH.III.4.i
+    parent: MATH.III.4
+    type: skill
+    name: Determine the midpoint and gradient of a line segment
+    location: PDF page 4, III.4 objective i
+    excerpt: "determine the midpoint and gradient of a line segment"
+  - code: MATH.III.4.ii
+    parent: MATH.III.4
+    type: skill
+    name: Find the distance between two points
+    location: PDF page 4, III.4 objective ii
+    excerpt: "find the distance between two points"
+  - code: MATH.III.4.iii
+    parent: MATH.III.4
+    type: skill
+    name: Identify conditions for parallelism and perpendicularity
+    location: PDF page 4, III.4 objective iii
+    excerpt: "identify conditions for parallelism and perpendicularity"
+  - code: MATH.III.4.iv
+    parent: MATH.III.4
+    type: skill
+    name: Find the equation of a line in its various forms
+    location: PDF page 4, III.4 objective iv
+    excerpt: "find the equation of a line in the two-point form, point-slope form, slope intercept form and the general form."
+
+  - code: MATH.III.5
+    parent: MATH.III
+    type: subtopic
+    name: Trigonometry
+    location: PDF page 4, III.5
+    excerpt: "Trigonometry"
+    boundary_notes: "(a) trigonometrical ratios of angles; (b) angles of elevation and depression; (c) bearings; (d) areas and solutions of triangle; (e) graphs of sine and cosine; (f) sine and cosine formulae."
+  - code: MATH.III.5.i
+    parent: MATH.III.5
+    type: skill
+    name: Calculate the sine, cosine and tangent of angles between -360º and 360º
+    location: PDF page 4, III.5 objective i
+    excerpt: "calculate the sine, cosine and tangent of angles between - 360º ≤ Ɵ ≤ 360º"
+  - code: MATH.III.5.ii
+    parent: MATH.III.5
+    type: skill
+    name: Apply special angles to solve simple trigonometry problems
+    location: PDF page 4, III.5 objective ii
+    excerpt: "apply these special angles, e.g. 30º, 45º, 60º, 75º, 90º, 105º, 135º to solve simple problems in trigonometry"
+  - code: MATH.III.5.iii
+    parent: MATH.III.5
+    type: skill
+    name: Solve problems involving angles of elevation and depression
+    location: PDF page 4, III.5 objective iii
+    excerpt: "solve problems involving angles of elevation and depression"
+  - code: MATH.III.5.iv
+    parent: MATH.III.5
+    type: skill
+    name: Solve problems involving bearings
+    location: PDF page 4, III.5 objective iv
+    excerpt: "solve problems involving bearings"
+  - code: MATH.III.5.v
+    parent: MATH.III.5
+    type: skill
+    name: Apply trigonometric formulae to find areas of triangles
+    location: PDF page 4, III.5 objective v
+    excerpt: "apply trigonometric formulae to find areas of triangles"
+  - code: MATH.III.5.vi
+    parent: MATH.III.5
+    type: skill
+    name: Solve problems involving sine and cosine graphs
+    location: PDF page 4, III.5 objective vi
+    excerpt: "solve problems involving sine and cosine graphs."
+
+  # ───────────────────────────── IV CALCULUS ──────────────────────────
+  - code: MATH.IV
+    type: topic
+    name: Calculus
+    location: PDF page 4, Section IV
+    excerpt: "SECTION IV: CALCULUS"
+
+  - code: MATH.IV.1
+    parent: MATH.IV
+    type: subtopic
+    name: Differentiation
+    location: PDF page 4, IV.1
+    excerpt: "Differentiation"
+    boundary_notes: "(a) limit of a function; (b) differentiation of explicit algebraic and simple trigonometrical functions – sine, cosine and tangent. The source numbers this subtopic 'I.' and the following ones 2 and 3; the numbering is normalised here."
+  - code: MATH.IV.1.i
+    parent: MATH.IV.1
+    type: skill
+    name: Find the limit of a function
+    location: PDF page 4, IV.1 objective i
+    excerpt: "find the limit of a function"
+  - code: MATH.IV.1.ii
+    parent: MATH.IV.1
+    type: skill
+    name: Differentiate explicit algebraic and simple trigonometric functions
+    location: PDF page 4, IV.1 objective ii
+    excerpt: "differentiate explicit algebraic and simple trigonometrical functions."
+
+  - code: MATH.IV.2
+    parent: MATH.IV
+    type: subtopic
+    name: Application of differentiation
+    location: PDF page 4, IV.2
+    excerpt: "Application of differentiation"
+    boundary_notes: "(a) rate of change; (b) maxima and minima."
+  - code: MATH.IV.2.i
+    parent: MATH.IV.2
+    type: skill
+    name: Solve problems involving rate of change, maxima and minima
+    location: PDF page 5, IV.2 objective
+    excerpt: "solve problems involving applications of rate of change, maxima and minima."
+
+  - code: MATH.IV.3
+    parent: MATH.IV
+    type: subtopic
+    name: Integration
+    location: PDF page 5, IV.3
+    excerpt: "Integration"
+    boundary_notes: "(a) integration of explicit algebraic and simple trigonometrical functions; (b) area under the curve."
+  - code: MATH.IV.3.i
+    parent: MATH.IV.3
+    type: skill
+    name: Integrate algebraic and simple trigonometric functions
+    location: PDF page 5, IV.3 objective i
+    excerpt: "solve problems of integration involving algebraic and simple trigonometric functions"
+  - code: MATH.IV.3.ii
+    parent: MATH.IV.3
+    type: skill
+    name: Calculate the area under a curve
+    location: PDF page 5, IV.3 objective ii
+    excerpt: "calculate area under the curve (simple cases only)."
+
+  # ──────────────────────────── V STATISTICS ──────────────────────────
+  - code: MATH.V
+    type: topic
+    name: Statistics
+    location: PDF page 5, Section V
+    excerpt: "SECTION V: STATISTICS"
+
+  - code: MATH.V.1
+    parent: MATH.V
+    type: subtopic
+    name: Representation of data
+    location: PDF page 5, V.1
+    excerpt: "Representation of data"
+    boundary_notes: "(a) frequency distribution; (b) histogram, bar chart and pie chart."
+  - code: MATH.V.1.i
+    parent: MATH.V.1
+    type: skill
+    name: Identify and interpret frequency distribution tables
+    location: PDF page 5, V.1 objective i
+    excerpt: "identify and interpret frequency distribution tables"
+  - code: MATH.V.1.ii
+    parent: MATH.V.1
+    type: skill
+    name: Interpret information on histograms, bar charts and pie charts
+    location: PDF page 5, V.1 objective ii
+    excerpt: "interpret information on histogram, bar chat and pie chart."
+
+  - code: MATH.V.2
+    parent: MATH.V
+    type: subtopic
+    name: Measures of Location
+    location: PDF page 5, V.2
+    excerpt: "Measures of Location"
+    boundary_notes: "(a) mean, mode and median of ungrouped and grouped data – (simple cases only); (b) cumulative frequency."
+  - code: MATH.V.2.i
+    parent: MATH.V.2
+    type: skill
+    name: Calculate the mean, mode and median of ungrouped and grouped data
+    location: PDF page 5, V.2 objective i
+    excerpt: "calculate the mean, mode and median of ungrouped and grouped data (simple cases only)"
+  - code: MATH.V.2.ii
+    parent: MATH.V.2
+    type: skill
+    name: Use an ogive to find the median, quartiles and percentiles
+    location: PDF page 5, V.2 objective ii
+    excerpt: "use Ogive to find the median, quartiles and percentiles."
+
+  - code: MATH.V.3
+    parent: MATH.V
+    type: subtopic
+    name: Measures of Dispersion
+    location: PDF page 5, V.3
+    excerpt: "Measures of Dispersion: range, mean deviation, variance and standard deviation."
+  - code: MATH.V.3.i
+    parent: MATH.V.3
+    type: skill
+    name: Calculate range, mean deviation, variance and standard deviation
+    location: PDF page 5, V.3 objective
+    excerpt: "calculate the range, mean deviation, variance and standard deviation of ungrouped and grouped data."
+
+  - code: MATH.V.4
+    parent: MATH.V
+    type: subtopic
+    name: Permutation and Combination
+    location: PDF page 5, V.4
+    excerpt: "Permutation and Combination"
+    boundary_notes: "(a) Linear and circular arrangements; (b) Arrangements involving repeated objects."
+  - code: MATH.V.4.i
+    parent: MATH.V.4
+    type: skill
+    name: Solve simple problems involving permutation and combination
+    location: PDF page 5, V.4 objective
+    excerpt: "solve simple problems involving permutation and combination."
+
+  - code: MATH.V.5
+    parent: MATH.V
+    type: subtopic
+    name: Probability
+    location: PDF page 5, V.5
+    excerpt: "Probability"
+    boundary_notes: "(a) experimental probability (tossing of coin, throwing of a dice etc); (b) Addition and multiplication of probabilities (mutual and independent cases)."
+  - code: MATH.V.5.i
+    parent: MATH.V.5
+    type: skill
+    name: Solve simple problems in probability, including addition and multiplication
+    location: PDF page 5, V.5 objective
+    excerpt: "solve simple problems in probability (including addition and multiplication)."
