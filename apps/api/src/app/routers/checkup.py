@@ -131,8 +131,7 @@ async def _topics(conn: AsyncConnection, subject_id: UUID) -> tuple[list[TopicWe
     rows = await fetch_all(
         conn,
         """
-        SELECT topic.id::text AS topic_id, topic.name,
-               w.historical_share, w.expert_share, w.alpha,
+        SELECT topic.id::text AS topic_id, topic.name, w.share,
                count(DISTINCT dq.question_id) AS available
         FROM curriculum_items topic
         JOIN curriculum_items sub ON sub.parent_id = topic.id
@@ -142,10 +141,12 @@ async def _topics(conn: AsyncConnection, subject_id: UUID) -> tuple[list[TopicWe
          AND c.classification_role = 'primary' AND c.review_status = 'approved'
         JOIN deliverable_questions dq ON dq.question_id = c.question_id
         JOIN questions q ON q.id = dq.question_id AND q.usage_pool = :pool
-        LEFT JOIN topic_weights w
+        -- Weight comes from the exam's structure, never from how many questions we happen
+        -- to hold: our bank's shape is our sampling, not the examination's.
+        LEFT JOIN topic_exam_weight w
           ON w.topic_id = topic.id AND w.syllabus_version_id = topic.syllabus_version_id
         WHERE topic.syllabus_version_id = :version AND topic.item_type = 'topic'
-        GROUP BY topic.id, topic.name, w.historical_share, w.expert_share, w.alpha
+        GROUP BY topic.id, topic.name, w.share, topic.display_order, topic.code
         HAVING count(DISTINCT dq.question_id) > 0
         ORDER BY topic.display_order, topic.code
         """,
@@ -161,20 +162,17 @@ async def _topics(conn: AsyncConnection, subject_id: UUID) -> tuple[list[TopicWe
             ),
         )
 
-    weighted = any(
-        row["historical_share"] is not None or row["expert_share"] is not None for row in rows
-    )
-    topics: list[TopicWeight] = []
-    for row in rows:
-        if weighted:
-            alpha = float(row["alpha"] or 0.5)
-            historical = float(row["historical_share"] or 0)
-            expert = float(row["expert_share"] or 0)
-            share = alpha * historical + (1 - alpha) * expert
-        else:
-            share = 1.0
-        topics.append(TopicWeight(topic_id=row["topic_id"], share=share, name=row["name"]))
-    return topics, "topic_weights" if weighted else "equal (no reviewed weights yet)"
+    weighted = any(row["share"] is not None for row in rows)
+    topics = [
+        TopicWeight(
+            topic_id=row["topic_id"],
+            share=float(row["share"]) if weighted and row["share"] is not None else 1.0,
+            name=row["name"],
+        )
+        for row in rows
+    ]
+    source = "exam_structure" if weighted else "equal (no approved exam structure yet)"
+    return topics, source
 
 
 async def _answers_so_far(conn: AsyncConnection, session_id: UUID) -> list[dict[str, Any]]:
