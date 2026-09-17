@@ -23,5 +23,6 @@ new ADR that supersedes it and update the old file's status line.
 | [0013](0013-auth-and-sessions.md) | Authentication and sessions | Proposed |
 | [0014](0014-neco-objective-poc.md) | Objective papers for the POC, marks out of 100 per subject | Partly superseded by 0015 |
 | [0015](0015-waec-wassce-replaces-neco.md) | WAEC WASSCE replaces NECO as the POC exam | Accepted |
+| [0016](0016-hetzner-vps-for-the-dev-deployment.md) | A shared Hetzner VPS for the dev deployment | Accepted |
 
 Statuses: Proposed · Accepted · Superseded by ADR-XXXX · Rejected.

@@ -3,8 +3,16 @@
 # Mirrors the Makefile targets, but against a disposable PostgreSQL service so it
 # needs no local cluster. Keep the two in step: if a check only exists here, it
 # will not be run before a push.
+#
+# A push to `dev` that passes every check deploys to the shared Hetzner box
+# (ADR-0016). `main` is never deployed automatically.
+#
+# ADR-0012 lists the gates this should enforce. Present: ruff, mypy, pytest,
+# Vitest, parity vectors, the TypeScript check and a migration run against an
+# empty database. Still missing, because the tooling does not exist in the repo
+# yet: size-limit on every PR, and Playwright plus Schemathesis on main.
 
-name: CI
+name: CI / CD
 
 on:
   push:
@@ -147,3 +155,107 @@ jobs:
         run: |
           docker run --rm score-pilot-api:ci \
             python -c "from app.migrations import discover; print(f'{len(discover())} migrations visible')"
+
+  deploy:
+    name: Deploy · dev to Hetzner
+    # Only once every check above is green, and only from dev.
+    needs: [python, javascript, schema, image]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/dev'
+    runs-on: ubuntu-latest
+    environment: dev
+    permissions:
+      contents: read
+      packages: write
+    concurrency:
+      group: deploy-dev
+      cancel-in-progress: false
+    env:
+      REMOTE_DIR: /opt/score-pilot
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Work out the image tag
+        id: image
+        run: |
+          repo=$(echo "${{ github.repository }}" | tr '[:upper:]' '[:lower:]')
+          echo "ref=ghcr.io/${repo}-api:${{ github.sha }}" >> "$GITHUB_OUTPUT"
+
+      - uses: docker/setup-buildx-action@v3
+
+      - name: Sign in to the container registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and publish the API image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: apps/api/Dockerfile
+          push: true
+          tags: ${{ steps.image.outputs.ref }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+
+      - name: Build the review client
+        run: |
+          npm ci
+          npm run build
+
+      - name: Authorise SSH
+        # Secrets arrive as environment variables rather than being pasted into the
+        # script, so nothing sensitive is ever part of the command text.
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+        run: |
+          install -m 700 -d ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_deploy
+          chmod 600 ~/.ssh/id_deploy
+          ssh-keyscan -H "$SSH_HOST" >> ~/.ssh/known_hosts 2>/dev/null
+          {
+            echo "Host target"
+            echo "  HostName $SSH_HOST"
+            echo "  User $SSH_USER"
+            echo "  IdentityFile ~/.ssh/id_deploy"
+            echo "  IdentitiesOnly yes"
+            echo "  StrictHostKeyChecking yes"
+          } >> ~/.ssh/config
+
+      - name: Ship the compose file and the built client
+        # tar over ssh, so the far end needs nothing installed but tar.
+        run: |
+          ssh target "mkdir -p '$REMOTE_DIR' '$REMOTE_DIR/web'"
+          tar -C deploy -cf - compose.yml | ssh target "tar -C '$REMOTE_DIR' -xf -"
+          tar -C apps/web/dist -cf - . | ssh target "rm -rf '$REMOTE_DIR/web'/* && tar -C '$REMOTE_DIR/web' -xf -"
+          ssh target "chmod -R a+rX '$REMOTE_DIR/web'"
+
+      - name: Migrate, then start
+        env:
+          IMAGE: ${{ steps.image.outputs.ref }}
+          REGISTRY_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ACTOR: ${{ github.actor }}
+        run: |
+          ssh target "IMAGE='$IMAGE' REGISTRY_TOKEN='$REGISTRY_TOKEN' ACTOR='$ACTOR' bash -euo pipefail -s" < deploy/release.sh
+
+      - name: Check it came up
+        run: |
+          for attempt in $(seq 1 20); do
+            if ssh target "curl -fsS --max-time 5 http://127.0.0.1:8010/health"; then
+              echo
+              echo "Healthy after ${attempt} attempt(s)."
+              exit 0
+            fi
+            sleep 3
+          done
+          echo "::error::The API never became healthy. Recent logs:"
+          ssh target "cd /opt/score-pilot && docker compose -f compose.yml logs --tail 60 api"
+          exit 1

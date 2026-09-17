@@ -1,0 +1,41 @@
+# Append to /etc/caddy/Caddyfile, then: sudo systemctl reload caddy
+#
+# An explicit hostname beats the *.binaax.app wildcard already in that file, so
+# this block takes precedence without altering anything the other project uses.
+# It also means a normal certificate rather than the on-demand hook, so our TLS
+# does not depend on that project's /api/sandbox-allowed endpoint staying up.
+#
+# Replace REPLACE_WITH_HASH first:
+#     caddy hash-password --plaintext 'the-password-you-chose'
+
+stackprep.binaax.app {
+    encode zstd gzip
+
+    # The review tool has no login of its own yet (ADR-0013 is still pending), so
+    # this password is the only thing standing between the question bank and the
+    # internet. Remove it when real authentication lands, not before.
+    basic_auth * {
+        review REPLACE_WITH_HASH
+    }
+
+    # The API. These are every path the review client calls, plus FastAPI's docs.
+    @api path /v1/* /health /docs /openapi.json /redoc
+    handle @api {
+        reverse_proxy 127.0.0.1:8010
+    }
+
+    # The review client: a static build that CI copies to disk.
+    handle {
+        root * /opt/score-pilot/web
+        try_files {path} /index.html
+        file_server
+    }
+
+    header {
+        Strict-Transport-Security "max-age=31536000; includeSubDomains"
+        X-Content-Type-Options nosniff
+        Referrer-Policy strict-origin-when-cross-origin
+        -Server
+        X-Robots-Tag "noindex, nofollow"
+    }
+}
