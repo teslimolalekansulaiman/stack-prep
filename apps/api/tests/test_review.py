@@ -31,9 +31,7 @@ async def fixture_question() -> AsyncIterator[dict[str, str]]:
         ids["reviewer"] = str(
             (
                 await conn.execute(
-                    text(
-                        "INSERT INTO academic_reviewers (display_name) VALUES (:n) RETURNING id"
-                    ),
+                    text("INSERT INTO academic_reviewers (display_name) VALUES (:n) RETURNING id"),
                     {"n": f"Review test reviewer {suffix}"},
                 )
             ).scalar_one()
@@ -41,9 +39,7 @@ async def fixture_question() -> AsyncIterator[dict[str, str]]:
         ids["author"] = str(
             (
                 await conn.execute(
-                    text(
-                        "INSERT INTO academic_reviewers (display_name) VALUES (:n) RETURNING id"
-                    ),
+                    text("INSERT INTO academic_reviewers (display_name) VALUES (:n) RETURNING id"),
                     {"n": f"Review test author {suffix}"},
                 )
             ).scalar_one()
@@ -186,8 +182,12 @@ async def fixture_question() -> AsyncIterator[dict[str, str]]:
             ).scalar_one()
         )
         for position, (key, body, correct) in enumerate(
-            [("A", "stationary", True), ("B", "stagnant", False),
-             ("C", "stationed", False), ("D", "stationery", False)],
+            [
+                ("A", "stationary", True),
+                ("B", "stagnant", False),
+                ("C", "stationed", False),
+                ("D", "stationery", False),
+            ],
             start=1,
         ):
             await conn.execute(
@@ -247,8 +247,10 @@ async def fixture_question() -> AsyncIterator[dict[str, str]]:
             {"q": ids["question"]},
         )
         await conn.execute(
-            text("DELETE FROM question_options WHERE question_version_id IN "
-                 "(SELECT id FROM question_versions WHERE question_id = :q)"),
+            text(
+                "DELETE FROM question_options WHERE question_version_id IN "
+                "(SELECT id FROM question_versions WHERE question_id = :q)"
+            ),
             {"q": ids["question"]},
         )
         await conn.execute(
@@ -260,15 +262,22 @@ async def fixture_question() -> AsyncIterator[dict[str, str]]:
         )
         await conn.execute(text("DELETE FROM questions WHERE id = :q"), {"q": ids["question"]})
         await conn.execute(
-            text("DELETE FROM curriculum_items WHERE syllabus_version_id = :v AND item_type = 'skill'"),
+            text(
+                "DELETE FROM curriculum_items"
+                " WHERE syllabus_version_id = :v AND item_type = 'skill'"
+            ),
             {"v": ids["version"]},
         )
         await conn.execute(
-            text("DELETE FROM curriculum_items WHERE syllabus_version_id = :v AND item_type = 'subtopic'"),
+            text(
+                "DELETE FROM curriculum_items"
+                " WHERE syllabus_version_id = :v AND item_type = 'subtopic'"
+            ),
             {"v": ids["version"]},
         )
         await conn.execute(
-            text("DELETE FROM curriculum_items WHERE syllabus_version_id = :v"), {"v": ids["version"]}
+            text("DELETE FROM curriculum_items WHERE syllabus_version_id = :v"),
+            {"v": ids["version"]},
         )
         await conn.execute(
             text("DELETE FROM syllabus_versions WHERE id = :v"), {"v": ids["version"]}
