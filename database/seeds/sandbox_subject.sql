@@ -118,7 +118,7 @@ VALUES (md5('sandbox:paper')::uuid, md5('sandbox:subject')::uuid, 'SBX-P1',
 ON CONFLICT (id) DO NOTHING;
 
 INSERT INTO exam_paper_sections (id, exam_paper_id, subject_id, section_code, name,
-  question_count, marks_total, topic_id, syllabus_version_id, source_location, review_status,
+  question_count, marks_total, curriculum_item_id, syllabus_version_id, source_location, review_status,
   reviewed_by, reviewed_at)
 SELECT md5('sandbox:section:' || s.code)::uuid, md5('sandbox:paper')::uuid,
        md5('sandbox:subject')::uuid, s.code, s.name, s.questions, s.questions,

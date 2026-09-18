@@ -75,7 +75,7 @@ BEGIN
   v_rejected := false;
   BEGIN
     INSERT INTO exam_paper_sections(exam_paper_id, subject_id, section_code, name,
-      question_count, topic_id, syllabus_version_id, source_location)
+      question_count, curriculum_item_id, syllabus_version_id, source_location)
       VALUES (v_paper_objective, v_subject, 'X', 'No citation', 10, v_topic_a,
         v_syllabus_version, '   ');
   EXCEPTION WHEN OTHERS THEN
@@ -85,16 +85,16 @@ BEGIN
   IF NOT v_rejected THEN RAISE EXCEPTION 'a section without a source was accepted'; END IF;
 
   INSERT INTO exam_paper_sections(exam_paper_id, subject_id, section_code, name,
-    question_count, marks_total, topic_id, syllabus_version_id, source_location, review_status)
+    question_count, marks_total, curriculum_item_id, syllabus_version_id, source_location, review_status)
     VALUES (v_paper_objective, v_subject, 'LEXIS', 'Lexis', 40, 20, v_topic_a,
       v_syllabus_version, 'page 2', 'pending');
   INSERT INTO exam_paper_sections(exam_paper_id, subject_id, section_code, name,
-    question_count, marks_total, topic_id, syllabus_version_id, source_location, review_status)
+    question_count, marks_total, curriculum_item_id, syllabus_version_id, source_location, review_status)
     VALUES (v_paper_objective, v_subject, 'STRUCTURE', 'Structure', 40, 20, v_topic_b,
       v_syllabus_version, 'page 2', 'pending');
   -- A theory section: real marks, but nothing the adaptive engine can mark.
   INSERT INTO exam_paper_sections(exam_paper_id, subject_id, section_code, name,
-    question_count, marks_total, topic_id, syllabus_version_id, source_location, review_status)
+    question_count, marks_total, curriculum_item_id, syllabus_version_id, source_location, review_status)
     VALUES (v_paper_theory, v_subject, 'ESSAY', 'Essay', 5, 50, v_topic_c,
       v_syllabus_version, 'page 3', 'pending');
 

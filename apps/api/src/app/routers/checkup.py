@@ -208,26 +208,34 @@ async def _topics(conn: AsyncConnection, subject_id: UUID) -> tuple[list[TopicWe
     rows = await fetch_all(
         conn,
         """
+        -- MATERIALIZED, and it is not decoration. deliverable_questions is six joins deep;
+        -- left inline, the planner re-ran the whole thing once per candidate row and this
+        -- query took 5.3 seconds against 754 questions. Pinned to one evaluation it takes 22
+        -- milliseconds. The view also already carries primary_skill_id, so the classification
+        -- join it used to do here was work done twice.
+        WITH deliverable AS MATERIALIZED (
+          SELECT dq.question_id, dq.primary_skill_id
+          FROM deliverable_questions dq
+          JOIN questions q ON q.id = dq.question_id AND q.usage_pool <> :pool
+          WHERE dq.subject_id = :subject
+        )
         SELECT topic.id::text AS topic_id, topic.name, w.share,
-               count(DISTINCT dq.question_id) AS available
+               count(DISTINCT d.question_id) AS available
         FROM curriculum_items topic
         JOIN curriculum_items sub ON sub.parent_id = topic.id
         JOIN curriculum_items skill ON skill.parent_id = sub.id AND skill.item_type = 'skill'
-        JOIN question_classifications c
-          ON c.curriculum_item_id = skill.id
-         AND c.classification_role = 'primary' AND c.review_status = 'approved'
-        JOIN deliverable_questions dq ON dq.question_id = c.question_id
-        JOIN questions q ON q.id = dq.question_id AND q.usage_pool <> :pool
+        JOIN deliverable d ON d.primary_skill_id = skill.id
         -- Weight comes from the exam's structure, never from how many questions we happen
         -- to hold: our bank's shape is our sampling, not the examination's.
         LEFT JOIN topic_exam_weight w
           ON w.topic_id = topic.id AND w.syllabus_version_id = topic.syllabus_version_id
         WHERE topic.syllabus_version_id = :version AND topic.item_type = 'topic'
         GROUP BY topic.id, topic.name, w.share, topic.display_order, topic.code
-        HAVING count(DISTINCT dq.question_id) > 0
+        HAVING count(DISTINCT d.question_id) > 0
         ORDER BY topic.display_order, topic.code
         """,
         version=version_id,
+        subject=subject_id,
         pool=EXCLUDED_POOL,
     )
     if not rows:
@@ -255,35 +263,35 @@ async def _topics(conn: AsyncConnection, subject_id: UUID) -> tuple[list[TopicWe
 async def _subtopics(conn: AsyncConnection, subject_id: UUID) -> tuple[list[UnitWeight], str]:
     """Every examinable subtopic, with the share of the paper it carries.
 
-    A topic's share comes from the exam's own structure. Splitting that share among the
-    topic's subtopics is where the honesty runs out: the syllabus says which subtopics exist,
-    but the printed paper structure is stated at section level, and a section like "Basic
-    grammar - 10 questions" covers five of them without saying in what proportion.
+    Read from `subtopic_exam_weight`, which is built from the printed sections of the paper.
+    Where the document attributes a section to a subtopic the share is that section's; where
+    it names only a topic, the view shares those questions out. Either way the number comes
+    from the examination, never from how many questions our own bank happens to hold — that
+    would make our sampling the examiner's, and every plan built on it circular.
 
-    So the split is even, and the response says so. The alternative — weighting subtopics by
-    how many questions our own bank holds for each — would be worse than a guess: it would
-    turn our sampling into the examiner's, and every plan built on it would be circular. The
-    real fix is to point each printed section at the subtopic it examines, which the schema
-    allows and the seed has not yet done.
+    A subject whose paper structure has not been approved has no shares at all, and then the
+    subtopics are weighted equally and the caller is told so rather than being handed a guess
+    dressed as a fact.
     """
     version_id = await _current_syllabus(conn, subject_id)
     rows = await fetch_all(
         conn,
         """
         SELECT sub.id::text AS unit_id, sub.name, topic.id::text AS topic_id,
-               topic.name AS topic_name, w.share AS topic_share,
+               topic.name AS topic_name, w.share,
+               w.expected_questions,
                count(*) OVER (PARTITION BY topic.id) AS siblings
         FROM curriculum_items sub
         JOIN curriculum_items topic ON topic.id = sub.parent_id
-        LEFT JOIN topic_exam_weight w
-          ON w.topic_id = topic.id AND w.syllabus_version_id = topic.syllabus_version_id
+        LEFT JOIN subtopic_exam_weight w
+          ON w.subtopic_id = sub.id AND w.syllabus_version_id = sub.syllabus_version_id
         WHERE sub.syllabus_version_id = :version AND sub.item_type = 'subtopic'
           AND sub.review_status = 'approved' AND sub.pilot_support_status = 'supported'
         ORDER BY topic.display_order, sub.display_order, sub.code
         """,
         version=version_id,
     )
-    weighted = any(row["topic_share"] is not None for row in rows)
+    weighted = any(row["share"] is not None for row in rows)
     units = [
         UnitWeight(
             unit_id=row["unit_id"],
@@ -291,15 +299,18 @@ async def _subtopics(conn: AsyncConnection, subject_id: UUID) -> tuple[list[Unit
             topic_id=row["topic_id"],
             topic_name=row["topic_name"],
             share=(
-                float(row["topic_share"]) / int(row["siblings"])
-                if weighted and row["topic_share"] is not None
+                float(row["share"])
+                if weighted and row["share"] is not None
+                # A subtopic with no printed share sits inside a paper that has one for its
+                # siblings. Zero would delete it from every plan, so it keeps an equal share
+                # of nothing rather than being silently dropped.
                 else 1.0 / int(row["siblings"])
             ),
         )
         for row in rows
     ]
     source = (
-        "exam structure for topics, split evenly within each topic"
+        "the exam's printed section structure"
         if weighted
         else "equal (no approved exam structure yet)"
     )
@@ -347,16 +358,26 @@ async def _pick_question(
     rows = await fetch_all(
         conn,
         """
-        SELECT dq.question_version_id, dq.mastery_level_number, p.stem, p.instructions,
-               p.passage_title, p.passage_body, topic.name AS topic_name
-        FROM deliverable_questions dq
-        JOIN questions q ON q.id = dq.question_id AND q.usage_pool <> :pool
-        JOIN candidate_question_payload p ON p.question_version_id = dq.question_version_id
+        WITH deliverable AS MATERIALIZED (
+          SELECT dq.question_id, dq.question_version_id, dq.mastery_level_number,
+                 dq.primary_skill_id, q.usage_pool
+          FROM deliverable_questions dq
+          JOIN questions q ON q.id = dq.question_id AND q.usage_pool <> :pool
+          WHERE dq.subject_id = :subject
+        )
+        SELECT dq.question_version_id, dq.mastery_level_number, v.stem, v.instructions,
+               pg.title AS passage_title, pg.body AS passage_body, topic.name AS topic_name
+        FROM deliverable dq
+        -- The stem and its passage are read from the tables rather than through
+        -- candidate_question_payload, which is itself built on deliverable_questions: joining
+        -- it here made the planner evaluate that whole view twice, and the six gates behind it
+        -- are not cheap. One evaluation took a seven-second question down to a tenth of that.
+        JOIN question_versions v ON v.id = dq.question_version_id
+        LEFT JOIN passages pg ON pg.id = v.passage_id
         JOIN curriculum_items skill ON skill.id = dq.primary_skill_id
         JOIN curriculum_items sub ON sub.id = skill.parent_id
         JOIN curriculum_items topic ON topic.id = sub.parent_id
-        WHERE dq.subject_id = :subject
-          AND topic.id = CAST(:topic AS uuid)
+        WHERE topic.id = CAST(:topic AS uuid)
           AND (CARDINALITY(CAST(:seen AS uuid[])) = 0
                OR NOT (dq.question_version_id = ANY (CAST(:seen AS uuid[]))))
           -- Anything this student has answered before, in any sitting or in practice.
@@ -364,7 +385,7 @@ async def _pick_question(
               SELECT 1 FROM student_question_history h
               WHERE h.student_id = :student AND h.question_id = dq.question_id
           )
-        ORDER BY (q.usage_pool = 'diagnostic') DESC,
+        ORDER BY (dq.usage_pool = 'diagnostic') DESC,
                  abs(coalesce(dq.mastery_level_number, 3) - :level),
                  md5(:session || dq.question_version_id::text)
         LIMIT 1

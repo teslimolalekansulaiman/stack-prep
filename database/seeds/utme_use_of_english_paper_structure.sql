@@ -59,7 +59,7 @@ all_papers AS (
   WHERE p.subject_id = subject.id AND p.paper_code = 'UTME-ENG'
 )
 INSERT INTO exam_paper_sections (exam_paper_id, subject_id, section_code, name,
-  question_count, marks_total, topic_id, syllabus_version_id, source_location, review_status)
+  question_count, marks_total, curriculum_item_id, syllabus_version_id, source_location, review_status)
 SELECT ap.id, ap.subject_id, s.code, s.name, s.questions, NULL, topic.id, version.id,
        s.location, 'pending'
 FROM (VALUES

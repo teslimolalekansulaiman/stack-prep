@@ -211,7 +211,7 @@ async def fixture_subject() -> AsyncIterator[dict[str, str]]:
                 text(
                     """
                     INSERT INTO exam_paper_sections (exam_paper_id, subject_id, section_code,
-                      name, question_count, marks_total, topic_id, syllabus_version_id,
+                      name, question_count, marks_total, curriculum_item_id, syllabus_version_id,
                       source_location, review_status, reviewed_by, reviewed_at)
                     -- Two names for the same number: one parameter feeding an integer
                     -- column and a numeric one leaves asyncpg unable to deduce a type.

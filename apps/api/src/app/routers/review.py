@@ -153,6 +153,8 @@ class PaperSection(BaseModel):
     name: str
     question_count: int
     marks_total: float | None
+    #: What the section examines — a topic when it spans several subtopics, a subtopic or a
+    #: skill when the document names one.
     topic_name: str | None
     #: Where in the source this claim came from. A reviewer checks this, not our word.
     source_location: str
@@ -626,7 +628,7 @@ async def sections(
                s.marks_total, topic.name AS topic_name, s.source_location, s.review_status
         FROM exam_paper_sections s
         JOIN exam_papers p ON p.id = s.exam_paper_id
-        LEFT JOIN curriculum_items topic ON topic.id = s.topic_id
+        LEFT JOIN curriculum_items topic ON topic.id = s.curriculum_item_id
         WHERE {" AND ".join(conditions)}
         ORDER BY p.paper_code, s.section_code
         """,
