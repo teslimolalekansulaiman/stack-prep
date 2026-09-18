@@ -43,7 +43,19 @@ produce exactly those. The underlying state and the status vocabulary do not.
    list still shows mastery policy as open. The engine settled it in code; the
    document has not caught up.
 
-Confirmed with Teslim, September 2026.
+Confirmed with Teslim, September 2026. Implemented in migration 008.
+
+**One further departure, not in the document at all:** `student_skill_mastery` is
+*derived*. It cannot be written to directly — a trigger refuses it. The only way
+a student's mastery changes is by inserting a `mastery_events` row, which the
+database then applies. An event must also agree with the state it claims to
+replace, so the history always reconstructs the present value.
+
+The document asks for this outcome ("every state transition creates an event with
+previous/new state, triggering diagnosis or evidence and rule version") but leaves
+it to whoever writes the application. Making the current value derived means an
+undocumented change to what a student knows is not possible rather than merely
+discouraged, which matters when the number eventually backs a refund promise.
 
 ---
 
@@ -100,9 +112,8 @@ service writes the row.
 
 From the document's 26 tables, still missing: `guardian_profiles`,
 `guardian_students`, `student_exam_goals`, `response_diagnoses`,
-`student_skill_mastery`, `mastery_events`, `learning_plans`,
-`learning_plan_items`, `learning_sessions`, `generation_profiles` and
-`generation_profile_questions`.
+`learning_plans`, `learning_plan_items`, `learning_sessions`,
+`generation_profiles` and `generation_profile_questions`.
 
 Their absence is recorded here rather than implied, per the document's own
 instruction that deferred entities be stated explicitly instead of pretending
