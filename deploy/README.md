@@ -16,7 +16,7 @@ for why a VPS, and what it is not suitable for.
       ↓
   migrate, then start
       ↓
-  https://stackprep.binaax.app                   ← Caddy, TLS, password
+  https://stackprep.stackjunior.com                   ← Caddy, TLS, password
 ```
 
 Nothing of ours is published to the internet. The API listens on `127.0.0.1:8010`;
