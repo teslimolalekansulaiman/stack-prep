@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Walk UTME Use of English through the publishing chain, over the real API.
+"""Walk a UTME subject through the publishing chain, over the real API.
 
     make api            # in another terminal
-    uv run python database/publish_utme_english.py --apply
+    uv run python database/publish_utme_subject.py --subject ENG \\
+        --seed database/seeds/utme_use_of_english.yaml --reviewer <id> --apply
 
 WHY A SCRIPT AND NOT PSQL. Every step here is an endpoint a person will click, and the
 order between the steps is enforced by database triggers rather than written down anywhere.
@@ -20,7 +21,8 @@ THE ORDER, which is not the obvious one:
   5. Switch the subject and its examination on. Until this, published_curriculum_scope is
      empty however much has been approved, which is a confusing way to find out that the
      catalogue is the thing in the way.
-  6. License and approve the passages. Comprehension and cloze questions cannot be approved
+  6. License the figures. A question whose diagram is unlicensed cannot be approved at all.
+  7. License and approve the passages. Comprehension and cloze questions cannot be approved
      while the passage they hang off is not.
 
 WHAT THIS DOES NOT DO, deliberately. It does not approve a single question. Approval needs
@@ -33,27 +35,29 @@ from __future__ import annotations
 
 import argparse
 import sys
+from pathlib import Path
 
 import httpx
+import yaml
 
 #: The subject codes are not unique across examinations, so the examination is named too.
 EXAMINATION = "UTME"
-SUBJECT = "ENG"
 
-#: Items import as 'uncertain' because the loader records what the document printed, not what
-#: it means. These eight are the ones the seed's extraction notes mark as our inference rather
-#: than a printed line — the paper sets these tasks, the syllabus does not name them. Every
-#: other item is printed explicitly.
-IMPLIED = {
-    "ENG.A.4.i",
-    "ENG.A.5.i",
-    "ENG.A.6",
-    "ENG.A.6.i",
-    "ENG.B.4.i",
-    "ENG.B.5.i",
-    "ENG.C.4.i",
-    "ENG.C.5.i",
-}
+
+def implied_items(seed: Path) -> set[str]:
+    """Codes the seed marks as our inference rather than a printed line.
+
+    Items import as 'uncertain' because the loader records what the document printed, not
+    what it means, and approving one means saying where it stands. The seed already carries
+    that judgement per item — it is what the extraction notes argue for — so it is read from
+    there rather than restated here, where the two could drift apart.
+    """
+    document = yaml.safe_load(seed.read_text())
+    return {
+        item["code"]
+        for item in document["curriculum_items"]
+        if item.get("syllabus_status") == "implied"
+    }
 
 #: Approve parents before children; the trigger refuses otherwise.
 ORDER = {"topic": 0, "subtopic": 1, "skill": 2}
@@ -81,17 +85,21 @@ class Chain:
         return payload
 
 
-def resolve_subject(client: httpx.Client) -> str:
+def resolve_subject(client: httpx.Client, code: str) -> str:
     subjects = client.get("/v1/curriculum/subjects").json()
     for subject in subjects:
-        if subject["code"] == SUBJECT and subject["examination"] == EXAMINATION:
+        if subject["code"] == code and subject["examination"] == EXAMINATION:
             return str(subject["id"])
-    raise SystemExit(f"no {EXAMINATION} subject with code {SUBJECT}")
+    raise SystemExit(f"no {EXAMINATION} subject with code {code}")
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--api", default="http://127.0.0.1:8000")
+    parser.add_argument("--subject", required=True, help="Subject code, e.g. ENG or MATH")
+    parser.add_argument(
+        "--seed", required=True, help="The seed YAML this subject's curriculum was loaded from"
+    )
     parser.add_argument(
         "--reviewer", required=True, help="academic_reviewers.id making these calls"
     )
@@ -99,7 +107,8 @@ def main() -> int:
     args = parser.parse_args()
 
     with httpx.Client(base_url=args.api, timeout=30.0) as client:
-        subject_id = resolve_subject(client)
+        subject_id = resolve_subject(client, args.subject)
+        implied = implied_items(Path(args.seed).resolve())
         chain = Chain(client, args.reviewer, args.apply)
 
         # 1. Documents. Both UTME documents for this subject: the syllabus the curriculum was
@@ -147,7 +156,7 @@ def main() -> int:
             chain.post(
                 f"/v1/publishing/curriculum/{item['curriculum_item_id']}/approve",
                 {
-                    "syllabus_status": "implied" if item["code"] in IMPLIED else "explicit",
+                    "syllabus_status": "implied" if item["code"] in implied else "explicit",
                     "pilot_support_status": "supported",
                 },
             )
@@ -160,7 +169,18 @@ def main() -> int:
         if catalogue:
             print(f"  switched on: {catalogue['teachable_skills']} teachable skills")
 
-        # 6. Passages.
+        # 6. Figures. A mathematics question whose diagram is unlicensed cannot be approved
+        #    at all, so for that subject this step is most of the work.
+        pending = chain.get("/v1/publishing/assets", subject_id=subject_id, state="pending")
+        assert isinstance(pending, list)
+        if pending:
+            chain.post(
+                f"/v1/publishing/assets/decide?subject_id={subject_id}",
+                {"licence_status": "verified"},
+            )
+        print(f"  licensed  {len(pending)} figures")
+
+        # 7. Passages.
         found = chain.get("/v1/publishing/passages", subject_id=subject_id, state="draft")
         assert isinstance(found, list)
         for passage in found:

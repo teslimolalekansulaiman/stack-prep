@@ -555,6 +555,102 @@ async def decide_passage(
     raise HTTPException(status_code=404, detail="passage not found")
 
 
+class Asset(BaseModel):
+    asset_id: UUID
+    mime_type: str
+    storage_uri: str
+    #: Where in the source PDF this was cropped from. What makes the decision checkable.
+    source_location: str | None
+    alt_text: str | None
+    alt_text_source: str
+    licence_status: str
+    questions: int
+
+
+class AssetDecision(Decision):
+    licence_status: Literal["verified", "blocked", "pending"] = "verified"
+    #: Optional. Setting it records that a person read the description against the image.
+    alt_text_source: Literal["model_proposed", "expert_verified"] | None = None
+
+
+@router.get("/assets", response_model=list[Asset], summary="Figures and their licences")
+async def assets(
+    conn: Annotated[AsyncConnection, Depends(connection)],
+    subject_id: UUID,
+    state: Literal["pending", "verified", "all"] = "pending",
+) -> list[Asset]:
+    """Cropped figures, with where each was cut from and what it is described as.
+
+    A mathematics paper is full of diagrams, and a question whose diagram is unlicensed or
+    undescribed cannot be approved at all — the version trigger refuses it. So for maths this
+    is not a detail at the edge: it is several hundred decisions standing between a syllabus
+    and a single deliverable question.
+    """
+    rows = await fetch_all(
+        conn,
+        """
+        SELECT a.id AS asset_id, a.mime_type, a.storage_uri, a.source_location, a.alt_text,
+               a.alt_text_source, a.licence_status, 1 AS questions
+        FROM question_assets a
+        JOIN question_versions v ON v.id = a.question_version_id
+        WHERE v.subject_id = :subject
+          AND (:state = 'all' OR a.licence_status = :state)
+        ORDER BY a.created_at
+        """,
+        subject=subject_id,
+        state=state,
+    )
+    return [Asset(**dict(row)) for row in rows]
+
+
+@router.post(
+    "/assets/decide",
+    response_model=int,
+    summary="License every pending figure of a subject",
+)
+async def decide_assets(
+    conn: Annotated[AsyncConnection, Depends(connection)],
+    subject_id: UUID,
+    decision: AssetDecision,
+) -> int:
+    """Record a licence decision across a subject's figures, and return how many moved.
+
+    One call for the whole subject, unlike passages and sections, because this decision
+    really is one decision: every figure here was cropped from the same document under the
+    same licence, and pretending otherwise by asking four hundred times would make the record
+    look more considered than it is.
+
+    Alt text is separate and deliberately not swept along with it. A licence is a fact about
+    the document; a description is a claim about one image, and only a person who looked at
+    that image can make it. Pass alt_text_source only when that has actually happened.
+    """
+    await _reviewer(conn, decision.reviewer_id)
+    result = await conn.execute(
+        text(
+            """
+            UPDATE question_assets a
+               SET licence_status = :licence,
+                   -- Cast once: the same parameter feeds a coalesce and two comparisons, and
+                   -- asyncpg cannot infer a type for a parameter used only against NULL.
+                   alt_text_source = coalesce(CAST(:alt_source AS text), a.alt_text_source)
+              FROM question_versions v
+             WHERE v.id = a.question_version_id
+               AND v.subject_id = :subject
+               AND (a.licence_status <> :licence
+                    OR (CAST(:alt_source AS text) IS NOT NULL
+                        AND a.alt_text_source <> CAST(:alt_source AS text)))
+            """
+        ),
+        {
+            "subject": subject_id,
+            "licence": decision.licence_status,
+            "alt_source": decision.alt_text_source,
+        },
+    )
+    await conn.commit()
+    return int(result.rowcount)
+
+
 @router.get("/catalogue", response_model=Catalogue, summary="Is this subject switched on")
 async def catalogue(
     conn: Annotated[AsyncConnection, Depends(connection)], subject_id: UUID

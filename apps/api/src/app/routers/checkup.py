@@ -301,10 +301,12 @@ async def _subtopics(conn: AsyncConnection, subject_id: UUID) -> tuple[list[Unit
             share=(
                 float(row["share"])
                 if weighted and row["share"] is not None
-                # A subtopic with no printed share sits inside a paper that has one for its
-                # siblings. Zero would delete it from every plan, so it keeps an equal share
-                # of nothing rather than being silently dropped.
-                else 1.0 / int(row["siblings"])
+                # No printed share, so every subtopic of the subject is treated as equally
+                # important. An equal share of the SUBJECT, not of its topic: dividing within
+                # the topic would make a subtopic of a five-part topic look four times as
+                # heavy as one of a twenty-part topic, which is a weighting nobody chose and
+                # which the report then prints as a percentage of the paper.
+                else 1.0 / len(rows)
             ),
         )
         for row in rows
