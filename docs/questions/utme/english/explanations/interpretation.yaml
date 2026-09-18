@@ -1,0 +1,328 @@
+# UTME Use of English — Sentence interpretation (ENG.B.3.ii)
+#
+# "Select the option that best explains the information conveyed in the sentence." Almost all
+# of these turn on an idiom, so the explanation gives the idiom's meaning first and then says
+# which option matches it. The commonest trap is the literal reading, which is always offered.
+format_version: 1
+skill: ENG.B.3.ii
+explanations:
+  b7862a55:
+    steps:
+      - "To view someone with a jaundiced eye is to see them with suspicion and disapproval — the phrase comes from the yellow tinge of jaundice colouring everything."
+      - "An unfavourable position is that meaning in plain words. The sickly option takes jaundiced literally, which is the trap."
+    hint: "The illness in the phrase is a metaphor. What does looking at someone through it do to how you see them?"
+  95fae2fa:
+    steps:
+      - "Not interested in who rules means the people do not care which leaders they get."
+      - "Not concerned about who rules them says the same. The other options change who is uninterested, or add a complaint about the rulers that is not in the sentence."
+    hint: "Check who is doing the not-caring. Two options swap the people and the rulers round."
+  8bc50938:
+    steps:
+      - "To steer a middle course is to avoid extremes — to act with moderation."
+      - "Getting midway takes the phrase literally, as though it were about position rather than conduct."
+    hint: "The phrase is a metaphor from steering a boat. What does staying in the middle mean about how you behave?"
+  e5951f36:
+    steps:
+      - "To have no axe to grind with someone is to have no grievance against them."
+      - "No hatred for the brothers is that meaning. The two options about borrowing a matchet read the axe literally, and no vested interest is a different idea — that is about gain rather than grudge."
+    hint: "An axe to grind is a complaint, not a tool. What does having none of it mean?"
+  3f067fea:
+    steps:
+      - "To move with your tail between your legs is to slink off in shame after a defeat, as a beaten dog does."
+      - "Ashamed because they had been defeated says it. The unhappy option gives the wrong cause, and one option simply repeats the sentence."
+    hint: "The phrase pictures a dog. What has happened to a dog that walks like that?"
+  3f7542f7:
+    steps:
+      - "To talk your way out of something is to escape it by talking — so he avoided giving the speech."
+      - "Got himself out of a difficult situation says it. Two options have him giving the speech after all, which is the opposite."
+    hint: "Out of is the important part. Did he give the speech or not?"
+  e58ab56b:
+    steps:
+      - "To cross the Rubicon is to take a step that cannot be undone — Caesar crossed that river and could not turn back."
+      - "Irrevocably committed catches both halves: committed, and unable to reverse it. Perfectly committed loses the irreversibility, which is the whole point of the phrase."
+    hint: "The phrase is about a decision that cannot be unmade."
+  265c4cce:
+    steps:
+      - "To be full of yourself is to think too much of yourself — conceited."
+      - "The other options read full literally, as being complete or well off."
+    hint: "The phrase is a criticism, not a description of size or wealth."
+  60e733d2:
+    steps:
+      - "Debutants are those appearing for the first time, and the score tells you they won three to nothing."
+      - "The first option keeps both facts and adds nothing. The others invent reasons — weakest side, missing regulars, best attackers — that the sentence does not give."
+    hint: "The right option adds nothing. Cross out any option containing a fact the sentence never stated."
+  73348e95:
+    steps:
+      - "Dead drunk means so drunk as to be helpless — dead is an intensifier here, not a statement that he died."
+      - "The option describing him as drunk and as helpless as a dead man keeps that. The one saying he drank and died takes dead literally."
+    hint: "Dead drunk, dead tired, dead right: dead only means completely."
+  fee74eae:
+    steps:
+      - "If he were here is a wish about a situation that is not so, so he is not here, and the occasion is the poorer for it."
+      - "He did not show up and so the occasion lacked much fun keeps both parts in the past, matching the sentence."
+    hint: "The were tells you the condition is untrue. Work out what is actually the case."
+  a2341515:
+    steps:
+      - "Postponed means moved to a later date, and unforeseen means not expected."
+      - "Shifted as a result of unexpected reasons keeps both. Called off and broke off both mean cancelled, which is not what postponed says."
+    hint: "Postponed and cancelled are different things. Two options confuse them."
+  e08ec085:
+    steps:
+      - "A bird's-eye view is a view from above, as a bird would have it."
+      - "Views the animals from a high position says it. The other three read the phrase literally and put actual birds in the sentence."
+    hint: "The bird in the phrase is not in the scene. It is only supplying the height."
+  a0ae9ae8:
+    steps:
+      - "Her result was not too different from what had been expected — so it was roughly what people predicted."
+      - "Her result was as expected says that. The options calling it poor or a disappointment add a judgement the sentence withholds."
+    hint: "The sentence says the result matched expectations. It does not say whether those expectations were high or low."
+  ca59c917:
+    steps:
+      - "More haste, less speed is a proverb: hurrying makes you slower, so the way to be quick is to be careful."
+      - "She does everything carefully to avoid mistakes is the meaning. The options describing her as hurried take the proverb backwards."
+    hint: "The proverb is advice against hurrying, not a description of someone hurrying."
+  b82b52f9:
+    steps:
+      - "To leave someone in the lurch is to abandon them when they needed help."
+      - "Her uncle refused to help her says it. Deceived and disinherited are different wrongs."
+    hint: "The phrase is about being left without support at the moment it was needed."
+  5c6b82b3:
+    steps:
+      - "To materialize is to come about, so a plan that did not materialize never happened."
+      - "The arrangement did not work out as wished says it. Two options read materialize as being about materials."
+    hint: "Materialize and materials look related and are not. The word means to become real."
+  33d268a9:
+    steps:
+      - "To take a hit is to suffer a blow — the company was damaged last year."
+      - "The published key gives made a huge success, which is the reverse of the idiom. This question is flagged for a second look."
+    hint: "Taking a hit is being struck. Ask whether that is good or bad for a company."
+  d56818c6:
+    steps:
+      - "My eldest son implies there are others — you can only have an eldest if there is more than one."
+      - "One of my sons is in Lagos keeps that implication. My only son contradicts it."
+    hint: "The word eldest tells you something the sentence never says outright. What is it?"
+  110fe538:
+    steps:
+      - "If I went ... I would visit describes an imagined situation, not a habit."
+      - "The published key gives the habitual reading — all the times I went — which the second conditional does not carry. This question is flagged for a second look."
+    hint: "Would in the main clause marks this as hypothetical rather than habitual."
+  2a0297bb:
+    steps:
+      - "To have a finger in every pie is to be involved in everything, and must not tells students to avoid it."
+      - "Hardworking students do not participate in all activities is the closest reading. The sentence as printed has lost a word — every is split — which makes it harder than it should be."
+    hint: "A finger in every pie means involvement everywhere, not a role in one thing."
+  cb1e5a40:
+    steps:
+      - "To ride the crest is to be carried along at the top of a wave — enjoying success while it lasts."
+      - "Enjoys the acknowledgement of the success of his administration says it. The other options make it about criticism, which reverses the picture."
+    hint: "The crest is the top of a wave. Is riding it a good place to be?"
+  b5acf1c8:
+    steps:
+      - "To be absolved from a charge is to be cleared of it."
+      - "Declared free from the charge says it. Convicted and blamed are the opposite, and resolved describes the case rather than her."
+    hint: "Absolve shares a root with absolution: it means to release from blame."
+  3de5787a:
+    steps:
+      - "To throw your weight about is to use your position to boss people around."
+      - "Gives orders to people says it. The overweight and exercise options read weight literally."
+    hint: "The weight in the phrase is authority, not the body."
+  1e709f7e:
+    steps:
+      - "Ought to have done something says it should have been done and was not."
+      - "The company did not issue one billion shares keeps that. The option saying it did reverses the sentence."
+    hint: "Ought to have plus a past participle always means it did not happen."
+  3c95baab:
+    steps:
+      - "Needed not to have played says he played when he did not have to — and quarterback is a position from another sport, so it was not his usual one."
+      - "He participated in the game in his unusual position keeps both facts. The other options say he did not play, or change who wanted what."
+    hint: "Did he play or not? The construction says he did, unnecessarily."
+  48512478:
+    steps:
+      - "I wouldn't have ... if I were you is advice given after the event, so the other person had already responded."
+      - "The respondent replied although he ought not to have done so keeps that. The options saying the advice was taken get the order wrong."
+    hint: "You can only say if I were you about something that has already happened or is about to."
+  eca0dc02:
+    steps:
+      - "Feet of clay means a hidden weakness in someone otherwise admired — the phrase is from a statue with clay feet."
+      - "The published key gives shy and timid; weak and cowardly is closer to the idiom, and the muddy option takes it literally. This question is flagged for a second look."
+    hint: "The idiom is about weakness, not about dirt."
+  fdfde6ed:
+    steps:
+      - "To waste a golden opportunity is to fail to take a chance you were given — here a penalty."
+      - "The player did not score the shot says it. The golden in the idiom is not a cup."
+    hint: "Golden opportunity is a set phrase meaning a very good chance. Nothing in it is made of gold."
+  50f9cf05:
+    steps:
+      - "To plumb the depths is to reach the very bottom of something, so plumbing the depths of horror is being as bad as it could be."
+      - "Full of disappointment is the only option describing a poor performance. The other three describe a good one."
+    hint: "The sentence already says poor performance. Two of the options contradict it."
+  74ba6e7e:
+    steps:
+      - "To live in each other's pockets is to be together constantly — inseparably close."
+      - "Very close to each other says it. The stealing and blackmail options read pockets literally."
+    hint: "The pockets are a picture of nearness, not of theft."
+  67bde593:
+    steps:
+      - "As the drama unfolded means as events developed, and the advice that fits a developing crisis is to stay calm."
+      - "The sentence has lost words in extraction, so the reasoning rests on the options rather than on a complete stem."
+    hint: "Drama here means events, not a play. What would you advise someone during events like that?"
+  7fd0b94f:
+    steps:
+      - "A clinging child holds on and will not let the parent go — the word describes need, not affection returned."
+      - "Possessive is the closest of these. The literal option about clinging to a sister misses that it is a description of character."
+    hint: "The word describes what the child is like, not one thing the child did."
+  7e5b2023:
+    steps:
+      - "Not unfavourable is a double negative, and two negatives make a positive: the result was favourable."
+      - "She was successful says it. Three options read the sentence as though it said unfavourable."
+    hint: "Cross out the not and the un- together. What is left?"
+  0b42bbda:
+    steps:
+      - "To brush up on something is to improve a skill you already have but have let slip."
+      - "You need to improve your skills says it. The brush from Spain option reads brush literally."
+    hint: "Brush up is about practice, not about brushes."
+  55b941ae:
+    steps:
+      - "To pass for something is to be taken for it — she looks enough like a beauty queen to be accepted as one."
+      - "The walking past and passing a drink options read pass in its ordinary senses."
+    hint: "Pass for is a fixed phrase meaning to be mistaken for or accepted as."
+  fa173ee2:
+    steps:
+      - "I can't wait to do something means you are eager for it, not that you are unable to wait."
+      - "She is excited about motherhood says it. Two options take the phrase as reluctance."
+    hint: "Can't wait is enthusiasm, not impatience with a delay."
+  5420e8d1:
+    steps:
+      - "To get your act together is to organise yourself and start doing things properly."
+      - "He needs to organize himself says it. The stage costume option reads act literally."
+    hint: "The act in the phrase is not a performance. It means conduct."
+  c4e2597f:
+    steps:
+      - "In no uncertain terms means plainly and forcefully — there was no doubt what she meant."
+      - "The published key gives quietly and cautiously, which is the reverse; expressed it clearly and strongly is the match. This question is flagged for a second look."
+    hint: "No uncertain is a double negative. Remove both and you get certain — plain and firm."
+  cbd788b6:
+    steps:
+      - "A drop in the ocean is a tiny amount against what is needed."
+      - "The amount available may be inadequate for projected expenditure says it. The other options read pipeline and dropped literally."
+    hint: "The phrase measures something against a much larger need."
+  db430fc8:
+    steps:
+      - "To farm children out is to hand them to other people to look after, and the sentence has printed framed for farmed."
+      - "The police may arrest the woman for allowing her neighbours to take care of her children is the reading that follows. The spelling slip in the source is worth noting."
+    hint: "Read framed as farmed and the idiom becomes clear."
+  a634d94a:
+    steps:
+      - "Like a bear with a sore head means bad-tempered and irritable."
+      - "The published key gives a bully; grumpy is the match. This question is flagged for a second look."
+    hint: "Think what a bear with a headache would be like to be around."
+  3441f316:
+    steps:
+      - "To give someone a bumpy ride is to make things hard for them."
+      - "Olu gave his brother a difficult time says it. The two options about actual roads and cars read the phrase literally."
+    hint: "The bumps are difficulties, not potholes."
+  5f7cf6cb:
+    steps:
+      - "Doesn't have to means there is no obligation — he may go or not, as he likes."
+      - "The published key gives ought not to have gone, which is both a prohibition and in the past. Adeola may go if he wishes is the match, and this question is flagged for a second look."
+    hint: "Don't have to and must not mean opposite things. One removes an obligation, the other adds a prohibition."
+  3dbf6ce5:
+    steps:
+      - "To take your eye off the ball is to stop concentrating on what matters most."
+      - "I should stop paying attention to what is most important is that meaning, as an instruction the boss gave. The football options read the phrase literally."
+    hint: "The ball stands for the important thing, whatever the work is."
+  fe6e48df:
+    steps:
+      - "To be hedged in is to be closed in on all sides, as a field is by a hedge."
+      - "Surrounded by the people says it. Caught and killed go further than the sentence does."
+    hint: "The phrase describes a position, not an outcome."
+  139d9484:
+    steps:
+      - "To live hand to mouth is to spend what you earn as soon as you earn it, with nothing put by."
+      - "They are barely surviving says it. The options about hands and spoons read the phrase literally."
+    hint: "The hand and the mouth in the phrase describe how little time there is between earning and eating."
+  cde8108f:
+    steps:
+      - "To provoke severe criticism is to draw strong disapproval."
+      - "His actions were seriously rejected says it. The other options make severe describe the actions rather than the criticism."
+    hint: "Ask what was severe: what he did, or what was said about it?"
+  fa6c525d:
+    steps:
+      - "Neither of us has seen it — the second clause repeats the first negative with either."
+      - "My brother and I haven't seen the movie says it. The other three have one of them seeing it."
+    hint: "Hasn't either means the same as neither has. Both of them are in the same position."
+  ce5a637a:
+    steps:
+      - "Would have been given ... if his father had not complained is a third conditional: the condition failed, so the outcome did not happen."
+      - "He wasn't given the car because his father complained keeps both halves. The others have him receiving it."
+    hint: "A third conditional always describes something that did not happen. Work out which way round."
+  6c600dd4:
+    steps:
+      - "In no uncertain terms means plainly and forcefully."
+      - "Expressed it clearly and strongly says it. The quiet and feeble options reverse it."
+    hint: "Two negatives — no and uncertain — cancel out to certain."
+  6702f116:
+    steps:
+      - "To get your act together is to organise yourself."
+      - "He needs to organise himself says it. The stage costume option reads act literally."
+    hint: "Act here means conduct, not performance."
+  facaa927:
+    steps:
+      - "To keep your shirt on is to stay calm and not lose your temper."
+      - "She was advised to stay calm says it. The option about wearing her shirt reads the phrase literally, which is the trap in every idiom question."
+    hint: "The shirt is a picture of self-control. Losing it means losing your temper."
+  4576c4f9:
+    steps:
+      - "To plumb the depths is to reach the very bottom, so plumbing the depths of horror means as bad as it could be."
+      - "Full of disappointment is the only option describing a poor performance."
+    hint: "The sentence already calls the performance poor. Three options contradict it."
+  ae186063:
+    steps:
+      - "A clinging child holds on and will not let go."
+      - "Possessive is the closest. The option about clinging to a sister reads it as one action rather than a character."
+    hint: "The word describes what the child is generally like."
+  356c6c19:
+    steps:
+      - "To brush up on something is to improve a skill that has gone rusty."
+      - "You need to improve your skills says it. The brush and Spain options read the words literally."
+    hint: "Brush up is about practice."
+  781ab541:
+    steps:
+      - "To live in each other's pockets is to be together constantly."
+      - "They are very close to each other says it. Stealing and blackmail read pockets literally."
+    hint: "The pockets are a picture of nearness."
+  1573bff9:
+    steps:
+      - "I can't wait to do something means you are looking forward to it eagerly."
+      - "She is excited about motherhood says it. Two options read it as reluctance."
+    hint: "Can't wait is enthusiasm, not complaint."
+  1781872f:
+    steps:
+      - "To pass for something is to be accepted as it."
+      - "She would be accepted by all as a beauty queen says it. The walking past and passing a drink options use pass in its ordinary senses."
+    hint: "Pass for is fixed and means to be taken as."
+  028e41b6:
+    steps:
+      - "Didn't mind means was not bothered by it."
+      - "He was not angry when I mentioned his name says it. The other options make him angry, or change what happened."
+    hint: "Mind here means object to. Not minding is not objecting."
+  231369de:
+    steps:
+      - "Not unaware is a double negative: he was aware of their plight."
+      - "The published key gives he felt their plight, which goes further than knowing; he knew of their plight is the match. This question is flagged for a second look."
+    hint: "Cancel the not against the un-. What is left is awareness, not sympathy."
+  8458b96a:
+    steps:
+      - "But for the expense means except for the cost — the cost is the only thing stopping him."
+      - "I will not buy a bigger car because it is too expensive keeps that. The option about having more money adds a condition the sentence does not state."
+    hint: "But for X means if it were not for X. What is X preventing?"
+  8c6568dd:
+    steps:
+      - "No sooner had A happened than B happened means B followed immediately after A."
+      - "The telephone rang just after he got into the pool says it. The options putting the call before or during change the order."
+    hint: "No sooner ... than always puts the two events in order, with almost no gap."
+  1690a5e3:
+    steps:
+      - "Might just as well means there is no better alternative — staying at home is the sensible course."
+      - "The published key gives I ought to stay at home in order to do well, which adds a purpose; staying at home was probably the best thing for me is the match. This question is flagged for a second look."
+    hint: "Might as well suggests resignation to the best available option, not an aim."
