@@ -1,0 +1,136 @@
+# UTME 2004 Mathematics — answers worked out, question by question.
+# Computed, not read; see keys_2000.yaml for the format and the provenance.
+#
+# Eight questions are absent rather than guessed, all because the paper as extracted is
+# missing something the answer depends on:
+#   Q6  — the expression "3V42x" cannot be reconstructed with confidence.
+#   Q10 — the stem stops at "three times the number tha".
+#   Q12 — the constant term of the cubic is missing ("3x^3 + 5x^2 - 11x +").
+#   Q15 — the period of the second pendulum is missing.
+#   Q31 — the value of a + b is missing, and the answer depends on it directly.
+#   Q40 — needs the pie chart, which was not captured.
+#   Q41 — the three statements about histograms are truncated.
+#   Q49 — needs the table of die outcomes, which was not captured.
+format_version: 1
+exam_year: 2004
+answers:
+  - number: 2
+    answer: C
+    confidence: high
+    working: "451(6) = 175 and 305(6) = 113; 175 - 113 = 62 = 116 in base 7."
+  - number: 4
+    answer: A
+    confidence: high
+    working: "5000 sowed against 5000 x 500 = 2,500,000 harvested, i.e. 1:500."
+  - number: 5
+    answer: C
+    confidence: high
+    working: "Second gets (2/15)(3/5) = 2/25; third gets 1 - 2/5 - 2/25 = 13/25."
+  - number: 7
+    answer: C
+    confidence: high
+    working: "1/(V3+2) x (2-V3)/(2-V3) = (2-V3)/1 = 2 - V3."
+  - number: 11
+    answer: C
+    confidence: high
+    working: "(x+1)(x+3)(x-2) = 0 gives x = -1, -3, 2."
+  - number: 13
+    answer: B
+    confidence: high
+    working: "c(a-2b) - (a-2b)(a+2b) = (a-2b)(c-a-2b)."
+  - number: 14
+    answer: B
+    confidence: high
+    working: "k = 4 x 1/2 = 2, so x = 2/10 = 1/5 when y = 10."
+  - number: 17
+    answer: C
+    confidence: high
+    working: "-1 < 3-2x <= 5 gives -1 <= x < 2, so the integers are -1, 0, 1."
+  - number: 18
+    answer: D
+    confidence: high
+    working: "Q2 = 3(2^0) = 3 and U2 = 3(2^1) = 6; their product is 18."
+  - number: 19
+    answer: D
+    confidence: high
+    working: "6r^3 = 162 gives r = 3; 6 + 18 + 54 = 78."
+  - number: 20
+    answer: B
+    confidence: high
+    working: "r = 1/3, so the sum is (1/2)/(2/3) = 3/4."
+  - number: 21
+    answer: B
+    confidence: high
+    working: "Reading p*q as V(pq): 8*32 = 16 and 4*16 = 8."
+  - number: 22
+    answer: B
+    confidence: medium
+    working: "det = 1, so the inverse is [[1,-1],[-1,2]] — the rows printed in option B, though the print of B and D is damaged."
+  - number: 23
+    answer: B
+    confidence: high
+    working: "1(4) - 0 + (-1)(4) = 0."
+  - number: 28
+    answer: B
+    confidence: high
+    working: "22 = (3x/360)(44) gives 3x = 180, x = 60."
+  - number: 29
+    answer: B
+    confidence: high
+    working: "Equidistant from the two sides meeting at Q is the bisector of that angle, the diagonal QS."
+  - number: 30
+    answer: A
+    confidence: high
+    working: "Two lines parallel to LM, one on each side, 5 cm away."
+  - number: 34
+    answer: C
+    confidence: high
+    working: "tan t = 5V3/5 = V3, so t = 60 degrees."
+  - number: 35
+    answer: B
+    confidence: high
+    working: "3(1-x) - (2+3x) = 1 - 6x."
+  - number: 36
+    answer: C
+    confidence: high
+    working: "y = 4x^3 - 2x^2, dy/dx = 12x^2 - 4x, which is 16 at x = -1."
+  - number: 37
+    answer: C
+    confidence: high
+    working: "dy/dx = -sin(x/3); at x = 3pi/2 that is -sin(pi/2) = -1."
+  - number: 38
+    answer: C
+    confidence: high
+    working: "dV/dr = 2 pi r^2 = 8 pi at r = 2."
+  - number: 39
+    answer: A
+    confidence: high
+    working: "[x^3/3 - x] from 1 to 3 = 6 - (-2/3) = 6 2/3."
+  - number: 43
+    answer: B
+    confidence: high
+    working: "(15n + 45)/(n+1) = 18 gives 3n = 27, n = 9."
+  - number: 44
+    answer: C
+    confidence: high
+    working: "18 - 15 = 3."
+  - number: 45
+    answer: A
+    confidence: high
+    working: "Mean 2.5; deviations 1.5, 0.5, 0.5, 1.5 sum to 4; 4/4 = 1."
+  - number: 46
+    answer: A
+    confidence: high
+    working: "C(5,2) = 10."
+  - number: 47
+    answer: A
+    confidence: high
+    working: "C(12,6) = 924."
+  - number: 48
+    answer: C
+    confidence: high
+    working: "w/(28+w) = 3/7 gives 4w = 84, w = 21."
+  - number: 50
+    answer: A
+    confidence: medium
+    working: "Not gold: (22+18)/70 = 4/7. The stem is cut before it says which medal, but only 'not gold' matches an option."

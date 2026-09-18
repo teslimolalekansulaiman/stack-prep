@@ -1,0 +1,176 @@
+# UTME 2003 Mathematics — answers worked out, question by question.
+# Computed, not read; see keys_2000.yaml for the format and the provenance.
+#
+# Four questions are absent rather than guessed:
+#   Q17 — the matrix equation is damaged in extraction and its crop does not show it whole.
+#   Q30 — the line through (-1,-p) and (-2,2) parallel to 2y + 8x - 17 = 0 gives p = 2,
+#         which is not among the options; something in the printed question is wrong.
+#   Q34 — "find the area of the shaded region" needs the figure, which was not captured.
+#   Q38 — y = 3x^2 + 5x - 3 opens upward and has no maximum; the stem also stops at "at".
+format_version: 1
+exam_year: 2003
+answers:
+  - number: 1
+    answer: C
+    confidence: high
+    working: "1 - (7/3)(5/4) + 3/5 = (60 - 175 + 36)/60 = -79/60 = -1 19/60. Read from the crop; the text layer flattened the fractions."
+  - number: 2
+    answer: A
+    confidence: high
+    working: "Women are 100 - 22.5 - 47.5 = 30%, so the hall holds 84/0.3 = 280; men = 47.5% of 280 = 133."
+  - number: 3
+    answer: D
+    confidence: high
+    working: "213(4) x 23(4) = 39 x 11 = 429 = 12231 in base 4."
+  - number: 4
+    answer: B
+    confidence: high
+    working: "270/5 = 54 lots at 40 = 2160; 2160 - 1800 = 360."
+  - number: 5
+    answer: A
+    confidence: high
+    working: "(7V2 - 5V2)/(4V2) = 2V2/4V2 = 1/2."
+  - number: 6
+    answer: C
+    confidence: high
+    working: "1214(5) = 184; 184/4 = 46 = 141 in base 5."
+  - number: 7
+    answer: A
+    confidence: high
+    working: "log(V2)4 = 4, log(1/2)16 = -4, log(4)32 = 2.5; 4 - 4 - 2.5 = -2.5."
+  - number: 8
+    answer: C
+    confidence: high
+    working: "P U Q = {4,6,8,12,16,18,20,24,28}; the even numbers left are {2,10,14,22,26}."
+  - number: 9
+    answer: C
+    confidence: high
+    working: "36 offer at least one, so both = 32 + 24 - 36 = 20."
+  - number: 10
+    answer: D
+    confidence: high
+    working: "(1/0.06)(0.042) = 0.7; its reciprocal is 1.43 to 2 d.p."
+  - number: 11
+    answer: C
+    confidence: high
+    working: "3^(4x-2) = 3^(3x+3) gives 4x - 2 = 3x + 3, so x = 5."
+  - number: 12
+    answer: D
+    confidence: high
+    working: "2x[a(2b-y) - 3b(2b-y)] = 2x(a-3b)(2b-y)."
+  - number: 13
+    answer: B
+    confidence: high
+    working: "(n/2)(-16 + 72) = 252 gives 28n = 252, n = 9."
+  - number: 14
+    answer: A
+    confidence: high
+    working: "x^2 = 3x - 2, so y = x^2 + 4 = 3x + 2."
+  - number: 16
+    answer: C
+    confidence: high
+    working: "Solving 3x - 5y = -5 with 4x - 7y = -8 gives y = 4, x = 5."
+  - number: 18
+    answer: A
+    confidence: high
+    working: "x <= 3 from the first and x >= -6 from the second."
+  - number: 19
+    answer: C
+    confidence: high
+    working: "k = 4 from x = 3 at U = 3, V = 1; then x = 4(9)/6 = 6."
+  - number: 20
+    answer: B
+    confidence: high
+    working: "From the crop the triangle lies left of x = -1 between y = x and y = -x: x + 1 >= 0, y + x <= 0, y - x >= 0."
+  - number: 21
+    answer: B
+    confidence: high
+    working: "n^2 = (n-2)(n+3) gives n = 6; ratio = 6/4 = 3/2."
+  - number: 22
+    answer: A
+    confidence: high
+    working: "k = 1.5 x 20 = 30."
+  - number: 24
+    answer: C
+    confidence: high
+    working: "Angle XPY = 90 on one side of XY is a semicircle on XY as diameter."
+  - number: 28
+    answer: A
+    confidence: high
+    working: "4/(6 + 2cos t) is largest when cos t = -1: 4/4 = 1."
+  - number: 29
+    answer: D
+    confidence: high
+    working: "R is east of Q and P is south of Q, so from R the point P lies south-west: 225 degrees."
+  - number: 31
+    answer: C
+    confidence: high
+    working: "x^2 + y^2 = (x-2)^2 + (y-1)^2 reduces to 4x + 2y = 5."
+  - number: 32
+    answer: C
+    confidence: high
+    working: "30 at the circumference is 60 at the centre: (60/360)(2)(22/7)(21) = 22 cm."
+  - number: 33
+    answer: B
+    confidence: medium
+    working: "Reading the area as 21 cm^2: ((5+9)/2)h = 21 gives h = 3. As printed (121 cm^2) the answer would be 17.3, which is not an option."
+  - number: 35
+    answer: B
+    confidence: high
+    working: "Midpoint of PQ is (-2,1); midpoint of QR is (-1,-4)."
+  - number: 36
+    answer: A
+    confidence: high
+    working: "[x^3/3 - x^2] from 2 to 3 = 0 - (-4/3) = 4/3."
+  - number: 37
+    answer: A
+    confidence: high
+    working: "d/dx 3sin(-4x) = -12cos(-4x)."
+  - number: 39
+    answer: B
+    confidence: high
+    working: "dy/dx = 4x + 5, which is 9 at x = 1."
+  - number: 40
+    answer: D
+    confidence: high
+    working: "Bars read 3, 4, 5, 6 and 2 from the histogram, totalling 20 people."
+  - number: 41
+    answer: B
+    confidence: high
+    working: "From the table, frequencies 1,2,2,1,9 over values 0-4: 45/15 = 3."
+  - number: 42
+    answer: D
+    confidence: high
+    working: "x = 5; squared deviations 4,1,1,0,4 give variance 2 and standard deviation V2."
+  - number: 43
+    answer: D
+    confidence: high
+    working: "2 x (5 x 3)/(8 x 7) = 30/56 = 15/28."
+  - number: 44
+    answer: D
+    confidence: high
+    working: "The fourth angle is 90; the smallest (45) is 28 naira, so the largest (135) is 84 naira."
+  - number: 45
+    answer: B
+    confidence: high
+    working: "27 - 3 = 24."
+  - number: 46
+    answer: D
+    confidence: high
+    working: "80 + 2x = 120 gives x = 20."
+  - number: 47
+    answer: D
+    confidence: high
+    working: "n(n-1)(n-2) = n(n-1)(n-2)(n-3)/4 gives n - 3 = 4, n = 7."
+  - number: 48
+    answer: B
+    confidence: high
+    working: "Sums of 3, 6, 9, 12 occur 2 + 5 + 4 + 1 = 12 times out of 36: 1/3."
+  - number: 49
+    answer: B
+    confidence: high
+    working: "C(4,2) x C(3,1) = 6 x 3 = 18."
+  - number: 50
+    answer: D
+    confidence: high
+    working: "Mean 259/6 = 43.17, median 43.5; the difference is 0.33."

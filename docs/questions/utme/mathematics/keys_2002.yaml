@@ -1,0 +1,170 @@
+# UTME 2002 Mathematics — answers worked out, question by question.
+# Computed, not read; see keys_2000.yaml for the format and the provenance.
+#
+# Four questions are absent rather than guessed:
+#   Q17 — "The angle PGR below is" needs the triangle, which was not captured.
+#   Q24 — reads a distribution of days absent from a table that was not captured.
+#   Q32 — the stem stops at "If the 9th term of an". Its options fit the familiar
+#         "9th term is three times the 5th" (which gives a + 2d = 0), but the paper does not
+#         say that here, and finishing someone else's question is not answering it.
+#   Q45 — dy/dx of x^2 - 1/x is 2x + 1/x^2; options C and D are both printed as 2x - 1/x^2,
+#         so no option is right.
+format_version: 1
+exam_year: 2002
+answers:
+  - number: 1
+    answer: D
+    confidence: high
+    working: "A 25% loss on 180,000 means cost 240,000; at 4,000 each that is 60 goats."
+  - number: 2
+    answer: C
+    confidence: high
+    working: "0.7 + 70 + 2V(0.7 x 70) = 70.7 + 14 = 84.7."
+  - number: 3
+    answer: A
+    confidence: high
+    working: "8.1648e-5 / 6.3504e-4 = 0.128571..., which to 4 s.f. is 0.1286."
+  - number: 4
+    answer: B
+    confidence: high
+    working: "220 = 125 + 110 - both gives both = 15; Biology only = 125 - 15 = 110."
+  - number: 5
+    answer: C
+    confidence: high
+    working: "52.4 - 10.9 = 41.5."
+  - number: 6
+    answer: C
+    confidence: medium
+    working: "7 x (50/7) / 5 = 10. Reading the last factor as 25^(-1/2); the text layer lost the sign of the exponent."
+  - number: 8
+    answer: D
+    confidence: medium
+    working: "Gradients k/2 and -1/4 multiply to -1, so k = 8. Reading the second line as y + x/4 - 7 = 0."
+  - number: 9
+    answer: B
+    confidence: high
+    working: "Frustum with R = 6, r = 4, h = 4: (4pi/3)(36 + 24 + 16) = 304pi/3."
+  - number: 11
+    answer: D
+    confidence: high
+    working: "Intercepts (2,0) and (0,-4); midpoint (1,-2)."
+  - number: 12
+    answer: C
+    confidence: high
+    working: "r = 2V3, major angle 240: (240/360)pi(12) = 8pi."
+  - number: 15
+    answer: D
+    confidence: high
+    working: "Equidistant from S and T is the perpendicular bisector of ST."
+  - number: 16
+    answer: A
+    confidence: high
+    working: "Total surface of a solid hemisphere = 3 pi r^2 = 3(22/7)(49) = 462."
+  - number: 18
+    answer: B
+    confidence: high
+    working: "20 right angles = 1800 = (n-2)180, so n = 12."
+  - number: 19
+    answer: D
+    confidence: high
+    working: "Midway between x = 1 and x = 7 is x = 4."
+  - number: 21
+    answer: D
+    confidence: high
+    working: "10.4 tan45 + 1.6 = 12.0 m."
+  - number: 22
+    answer: A
+    confidence: high
+    working: "360 - 250 = 110."
+  - number: 23
+    answer: D
+    confidence: high
+    working: "(k+6) - (k-5) = 11."
+  - number: 26
+    answer: B
+    confidence: high
+    working: "The ten values sum to 20, so the mean is 2."
+  - number: 27
+    answer: A
+    confidence: high
+    working: "P(fail) = 1/3 each time; (1/3)^3 = 1/27."
+  - number: 28
+    answer: C
+    confidence: high
+    working: "5 x 4 x 3 = 60."
+  - number: 29
+    answer: A
+    confidence: high
+    working: "Cassava 3 of 30 acres: (3/30)360 = 36 degrees."
+  - number: 30
+    answer: B
+    confidence: medium
+    working: "Mean 8; deviations 1,5,6,1,1,0 sum to 14; 14/6 = 2 1/3. The options are damaged in print but B carries that value."
+  - number: 31
+    answer: B
+    confidence: high
+    working: "Maximum at x = -1/3 gives y = 1 + 2/3 - 1/3 = 4/3."
+  - number: 33
+    answer: B
+    confidence: high
+    working: "45 x 5 = 225 man-days; 225/25 = 9 days."
+  - number: 34
+    answer: C
+    confidence: high
+    working: "3*4 = 19; 2*19 = 38 + 2 + 19 = 59."
+  - number: 35
+    answer: B
+    confidence: high
+    working: "At x = -2: -3 - 3c = 2c - 13, so c = 2."
+  - number: 36
+    answer: D
+    confidence: high
+    working: "3(-3+10) - 5(6-10) - 4(12-6) = 21 + 20 - 24 = 17."
+  - number: 37
+    answer: C
+    confidence: high
+    working: "The line through (-4,0) and (0,2) is -x + 2y = 4, so p = -1 and q = 2."
+  - number: 38
+    answer: D
+    confidence: high
+    working: "y = 3x + 4 inverts to (x - 4)/3."
+  - number: 39
+    answer: D
+    confidence: high
+    working: "(x-5)(x^2-1) = 0 gives x = 5, 1, -1."
+  - number: 41
+    answer: C
+    confidence: high
+    working: "Multiplying by 12: 3(x+2) - 4(2x-3) < 48 gives -5x < 30, so x > -6."
+  - number: 42
+    answer: C
+    confidence: medium
+    working: "Reading x as varying with Vn and n as 1 7/9 = 16/9: k = 3 and x = 3(4/3) = 4. The text layer lost both the radical and the mixed number."
+  - number: 43
+    answer: A
+    confidence: high
+    working: "1/(1 - 1/3) = 3/2."
+  - number: 44
+    answer: C
+    confidence: high
+    working: "x/(r+a) = a/r gives xr = ar + a^2, so r = a^2/(x-a)."
+  - number: 46
+    answer: B
+    confidence: high
+    working: "Integral of sin 3x = -(1/3)cos 3x + c."
+  - number: 47
+    answer: C
+    confidence: high
+    working: "dA/dt = 2 pi r dr/dt = 2 pi (5)(0.2) = 2 pi."
+  - number: 48
+    answer: B
+    confidence: high
+    working: "Integrating gives x^2 - 3x + c with c = 3."
+  - number: 49
+    answer: C
+    confidence: high
+    working: "d/dx sin^2(5x) = 2 sin5x cos5x x 5 = 10 sin5x cos5x."
+  - number: 50
+    answer: B
+    confidence: high
+    working: "dy/dx = 6x - 2, which is 4 at x = 1."

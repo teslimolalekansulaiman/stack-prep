@@ -290,6 +290,74 @@ async def resolve_target(
     return subject, {row["code"]: str(row["id"]) for row in rows}
 
 
+async def apply_keys(conn: asyncpg.Connection, subject: asyncpg.Record, path: Path) -> None:
+    """Attach worked-out answers to questions that were imported without any.
+
+    The JAMB Mathematics compilation prints no key, so its questions load with no correct
+    option at all. The answers live in their own file, computed separately and carrying one
+    line of working each, because a bare letter is unreviewable: a marker would have to redo
+    the question from scratch to disagree with it.
+
+    Answers land as `model_proposed`, which is what they are, and the working is stored as
+    the question's first solution step. Only drafts are touched.
+    """
+    doc = yaml.safe_load(path.read_text())
+    if doc.get("format_version") != FORMAT_VERSION:
+        fail(f"unsupported keys format_version: {doc.get('format_version')!r}")
+    year = doc.get("exam_year")
+    if not year:
+        fail("keys file must name its exam_year")
+
+    applied = skipped = 0
+    for entry in doc.get("answers") or []:
+        number = str(entry.get("number"))
+        answer = str(entry.get("answer") or "").strip().upper()
+        confidence = str(entry.get("confidence") or "").strip().lower()
+        working = normalise(str(entry.get("working") or ""))
+        if answer not in OPTION_KEYS:
+            fail(f"{year} Q{number}: answer {answer!r} is not one of A-D")
+        if confidence not in {"low", "medium", "high"}:
+            fail(f"{year} Q{number}: confidence {confidence!r} is not low/medium/high")
+        if not working:
+            fail(f"{year} Q{number}: an answer without working cannot be reviewed")
+
+        version = await conn.fetchrow(
+            """
+            SELECT v.id, v.review_status
+            FROM questions q JOIN question_versions v ON v.id = q.current_version_id
+            WHERE q.subject_id = $1 AND q.exam_year = $2 AND q.question_number = $3
+            """,
+            subject["subject_id"], int(year), number,
+        )
+        if version is None or version["review_status"] != "draft":
+            skipped += 1
+            continue
+        await conn.execute(
+            """
+            UPDATE question_versions
+               SET answer_source = 'model_proposed', answer_confidence = $2,
+                   solution_steps = $3::jsonb
+             WHERE id = $1 AND review_status = 'draft'
+            """,
+            version["id"], confidence, json.dumps([working]),
+        )
+        # Two statements: the partial unique index allows only one correct option per
+        # version, and clearing first keeps a re-run from colliding with itself.
+        await conn.execute(
+            "UPDATE question_options SET is_correct = false WHERE question_version_id = $1",
+            version["id"],
+        )
+        await conn.execute(
+            """
+            UPDATE question_options SET is_correct = true
+             WHERE question_version_id = $1 AND option_key = $2
+            """,
+            version["id"], answer,
+        )
+        applied += 1
+    print(f"Answers: {applied} attached, {skipped} skipped (missing or no longer draft).")
+
+
 async def load(args: argparse.Namespace) -> int:
     transcription_path = Path(args.transcription).resolve()
     pdf_path = Path(args.pdf).resolve()
@@ -710,6 +778,9 @@ async def load(args: argparse.Namespace) -> int:
                 f"Flagged {flagged} questions as imported from a cropped scan; "
                 "see question_reports."
             )
+        if args.keys:
+            await apply_keys(conn, subject, Path(args.keys).resolve())
+
         print(
             f"All rows are drafts. Answers are recorded as {answer_source} and cannot be "
             "approved until a person verifies them (see stackprep.questions_awaiting_answer_check)."
@@ -734,6 +805,8 @@ def main() -> int:
         "--importer", default=DEFAULT_IMPORTER, help="Name recorded as the importer"
     )
     parser.add_argument("--levels", default=None, help="Proposed difficulty levels, YAML")
+    parser.add_argument("--keys", default=None,
+                        help="Worked-out answers for a paper that printed none, YAML")
     parser.add_argument(
         "--allow-incomplete-passages",
         action="store_true",
