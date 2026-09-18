@@ -12,6 +12,8 @@ recorded. Nothing to lose if the device drops off halfway.
 
 from __future__ import annotations
 
+from collections.abc import Sequence
+from dataclasses import dataclass
 from typing import Annotated, Any
 from uuid import UUID, uuid4
 
@@ -22,16 +24,23 @@ from sqlalchemy.exc import DBAPIError
 from sqlalchemy.ext.asyncio import AsyncConnection
 
 from app.db import connection, fetch_all
+from app.routers.student import sessions_before
 from engine.checkup import (
     DEFAULT_LENGTH,
     BlueprintSlot,
     TopicAnswers,
     TopicWeight,
     build_blueprint,
+    confidence_for,
     next_level,
     summarise,
 )
 from engine.mastery import Attempt
+from engine.projection import (
+    Projection,
+    UnitStanding,
+    project,
+)
 from engine.version import ENGINE_VERSION
 
 router = APIRouter(prefix="/v1/checkup", tags=["checkup"])
@@ -99,12 +108,68 @@ class TopicReport(BaseModel):
     slow: bool
 
 
+@dataclass(frozen=True)
+class UnitWeight:
+    """One subtopic and its share of the paper."""
+
+    unit_id: str
+    name: str
+    topic_id: str
+    topic_name: str
+    share: float
+
+
+class SubtopicReport(BaseModel):
+    subtopic_id: UUID
+    name: str
+    topic_name: str
+    #: Share of the paper, 0 to 1.
+    share: float
+    answered: int
+    correct: int
+    #: None when the sitting never reached it. Not the same as zero.
+    mastery: float | None
+    confidence: str
+
+
+class PlanLine(BaseModel):
+    subtopic_id: UUID
+    name: str
+    topic_name: str
+    share: float
+    mastery_now: float
+    mastery_projected: float
+    sessions: int
+    #: Marks out of 100 these sessions are expected to add.
+    marks_gained: float
+    reason: str
+
+
+class ScoreProjection(BaseModel):
+    score_now: float
+    score_low: float
+    score_high: float
+    score_projected: float
+    target_score: float | None
+    sessions_available: int
+    #: Set when the projection still falls short of the target, said plainly.
+    shortfall_note: str | None
+    unmeasured_share: float
+    plan: list[PlanLine]
+    caveat: str
+
+
 class CheckupReport(BaseModel):
     session_id: UUID
     subject_id: UUID
     answered: int
     finished: bool
     topics: list[TopicReport]
+    #: The finer reading a student can act on: "Idiomatic usage 35%", not "Lexis 62%".
+    subtopics: list[SubtopicReport]
+    weights_source: str
+    #: Present once the student has a goal; the whole point of the sitting.
+    projection: ScoreProjection | None
     unassessed_topics: list[str]
     priority_topics: list[str]
     #: Said plainly, because a short sitting is a starting point and not a measurement.
@@ -187,13 +252,67 @@ async def _topics(conn: AsyncConnection, subject_id: UUID) -> tuple[list[TopicWe
     return topics, source
 
 
+async def _subtopics(conn: AsyncConnection, subject_id: UUID) -> tuple[list[UnitWeight], str]:
+    """Every examinable subtopic, with the share of the paper it carries.
+
+    A topic's share comes from the exam's own structure. Splitting that share among the
+    topic's subtopics is where the honesty runs out: the syllabus says which subtopics exist,
+    but the printed paper structure is stated at section level, and a section like "Basic
+    grammar - 10 questions" covers five of them without saying in what proportion.
+
+    So the split is even, and the response says so. The alternative — weighting subtopics by
+    how many questions our own bank holds for each — would be worse than a guess: it would
+    turn our sampling into the examiner's, and every plan built on it would be circular. The
+    real fix is to point each printed section at the subtopic it examines, which the schema
+    allows and the seed has not yet done.
+    """
+    version_id = await _current_syllabus(conn, subject_id)
+    rows = await fetch_all(
+        conn,
+        """
+        SELECT sub.id::text AS unit_id, sub.name, topic.id::text AS topic_id,
+               topic.name AS topic_name, w.share AS topic_share,
+               count(*) OVER (PARTITION BY topic.id) AS siblings
+        FROM curriculum_items sub
+        JOIN curriculum_items topic ON topic.id = sub.parent_id
+        LEFT JOIN topic_exam_weight w
+          ON w.topic_id = topic.id AND w.syllabus_version_id = topic.syllabus_version_id
+        WHERE sub.syllabus_version_id = :version AND sub.item_type = 'subtopic'
+          AND sub.review_status = 'approved' AND sub.pilot_support_status = 'supported'
+        ORDER BY topic.display_order, sub.display_order, sub.code
+        """,
+        version=version_id,
+    )
+    weighted = any(row["topic_share"] is not None for row in rows)
+    units = [
+        UnitWeight(
+            unit_id=row["unit_id"],
+            name=row["name"],
+            topic_id=row["topic_id"],
+            topic_name=row["topic_name"],
+            share=(
+                float(row["topic_share"]) / int(row["siblings"])
+                if weighted and row["topic_share"] is not None
+                else 1.0 / int(row["siblings"])
+            ),
+        )
+        for row in rows
+    ]
+    source = (
+        "exam structure for topics, split evenly within each topic"
+        if weighted
+        else "equal (no approved exam structure yet)"
+    )
+    return units, source
+
+
 async def _answers_so_far(conn: AsyncConnection, session_id: UUID) -> list[dict[str, Any]]:
     return await fetch_all(
         conn,
         """
         SELECT a.id, a.question_version_id, a.is_correct, a.response_ms,
                v.mastery_level_number AS level, v.expected_seconds,
-               topic.id::text AS topic_id
+               topic.id::text AS topic_id, sub.id::text AS subtopic_id
         FROM attempts a
         JOIN question_versions v ON v.id = a.question_version_id
         JOIN question_classifications c
@@ -368,6 +487,39 @@ async def start(
     )
 
 
+@router.get("/{session_id}", response_model=CheckupState, summary="Where this sitting is")
+async def current(
+    conn: Annotated[AsyncConnection, Depends(connection)], session_id: UUID
+) -> CheckupState:
+    """The next question of a sitting already in progress.
+
+    Answers hand back the following question, which is all a client needs while it stays open
+    — and nothing at all after a reload. Without this, resuming meant either starting a second
+    sitting or sending an answer the student never gave to get a question back. Both were
+    worse than an endpoint.
+    """
+    session = (
+        (
+            await conn.execute(
+                text(
+                    """
+                    SELECT student_id, subject_id FROM study_sessions
+                    WHERE id = :id AND session_type = 'checkup'
+                    """
+                ),
+                {"id": session_id},
+            )
+        )
+        .mappings()
+        .first()
+    )
+    if session is None:
+        raise HTTPException(status_code=404, detail="unknown check-up")
+    return await _next_state(
+        conn, session_id, session["subject_id"], session["student_id"]
+    )
+
+
 @router.post(
     "/{session_id}/answer",
     response_model=CheckupState,
@@ -454,6 +606,123 @@ async def answer(
     return state
 
 
+def _standings(
+    units: Sequence[UnitWeight], answers: Sequence[dict[str, Any]]
+) -> list[UnitStanding]:
+    """Turn the sitting into one reading per subtopic.
+
+    The same ``summarise`` the topic report uses, run at a finer grain — it has never been
+    topic-specific, it just groups attempts by whatever unit it is given. One rule for both
+    readings means a topic's number and its subtopics' numbers cannot disagree.
+    """
+    grouped: dict[str, list[Attempt]] = {}
+    for row in answers:
+        grouped.setdefault(str(row["subtopic_id"]), []).append(
+            Attempt(
+                is_correct=bool(row["is_correct"]),
+                level=int(row["level"] or 3),
+                response_ms=int(row["response_ms"] or 0),
+                expected_seconds=float(row["expected_seconds"] or 45),
+            )
+        )
+    summary = summarise(
+        subject_id="subtopics",
+        topics=[
+            TopicWeight(topic_id=unit.unit_id, share=unit.share, name=unit.name)
+            for unit in units
+        ],
+        answers=[
+            TopicAnswers(topic_id=key, attempts=tuple(value)) for key, value in grouped.items()
+        ],
+    )
+    by_id = {estimate.topic_id: estimate for estimate in summary.topics}
+    return [
+        UnitStanding(
+            unit_id=unit.unit_id,
+            name=unit.name,
+            topic_id=unit.topic_id,
+            topic_name=unit.topic_name,
+            share=unit.share,
+            mastery=by_id[unit.unit_id].mastery if unit.unit_id in by_id else None,
+            answered=by_id[unit.unit_id].answered if unit.unit_id in by_id else 0,
+        )
+        for unit in units
+    ]
+
+
+async def _forecast(
+    conn: AsyncConnection,
+    student_id: UUID,
+    subject_id: UUID,
+    standings: Sequence[UnitStanding],
+) -> ScoreProjection | None:
+    """What this stands to become, given the time the student says they have.
+
+    Returns nothing without a goal. A projection needs a date to count sessions towards and a
+    target to be measured against, and inventing either would turn a plan into a guess with a
+    number on it.
+    """
+    goal = (
+        (
+            await conn.execute(
+                text(
+                    """
+                    SELECT target_score, exam_date, minutes_per_day, study_days
+                    FROM student_exam_goals
+                    WHERE student_id = :student AND subject_id = :subject
+                      AND status = 'active'
+                    """
+                ),
+                {"student": student_id, "subject": subject_id},
+            )
+        )
+        .mappings()
+        .first()
+    )
+    if goal is None:
+        return None
+
+    sessions = sessions_before(
+        goal["exam_date"], goal["minutes_per_day"], list(goal["study_days"] or [])
+    )
+    result: Projection = project(standings, sessions_available=sessions or 0)
+    target = float(goal["target_score"]) if goal["target_score"] is not None else None
+    shortfall = None
+    if target is not None and result.score_projected < target:
+        gap = round(target - result.score_projected, 1)
+        shortfall = (
+            f"This plan gets to {result.score_projected} of the {target} you are aiming for — "
+            f"{gap} marks short. More study days, or a longer run-up, is what closes that; "
+            "a different plan on the same hours will not."
+        )
+
+    return ScoreProjection(
+        score_now=result.score_now,
+        score_low=result.range_now[0],
+        score_high=result.range_now[1],
+        score_projected=result.score_projected,
+        target_score=target,
+        sessions_available=result.sessions_available,
+        shortfall_note=shortfall,
+        unmeasured_share=result.unmeasured_share,
+        plan=[
+            PlanLine(
+                subtopic_id=UUID(line.unit_id),
+                name=line.name,
+                topic_name=line.topic_name,
+                share=round(line.share, 4),
+                mastery_now=round(line.mastery_now, 3),
+                mastery_projected=round(line.mastery_projected, 3),
+                sessions=line.sessions,
+                marks_gained=round(line.marks_gained, 2),
+                reason=line.reason,
+            )
+            for line in result.plan
+        ],
+        caveat=result.caveat,
+    )
+
+
 @router.get("/{session_id}/report", response_model=CheckupReport, summary="What the check-up found")
 async def report(
     conn: Annotated[AsyncConnection, Depends(connection)], session_id: UUID
@@ -499,6 +768,15 @@ async def report(
     )
     names = {topic.topic_id: topic.name for topic in topics}
 
+    units, weights_source = await _subtopics(conn, session["subject_id"])
+    standings = _standings(units, answers)
+    correct_by_unit: dict[str, int] = {}
+    for row in answers:
+        if row["is_correct"]:
+            key = str(row["subtopic_id"])
+            correct_by_unit[key] = correct_by_unit.get(key, 0) + 1
+    forecast = await _forecast(conn, session["student_id"], session["subject_id"], standings)
+
     return CheckupReport(
         session_id=session_id,
         subject_id=session["subject_id"],
@@ -518,6 +796,21 @@ async def report(
             )
             for estimate in summary.topics
         ],
+        subtopics=[
+            SubtopicReport(
+                subtopic_id=UUID(standing.unit_id),
+                name=standing.name,
+                topic_name=standing.topic_name,
+                share=round(standing.share, 4),
+                answered=standing.answered,
+                correct=correct_by_unit.get(standing.unit_id, 0),
+                mastery=standing.mastery,
+                confidence=confidence_for(standing.answered),
+            )
+            for standing in standings
+        ],
+        weights_source=weights_source,
+        projection=forecast,
         unassessed_topics=[names.get(topic_id, topic_id) for topic_id in summary.unassessed_topics],
         priority_topics=[names.get(topic_id, topic_id) for topic_id in summary.priority_topics],
         caveat=(
