@@ -1,0 +1,371 @@
+# UTME 2011, Use of English — proposed difficulty levels.
+#
+# Produced by database/propose_levels_english.py, whose docstring states the rule
+# in full. Every level is low confidence and loads as model_proposed: none of it
+# is a judgement about a question, and none of it can be approved without a
+# person. A reviewer who disagrees should disagree with the rule and re-run, not
+# argue with the levels one at a time.
+format_version: 1
+paper:
+  exam_year: 2011
+levels:
+- number: 1
+  proposed_level: 2
+  level_confidence: low
+  reason: base 2 for ENG.A.1.i
+- number: 2
+  proposed_level: 4
+  level_confidence: low
+  reason: base 4 for ENG.A.3.i
+- number: 3
+  proposed_level: 3
+  level_confidence: low
+  reason: 'base 2 for ENG.A.1.i; +1: long options, so the work is reading and holding four alternatives'
+- number: 4
+  proposed_level: 3
+  level_confidence: low
+  reason: 'base 2 for ENG.A.1.i; +1: long options, so the work is reading and holding four alternatives'
+- number: 5
+  proposed_level: 1
+  level_confidence: low
+  reason: 'base 2 for ENG.A.1.i; -1: short stem and short options, so little to hold at once'
+- number: 6
+  proposed_level: 5
+  level_confidence: low
+  reason: 'base 4 for ENG.A.3.i; +1: long options, so the work is reading and holding four alternatives'
+- number: 7
+  proposed_level: 5
+  level_confidence: low
+  reason: 'base 4 for ENG.A.3.i; +1: long options, so the work is reading and holding four alternatives'
+- number: 8
+  proposed_level: 2
+  level_confidence: low
+  reason: base 2 for ENG.A.1.i
+- number: 9
+  proposed_level: 5
+  level_confidence: low
+  reason: 'base 4 for ENG.A.2.i; +1: long options, so the work is reading and holding four alternatives'
+- number: 10
+  proposed_level: 3
+  level_confidence: low
+  reason: 'base 2 for ENG.A.1.i; +1: long options, so the work is reading and holding four alternatives'
+- number: 11
+  proposed_level: 4
+  level_confidence: low
+  reason: base 4 for ENG.A.3.i
+- number: 12
+  proposed_level: 2
+  level_confidence: low
+  reason: base 2 for ENG.A.1.i
+- number: 14
+  proposed_level: 3
+  level_confidence: low
+  reason: 'base 2 for ENG.A.1.i; +1: long options, so the work is reading and holding four alternatives'
+- number: 15
+  proposed_level: 5
+  level_confidence: low
+  reason: 'base 4 for ENG.A.3.i; +1: long options, so the work is reading and holding four alternatives'
+- number: 16
+  proposed_level: 2
+  level_confidence: low
+  reason: 'base 3 for ENG.A.6.i; -1: short stem and short options, so little to hold at once'
+- number: 17
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.A.6.i
+- number: 26
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for ENG.B.3.ii; +1: long options, so the work is reading and holding four alternatives'
+- number: 27
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for ENG.B.3.ii; +1: long options, so the work is reading and holding four alternatives'
+- number: 28
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.3.ii
+- number: 29
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.3.ii
+- number: 30
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for ENG.B.3.ii; +1: long options, so the work is reading and holding four alternatives'
+- number: 31
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.3.ii
+- number: 32
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for ENG.B.3.ii; +1: long options, so the work is reading and holding four alternatives'
+- number: 33
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.3.ii
+- number: 34
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for ENG.B.3.ii; +1: long options, so the work is reading and holding four alternatives'
+- number: 35
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for ENG.B.3.ii; +1: long options, so the work is reading and holding four alternatives'
+- number: 36
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for ENG.B.1.i; +1: the answer ''commencement'' is long and outside common vocabulary'
+- number: 37
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for ENG.B.1.i; +1: the answer ''indifferent'' is long and outside common vocabulary'
+- number: 38
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.1.i
+- number: 39
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.1.i
+- number: 40
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.1.i
+- number: 41
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.1.i
+- number: 42
+  proposed_level: 2
+  level_confidence: low
+  reason: 'base 3 for ENG.B.1.i; -1: the answer ''iron'' is an everyday word'
+- number: 43
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.1.i
+- number: 44
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for ENG.B.1.i; +1: the answer ''discrete'' is long and outside common vocabulary'
+- number: 45
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for ENG.B.1.i; +1: the answer ''senility'' is long and outside common vocabulary'
+- number: 46
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.1.i
+- number: 47
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for ENG.B.1.i; +1: the answer ''combative'' is long and outside common vocabulary'
+- number: 48
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.1.i
+- number: 49
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for ENG.B.1.i; +1: the answer ''displaces'' is long and outside common vocabulary'
+- number: 50
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for ENG.B.1.i; +1: the answer ''aggravated'' is long and outside common vocabulary'
+- number: 51
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.2.i
+- number: 52
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.2.i
+- number: 53
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for ENG.B.2.i; +1: the answer ''passionate'' is long and outside common vocabulary'
+- number: 54
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for ENG.B.2.i; +1: the answer ''vengeance'' is long and outside common vocabulary'
+- number: 55
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for ENG.B.2.i; +1: the answer ''reticent'' is long and outside common vocabulary'
+- number: 56
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.2.i
+- number: 57
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.2.i
+- number: 58
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.2.i
+- number: 59
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for ENG.B.2.i; +1: the answer ''dishonesty'' is long and outside common vocabulary'
+- number: 60
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.2.i
+- number: 61
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for ENG.B.2.i; +1: the answer ''credible'' is long and outside common vocabulary'
+- number: 62
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.2.i
+- number: 63
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.2.i
+- number: 64
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for ENG.B.2.i; +1: the answer ''receptiveness'' is long and outside common vocabulary'
+- number: 65
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.2.i
+- number: 66
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.3.i
+- number: 67
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.3.i
+- number: 68
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for ENG.B.3.i; +1: the answer ''whenever'' is long and outside common vocabulary'
+- number: 69
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for ENG.B.3.i; +1: the answer ''fortnight'' is long and outside common vocabulary'
+- number: 70
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.3.i
+- number: 71
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.3.i
+- number: 72
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.3.i
+- number: 73
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.3.i
+- number: 74
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for ENG.B.3.i; +1: the answer ''eclectic'' is long and outside common vocabulary'
+- number: 75
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.3.i
+- number: 76
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for ENG.B.3.i; +1: the answer ''pronunciation'' is long and outside common vocabulary'
+- number: 77
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for ENG.B.3.i; +1: the answer ''pleading'' is long and outside common vocabulary'
+- number: 78
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for ENG.B.3.i; +1: the answer ''naughtiest'' is long and outside common vocabulary'
+- number: 79
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.3.i
+- number: 80
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.3.i
+- number: 81
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.3.i
+- number: 82
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.3.i
+- number: 83
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.3.i
+- number: 84
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.3.i
+- number: 85
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.3.i
+- number: 86
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.C.1.i
+- number: 87
+  proposed_level: 2
+  level_confidence: low
+  reason: 'base 3 for ENG.C.1.i; -1: ''Weight'' is a monosyllable'
+- number: 88
+  proposed_level: 2
+  level_confidence: low
+  reason: 'base 3 for ENG.C.1.i; -1: ''Leach'' is a monosyllable'
+- number: 89
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.C.2.i
+- number: 90
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.C.2.i
+- number: 91
+  proposed_level: 2
+  level_confidence: low
+  reason: 'base 3 for ENG.C.2.i; -1: ''knot'' is a monosyllable'
+- number: 92
+  proposed_level: 2
+  level_confidence: low
+  reason: 'base 3 for ENG.C.3.i; -1: ''Fuel'' is a monosyllable'
+- number: 94
+  proposed_level: 2
+  level_confidence: low
+  reason: 'base 3 for ENG.C.3.i; -1: ''Sheer'' is a monosyllable'
+- number: 95
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for ENG.C.4.i; +1: ''Termination'' has about 4 syllables'
+- number: 96
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for ENG.C.4.i; +1: ''meditative'' has about 4 syllables'
+- number: 97
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for ENG.C.4.i; +1: ''Sugestible'' has about 4 syllables'
+- number: 98
+  proposed_level: 3
+  level_confidence: low
+  reason: 'base 4 for ENG.C.5.i; -1: ''Uche'' is a monosyllable'
+- number: 99
+  proposed_level: 3
+  level_confidence: low
+  reason: 'base 4 for ENG.C.5.i; -1: ''The'' is a monosyllable'
+- number: 100
+  proposed_level: 5
+  level_confidence: low
+  reason: 'base 4 for ENG.C.5.i; +1: ''Maiduguri'' has about 4 syllables'
