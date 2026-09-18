@@ -90,6 +90,27 @@ a mismatch becomes a type error rather than a silent miscalculation.
 
 ---
 
+## Adaptive sessions grow; fixed papers freeze
+
+**The document** says to "freeze the assessment's question order, marks and content
+reference" at publication, and separately notes that "adaptive delivery needs
+separately defined question-placement policy". This is that policy.
+
+**The schema** freezes a fixed paper completely at publication, and lets an
+adaptive session gain questions while it is open — but never edit or remove one.
+
+The guarantee that matters is narrower than a freeze: work a student has already
+done must not change underneath them. Appending a question they have not seen does
+not breach that; editing or withdrawing one they have answered does, and stays
+forbidden in both modes. Anything appended to a live session still has to pass
+`deliverable_questions`, since the publication check cannot see a question that did
+not exist when it ran.
+
+An adaptive set is also required to name the student it belongs to. It is one
+learner's session, not a paper several people sit.
+
+---
+
 ## Identity is thinner than the document, on purpose
 
 **The document** gives `users` an `auth_provider_id` for an external identity
