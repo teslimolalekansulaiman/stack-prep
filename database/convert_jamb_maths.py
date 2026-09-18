@@ -54,7 +54,10 @@ ANALYSIS_DPI = 100        # enough to see a pencil line, cheap to scan in pure P
 CROP_DPI = 200            # what the student will actually look at
 CELL = 4                  # analysis bitmap is reduced to cells this many pixels square
 INK_THRESHOLD = 160       # 0 is black, 255 white
-OPTION_KEYS = ("A", "B", "C", "D")
+#: Papers up to the mid-1990s print five options; from the late 1990s, four. Which it is
+#: comes from the question, not from an assumption about the year.
+OPTION_KEYS = ("A", "B", "C", "D", "E")
+MINIMUM_OPTIONS = 4
 
 YEAR_RE = re.compile(r"Mathematics\s+((?:19|20)\d\d)")
 QUESTION_RE = re.compile(r"^(\d{1,3})\s*[.)]\s*(.*)$")
@@ -654,10 +657,13 @@ def parse_year(pdf: Path, year: int, begin: tuple[int, float], finish: tuple[int
 
         options = split_options(joined)
         stem = clean(OPTION_SPLIT_RE.split(joined)[0])
-        missing = [key for key in OPTION_KEYS if key not in options]
-        if missing:
+        present = [key for key in OPTION_KEYS if options.get(key)]
+        missing = [key for key in OPTION_KEYS[:len(present)] if not options.get(key)]
+        if len(present) < MINIMUM_OPTIONS or missing:
             rejections.append(
-                f"{year} Q{number}: option(s) {','.join(missing)} not found in the source")
+                f"{year} Q{number}: "
+                + (f"option(s) {','.join(missing)} not found in the source" if missing
+                   else f"only {len(present)} options found"))
             continue
         if not stem:
             rejections.append(f"{year} Q{number}: no stem left once the options were split off")
@@ -696,7 +702,7 @@ def parse_year(pdf: Path, year: int, begin: tuple[int, float], finish: tuple[int
             "number": number,
             "page": segment[0].page,
             "stem": stem,
-            "options": {key: options[key] for key in OPTION_KEYS},
+            "options": {key: options[key] for key in present},
             # No answer: this compilation prints no key. See the module docstring.
             "proposed_skill": skill,
             "skill_reason": reason,

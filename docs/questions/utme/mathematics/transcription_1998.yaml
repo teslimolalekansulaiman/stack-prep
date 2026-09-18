@@ -1,0 +1,847 @@
+# UTME 1998, Mathematics — extracted from the text layer and the rendered
+# figures of docs/questions/utme/mathematics/MATHEMATICS-questions.pdf.
+#
+# 46 questions kept, 3 rejected,
+# 21 carrying a diagram cropped from the page.
+#
+# THERE ARE NO ANSWERS. The compilation prints no key, and this importer does
+# not invent one: every question loads with no correct option and
+# answer_source 'unverified'. Approval is impossible until someone works them
+# out. Skill mappings are proposed from the wording, since the paper prints no
+# directions of its own.
+format_version: 1
+source:
+  file: docs/questions/utme/mathematics/MATHEMATICS-questions.pdf
+  exam_year: 1998
+  paper_label: UTME 1998 Mathematics (objective)
+  paper_code: UTME-1998-MATH
+  question_count: 50
+  answer_source: unverified
+passages: []
+questions:
+- number: 1
+  page: 45
+  stem: If 1011 + X , =25 , solve for X 2 7 10
+  options:
+    A: '14'
+    B: '20'
+    C: '24'
+    D: '25'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 2
+  page: 45
+  stem: Evaluate [1/0.03 ÷ 1/0.024] -1, correct to 2 decimal places
+  options:
+    A: '3.76'
+    B: '1.25'
+    C: '0.94'
+    D: '0.75'
+  proposed_skill: MATH.I.2.iii
+  skill_reason: Proposed from the wording of the question, which is about fractions, decimals, approximation
+    or percentages. The paper prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 3
+  page: 45
+  stem: If b3 = a-3 and c 1/3 = a1/2b, express in terms of a
+  options:
+    A: a-1/2
+    B: a1/2
+    C: a3/2
+    D: a-2/3
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 4
+  page: 45
+  stem: Given that Log (y- 1) + Log (1/2x) = 1 and Log (y+ 4 4 2 1) + log x = 2, solve for x and y respectively
+    2
+  options:
+    A: 2, 3
+    B: 3, 2
+    C: -2, -3
+    D: -3, -2
+  proposed_skill: MATH.I.3.i
+  skill_reason: Proposed from the wording of the question, which is about indices, logarithms or surds.
+    The paper prints no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/4d5a7e57b66500706246b4bb4d24443eef64ef9ad2df7ea1c11f875a58634ca8.png
+    sha256: 4d5a7e57b66500706246b4bb4d24443eef64ef9ad2df7ea1c11f875a58634ca8
+    width: 805
+    height: 170
+    byte_size: 23142
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 45, crop (30,298)-(308,347)pt
+- number: 5
+  page: 45
+  stem: Find the value of K if K/”3 + “2 = “3 - 2
+  options:
+    A: '3'
+    B: '2'
+    C: “3
+    D: “2
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 6
+  page: 45
+  stem: 'A market woman sells oils in cylindrical tins 10cm deep and 6cm diameter at #15.00 each. Ifshe
+    bought a full cylindrical jug 18cm deepand 10cm in diameter for #50.00, how much did she make by selling
+    all the oil?'
+  options:
+    A: '#62.50'
+    B: '#35.00'
+    C: '#31.00'
+    D: '#25.00'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 7
+  page: 45
+  stem: A man is paid r naira per hour for normal work and double rate for overtime. If he does a 35-hour
+    week which includes q hours of overtime, what is his weeklyearning in naira?
+  options:
+    A: r(35 + q)
+    B: q(35r - q)
+    C: q(35r + r)
+    D: r(35r - q)
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/685652c00609c190c9f0228cbf2f9c4a72d1e7885d068ae9a8aa3a907ace877f.png
+    sha256: 685652c00609c190c9f0228cbf2f9c4a72d1e7885d068ae9a8aa3a907ace877f
+    width: 805
+    height: 236
+    byte_size: 36259
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 45, crop (30,502)-(308,575)pt
+- number: 8
+  page: 45
+  stem: Given the universal set U = {1,2,3,4,5,6,} and the sets P = {1,2,3,4,} Q = {3,4,5} and R= {2,4,6}.
+    Find PÈ(QÈR).
+  options:
+    A: '{4}'
+    B: '{1,2,3,4}'
+    C: '{1,2,3,5,6}'
+    D: '{1,2,3,4,5,6}'
+  proposed_skill: MATH.I.4.iv
+  skill_reason: Proposed from the wording of the question, which is about sets. The paper prints no direction
+    to read instead.
+  notation_suspect: false
+  figures:
+  - file: docs/questions/utme/mathematics/figures/74060ed27180fedd573df411db1555033c0de753a2993c2eeafe2bea88a54726.png
+    sha256: 74060ed27180fedd573df411db1555033c0de753a2993c2eeafe2bea88a54726
+    width: 399
+    height: 321
+    byte_size: 15071
+    alt_text: 'Diagram from the paper, carrying the labels: P Q R. Not yet checked by a person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 45, crop (95,654)-(226,757)pt
+- number: 10
+  page: 45
+  stem: When the expression pm2 + qm + 1 is divided by(m - 1), it has a remainder 2 and when divided by
+    (m + 1) the remainder is 4. find p and q respectively
+  options:
+    A: 2, -1
+    B: -1, 2
+    C: 3, -2
+    D: -2, 3
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 11
+  page: 45
+  stem: Factorize r2 – r (2p + q) + 2pq
+  options:
+    A: (r – 2q)(2r - p)
+    B: (r - q)(r + p)
+    C: (r - q)(r – 2p)
+    D: (2r - q)(r + p)
+  proposed_skill: MATH.II.1.i
+  skill_reason: Proposed from the wording of the question, which is about polynomials. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 12
+  page: 45
+  stem: Solve the equation x - (x - 2) – 1 = 0
+  options:
+    A: 3/2
+    B: 2/3
+    C: 4/9
+    D: 9/4
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/61cc194f1a9b350d3a91006212fae9d8840e0984ad61576beac775c983af98a7.png
+    sha256: 61cc194f1a9b350d3a91006212fae9d8840e0984ad61576beac775c983af98a7
+    width: 780
+    height: 136
+    byte_size: 12749
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 45, crop (316,311)-(585,348)pt
+- number: 13
+  page: 45
+  stem: Find the range of values of m for which the roots of the equation 3x2 – 3mx + (m2 – m - 3) = 0
+  options:
+    A: -1<m<7
+    B: -2<m<6
+    C: -3<m<9
+    D: -4<m<8
+  proposed_skill: MATH.V.3.i
+  skill_reason: Proposed from the wording of the question, which is about measures of dispersion. The
+    paper prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 14
+  page: 45
+  stem: Make a/x the subject of the formula x + a/x – a = m
+  options:
+    A: m – 1/m + 1
+    B: 1 + m/1 – m
+    C: 1-m/1 + m
+    D: m + 1/m – 1
+  proposed_skill: MATH.II.1.i
+  skill_reason: Proposed from the wording of the question, which is about polynomials. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 15
+  page: 45
+  stem: Divide 2x3 + 11x2 + 17x + 6 by 2x + 1
+  options:
+    A: x2 + 5x + 6
+    B: 2x2 + 5x + 6
+    C: 2x2 –5x + 6
+    D: x2 – 5x + 6
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 16
+  page: 45
+  stem: Express in partial fractions 11x + 2 6x2 – x – 1
+  options:
+    A: 1/3x–1+3/2x+1
+    B: 3/3x+1–1/2x–1
+    C: 3/3x–1–1/2x+1
+    D: 1/3x+1+3/2x-1
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/5a583ec4005b81795a8052d03b4f495343ca41e093fe65d6d3e4ae21a1bac758.png
+    sha256: 5a583ec4005b81795a8052d03b4f495343ca41e093fe65d6d3e4ae21a1bac758
+    width: 780
+    height: 202
+    byte_size: 16619
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 45, crop (316,527)-(585,588)pt
+- number: 17
+  page: 45
+  stem: Ifx is a positive real number, find the range ofvalues for which 1/3x + ½ > 1/4x
+  options:
+    A: x> - 1/6
+    B: x>0
+    C: 0<x<4
+    D: 0<x<1/6 y
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures:
+  - file: docs/questions/utme/mathematics/figures/95c99f4dcccde7c42487d96f84cfbdf96bb4ec65b76eea02586932bbbce77b1b.png
+    sha256: 95c99f4dcccde7c42487d96f84cfbdf96bb4ec65b76eea02586932bbbce77b1b
+    width: 310
+    height: 163
+    byte_size: 5825
+    alt_text: 'Diagram from the paper, carrying the labels: y (0, 3) (2, 0) ^x. Not yet checked by a person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 45, crop (357,670)-(457,717)pt
+- number: 18
+  page: 45
+  stem: (0, 3) (2, 0) ^x The shaded area above represents
+  options:
+    A: x≥0,3y+2x≥6
+    B: x≥0,y≥3,3x+ 2y≥6
+    C: x≥2,y≥0,3x+2y≤6
+    D: x≥0,y≥0,3x+2y≥6
+  proposed_skill: MATH.III.2.i
+  skill_reason: Proposed from the wording of the question, which is about mensuration. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 19
+  page: 46
+  stem: Ifp + 1, 2p – 10 ,1 – 4p2 are the consecutive terms of an arithmetic progression, find the possible
+    values of p.
+  options:
+    A: -4, 2
+    B: –2, 4/11
+    C: –11/4, 2
+    D: 5, -3
+  proposed_skill: MATH.II.4.i
+  skill_reason: Proposed from the wording of the question, which is about progression. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 20
+  page: 46
+  stem: The sum of the first three terms of a geometric progression is half its sum to infinity. Find
+    the positive common ration of the progression.
+  options:
+    A: ¼
+    B: ½
+    C: 1/3"3
+    D: 1/3"2
+  proposed_skill: MATH.II.4.i
+  skill_reason: Proposed from the wording of the question, which is about progression. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures:
+  - file: docs/questions/utme/mathematics/figures/c4d7240fb389842284aab88a815d3c087f97dc7f61af054403f2774970c236d5.png
+    sha256: c4d7240fb389842284aab88a815d3c087f97dc7f61af054403f2774970c236d5
+    width: 481
+    height: 289
+    byte_size: 8738
+    alt_text: 'Diagram from the paper, carrying the labels: x O p q r P r r q p p q s p r s r r r r s
+      q r s r q. Not yet checked by a person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 46, crop (107,156)-(268,248)pt
+- number: 21
+  page: 46
+  stem: Ox p q r s P r p r p p q r s q r r r r r s q s r q Theidentityelement with respect tothe multiplication
+    shown in the table above is
+  options:
+    A: p
+    B: q
+    C: r
+    D: s
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 22
+  page: 46
+  stem: The binaryoperation * is defined byx*y= xy– y– x for all real values x and y x*3 = 2 * x, find
+    x.
+  options:
+    A: '-1'
+    B: '0'
+    C: '1'
+    D: '5'
+  proposed_skill: MATH.II.5.i
+  skill_reason: Proposed from the wording of the question, which is about binary operations. The paper
+    prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 23
+  page: 46
+  stem: The determinant of matrix x, 1, 0 1-x, 2, 3 1, 1+x, 4 in terms of x is
+  options:
+    A: -3x2 - 17
+    B: -3x2 + 9x – 1
+    C: 3x2 + 17
+    D: 3x2 – 9x + 5
+  proposed_skill: MATH.II.6.ii
+  skill_reason: Proposed from the wording of the question, which is about matrices and determinants. The
+    paper prints no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/c1558a8b3d897299993bf83154bfd7b3976fb0509674921d40a06c89cc251a3d.png
+    sha256: c1558a8b3d897299993bf83154bfd7b3976fb0509674921d40a06c89cc251a3d
+    width: 270
+    height: 113
+    byte_size: 7023
+    alt_text: 'Diagram from the paper, carrying the labels: I= 1 0. P= 2 3 Q= 0 1 4 5. Not yet checked
+      by a person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 46, crop (105,458)-(190,487)pt
+  - file: docs/questions/utme/mathematics/figures/395009968e8841a0ccb539aa635cf56a06bc1e33ce01e809dfb17bdfad7d0b15.png
+    sha256: 395009968e8841a0ccb539aa635cf56a06bc1e33ce01e809dfb17bdfad7d0b15
+    width: 822
+    height: 236
+    byte_size: 20001
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 46, crop (30,378)-(314,451)pt
+- number: 24
+  page: 46
+  stem: Let u, 4 + u -2v, v be 2 x 2 matrices such that PQ=1. find (u,v)
+  options:
+    A: (-5/2, -1)
+    B: (-5/2, 3/2)
+    C: (–5/6,1)
+    D: (5/2, 2/3)
+  proposed_skill: MATH.II.6.ii
+  skill_reason: Proposed from the wording of the question, which is about matrices and determinants. The
+    paper prints no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/4837ba83ef7c3fae0788344c259f47666da670af5707b6a444b68f404e09e866.png
+    sha256: 4837ba83ef7c3fae0788344c259f47666da670af5707b6a444b68f404e09e866
+    width: 330
+    height: 249
+    byte_size: 13854
+    alt_text: 'Diagram from the paper, carrying the labels: 35 P 30 ° O R Q T S. Not yet checked by a
+      person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 46, crop (104,534)-(210,612)pt
+  - file: docs/questions/utme/mathematics/figures/35e27ddcdb116c3909a708a6c69e22bd66cdf1103a9bcdfeaac273f5215db832.png
+    sha256: 35e27ddcdb116c3909a708a6c69e22bd66cdf1103a9bcdfeaac273f5215db832
+    width: 822
+    height: 202
+    byte_size: 24806
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 46, crop (30,462)-(314,523)pt
+- number: 26
+  page: 46
+  stem: Inthediagram above,PQ//STandÐPQR=1200,ÐRST = 1300. findthe anglemarked x.
+  options:
+    A: '500'
+    B: '650'
+    C: '700'
+    D: '800'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures:
+  - file: docs/questions/utme/mathematics/figures/3891782f4926e006395df4ab7bfacdff3f4ffbd26cb7bfed9e24855fef885675.png
+    sha256: 3891782f4926e006395df4ab7bfacdff3f4ffbd26cb7bfed9e24855fef885675
+    width: 497
+    height: 209
+    byte_size: 11267
+    alt_text: 'Diagram from the paper, carrying the labels: Q P T R 8cm S 10cm. Not yet checked by a person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 46, crop (368,79)-(536,142)pt
+- number: 27
+  page: 46
+  stem: In thefigure above, PQST isa parallelogram andTSR is a straight line. If the area of ∠QRS is 20cm2,
+    find the area of the trapezium PQRT.
+  options:
+    A: 35cm2
+    B: 65cm2
+    C: 70cm2
+    D: 140cm2
+  proposed_skill: MATH.III.2.i
+  skill_reason: Proposed from the wording of the question, which is about mensuration. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures:
+  - file: docs/questions/utme/mathematics/figures/abf94ac796d2240db8b404ede0feb2991d6cf5b1ff13be03b6ce444a82712dca.png
+    sha256: abf94ac796d2240db8b404ede0feb2991d6cf5b1ff13be03b6ce444a82712dca
+    width: 331
+    height: 269
+    byte_size: 13317
+    alt_text: 'Diagram from the paper, carrying the labels: R Q ° 40 T ° Y X 32. Not yet checked by a
+      person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 46, crop (379,214)-(486,299)pt
+- number: 28
+  page: 46
+  stem: TQ is tangent to circle XYTR. ∠YXT = 320, ∠RTQ = 400. find ∠YTR.
+  options:
+    A: '1080'
+    B: '1210'
+    C: '1400'
+    D: '1480'
+  proposed_skill: MATH.III.5.i
+  skill_reason: Proposed from the wording of the question, which is about trigonometry. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 29
+  page: 46
+  stem: A chord ofa circle radius Ö3cm subtends an angle of 600on the circumferenceofthe circle. Find
+    the length of the chord.
+  options:
+    A: √3/2 cm
+    B: 3/2 cm
+    C: √3 cm
+    D: 3 cm
+  proposed_skill: MATH.III.2.i
+  skill_reason: Proposed from the wording of the question, which is about mensuration. The paper prints
+    no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/fccc8f75795712d627b9947e18b41b24bab1230e2d1323e86b07b35a377f268c.png
+    sha256: fccc8f75795712d627b9947e18b41b24bab1230e2d1323e86b07b35a377f268c
+    width: 763
+    height: 205
+    byte_size: 27386
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 46, crop (322,366)-(585,428)pt
+- number: 30
+  page: 46
+  stem: A cylindrical drum ofdiameter 56 cm contains 123.2 litres of oil when full. Find the height ofthe
+    drum in centimeters.
+  options:
+    A: '12.5'
+    B: '25.0'
+    C: '45.0'
+    D: '50.0'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/12c20438adf0f19b240bf42a5ac743ab8f994b618a9f6d087d3a0a86aa45dc57.png
+    sha256: 12c20438adf0f19b240bf42a5ac743ab8f994b618a9f6d087d3a0a86aa45dc57
+    width: 763
+    height: 202
+    byte_size: 28692
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 46, crop (322,438)-(585,499)pt
+- number: 31
+  page: 46
+  stem: The locus of all points at a distance 8 cm from a point N passes through point T and S. if S is
+    equidistant from T and N , find the area of triangle STN.
+  options:
+    A: 4√3 cm2
+    B: 16√3 cm2
+    C: 32cm2
+    D: 64 cm2
+  proposed_skill: MATH.III.3.i
+  skill_reason: Proposed from the wording of the question, which is about loci. The paper prints no direction
+    to read instead.
+  notation_suspect: false
+  figures: []
+- number: 32
+  page: 46
+  stem: If the distance between the points (x, 3) and (-x, 2) is 5. find x
+  options:
+    A: (-3/2, 3/2)
+    B: (-2/3, 3/2)
+    C: (3/8, 3/2)
+    D: (-3/8, 3/2)
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/d2a7c41290af8333a7036b18a6dcb73c81eb46d301ea4b1b1e234d0f17a6038e.png
+    sha256: d2a7c41290af8333a7036b18a6dcb73c81eb46d301ea4b1b1e234d0f17a6038e
+    width: 763
+    height: 302
+    byte_size: 40084
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 46, crop (322,582)-(585,679)pt
+- number: 34
+  page: 46
+  stem: Solve the equation cos x + sin x = 1/cos x – sinx for values of x such that 0 ≤ x < 2π
+  options:
+    A: π/2, 3π/2
+    B: π/3, 2π/3
+    C: 0, π/3
+    D: 0, π
+  proposed_skill: MATH.III.5.i
+  skill_reason: Proposed from the wording of the question, which is about trigonometry. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 35
+  page: 47
+  stem: Q In the diagram above, QTR is a straight line and∠ PQT = 300. find the sine of ∠PTR.
+  options:
+    A: 8/15
+    B: 2/3
+    C: ¾
+    D: 15/16
+  proposed_skill: MATH.III.5.i
+  skill_reason: Proposed from the wording of the question, which is about trigonometry. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures:
+  - file: docs/questions/utme/mathematics/figures/41b74209db2d9a7084700a16cf8b84d4fd8bb627f3ad0d58abea7edc67747f42.png
+    sha256: 41b74209db2d9a7084700a16cf8b84d4fd8bb627f3ad0d58abea7edc67747f42
+    width: 283
+    height: 167
+    byte_size: 8241
+    alt_text: 'Diagram from the paper, carrying the labels: 15 30 8 10 R O T. Not yet checked by a person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 47, crop (112,27)-(202,75)pt
+- number: 36
+  page: 47
+  stem: For what value of x does 6 sin (2x - 25)0 attain its maximum value in the range 00 ≤x ≤ 1800?
+  options:
+    A: 121/
+    B: 321/ 2 2
+    C: 571/
+    D: 1471/ 2 2
+  proposed_skill: MATH.IV.2.i
+  skill_reason: Proposed from the wording of the question, which is about application of differentiation.
+    The paper prints no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/6900ad0d6babb685d738a0817e967a8a615fa71f54c0f7f6ce74fb4f19a7ef43.png
+    sha256: 6900ad0d6babb685d738a0817e967a8a615fa71f54c0f7f6ce74fb4f19a7ef43
+    width: 805
+    height: 177
+    byte_size: 23250
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 47, crop (30,149)-(308,201)pt
+- number: 37
+  page: 47
+  stem: From the top of a vertical mast 150m high, two huts on the same ground level are observed. One
+    due east and the other due west of the mast. Their angles of depression are 600 and 450 respectively.
+    Find the distance between the huts.
+  options:
+    A: 150 (1 + √3)m
+    B: 50 (3 + √3)m
+    C: 150√3m
+    D: 50/√3m
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 38
+  page: 47
+  stem: If y = 243 (4x + 5)-2, find dy/dx when x = 1
+  options:
+    A: -8/3
+    B: 3/8
+    C: 9/8
+    D: –8/9
+  proposed_skill: MATH.IV.1.ii
+  skill_reason: Proposed from the wording of the question, which is about differentiation. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 39
+  page: 47
+  stem: Differentiate x/cos x with respect to x.
+  options:
+    A: 1+xsecxtanx
+    B: 1+sec2x
+    C: cosx+xtanx
+    D: secx+xsecxtanx
+  proposed_skill: MATH.IV.1.ii
+  skill_reason: Proposed from the wording of the question, which is about differentiation. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 40
+  page: 47
+  stem: Evaluate π (sec2x – tan2x)dx 2
+  options:
+    A: π/2
+    B: π - 2
+    C: π/3
+    D: π + 2
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/59557716b406b14e3637ee58343c05bd416654e7ace909a1ec9e661faaf7071a.png
+    sha256: 59557716b406b14e3637ee58343c05bd416654e7ace909a1ec9e661faaf7071a
+    width: 805
+    height: 162
+    byte_size: 17662
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 47, crop (30,408)-(308,454)pt
+- number: 41
+  page: 47
+  stem: Find the equation of the curve which passes through the point (2, 5) and whose gradient at any
+    point is given by 6x - 5
+  options:
+    A: 6x2 – 5x + 5
+    B: 6x2 + 5x + 5
+    C: 3x2 – 5x – 5
+    D: 3x2 – 5x + 3
+  proposed_skill: MATH.III.4.iv
+  skill_reason: Proposed from the wording of the question, which is about coordinate geometry. The paper
+    prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 42
+  page: 47
+  stem: If m and n are the mean and median respectively of the set of numbers 2,3,9,7,6,7,8,5 and m +
+    2n to the nearest whole number.
+  options:
+    A: '19'
+    B: '18'
+    C: '13'
+    D: 12 Average hourly
+  proposed_skill: MATH.I.4.iv
+  skill_reason: Proposed from the wording of the question, which is about sets. The paper prints no direction
+    to read instead.
+  notation_suspect: false
+  figures:
+  - file: docs/questions/utme/mathematics/figures/9cd79c7579b14606cee3c86fb7377bfcec17f87330d89e30c0ad0011c623b505.png
+    sha256: 9cd79c7579b14606cee3c86fb7377bfcec17f87330d89e30c0ad0011c623b505
+    width: 634
+    height: 196
+    byte_size: 26956
+    alt_text: 'Diagram from the paper, carrying the labels: Average hourly earnings (N) 5 - 9 10 - 14
+      15 - 19 20 - 24 No . of workers 17 32 25 24 E sti m a t e t h e m ode of th e a bove fr equen cy.
+      Not yet checked by a person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 47, crop (72,585)-(288,643)pt
+- number: 43
+  page: 47
+  stem: earnings (N) 5 - 9 10 - 14 15 - 19 20 - 24 No . of workers 17 32 25 24 Estimate the mode of the
+    above frequency distribution.
+  options:
+    A: '12.2'
+    B: '12.7'
+    C: '12.9'
+    D: '13.4'
+  proposed_skill: MATH.V.2.i
+  skill_reason: Proposed from the wording of the question, which is about measures of location. The paper
+    prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 44
+  page: 47
+  stem: Find the variance ofthe numbers K, K + 1, K + 2.
+  options:
+    A: 2/3
+    B: '1'
+    C: K+ 1
+    D: (K+1)2
+  proposed_skill: MATH.V.3.i
+  skill_reason: Proposed from the wording of the question, which is about measures of dispersion. The
+    paper prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 45
+  page: 47
+  stem: Find the positive value of x if the standard deviation of the numbers 1, x +1, 2x + 1 is √6
+  options:
+    A: '1'
+    B: '2'
+    C: '3'
+    D: '4'
+  proposed_skill: MATH.V.3.i
+  skill_reason: Proposed from the wording of the question, which is about measures of dispersion. The
+    paper prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 46
+  page: 47
+  stem: Abagcontains 16red balls and20blue balls only. How many white balls must be added to the bag so
+    that theprobabilityof randomlypicking a red ball is equal to 2/5?
+  options:
+    A: '4'
+    B: '20'
+    C: '24'
+    D: '40'
+  proposed_skill: MATH.V.5.i
+  skill_reason: Proposed from the wording of the question, which is about probability. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures:
+  - file: docs/questions/utme/mathematics/figures/bff5a494c6fc79333430d218c9543eacc1d4c6e1286d9b02d803c39b79872f7c.png
+    sha256: bff5a494c6fc79333430d218c9543eacc1d4c6e1286d9b02d803c39b79872f7c
+    width: 249
+    height: 225
+    byte_size: 17922
+    alt_text: 'Diagram from the paper, carrying the labels: 120 ° g S ch o o ^l F ee s F oo d ansport
+      Tr Housin. Not yet checked by a person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 47, crop (372,196)-(449,265)pt
+- number: 48
+  page: 47
+  stem: The bar chart above shows the distribution ofmarks scored by 60 pupils in a test in which the
+    maximum scorewas 10. ifthepass mark was5, what percentage of the pupils failed the test?
+  options:
+    A: 59.4%
+    B: 50.0%
+    C: 41.7%
+    D: 25.0%
+  proposed_skill: MATH.V.1.ii
+  skill_reason: Proposed from the wording of the question, which is about representation of data. The
+    paper prints no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/39ae974ed35f0ba2eabff5e031950660b95eb292de0ae34719d3b29d809c022b.png
+    sha256: 39ae974ed35f0ba2eabff5e031950660b95eb292de0ae34719d3b29d809c022b
+    width: 780
+    height: 502
+    byte_size: 60424
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 47, crop (316,371)-(585,540)pt
+- number: 49
+  page: 47
+  stem: In a recent zonal championship games involving 10teams, teams X andYwere given Probabilities 2/
+    5 and 1/3 respectively of wining the gold in the football event.What istheprobabilitythat either team
+    will win the gold?
+  options:
+    A: 2/15
+    B: 7/15
+    C: 11/15
+    D: 13/15
+  proposed_skill: MATH.V.5.i
+  skill_reason: Proposed from the wording of the question, which is about probability. The paper prints
+    no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/f1b71cfe70f6e35dd370c6961844471de6e5eb1d7a6b61f6c179c5311f41bd72.png
+    sha256: f1b71cfe70f6e35dd370c6961844471de6e5eb1d7a6b61f6c179c5311f41bd72
+    width: 780
+    height: 269
+    byte_size: 44442
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 47, crop (316,551)-(585,636)pt
+- number: 50
+  page: 47
+  stem: If x, y can take values from the set {1,2,3,4,}, find the probability that the product of x and
+    y is not greater than 6.
+  options:
+    A: 5/8
+    B: 5/16
+    C: ½
+    D: 3/8
+  proposed_skill: MATH.I.4.iv
+  skill_reason: Proposed from the wording of the question, which is about sets. The paper prints no direction
+    to read instead.
+  notation_suspect: false
+  figures: []

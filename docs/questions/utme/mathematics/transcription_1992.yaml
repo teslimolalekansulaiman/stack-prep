@@ -1,0 +1,751 @@
+# UTME 1992, Mathematics — extracted from the text layer and the rendered
+# figures of docs/questions/utme/mathematics/MATHEMATICS-questions.pdf.
+#
+# 44 questions kept, 6 rejected,
+# 15 carrying a diagram cropped from the page.
+#
+# THERE ARE NO ANSWERS. The compilation prints no key, and this importer does
+# not invent one: every question loads with no correct option and
+# answer_source 'unverified'. Approval is impossible until someone works them
+# out. Skill mappings are proposed from the wording, since the paper prints no
+# directions of its own.
+format_version: 1
+source:
+  file: docs/questions/utme/mathematics/MATHEMATICS-questions.pdf
+  exam_year: 1992
+  paper_label: UTME 1992 Mathematics (objective)
+  paper_code: UTME-1992-MATH
+  question_count: 50
+  answer_source: unverified
+passages: []
+questions:
+- number: 1
+  page: 31
+  stem: Findnif34 =10011 n 2
+  options:
+    A: '5'
+    B: '6'
+    C: '7'
+    D: '8'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 2
+  page: 31
+  stem: The radiusofa circle isgiven as 5cm subject to an error of0.1cm. what isthepercentageerrorin thearea
+    ofthe circle.
+  options:
+    A: 1/25
+    B: ¼
+    C: '4'
+    D: '25'
+  proposed_skill: MATH.III.1.ii
+  skill_reason: Proposed from the wording of the question, which is about Euclidean geometry. The paper
+    prints no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/2d871fff7ffb5a98db59567164353163dbf0e909600ce2a26a2ebd36d5384b8e.png
+    sha256: 2d871fff7ffb5a98db59567164353163dbf0e909600ce2a26a2ebd36d5384b8e
+    width: 805
+    height: 202
+    byte_size: 24084
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 31, crop (30,135)-(308,196)pt
+- number: 3
+  page: 31
+  stem: Evaluate Log anifb=1/an b
+  options:
+    A: n2
+    B: n
+    C: 1/n
+    D: 1/n
+  proposed_skill: MATH.I.3.i
+  skill_reason: Proposed from the wording of the question, which is about indices, logarithms or surds.
+    The paper prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 4
+  page: 31
+  stem: What is thevalueofxsatisfyingthe equation 42y/ 43x= 2?
+  options:
+    A: '-2'
+    B: –1/2
+    C: ½
+    D: '2'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/7cf36167824b6b558f4517ff27e6a24e653318727a781b3f1f172042c1a845db.png
+    sha256: 7cf36167824b6b558f4517ff27e6a24e653318727a781b3f1f172042c1a845db
+    width: 805
+    height: 170
+    byte_size: 15750
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 31, crop (30,267)-(308,316)pt
+- number: 6
+  page: 31
+  stem: Simplify5√18-3√72+4√50
+  options:
+    A: 17√4
+    B: 4√17
+    C: 17√2
+    D: 12√4
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 7
+  page: 31
+  stem: Ifx=3-√3,findx^2+36/x2
+  options:
+    A: '9'
+    B: '18'
+    C: '24'
+    D: '27'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 8
+  page: 31
+  stem: Ifx= {allprimefactorsof44}and y={allprimefactorsof60},theelementsofx∩yand xÇyrespectivelyare.
+  options:
+    A: '{2,4,3,5,11}and{4}'
+    B: '{4,3,5,11}and{3,4}'
+    C: '{2,5,11}and{2}'
+    D: '{2,3,5,11}and{2}'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 9
+  page: 31
+  stem: IfU={0,2,3,6,7,8,9,10}istheuniversalset,E={0,4,6,8,} andF={x:x2=26,},xisodd}.Find(ECF)'wheremeans
+    the complement ofa set
+  options:
+    A: '{0}'
+    B: U
+    C: C
+    D: f
+  proposed_skill: MATH.I.4.iv
+  skill_reason: Proposed from the wording of the question, which is about sets. The paper prints no direction
+    to read instead.
+  notation_suspect: false
+  figures: []
+- number: 11
+  page: 31
+  stem: Factorize 9p2–q2+6pr –9r2
+  options:
+    A: (3p–3q +r)(3p–q –9r)
+    B: (6p–3q +3r)(3p–q–4r)
+    C: (3p–q +3r)(3p+q –3r)
+    D: (3p–q +3r)(3p–q –3r)
+  proposed_skill: MATH.II.1.i
+  skill_reason: Proposed from the wording of the question, which is about polynomials. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 12
+  page: 31
+  stem: Solve theequation y- 11 y+ 24 = 0
+  options:
+    A: 8,3
+    B: 64,9
+    C: 6,4
+    D: 9,-8
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/ec6703d18e7062de076bdfd2efe58dd0ca32999fe8393122658a03d117263202.png
+    sha256: ec6703d18e7062de076bdfd2efe58dd0ca32999fe8393122658a03d117263202
+    width: 780
+    height: 136
+    byte_size: 13364
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 31, crop (316,147)-(585,184)pt
+- number: 13
+  page: 31
+  stem: 'A man invested a sum of #280.00 partly at 59% and partlyat 4%. If the total interest is #12.80per
+    annum, find the amount invested at 5%.'
+  options:
+    A: '#14.00'
+    B: '#120.00'
+    C: '#140.00'
+    D: '#160.00'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 14
+  page: 31
+  stem: Ifx+1is a factor ofx3+3x2+kx +4,findthevalue ofk
+  options:
+    A: '6'
+    B: –6
+    C: '8'
+    D: –8
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 15
+  page: 31
+  stem: Resolve (3/x2+x–2)intopartial fractions
+  options:
+    A: 1 - 1
+    B: 1 1 x-1 x+2 x +2 x - 1
+    C: 1 - 1
+    D: 1 1 x +1 x - 2 x- 2 + x +1
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/a8401900b370977bf8c97d50d8777fc2bbeda22b489a5eb7a25b715c6126fd75.png
+    sha256: a8401900b370977bf8c97d50d8777fc2bbeda22b489a5eb7a25b715c6126fd75
+    width: 780
+    height: 204
+    byte_size: 16618
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 31, crop (316,315)-(585,376)pt
+- number: 16
+  page: 31
+  stem: Findall valuesofxsatisfyingtheinequality–11≤43x≤28
+  options:
+    A: -5≤x ≤18
+    B: 5 ≤ x ≤ 8
+    C: –8≤x≤ 5
+    D: –5<x ≤8
+  proposed_skill: MATH.II.3.i
+  skill_reason: Proposed from the wording of the question, which is about inequalities. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures:
+  - file: docs/questions/utme/mathematics/figures/b56448281e595a18116f58c42f0feedd4dcfa0c27c180f66af838e33f97ee312.png
+    sha256: b56448281e595a18116f58c42f0feedd4dcfa0c27c180f66af838e33f97ee312
+    width: 375
+    height: 337
+    byte_size: 8851
+    alt_text: 'Diagram from the paper, carrying the labels: y 3 2 -3 ^-1 0 1 -1 ^2 3 ^x -3 ^-2 -2 ^4.
+      Not yet checked by a person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 31, crop (372,432)-(495,541)pt
+- number: 17
+  page: 31
+  stem: Thesketch aboveisthe curveofy=ax2+bx+ c. finda, b, and c respectively
+  options:
+    A: 1,0,-4
+    B: –2,2,-4
+    C: 0,1,-4
+    D: 2,-2,-4
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 18
+  page: 31
+  stem: Findthe sum oftheinfinityofthefollowingseries. 3+ 2+4/3+8/9+16/27+..
+  options:
+    A: '1270'
+    B: '190'
+    C: '18'
+    D: '9'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 19
+  page: 31
+  stem: What isthe nth term ofthe sequence 2,6,12,20,…?
+  options:
+    A: 4n–2
+    B: 2(3n-1)
+    C: n2+ n
+    D: n2+3n+2
+  proposed_skill: MATH.II.4.i
+  skill_reason: Proposed from the wording of the question, which is about progression. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 20
+  page: 31
+  stem: For an arithmetic sequence, the first term is 2 and the commondifferenceis3.findthesumofthefist
+    11terms.
+  options:
+    A: '157'
+    B: '187'
+    C: '197'
+    D: '200'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 21
+  page: 32
+  stem: Ifthe binaryoperation *is definedbym*n =mn +m +n for anyreal number m and n, findthe identityelement
+    under this operation.
+  options:
+    A: e=1
+    B: e=-1
+    C: e=-2
+    D: e=0 Usethematricesbelowtoanswerquestions22and23.
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 22
+  page: 32
+  stem: When PTisthetransposeofP,calculate[PT]when x=0, y= 1andz =2
+  options:
+    A: '48'
+    B: '24'
+    C: –24
+    D: –48
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 24
+  page: 32
+  stem: P Q U X 20O 105° T R S In the figure above, TSP = 1050 and PRQ = 200, find PQR
+  options:
+    A: '1300'
+    B: '1200'
+    C: '750'
+    D: '300'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures:
+  - file: docs/questions/utme/mathematics/figures/17bda39f7e7e359fbbcaa0a388f7ebd04dc39adee57c65b7d845f6841fb2ac33.png
+    sha256: 17bda39f7e7e359fbbcaa0a388f7ebd04dc39adee57c65b7d845f6841fb2ac33
+    width: 503
+    height: 247
+    byte_size: 11659
+    alt_text: 'Diagram from the paper, carrying the labels: P U Q X O 20 105 ° T R S. Not yet checked
+      by a person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 32, crop (90,259)-(260,336)pt
+- number: 25
+  page: 32
+  stem: Ifthe anglesofa quadrilateral are (p+10)0, (p+ 20)0and 4p0,findp
+  options:
+    A: '63'
+    B: '40'
+    C: '36'
+    D: '28'
+  proposed_skill: MATH.III.1.ii
+  skill_reason: Proposed from the wording of the question, which is about Euclidean geometry. The paper
+    prints no direction to read instead.
+  notation_suspect: false
+  figures:
+  - file: docs/questions/utme/mathematics/figures/c5dbd9345228b1ac14851d42c725e2ec327eab4ab09a6a955916fcadfffbb124.png
+    sha256: c5dbd9345228b1ac14851d42c725e2ec327eab4ab09a6a955916fcadfffbb124
+    width: 449
+    height: 259
+    byte_size: 10115
+    alt_text: 'Diagram from the paper, carrying the labels: Q P S R. Not yet checked by a person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 32, crop (92,469)-(242,550)pt
+- number: 26
+  page: 32
+  stem: In thefigure above, PQRis a semicircle whilePQ and QR are chords. QS is the perpendicular from
+    Q to the diameter PR. What istheexpression for QS?
+  options:
+    A: QS=PS.SR
+    B: QS=√(PS.SR)
+    C: QS=√2√(PS.SR)
+    D: QS=1/√2√(PS.SR)
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 27
+  page: 32
+  stem: Determine the distanceon theearth's surfacebetween two towns P(Lat. 600N, Long. 200E) andQ(Lat.
+    600N, Long250W)
+  options:
+    A: 800p/9km
+    B: 800Ö3p/9km
+    C: 800pkm
+    D: 800Ö3pkm
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/c34c5e89b6e00c87a63a62823328206bbc9fa203e7137aa4fc11e89320519b3b.png
+    sha256: c34c5e89b6e00c87a63a62823328206bbc9fa203e7137aa4fc11e89320519b3b
+    width: 822
+    height: 202
+    byte_size: 32981
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 32, crop (30,678)-(314,739)pt
+- number: 29
+  page: 32
+  stem: X isa point due east ofpoint Yon a coast Zis another point on the coast but 6.3km due south of
+    Y. if the distanceZX is12km, calculatethe bearingofZ from X
+  options:
+    A: '2400'
+    B: '2100'
+    C: '15008'
+    D: '600'
+  proposed_skill: MATH.III.5.i
+  skill_reason: Proposed from the wording of the question, which is about trigonometry. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 31
+  page: 32
+  stem: The locus of a point which is equidistant from two given fixed points is the
+  options:
+    A: perpendicular bisector of the straight line joiningthem
+    B: parallel line tothestraightline joiningthem
+    C: transversetothe straight line joining them
+    D: angle bisector of 900 which the straight line joiningthem makeswiththehorizontal
+  proposed_skill: MATH.III.3.i
+  skill_reason: Proposed from the wording of the question, which is about loci. The paper prints no direction
+    to read instead.
+  notation_suspect: false
+  figures: []
+- number: 32
+  page: 32
+  stem: Whatistheperpendiculardistanceofapoint(2, 3)from theline2x –4y+3 =0
+  options:
+    A: √5/2
+    B: -√5/20
+    C: –5/√13
+    D: '0'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 33
+  page: 32
+  stem: Find the equation of the line through (5, 7) parallel to theline7x+5y=12
+  options:
+    A: 5x+7y=120
+    B: 7x+5y=70
+    C: x+ y=7
+    D: 15x+17y=90
+  proposed_skill: MATH.III.4.iv
+  skill_reason: Proposed from the wording of the question, which is about coordinate geometry. The paper
+    prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 35
+  page: 33
+  stem: Y R O 15 ° X 30 Z 10 cm In the figureabove, ifXZ is10cm, calculateRYin cm
+  options:
+    A: '10'
+    B: 10(1–1/Ö3)
+    C: 10(1-Ö3)
+    D: 10(1-1Ö2)
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 36
+  page: 33
+  stem: Evaluatelim (x-2)(x2+3x-2) x-->2 (x2-4)
+  options:
+    A: '0'
+    B: '2'
+    C: '3'
+    D: '4'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/399a6a34146316569af3ab21f10de0635d0f4ffac93683b76b2efbe247c71297.png
+    sha256: 399a6a34146316569af3ab21f10de0635d0f4ffac93683b76b2efbe247c71297
+    width: 805
+    height: 170
+    byte_size: 13330
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 33, crop (30,173)-(308,223)pt
+- number: 37
+  page: 33
+  stem: Ify= x, findd2y/dx2
+  options:
+    A: 2cosx–xsin x
+    B: sin x+ xcosx
+    C: sin x–xcosx
+    D: xsin x–2 cosx
+  proposed_skill: MATH.III.5.i
+  skill_reason: Proposed from the wording of the question, which is about trigonometry. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 38
+  page: 33
+  stem: Ice forms on a refrigerator ice-box at the rate of (4 – 0.6t)gper minuteaftert minute. Ifinitiallythere
+    are2g oficeinthebox,findthemassoficeformedin5minutes.
+  options:
+    A: '19.5'
+    B: '17.0'
+    C: '14.5'
+    D: '12.5'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/c422b8339b0e742268710bf4ad1dd1c96090aa30d47376996bda903b66200d17.png
+    sha256: c422b8339b0e742268710bf4ad1dd1c96090aa30d47376996bda903b66200d17
+    width: 805
+    height: 202
+    byte_size: 28600
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 33, crop (30,282)-(308,343)pt
+- number: 39
+  page: 33
+  stem: Obtaina maximumvalueofthefunction f(x)=x3–12x+11
+  options:
+    A: '-5'
+    B: –2
+    C: '5'
+    D: '27'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 40
+  page: 33
+  stem: A student blows a ballon and its volume increasesat a rate of p (20 – t2)ccm3s-1 after t seconds.
+    If the initial volume of0cm3, find thevolume ofthe balloon after 2 seconds.
+  options:
+    A: 37.00π
+    B: 37.33π
+    C: 40.00π
+    D: 42.67π
+  proposed_skill: MATH.III.2.i
+  skill_reason: Proposed from the wording of the question, which is about mensuration. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 41
+  page: 33
+  stem: Evaluatethe integral π/4π/12cos2xdx
+  options:
+    A: -1/2
+    B: –1
+    C: ½
+    D: '1'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 42
+  page: 33
+  stem: A storekeeper checked his stock of five commodities and arrived at the following statistics. Commodity
+    Quantity F 215 G 113 H 108 K 216 M 68 What anglewill commodityHrepresent on a piechart?
+  options:
+    A: '2160'
+    B: '1080'
+    C: '680'
+    D: '540'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures:
+  - file: docs/questions/utme/mathematics/figures/755d527f661ad06fb2a85db10c11dedd9f522eba411b0dff28cbe8e4ee62feec.png
+    sha256: 755d527f661ad06fb2a85db10c11dedd9f522eba411b0dff28cbe8e4ee62feec
+    width: 473
+    height: 233
+    byte_size: 12429
+    alt_text: 'Diagram from the paper, carrying the labels: Quantity 215 113 108 216 68 Commodity F G
+      H K M. Not yet checked by a person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 33, crop (72,585)-(230,657)pt
+- number: 43
+  page: 33
+  stem: x 2 4 6 8 f 4 y 6 5 If the mean ofthe above frequencydistribution is 5.2, find y
+  options:
+    A: '6.0'
+    B: '5.2'
+    C: '5.0'
+    D: '4.0'
+  proposed_skill: MATH.V.2.i
+  skill_reason: Proposed from the wording of the question, which is about measures of location. The paper
+    prints no direction to read instead.
+  notation_suspect: false
+  figures:
+  - file: docs/questions/utme/mathematics/figures/bac139e99bc122e6719c0f8de321c14ec02f3ec8a109002853b7b948e611029c.png
+    sha256: bac139e99bc122e6719c0f8de321c14ec02f3ec8a109002853b7b948e611029c
+    width: 601
+    height: 113
+    byte_size: 12257
+    alt_text: 'Diagram from the paper, carrying the labels: No . of children No . of families 0 7 1 2
+      3 11 6 7 4 5 7 5 6 3. Not yet checked by a person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 33, crop (343,127)-(547,156)pt
+- number: 44
+  page: 33
+  stem: Find the mode and median respectively of the distribution above
+  options:
+    A: 2,1
+    B: 1,2
+    C: 1,5
+    D: 5,2
+  proposed_skill: MATH.V.2.i
+  skill_reason: Proposed from the wording of the question, which is about measures of location. The paper
+    prints no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/41c841ebe59942d90fe4cbfebf802c39261a95c026a8a6f149be189b48ab942c.png
+    sha256: 41c841ebe59942d90fe4cbfebf802c39261a95c026a8a6f149be189b48ab942c
+    width: 780
+    height: 302
+    byte_size: 28482
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 33, crop (316,126)-(585,223)pt
+- number: 45
+  page: 33
+  stem: Ifthescores of3studentsin a test are5,6and 7findthe standard deviation of their scores
+  options:
+    A: 2/3
+    B: 3/2√3
+    C: √ 2/3
+    D: √3/2
+  proposed_skill: MATH.V.3.i
+  skill_reason: Proposed from the wording of the question, which is about measures of dispersion. The
+    paper prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 46
+  page: 33
+  stem: Sample variance can be defined as S = 1/n (x1-x)2and 2 n=1 S = 1 n∑ (x −x) 2 n=11 1 (n-1) Where
+    n is the number ofsample observations. There is no difference practically between the above definitions
+    when
+  options:
+    A: n =35
+    B: n>35
+    C: n<35
+    D: n=5
+  proposed_skill: MATH.V.3.i
+  skill_reason: Proposed from the wording of the question, which is about measures of dispersion. The
+    paper prints no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/8f07f63202df0df133f49b3168769263e5e97c2705486d308feabd0a99e9f823.png
+    sha256: 8f07f63202df0df133f49b3168769263e5e97c2705486d308feabd0a99e9f823
+    width: 780
+    height: 336
+    byte_size: 39707
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 33, crop (316,294)-(585,403)pt
+- number: 47
+  page: 33
+  stem: Two perfect dice are throw together. Determine the probability of obtaining a total score of 8
+  options:
+    A: 1/12
+    B: 5/36
+    C: 1/8
+    D: 7/36
+  proposed_skill: MATH.V.5.i
+  skill_reason: Proposed from the wording of the question, which is about probability. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 48
+  page: 33
+  stem: Theprobabilityofan eventP is¾ whilethat ofanother Qis1/6. iftheprobabilityofbothPandQis1/12,what
+    is theprobabilityofeither Por Q?
+  options:
+    A: 1/96
+    B: 1/8
+    C: 5/6
+    D: 11/12
+  proposed_skill: MATH.V.5.i
+  skill_reason: Proposed from the wording of the question, which is about probability. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 49
+  page: 33
+  stem: Five people are to be arranged in a row for a group photograph. How many arrangements are there
+    if a married couple in the group insist on sitting next to each other?
+  options:
+    A: '48'
+    B: '24'
+    C: '20'
+    D: '10'
+  proposed_skill: MATH.V.4.i
+  skill_reason: Proposed from the wording of the question, which is about permutation and combination.
+    The paper prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 50
+  page: 33
+  stem: Astudent has 5 coursestotake from Mathematics and Physics. There are 4 courses in Mathematics
+    and 3 in Physicswhich hecan choosefrom at will.In howmany wayscan hechoosehiscourses sothat he takesexactly
+    two courses in Physics?
+  options:
+    A: '11'
+    B: '12'
+    C: '10'
+    D: '7'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures:
+  - file: docs/questions/utme/mathematics/figures/0037e3d10093a64618a4b996b26acd1db5802c432de803ddb6ecb2ff8878345d.png
+    sha256: 0037e3d10093a64618a4b996b26acd1db5802c432de803ddb6ecb2ff8878345d
+    width: 633
+    height: 1121
+    byte_size: 103977
+    alt_text: Diagram from the paper, with no text labels. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 34, crop (86,66)-(302,458)pt
+  - file: docs/questions/utme/mathematics/figures/a91ddd9cd51bd527eefd4a486acb0e2802be44c3c32847837e781de024150a01.png
+    sha256: a91ddd9cd51bd527eefd4a486acb0e2802be44c3c32847837e781de024150a01
+    width: 609
+    height: 761
+    byte_size: 60554
+    alt_text: Diagram from the paper, with no text labels. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 34, crop (86,487)-(294,749)pt

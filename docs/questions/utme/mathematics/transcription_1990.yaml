@@ -1,0 +1,850 @@
+# UTME 1990, Mathematics — extracted from the text layer and the rendered
+# figures of docs/questions/utme/mathematics/MATHEMATICS-questions.pdf.
+#
+# 46 questions kept, 2 rejected,
+# 20 carrying a diagram cropped from the page.
+#
+# THERE ARE NO ANSWERS. The compilation prints no key, and this importer does
+# not invent one: every question loads with no correct option and
+# answer_source 'unverified'. Approval is impossible until someone works them
+# out. Skill mappings are proposed from the wording, since the paper prints no
+# directions of its own.
+format_version: 1
+source:
+  file: docs/questions/utme/mathematics/MATHEMATICS-questions.pdf
+  exam_year: 1990
+  paper_label: UTME 1990 Mathematics (objective)
+  paper_code: UTME-1990-MATH
+  question_count: 50
+  answer_source: unverified
+passages: []
+questions:
+- number: 1
+  page: 25
+  stem: Simplify (43/4-61/4) (41/5of11/4)
+  options:
+    A: -77/
+    B: –2/7 8
+    C: –10/21
+    D: 10/21
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/fa656c92657fc8d88676c80dd9c2157d5ce9793d8651e04c32fbf6a8eaeec171.png
+    sha256: fa656c92657fc8d88676c80dd9c2157d5ce9793d8651e04c32fbf6a8eaeec171
+    width: 805
+    height: 204
+    byte_size: 14198
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 25, crop (30,71)-(308,133)pt
+- number: 2
+  page: 25
+  stem: The H.C.F. ofa2bx +abx2and a2b– b^3is
+  options:
+    A: b
+    B: a + b
+    C: a(a +b)
+    D: abx (a2– b2)
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 3
+  page: 25
+  stem: Correct 241.34(3x10-3)2to4significantfigures
+  options:
+    A: '0.0014'
+    B: '0.001448'
+    C: '0.0022'
+    D: '0.002172'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 4
+  page: 25
+  stem: 'At what rate would a sum of #100.00 deposited for 5 yearsraise an interest of#7.50?'
+  options:
+    A: 11/ %
+    B: 21/ % 2 2
+    C: 15%
+    D: 25%
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/d434c8ea2a96b04ca6be9d782a20d9350defc94600dc9ad98f05b3f412c87414.png
+    sha256: d434c8ea2a96b04ca6be9d782a20d9350defc94600dc9ad98f05b3f412c87414
+    width: 805
+    height: 169
+    byte_size: 21387
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 25, crop (30,240)-(308,289)pt
+- number: 5
+  page: 25
+  stem: Three children shared a basket of mangoes in such a waythat the first child took ¼ ofthe mangoes
+    and the second ¾ of the remainder. What fraction of the mangoesdidthe thirdchildtake?
+  options:
+    A: 3/16
+    B: 7/16
+    C: 9/16
+    D: 13/16
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 7
+  page: 25
+  stem: 'Threebrothersin a businessdeal sharetheprofit at the end ofcontract. Thefirst received 1/3 ofthe
+    profit and the second 2/3 of the remainder. If the third received the remaining #12.000.00, how much
+    profit did they share?'
+  options:
+    A: '#60,000.00'
+    B: '#54,000.00'
+    C: '#48,000.00'
+    D: '#42,000.00'
+  proposed_skill: MATH.I.2.iii
+  skill_reason: Proposed from the wording of the question, which is about fractions, decimals, approximation
+    or percentages. The paper prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 8
+  page: 25
+  stem: Simplify√160r2+√(71r^4+√100r3
+  options:
+    A: 9r2
+    B: 12 3r
+    C: 13r
+    D: 13r
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/d51f405ebe3a91f7ce299ea9947d596d1dc42bcb2950312c69901f4ca559fe40.png
+    sha256: d51f405ebe3a91f7ce299ea9947d596d1dc42bcb2950312c69901f4ca559fe40
+    width: 805
+    height: 178
+    byte_size: 14152
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 25, crop (30,536)-(308,589)pt
+- number: 9
+  page: 25
+  stem: Simplify√27+3/√3
+  options:
+    A: 4√3
+    B: 4/√3
+    C: 3√3
+    D: 3√/4
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 10
+  page: 25
+  stem: Simplify3Log 9+Log 12+Log 64–Log 72 6 6 6 6
+  options:
+    A: '5'
+    B: '7776'
+    C: Log 31
+    D: (7776)6 6
+  proposed_skill: MATH.I.3.i
+  skill_reason: Proposed from the wording of the question, which is about indices, logarithms or surds.
+    The paper prints no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/3906c1cef98b1241b0d70683aabfc7fe0348d30fa84d6d305f81df5a7c9aa9ca.png
+    sha256: 3906c1cef98b1241b0d70683aabfc7fe0348d30fa84d6d305f81df5a7c9aa9ca
+    width: 805
+    height: 143
+    byte_size: 16876
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 25, crop (30,648)-(308,687)pt
+- number: 11
+  page: 25
+  stem: Simplify (1 + 1 )-1 x-1 y-1
+  options:
+    A: x/y
+    B: xy
+    C: y/x
+    D: (xy)-1 1990
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/346076a28858b71c13c9283d9f2dc85f9a8aefac152e8f00f05eff941f0ff805.png
+    sha256: 346076a28858b71c13c9283d9f2dc85f9a8aefac152e8f00f05eff941f0ff805
+    width: 805
+    height: 170
+    byte_size: 11262
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 25, crop (30,695)-(308,745)pt
+- number: 12
+  page: 25
+  stem: Ifa =2, b= -2andc =-1/2, evaluate (ab2 – bc2) (a2c - abc)
+  options:
+    A: '0'
+    B: –28
+    C: –30
+    D: –34
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/547592f0140513b362ab0adddcd30f78733b8627de2390c5bcd02bed51080c92.png
+    sha256: 547592f0140513b362ab0adddcd30f78733b8627de2390c5bcd02bed51080c92
+    width: 780
+    height: 169
+    byte_size: 14889
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 25, crop (316,72)-(585,121)pt
+- number: 13
+  page: 25
+  stem: Y varies inverselyas x2 and X varies directlyas Z2. find the relationship between Y and Z, ifC
+    is a constant.
+  options:
+    A: Z2y= C
+    B: Y=CZ2
+    C: Y=CZ2
+    D: Y=C
+  proposed_skill: MATH.II.2.i
+  skill_reason: Proposed from the wording of the question, which is about variation. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 14
+  page: 25
+  stem: Findthe valueofr in termsofp andq in thefollowing equation P/2=(r/(r+q)
+  options:
+    A: r = q
+    B: pq2 2 - p2 2 - q2
+    C: r = p2q2
+    D: p 2 - pq q(2-p)
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/dfd34cd1944465a7e055621bc6dd03b42923f38d4dc598f200d4bf56777154e4.png
+    sha256: dfd34cd1944465a7e055621bc6dd03b42923f38d4dc598f200d4bf56777154e4
+    width: 780
+    height: 269
+    byte_size: 23877
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 25, crop (316,192)-(585,277)pt
+- number: 15
+  page: 25
+  stem: Iff(x-4)=x2+2x+3,findf(2)
+  options:
+    A: '6'
+    B: '11'
+    C: '27'
+    D: '51'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 16
+  page: 25
+  stem: Factorize9(x+y)2–4(x-y)2
+  options:
+    A: (x+y)(5x+y)
+    B: (x+y)2
+    C: (x+5y)(5x+y)
+    D: 5(x+y)2
+  proposed_skill: MATH.II.1.i
+  skill_reason: Proposed from the wording of the question, which is about polynomials. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 17
+  page: 25
+  stem: Ifa2+b2=16 and2ab=7findall thepossible valuesof (a – b)
+  options:
+    A: 3,-3
+    B: 2,-2
+    C: 1,-1
+    D: 3,-1
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 18
+  page: 25
+  stem: Dividex3–2x2–5x+6by(x-1)
+  options:
+    A: x2–x–6
+    B: x2–5x+6
+    C: x2–7x+6
+    D: x2–5x-6
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 19
+  page: 25
+  stem: Ifx+ =4,findthex2+1/x
+  options:
+    A: '16'
+    B: '14'
+    C: '12'
+    D: '9'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 20
+  page: 25
+  stem: What must be added to 4x2 – 4 to make it a perfect square?
+  options:
+    A: -1/x2
+    B: 1/x2
+    C: '1'
+    D: '-1'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/30ea2a4647d9b8b469ef4988aa161d363792e5ad50b468084ef7e9b8bb60109e.png
+    sha256: 30ea2a4647d9b8b469ef4988aa161d363792e5ad50b468084ef7e9b8bb60109e
+    width: 780
+    height: 170
+    byte_size: 15499
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 25, crop (316,527)-(585,577)pt
+- number: 21
+  page: 25
+  stem: Find the solution of the equation x–8√x+15=0
+  options:
+    A: 3,5
+    B: –3,-5
+    C: 9,25
+    D: –9,25
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 22
+  page: 25
+  stem: The lengths ofthe sides of a right-angled triangle are xcm.(3x-1)cmand(3x+1)cm.Findx
+  options:
+    A: '5'
+    B: '7'
+    C: '8'
+    D: '12'
+  proposed_skill: MATH.III.1.ii
+  skill_reason: Proposed from the wording of the question, which is about Euclidean geometry. The paper
+    prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 23
+  page: 25
+  stem: Theperimeterofarectangularlawn is24m,iftheareaof thelawn is35m2, howwideisthelawn?
+  options:
+    A: 5m
+    B: 7m
+    C: 12m
+    D: 14m
+  proposed_skill: MATH.III.2.i
+  skill_reason: Proposed from the wording of the question, which is about mensuration. The paper prints
+    no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/85098468a0f68a2cff6c6b03683c0f0af490d273918312caa35a77917c625bcf.png
+    sha256: 85098468a0f68a2cff6c6b03683c0f0af490d273918312caa35a77917c625bcf
+    width: 780
+    height: 136
+    byte_size: 19536
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 25, crop (316,708)-(585,745)pt
+- number: 25
+  page: 26
+  stem: Simplify x + y - x2 (x+y) (x-y) (x2 - y2)
+  options:
+    A: x2
+    B: y2 x2 - y2 x2 - y2
+    C: x
+    D: y x2 - y2 x2 - y2
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/6541ce2f79fcdd55b2ddc65e6807dc1d750d3b92fd2ea8534fb30da3491391df.png
+    sha256: 6541ce2f79fcdd55b2ddc65e6807dc1d750d3b92fd2ea8534fb30da3491391df
+    width: 822
+    height: 236
+    byte_size: 16322
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 26, crop (30,30)-(314,103)pt
+- number: 26
+  page: 26
+  stem: Giventhat x2+y2+z2=194,calculatez ifx=7and√y=3
+  options:
+    A: √10
+    B: '8'
+    C: '12.2'
+    D: '13.4'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 27
+  page: 26
+  stem: Findthe sum ofthefirst twentytermsofthearithmetic progression Log a, Log a2, Log a3
+  options:
+    A: '#32.00'
+    B: '#320.00'
+    C: log a200
+    D: 'log a210 24. A carpainter charges #40.00 per day for himself and #10.00per dayfor hisassistant.
+      Ifa fleet ofa carswere painted for #2,000.00 and the painter worked 10 days more than his assistant,
+      how much did the assistant receive?'
+  proposed_skill: MATH.I.3.i
+  skill_reason: Proposed from the wording of the question, which is about indices, logarithms or surds.
+    The paper prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 28
+  page: 26
+  stem: Find the sum ofthe first 18 termsofthe progression 3, 6,12………..
+  options:
+    A: 3(217-1)
+    B: 3(218)-1)
+    C: 3(218+1)
+    D: 3(218-1)
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 29
+  page: 26
+  stem: What is the equation of the quadratic function represented by the graph above?
+  options:
+    A: y= x2+x -2
+    B: y=x2–x–2
+    C: y=-x2–x+2
+    D: y=-x+x+2
+  proposed_skill: MATH.II.1.i
+  skill_reason: Proposed from the wording of the question, which is about polynomials. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures:
+  - file: docs/questions/utme/mathematics/figures/b430b437422bdcab6712ff964644cd57675cf03b6bf83ccf28c3d9c8c12f5d36.png
+    sha256: b430b437422bdcab6712ff964644cd57675cf03b6bf83ccf28c3d9c8c12f5d36
+    width: 497
+    height: 377
+    byte_size: 8904
+    alt_text: 'Diagram from the paper, carrying the labels: y -1 ° ^x 2. Not yet checked by a person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 26, crop (92,369)-(259,492)pt
+- number: 30
+  page: 26
+  stem: Atwhatvalueofxisthe functionx2+x +1minimum?
+  options:
+    A: '-1'
+    B: –1/2
+    C: ½
+    D: '1'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 31
+  page: 26
+  stem: Q R P S In thediagram above, thearea ofPQRSis73.5cm2and itsheight is 10.5cm. findthelength ofPSifQRisone-
+    thirdofPS.
+  options:
+    A: 21cm
+    B: 171/ cm 2
+    C: 14cm
+    D: 101/ cm 2
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/5f458ffba6ba80ee2a82040a46abaef09affe4caa8b2f5272d76967a77d1023e.png
+    sha256: 5f458ffba6ba80ee2a82040a46abaef09affe4caa8b2f5272d76967a77d1023e
+    width: 628
+    height: 293
+    byte_size: 8972
+    alt_text: 'Diagram from the paper, carrying the labels: Q R P S. Not yet checked by a person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 26, crop (90,613)-(304,707)pt
+  - file: docs/questions/utme/mathematics/figures/46d1fda841c960e2bba03f63a944d53d6bd1c5ee5c03aa8f20d5bae2cbb1583e.png
+    sha256: 46d1fda841c960e2bba03f63a944d53d6bd1c5ee5c03aa8f20d5bae2cbb1583e
+    width: 822
+    height: 420
+    byte_size: 31541
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 26, crop (30,606)-(314,745)pt
+- number: 32
+  page: 26
+  stem: The angle of a sector of a circle, radius 10.5cm, is 480. calculatethe perimeter ofthe sector
+  options:
+    A: 8.8cm
+    B: 25.4cm
+    C: 25.6cm
+    D: 29.8cm
+  proposed_skill: MATH.III.2.i
+  skill_reason: Proposed from the wording of the question, which is about mensuration. The paper prints
+    no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/349203a55d8a5154b3166d186cf1ee49170222a5471181277dd11c43ac09dba0.png
+    sha256: 349203a55d8a5154b3166d186cf1ee49170222a5471181277dd11c43ac09dba0
+    width: 601
+    height: 339
+    byte_size: 12699
+    alt_text: 'Diagram from the paper, carrying the labels: P S 100 O R Q. Not yet checked by a person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 26, crop (358,78)-(563,188)pt
+  - file: docs/questions/utme/mathematics/figures/1178998331246ae0ad192cdc61a17a4407aa5ba35dea1cd4b29f1f01abe106b3.png
+    sha256: 1178998331246ae0ad192cdc61a17a4407aa5ba35dea1cd4b29f1f01abe106b3
+    width: 763
+    height: 170
+    byte_size: 25257
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 26, crop (322,17)-(585,67)pt
+- number: 33
+  page: 26
+  stem: In the figureabove PS=QS andQSR=1000, findQPR
+  options:
+    A: '400'
+    B: '500'
+    C: '800'
+    D: '1000'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/4f70de757b2fd48006d724ebe0ad640551af25ca5f71efe97fb55cce586f9bf4.png
+    sha256: 4f70de757b2fd48006d724ebe0ad640551af25ca5f71efe97fb55cce586f9bf4
+    width: 763
+    height: 469
+    byte_size: 29009
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 26, crop (322,78)-(585,235)pt
+- number: 34
+  page: 26
+  stem: IntriangleXYZandXQP,XP=4cm,XQ=5cmandPQ= QY=3ccm.FindZY
+  options:
+    A: 8cm
+    B: 6ccm
+    C: 4cm
+    D: 3cm
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures:
+  - file: docs/questions/utme/mathematics/figures/b9dc13e47a1ac19a060d89362274e247cc448fac07e9060902b9411d7aee1090.png
+    sha256: b9dc13e47a1ac19a060d89362274e247cc448fac07e9060902b9411d7aee1090
+    width: 354
+    height: 475
+    byte_size: 19804
+    alt_text: 'Diagram from the paper, carrying the labels: X 4 cm 5 cm P 0 3 cm Q 3 cm Y 0 Z. Not yet
+      checked by a person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 26, crop (360,253)-(476,412)pt
+- number: 35
+  page: 26
+  stem: Findthe lengthofa side ofa rhombuswhosediagonals are6cm and8cm.
+  options:
+    A: 8cm
+    B: 5cm
+    C: 4cm
+    D: 3cm
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 36
+  page: 26
+  stem: Eachoftheinterior anglesofa regular polygon is1400. how many sides has the polygon?
+  options:
+    A: '9'
+    B: '8'
+    C: '7'
+    D: '5'
+  proposed_skill: MATH.III.1.ii
+  skill_reason: Proposed from the wording of the question, which is about Euclidean geometry. The paper
+    prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 37
+  page: 26
+  stem: In the figure above, PQRS is a circle. If PQT and SRT arestraight lines, find thevalue ofx.
+  options:
+    A: '590'
+    B: '770'
+    C: '1030'
+    D: '1210'
+  proposed_skill: MATH.III.1.ii
+  skill_reason: Proposed from the wording of the question, which is about Euclidean geometry. The paper
+    prints no direction to read instead.
+  notation_suspect: false
+  figures:
+  - file: docs/questions/utme/mathematics/figures/0f86d759c11fe2741589c068838e8424abf9411a0f1c27aa40dd5983fe5952fd.png
+    sha256: 0f86d759c11fe2741589c068838e8424abf9411a0f1c27aa40dd5983fe5952fd
+    width: 618
+    height: 376
+    byte_size: 22396
+    alt_text: 'Diagram from the paper, carrying the labels: S R O 81 P x 22 ° T Q. Not yet checked by
+      a person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 26, crop (357,599)-(567,723)pt
+- number: 38
+  page: 27
+  stem: In a regular pentagon, PQRST, PR intersects QS at O. calculateRQS.
+  options:
+    A: '360'
+    B: '720'
+    C: '1080'
+    D: '1440'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 39
+  page: 27
+  stem: Ifcosq =12/13, find 1 +cot2q
+  options:
+    A: 169/25
+    B: 25/169
+    C: 169/144
+    D: 144/169
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 40
+  page: 27
+  stem: 46 In the figureabove, YXZ=300,XYZ =1050andXY= 8cm.CalculateYZ.
+  options:
+    A: 162√cm
+    B: 8√2cm
+    C: 4√2cm
+    D: 2√2cm
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/308e583fa05917aa7955608defc4485b93109803087d23c8744c215db87f24b6.png
+    sha256: 308e583fa05917aa7955608defc4485b93109803087d23c8744c215db87f24b6
+    width: 374
+    height: 368
+    byte_size: 9496
+    alt_text: 'Diagram from the paper, carrying the labels: X 8 cm Z Y. Not yet checked by a person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 27, crop (77,138)-(199,259)pt
+  - file: docs/questions/utme/mathematics/figures/0fcf0b6a0abb182ffe840ca7e6bb94ac65ff9ed2a56adda2634cba7e5b995966.png
+    sha256: 0fcf0b6a0abb182ffe840ca7e6bb94ac65ff9ed2a56adda2634cba7e5b995966
+    width: 805
+    height: 602
+    byte_size: 34945
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 27, crop (30,126)-(308,331)pt
+- number: 41
+  page: 27
+  stem: In the figure above PQRis a semicircle. Calculate the area of the shaded region.
+  options:
+    A: 1252/ cm2
+    B: 1492/ cm2 7 7
+    C: 2431/ cm2
+    D: 2671/ cm2 7 2
+  proposed_skill: MATH.III.2.i
+  skill_reason: Proposed from the wording of the question, which is about mensuration. The paper prints
+    no direction to read instead.
+  notation_suspect: true
+  figures:
+  - file: docs/questions/utme/mathematics/figures/b23bdb4143dcc39a7c7658c596bd23812394819418921c08e899b355baebad1d.png
+    sha256: b23bdb4143dcc39a7c7658c596bd23812394819418921c08e899b355baebad1d
+    width: 364
+    height: 386
+    byte_size: 24819
+    alt_text: 'Diagram from the paper, carrying the labels: O cm 6 c S m 8 cm T P R Q. Not yet checked
+      by a person.'
+    alt_text_source: model_proposed
+    source_location: PDF page 27, crop (89,354)-(208,481)pt
+  - file: docs/questions/utme/mathematics/figures/e13e66c04beb5c18a3312e2ba2ed097c172ebe0fc8bb9451841bc68d654254fb.png
+    sha256: e13e66c04beb5c18a3312e2ba2ed097c172ebe0fc8bb9451841bc68d654254fb
+    width: 805
+    height: 643
+    byte_size: 53889
+    alt_text: The question exactly as printed, kept because its notation — a stacked fraction, a radical
+      or a column of figures — does not survive text extraction. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 27, crop (30,342)-(308,561)pt
+- number: 42
+  page: 27
+  stem: A cylindrical pipe, made of metal is 3cm, thick if the internal radius ofthepipe is 10cm. Findthe
+    volumeof metalused inmaking3m ofthepipe
+  options:
+    A: 153πcm3
+    B: 207πcm3
+    C: 15,300πcm3
+    D: 20,700πcm3
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures: []
+- number: 43
+  page: 27
+  stem: Iftheheightoftwocircular cylindersareintheratio2:3 andtheirbase radii areinthe ratio9. whatistheratioof
+    their volume
+  options:
+    A: '27:32'
+    B: '27:23'
+    C: '23:32'
+    D: '21:27'
+  proposed_skill: MATH.III.2.i
+  skill_reason: Proposed from the wording of the question, which is about mensuration. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 45
+  page: 27
+  stem: The locus of a point which moves so that it is equidistant from twointersectingstraight lines
+    is the
+  options:
+    A: '480'
+    B: '840'
+    C: '920'
+    D: '2760'
+  proposed_skill: MATH.III.3.i
+  skill_reason: Proposed from the wording of the question, which is about loci. The paper prints no direction
+    to read instead.
+  notation_suspect: false
+  figures: []
+- number: 47
+  page: 27
+  stem: The mean of ten positivenumbers is 16. when another number is added, the mean becomes 18. find
+    the eleventh number.
+  options:
+    A: '3'
+    B: '16'
+    C: '18'
+    D: '30'
+  proposed_skill: MATH.V.2.i
+  skill_reason: Proposed from the wording of the question, which is about measures of location. The paper
+    prints no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 48
+  page: 27
+  stem: Below are the scores of a group of students in a test. Ifthe averagescoreis3.5, findthe value
+    ofx.
+  options:
+    A: '1'
+    B: '2'
+    C: '3'
+    D: '4'
+  proposed_skill: MATH.I.2.i
+  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
+    paper prints no direction, so this needs a person.'
+  notation_suspect: false
+  figures:
+  - file: docs/questions/utme/mathematics/figures/5818d8e1c8e2a2afbc177d6ae9be251cf011714c58bc4eb7052e8277ab309b5b.png
+    sha256: 5818d8e1c8e2a2afbc177d6ae9be251cf011714c58bc4eb7052e8277ab309b5b
+    width: 537
+    height: 121
+    byte_size: 8634
+    alt_text: Diagram from the paper, with no text labels. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 27, crop (343,418)-(524,449)pt
+- number: 49
+  page: 27
+  stem: Twonumbersareremovedat randomfrom thenumbers 1,2,3and 4. what is the probabilitythat thesum ofthe
+    numbers removed is even?
+  options:
+    A: 2/3
+    B: ½
+    C: 1/3
+    D: ¼
+  proposed_skill: MATH.V.5.i
+  skill_reason: Proposed from the wording of the question, which is about probability. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures: []
+- number: 50
+  page: 27
+  stem: Find the probabilitythat a number selected at random from 41to56isamultiple of9
+  options:
+    A: 1/9
+    B: 2/15
+    C: 3/16
+    D: 7/8
+  proposed_skill: MATH.V.5.i
+  skill_reason: Proposed from the wording of the question, which is about probability. The paper prints
+    no direction to read instead.
+  notation_suspect: false
+  figures:
+  - file: docs/questions/utme/mathematics/figures/1194a391c27de85bf33ccf608592fd8e7e8fd9d1ebf38feb22869efce516a2a3.png
+    sha256: 1194a391c27de85bf33ccf608592fd8e7e8fd9d1ebf38feb22869efce516a2a3
+    width: 657
+    height: 1993
+    byte_size: 240108
+    alt_text: Diagram from the paper, with no text labels. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 28, crop (81,69)-(305,775)pt
+  - file: docs/questions/utme/mathematics/figures/a92a902a1dca31c1529cd823e8b817077ff0d43503273eb9d066236f7243fe39.png
+    sha256: a92a902a1dca31c1529cd823e8b817077ff0d43503273eb9d066236f7243fe39
+    width: 737
+    height: 1929
+    byte_size: 222308
+    alt_text: Diagram from the paper, with no text labels. Not yet checked by a person.
+    alt_text_source: model_proposed
+    source_location: PDF page 28, crop (325,69)-(579,752)pt

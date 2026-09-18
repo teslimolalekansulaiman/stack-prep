@@ -38,7 +38,11 @@ FORMAT_VERSION = 1
 IMPORT_FORMAT = "waec-objective-transcription-1"
 CURRICULUM_NAMESPACE = "stackprep-curriculum-import-v1"
 QUESTION_NAMESPACE = "stackprep-question-import-v1"
-OPTION_KEYS = ("A", "B", "C", "D")
+#: JAMB papers up to the mid-1990s offered five options; the modern ones offer four. The
+#: schema allows A-F, so a paper's own shape decides how many a question has, and
+#: option_count records it.
+OPTION_KEYS = ("A", "B", "C", "D", "E")
+MINIMUM_OPTIONS = 4
 DEFAULT_IMPORTER = "Transcription import (model-proposed)"
 #: Skill mappings come from a model at import time. The number is a placeholder for a real
 #: estimate, and says only "this was proposed, not judged".
@@ -165,11 +169,18 @@ def prepare(
             continue
 
         options_raw = raw.get("options") or {}
-        options = {key: normalise(str(options_raw.get(key, ""))) for key in OPTION_KEYS}
-        missing = [key for key, value in options.items() if not value]
-        if missing:
+        options = {
+            key: normalise(str(options_raw.get(key, "")))
+            for key in OPTION_KEYS
+            if str(options_raw.get(key, "")).strip()
+        }
+        # A gap in the middle is damage; a missing E on a four-option paper is not.
+        expected = OPTION_KEYS[:len(options)]
+        missing = [key for key in expected if not options.get(key)]
+        if len(options) < MINIMUM_OPTIONS or missing:
             prepared.rejections.append(
-                Rejection(number, f"missing option(s): {', '.join(missing)}")
+                Rejection(number, "missing option(s): "
+                          + (", ".join(missing) or f"only {len(options)} provided"))
             )
             continue
         if any("[unclear]" in value.lower() for value in options.values()):
@@ -245,6 +256,7 @@ def prepare(
                 "instruction": normalise(str(raw.get("instruction") or "")) or None,
                 "stem": stem,
                 "options": options,
+                "option_keys": list(options),
                 "answer": answer,
                 "answer_confidence": confidence,
                 "skill_id": skills[skill_code],
@@ -651,7 +663,7 @@ async def load(args: argparse.Namespace) -> int:
                       answer_source, answer_confidence, mastery_level_number, level_source,
                       level_confidence, review_status)
                     VALUES ($1, $2, $3, 1, $4, $5, $6, 'mcq_single', 'auto_key', '[]'::jsonb,
-                      '[]'::jsonb, $7, $8, 4, $9, $10, $15, $11, $12, $13, $14,
+                      '[]'::jsonb, $7, $8, $16, $9, $10, $15, $11, $12, $13, $14,
                       'draft')
                     """,
                     version_id,
@@ -669,6 +681,7 @@ async def load(args: argparse.Namespace) -> int:
                     "model_proposed" if levels.get(item["number"]) else "unverified",
                     (levels.get(item["number"]) or {}).get("confidence"),
                     answer_source,
+                    len(item["option_keys"]),
                 )
                 if levels.get(item["number"]):
                     levelled += 1
@@ -693,7 +706,7 @@ async def load(args: argparse.Namespace) -> int:
                     version_id,
                     question_id,
                 )
-                for position, key in enumerate(OPTION_KEYS, start=1):
+                for position, key in enumerate(item["option_keys"], start=1):
                     await conn.execute(
                         """
                         INSERT INTO question_options (id, question_version_id, subject_id,
