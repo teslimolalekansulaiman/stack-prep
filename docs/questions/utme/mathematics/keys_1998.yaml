@@ -1,0 +1,146 @@
+# UTME 1998 Mathematics — answers worked out, question by question.
+# Computed, not read; see keys_2000.yaml for the format and the provenance.
+#
+# Twelve are absent rather than guessed: Q3 (the stem never says what to express in terms of
+# a), Q5, Q24 and Q32 (printed values no option can match), Q6, Q13 and Q46 (stems cut before
+# the figure they turn on), Q21, Q26, Q27, Q28, Q35 and Q48 (need a table, a Cayley table or
+# a diagram that was not captured).
+format_version: 1
+exam_year: 1998
+answers:
+  - number: 1
+    answer: B
+    confidence: high
+    working: "1011(2) = 11, so X = 14 in base 10, which is 20 in base 7."
+  - number: 2
+    answer: B
+    confidence: high
+    working: "(1/0.03)(0.024) = 0.8; its reciprocal is 1.25."
+  - number: 4
+    answer: C
+    confidence: high
+    working: "x(y-1) = 8 and x(y+1) = 4 give (y-1)/(y+1) = 2, so y = -3 and x = -2."
+  - number: 7
+    answer: A
+    confidence: high
+    working: "(35-q)r + 2qr = 35r + qr = r(35+q)."
+  - number: 8
+    answer: D
+    confidence: high
+    working: "Q U R = {2,3,4,5,6}; P U that = the whole universal set."
+  - number: 10
+    answer: A
+    confidence: high
+    working: "p + q + 1 = 2 and p - q + 1 = 4 give p = 2, q = -1."
+  - number: 11
+    answer: C
+    confidence: high
+    working: "r^2 - r(2p+q) + 2pq = (r - 2p)(r - q)."
+  - number: 12
+    answer: D
+    confidence: medium
+    working: "Reading it as Vx - V(x-2) = 1: 1 = 2V(x-2) gives x - 2 = 1/4, x = 9/4. The text layer lost the radicals."
+  - number: 13
+    answer: B
+    confidence: high
+    working: "Real roots need 9m^2 - 12(m^2-m-3) >= 0, i.e. (m-6)(m+2) <= 0, so -2 < m < 6."
+  - number: 14
+    answer: A
+    confidence: high
+    working: "(x+a)/(x-a) = m gives a(1+m) = x(m-1), so a/x = (m-1)/(m+1)."
+  - number: 15
+    answer: A
+    confidence: high
+    working: "2x^3 + 11x^2 + 17x + 6 = (2x+1)(x^2 + 5x + 6)."
+  - number: 16
+    answer: D
+    confidence: high
+    working: "6x^2 - x - 1 = (3x+1)(2x-1); matching gives 1/(3x+1) + 3/(2x-1)."
+  - number: 17
+    answer: B
+    confidence: high
+    working: "For x > 0, multiplying by 12x gives 4 + 6x > 3, true for every positive x."
+  - number: 18
+    answer: D
+    confidence: medium
+    working: "The line through (0,3) and (2,0) is 3x + 2y = 6; with both axes bounding the region, x >= 0, y >= 0, 3x + 2y >= 6."
+  - number: 19
+    answer: C
+    confidence: high
+    working: "2(2p-10) = (p+1) + (1-4p^2) gives 4p^2 + 3p - 22 = 0, so p = 2 or -11/4."
+  - number: 20
+    answer: D
+    confidence: medium
+    working: "1 - r^3 = 1/2 gives r^3 = 1/2, so r = 1/cube-root(2)."
+  - number: 22
+    answer: C
+    confidence: high
+    working: "x*3 = 2x - 3 and 2*x = x - 2; equating gives x = 1."
+  - number: 23
+    answer: B
+    confidence: high
+    working: "x(8 - 3 - 3x) - (4 - 4x - 3) = -3x^2 + 9x - 1."
+  - number: 29
+    answer: D
+    confidence: high
+    working: "60 at the circumference is 120 at the centre; chord = 2(V3)sin60 = 3 cm."
+  - number: 30
+    answer: D
+    confidence: high
+    working: "123200 cm^3 / ((22/7)(28^2)) = 123200/2464 = 50 cm."
+  - number: 31
+    answer: B
+    confidence: high
+    working: "NS = NT = 8 and SN = ST make the triangle equilateral of side 8: area = (V3/4)(64) = 16V3."
+  - number: 34
+    answer: D
+    confidence: high
+    working: "(cos x + sin x)(cos x - sin x) = 1 gives cos 2x = 1, so x = 0 or pi in the range."
+  - number: 36
+    answer: C
+    confidence: high
+    working: "The sine is greatest when 2x - 25 = 90, i.e. x = 57.5."
+  - number: 37
+    answer: A
+    confidence: medium
+    working: "With depressions of 45 and 30 the distances are 150 and 150V3, totalling 150(1+V3). The angles themselves are cut off in the print."
+  - number: 38
+    answer: A
+    confidence: high
+    working: "dy/dx = -1944(4x+5)^-3; at x = 1 that is -1944/729 = -8/3."
+  - number: 39
+    answer: D
+    confidence: high
+    working: "x/cos x = x sec x, whose derivative is sec x + x sec x tan x."
+  - number: 40
+    answer: A
+    confidence: medium
+    working: "sec^2 - tan^2 = 1, so the integral is the length of the interval: pi/2 over 0 to pi/2."
+  - number: 41
+    answer: D
+    confidence: high
+    working: "y = 3x^2 - 5x + c through (2,5) gives c = 3."
+  - number: 42
+    answer: A
+    confidence: high
+    working: "Mean 47/8 = 5.875 and median 6.5; 5.875 + 13 = 18.875, i.e. 19."
+  - number: 43
+    answer: C
+    confidence: high
+    working: "Modal class 10-14: 9.5 + (15/22)(5) = 12.9."
+  - number: 44
+    answer: A
+    confidence: high
+    working: "Deviations -1, 0, 1 give squares summing to 2; 2/3."
+  - number: 45
+    answer: C
+    confidence: high
+    working: "Mean x+1; deviations -x, 0, x give variance 2x^2/3 = 6, so x = 3."
+  - number: 49
+    answer: C
+    confidence: medium
+    working: "Reading it as either X or Y taking the gold: 2/5 + 1/3 = 11/15."
+  - number: 50
+    answer: A
+    confidence: high
+    working: "Ten of the sixteen products are at most 6: 10/16 = 5/8."
