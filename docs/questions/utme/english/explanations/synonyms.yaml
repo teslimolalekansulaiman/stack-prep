@@ -1,0 +1,437 @@
+# UTME Use of English — Synonyms (ENG.B.1.i)
+#
+# Keyed on the first eight characters of the question version's id. See README.md for the
+# rules these are written to.
+format_version: 1
+skill: ENG.B.1.i
+explanations:
+  bec7e112:
+    steps:
+      - "An impasse is a deadlock: neither side can move and nothing can go forward."
+      - "Gridlock is the same idea. Manifesto, party and rally are all political words, which is why they are offered, but none of them means stuck."
+    hint: "The word describes a situation, not a thing a party has or does."
+  7be4d3f9:
+    steps:
+      - "To be enthusiastic while awaiting a result is to be keyed up about it."
+      - "Agitated carries that stirred-up feeling. Elated is the near miss: it means already delighted, and the result was not yet known."
+    hint: "The result had not been announced yet, so the word cannot mean pleased."
+  2d30f5ab:
+    steps:
+      - "Absurd means so out of place that it invites laughter."
+      - "Ridiculous says the same thing. Smart and sensible are its opposites, and dirty is a different complaint about a uniform."
+    hint: "Ask whether the word is a compliment or a criticism, then pick the option on that side."
+  21459714:
+    steps:
+      - "Tardy means late — the law is slow to catch up with how attitudes change."
+      - "Slow is the same idea. Quick is its opposite and the commonest wrong answer."
+    hint: "Tardy is about time, not about how generous or narrow the law is."
+  4be2c23b:
+    steps:
+      - "A sumptuous meal is a lavish one — rich, plentiful and clearly not cheap."
+      - "Expensive is the closest of these. Insipid means tasteless, which is nearly the reverse."
+    hint: "The meal was for a wedding day. The word is a compliment about how grand it was."
+  fc7566c2:
+    steps:
+      - "To crouch over a paper is to lean low over it, bending the body down to look."
+      - "Bent over is the same movement. Wrote on and walked over describe other things you might do at a desk."
+    hint: "Crouching is a position of the body. Which option describes the same position?"
+  82cb2d2d:
+    steps:
+      - "A panacea is a cure-all — one remedy that is supposed to fix everything."
+      - "Cure is the same idea. Hope and foresight are things that might lead to a cure, not the cure itself."
+    hint: "The sentence says the panacea lies in planning and hard work. What is planning supposed to be for the economy?"
+  caf52e4f:
+    steps:
+      - "Retrenchment is cutting jobs to reduce costs, which is why thousands became victims of it."
+      - "Unemployment is what it produces and the closest option. Trench mentality plays on the sound of the word and means nothing like it."
+    hint: "Read the sentence: the workers became victims. Victims of what?"
+  af59b822:
+    steps:
+      - "To speak offhand is to speak without preparation — no notes, nothing written beforehand."
+      - "Unprepared is the match. The published key gives calmly, which describes how a speech sounds rather than how it was made, and this question is flagged for a second look."
+    hint: "Offhand is about preparation, not about manner."
+  69e7c8a7:
+    steps:
+      - "An assortment of clothes is a mixture of different ones thrown together."
+      - "Melange is the same idea — a French word for a mixture. Sameness and homogeneity are its opposites."
+    hint: "Assortment means variety. Two of these options mean the reverse of variety."
+  35ae3d35:
+    steps:
+      - "To be astounded is to be struck by surprise — he did not expect her to come out of the shrine."
+      - "Astonished is the same word in plainer dress. Overwhelmed is about being swamped rather than surprised."
+    hint: "Both halves of the pair start the same way. That is a fair clue here."
+  262cba7c:
+    steps:
+      - "An apposite remark fits the matter in hand exactly."
+      - "Appropriate is the same idea. Inconsequential is its opposite, and adequate means merely enough, which is weaker."
+    hint: "Do not read apposite as opposite. It means well suited to the point."
+  b80a7a2a:
+    steps:
+      - "A blemish is a mark or flaw — a reputation without one has nothing against it."
+      - "Fault is the same idea. Problem and struggle are troubles of a different kind, not marks against a name."
+    hint: "A blemish is a small spot on something otherwise clean. What is that in a reputation?"
+  ca6dd085:
+    steps:
+      - "To be eligible for a post is to meet the conditions for holding it."
+      - "Qualified is the same idea. Nominated and invited are things that happen to a person; eligible is something they already are."
+    hint: "Eligible is about meeting requirements, not about being chosen."
+  97d64c71:
+    steps:
+      - "An abridged version of a book has been cut down — the same story in fewer pages."
+      - "A shortened one is the same thing. An enlarged version is its opposite."
+    hint: "Abridge means to make shorter. Which option says so plainly?"
+  286b486b:
+    steps:
+      - "The inception of a newspaper is its beginning — when it first appeared, in 1983."
+      - "Commencement is the same idea. Publication is what the paper does every day, not the moment it started."
+    hint: "The sentence gives you a year. The word must mean the start."
+  3f9e1315:
+    steps:
+      - "A detached person keeps their distance and does not get involved."
+      - "Indifferent is the closest: not caring either way. Friendly and passionate are both its opposites."
+    hint: "Detached describes someone who holds back from feeling, not someone who is careless."
+  d5596d00:
+    steps:
+      - "To dwell in a cottage is to live in it."
+      - "Lived is the plain word for the same thing. Slept and sat are things you do in a house rather than what dwelling means."
+    hint: "Dwell is an old word with a very ordinary meaning."
+  1b92079e:
+    steps:
+      - "An ignominious end is a humiliating one — the show finished in shame."
+      - "Disgraceful is the same idea. Satisfactory and palatable both describe an end nobody would be ashamed of."
+    hint: "The word follows a mistake, so it must be a bad end. Which option is the strongest kind of bad?"
+  0ba79220:
+    steps:
+      - "To compliment someone is to say something good about them."
+      - "Praises is the same idea. Complements is a different word altogether — it means completes — and it is there to catch the spelling."
+    hint: "Watch the spelling: compliment with an i is the one about praise."
+  66b368fd:
+    steps:
+      - "To be ensnared into a relationship is to be caught in it by a trick, as an animal is caught in a snare."
+      - "Tricked is the same idea, and it explains why she is angry. Two of the options printed here are identical, which is a fault in the source."
+    hint: "A snare is a trap. What has been done to someone who was caught in one?"
+  bb4c9e45:
+    steps:
+      - "Corrugated sheets are folded into ridges, which is what makes them stiff enough to roof with."
+      - "Folded is the match. The published key gives iron, which is what the sheets are made of rather than what corrugated means, and this question is flagged for a second look."
+    hint: "Corrugated describes the shape of the sheet, not the metal it is made from."
+  1e42a1ca:
+    steps:
+      - "An astute move is a sharply judged one — the stockbroker saw the moment and took it."
+      - "A shrewd move says the same. A bad and an unprofitable move are both its opposites."
+    hint: "The word is a compliment about judgement. Which option is the other word for good judgement?"
+  02bd7cc2:
+    steps:
+      - "A tactful person handles others carefully and avoids giving offence."
+      - "Discreet is the closest, and the source spells it discrete. Hard-working and passionate describe effort and feeling, not care with people."
+    hint: "Tact is about handling people. Which option is about that, rather than about how hard someone works?"
+  7796bdd7:
+    steps:
+      - "Dementia is the loss of memory and reason that can come with age."
+      - "Senility is the same idea. Lucidity and sagacity are both its opposites — clear thinking and wisdom."
+    hint: "Two of these options describe a mind working well. The word describes one that is not."
+  b86e01cd:
+    steps:
+      - "A deleterious effect is a damaging one — the drug sets a child's development back."
+      - "Harmful says the same. Debilitating is close but means weakening in particular, and helpful and healing are opposites."
+    hint: "The word is a warning about drugs. It must mean damaging."
+  ed3faa8a:
+    steps:
+      - "A belligerent person is always ready for a fight."
+      - "Combative is the same idea — the word comes from the Latin for waging war. Innocent is its opposite."
+    hint: "Belligerent shares a root with belligerent nations at war. What does that make a person?"
+  fe2a3a6d:
+    steps:
+      - "A forlorn figure is alone and miserable — the child sitting outside the class."
+      - "Lonely and unhappy says both halves of it. The other options describe how the child looks rather than how the child feels."
+    hint: "Forlorn is about being abandoned and sad, not about appearance."
+  b10c2c3d:
+    steps:
+      - "When a circular supersedes earlier ones, it takes their place: the old ones no longer apply."
+      - "Displaces is the same idea. Eliminates is too strong — the old letters still exist, they simply no longer count."
+    hint: "Super- here means over. The new circular sits over the old ones."
+  ad8af89e:
+    steps:
+      - "To exacerbate a problem is to make it worse."
+      - "Aggravated is the same idea. Exaggerated sounds similar and means something else — to overstate — and it is the trap."
+    hint: "Exacerbate and exaggerate are two different words. One is about making worse, the other about making bigger in the telling."
+  7c53e0fe:
+    steps:
+      - "To give someone a taste of their own medicine is to do to them what they have been doing to others."
+      - "Revenged on is the same idea. Cured plays on the word medicine, which is exactly what the idiom is not about."
+    hint: "This is an idiom, so the words do not mean what they say. Ask what happens to the man, not what he swallows."
+  0c8ab3ff:
+    steps:
+      - "A derogatory remark runs someone down — Okibe was rusticated for what he said about the principal."
+      - "Unsavoury is the closest: distasteful, not fit to be said. Complimentary is its opposite."
+    hint: "He was punished for the remark, so the word must describe something offensive."
+  184f6b55:
+    steps:
+      - "Sovereignty is the right to govern yourself without answering to anyone else."
+      - "Autonomy is the same idea. Leadership and position are about who is in charge, not about self-rule."
+    hint: "The sentence is about states giving up power over themselves, not about who leads them."
+  ea0cc225:
+    steps:
+      - "A virtuous person lives by high moral standards."
+      - "Upright says the same thing. Clever and intelligent are about ability, not about goodness, and devilish is the opposite."
+    hint: "Virtue is about character, not about brains."
+  2349418d:
+    steps:
+      - "A response typical of a lazy teacher is one you would expect from that kind of teacher."
+      - "Characteristic is the same idea. Symptomatic is close but suggests a sign of illness, and universal claims far more than typical does."
+    hint: "Typical means what you would expect. Which option means the same without adding anything?"
+  4efb8637:
+    steps:
+      - "An inveterate gambler has done it so long that the habit is fixed."
+      - "Long time and incorrigible catches both halves: settled by time, and beyond correcting."
+    hint: "The word is about how deep the habit goes, not about luck or character."
+  9a5adffb:
+    steps:
+      - "To be petrified is to be so frightened you cannot move — the word means turned to stone."
+      - "Frightened is the plain version. Agitated is too mild, and delighted and happy are opposites."
+    hint: "He could not give the remarks at all. The word must be a strong kind of fear."
+  8a7d28c7:
+    steps:
+      - "A road shimmers in the heat when the air above it wavers and throws back the light."
+      - "Shines is the closest of these. Darkens is the opposite, and lightens describes a change in colour rather than a giving-off of light."
+    hint: "Shimmering is about light, and about light moving."
+  07014d17:
+    steps:
+      - "To be vulnerable to a disease is to be open to catching it."
+      - "Liable is the same idea. Immune is its opposite and the commonest wrong answer."
+    hint: "Vulnerable means able to be harmed. Which option means able to be affected?"
+  83d6eb67:
+    steps:
+      - "Someone furtive behaves as though they have something to hide — glancing about, moving quietly."
+      - "Sly is the closest. Unfriendly and sad describe mood rather than concealment."
+    hint: "Furtive is about sneaking, not about being cross."
+  5683f03b:
+    steps:
+      - "To speak extempore is to speak without notes, making it up as you go."
+      - "Off the cuff is the idiom for exactly that, and it is the better answer. The published key gives out-of-hand, which usually means refused without consideration, and this question is flagged for a second look."
+    hint: "Extempore is about speaking without preparation. Which option is the idiom for that?"
+  ea7d0744:
+    steps:
+      - "An inkling is a slight hint — enough to begin to guess, not enough to know."
+      - "A possible idea catches that. A summary would be the whole of it, which is more than an inkling gives."
+    hint: "An inkling is a small amount of understanding, not a complete account."
+  081e13b9:
+    steps:
+      - "To espouse a policy is to take it up and argue for it."
+      - "Supported is the same idea. Condemned and rejected are opposites, and outlined is merely describing it."
+    hint: "The word says what the ruling party did for these policies. Were they for or against them?"
+  73994605:
+    steps:
+      - "To foreclose an outcome is to shut it out in advance, so it can no longer happen."
+      - "Exclude is the same idea. Forgo means to go without something you could have had, which is a choice rather than a closing off."
+    hint: "Fore- means beforehand and close means shut. Put them together."
+  64a8a89a:
+    steps:
+      - "To explode a widely held belief is to blow it apart by showing it is wrong."
+      - "Debunked is the same idea. Confirmed is its opposite, and challenged is weaker — a challenge may fail, an explosion has already succeeded."
+    hint: "The word is not about noise. Ask what happens to a belief that is exploded."
+  9f21e845:
+    steps:
+      - "An ardent supporter feels strongly and shows it."
+      - "Passionate is the same idea. Cogent describes an argument rather than a person, and ignorant is unrelated."
+    hint: "Ardent comes from a word meaning burning. What does that make a supporter?"
+  dfd62734:
+    steps:
+      - "An epitaph is what is carved over a grave, so the scholar's epitaph is the stone that carries it."
+      - "Monument is the closest of these — the thing that was demolished. Embodiment and book do not describe anything that can be knocked down."
+    hint: "The sentence says it was demolished, so the word must be a physical thing."
+  fe6e9479:
+    steps:
+      - "To work with ardour is to work with strong feeling and energy."
+      - "Enthusiasm is the same idea. Indifference and discouragement are both opposites."
+    hint: "Ardour and ardent are the same word in two forms, both about burning feeling."
+  03b2f1ab:
+    steps:
+      - "The vanguard is the front of an advancing army, and so the front of any movement."
+      - "Leading position says the same. Emerging position is close but means still coming up, not already in front."
+    hint: "The word describes where in the line someone is, and it is not the back."
+  f8817e13:
+    steps:
+      - "To be on the verge of something is to be right at the edge of it, about to do it."
+      - "Brink is the same idea. Shore, summit and height are all edges of a kind, but only brink is used this way."
+    hint: "You can be on the brink of a decision. Can you be on the summit of one?"
+  675ba60a:
+    steps:
+      - "An eternal argument is one that never stops — it has been going on and on."
+      - "Constant is the same idea. Strong describes how fierce it is rather than how long it lasts."
+    hint: "Eternal is about time. Which option is also about time?"
+  537712dc:
+    steps:
+      - "Feeble means weak: a lamb has very little strength."
+      - "Weak is the plain word for it. Quiet and loving describe temperament rather than strength."
+    hint: "The word is about how much strength the animal has."
+  77762232:
+    steps:
+      - "To scream is to cry out loudly in fright when she saw something behind her."
+      - "Wailed is the closest of these — a long loud cry. Protested and stormed out describe reactions of a different kind."
+    hint: "The word is a sound, not an action. Which option is also a sound?"
+  0e12726c:
+    steps:
+      - "An exhibition is a showing — things put out for people to come and look at."
+      - "Display is the same idea. Examination sounds similar in setting and means something else entirely."
+    hint: "The word is about putting things on show, not about testing anyone."
+  b36bb532:
+    steps:
+      - "To have a nose for stories is to sense where a story is without being told — a journalist's instinct."
+      - "An instinct is the match. A command would be an order given to him, which reverses who is doing the sensing."
+    hint: "This is an idiom about a sense, not about a part of the body."
+  b5654ae3:
+    steps:
+      - "Incessant meetings never stop — one after another, without a break."
+      - "Constant is the same idea. Irregular is its opposite, and planned describes how meetings are arranged rather than how often they come."
+    hint: "The direction here asks for the NEAREST meaning. Incessant is about frequency."
+  7e04050b:
+    steps:
+      - "Favourable weather for tennis is weather that helps rather than hinders."
+      - "Encouraging is the same idea. Disapproving is its opposite, and impartial means taking no side, which weather cannot do."
+    hint: "The word says the weather is on your side. Which option says the same?"
+  5f800082:
+    steps:
+      - "To look aghast at the questions is to look shocked and dismayed by them."
+      - "Dismayed is the same idea. Satisfied and relaxed are both opposites of how candidates looked."
+    hint: "Aghast is a strong word for shocked. The candidates were not pleased."
+  6f2eed61:
+    steps:
+      - "A jaunty smile is a bright, breezy one — the smile of someone in good spirits."
+      - "Cheerful is the same idea. An inviting smile is close but says something about what it asks of you rather than about the mood behind it."
+    hint: "Jaunty describes a mood. Which option is a plain word for that mood?"
+  87d0b2e9:
+    steps:
+      - "A doddle is something very easily done — the first round gave them no trouble."
+      - "Easy is the plain word for it. Dodgy sounds like doddle and means the opposite sort of thing."
+    hint: "Doddle is informal British English for a walkover."
+  d558ffc6:
+    steps:
+      - "A lustful glance at a neighbour's wife is one full of wanting."
+      - "Covetous is the same idea: wanting what belongs to someone else. Envious is close but is about resenting what another has rather than desiring it."
+    hint: "The sentence names whose wife she is. That points to the word about wanting what is not yours."
+  745ca6eb:
+    steps:
+      - "To foment unrest is to stir it up and keep it going."
+      - "Inciting is the same idea. Preventing and discouraging are both opposites — which is what an accusation would not be about."
+    hint: "He was accused, so the word must describe something blameworthy."
+  5c45bda5:
+    steps:
+      - "To learn a great deal from watching is to find things out by doing it."
+      - "Discover is the closest. Accumulate is about gathering quantity and invent is about making something new, neither of which is learning."
+    hint: "The sentence is about finding out, not about collecting or creating."
+  c4b1eb5d:
+    steps:
+      - "To sever diplomatic relations is to cut them off."
+      - "Breaking is the same idea. Strengthening and securing are both opposites."
+    hint: "Sever means to cut. What does cutting relations amount to?"
+  38c6a636:
+    steps:
+      - "A caustic remark burns — the word is used of acid, and then of speech that stings."
+      - "Sarcastic is the closest. Friendly is its opposite, and tangible describes something you can touch."
+    hint: "Caustic is a chemistry word borrowed for speech. What kind of speech burns?"
+  e94698a4:
+    steps:
+      - "When something does not quite work out, it does not come off."
+      - "Come off is the phrasal verb for succeeding. The other three are ordinary phrases and none of them means to succeed."
+    hint: "Try each option in the sentence: it didn't quite come ... . Only one sounds like English."
+  e05b9ff2:
+    steps:
+      - "A horrid performance is a thoroughly bad one."
+      - "Terrible is the same idea. Commendable and encouraging are both opposites."
+    hint: "Horrid comes from the same root as horror. It is not a compliment."
+  536ffaf3:
+    steps:
+      - "The sentence asks for the basic facts and warns against needless details — details that are not required."
+      - "Extraneous is the word for details that do not belong, and it is the closest match. The published key gives essential, which is the reverse, and this question is flagged for a second look."
+    hint: "Needless means not needed. Which option means the same?"
+  4ce3505d:
+    steps:
+      - "Animated colours are lively ones — they seem to move and catch the eye."
+      - "Sparkling carries the same liveliness. Dull is the opposite, and black and deep describe particular colours rather than liveliness."
+    hint: "Animated means brought to life. What do colours look like when they are lively?"
+  d01781fc:
+    steps:
+      - "A strong distaste for alcohol is a strong dislike of it."
+      - "Aversion is the same idea. Love and desire are opposites."
+    hint: "Dis- reverses taste. The word means not wanting."
+  80309d08:
+    steps:
+      - "A schism is a split — a group breaking into parts that no longer agree."
+      - "Disagreement is the closest. Understanding is its opposite."
+    hint: "The word describes what is happening inside the organization. Is it coming together or apart?"
+  c1f73c20:
+    steps:
+      - "An unbending character does not give way under pressure."
+      - "Steady is the closest compliment of that kind. Wavering and unstable are both opposites, and mobile is about movement rather than resolve."
+    hint: "Sule admires the quality, so the word is a compliment. Which option is also a compliment?"
+  96541df0:
+    steps:
+      - "To detest honesty is to hate it."
+      - "Hates is the plain word. Likes is the opposite, and the stem has had its words moved about by the extraction."
+    hint: "Detest is one of the strongest words for dislike."
+  46723868:
+    steps:
+      - "Incessant meetings never stop — one after another with no break."
+      - "Constant is the same idea. Irregular is its opposite."
+    hint: "Incessant is about how often meetings come, not about how they are arranged."
+  ea8b9b3e:
+    steps:
+      - "An exhibition is a showing: things put out for people to come and look at."
+      - "Display is the same idea. Examination sounds like it belongs in the same world and means something else."
+    hint: "The word is about putting things on show."
+  2aaf986d:
+    steps:
+      - "A doddle is something very easily done."
+      - "Easy is the plain word for it. Exasperating is its opposite, and dodgy is there because it sounds similar."
+    hint: "Doddle is informal British English for something that takes no effort."
+  3adcaa46:
+    steps:
+      - "To have a nose for stories is to sense where a story is without being told."
+      - "An instinct is the match. A command would be an order given to him, which is the wrong way round."
+    hint: "An idiom about a part of the body rarely means anything to do with that part."
+  a43e7a13:
+    steps:
+      - "To scream on seeing something behind you is to cry out loudly in fright."
+      - "Wailed is the closest — a long, loud cry. Protested and stormed out are reactions rather than sounds."
+    hint: "The word is a sound. Only one option is also a sound."
+  5302645f:
+    steps:
+      - "Favourable weather for tennis is weather that helps rather than hinders."
+      - "Encouraging is the same idea. Disapproving is its opposite, and impartial means taking no side, which weather cannot do."
+    hint: "The word says the weather is on your side."
+  0280e7a2:
+    steps:
+      - "To look aghast at the questions is to be shocked and dismayed by them."
+      - "Dismayed is the same idea. Fulfilled and satisfied are both opposites of the candidates' faces."
+    hint: "Aghast is a strong word for shocked."
+  bf0a404c:
+    steps:
+      - "An eternal argument is one that never stops."
+      - "Constant is the same idea. Strong describes how fierce it is rather than how long it goes on."
+    hint: "Eternal is about time. Which option is also about time?"
+  733a8eff:
+    steps:
+      - "To aver something is to state it firmly: the witness said plainly that she had seen Dosun there."
+      - "Affirmed and confirmed both carry that meaning. The published key gives denied, which is the reverse, and this question is flagged for a second look."
+    hint: "Averring is asserting. Two options here mean assert."
+  60349721:
+    steps:
+      - "Frugality is carefulness with money — spending little, which is what a high cost of living calls for."
+      - "Economy is the match, and prudence is close. The published key gives extravagance, which is the opposite, and this question is flagged for a second look."
+    hint: "The sentence says the cost of living is high. Does that call for spending more or less?"
+  255f1cbb:
+    steps:
+      - "To underscore a point is to underline it — to give it extra weight."
+      - "Emphasizes is the match. The published key gives clarifies, which is about making a point clear rather than making it strongly, and this question is flagged for a second look."
+    hint: "Underscore is literally to draw a line under. Why do people underline things?"
+  48703e6a:
+    steps:
+      - "Adroit handling of a crisis is skilful handling — done deftly and well."
+      - "Skilful is the match. Clumsy and tactless are both opposites, and they are what everyone would not have admired."
+    hint: "The manager was admired, so the word is a compliment."
+  969800b0:
+    steps:
+      - "An ignoble role is a shameful one, which is why the principal took exception to it."
+      - "Dishonourable is the match. The published key gives honourable, which is the reverse, and this question is flagged for a second look."
+    hint: "The prefix ig- here is a negative: ignoble is the opposite of noble."

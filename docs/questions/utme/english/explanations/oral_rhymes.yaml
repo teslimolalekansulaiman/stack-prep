@@ -1,0 +1,208 @@
+# UTME Use of English — Rhymes and sounds (ENG.C.3.i)
+#
+# The printed block mixes three kinds of question: which word rhymes, which word has the same
+# vowel sound, and which word has the same consonant sound as the letters underlined. The
+# explanations say which kind each one is, because knowing that is half the work.
+format_version: 1
+skill: ENG.C.3.i
+explanations:
+  d4e33344:
+    steps:
+      - "Boys ends in the sound /ɔɪz/ — the oy of toy, then a z."
+      - "Noise ends the same way. Moist has the same vowel but finishes with a t, and stays and elbows have different vowels altogether."
+    hint: "Say the words aloud and listen from the vowel to the end. Spelling will mislead you here."
+  e44d369e:
+    steps:
+      - "Shine ends in /aɪn/ — the long i of my, then an n."
+      - "Fine is the same. Machine looks as though it should match but its i is said /iː/, and clean has that same /iː/."
+    hint: "The letter i is said two different ways in these options. Listen rather than look."
+  166a57b4:
+    steps:
+      - "Seer ends in /ɪə/ — the sound in here and beer."
+      - "Spear is the same. Snare, spare and square all have /eə/, the sound in air."
+    hint: "Three of these options share one sound and only one shares the word's. Say them in pairs."
+  bc1cac78:
+    steps:
+      - "Fuel is said /ˈfjuːəl/ — a long oo followed by a light second syllable."
+      - "Cruel matches it. Fool and rule have the same oo but stop there, with no second syllable."
+    hint: "Count the syllables before you choose. Two of these options have only one."
+  e4a50e59:
+    steps:
+      - "Sheer ends in /ɪə/, the sound in here."
+      - "Ear is the same sound on its own. Care has /eə/, and Sheila and sherry only look similar."
+    hint: "The question is about the sound at the end, not about how the word begins."
+  daa4500b:
+    steps:
+      - "Rite is said /raɪt/ — it is a homophone of right and write."
+      - "Wright is that same word again, spelled a third way. Wit, list and rim all have a short i."
+    hint: "Two of these are pronounced identically. The spelling is the only difference."
+  4031ef17:
+    steps:
+      - "Joys ends in /ɔɪz/ — the oy of toy, then a z."
+      - "Boys is the same. Pots and stays have different vowels, and elbow does not end in that z sound at all."
+    hint: "Listen from the vowel onwards, and include the final sound."
+  a8ae8dd5:
+    steps:
+      - "Call ends in /ɔːl/ — a long aw followed by l."
+      - "Wall is the same. Dull has a short u and quail has the vowel of day."
+    hint: "The a in call is not said like the a in cat. Say it aloud."
+  02c19f7c:
+    steps:
+      - "Ever is said /ˈevə/ — a short e, then the weak ending of teacher."
+      - "Never is the same with an n in front. Fever has a long ee, and favour has the vowel of day."
+    hint: "The first vowel decides this one. Two of the options have long vowels there."
+  79363185:
+    steps:
+      - "Keep ends in /iːp/ — a long ee, then p."
+      - "Reap is the same sound spelled differently. Threat and dead both have a short e, and seethe ends in a th."
+    hint: "Both ee and ea can spell the long ee sound. Two of these options do not have it."
+  b36210bc:
+    steps:
+      - "Tax ends in /æks/ — a short a, then the ks that x stands for."
+      - "Lacks is the same sound, spelled with cks. The published key gives ask, which has neither the same vowel nor the same ending, and this question is flagged for a second look."
+    hint: "The letter x is two sounds, k and s. Which option ends with both?"
+  60588a8b:
+    steps:
+      - "Bore is said /bɔː/ — the long aw sound of saw."
+      - "Call has that same vowel. Curl, slot and hum each have a different one."
+    hint: "The question is about the vowel, and the r in bore is not pronounced in this accent."
+  9eec7ee7:
+    steps:
+      - "Head has a short e — /hed/."
+      - "Said is pronounced /sed/, which matches it exactly despite the spelling. Heard and herd both have the vowel of bird."
+    hint: "Said is not pronounced the way it is spelled. Say it in a sentence and listen."
+  fb160d6d:
+    steps:
+      - "Sky ends in /aɪ/ — the long i of my."
+      - "Cite has that same vowel. Eats has a long ee, breaks has the vowel of day, and coil has oy."
+    hint: "The letter y at the end of sky is doing the job of a long i."
+  f117a866:
+    steps:
+      - "Loath ends in /θ/ — the th of thin, said with no voice behind it."
+      - "Thaw begins with that same sound. Breathe ends in the voiced th of this, and that begins with it."
+    hint: "English has two th sounds. Put your hand on your throat: one buzzes and one does not."
+  0ab184e6:
+    steps:
+      - "Van begins with /v/, a sound made with the teeth on the lip and the voice on."
+      - "Of ends with that same /v/, even though it is spelled with an f. Often, off and physics all have the voiceless /f/."
+    hint: "One of these options is spelled with f but said with a v."
+  90c3ff94:
+    steps:
+      - "Lodge ends in /dʒ/ — the j sound of judge."
+      - "Soldier has that same sound in the middle. Rogue ends in a hard g, go has no such sound, and measure has the softer /ʒ/."
+    hint: "The letters dge always make the j sound. Which option has it too?"
+  4e0e1a61:
+    steps:
+      - "Suite is pronounced /swiːt/ — it sounds exactly like sweet."
+      - "Sweet is that word. Tree and bleat have the same long ee but different beginnings, and breath has a short e."
+    hint: "Suite is not said the way it looks. It is a homophone of an everyday word."
+  53fad636:
+    steps:
+      - "Cart ends in /ɑːt/ — a long ah, then t."
+      - "Part is the same. Cat has a short a, and lash and pack differ in both vowel and ending."
+    hint: "The vowel in cart is long. Only one option has the same long vowel and the same ending."
+  b532b30a:
+    steps:
+      - "Sight is said /saɪt/ — long i, then t."
+      - "Cite is that same word in sound. Skate has the vowel of day, short has aw, and plait is pronounced like plat."
+    hint: "Two of these words are homophones. Say each option aloud."
+  3c75cf17:
+    steps:
+      - "Waiter has the vowel /eɪ/ in its first syllable — the sound of day."
+      - "Flavour has that same vowel first. Cite has long i, road has long o, and hair has the vowel of air."
+    hint: "Compare the stressed syllables, not the endings."
+  6e7c0a8d:
+    steps:
+      - "Flee is said /fliː/ — a long ee."
+      - "Field has that same long ee. Skate has the vowel of day, faith likewise, and rid has a short i."
+    hint: "The ie in field is said as a long ee, not as two sounds."
+  ee427a41:
+    steps:
+      - "Palm is said /pɑːm/ — a long ah, with the l silent."
+      - "Ranch has that same long ah in this accent. Blunt and lunch have a short u, and florid has a short o."
+    hint: "The l in palm is not pronounced. Listen to the vowel that is left."
+  3aa85c91:
+    steps:
+      - "Phantom begins with /f/ — ph is a way of spelling that sound."
+      - "Physics begins with the same ph. Pew and phew begin differently, and party begins with a plain p."
+    hint: "Ph is one sound, not two. Which other option spells that sound the same way?"
+  721154e6:
+    steps:
+      - "Chest begins with /tʃ/ — the ch of church."
+      - "Fixture has that same sound in the middle, where ture is said chuh. School has a hard k, and charisma begins with k as well."
+    hint: "Ch is said three ways in English: church, school and machine. Only one option matches chest."
+  da793592:
+    steps:
+      - "Epitaph ends in /f/ — the ph again standing for an f."
+      - "Fan begins with that same sound. Pneumonia and pseudo both begin with silent letters, and paper has a plain p."
+    hint: "Say the end of the word aloud. What single sound does ph make?"
+  7e03cac5:
+    steps:
+      - "Ever is said /ˈevə/, with a short e."
+      - "Never matches it exactly. Fever has a long ee and favour has the vowel of day."
+    hint: "The first vowel decides it. Two options have long vowels there."
+  e190bec9:
+    steps:
+      - "Cable ends in /eɪbl/ — the vowel of day, then b and l."
+      - "Able is that same ending on its own. Bible has long i, and marble has the vowel of car."
+    hint: "Take the first sound off cable and see what is left."
+  af908aa9:
+    steps:
+      - "Mail is said /meɪl/ — the vowel of day, then l."
+      - "Bale is the same. Girl and galle have different vowels, and slate ends in t."
+    hint: "Both ai and a-e spell the same vowel here."
+  4e9f5f48:
+    steps:
+      - "The a in tolerated is said /eɪ/, the vowel of day."
+      - "Stale has that vowel. Kneel has a long ee, and met and mat have short vowels."
+    hint: "Say the word and find which syllable carries an a. That is the one to match."
+  7b6b3d72:
+    steps:
+      - "The ear in gearbox is said /ɪə/ — the sound in here."
+      - "Beer has that same sound. Bare has the vowel of air, and feature and teacher have long ee followed by a weak syllable."
+    hint: "The letters ear are said several ways in English. Listen rather than look."
+  e91d8da7:
+    steps:
+      - "The si in confusion is said /ʒ/ — the soft sound in the middle of vision."
+      - "Measure has that same sound. Mission, correction and caution all have the harder /ʃ/ of ship."
+    hint: "English has two sounds spelled with s or t before -ion. One buzzes and one hisses."
+  86f820cf:
+    steps:
+      - "The ti in tertiary is said /ʃ/ — the sh of ship."
+      - "Shame begins with that sound. Question has /tʃ/, and catch and chair have it too."
+    hint: "Sh and ch are different sounds. Say the word slowly and decide which one you hear."
+  29a40be6:
+    steps:
+      - "Poster has the vowel /əʊ/ in its first syllable — the long o of go."
+      - "Motor has that same vowel first. Jotter has a short o, and counter and heater have different vowels again."
+    hint: "Compare the first syllables, which are the stressed ones in all four words."
+  ff83ea28:
+    steps:
+      - "Cowed is said /kaʊd/ — the ow of now, then d."
+      - "Loud is the same. Low and flow have the long o of go, and cooed has a long oo."
+    hint: "The letters ow spell two different sounds: now and know. Which one is in cowed?"
+  50f5a0a6:
+    steps:
+      - "Taught is said /tɔːt/ — the long aw of saw, with the gh silent."
+      - "Law has that same vowel. Aunt and count have different vowels, and plateau ends in a long o."
+    hint: "The gh in taught makes no sound at all. Listen to the vowel."
+  19928856:
+    steps:
+      - "Distribution is stressed on its third syllable: dis-tri-BU-tion."
+      - "This is a word-stress question rather than a rhyme, and it sits in the rhyme block in the source. It is flagged for re-classification."
+    hint: "Say the word at normal speed and feel which syllable you push hardest."
+  e3179bb5:
+    steps:
+      - "Irrevocable is stressed on its second syllable: ir-RE-vo-cable — or, in the spelling the paper uses, irreVOcable."
+      - "This is a word-stress question rather than a rhyme, and it is flagged for re-classification."
+    hint: "The stress is earlier in this word than most people expect. Say it in a sentence."
+  c9bd757c:
+    steps:
+      - "Stressing ACROSS in 'My house is across the road' answers the question of where the house is in relation to the road."
+      - "Is my house on the road? is the question that stress is answering. This is an emphatic-stress question rather than a rhyme, and it is flagged for re-classification."
+    hint: "The stressed word is the answer. Work out what question that word would be answering."
+  5dac3f36:
+    steps:
+      - "Stressing AT in 'The shop closes at 4pm' insists on the exact time rather than an approximate one."
+      - "Does the shop close by 4pm? is the question that stress answers. This is an emphatic-stress question rather than a rhyme, and it is flagged for re-classification."
+    hint: "Emphasis on a small word like at usually corrects something. What is being corrected?"

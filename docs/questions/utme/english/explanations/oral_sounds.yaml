@@ -1,0 +1,158 @@
+# UTME Use of English — Vowels (ENG.C.1.i) and consonants (ENG.C.2.i)
+#
+# Each asks for the option whose underlined letters make the same sound as the word given.
+# The explanations name the sound and say what the trap is, because in nearly every one of
+# these the trap is a spelling that looks right and sounds wrong.
+format_version: 1
+skill: ENG.C.1.i and ENG.C.2.i
+explanations:
+  2ae400f4:
+    steps:
+      - "Coup is said /kuː/ — the p is silent and the vowel is a long oo."
+      - "Hoot has that same long oo. Scout has the ow of now, and couple has a short u."
+    hint: "Coup is a French word kept whole. The p is not pronounced."
+  1b47fb4a:
+    steps:
+      - "Indict is said /ɪnˈdaɪt/ — the c is silent and the second syllable rhymes with night."
+      - "Bright has that same long i. Fish, pick and brick all have a short i."
+    hint: "The c in indict makes no sound. Say the word as a lawyer would."
+  f1b430e3:
+    steps:
+      - "Roared has the vowel /ɔː/ followed by d — the long aw of saw."
+      - "Towered is the closest of these in this accent. Rod has a short o, and coast has the long o of go."
+    hint: "The r in roared does not make its own sound here; listen to the vowel before it."
+  dd99ceae:
+    steps:
+      - "The u in bubble is a short /ʌ/ — the u of cup."
+      - "Bumper has that same short u. Bull has the /ʊ/ of put, and guy and gurgle are different again."
+    hint: "The letter u has two common short sounds: cup and put. Which is in bubble?"
+  15320389:
+    steps:
+      - "Weight begins with /w/ and the gh is silent; the vowel is the /eɪ/ of day."
+      - "Wheat is the match for the consonant the question underlines: wh here is simply /w/. Writhe begins with a silent w."
+    hint: "In most accents wh and w sound the same. The odd one out is the word where w is silent."
+  82eaa38f:
+    steps:
+      - "Leach has a long ee — /liːtʃ/."
+      - "Cedar has that same long ee in its first syllable. Gear and cheer have the /ɪə/ of here, and death has a short e."
+    hint: "Long ee and the sound in here are close but not the same. Say them one after the other."
+  33de464b:
+    steps:
+      - "Book has the short /ʊ/ of put — a quick oo, not a long one."
+      - "Cook has the same short oo. Cool, fool and tool all have the long /uː/."
+    hint: "Oo is said two ways: book and boot. Three of these options are the other one."
+  595935e2:
+    steps:
+      - "The i in village is a short /ɪ/, and the whole word is said /ˈvɪlɪdʒ/."
+      - "Pig has that same short i. Page, made and came all have the /eɪ/ of day."
+    hint: "The a in village is not stressed and not pronounced as an a. Listen to the first syllable."
+  1d388153:
+    steps:
+      - "Patch has a short /æ/ — the a of cat."
+      - "Mad has that same short a. Starch has the long ah of car, fare has the vowel of air, and brave has the vowel of day."
+    hint: "The letter a has several sounds. This one is the short, flat one."
+  20614c87:
+    steps:
+      - "The a in glacier is a short /æ/ in the pronunciation this paper is testing — the a of cat."
+      - "Glass has that same short a. Gleam has a long ee and feign has the vowel of day."
+    hint: "Compare the first syllables. Two of the options have long vowels there."
+  c762d66c:
+    steps:
+      - "Laud is said /lɔːd/ — the long aw of saw."
+      - "The published key gives loud, which has the ow of now. Core is the option with the same /ɔː/, and this question is flagged for a second look."
+    hint: "Laud and loud are different words with different vowels. Say each one aloud."
+  c982e705:
+    steps:
+      - "The o in coma is the long /əʊ/ of go."
+      - "Cogent has that same long o. Comma and come both have short vowels, and colonel is said kernel."
+    hint: "Coma and comma differ by one letter and by a whole vowel sound."
+  f0b40fb5:
+    steps:
+      - "Cool has the long /uː/ — a full, held oo."
+      - "The published key gives full, which has the short /ʊ/ of put. Luke is the option with the same long oo, and this question is flagged for a second look."
+    hint: "Oo is long in cool and short in look. Sort the options into those two groups."
+  6a279c4c:
+    steps:
+      - "The our in odour is the weak /ə/ at the end of the word — the sound at the end of teacher."
+      - "Floor is the key printed here. Flow and hold both have the long o of go, and sugar ends in that same weak sound as odour, which makes this question worth a second look."
+    hint: "The ending of odour is not stressed at all. Say the word naturally and listen to how it fades."
+  512758d1:
+    steps:
+      - "Palm is said /pɑːm/ — a long ah, with the l silent."
+      - "Ranch has that same long ah in this accent. Lunch has a short u, florid a short o, and plait is said plat."
+    hint: "The l in palm makes no sound. Listen to the vowel that is left."
+  83fa5f52:
+    steps:
+      - "Sheath ends in /θ/ — the th of thin, with no voice behind it."
+      - "Length ends in that same voiceless th. Bathe and paths both have the voiced th of this."
+    hint: "Put a hand on your throat. The th in this buzzes; the th in thin does not."
+  2459b45e:
+    steps:
+      - "High begins with /h/, a plain breath before the vowel."
+      - "Who begins with that same h despite the w. Honest, hour and vehicle all have a silent h."
+    hint: "Three of these options are spelled with h and said without it."
+  f921635f:
+    steps:
+      - "In of course the f of of is said /v/, but the sound the question underlines is the /f/ at the start of course's neighbour — an f sound spelled plainly."
+      - "Orphan carries that /f/, spelled ph. Plough and dough both end in silent gh, and over has a /v/."
+    hint: "Ph and f are the same sound. Look for the option that has it however it is spelled."
+  e3cb913c:
+    steps:
+      - "The ti in mention is said /ʃ/ — the sh of ship."
+      - "Machine has that same sh sound, spelled ch. That, church and test all have different consonants."
+    hint: "Ch is said as sh in words taken from French. Machine is one of them."
+  29ccea4a:
+    steps:
+      - "The ge in prestige is said /ʒ/ — the soft buzz in the middle of vision."
+      - "Leisure has that same sound. Badge and reggae have the harder /dʒ/ and /g/."
+    hint: "Prestige is a French word and keeps its French ending. It does not end like badge."
+  51ca1547:
+    steps:
+      - "In knot the k is silent, so the word begins with /n/."
+      - "Norm begins with that same n. Cot and king begin with a k sound, and keep does too."
+    hint: "Kn at the start of a word is always just n in modern English."
+  f22f5602:
+    steps:
+      - "The g in tangerine is said /dʒ/ — the j of judge."
+      - "Danger has that same soft g. Gear, girl and ignore all have the hard g of go."
+    hint: "G is soft before e, i and y, and hard before a, o and u. Check what follows the g in each option."
+  43adc7eb:
+    steps:
+      - "Hair begins with an audible /h/."
+      - "House begins with that same h. Heir, hour and honest all have a silent h."
+    hint: "Three of these options are spelled with h and said without it."
+  c495b6fa:
+    steps:
+      - "The ti in edition is said /ʃ/ — the sh of ship."
+      - "Bash ends in that same sh. Catch has /tʃ/, and bastion has /stʃ/ or /sti/ depending on the speaker."
+    hint: "The -tion ending is nearly always said shun."
+  58ef6723:
+    steps:
+      - "The s in lose is said /z/ — the word is /luːz/."
+      - "Noise ends in that same z sound. Mouse, nurse and horse all end in a hissed s."
+    hint: "The letter s is said two ways. Hold the last sound of each word and listen for a buzz."
+  446dad9a:
+    steps:
+      - "The g in guitar is a hard /g/, and the u after it is silent."
+      - "Rogue ends in that same hard g. Jam, strange and judge all have the soft /dʒ/."
+    hint: "The u in guitar and rogue is there to keep the g hard. It is not pronounced."
+  4ecaba9e:
+    steps:
+      - "The s in loose is a hissed /s/ — the word is /luːs/, not /luːz/."
+      - "Sell begins with that same s. Fuse, close and rouse all end in a z sound."
+    hint: "Loose and lose differ by one letter and by whether the s buzzes."
+  cd6dd68b:
+    steps:
+      - "The si in vision is said /ʒ/ — a soft buzz, not a hiss."
+      - "Enclosure has that same sound. Instruction, mansion and nation all have the hissed /ʃ/."
+    hint: "Say each word and decide whether the middle consonant buzzes or hisses."
+  ef3267c4:
+    steps:
+      - "In gnash the g is silent, so the word begins with /n/."
+      - "New begins with that same n. King and ring end in /ŋ/, which is a different sound, and forge begins with f."
+    hint: "Gn at the start of a word is just n. The n at the end of king is not the same sound as the n in new."
+  234e3de8:
+    steps:
+      - "Epitaph ends in /f/ — ph standing for an f sound."
+      - "Fan begins with that same f. Pseudo and pneumonia both begin with silent letters, and paper has a plain p."
+    hint: "Ph is one sound. Which option has it, however it is spelled?"

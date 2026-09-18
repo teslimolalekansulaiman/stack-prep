@@ -435,3 +435,88 @@ explanations:
       - "Feeble means weak — a lamb has little strength in it."
       - "The printed direction for this question asks for the opposite, and none of fat, loving or quite reverses feeble. Weak is the published key, and it is a synonym rather than an antonym, so the question is flagged for a second look."
     hint: "Feeble means weak. Check which direction the question is asking for before you choose."
+  b965fb86:
+    steps:
+      - "To be relegated to somewhere is to be sent down to it — moved out of favour and away from the centre."
+      - "Known in is the key printed here, but none of these options reverses relegated cleanly; discharge from is closer to it than against it. The stem has also lost a word in extraction. This question is flagged for a second look."
+    hint: "Relegate means to send down or push aside. Ask which option describes the opposite of being pushed aside."
+  c418496b:
+    steps:
+      - "To aver something is to state it firmly — the minister said plainly that he was committed."
+      - "Denied is the opposite. Pledged and undertook are both close to averring a commitment rather than against it."
+    hint: "Averring is asserting. What is the opposite of asserting something?"
+  087e440f:
+    steps:
+      - "An abyss is a bottomless drop, so a financial abyss is ruin with no floor to it."
+      - "Stability is the opposite: solid ground. Difficult and scandal are both troubles, not the reverse of trouble."
+    hint: "The word is a picture of falling. What is the opposite of a company about to fall?"
+  d451050d:
+    steps:
+      - "Indisposed means unwell — a polite way of saying someone is ill."
+      - "Healthy is the opposite. Fragile is close to being unwell rather than opposite to it."
+    hint: "Indisposed is not about mood. Read the in- as not, and ask not what?"
+  979a0420:
+    steps:
+      - "A conscientious student takes care over the work and does it properly."
+      - "Irresponsible is the opposite: careless about what is owed. Persistent and active are both compliments of the same family as conscientious."
+    hint: "Conscientious is about taking care, not about working hard or often."
+  3a1cbb1a:
+    steps:
+      - "To anticipate a birthday is to look forward to it before it comes."
+      - "Imagined is the key printed here, which is weaker than an opposite. Hoped for and waited for are both closer to anticipating than against it, and this question is flagged for a second look."
+    hint: "Anticipating is expecting something ahead of time. Ask which option does not involve expecting it."
+  2cc109ac:
+    steps:
+      - "An irascible man is quick to anger — easily set off."
+      - "Rude is the key here. Crabbed is a synonym of irascible, and hilarious is the option most students take because it feels like the cheerful opposite of angry."
+    hint: "Irascible describes a temper. Which option describes the way that temper shows?"
+  fad128dd:
+    steps:
+      - "To become neurotic is to become anxious and unsettled, out of proportion to the cause."
+      - "Disturbed is the key printed here, which is a synonym rather than an opposite; balanced and rational are both true opposites. This question is flagged for a second look."
+    hint: "Neurotic means unsettled. Look for the option that means settled."
+  0597cc51:
+    steps:
+      - "To live in lack is to live without enough — in poverty."
+      - "Penury is the key printed here, and it means poverty, so it is a synonym. Surplus, plenitude and opulence are the true opposites, and this question is flagged for a second look."
+    hint: "Lack means not having enough. The opposite is having more than enough."
+  6901177c:
+    steps:
+      - "A prosperous businessman is doing well: money coming in and the business growing."
+      - "Unsuccessful is the opposite. Unskilled describes ability rather than results, and unscrupulous describes honesty — neither reverses prosperous."
+    hint: "Prosperous is about how well the business is doing, not about how good or honest the man is."
+  b36c4921:
+    steps:
+      - "A relaxed manner is easy and unhurried — a hostess at home with her guest."
+      - "Stiff is the opposite: formal and tense. Energetic and athletic describe activity, which is not what relaxed measures."
+    hint: "Relaxed is about tension, not about energy."
+  1ac83cb2:
+    steps:
+      - "To take your studies lightly is to treat them as unimportant."
+      - "Seriously is the opposite. Carefully is close but describes how the work is done rather than how much weight it is given."
+    hint: "The word is about the weight Ayo gives his studies. What is the opposite of treating something as light?"
+  ded37dd8:
+    steps:
+      - "A gentle doctor handles patients softly and without hurting them."
+      - "Harsh is the opposite. Rough is close, but harsh reverses gentle in manner as well as in touch, which is what the sentence is about."
+    hint: "Three of these options are unpleasant in different ways. Which one is the plain reverse of gentle?"
+  5ad66558:
+    steps:
+      - "To convalesce is to recover slowly after illness, which is why he was at the seaside."
+      - "Deteriorating in health is the opposite. Recuperating and regaining health both mean the same as convalescing."
+    hint: "Two options mean getting better. Neither can be the opposite of a word that means getting better."
+  c2997f04:
+    steps:
+      - "Boundless resources have no limit — the sentence claims they have never run short."
+      - "Scarce is the opposite: so little that there is not enough. Unlimited is a synonym of boundless, and limited is its plain negative rather than its opposite in this sentence."
+    hint: "Boundless means without bounds. Look for the option that means there is barely any."
+  93b45e3b:
+    steps:
+      - "An imperceptible difference is too small to notice at all."
+      - "Significant is the opposite: large enough to matter. Negligible is a synonym of imperceptible, and obvious describes being noticed rather than being large."
+    hint: "Perceive means to notice. Imperceptible means it cannot be noticed — so what is the reverse?"
+  b6b0387d:
+    steps:
+      - "Antipathy is a settled dislike, so an antipathy to religious ideas is being set against them."
+      - "Receptiveness is the opposite: openness to them. Hostility is a synonym of antipathy."
+    hint: "Anti- means against. Find the option that means the reverse of being against something."

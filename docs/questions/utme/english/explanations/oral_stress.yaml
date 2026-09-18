@@ -1,0 +1,228 @@
+# UTME Use of English — Word stress (ENG.C.4.i) and emphatic stress (ENG.C.5.i)
+#
+# Word stress asks which syllable is pushed hardest. Emphatic stress asks what question the
+# sentence is answering, given which word is stressed — the stressed word is always the
+# answer, so the right option is the question that word answers.
+format_version: 1
+skill: ENG.C.4.i and ENG.C.5.i
+explanations:
+  a4cd7404:
+    steps:
+      - "Political is stressed on its second syllable: po-LI-ti-cal."
+      - "Say it inside a phrase — a political party — and the push lands on LI. Stressing the first or third syllable makes an English speaker hesitate."
+    hint: "Say the word at normal speed in a sentence. Saying it syllable by syllable hides the stress."
+  851e370a:
+    steps:
+      - "Satisfactory is stressed on its third syllable: sa-tis-FAC-to-ry."
+      - "The related word satisfy is stressed first, which is why so many students choose SATisfactory — but adding -ory moves the stress along."
+    hint: "Long words ending in -ory usually take the stress two syllables before the ending."
+  b70fb18f:
+    steps:
+      - "Captivity is stressed on its second syllable: cap-TI-vi-ty."
+      - "Captive is stressed first, but -ity pulls the stress onto the syllable immediately before it."
+    hint: "Words ending in -ity almost always stress the syllable just before that ending."
+  ed518579:
+    steps:
+      - "Termination is stressed on its third syllable: ter-mi-NA-tion."
+      - "This is the rule for every -ation word: the stress falls on the a immediately before -tion."
+    hint: "Say nation, then termination. The stressed part is the same."
+  84df748e:
+    steps:
+      - "Meditative is stressed on its first syllable: ME-di-ta-tive."
+      - "It follows meditate, which is also stressed first, and -ive does not move it."
+    hint: "Say the verb meditate first and keep its stress."
+  a1592b02:
+    steps:
+      - "Suggestible is stressed on its second syllable: su-GGES-ti-ble."
+      - "It follows suggest, which is stressed on its second syllable, and -ible leaves that alone."
+    hint: "Find the verb inside the word and keep the verb's stress."
+  a1bdf792:
+    steps:
+      - "Demarcation is stressed on its third syllable: de-mar-CA-tion."
+      - "Another -ation word, and the same rule: the stress sits on the a before -tion."
+    hint: "Every -ation word in this paper is stressed the same way."
+  b75eff57:
+    steps:
+      - "Impossible is stressed on its second syllable: im-POS-si-ble."
+      - "It follows possible, which is stressed first; the negative prefix im- does not take the stress, so it moves to POS."
+    hint: "Prefixes like im-, in- and un- are almost never stressed."
+  fe4d389f:
+    steps:
+      - "Imperialism is stressed on its second syllable: im-PE-ria-lism."
+      - "It follows imperial, and the -ism ending does not move the stress."
+    hint: "Say imperial, then add -ism without changing where you push."
+  bbe3c388:
+    steps:
+      - "Dedication is stressed on its third syllable: de-di-CA-tion, like every other -ation word."
+      - "The options as printed have lost their capitals, so none of them shows that stress clearly. This question is flagged for a second look."
+    hint: "Whatever the options look like, an -ation word is stressed on the a before -tion."
+  60f7ac21:
+    steps:
+      - "International is stressed on its third syllable: in-ter-NA-tio-nal."
+      - "It follows national, which is stressed on NA, and the prefix inter- does not take the stress."
+    hint: "Say national, then put inter- in front without moving the push."
+  9c8b898c:
+    steps:
+      - "Information is stressed on its third syllable: in-for-MA-tion."
+      - "All four options as printed are identical, so the question cannot be answered as it stands. It is flagged for a second look."
+    hint: "An -ation word is stressed on the a before -tion."
+  da789037:
+    steps:
+      - "Valedictory is stressed on its third syllable: va-le-DIC-to-ry."
+      - "The same shape as satisfactory: -ory pulls the stress two syllables back from the end."
+    hint: "Compare it with satisfactory, which is stressed the same way."
+  1a12090d:
+    steps:
+      - "Congratulation is stressed on its fourth syllable: con-gra-tu-LA-tion — the a before -tion, like every -ation word."
+      - "The published key gives CONgratulation, which puts the stress on the prefix. This question is flagged for a second look."
+    hint: "Say congratulations aloud as you would to a friend and feel where the push lands."
+  c1c0d254:
+    steps:
+      - "Conspiracy is stressed on its second syllable: con-SPI-ra-cy."
+      - "The published key gives conspiraCY, which stresses the last syllable. This question is flagged for a second look."
+    hint: "Find the verb conspire inside the word; the stress stays where the verb has it."
+  1eb4e70c:
+    steps:
+      - "Programmatic is stressed on its third syllable: pro-gram-MA-tic."
+      - "Words ending in -ic take the stress on the syllable immediately before that ending."
+    hint: "Compare dramatic and systematic: the -ic pulls the stress to just before itself."
+  b1d7f1c7:
+    steps:
+      - "Certification is stressed on its fourth syllable: cer-ti-fi-CA-tion."
+      - "The -ation rule again: the stress falls on the a before -tion, however long the word is."
+    hint: "Ignore everything but the ending. -ation decides it."
+  8bc24517:
+    steps:
+      - "Motivation is stressed on its third syllable: mo-ti-VA-tion."
+      - "The same -ation rule. Note that the printed direction for the next block has run into this question's last option in the source."
+    hint: "Say motivation in a sentence. The push lands on VA."
+  f9d0a5f2:
+    steps:
+      - "Advantages is stressed on its second syllable: ad-VAN-ta-ges."
+      - "It follows advantage, and adding -s changes nothing."
+    hint: "Say the singular first and keep its stress."
+  6b267fa6:
+    steps:
+      - "Intentional is stressed on its second syllable: in-TEN-tio-nal."
+      - "It follows intention, which is stressed on TEN, and -al leaves that alone."
+    hint: "Find the noun inside the word and keep the noun's stress."
+  e7502d5c:
+    steps:
+      - "Comfortable is stressed on its first syllable: COM-fort-able."
+      - "It follows comfort, and -able does not move the stress. Most speakers also run the middle syllables together."
+    hint: "Say comfort, then add -able without moving the push."
+  12fc21f4:
+    steps:
+      - "Incapacitate is stressed on its third syllable: in-ca-PA-ci-tate."
+      - "It follows capacity, which is stressed on PA, and the prefix in- does not take the stress."
+    hint: "Prefixes are almost never stressed. Look inside the word for the part that is."
+  0683a860:
+    steps:
+      - "Encouragement is stressed on its second syllable: en-COU-rage-ment — it follows encourage."
+      - "The published key gives Encouragement, which stresses the prefix. This question is flagged for a second look."
+    hint: "Say the verb encourage first. The stress does not move when -ment is added."
+  ac8d0ca3:
+    steps:
+      - "The stressed word is the answer to the question being asked. Here EMEKA is stressed, so the sentence is telling you WHO."
+      - "Who finished his homework yesterday? is the question that answer fits. The other options ask about what he did, or when."
+    hint: "Say the sentence with the capitalised word pushed hard, then ask what question it is answering."
+  769ca412:
+    steps:
+      - "SAILED is stressed, so the sentence is correcting how Taiwo travelled."
+      - "Did Taiwo fly to London? is the question being corrected. The other options would put the stress on Taiwo or on London."
+    hint: "Stress on a verb usually corrects a wrong verb, not a wrong person or place."
+  ce6b2266:
+    steps:
+      - "LEATHER is stressed, so the sentence is correcting what the bag is made of."
+      - "Is my bag made of polythene? offers the wrong material, which is exactly what the stress is putting right."
+    hint: "The stressed word replaces something. Look for the option containing what it replaces."
+  a24ed6a2:
+    steps:
+      - "LOVES is stressed, so the sentence is correcting the feeling rather than the person or the car."
+      - "Does Uche hate Toyota cars? is the question that correction answers."
+    hint: "Stress on the verb means the verb is what was wrong in the question."
+  faa632bf:
+    steps:
+      - "The POLICE is stressed, so the sentence is telling you who did it."
+      - "Who arrested the suspect? is that question. Who did the police arrest? would stress the suspect instead."
+    hint: "Stress on the subject answers a who question."
+  f12eafec:
+    steps:
+      - "CAPITAL is stressed, so the sentence is insisting Maiduguri is not merely a town in Borno but its capital."
+      - "Is Maiduguri a town in Borno state? is the question being corrected."
+    hint: "The stress is upgrading one word. Find the option with the weaker word in it."
+  a52f5cc7:
+    steps:
+      - "NARRATED is stressed, so the sentence is correcting what the chief did with the story."
+      - "Did the chief hide the story from the children? offers the opposite action, which is what the stress puts right."
+    hint: "Stress on the verb corrects the verb."
+  d5b39545:
+    steps:
+      - "The ACCOUNTANT is stressed, so the sentence is correcting who paid."
+      - "Did the cashier pay the workers' salary in September? names the wrong person, which is what the stress corrects."
+    hint: "Stress on the subject means someone else was named in the question."
+  4d1b1138:
+    steps:
+      - "DEVOURED is stressed, so the sentence is correcting what the cat did."
+      - "Did the cat pet the rat? offers the wrong action. What devoured the rat? would stress the cat instead."
+    hint: "Ask which word in the option would have to change for the sentence to be its answer."
+  436d2286:
+    steps:
+      - "A CAR is stressed, so the sentence is telling you what is being left behind."
+      - "What is Adamu leaving behind? is that question. Who is leaving a car behind? would stress Adamu."
+    hint: "Stress on the object answers a what question."
+  3910df5b:
+    steps:
+      - "TOOK OFF is stressed — the whole verb, not one part of the sentence — so the sentence is telling you what Lambusa did."
+      - "What did Lambusa do? is that question. Did Lambusa take off the ring? would stress the wig."
+    hint: "When the stress falls on the verb phrase, the question is about the action itself."
+  10346c22:
+    steps:
+      - "IN is stressed, which is unusual: stress on a small word like this points at position."
+      - "Where is the bed? is the question it answers. Is the bed in the parlour? would stress the room."
+    hint: "A stressed preposition is almost always answering where."
+  a702de17:
+    steps:
+      - "A BICYCLE is stressed, so the sentence is telling you what was bought."
+      - "What did your mother buy yesterday? is that question. Whose mother would stress my, and when would stress yesterday."
+    hint: "Stress on the object answers a what question."
+  ee665c30:
+    steps:
+      - "AMINA is stressed, so the sentence is telling you who travelled."
+      - "Who went to Abuja by air? is that question. The other options would stress Abuja, the air, or the whole statement."
+    hint: "Stress on the name answers who."
+  8121af4b:
+    steps:
+      - "STAYING is stressed, so the sentence is correcting what Musa is doing in Enugu."
+      - "Is Musa passing through Enugu? offers the wrong verb, which is what the stress puts right."
+    hint: "Stress on the verb corrects the verb, not the place."
+  e9ff77eb:
+    steps:
+      - "UNCLE is stressed, so the sentence is correcting which relative is meant."
+      - "Is Bukola's aunt a strict teacher? names the wrong relative. The other options change the name, the job or the manner."
+    hint: "Find the option that differs from the sentence in exactly the stressed word."
+  ddb45454:
+    steps:
+      - "The CHAIR is stressed, so the sentence should be correcting where the spoon was put."
+      - "None of the options offers a different place, and the published key repeats the sentence as a question. This one is flagged for a second look."
+    hint: "Stress on the place answers where, or corrects a wrong place."
+  fe231e0b:
+    steps:
+      - "ASA is stressed, so the sentence is telling you who the lawyer is."
+      - "Who is a lawyer? is that question. Is Asa a robber? would stress lawyer instead."
+    hint: "Stress on the name answers who."
+  a0d318a9:
+    steps:
+      - "The TABLE is stressed, so the sentence is telling you where the bag was left."
+      - "Where did I leave the bag? is that question. Who left the bag would stress I."
+    hint: "Stress on the place answers where."
+  7a653e9a:
+    steps:
+      - "FOOTBALL is stressed, so the sentence is telling you what Kanu can play."
+      - "What can Kanu play? is that question. Who can play football? would stress Kanu."
+    hint: "Stress on the object answers what."
+  87a74d47:
+    steps:
+      - "TENNIS is stressed, so the sentence is telling you what Aisha plays."
+      - "What does Aisha play always? is that question. Who plays tennis would stress Aisha, and when would stress always."
+    hint: "Stress on the object answers what, not who or when."
