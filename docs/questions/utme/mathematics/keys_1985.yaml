@@ -1,0 +1,134 @@
+# UTME 1985 Mathematics — answers worked out, question by question.
+# This is a five-option paper (A-E); see keys_2000.yaml for the format and the provenance.
+#
+# Fifteen are absent rather than guessed: Q6, Q12, Q14, Q24, Q45 and Q50 are printed as
+# expressions that cannot be reconstructed; Q22's roots are 1 and -5/2, which no option
+# carries; Q27's table gives -3 for the missing value against options in the tens; Q16 stops
+# mid-sentence; and Q33, Q37, Q40, Q43, Q47 and Q49 need a figure that was not captured.
+format_version: 1
+exam_year: 1985
+answers:
+  - number: 1
+    answer: A
+    confidence: high
+    working: "6/7 = 0.857, 0.865, 13/15 = 0.867."
+  - number: 2
+    answer: E
+    confidence: high
+    working: "P(1 + 0.32) = 330 gives P = 250."
+  - number: 3
+    answer: B
+    confidence: high
+    working: "In base ten 3/x = 8/(x+5) gives x = 3, which is 11 in base 2."
+  - number: 4
+    answer: A
+    confidence: medium
+    working: "Reading the inequality as inclusive: 2 <= x <= 5, so 2, 3, 4, 5."
+  - number: 5
+    answer: A
+    confidence: high
+    working: "100.0157 to two decimal places is 100.02."
+  - number: 8
+    answer: E
+    confidence: high
+    working: "2 + 1/2 - 1/2 = 2."
+  - number: 9
+    answer: A
+    confidence: high
+    working: "2x/3 = (105 + x/3)/4 gives 7x/3 = 105, so x = 45."
+  - number: 10
+    answer: B
+    confidence: high
+    working: "9^1.5 = 27."
+  - number: 13
+    answer: A
+    confidence: high
+    working: "(p-2)^2 = 4(2p+1) gives p^2 - 12p = 0, so p = 0 or 12."
+  - number: 17
+    answer: A
+    confidence: high
+    working: "9 - (x^2-3x-1)^2 = -(x-4)(x+1)(x-1)(x-2)."
+  - number: 18
+    answer: C
+    confidence: high
+    working: "With u = 3^y: u^2 - 6u - 27 = 0 gives u = 9, so y = 2."
+  - number: 19
+    answer: A
+    confidence: high
+    working: "bx(ax-4) - 2y(ax-4) = (ax-4)(bx-2y)."
+  - number: 20
+    answer: E
+    confidence: high
+    working: "(x-1)(x^2+1) = 0 has the single real root x = 1."
+  - number: 21
+    answer: D
+    confidence: high
+    working: "49 = 12R gives R = 49/12."
+  - number: 23
+    answer: A
+    confidence: high
+    working: "x^2 - 4x - 12 = 0 gives x = 6 or -2, so (6,-8) and (-2,8)."
+  - number: 25
+    answer: D
+    confidence: high
+    working: "x - 2 = 1 means x = 3: 36 + 3 + 7 = 46."
+  - number: 26
+    answer: E
+    confidence: high
+    working: "(169 + 81 - 121)/(2 x 13 x 9) = 129/234 = 43/78."
+  - number: 29
+    answer: A
+    confidence: high
+    working: "Each leg is 2/V2 = V2."
+  - number: 30
+    answer: E
+    confidence: high
+    working: "1 - P(no head) = 1 - 1/4 = 3/4."
+  - number: 31
+    answer: E
+    confidence: high
+    working: "Volumes are as 8:27, so 351(8/27) = 104 cm^3."
+  - number: 32
+    answer: B
+    confidence: high
+    working: "The reverse of N72E is S72W."
+  - number: 34
+    answer: A
+    confidence: high
+    working: "1 + (2/V3)^2 = 1 + 4/3 = 2 1/3."
+  - number: 35
+    answer: B
+    confidence: high
+    working: "{2,3,5,6,7,9} is six of ten numbers: 3/5."
+  - number: 36
+    answer: B
+    confidence: high
+    working: "Six equilateral triangles of side 8: 6(V3/4)(64) = 96V3 cm^2."
+  - number: 38
+    answer: A
+    confidence: medium
+    working: "With theta = 30: cot60 / sin^2(30) = (1/V3)/(1/4) = 4V3/3."
+  - number: 39
+    answer: C
+    confidence: high
+    working: "Mass goes as volume: (27-8)/64 x 64 = 19 kg."
+  - number: 41
+    answer: E
+    confidence: high
+    working: "The space diagonal of a cube of side a is aV3."
+  - number: 42
+    answer: B
+    confidence: high
+    working: "(1/2)(4+3)h = 14 gives h = 4; triangle SQR is (1/2)(3)(4) = 6 cm^2."
+  - number: 44
+    answer: A
+    confidence: high
+    working: "(6/10)(5/9) = 1/3."
+  - number: 46
+    answer: E
+    confidence: medium
+    working: "60 degrees apart on latitude 60: (1/6)(2 pi R cos60) = about 3,333 km."
+  - number: 48
+    answer: E
+    confidence: high
+    working: "(18/120)(360) = 54 degrees."

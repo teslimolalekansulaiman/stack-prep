@@ -1,0 +1,119 @@
+# UTME 1991 Mathematics — answers worked out, question by question.
+# Computed, not read; see keys_2000.yaml for the format and the provenance.
+#
+# Eighteen are absent rather than guessed. Q1, Q3, Q8, Q12, Q17, Q24 and Q41 are printed as
+# expressions that cannot be reconstructed (Q17's cubic has no rational root as printed, and
+# every option for Q12 carries a sign the multiplication does not produce); Q5, Q47 and Q50
+# stop before the figure or the category they ask about; Q30, Q35, Q37, Q38, Q44, Q46, Q48
+# and Q49 need a figure or a table that was not captured.
+format_version: 1
+exam_year: 1991
+answers:
+  - number: 2
+    answer: A
+    confidence: high
+    working: "7056 - 4577 = 2257 in base n reduces to n^3 - 7n^2 - 7n - 8 = 0, satisfied by n = 8."
+  - number: 4
+    answer: D
+    confidence: high
+    working: "62/3 = 20.6667, which to 3 s.f. is 20.7."
+  - number: 7
+    answer: B
+    confidence: high
+    working: "Water 0.6 + 0.75 = 1.35 gallons in 8: 16.875% = 16 7/8 %."
+  - number: 9
+    answer: D
+    confidence: high
+    working: "log[(4/25)(125/72)(9)] = log(5/2) = 1 - 2log2."
+  - number: 10
+    answer: B
+    confidence: high
+    working: "Multiplying by (3V2+2V3): (30 + 12V6)/6 = 5 + 2V6."
+  - number: 11
+    answer: A
+    confidence: medium
+    working: "1/(3+V5) - 1/(3-V5) = -2V5/4 = -V5/2, which is option A read as -(1/2)V5."
+  - number: 13
+    answer: A
+    confidence: high
+    working: "xy(y-x)/(x(x-y)) at x=-2, y=3 is -30/10 = -3."
+  - number: 15
+    answer: C
+    confidence: medium
+    working: "w = k(u+v)/(uv) with k = 12, so uvw = 12(u+v)."
+  - number: 16
+    answer: B
+    confidence: high
+    working: "(x+1)^2 + 3(x+1) - x^2 - 3x = 2x + 4 = 2(x+2)."
+  - number: 18
+    answer: B
+    confidence: high
+    working: "1 - (a-b)^2 = (1-a+b)(1+a-b)."
+  - number: 19
+    answer: C
+    confidence: high
+    working: "r(s+t) - p(s+t) = (s+t)(r-p)."
+  - number: 20
+    answer: A
+    confidence: high
+    working: "x^2 - 4x + 3 = 0 gives x = 1 or 3, so y = 5 or -1."
+  - number: 22
+    answer: D
+    confidence: high
+    working: "3n^2 = 12n gives n = 4."
+  - number: 23
+    answer: C
+    confidence: high
+    working: "x^2 - 5x - 6 = 0 gives x = 6 or -1."
+  - number: 26
+    answer: C
+    confidence: high
+    working: "(-4 - 0)/(0 + 2) = -2."
+  - number: 27
+    answer: A
+    confidence: high
+    working: "2x - 2 = 0 at x = 1."
+  - number: 28
+    answer: A
+    confidence: high
+    working: "A GP with r = 1/3: 27(1/3)^(n-1)."
+  - number: 29
+    answer: B
+    confidence: high
+    working: "(20/2)(7 + 117) = 1240."
+  - number: 31
+    answer: C
+    confidence: high
+    working: "11x + 151 = 360 gives x = 19; the angles are 65, 136, 41 and 118, so 60 - x is smallest."
+  - number: 32
+    answer: C
+    confidence: high
+    working: "Side 12, so the diagonal is 12V2 cm."
+  - number: 33
+    answer: A
+    confidence: high
+    working: "The 60-degree angle makes the short diagonal equal the side, 8; the long one is 2(8)cos30 = 8V3."
+  - number: 34
+    answer: C
+    confidence: high
+    working: "Exterior angles sum to 360: 5x + 50 = 360 gives x = 62."
+  - number: 39
+    answer: D
+    confidence: high
+    working: "60 tan64 - 60 tan62 = 60(tan64 - tan62)."
+  - number: 40
+    answer: C
+    confidence: high
+    working: "cos^2 x sec^2 x (1 + tan^2 x) = sec^2 x."
+  - number: 42
+    answer: C
+    confidence: high
+    working: "East 60V3 against north 60 gives tan = V3, a bearing of 060."
+  - number: 43
+    answer: A
+    confidence: high
+    working: "500 sin30 = 250 m."
+  - number: 45
+    answer: B
+    confidence: high
+    working: "2 pi r(r+h) = 2 pi (4)(9) = 72 pi cm^2."

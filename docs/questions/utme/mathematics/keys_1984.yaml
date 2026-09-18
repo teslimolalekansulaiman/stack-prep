@@ -1,0 +1,107 @@
+# UTME 1984 Mathematics — answers worked out, question by question.
+# This is a five-option paper (A-E); see keys_2000.yaml for the format and the provenance.
+#
+# Twenty-two are absent rather than guessed: Q6, Q7, Q12, Q19 and Q45 stop before the number
+# they turn on; Q14, Q20, Q31 and Q43 are printed as expressions that cannot be
+# reconstructed; Q22 gives g(f(3)) = 1 and g(f(4)) = V6, which no option carries; Q47 does not
+# give enough of the triangle to find XY; and Q25, Q28, Q32, Q34, Q35, Q37, Q38, Q46, Q48,
+# Q49 and Q50 need a figure or a table that was not captured.
+format_version: 1
+exam_year: 1984
+answers:
+  - number: 2
+    answer: D
+    confidence: high
+    working: "The tens column needs 6 + 4 = 10 to be written as 1 with a carry, so n = 9."
+  - number: 3
+    answer: A
+    confidence: medium
+    working: "Reading the denominator as 1.94 x 10^6: 1.4323e-4/1.94e6 = 7.381 x 10^-11."
+  - number: 4
+    answer: A
+    confidence: high
+    working: "Q paid 209/0.95 = 220, and P's cost was 220/1.1 = 200."
+  - number: 5
+    answer: A
+    confidence: high
+    working: "240/p - 240/(p+0.5) = 16 gives 2p^2 + p - 15 = 0, so p = 2.5 kobo."
+  - number: 8
+    answer: A
+    confidence: medium
+    working: "Labour 70 of 120: (70/120)360 = 210 degrees."
+  - number: 9
+    answer: B
+    confidence: high
+    working: "75 of the 300 numbers are divisible by 4."
+  - number: 10
+    answer: C
+    confidence: high
+    working: "(3 - (-3))/(-4) = -3/2."
+  - number: 13
+    answer: C
+    confidence: medium
+    working: "Reading the numerator as 5V7 - 7V5: multiplying by (V7+V5) gives -2V35/2 = -V35."
+  - number: 15
+    answer: D
+    confidence: medium
+    working: "Taking the first r as 4: k = 16, so at q = 5, r = 2 the value is 200."
+  - number: 16
+    answer: C
+    confidence: high
+    working: "2(3x^2 - 7x - 6) = 2(3x+2)(x-3)."
+  - number: 17
+    answer: B
+    confidence: high
+    working: "m = 1 from (5,5), and x^2 - 13x + 40 = 0 gives the other root x = 8."
+  - number: 18
+    answer: D
+    confidence: high
+    working: "The roots are 0.38 and 2.62; only 0.38 lies in -2 to 1."
+  - number: 21
+    answer: C
+    confidence: high
+    working: "1/x + 1/(x+15) = 1/18 gives x^2 - 21x - 270 = 0."
+  - number: 23
+    answer: E
+    confidence: high
+    working: "Sum 2 and product -12: x^2 - 2x - 12 = 0."
+  - number: 24
+    answer: C
+    confidence: medium
+    working: "Reading the cubic as 8a^3 + 27b^3: 2a + 3b divides all three."
+  - number: 26
+    answer: B
+    confidence: high
+    working: "4p + 2q = -9 and p = q give p = q = -1.5, so p + q = -3."
+  - number: 27
+    answer: D
+    confidence: medium
+    working: "Arc (210/360)(2 pi R) = 2 pi r gives r = 3.5 cm for a circle of diameter 12."
+  - number: 29
+    answer: A
+    confidence: high
+    working: "(x-16)/(2(x-4)) = 1/5 gives 3x = 72, so x = 24 cm."
+  - number: 33
+    answer: C
+    confidence: high
+    working: "-3 < 2 - 5x < 12 gives -2 < x < 1, so -1 and 0."
+  - number: 36
+    answer: C
+    confidence: high
+    working: "pq = q^2 - 1, so t = (q-1)/(q^2-1) = 1/(q+1)."
+  - number: 39
+    answer: C
+    confidence: high
+    working: "tan y = r/h, so h = r cot y."
+  - number: 40
+    answer: E
+    confidence: high
+    working: "Six of the 36 outcomes match: 1/6."
+  - number: 41
+    answer: B
+    confidence: high
+    working: "y^2 - 6y + 8 = 0 gives y = 2 or 4; the larger is 4."
+  - number: 44
+    answer: C
+    confidence: medium
+    working: "The equal angles make the triangles similar: SP = 6(12/8) = 9 cm."

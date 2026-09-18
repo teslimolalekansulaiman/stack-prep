@@ -1,0 +1,96 @@
+# UTME 1983 Mathematics — answers worked out, question by question.
+# This is a five-option paper (A-E); see keys_2000.yaml for the format and the provenance.
+#
+# Seventeen are absent rather than guessed: Q11, Q14, Q34 and Q40 are printed as expressions
+# that cannot be reconstructed; Q12 and Q48 carry another question's options (probabilities
+# against a pie chart, speeds against a mean of 25.46); Q17 stops mid-list; Q20, Q21, Q22 and
+# Q46 are printed with values that contradict themselves (Q46 gives three equal sides and
+# then an angle of 30 degrees); and Q7, Q36, Q38, Q41, Q45 and Q47 need a figure that was not
+# captured.
+format_version: 1
+exam_year: 1983
+answers:
+  - number: 1
+    answer: D
+    confidence: high
+    working: "Sorted: 3, 5, 5, 8, 9 — median 5 and mode 5."
+  - number: 3
+    answer: C
+    confidence: high
+    working: "Each interior angle of a regular hexagon is 120 degrees."
+  - number: 4
+    answer: A
+    confidence: medium
+    working: "y = x - 3 and y = 12 - 2x give x = 5, y = 2, which option A carries with a stray 4."
+  - number: 5
+    answer: C
+    confidence: high
+    working: "Dividing by (x-1) leaves x^2 - x - 6 = (x-3)(x+2), so 3 and -2."
+  - number: 6
+    answer: B
+    confidence: medium
+    working: "Halving y and doubling z scales x by (1/8)(16) = 2, an increase of 2:1."
+  - number: 9
+    answer: B
+    confidence: high
+    working: "1.52e-5 x 4.2e-4 = 6.384e-9, so A = 6.38 and B = -9."
+  - number: 10
+    answer: A
+    confidence: high
+    working: "f(-2) = 0 and f(1) = 0 give l = -6 and k = -9."
+  - number: 15
+    answer: D
+    confidence: high
+    working: "Multiplying the two fractions cancels to x/((x+3)(x+7))."
+  - number: 16
+    answer: D
+    confidence: high
+    working: "(3x-1)^2 + x^2 = (3x+1)^2 gives x^2 = 12x, so x = 12."
+  - number: 23
+    answer: E
+    confidence: high
+    working: "u varies as 1/V^3 with u = 1 at V = 2, so u = 8/V^3."
+  - number: 24
+    answer: C
+    confidence: high
+    working: "y = 2 - 5x gives x^2 - 5x - 6 = 0, so x = 6 or -1."
+  - number: 25
+    answer: A
+    confidence: high
+    working: "y = x^3 - x + 3 at x = -2 is -8 + 2 + 3 = -3."
+  - number: 28
+    answer: B
+    confidence: high
+    working: "Median 65 and mode 65: the sum is 130."
+  - number: 29
+    answer: C
+    confidence: medium
+    working: "MATRICULATION has 13 letters of which six are vowels: 6/13."
+  - number: 30
+    answer: C
+    confidence: high
+    working: "59.8 x 0.0747 = 4.467, i.e. 4.47 to three significant figures."
+  - number: 31
+    answer: E
+    confidence: high
+    working: "An error of 5 on 250 is 2%."
+  - number: 32
+    answer: D
+    confidence: high
+    working: "m - 2n = 8 and n - m = -6 give m = 4, n = -2."
+  - number: 33
+    answer: A
+    confidence: high
+    working: "2 - 1 = 1."
+  - number: 35
+    answer: B
+    confidence: high
+    working: "170 + 5x = 720 gives x = 110."
+  - number: 37
+    answer: B
+    confidence: high
+    working: "30 km south then 60 km west: 180 + atan(60/30) = 243 degrees 26 minutes."
+  - number: 39
+    answer: B
+    confidence: high
+    working: "2.524375^2 - 0.524375^2 = (2)(3.04875) = 6.0975, i.e. 6.10 cm^2."

@@ -1,0 +1,134 @@
+# UTME 1990 Mathematics — answers worked out, question by question.
+# Computed, not read; see keys_2000.yaml for the format and the provenance.
+#
+# Fifteen are absent rather than guessed: Q1, Q8, Q11, Q14 and Q25 are printed as expressions
+# that cannot be reconstructed; Q7, Q43 and Q48 stop before the number they turn on; Q45 and
+# Q47 carry options that cannot match the question (the eleventh number is 38, and a locus is
+# not an angle); Q29, Q33, Q34, Q37 and Q41 need a figure that was not captured.
+format_version: 1
+exam_year: 1990
+answers:
+  - number: 2
+    answer: A
+    confidence: high
+    working: "abx(a+x) and b(a-b)(a+b) share only b."
+  - number: 3
+    answer: D
+    confidence: high
+    working: "241.34 x 9e-6 = 0.002172."
+  - number: 4
+    answer: A
+    confidence: high
+    working: "7.50 = 100 x r x 5/100 gives r = 1.5%."
+  - number: 5
+    answer: A
+    confidence: high
+    working: "1 - 1/4 - (3/4)(3/4) = 1 - 1/4 - 9/16 = 3/16."
+  - number: 9
+    answer: A
+    confidence: high
+    working: "3V3 + V3 = 4V3."
+  - number: 10
+    answer: A
+    confidence: high
+    working: "log6(729 x 12 x 64/72) = log6(7776) = log6(6^5) = 5."
+  - number: 12
+    answer: D
+    confidence: medium
+    working: "Reading it as a product: (8.5)(-4) = -34. As a quotient the value is -2.125, which no option carries."
+  - number: 13
+    answer: A
+    confidence: medium
+    working: "Reading Y as inversely proportional to x: x = kz^2 gives z^2 Y = C."
+  - number: 15
+    answer: D
+    confidence: high
+    working: "x - 4 = 2 means x = 6: 36 + 12 + 3 = 51."
+  - number: 16
+    answer: C
+    confidence: high
+    working: "Difference of squares: (x+5y)(5x+y)."
+  - number: 17
+    answer: A
+    confidence: high
+    working: "(a-b)^2 = 16 - 7 = 9, so a - b = +/-3."
+  - number: 18
+    answer: A
+    confidence: high
+    working: "Synthetic division by 1 leaves x^2 - x - 6."
+  - number: 19
+    answer: B
+    confidence: high
+    working: "(x + 1/x)^2 - 2 = 16 - 2 = 14."
+  - number: 20
+    answer: B
+    confidence: high
+    working: "4x^2 - 4 + 1/x^2 = (2x - 1/x)^2."
+  - number: 21
+    answer: C
+    confidence: high
+    working: "With u = Vx: u^2 - 8u + 15 = 0 gives u = 3 or 5, so x = 9 or 25."
+  - number: 22
+    answer: D
+    confidence: high
+    working: "x^2 + (3x-1)^2 = (3x+1)^2 gives x^2 = 12x, so x = 12."
+  - number: 23
+    answer: A
+    confidence: high
+    working: "l + w = 12 and lw = 35 give 5 and 7; the width is 5 m."
+  - number: 26
+    answer: B
+    confidence: high
+    working: "y = 9, so z^2 = 194 - 49 - 81 = 64 and z = 8."
+  - number: 27
+    answer: D
+    confidence: high
+    working: "(1+2+...+20)log a = 210 log a = log a^210."
+  - number: 28
+    answer: D
+    confidence: high
+    working: "3(2^18 - 1)."
+  - number: 30
+    answer: B
+    confidence: high
+    working: "The vertex of x^2 + x + 1 is at x = -1/2."
+  - number: 31
+    answer: D
+    confidence: high
+    working: "(1/2)(PS + PS/3)(10.5) = 73.5 gives 7PS = 73.5, so PS = 10.5 cm."
+  - number: 32
+    answer: D
+    confidence: high
+    working: "Arc (48/360)(66) = 8.8; perimeter 21 + 8.8 = 29.8 cm."
+  - number: 35
+    answer: B
+    confidence: high
+    working: "Half-diagonals 3 and 4 give a side of 5 cm."
+  - number: 36
+    answer: A
+    confidence: high
+    working: "Exterior angle 40 gives 360/40 = 9 sides."
+  - number: 38
+    answer: A
+    confidence: high
+    working: "In the isosceles triangle QRS the apex is 108, so the base angles are 36 each."
+  - number: 39
+    answer: A
+    confidence: high
+    working: "1 + cot^2 = cosec^2 = (13/5)^2 = 169/25."
+  - number: 40
+    answer: C
+    confidence: high
+    working: "Angle Z = 45; YZ = 8 sin30/sin45 = 4V2 cm."
+  - number: 42
+    answer: D
+    confidence: high
+    working: "pi(13^2 - 10^2)(300) = 20,700 pi cm^3."
+  - number: 49
+    answer: C
+    confidence: high
+    working: "Both odd or both even: 2 of the 6 pairs, so 1/3."
+  - number: 50
+    answer: B
+    confidence: medium
+    working: "45 and 54 are the multiples of 9 in the range; the options fit a range of fifteen numbers, giving 2/15."

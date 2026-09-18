@@ -1,0 +1,122 @@
+# UTME 1994 Mathematics — answers worked out, question by question.
+# Computed, not read; see keys_2000.yaml for the format and the provenance.
+#
+# Ten are absent rather than guessed: Q1, Q24 and Q32 are printed as expressions that cannot
+# be reconstructed; Q4 carries another question's options (lengths, for an exponential
+# equation); Q10 simplifies to 3/5, which is not among its options; Q23 is cut before it says
+# whose inverse is wanted; and Q18, Q27, Q31, Q43 need a figure that was not captured.
+format_version: 1
+exam_year: 1994
+answers:
+  - number: 2
+    answer: B
+    confidence: medium
+    working: "1.22472/90.72 = 0.0135, which to 2 s.f. rounds to 0.014."
+  - number: 3
+    answer: B
+    confidence: high
+    working: "log5(0.04) = -2 and log3(18) - log3(2) = log3(9) = 2, so the quotient is -1."
+  - number: 6
+    answer: D
+    confidence: high
+    working: "1/V2 = V2/2 = 0.707."
+  - number: 7
+    answer: B
+    confidence: high
+    working: "22 + 28 - 42 = 8 offer both."
+  - number: 8
+    answer: B
+    confidence: high
+    working: "A is a subset of B, so A n B = A and A n A' is empty."
+  - number: 9
+    answer: B
+    confidence: high
+    working: "With u = 5^x: u^2 + 3u - 4 = 0 gives u = 1, so x = 0."
+  - number: 11
+    answer: D
+    confidence: high
+    working: "(a^2-b^2)(x+y) = (a-b)(a+b)(x+y)."
+  - number: 12
+    answer: B
+    confidence: high
+    working: "p + q = -5 and 3p + q = -3 give p = 1, q = -6."
+  - number: 14
+    answer: C
+    confidence: medium
+    working: "1/(1-x) = 3/(x-3) gives x - 3 = 3 - 3x, so x = 3/2."
+  - number: 15
+    answer: A
+    confidence: high
+    working: "r(r+1) + 2r(r-1) = 3(r^2-1) reduces to r = 3."
+  - number: 16
+    answer: A
+    confidence: high
+    working: "x - 3 = P(x+2) + Q(1-x); at x = 1, -2 = 3P so P = -2/3."
+  - number: 17
+    answer: C
+    confidence: high
+    working: "1/x > 2 needs x positive and x < 1/2."
+  - number: 19
+    answer: D
+    confidence: high
+    working: "1 + 5d = 11 gives d = 2."
+  - number: 20
+    answer: C
+    confidence: high
+    working: "The exponents 1+2+4+8+16+32 = 63, so 63 log r = 63 and r = 10."
+  - number: 21
+    answer: C
+    confidence: high
+    working: "3, 6, 10, 15, 21 are the triangular numbers (n+1)(n+2)/2."
+  - number: 22
+    answer: D
+    confidence: medium
+    working: "Reading a*b as the product: closure, associativity and the identity 1 all hold, but a positive integer has no integer inverse."
+  - number: 25
+    answer: C
+    confidence: high
+    working: "1(-5) - 2(-16) + 3(-10) = -5 + 32 - 30 = -3."
+  - number: 28
+    answer: A
+    confidence: high
+    working: "The three given angles sum to x + y + z, so the fourth is 360 - x - y - z."
+  - number: 29
+    answer: A
+    confidence: high
+    working: "External 54 x 40 x 22 = 47520 less internal 36000 = 11520 cm^3."
+  - number: 30
+    answer: C
+    confidence: high
+    working: "Arc (45/360)(16 pi) = 2 pi, plus two radii: 16 + 2 pi."
+  - number: 34
+    answer: D
+    confidence: high
+    working: "A right angle subtended on one side of XY is a semicircle."
+  - number: 35
+    answer: D
+    confidence: high
+    working: "p + q = 8 and p - 2 = 2q give q = 2, p = 6."
+  - number: 37
+    answer: C
+    confidence: high
+    working: "10/tan30 = 10V3 m."
+  - number: 38
+    answer: D
+    confidence: high
+    working: "sin(-690) = sin(30) = 1/2."
+  - number: 39
+    answer: C
+    confidence: high
+    working: "dy/dt = 9t^2 + 4t - 7, which is -2 at t = -1."
+  - number: 40
+    answer: A
+    confidence: high
+    working: "4x - 2 = 2 gives x = 1 and y = 3."
+  - number: 41
+    answer: C
+    confidence: high
+    working: "Integral of x^-3 - x^-2 = -1/(2x^2) + 1/x + k."
+  - number: 42
+    answer: D
+    confidence: high
+    working: "[(2x+1)^3/6] from -1 to 1 = 27/6 + 1/6 = 14/3 = 4 2/3."

@@ -1,0 +1,128 @@
+# UTME 1987 Mathematics — answers worked out, question by question.
+# Computed, not read; see keys_2000.yaml for the format and the provenance.
+#
+# Sixteen are absent rather than guessed. Q12's expression is missing entirely ("Evaluate
+# without using tables."); Q13's options A and B are the same number printed two ways; Q16,
+# Q22 and Q43 are printed with values that cannot be reconciled (Q43's 4.3 cm edge is shorter
+# than the half-diagonal of its own base); Q17 evaluates to 3, which no option carries; Q7,
+# Q8 and Q11 stop before the figure they turn on; and Q25, Q35, Q36, Q37, Q44, Q47 and Q49
+# need a figure or a table that was not captured.
+format_version: 1
+exam_year: 1987
+answers:
+  - number: 1
+    answer: B
+    confidence: high
+    working: "241(5) = 71 = 107 in base 8."
+  - number: 2
+    answer: B
+    confidence: high
+    working: "LCM(40, 48) = 240 cm."
+  - number: 3
+    answer: D
+    confidence: high
+    working: "1 m^2 = 1.21 sq yd, so the area is 1500 m^2 and the width 1500/50 = 30 m."
+  - number: 4
+    answer: C
+    confidence: high
+    working: "(0.022 x 1.2)/0.024 = 1.1."
+  - number: 5
+    answer: B
+    confidence: high
+    working: "Harmonic mean 2(90)(45)/135 = 60 km/hr."
+  - number: 6
+    answer: D
+    confidence: high
+    working: "(1.2s)(0.8s) = 0.96s^2, a ratio of 24:25."
+  - number: 9
+    answer: B
+    confidence: high
+    working: "P(1 + 0.12) = 7000 gives P = 6250."
+  - number: 10
+    answer: C
+    confidence: high
+    working: "Cost 1.35/1.08 = 1.25; selling at 1.10 loses 0.15/1.25 = 12%."
+  - number: 14
+    answer: A
+    confidence: high
+    working: "log2(2)/(3 + 2) = 1/5."
+  - number: 15
+    answer: D
+    confidence: high
+    working: "42V6/(392V3) = (3/28)V2."
+  - number: 18
+    answer: D
+    confidence: high
+    working: "Each extra person costs 0.5 naira, i.e. 50 kobo."
+  - number: 19
+    answer: B
+    confidence: high
+    working: "P varies as 1/R^2, and PR^2 = 2(49) = 98."
+  - number: 20
+    answer: D
+    confidence: medium
+    working: "y^3 = 1/(Z - x^2), so y = (Z - x^2)^(-1/3)."
+  - number: 21
+    answer: C
+    confidence: high
+    working: "(m+1)^2 = m+3 gives m^2 + m - 2 = 0, so m = 1 or -2."
+  - number: 23
+    answer: C
+    confidence: high
+    working: "(5-y)^2 - 2y^2 = 1 gives y^2 + 10y - 24 = 0, so y = 2 or -12."
+  - number: 26
+    answer: B
+    confidence: high
+    working: "x - 1 > 4x + 8 gives 3x < -9, so x < -3."
+  - number: 27
+    answer: C
+    confidence: high
+    working: "(x-y)(x+y)/((2x-y)(x+y)) = (x-y)/(2x-y)."
+  - number: 28
+    answer: D
+    confidence: high
+    working: "At x = 3 the value is 9 - 18 + 8 = -1."
+  - number: 29
+    answer: D
+    confidence: high
+    working: "(21/2)(-20 + 40) = 210."
+  - number: 30
+    answer: B
+    confidence: high
+    working: "4(2^10) = 2^12."
+  - number: 32
+    answer: B
+    confidence: high
+    working: "Similar triangles 2:3 give areas 4:9, so triangle to trapezium is 4:5."
+  - number: 33
+    answer: D
+    confidence: high
+    working: "Interior sum 1260 less 1110 leaves 150 shared by three angles: 50 each."
+  - number: 39
+    answer: B
+    confidence: high
+    working: "With opposite m^2-n^2 and adjacent 2mn the hypotenuse is m^2+n^2, so sec = (m^2+n^2)/2mn."
+  - number: 40
+    answer: C
+    confidence: high
+    working: "d tan60 = (d+8)tan30 gives d = 4, so h = 4V3 m."
+  - number: 41
+    answer: A
+    confidence: high
+    working: "Floor diagonal 15 and space diagonal 17: cosine 15/17."
+  - number: 42
+    answer: B
+    confidence: high
+    working: "A parallel of latitude has circumference 2 pi R cos(theta)."
+  - number: 45
+    answer: A
+    confidence: high
+    working: "A 6 cm chord in a circle of radius 5 sits 4 cm from the centre, so the midpoints trace a circle of radius 4."
+  - number: 46
+    answer: C
+    confidence: high
+    working: "13.5 hours is 202 degrees 30 minutes; the remaining 10.5 hours is 157 degrees 30 minutes."
+  - number: 48
+    answer: D
+    confidence: high
+    working: "Mean 60/8 = 7.5 and median (7+8)/2 = 7.5: the sum is 15."

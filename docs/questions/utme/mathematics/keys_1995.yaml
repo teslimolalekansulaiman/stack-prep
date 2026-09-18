@@ -1,0 +1,115 @@
+# UTME 1995 Mathematics — answers worked out, question by question.
+# Computed, not read; see keys_2000.yaml for the format and the provenance.
+#
+# Eleven are absent rather than guessed. Q13, Q24 and Q25 are printed with expressions or
+# matrices that cannot be reconstructed; Q17 gives a 4th term of 13 and a 10th of 31, which
+# put the 31st term at 94 and not at any option; Q44's eight numbers give m + r = 2.125,
+# which is also not an option; Q26, Q42, Q43, Q47, Q48 and Q50 need a figure, a table or the
+# rest of a sentence that the page does not give.
+format_version: 1
+exam_year: 1995
+answers:
+  - number: 2
+    answer: B
+    confidence: high
+    working: "3.1415926 to five decimal places is 3.14159."
+  - number: 3
+    answer: A
+    confidence: high
+    working: "Error 1.8 on 15 is 12%."
+  - number: 6
+    answer: B
+    confidence: medium
+    working: "81^(3/4) - 27^(1/3) = 27 - 3 = 24, and 24/(3 x 2^3) = 1. Reading the trailing '3 x 2^3' as the divisor."
+  - number: 7
+    answer: D
+    confidence: high
+    working: "64 + (-4) + 5 = 65."
+  - number: 8
+    answer: A
+    confidence: high
+    working: "(2V3 - V3)/(2V3 + V3) = V3/(3V3) = 1/3."
+  - number: 9
+    answer: B
+    confidence: high
+    working: "11 + 14 - 4 = 21."
+  - number: 10
+    answer: C
+    confidence: high
+    working: "x^2 = 9 gives x = +/-3, neither greater than 4, so S is empty."
+  - number: 11
+    answer: A
+    confidence: high
+    working: "f(1) = 0 gives p + q = -7 and f(-1) = 0 gives p - q = -5, so p = -6, q = -1."
+  - number: 12
+    answer: B
+    confidence: medium
+    working: "Taking the divisor as x + 1: 2 + 2p = 6 gives p = 2. The divisor itself is missing from the print."
+  - number: 15
+    answer: C
+    confidence: high
+    working: "ax(bx-3) - 2y(bx-3) = (bx-3)(ax-2y)."
+  - number: 16
+    answer: A
+    confidence: high
+    working: "The product is non-positive between the roots, inclusive: 3 <= x <= 4."
+  - number: 18
+    answer: A
+    confidence: high
+    working: "x^3+2x^2-x-2 = (x+2)(x^2-1), so the fraction is 1/(x+2)."
+  - number: 19
+    answer: B
+    confidence: medium
+    working: "Reading the numerator as 5x - 12: A = 2 at x = 2 and B = 3 at x = 3, giving 2/(x-2) + 3/(x-3)."
+  - number: 21
+    answer: B
+    confidence: high
+    working: "a + b - ab is unchanged when a and b swap; the others are not."
+  - number: 22
+    answer: C
+    confidence: high
+    working: "12*27 = V324 = 18; 2*18 = V36 = 6."
+  - number: 23
+    answer: D
+    confidence: high
+    working: "1/(1 - 9/10) = 10."
+  - number: 27
+    answer: B
+    confidence: medium
+    working: "Alternate segment gives angle TYX = 50; YT = YX makes angle TXY = 65; angle TZY subtends TY in the same segment, so 65."
+  - number: 28
+    answer: C
+    confidence: medium
+    working: "Angle XZY = 24; the internal bisectors of Y and Z meet at 90 + 44/2 = 112, so the acute angle is 68."
+  - number: 30
+    answer: D
+    confidence: high
+    working: "PQ has gradient 1/2, so QR has gradient -2 through (1,-1): 2x + y - 1 = 0."
+  - number: 31
+    answer: B
+    confidence: medium
+    working: "UV parallel to the perpendicular bisector makes the angle between YP and the bisector 40, and the isosceles triangle doubles it: 80."
+  - number: 33
+    answer: A
+    confidence: high
+    working: "2 pi r(r+h) = 2(22/7)(7)(19) = 836 cm^2."
+  - number: 35
+    answer: A
+    confidence: medium
+    working: "The line of sight is 30/cos60 = 60 m. The stem is cut before it says which length is wanted; the height would be 30V3."
+  - number: 36
+    answer: C
+    confidence: high
+    working: "RS = 12 sin30/sin45 = 6V2 m."
+  - number: 38
+    answer: B
+    confidence: high
+    working: "d/dx cosec x = -cosec x cot x."
+  - number: 39
+    answer: B
+    confidence: high
+    working: "2x - 4 = 0 at x = 2."
+  - number: 40
+    answer: B
+    confidence: high
+    working: "y = 2x^2 - 3x + c through (2,5) gives c = 3."
