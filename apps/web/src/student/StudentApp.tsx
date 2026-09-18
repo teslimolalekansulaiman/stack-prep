@@ -13,6 +13,7 @@ import { useCallback, useEffect, useState } from 'react';
 
 import { api, type ExaminationOffer, type Goal, type Sitting, type SubjectOffer } from './api.js';
 import { Diagnostic } from './Diagnostic.js';
+import { Practice } from './Practice.js';
 import { Result } from './Result.js';
 import './theme.css';
 
@@ -28,9 +29,18 @@ interface Place {
   examinationId?: string;
   subjectId?: string;
   sessionId?: string;
+  practiceId?: string;
 }
 
-type Step = 'welcome' | 'exam' | 'subject' | 'goal' | 'intro' | 'sitting' | 'result';
+type Step =
+  | 'welcome'
+  | 'exam'
+  | 'subject'
+  | 'goal'
+  | 'intro'
+  | 'sitting'
+  | 'result'
+  | 'training';
 
 function readIdentity(): Identity | null {
   try {
@@ -176,6 +186,12 @@ export function StudentApp() {
             remember({ subjectId: picked.subject_id, sessionId: undefined });
             setStep('goal');
           }}
+          onTrain={async (picked) => {
+            const started = await api.startPractice(identity.studentId, picked.subject_id);
+            remember({ subjectId: picked.subject_id, practiceId: started.session_id });
+            setStep('training');
+          }}
+          sat={new Set(sittings.filter((s) => s.finished).map((s) => s.subject_id))}
         />
       </Shell>
     );
@@ -226,6 +242,28 @@ export function StudentApp() {
         sessionId={place.sessionId}
         onRestart={() => {
           remember({ subjectId: undefined, sessionId: undefined });
+          setStep('subject');
+        }}
+        onTrain={
+          subject
+            ? async () => {
+                const started = await api.startPractice(identity.studentId, subject.subject_id);
+                remember({ practiceId: started.session_id });
+                setStep('training');
+              }
+            : undefined
+        }
+      />
+    );
+  }
+
+  if (step === 'training' && place.practiceId && subject) {
+    return (
+      <Practice
+        sessionId={place.practiceId}
+        subjectName={subject.name}
+        onFinished={() => {
+          remember({ practiceId: undefined });
           setStep('subject');
         }}
       />
@@ -362,12 +400,16 @@ function ChooseSubject({
   unfinished,
   onPick,
   onResume,
+  onTrain,
+  sat,
 }: {
   examination: ExaminationOffer;
   goals: Goal[];
   unfinished: Sitting | undefined;
   onPick: (subject: SubjectOffer) => void;
   onResume: (sitting: Sitting) => void;
+  onTrain: (subject: SubjectOffer) => Promise<void>;
+  sat: Set<string>;
 }) {
   return (
     <>
@@ -412,14 +454,24 @@ function ChooseSubject({
                   {subject.blocked_reason}
                 </p>
               ) : (
-                <button
-                  className="sp-btn primary sm"
-                  style={{ marginTop: 12 }}
-                  onClick={() => onPick(subject)}
-                  type="button"
-                >
-                  {goal ? 'Continue' : 'Start here'}
-                </button>
+                <div className="sp-row" style={{ marginTop: 12 }}>
+                  <button
+                    className="sp-btn primary sm"
+                    onClick={() => onPick(subject)}
+                    type="button"
+                  >
+                    {goal ? 'Continue' : 'Start here'}
+                  </button>
+                  {sat.has(subject.subject_id) ? (
+                    <button
+                      className="sp-btn sm light"
+                      onClick={() => void onTrain(subject)}
+                      type="button"
+                    >
+                      Train
+                    </button>
+                  ) : null}
+                </div>
               )}
             </div>
           );

@@ -137,6 +137,52 @@ export interface CheckupReport {
   caveat: string;
 }
 
+export interface PracticeOption {
+  option_key: string;
+  body: string;
+}
+
+export interface PracticeQuestion {
+  question_version_id: string;
+  subtopic_name: string;
+  topic_name: string;
+  stem: string;
+  instructions: string | null;
+  passage_title: string | null;
+  passage_body: string | null;
+  options: PracticeOption[];
+  hints_used: number;
+}
+
+export interface Misconception {
+  name: string;
+  description: string;
+  remediation_note: string | null;
+}
+
+export interface PracticeState {
+  session_id: string;
+  stage: 'asking' | 'hint' | 'explain' | 'finished';
+  position: number;
+  length: number;
+  answered: number;
+  correct_unaided: number;
+  taught: number;
+  question: PracticeQuestion | null;
+  hint: string | null;
+  solution_steps: string[] | null;
+  correct_option_key: string | null;
+  misconception: Misconception | null;
+  closing_note: string | null;
+}
+
+export interface PracticeAnswerIn {
+  question_version_id: string;
+  selected_option_key: string;
+  response_ms: number;
+  confidence: 'sure' | 'unsure' | 'guessed' | null;
+}
+
 export interface StudentIdentity {
   student_id: string;
   display_name: string;
@@ -195,4 +241,17 @@ export const api = {
   /** Where an already-open sitting is, for a client that has just reloaded. */
   current: (sessionId: string) => call<CheckupState>(`/checkup/${sessionId}`),
   report: (sessionId: string) => call<CheckupReport>(`/checkup/${sessionId}/report`),
+  startPractice: (studentId: string, subjectId: string, length = 10) =>
+    call<PracticeState>('/practice/start', {
+      method: 'POST',
+      body: JSON.stringify({ student_id: studentId, subject_id: subjectId, length }),
+    }),
+  practiceCurrent: (sessionId: string) => call<PracticeState>(`/practice/${sessionId}`),
+  practiceAnswer: (sessionId: string, body: PracticeAnswerIn) =>
+    call<PracticeState>(`/practice/${sessionId}/answer`, {
+      method: 'POST',
+      body: JSON.stringify({ attempt_id: crypto.randomUUID(), ...body }),
+    }),
+  practiceTaught: (sessionId: string) =>
+    call<PracticeState>(`/practice/${sessionId}/taught`, { method: 'POST' }),
 };

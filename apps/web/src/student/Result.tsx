@@ -33,7 +33,16 @@ function labelFor(mastery: number | null): string {
   return 'needs teaching';
 }
 
-export function Result({ sessionId, onRestart }: { sessionId: string; onRestart: () => void }) {
+export function Result({
+  sessionId,
+  onRestart,
+  onTrain,
+}: {
+  sessionId: string;
+  onRestart: () => void;
+  /** Absent until the subject is known; training starts where the plan says to start. */
+  onTrain?: () => Promise<void>;
+}) {
   const [report, setReport] = useState<CheckupReport | null>(null);
   const [issue, setIssue] = useState<string | null>(null);
 
@@ -224,7 +233,12 @@ export function Result({ sessionId, onRestart }: { sessionId: string; onRestart:
         ) : null}
 
         <div className="sp-row" style={{ marginTop: 22 }}>
-          <button className="sp-btn primary" onClick={onRestart} type="button">
+          {onTrain ? (
+            <button className="sp-btn primary" onClick={() => void onTrain()} type="button">
+              Start training
+            </button>
+          ) : null}
+          <button className="sp-btn light" onClick={onRestart} type="button">
             Back to my subjects
           </button>
         </div>

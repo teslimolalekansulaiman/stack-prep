@@ -20,6 +20,7 @@ from app.routers import (
     dev,
     health,
     pool,
+    practice,
     publishing,
     review,
     student,
@@ -55,6 +56,7 @@ def create_app() -> FastAPI:
     app.include_router(publishing.router)
     app.include_router(checkup.router)
     app.include_router(pool.router)
+    app.include_router(practice.router)
     app.include_router(student.router)
     # Student creation without a login, for building the student side. The router refuses to
     # answer unless app_env is local or ci, so shipping it is not the same as exposing it.

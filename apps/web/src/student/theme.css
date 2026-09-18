@@ -523,3 +523,210 @@
   margin: 0;
   font-weight: 700;
 }
+
+/* ---------- the coach board ----------
+ * A full-screen surface the explanation is written onto, one line at a time, with a caption
+ * of what the coach is saying. Voice arrives in a later phase; until then the caption IS the
+ * voice, so it must read as speech rather than as a paragraph of notes.
+ */
+.sp-coach {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background: var(--ground);
+  font-family: var(--display);
+}
+.sp-cbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(8px);
+}
+.sp-lesson {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  border-radius: var(--pill);
+  background: #fff;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-soft);
+  min-width: 0;
+}
+.sp-lesson small {
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 700;
+  display: block;
+}
+.sp-lesson strong {
+  font-size: 14px;
+}
+.sp-steps-mini {
+  display: flex;
+  gap: 4px;
+  margin-left: auto;
+}
+.sp-steps-mini i {
+  width: 22px;
+  height: 5px;
+  border-radius: 3px;
+  background: #e6e0ee;
+}
+.sp-steps-mini i.on {
+  background: var(--purple);
+}
+.sp-board {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  background-image: radial-gradient(#dcd4e8 1px, transparent 1.2px);
+  background-size: 22px 22px;
+}
+.sp-ink {
+  position: absolute;
+  left: clamp(18px, 6vw, 70px);
+  top: clamp(18px, 5vh, 44px);
+  right: 18px;
+  bottom: 150px;
+  overflow: auto;
+  font-size: clamp(19px, 2.4vw, 26px);
+  line-height: 1.5;
+  color: #1e1a3a;
+}
+.sp-hl {
+  display: block;
+  opacity: 0;
+  transform: translateY(6px);
+  margin-bottom: 14px;
+  transition: opacity 0.5s, transform 0.5s;
+}
+.sp-hl.show {
+  opacity: 1;
+  transform: none;
+}
+.sp-hl .n {
+  font-family: var(--mono);
+  font-size: 0.6em;
+  color: var(--purple);
+  display: block;
+  margin-bottom: 2px;
+}
+.sp-hl.answer {
+  color: var(--green-ink);
+  font-weight: 800;
+}
+.sp-board.dim:after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(31, 0, 80, 0.35);
+}
+.sp-tutorcard {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  right: 14px;
+  max-width: 660px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 12px 14px;
+  border-radius: 18px;
+  background: var(--purple-dark);
+  color: #fff;
+  box-shadow: var(--shadow-soft);
+  z-index: 2;
+}
+.sp-tutorcard .who {
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #c9b8ea;
+  font-weight: 700;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.sp-tutorcard .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--green);
+  animation: sp-pulse 1.2s infinite;
+}
+.sp-tutorcard.paused .dot {
+  background: var(--yellow);
+  animation: none;
+}
+.sp-tutorcard p {
+  margin: 4px 0 0;
+  font-size: 14.5px;
+  line-height: 1.45;
+}
+@keyframes sp-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+}
+.sp-dock {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+  background: #fff;
+  border-top: 2px solid var(--ink);
+}
+.sp-dock .ctl {
+  display: flex;
+  gap: 6px;
+  margin-left: auto;
+}
+.sp-dock .ctl button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid var(--ink);
+  background: #fff;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+}
+.sp-dock .ctl button:disabled {
+  opacity: 0.35;
+}
+.sp-soon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.sp-conf {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+.sp-conf button {
+  border: 2px solid var(--line);
+  background: #fff;
+  border-radius: var(--pill);
+  padding: 9px 15px;
+  font-weight: 800;
+  font-size: 13.5px;
+}
+.sp-conf button:hover {
+  border-color: var(--lilac);
+}
