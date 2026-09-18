@@ -6,9 +6,16 @@ mistake this router exists to prevent. Reserving a question into the diagnostic 
 student may see it — that is decided by the six gates behind `deliverable_questions`, and a
 reserved question that has not passed them is simply a reservation with work still to do.
 
-Why reserve at all. A check-up is the only sitting where the student has no history, so its
-questions have to be ones they have never practised. If the same items appear in practice,
-every later check-up measures memory instead of understanding. The pool is the separation.
+Why reserve at all — and when not to. The check-up does NOT require a pool. It excludes
+questions this student has answered before, read from student_question_history, which is the
+thing that actually keeps a baseline honest: a first-time student has no history, so every
+question is equally unseen and a reserved set buys nothing. Reserving where it is not needed
+costs something real, because practice only draws on the 'practice' pool.
+
+What a pool is still good for is a deliberate measurement set: a curated spread of topics and
+difficulties, chosen once, so that a check-up given months apart is comparable. Where one
+exists the check-up prefers it. Where none exists nothing breaks. Reserve when you want that
+comparability; release when you would rather have the questions back in practice.
 
 How the choice is made:
 

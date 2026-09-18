@@ -36,9 +36,21 @@ from engine.version import ENGINE_VERSION
 
 router = APIRouter(prefix="/v1/checkup", tags=["checkup"])
 
-#: Questions a check-up may draw on. Practice items are excluded on purpose: a baseline
-#: measured on questions the student has drilled measures our bank, not the student.
-CHECKUP_POOL = "diagnostic"
+#: What a check-up must never draw on. Held-out items exist to measure the bank itself, and
+#: spending them on a diagnosis would burn the only unpractised set we keep.
+#:
+#: Note what is NOT excluded: ordinary practice questions. A check-up used to require items
+#: reserved in the diagnostic pool, which sounds careful and mostly is not. What makes a
+#: baseline honest is that THIS student has not seen the question, and that is a fact about
+#: the student's history, not a label on the question. A student sitting a first check-up has
+#: no history at all, so every question is equally unseen to them, and a reserved pool buys
+#: nothing while taking items out of practice for everybody else.
+#:
+#: The exclusion is therefore per-student, read from student_question_history — which the
+#: schema describes as exactly that: "the selector reads this to avoid repeating an item". A
+#: curated pool still counts, since reserved questions are preferred where they exist, but it
+#: is a preference now rather than a gate, and a subject with no pool works fine.
+EXCLUDED_POOL = "held_out"
 
 
 class StartCheckup(BaseModel):
@@ -121,7 +133,7 @@ async def _current_syllabus(conn: AsyncConnection, subject_id: UUID) -> UUID:
 
 
 async def _topics(conn: AsyncConnection, subject_id: UUID) -> tuple[list[TopicWeight], str]:
-    """Topics that actually have check-up questions, weighted by exam share.
+    """Topics that have questions a check-up could use, weighted by exam share.
 
     Where no reviewed weights exist yet, topics are treated as equally important and the
     response says so — a guessed weighting presented as fact would quietly distort every
@@ -140,7 +152,7 @@ async def _topics(conn: AsyncConnection, subject_id: UUID) -> tuple[list[TopicWe
           ON c.curriculum_item_id = skill.id
          AND c.classification_role = 'primary' AND c.review_status = 'approved'
         JOIN deliverable_questions dq ON dq.question_id = c.question_id
-        JOIN questions q ON q.id = dq.question_id AND q.usage_pool = :pool
+        JOIN questions q ON q.id = dq.question_id AND q.usage_pool <> :pool
         -- Weight comes from the exam's structure, never from how many questions we happen
         -- to hold: our bank's shape is our sampling, not the examination's.
         LEFT JOIN topic_exam_weight w
@@ -151,14 +163,14 @@ async def _topics(conn: AsyncConnection, subject_id: UUID) -> tuple[list[TopicWe
         ORDER BY topic.display_order, topic.code
         """,
         version=version_id,
-        pool=CHECKUP_POOL,
+        pool=EXCLUDED_POOL,
     )
     if not rows:
         raise HTTPException(
             status_code=409,
             detail=(
-                "no approved check-up questions exist for this subject yet. Questions must "
-                "be reviewed and placed in the 'diagnostic' pool before a check-up can run."
+                "no approved questions exist for this subject yet. Questions must be "
+                "reviewed, licensed for delivery and mapped to a skill first."
             ),
         )
 
@@ -204,15 +216,22 @@ async def _pick_question(
     target_level: int,
     session_id: UUID,
     seen: list[UUID],
+    student_id: UUID,
 ) -> dict[str, Any] | None:
-    """The closest question to the level we want, inside this topic, not already served."""
+    """The nearest question to the level we want, in this topic, that this student has never
+    been asked.
+
+    "Never been asked" spans every earlier sitting and every practice answer, not just this
+    session: a question drilled last week would measure memory of it. Where a curated
+    diagnostic pool exists its questions come first; a subject without one still works.
+    """
     rows = await fetch_all(
         conn,
         """
         SELECT dq.question_version_id, dq.mastery_level_number, p.stem, p.instructions,
                p.passage_title, p.passage_body, topic.name AS topic_name
         FROM deliverable_questions dq
-        JOIN questions q ON q.id = dq.question_id AND q.usage_pool = :pool
+        JOIN questions q ON q.id = dq.question_id AND q.usage_pool <> :pool
         JOIN candidate_question_payload p ON p.question_version_id = dq.question_version_id
         JOIN curriculum_items skill ON skill.id = dq.primary_skill_id
         JOIN curriculum_items sub ON sub.id = skill.parent_id
@@ -221,16 +240,23 @@ async def _pick_question(
           AND topic.id = CAST(:topic AS uuid)
           AND (CARDINALITY(CAST(:seen AS uuid[])) = 0
                OR NOT (dq.question_version_id = ANY (CAST(:seen AS uuid[]))))
-        ORDER BY abs(coalesce(dq.mastery_level_number, 3) - :level),
+          -- Anything this student has answered before, in any sitting or in practice.
+          AND NOT EXISTS (
+              SELECT 1 FROM student_question_history h
+              WHERE h.student_id = :student AND h.question_id = dq.question_id
+          )
+        ORDER BY (q.usage_pool = 'diagnostic') DESC,
+                 abs(coalesce(dq.mastery_level_number, 3) - :level),
                  md5(:session || dq.question_version_id::text)
         LIMIT 1
         """,
-        pool=CHECKUP_POOL,
+        pool=EXCLUDED_POOL,
         subject=subject_id,
         topic=slot.topic_id,
         level=target_level,
         seen=seen,
         session=str(session_id),
+        student=student_id,
     )
     return rows[0] if rows else None
 
@@ -247,7 +273,9 @@ async def _options(conn: AsyncConnection, question_version_id: UUID) -> list[dic
     return [{"option_key": row["option_key"], "body": row["body"]} for row in rows]
 
 
-async def _next_state(conn: AsyncConnection, session_id: UUID, subject_id: UUID) -> CheckupState:
+async def _next_state(
+    conn: AsyncConnection, session_id: UUID, subject_id: UUID, student_id: UUID
+) -> CheckupState:
     topics, weights_source = await _topics(conn, subject_id)
     blueprint = build_blueprint(topics, length=min(DEFAULT_LENGTH, _capacity(topics)))
     answers = await _answers_so_far(conn, session_id)
@@ -267,7 +295,9 @@ async def _next_state(conn: AsyncConnection, session_id: UUID, subject_id: UUID)
     target = next_level(outcomes, slot.start_level)
     seen = [row["question_version_id"] for row in answers]
 
-    question = await _pick_question(conn, subject_id, slot, target, session_id, seen)
+    question = await _pick_question(
+        conn, subject_id, slot, target, session_id, seen, student_id
+    )
     if question is None:
         # The topic ran out of questions. Rather than repeat one, the sitting ends and the
         # report says which topics went unassessed.
@@ -333,7 +363,9 @@ async def start(
         )
     ).scalar_one()
     await conn.commit()
-    return await _next_state(conn, session_id, request.subject_id)
+    return await _next_state(
+        conn, session_id, request.subject_id, request.student_id
+    )
 
 
 @router.post(
@@ -410,7 +442,9 @@ async def answer(
         message = str(original.args[0]) if original and original.args else str(error)
         raise HTTPException(status_code=409, detail=message.split("\n")[0]) from error
 
-    state = await _next_state(conn, session_id, session["subject_id"])
+    state = await _next_state(
+        conn, session_id, session["subject_id"], session["student_id"]
+    )
     if state.finished:
         await conn.execute(
             text("UPDATE study_sessions SET ended_at = now() WHERE id = :id AND ended_at IS NULL"),
