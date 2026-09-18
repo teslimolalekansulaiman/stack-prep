@@ -28,8 +28,8 @@ questions:
     C: '176'
     D: 241 8 8
   proposed_skill: MATH.I.1.ii
-  skill_reason: 'Matched ''Convert 241 in base 5 tobase'' in the question, which is converting between
-    bases. Read from the mathematics itself: this paper prints no directions.'
+  skill_reason: 'Matched ''in base'' in the question, which is working in a number base. Read from the
+    mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 2
@@ -55,9 +55,9 @@ questions:
     B: '35.00'
     C: '33.00'
     D: 30.00 1987
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.III.1.ii
+  skill_reason: Matched 'square' once the missing spaces were ignored, which is polygons. The source prints
+    many of these words run together.
   notation_suspect: false
   figures: []
 - number: 4
@@ -150,7 +150,7 @@ questions:
     C: '#6,160.00'
     D: '#5,833.33'
   proposed_skill: MATH.I.2.iii
-  skill_reason: 'Matched ''simple interest'' in the question, which is interest, ratio, profit and percentage.
+  skill_reason: 'Matched ''per annum'' in the question, which is interest, ratio, profit and percentage.
     Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: true
   figures:
@@ -395,9 +395,9 @@ questions:
     B: –1<x<1
     C: x,-1
     D: x>1
-  proposed_skill: MATH.II.1.vi
-  skill_reason: Matched 'function' once the missing spaces were ignored, which is graphs of polynomials.
-    The source prints many of these words run together.
+  proposed_skill: MATH.II.1.iii
+  skill_reason: 'Matched ''f(x)'' in the question, which is functions. Read from the mathematics itself:
+    this paper prints no directions.'
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/8fa12f62f199360548fee121af84ab14abd056a74339130a205d5ef563943117.png
@@ -574,9 +574,9 @@ questions:
     B: '1000'
     C: '900'
     D: '800'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.v
+  skill_reason: 'Matched ''find the value of x'' in the question, which is solving for one or two unknowns.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures:
   - file: docs/questions/utme/mathematics/figures/a8dd3c96639a5e3dbc5010eb5857eb5a72e719cb24bf886bf6f16cbba705cb05.png
@@ -609,9 +609,9 @@ questions:
     B: (m2+n2)/2mn
     C: mn/2(m2–n2)
     D: m2n2/(m2–n2)
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.iii
+  skill_reason: Almost no words, but the symbols carry variables raised to powers or joined by operators,
+    so this is algebra rather than arithmetic.
   notation_suspect: false
   figures: []
 - number: 40

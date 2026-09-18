@@ -27,9 +27,9 @@ questions:
     B: '20'
     C: '24'
     D: '25'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.v
+  skill_reason: 'Matched ''solve for X'' in the question, which is solving for one or two unknowns. Read
+    from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 2
@@ -53,9 +53,9 @@ questions:
     B: a1/2
     C: a3/2
     D: a-2/3
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.iii
+  skill_reason: Almost no words, but the symbols carry variables raised to powers or joined by operators,
+    so this is algebra rather than arithmetic.
   notation_suspect: false
   figures: []
 - number: 4
@@ -67,9 +67,9 @@ questions:
     B: 3, 2
     C: -2, -3
     D: -3, -2
-  proposed_skill: MATH.I.3.iv
-  skill_reason: 'Matched ''Log'' in the question, which is logarithms. Read from the mathematics itself:
-    this paper prints no directions.'
+  proposed_skill: MATH.II.1.v
+  skill_reason: 'Matched ''solve for x'' in the question, which is solving for one or two unknowns. Read
+    from the mathematics itself: this paper prints no directions.'
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/4d5a7e57b66500706246b4bb4d24443eef64ef9ad2df7ea1c11f875a58634ca8.png
@@ -89,9 +89,9 @@ questions:
     B: '2'
     C: “3
     D: “2
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.v
+  skill_reason: 'Matched ''Find the value of K'' in the question, which is solving for one or two unknowns.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 6
@@ -104,9 +104,9 @@ questions:
     B: '#35.00'
     C: '#31.00'
     D: '#25.00'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.III.2.iii
+  skill_reason: 'Matched ''cylindric'' in the question, which is surface areas and volumes of solids.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 7
@@ -514,9 +514,9 @@ questions:
     B: '25.0'
     C: '45.0'
     D: '50.0'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.III.2.iii
+  skill_reason: 'Matched ''cylindric'' in the question, which is surface areas and volumes of solids.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/12c20438adf0f19b240bf42a5ac743ab8f994b618a9f6d087d3a0a86aa45dc57.png

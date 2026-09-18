@@ -41,9 +41,9 @@ questions:
     B: 249 696
     C: 249 600
     D: 244 800
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.I.2.iii
+  skill_reason: 'Matched ''population'' in the question, which is interest, ratio, profit and percentage.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 3
@@ -54,9 +54,9 @@ questions:
     B: –2, 1 2000
     C: –2/5, 1
     D: 2, 3/5
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.v
+  skill_reason: 'Matched ''values of m and n'' in the question, which is solving for one or two unknowns.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures:
   - file: docs/questions/utme/mathematics/figures/d9ae94816d33235af106aa1e946adffaaf354aacf7a11f2faebf88a9173c2c33.png
@@ -77,9 +77,9 @@ questions:
     B: '24'
     C: '62'
     D: '86'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.I.4.iv
+  skill_reason: 'Matched ''like both'' in the question, which is a survey question, which is sets in words.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 5
@@ -132,9 +132,9 @@ questions:
     B: '50'
     C: '40'
     D: '20'
-  proposed_skill: MATH.I.2.iii
-  skill_reason: 'Matched ''loss'' in the question, which is interest, ratio, profit and percentage. Read
-    from the mathematics itself: this paper prints no directions.'
+  proposed_skill: MATH.II.1.v
+  skill_reason: 'Matched ''find the value of x'' in the question, which is solving for one or two unknowns.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 9
@@ -158,9 +158,9 @@ questions:
     B: '3'
     C: '4'
     D: '5'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.I.1.ii
+  skill_reason: 'Matched ''digit P'' in the question, which is working in a number base. Read from the
+    mathematics itself: this paper prints no directions.'
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/02f75e0e48ec2e0a777726ec9277dc30512f6ea9c511acf7e41a9ca890825aa6.png
@@ -215,9 +215,9 @@ questions:
     B: 8x - 4y
     C: x – y
     D: 2x
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.4.i
+  skill_reason: 'Matched ''3rd term'' in the question, which is nth term of a progression. Read from the
+    mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 14

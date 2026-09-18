@@ -806,8 +806,9 @@ questions:
     D: came over
   proposed_answer: C
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.7.i
+  skill_reason: 'Read from the options: every option is ''came'' with a different particle, which is idiomatic
+    usage. The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 43
   page: 153
@@ -821,8 +822,9 @@ questions:
     D: turn over
   proposed_answer: B
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.7.i
+  skill_reason: 'Read from the options: every option is ''turn'' with a different particle, which is idiomatic
+    usage. The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 44
   page: 153
@@ -836,8 +838,9 @@ questions:
     D: legs
   proposed_answer: C
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.7.i
+  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
+    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 45
   page: 154
@@ -851,8 +854,9 @@ questions:
     D: fill over
   proposed_answer: A
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.7.i
+  skill_reason: 'Read from the options: every option is ''fill'' with a different particle, which is idiomatic
+    usage. The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 46
   page: 154
@@ -866,8 +870,9 @@ questions:
     D: manifest
   proposed_answer: A
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.7.i
+  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
+    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 47
   page: 154
@@ -881,8 +886,9 @@ questions:
     D: stand over
   proposed_answer: B
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.7.i
+  skill_reason: 'Read from the options: every option is ''stand'' with a different particle, which is
+    idiomatic usage. The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 48
   page: 154
@@ -896,8 +902,9 @@ questions:
     D: takes back
   proposed_answer: A
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.7.i
+  skill_reason: 'Read from the options: every option is ''takes'' with a different particle, which is
+    idiomatic usage. The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 49
   page: 154
@@ -911,8 +918,9 @@ questions:
     D: keep
   proposed_answer: C
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.7.i
+  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
+    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 50
   page: 154

@@ -40,9 +40,9 @@ questions:
     B: '1'
     C: '2'
     D: '3'
-  proposed_skill: MATH.II.1.iii
-  skill_reason: 'Matched ''x2'' in the question, which is polynomials and quadratics. Read from the mathematics
-    itself: this paper prints no directions.'
+  proposed_skill: MATH.II.1.v
+  skill_reason: 'Matched ''find the value of x'' in the question, which is solving for one or two unknowns.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 4
@@ -53,9 +53,9 @@ questions:
     B: 2/ 3
     C: '1'
     D: 5/ 4
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.v
+  skill_reason: 'Matched ''Solve for y'' in the question, which is solving for one or two unknowns. Read
+    from the mathematics itself: this paper prints no directions.'
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/5c167c9f1168450111ebcbae55345f4f061253955d40e847a19af98b226ea458.png
@@ -153,9 +153,9 @@ questions:
     B: '4'
     C: '3'
     D: '1'
-  proposed_skill: MATH.II.1.iii
-  skill_reason: 'Matched ''x2'' in the question, which is polynomials and quadratics. Read from the mathematics
-    itself: this paper prints no directions.'
+  proposed_skill: MATH.II.1.v
+  skill_reason: 'Matched ''solve for x'' in the question, which is solving for one or two unknowns. Read
+    from the mathematics itself: this paper prints no directions.'
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/5c387741d02f25c6f1d6e6c1b1782d8f67c1e8ef320ae07101af0740983581d1.png

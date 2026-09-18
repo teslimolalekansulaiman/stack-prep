@@ -161,9 +161,9 @@ questions:
     B: '4'
     C: '20'
     D: '8'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.I.4.iv
+  skill_reason: 'Matched ''neither'' in the question, which is a survey question, which is sets in words.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 10
@@ -187,9 +187,9 @@ questions:
     B: '8'
     C: '5'
     D: '3'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.v
+  skill_reason: 'Matched ''find the value of x'' in the question, which is solving for one or two unknowns.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 12
@@ -254,9 +254,9 @@ questions:
     B: –5
     C: '2'
     D: '5'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.v
+  skill_reason: 'Matched ''find the value of x'' in the question, which is solving for one or two unknowns.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/fe3bf4222db762846f3bc6e57a26a7ee2038c683a6f50231ca1b3977fb85df87.png
@@ -700,9 +700,9 @@ questions:
     B: '5'
     C: '8'
     D: '7'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.v
+  skill_reason: 'Matched ''find the value of n'' in the question, which is solving for one or two unknowns.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 48
@@ -727,9 +727,9 @@ questions:
     B: '18'
     C: '3'
     D: '6'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.V.4.i
+  skill_reason: Matched 'committee' once the missing spaces were ignored, which is permutations and combinations.
+    The source prints many of these words run together.
   notation_suspect: false
   figures: []
 - number: 50

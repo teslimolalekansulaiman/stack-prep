@@ -95,9 +95,9 @@ questions:
     B: '3'
     C: '4'
     D: '6'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.v
+  skill_reason: 'Matched ''find the value of x'' in the question, which is solving for one or two unknowns.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 7
@@ -124,9 +124,9 @@ questions:
     B: '15'
     C: '10'
     D: '5'
-  proposed_skill: MATH.II.1.i
-  skill_reason: Matched 'subject' once the missing spaces were ignored, which is changing the subject
-    of a formula. The source prints many of these words run together.
+  proposed_skill: MATH.I.4.iv
+  skill_reason: 'Matched ''at least one of'' in the question, which is a survey question, which is sets
+    in words. Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 11

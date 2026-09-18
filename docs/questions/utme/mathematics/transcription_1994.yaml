@@ -129,9 +129,9 @@ questions:
     B: '8'
     C: '12'
     D: '14'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.I.4.iv
+  skill_reason: 'Matched ''at least one of'' in the question, which is a survey question, which is sets
+    in words. Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 8
@@ -155,9 +155,9 @@ questions:
     B: '0'
     C: '1'
     D: -4 or 0 1994
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.v
+  skill_reason: 'Matched ''Solve for x'' in the question, which is solving for one or two unknowns. Read
+    from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 10
@@ -203,9 +203,9 @@ questions:
     B: 1,-6
     C: 1,6
     D: 6,-1
-  proposed_skill: MATH.II.1.iv
-  skill_reason: 'Matched ''factors of'' in the question, which is factorising. Read from the mathematics
-    itself: this paper prints no directions.'
+  proposed_skill: MATH.II.1.v
+  skill_reason: 'Matched ''values of p and q'' in the question, which is solving for one or two unknowns.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures:
   - file: docs/questions/utme/mathematics/figures/7b912de8435e9908e620a638eb1ae42ee839c2843ba5d79b35ab4e9181b63cee.png
@@ -225,9 +225,9 @@ questions:
     B: 2/ 3 3
     C: 3/
     D: ¾ 2
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.v
+  skill_reason: 'Matched ''solve for x'' in the question, which is solving for one or two unknowns. Read
+    from the mathematics itself: this paper prints no directions.'
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/7e9fb3cb1b147a714d250db9233d4f91691d7122f5b46043153006dd8ba66a16.png
@@ -247,9 +247,9 @@ questions:
     B: '4'
     C: '5'
     D: '6'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.v
+  skill_reason: 'Matched ''Solve for r'' in the question, which is solving for one or two unknowns. Read
+    from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 16
@@ -260,9 +260,9 @@ questions:
     B: -5/ 3 3
     C: 5/
     D: 2/ 3 3
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.iii
+  skill_reason: Almost no words, but the symbols carry variables raised to powers or joined by operators,
+    so this is algebra rather than arithmetic.
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/7b0349f913211ed128ffc07c53c331bcde71a54455092d32f32c1510425638c4.png
@@ -317,9 +317,9 @@ questions:
     B: 5/ 5 3
     C: '-2'
     D: '2'
-  proposed_skill: MATH.II.4.ii
-  skill_reason: 'Matched ''arithmetic progression'' in the question, which is arithmetic and geometric
-    progressions. Read from the mathematics itself: this paper prints no directions.'
+  proposed_skill: MATH.II.4.i
+  skill_reason: 'Matched ''6th term'' in the question, which is nth term of a progression. Read from the
+    mathematics itself: this paper prints no directions.'
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/9cc118e58592c7f070254c93638a9cee5dfb20214f08652b58f63aa25ac40ceb.png
@@ -340,9 +340,9 @@ questions:
     B: '100'
     C: '10'
     D: '102'
-  proposed_skill: MATH.I.3.iv
-  skill_reason: 'Matched ''log'' in the question, which is logarithms. Read from the mathematics itself:
-    this paper prints no directions.'
+  proposed_skill: MATH.II.1.v
+  skill_reason: 'Matched ''Find the value of r'' in the question, which is solving for one or two unknowns.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 21
@@ -403,9 +403,9 @@ questions:
     B: x = 8, y = 3
     C: x = 3, y = -8
     D: x = 8, y = -3
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.v
+  skill_reason: 'Matched ''Solve for x'' in the question, which is solving for one or two unknowns. Read
+    from the mathematics itself: this paper prints no directions.'
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/f6dcd0c60a72473997e68ba1896526329c514e5609f8dd38ff6fd357787612cc.png
@@ -641,9 +641,9 @@ questions:
     B: '1'
     C: '-2'
     D: '2'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.iii
+  skill_reason: Almost no words, but the symbols carry variables raised to powers or joined by operators,
+    so this is algebra rather than arithmetic.
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/498eebda842630bcfaadcf81dc5be155083b09b8f28c57e3b21d4a67a0872c88.png

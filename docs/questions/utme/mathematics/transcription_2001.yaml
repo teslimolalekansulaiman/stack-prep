@@ -132,9 +132,9 @@ questions:
     B: (8 – q)/2
     C: (q – 8)/7
     D: 7 / (q –1)
-  proposed_skill: MATH.II.1.iii
-  skill_reason: 'Matched ''x2'' in the question, which is polynomials and quadratics. Read from the mathematics
-    itself: this paper prints no directions.'
+  proposed_skill: MATH.II.1.v
+  skill_reason: 'Matched ''find the value of p'' in the question, which is solving for one or two unknowns.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/b386b48d22ee2301b633fdfae4f818746fb26333046588d1ef02b322f63d3a7a.png
@@ -167,9 +167,9 @@ questions:
     B: ax – 6
     C: ax – 2
     D: ax + 2
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.iii
+  skill_reason: Almost no words, but the symbols carry variables raised to powers or joined by operators,
+    so this is algebra rather than arithmetic.
   notation_suspect: false
   figures: []
 - number: 12
@@ -249,9 +249,9 @@ questions:
     B: 29 years
     C: 58 years
     D: 100 years
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.4.i
+  skill_reason: 'Matched ''each year saves'' in the question, which is nth term of a progression. Read
+    from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 16
@@ -353,9 +353,9 @@ questions:
     B: 22m
     C: 23m
     D: 25m
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.III.2.iii
+  skill_reason: 'Matched ''cylindric'' in the question, which is surface areas and volumes of solids.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 24

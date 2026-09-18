@@ -103,9 +103,9 @@ questions:
     B: '21'
     C: '16'
     D: '3'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.I.4.iv
+  skill_reason: 'Matched ''at least one of'' in the question, which is a survey question, which is sets
+    in words. Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 10
@@ -155,9 +155,9 @@ questions:
     B: r2 - k 2πr2Q Q 4πr2Q
     C: r2 - k
     D: r2 - k 2πr2Q 4πr2Q
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.iii
+  skill_reason: Almost no words, but the symbols carry variables raised to powers or joined by operators,
+    so this is algebra rather than arithmetic.
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/0a30322b08e22ccb541987f88f8d46f7f4ebc5a9e02a59f394508b17d21c1e55.png
@@ -203,9 +203,9 @@ questions:
     B: '85'
     C: '64'
     D: '45'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.4.i
+  skill_reason: 'Matched ''4thterm'' in the question, which is nth term of a progression. Read from the
+    mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 18
@@ -307,9 +307,9 @@ questions:
     B: '2'
     C: '3'
     D: '4'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.v
+  skill_reason: 'Matched ''Find the value of K'' in the question, which is solving for one or two unknowns.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/675106e72f5600f02c8b2ff79c52d78bd1ec249d278964ae0537b87d2e92e85e.png

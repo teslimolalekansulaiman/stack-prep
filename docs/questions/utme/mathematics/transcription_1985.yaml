@@ -29,8 +29,8 @@ questions:
     D: 13/15<0.865<6/7
     E: 0.865<6/7<13/15
   proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  skill_reason: 'Matched ''ascending order'' in the question, which is common multiples and factors. Read
+    from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 2
@@ -44,7 +44,7 @@ questions:
     D: '#200.00'
     E: '#250.00'
   proposed_skill: MATH.I.2.iii
-  skill_reason: 'Matched ''simple interest'' in the question, which is interest, ratio, profit and percentage.
+  skill_reason: 'Matched ''per annum'' in the question, which is interest, ratio, profit and percentage.
     Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
@@ -58,7 +58,7 @@ questions:
     D: '111'
     E: '10'
   proposed_skill: MATH.I.1.ii
-  skill_reason: 'Matched ''base 2'' in the question, which is converting between bases. Read from the
+  skill_reason: 'Matched ''in base'' in the question, which is working in a number base. Read from the
     mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
@@ -658,9 +658,9 @@ questions:
     C: 19kg
     D: 25kg
     E: 48kg
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.III.2.iii
+  skill_reason: Matched 'sphere' once the missing spaces were ignored, which is surface areas and volumes
+    of solids. The source prints many of these words run together.
   notation_suspect: false
   figures: []
 - number: 40
@@ -716,9 +716,9 @@ questions:
     C: '5.2'
     D: '5.0'
     E: '4.1'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.III.1.ii
+  skill_reason: Matched 'trapezium' once the missing spaces were ignored, which is polygons. The source
+    prints many of these words run together.
   notation_suspect: false
   figures: []
 - number: 43

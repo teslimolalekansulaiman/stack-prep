@@ -64,8 +64,8 @@ questions:
     C: '48'
     D: '60'
   proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  skill_reason: 'Matched ''L.C.M'' in the question, which is common multiples and factors. Read from the
+    mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 4
@@ -76,9 +76,9 @@ questions:
     B: '3'
     C: '5'
     D: 7 1986
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.III.1.ii
+  skill_reason: Matched 'square' once the missing spaces were ignored, which is polygons. The source prints
+    many of these words run together.
   notation_suspect: false
   figures:
   - file: docs/questions/utme/mathematics/figures/fa21eef72cf6e80eb9d701c9e35bf9bd8bc2378d0b922211060b2281a6435c66.png
@@ -415,9 +415,9 @@ questions:
     B: '1'
     C: '3'
     D: '27'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.iii
+  skill_reason: Almost no words, but the symbols carry variables raised to powers or joined by operators,
+    so this is algebra rather than arithmetic.
   notation_suspect: false
   figures: []
 - number: 28
@@ -428,9 +428,9 @@ questions:
     B: –2and 2
     C: 0and1
     D: 1and0
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.3.i
+  skill_reason: Matched 'satisfy' once the missing spaces were ignored, which is inequalities. The source
+    prints many of these words run together.
   notation_suspect: false
   figures: []
 - number: 29
@@ -727,9 +727,9 @@ questions:
     B: '#112.00'
     C: '#136.00'
     D: '#160.00'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.III.1.ii
+  skill_reason: Matched 'square' once the missing spaces were ignored, which is polygons. The source prints
+    many of these words run together.
   notation_suspect: false
   figures: []
 - number: 45
@@ -755,9 +755,9 @@ questions:
     B: '125'
     C: '123'
     D: '120'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.V.2.i
+  skill_reason: Matched 'median' once the missing spaces were ignored, which is mean, mode and median.
+    The source prints many of these words run together.
   notation_suspect: false
   figures: []
 - number: 47
@@ -782,9 +782,9 @@ questions:
     B: 26x104
     C: 16x104
     D: 13x104
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.I.2.iii
+  skill_reason: Matched 'population' once the missing spaces were ignored, which is interest, ratio, profit
+    and percentage. The source prints many of these words run together.
   notation_suspect: false
   figures:
   - file: docs/questions/utme/mathematics/figures/17f906a13c003eedb61802c26b2dfe542efc2f6e19255ef5a2a8b188f736fcfd.png

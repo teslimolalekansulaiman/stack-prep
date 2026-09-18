@@ -310,9 +310,9 @@ questions:
     B: '2'
     C: '3'
     D: '4'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.III.1.ii
+  skill_reason: Matched 'square' once the missing spaces were ignored, which is polygons. The source prints
+    many of these words run together.
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/7fe9a007d202366d2f11da02bb0699a08a171dca13362b3c092e00caae9a8a5c.png
@@ -332,9 +332,9 @@ questions:
     B: 3,6
     C: –1,6
     D: 1,6
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.iii
+  skill_reason: Almost no words, but the symbols carry variables raised to powers or joined by operators,
+    so this is algebra rather than arithmetic.
   notation_suspect: false
   figures: []
 - number: 24
@@ -384,9 +384,9 @@ questions:
     B: 3n + 2
     C: 27+18(n-1)
     D: 27+6(n -1)
-  proposed_skill: MATH.II.4.ii
-  skill_reason: Matched 'progression' once the missing spaces were ignored, which is arithmetic and geometric
-    progressions. The source prints many of these words run together.
+  proposed_skill: MATH.II.1.iii
+  skill_reason: Almost no words, but the symbols carry variables raised to powers or joined by operators,
+    so this is algebra rather than arithmetic.
   notation_suspect: false
   figures: []
 - number: 29
@@ -507,9 +507,9 @@ questions:
     B: '1220'
     C: '1500'
     D: '1520'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.v
+  skill_reason: 'Matched ''find the value of y'' in the question, which is solving for one or two unknowns.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures:
   - file: docs/questions/utme/mathematics/figures/82f147583fb98e473d91b0118492a320aa287a39924e10363391707f20244363.png
@@ -576,9 +576,9 @@ questions:
     B: b √ b- a √ a
     C: b
     D: √ b- a √ b - a a
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.iii
+  skill_reason: Almost no words, but the symbols carry variables raised to powers or joined by operators,
+    so this is algebra rather than arithmetic.
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/948557b1db1255618675880bbc0d19a7ee701d4c35ca6e1e464b189fefd666a7.png
@@ -599,9 +599,9 @@ questions:
     B: '0450'
     C: '0600'
     D: 0900
-  proposed_skill: MATH.III.5.i
-  skill_reason: Proposed from the wording of the question, which is about trigonometry. The paper prints
-    no direction to read instead.
+  proposed_skill: MATH.III.5.iv
+  skill_reason: Matched 'bearing' once the missing spaces were ignored, which is bearings. The source
+    prints many of these words run together.
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/9b426a319467ae0c826b8c58b3ad0cce0dfcd4780e0df9723eed5afb54d6a02b.png

@@ -28,8 +28,8 @@ questions:
     C: 6/10,17/20,4/5,3/4
     D: 4/5,9/10,17/10,3/4
   proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  skill_reason: 'Matched ''descending order'' in the question, which is common multiples and factors.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/7aed74f94036711feaeff616d71f09aaeeac2eee1109638df7ff8d98820eea4b.png
@@ -71,9 +71,9 @@ questions:
     B: 2,9,7,
     C: 2,3,5,7,
     D: 2,3,7,9,
-  proposed_skill: MATH.II.1.ii
-  skill_reason: Matched 'factor' once the missing spaces were ignored, which is factor and remainder theorems.
-    The source prints many of these words run together.
+  proposed_skill: MATH.II.1.iii
+  skill_reason: Almost no words, but the symbols carry variables raised to powers or joined by operators,
+    so this is algebra rather than arithmetic.
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/2957030ce9bc1d6b9053ee988519f322559f365eb547ce2971b328fd39010ec6.png
@@ -199,9 +199,9 @@ questions:
     B: –1and 1
     C: 1and3
     D: 0and1 1989
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.3.i
+  skill_reason: Matched 'satisfy' once the missing spaces were ignored, which is inequalities. The source
+    prints many of these words run together.
   notation_suspect: false
   figures: []
 - number: 14
@@ -388,9 +388,9 @@ questions:
     B: 3 (x+1)(2-x) (x+1)2-X)
     C: '-1'
     D: 1 (x+1)(x-2) (x+1)(x-2)
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.iii
+  skill_reason: Almost no words, but the symbols carry variables raised to powers or joined by operators,
+    so this is algebra rather than arithmetic.
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/7c13e8daeff4c8aefd6d8e295b60494c8cc7367478e908326cc74ef8998563cd.png
@@ -576,9 +576,9 @@ questions:
     B: '2'
     C: '3'
     D: '4'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.III.1.ii
+  skill_reason: Matched 'rhombus' once the missing spaces were ignored, which is polygons. The source
+    prints many of these words run together.
   notation_suspect: false
   figures: []
 - number: 37
@@ -589,9 +589,9 @@ questions:
     B: 3√3/2cm
     C: 3√3cm
     D: 2√3cm
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.iii
+  skill_reason: Almost no words, but the symbols carry variables raised to powers or joined by operators,
+    so this is algebra rather than arithmetic.
   notation_suspect: false
   figures: []
 - number: 38
@@ -674,9 +674,9 @@ questions:
     B: '420'
     C: '576'
     D: '720'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.III.1.ii
+  skill_reason: Matched 'square' once the missing spaces were ignored, which is polygons. The source prints
+    many of these words run together.
   notation_suspect: false
   figures: []
 - number: 44
@@ -688,9 +688,9 @@ questions:
     B: 1,100pcm3
     C: 4,400pcm3
     D: 11,000pcm3
-  proposed_skill: MATH.IV.3.ii
-  skill_reason: Matched 'volume' once the missing spaces were ignored, which is area under a curve. The
-    source prints many of these words run together.
+  proposed_skill: MATH.III.2.iii
+  skill_reason: 'Matched ''cylindric'' in the question, which is surface areas and volumes of solids.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 45
@@ -702,9 +702,9 @@ questions:
     B: '3'
     C: '4'
     D: √7
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.III.2.iii
+  skill_reason: Matched 'pyramid' once the missing spaces were ignored, which is surface areas and volumes
+    of solids. The source prints many of these words run together.
   notation_suspect: false
   figures:
   - file: docs/questions/utme/mathematics/figures/66398ed0050c2bd33b8334b8cd0c61a481dd98b653ff9b78b91024b68f0171ad.png
@@ -784,9 +784,9 @@ questions:
     B: (2.5,2.6)
     C: (2.6,2.5)
     D: (2.5,2.1)
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.V.2.i
+  skill_reason: Matched 'median' once the missing spaces were ignored, which is mean, mode and median.
+    The source prints many of these words run together.
   notation_suspect: false
   figures: []
 - number: 50

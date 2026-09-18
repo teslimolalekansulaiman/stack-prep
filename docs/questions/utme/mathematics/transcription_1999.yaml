@@ -27,9 +27,9 @@ questions:
     B: –5/4
     C: –25/4
     D: –10
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.iii
+  skill_reason: Almost no words, but the symbols carry variables raised to powers or joined by operators,
+    so this is algebra rather than arithmetic.
   notation_suspect: false
   figures: []
 - number: 2
@@ -40,9 +40,9 @@ questions:
     B: 3√2 – 4
     C: 3 - 2√2
     D: 4 + 2√2
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.v
+  skill_reason: 'Matched ''Find the value of x'' in the question, which is solving for one or two unknowns.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 3
@@ -153,9 +153,9 @@ questions:
     B: '19'
     C: '18'
     D: '17'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.I.4.iv
+  skill_reason: 'Matched ''at least one of'' in the question, which is a survey question, which is sets
+    in words. Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 10
@@ -433,9 +433,9 @@ questions:
     B: '550'
     C: '400'
     D: '350'
-  proposed_skill: MATH.III.1.iii
-  skill_reason: Matched 'circle' once the missing spaces were ignored, which is circle theorems. The source
-    prints many of these words run together.
+  proposed_skill: MATH.II.1.v
+  skill_reason: 'Matched ''Find the value of x'' in the question, which is solving for one or two unknowns.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 32
@@ -689,9 +689,9 @@ questions:
     B: '6'
     C: '5'
     D: '4'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.V.2.i
+  skill_reason: Matched 'median' once the missing spaces were ignored, which is mean, mode and median.
+    The source prints many of these words run together.
   notation_suspect: false
   figures: []
 - number: 48

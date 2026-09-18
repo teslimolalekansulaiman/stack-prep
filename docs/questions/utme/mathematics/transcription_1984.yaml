@@ -28,9 +28,9 @@ questions:
     C: '10'
     D: '9'
     E: '8'
-  proposed_skill: MATH.I.1.i
-  skill_reason: Proposed from the wording of the question, which is about number bases or modular arithmetic.
-    The paper prints no direction to read instead.
+  proposed_skill: MATH.I.1.ii
+  skill_reason: 'Matched ''number base'' in the question, which is working in a number base. Read from
+    the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 3
@@ -171,7 +171,7 @@ questions:
     D: M2002
     E: M3032 (5) (5)
   proposed_skill: MATH.I.1.ii
-  skill_reason: 'Matched ''in base'' in the question, which is converting between bases. Read from the
+  skill_reason: 'Matched ''in base'' in the question, which is working in a number base. Read from the
     mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
@@ -305,9 +305,9 @@ questions:
     C: '8'
     D: '2'
     E: –2
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.iii
+  skill_reason: Almost no words, but the symbols carry variables raised to powers or joined by operators,
+    so this is algebra rather than arithmetic.
   notation_suspect: false
   figures: []
 - number: 21

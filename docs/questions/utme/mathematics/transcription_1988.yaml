@@ -233,9 +233,9 @@ questions:
     B: 1 a - b a2 - b2
     C: a - b
     D: a2 - b2 a + b
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.iii
+  skill_reason: Almost no words, but the symbols carry variables raised to powers or joined by operators,
+    so this is algebra rather than arithmetic.
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/891601243ecefddaa0b021235bc29c7b6bc36afc55a810549b004c152643bfc3.png
@@ -277,9 +277,9 @@ questions:
     B: –37/5
     C: 37/5
     D: –37
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.iii
+  skill_reason: Almost no words, but the symbols carry variables raised to powers or joined by operators,
+    so this is algebra rather than arithmetic.
   notation_suspect: false
   figures: []
 - number: 16
@@ -290,9 +290,9 @@ questions:
     B: y + 11 11 y(y+6) 11 y(y+3)
     C: y+30 + 11
     D: y+ 3+ 11 11 y(y+3) 11 y(y-6)
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.iii
+  skill_reason: 'Matched ''g(y)'' in the question, which is functions. Read from the mathematics itself:
+    this paper prints no directions.'
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/39bf573faf5a44ca802c407373b0fc32f7989d9cfdc56728716a82cdc79f3088.png
@@ -475,9 +475,9 @@ questions:
     B: '8'
     C: 62/
     D: 91/ 3 3
-  proposed_skill: MATH.II.4.ii
-  skill_reason: 'Matched ''arithmetic progression'' in the question, which is arithmetic and geometric
-    progressions. Read from the mathematics itself: this paper prints no directions.'
+  proposed_skill: MATH.II.4.i
+  skill_reason: 'Matched ''9th term'' in the question, which is nth term of a progression. Read from the
+    mathematics itself: this paper prints no directions.'
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/4eb3b82ca1fe26679b9cdcfee99d70fb570835a73644f43956646c16bc54bbf6.png

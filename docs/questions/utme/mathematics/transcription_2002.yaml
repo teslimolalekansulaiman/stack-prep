@@ -77,9 +77,9 @@ questions:
     B: '110'
     C: '95'
     D: '80'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.I.4.iv
+  skill_reason: 'Matched ''or both'' in the question, which is a survey question, which is sets in words.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 5
@@ -439,9 +439,9 @@ questions:
     B: a + 3d = 0
     C: 3a + 5d = 0
     D: 2a + d = 0
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.4.i
+  skill_reason: 'Matched ''9th term'' in the question, which is nth term of a progression. Read from the
+    mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 33
@@ -497,9 +497,9 @@ questions:
     B: '2'
     C: '3'
     D: '4'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.v
+  skill_reason: 'Matched ''find the value of c'' in the question, which is solving for one or two unknowns.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 36
@@ -532,9 +532,9 @@ questions:
     B: p = 2, q = 1
     C: p = -1, q = 2
     D: p = 2, q = -1
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.v
+  skill_reason: 'Matched ''values of p and q'' in the question, which is solving for one or two unknowns.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/fa6238735cb3b4db8890b7dc35979961224ee19e1eaebe146152b640a48d4a1f.png
@@ -563,9 +563,9 @@ questions:
     B: 1/4(x + 3)
     C: 1/5(x - 5)
     D: 1/3(x - 4)
-  proposed_skill: MATH.II.6.iii
-  skill_reason: Matched 'inverse' once the missing spaces were ignored, which is inverse of a matrix.
-    The source prints many of these words run together.
+  proposed_skill: MATH.II.1.iii
+  skill_reason: 'Matched ''f(x)'' in the question, which is functions. Read from the mathematics itself:
+    this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 39
@@ -576,9 +576,9 @@ questions:
     B: –1, 1 or –5
     C: 1, 1 or –5
     D: 1, -1 or 5
-  proposed_skill: MATH.II.1.iii
-  skill_reason: 'Matched ''x2'' in the question, which is polynomials and quadratics. Read from the mathematics
-    itself: this paper prints no directions.'
+  proposed_skill: MATH.II.1.v
+  skill_reason: 'Matched ''Solve for x'' in the question, which is solving for one or two unknowns. Read
+    from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 41

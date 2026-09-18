@@ -115,9 +115,9 @@ questions:
     B: '9'
     C: '11'
     D: '20'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.I.4.iv
+  skill_reason: 'Matched ''neither'' in the question, which is a survey question, which is sets in words.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 11
@@ -229,8 +229,8 @@ questions:
     B: '2'
     C: '1'
     D: '-1'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Matched ''fraction'' in the question, which is operations on fractions and decimals.
+  proposed_skill: MATH.II.1.v
+  skill_reason: 'Matched ''Find the value of K'' in the question, which is solving for one or two unknowns.
     Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: true
   figures:
@@ -326,9 +326,9 @@ questions:
     B: '4'
     C: '7'
     D: '12'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.iii
+  skill_reason: Almost no words, but the symbols carry variables raised to powers or joined by operators,
+    so this is algebra rather than arithmetic.
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/c7990ec190d1aa2c7f16296def0ae2567d7bdc8dfface18bdbbcde973c5d01e6.png

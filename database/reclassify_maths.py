@@ -41,6 +41,10 @@ import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
 
+#: The subject this script is for. Always resolved together with the UTME examination,
+#: because subject codes repeat across examinations.
+SUBJECT_CODE = "MATH"
+
 #: (skill code, what it recognises, pattern). Order matters: the first match wins, so the
 #: most specific mathematics is listed first.
 RULES: list[tuple[str, str, re.Pattern[str]]] = [
@@ -88,7 +92,8 @@ RULES: list[tuple[str, str, re.Pattern[str]]] = [
     # ---- Geometry ------------------------------------------------------------------------
     ("MATH.III.2.iv", "the earth as a sphere", re.compile(r"longitude|latitude|\bequator\b", re.I)),
     ("MATH.III.2.iii", "surface areas and volumes of solids", re.compile(
-        r"\bvolume\b|surface area|\bcuboid\b|\bcylinder\b|\bcone\b|\bpyramid\b|\bsphere\b|"
+        r"\bvolume\b|surface area|\bcuboid\b|cylindric|\bcylinder\b|\bcone\b|"
+        r"\bpyramid\b|\bsphere\b|\bcapacity\b|\blitres?\b|"
         r"\bhemisphere\b|\bprism\b|\bfrustum\b", re.I)),
     ("MATH.III.2.ii", "arcs, chords, sectors and segments", re.compile(
         r"\barc\b|\bchord\b|\bsector\b|\bsegment\b", re.I)),
@@ -124,7 +129,9 @@ RULES: list[tuple[str, str, re.Pattern[str]]] = [
         r"binary operation|\bclosure\b|commutativ|associativ|distributiv|defined by\s*[a-z]\s*\*",
         re.I)),
     ("MATH.II.4.iii", "sum to infinity", re.compile(r"sum to infinity", re.I)),
-    ("MATH.II.4.i", "nth term of a progression", re.compile(r"nth term|\bn-?th term\b", re.I)),
+    ("MATH.II.4.i", "nth term of a progression", re.compile(
+        r"nth term|\bn-?th term\b|\d(?:st|nd|rd|th)\s*term|each year saves|"
+        r"saves .{0,20}more than", re.I)),
     ("MATH.II.4.ii", "arithmetic and geometric progressions", re.compile(
         r"arithmetic progression|geometric progression|\bA\.?\s?P\b|\bG\.?\s?P\b|"
         r"common (?:difference|ratio)|\bprogression\b|\bsequence\b|\bseries\b", re.I)),
@@ -136,6 +143,9 @@ RULES: list[tuple[str, str, re.Pattern[str]]] = [
         r"subject of the (?:formula|relation)|make [a-z] the subject", re.I)),
     ("MATH.II.1.ii", "factor and remainder theorems", re.compile(
         r"remainder theorem|factor theorem|\bremainder when\b|is a factor of", re.I)),
+    ("MATH.II.1.v", "solving for one or two unknowns", re.compile(
+        r"solve for [a-z]\b|pair of equations?|values? of [a-z] and [a-z]\b|"
+        r"find the value of [a-z]\b", re.I)),
     ("MATH.II.1.v", "simultaneous equations", re.compile(
         r"simultaneous|solve the (?:following )?equations?", re.I)),
     ("MATH.II.1.iv", "factorising", re.compile(r"factori[sz]e|\bfactors? of\b", re.I)),
@@ -145,6 +155,9 @@ RULES: list[tuple[str, str, re.Pattern[str]]] = [
         r"\bpolynomial\b|\bquadratic\b|\broots? of\b|\bx\^?2\b|\bx2\b", re.I)),
     # ---- Number and numeration -----------------------------------------------------------
     ("MATH.I.1.iii", "modular arithmetic", re.compile(r"\bmodulo\b|\bmod\b", re.I)),
+    ("MATH.I.1.ii", "working in a number base", re.compile(
+        r"number base|what base|which base|base has been used|in base|"
+        r"digit [A-Z]\b|\bbase n\b", re.I)),
     ("MATH.I.1.ii", "converting between bases", re.compile(
         r"convert.*base|\bin base\b|base (?:two|three|five|six|seven|eight|nine|ten)|"
         r"\bbase\s*\d|\(\d+\)\s*base|_\s*\d\b", re.I)),
@@ -152,20 +165,34 @@ RULES: list[tuple[str, str, re.Pattern[str]]] = [
     ("MATH.I.3.iv", "logarithms", re.compile(r"logarithm|\blog\b|\blog\d", re.I)),
     ("MATH.I.3.i", "indices", re.compile(
         r"\bindices\b|\bindex\b|standard form|\d\s*\^\s*[a-z]", re.I)),
+    ("MATH.I.4.iv", "a survey question, which is sets in words", re.compile(
+        r"at least one of|\bneither\b|\bor both\b|offer both|both subjects|"
+        r"speak both|like both", re.I)),
     ("MATH.I.4.iv", "Venn diagrams and sets", re.compile(
         r"\bvenn\b|universal set|\bsubset\b|\bset of\b|\bsets\b|\bintersection\b|\bunion\b|"
         r"\bcomplement\b|\bempty set\b", re.I)),
     ("MATH.I.2.iii", "interest, ratio, profit and percentage", re.compile(
         r"simple interest|compound interest|\bprofit\b|\bloss\b|\bdiscount\b|\bratio\b|"
         r"\bproportion\b|percentage error|\bper cent\b|\bpercentage\b|\bdividend\b|"
+        r"per annum|increase[sd]? by \d|\bpopulation\b|"
         r"\bcommission\b|\bVAT\b|\bshares\b", re.I)),
     ("MATH.I.2.ii", "significant figures and decimal places", re.compile(
         r"significant figures?|decimal places?|correct to", re.I)),
+    ("MATH.I.2.i", "common multiples and factors", re.compile(
+        r"L\.?C\.?M|H\.?C\.?F|lowest common multiple|highest common factor|"
+        r"ascending order|descending order", re.I)),
+    ("MATH.II.1.iii", "functions", re.compile(
+        r"\bf\s*\(\s*x\s*\)|\bg\s*\(\s*[xy]\s*\)|composite function", re.I)),
+    ("MATH.III.5.iii", "inclination to the horizontal", re.compile(
+        r"inclination|inclined at|to the horizontal", re.I)),
     ("MATH.I.2.i", "operations on fractions and decimals", re.compile(
         r"\bsimplify\b|\bevaluate\b|\bfraction\b|\bdecimal\b", re.I)),
 ]
 
 FALLBACK = "MATH.I.2.i"
+
+#: Algebra in notation rather than words: x^2, 3b - a, (2x+5)(x-4).
+ALGEBRAIC_NOTATION = re.compile(r"[a-z]\s*\^?\s*[2-9]\b|[a-z]\s*[+\-]\s*[a-z0-9]|\([a-z]\s*[+\-]")
 
 def _letter_bounded(source: str) -> str:
     r"""Rewrite \b so it separates letters from letters, not words from digits.
@@ -209,7 +236,10 @@ LOOSE_TERMS: list[tuple[str, str, set[str]]] = [
         label,
         {
             term.lower()
-            for term in re.findall(r"[a-zA-Z]{6,}", pattern.pattern)
+            # The escapes have to go before the words are read out. Left in, "\\bsphere\\b"
+            # yields the token "bsphere", which appears in no English ever written, and the
+            # loose pass silently matches nothing at all.
+            for term in re.findall(r"[a-zA-Z]{6,}", re.sub(r"\\[a-zA-Z]", " ", pattern.pattern))
             if term.lower() not in TOO_GENERIC
         },
     )
@@ -228,6 +258,17 @@ def classify(question: dict[str, object]) -> tuple[str, str] | None:
         decision = _first_match(haystack, label_suffix="")
         if decision:
             return decision
+
+    # A stem that is almost all symbols names no topic, but it still shows its hand: letters
+    # raised to powers or joined by operators are algebra, bare digits are arithmetic. Left
+    # to the fallback both land under fractions, which is right for only one of them.
+    if len(re.findall(r"[A-Za-z]{3,}", stem)) <= 3:
+        symbolic = f"{stem} {options}"
+        if len(re.findall(ALGEBRAIC_NOTATION, symbolic)) >= 2:
+            return "MATH.II.1.iii", (
+                "Almost no words, but the symbols carry variables raised to powers or joined "
+                "by operators, so this is algebra rather than arithmetic."
+            )
 
     squashed = re.sub(r"[^a-z]", "", f"{stem} {options}".lower())
     for skill, label, terms in LOOSE_TERMS:
@@ -263,19 +304,34 @@ async def apply_to_database(
     )
     try:
         await conn.execute("SET search_path = stackprep, public")
+        # Scope every write to ONE subject. The subject code is not unique on its own —
+        # "ENG" is UTME's Use of English and also WAEC's English Language, and both sat 2011
+        # and 2013 papers — so matching on exam_year and question_number alone reaches across
+        # examinations. The foreign key caught it; the query should not have relied on that.
+        subject_id = await conn.fetchval(
+            """
+            SELECT s.id FROM subjects s
+            JOIN examinations e ON e.id = s.examination_id
+            WHERE s.code = $1 AND e.short_name = 'UTME'
+            """,
+            SUBJECT_CODE,
+        )
+        if subject_id is None:
+            raise SystemExit(f"no UTME subject with code {SUBJECT_CODE}")
         skills = {
             row["code"]: row["id"]
             for row in await conn.fetch(
                 """
                 SELECT ci.code, ci.id FROM curriculum_items ci
                 JOIN syllabus_versions v ON v.id = ci.syllabus_version_id
-                JOIN subjects s ON s.id = v.subject_id AND s.code = 'MATH'
-                JOIN examinations e ON e.id = s.examination_id AND e.short_name = 'UTME'
-                WHERE ci.item_type = 'skill'
-                """
+                WHERE ci.item_type = 'skill' AND v.subject_id = $1
+                """,
+                subject_id,
             )
         }
         changed = untouched = 0
+        transaction = conn.transaction()
+        await transaction.start()
         for key, (skill_code, reason) in updates.items():
             year, number = key.split(":")
             target = skills.get(skill_code)
@@ -290,15 +346,17 @@ async def apply_to_database(
                  WHERE q.id = c.question_id
                    AND c.classification_role = 'primary'
                    AND c.review_status = 'draft'
+                   AND q.subject_id = $5
                    AND q.exam_year = $3 AND q.question_number = $4
                    AND c.curriculum_item_id <> $1
                 """,
-                target, reason, int(year), number,
+                target, reason, int(year), number, subject_id,
             )
             if result.endswith(" 0"):
                 untouched += 1
             else:
                 changed += 1
+        await transaction.commit()
         return changed, untouched
     finally:
         await conn.close()

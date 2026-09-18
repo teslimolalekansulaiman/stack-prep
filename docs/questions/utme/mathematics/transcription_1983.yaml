@@ -245,9 +245,9 @@ questions:
     C: '18'
     D: '12'
     E: '0'
-  proposed_skill: MATH.III.5.v
-  skill_reason: Matched 'triangle' once the missing spaces were ignored, which is area of a triangle by
-    trigonometry. The source prints many of these words run together.
+  proposed_skill: MATH.II.1.iii
+  skill_reason: Almost no words, but the symbols carry variables raised to powers or joined by operators,
+    so this is algebra rather than arithmetic.
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/efdb2b7c97a8a238467732742f271243cbb692cdfec26547c2c9cb54d07ef257.png
@@ -293,9 +293,9 @@ questions:
     C: 15036'
     D: '100'
     E: 10042'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.III.5.iii
+  skill_reason: 'Matched ''inclined at'' in the question, which is inclination to the horizontal. Read
+    from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 21
