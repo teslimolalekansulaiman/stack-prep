@@ -487,7 +487,9 @@ async def report(
         unassessed_topics=[names.get(topic_id, topic_id) for topic_id in summary.unassessed_topics],
         priority_topics=[names.get(topic_id, topic_id) for topic_id in summary.priority_topics],
         caveat=(
-            f"Based on {summary.answered} question(s). This is a starting point for planning, "
+            # A student reads this sentence, so it is written as a sentence: no "(s)".
+            f"Based on {summary.answered} question{'' if summary.answered == 1 else 's'}. "
+            "This is a starting point for planning, "
             "not a measure of ability, and it says nothing about topics it did not reach."
         ),
     )

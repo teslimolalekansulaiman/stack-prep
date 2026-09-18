@@ -377,3 +377,84 @@ button.primary {
     max-height: 30vh;
   }
 }
+
+/* ── the student's check-up ──────────────────────────────────────────────────────────
+   Wider line height and larger type than the review screen: a reviewer is scanning,
+   a student is reading one question carefully. */
+.checkup {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+  line-height: 1.6;
+}
+.checkup h1 { font-size: 1.5rem; line-height: 1.35; margin: 0 0 0.75rem; }
+.checkup h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.04em; opacity: 0.7; }
+.checkup .lede { font-size: 1.05rem; opacity: 0.85; }
+.checkup .muted { opacity: 0.65; font-size: 0.9rem; }
+.checkup .error { color: #b3261e; }
+
+.checkup-header { margin-bottom: 2rem; }
+.progress { height: 4px; background: rgba(127, 127, 127, 0.25); border-radius: 2px; overflow: hidden; }
+.progress-fill { height: 100%; background: currentColor; transition: width 200ms ease; }
+
+.passage { background: rgba(127, 127, 127, 0.08); padding: 1rem; border-radius: 8px; }
+.instructions { font-style: italic; opacity: 0.8; }
+.stem { font-size: 1.25rem; margin: 1.5rem 0; }
+
+.options { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.5rem; }
+.option {
+  width: 100%;
+  color: inherit;
+  display: flex;
+  gap: 0.75rem;
+  align-items: baseline;
+  text-align: left;
+  padding: 0.85rem 1rem;
+  font: inherit;
+  border: 1px solid rgba(127, 127, 127, 0.4);
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+}
+.option:hover { border-color: currentColor; }
+.option.selected { border-color: currentColor; border-width: 2px; padding: calc(0.85rem - 1px) calc(1rem - 1px); }
+.option-key { font-weight: 600; opacity: 0.6; min-width: 1.25rem; }
+
+.checkup-footer { margin-top: 2rem; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.checkup .primary {
+  font: inherit;
+  color: inherit;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid currentColor;
+  background: transparent;
+  cursor: pointer;
+}
+.checkup .primary:disabled { opacity: 0.4; cursor: default; }
+
+.subject-list { list-style: none; padding: 0; display: grid; gap: 0.5rem; }
+.subject-list button {
+  width: 100%;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  text-align: left;
+  font: inherit;
+  padding: 1rem;
+  border: 1px solid rgba(127, 127, 127, 0.4);
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+}
+.subject-name { font-weight: 600; }
+
+.priority { padding-left: 1.25rem; }
+.topics { width: 100%; border-collapse: collapse; margin-top: 0.5rem; }
+.topics th, .topics td { text-align: left; padding: 0.5rem 0.75rem 0.5rem 0; border-bottom: 1px solid rgba(127, 127, 127, 0.2); }
+.topics th { font-weight: 600; font-size: 0.85rem; opacity: 0.7; }
+
+@media (max-width: 480px) {
+  .checkup { padding: 1.25rem 1rem 3rem; }
+  .stem { font-size: 1.1rem; }
+}
