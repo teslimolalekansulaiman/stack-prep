@@ -34,10 +34,22 @@ Deploy the **dev** branch to the existing Hetzner box, as a guest on it.
 - **Nothing published to the internet.** The API binds to `127.0.0.1:8010`;
   PostgreSQL and Redis publish no ports at all. Caddy, already running for the
   other project, is the only process facing outward.
-- **An explicit Caddy site block**, `stackprep.binaax.app`. An exact hostname takes
-  precedence over the `*.binaax.app` wildcard already in that file, so the other
-  project's routing is untouched and our certificate does not depend on its
-  on-demand TLS hook.
+- **An explicit Caddy site block on our own domain**, `stackprep.stackjunior.com`.
+
+  A subdomain of the neighbour's `binaax.app` was tried first and does not work.
+  Their config issues a certificate on demand for any `<digits>.binaax.app`
+  hostname, and an internet scanner probing random numeric subdomains for leaked
+  cloud credentials triggers one per probe — fifteen certificates in a single
+  observed hour. Let's Encrypt allows fifty per registered domain per week, so
+  `binaax.app` sits permanently at its limit and new names silently never get a
+  certificate. Caddy reports this as nothing at all: the domain appears in its
+  managed list, no certificate is ever obtained, and the handshake fails with
+  `tlsv1 alert internal error`.
+
+  Waiting does not help; the scanner consumes each reset. Our own domain has its
+  own quota, and the deployment stops depending on another project's TLS
+  configuration. Worth telling that project's owner regardless — it is their
+  quota being burned, and it will affect them again.
 - **HTTP basic auth in front of everything.** The review API has no authentication
   of its own until ADR-0013 lands, and it can rewrite the question bank. A password
   is not real access control, but it is the difference between "colleagues" and

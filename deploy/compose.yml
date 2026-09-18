@@ -62,7 +62,7 @@ services:
       DATABASE_URL: postgresql+asyncpg://scorepilot:${POSTGRES_PASSWORD}@postgres:5432/scorepilot
       DATABASE_SCHEMA: stackprep
       REDIS_URL: redis://redis:6379/0
-      CORS_ORIGINS: https://stackprep.binaax.app
+      CORS_ORIGINS: https://stackprep.stackjunior.com
     ports:
       # Host-local only. Caddy reaches this; the internet does not.
       - '127.0.0.1:8010:8000'
