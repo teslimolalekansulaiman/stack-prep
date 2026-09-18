@@ -50,8 +50,8 @@ questions:
     C: 4.5x102
     D: 4.5x103
   proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  skill_reason: 'Matched ''Evaluate'' in the question, which is operations on fractions and decimals.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/b66dcc37c4be9eb87b6874ca5d3fdd3c3bb492a84d51a5d42acb97f15ce6c393.png
@@ -71,9 +71,9 @@ questions:
     B: 2,9,7,
     C: 2,3,5,7,
     D: 2,3,7,9,
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.ii
+  skill_reason: Matched 'factor' once the missing spaces were ignored, which is factor and remainder theorems.
+    The source prints many of these words run together.
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/2957030ce9bc1d6b9053ee988519f322559f365eb547ce2971b328fd39010ec6.png
@@ -107,8 +107,8 @@ questions:
     C: 1/2r
     D: 2/r
   proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  skill_reason: 'Matched ''Simplify'' in the question, which is operations on fractions and decimals.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 6
@@ -120,9 +120,9 @@ questions:
     B: 7x10-4
     C: 8x10-5
     D: 10-6
-  proposed_skill: MATH.I.2.iii
-  skill_reason: Proposed from the wording of the question, which is about fractions, decimals, approximation
-    or percentages. The paper prints no direction to read instead.
+  proposed_skill: MATH.I.2.ii
+  skill_reason: 'Matched ''significant figures'' in the question, which is significant figures and decimal
+    places. Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 7
@@ -134,8 +134,8 @@ questions:
     C: '3:4'
     D: '2:5'
   proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  skill_reason: 'Matched ''evaluate'' in the question, which is operations on fractions and decimals.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 8
@@ -148,8 +148,8 @@ questions:
     C: 51/
     D: 8 2
   proposed_skill: MATH.I.2.iii
-  skill_reason: Proposed from the wording of the question, which is about fractions, decimals, approximation
-    or percentages. The paper prints no direction to read instead.
+  skill_reason: 'Matched ''simple interest'' in the question, which is interest, ratio, profit and percentage.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 9
@@ -160,9 +160,9 @@ questions:
     B: '30'
     C: '22'
     D: '20'
-  proposed_skill: MATH.III.2.i
-  skill_reason: Proposed from the wording of the question, which is about mensuration. The paper prints
-    no direction to read instead.
+  proposed_skill: MATH.III.2.iii
+  skill_reason: 'Matched ''surface area'' in the question, which is surface areas and volumes of solids.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 10
@@ -174,8 +174,8 @@ questions:
     C: –2+√3
     D: 2,-√3
   proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  skill_reason: 'Matched ''Simplify'' in the question, which is operations on fractions and decimals.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 11
@@ -186,9 +186,9 @@ questions:
     B: (q)1/3 (q) (3)
     C: (q)3
     D: (3)1/3 (3) (q)
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.I.3.iv
+  skill_reason: 'Matched ''log'' in the question, which is logarithms. Read from the mathematics itself:
+    this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 12
@@ -237,8 +237,8 @@ questions:
     C: '#60.00'
     D: '#52.00'
   proposed_skill: MATH.II.2.i
-  skill_reason: Proposed from the wording of the question, which is about variation. The paper prints
-    no direction to read instead.
+  skill_reason: 'Matched ''varies'' in the question, which is variation. Read from the mathematics itself:
+    this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 16
@@ -249,9 +249,9 @@ questions:
     B: 2x2–x+10
     C: 4x2+3x+2
     D: 4x2+3x+12
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.iii
+  skill_reason: 'Matched ''x2'' in the question, which is polynomials and quadratics. Read from the mathematics
+    itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 17
@@ -262,9 +262,9 @@ questions:
     B: '3'
     C: '2'
     D: '1'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.iii
+  skill_reason: 'Matched ''x2'' in the question, which is polynomials and quadratics. Read from the mathematics
+    itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 18
@@ -275,9 +275,9 @@ questions:
     B: 2(9+x)
     C: 81–x2
     D: –2(x-9)
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.iii
+  skill_reason: 'Matched ''x2'' in the question, which is polynomials and quadratics. Read from the mathematics
+    itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 19
@@ -288,9 +288,9 @@ questions:
     B: (y+ xy)(y+2)(y-2)
     C: y(1+x)(y+2)(y-2)
     D: y(1- x)(y+2)(y-2)
-  proposed_skill: MATH.II.1.i
-  skill_reason: Proposed from the wording of the question, which is about polynomials. The paper prints
-    no direction to read instead.
+  proposed_skill: MATH.II.1.iv
+  skill_reason: 'Matched ''Factorize'' in the question, which is factorising. Read from the mathematics
+    itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 20
@@ -301,9 +301,9 @@ questions:
     B: x2-2-1x–4-1
     C: x2+2-1x+4-1
     D: x2+2-1x–4-1
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.iii
+  skill_reason: 'Matched ''x2'' in the question, which is polynomials and quadratics. Read from the mathematics
+    itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 21
@@ -314,9 +314,9 @@ questions:
     B: (2a +3b–c)(2a + 3b+c)
     C: (2a– 3b-c)(2a –3b+c)
     D: 4a(a –3b)+ (3b+c)2
-  proposed_skill: MATH.II.1.i
-  skill_reason: Proposed from the wording of the question, which is about polynomials. The paper prints
-    no direction to read instead.
+  proposed_skill: MATH.II.1.iv
+  skill_reason: 'Matched ''Factorize'' in the question, which is factorising. Read from the mathematics
+    itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 22
@@ -327,9 +327,9 @@ questions:
     B: –6,9
     C: 6,9
     D: 12,9/2
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.iii
+  skill_reason: 'Matched ''x2'' in the question, which is polynomials and quadratics. Read from the mathematics
+    itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 23
@@ -353,9 +353,9 @@ questions:
     B: 25/64
     C: 5/8
     D: 5/4
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.II.1.iii
+  skill_reason: 'Matched ''x2'' in the question, which is polynomials and quadratics. Read from the mathematics
+    itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 25
@@ -367,8 +367,8 @@ questions:
     C: r >1/a +1/b +1/c
     D: r>1/abc
   proposed_skill: MATH.II.3.i
-  skill_reason: Proposed from the wording of the question, which is about inequalities. The paper prints
-    no direction to read instead.
+  skill_reason: 'Matched ''inequalit'' in the question, which is inequalities. Read from the mathematics
+    itself: this paper prints no directions.'
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/2839b734cb984aa92ff47b306743788c20ea6c466d67c5c208da59df03c06339.png
@@ -411,8 +411,8 @@ questions:
     C: '1'
     D: 1 x x + 1
   proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  skill_reason: 'Matched ''Simplify'' in the question, which is operations on fractions and decimals.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/b33e67fac6d35037151a609640cb8d1a2741feefd954963491bc3abe5c847263.png
@@ -432,9 +432,9 @@ questions:
     B: b.e.g.j.m
     C: a.b.c.d.f.i.j.l.
     D: c.d.f.h.i.l
-  proposed_skill: MATH.III.4.iv
-  skill_reason: Proposed from the wording of the question, which is about coordinate geometry. The paper
-    prints no direction to read instead.
+  proposed_skill: MATH.IV.1.ii
+  skill_reason: 'Matched ''gradient of the curve'' in the question, which is differentiation. Read from
+    the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures:
   - file: docs/questions/utme/mathematics/figures/a0c79889b411612ec4442cf3c67637a6c1ab3066b685dc1b5464acc97dcedb7a.png
@@ -455,9 +455,9 @@ questions:
     B: y/x
     C: (x/y)1/2
     D: (y/x)1/2
-  proposed_skill: MATH.II.4.i
-  skill_reason: Proposed from the wording of the question, which is about progression. The paper prints
-    no direction to read instead.
+  proposed_skill: MATH.II.4.ii
+  skill_reason: 'Matched ''common ratio'' in the question, which is arithmetic and geometric progressions.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 30
@@ -468,9 +468,9 @@ questions:
     B: 2,10
     C: 3,13
     D: 4,16
-  proposed_skill: MATH.II.4.i
-  skill_reason: Proposed from the wording of the question, which is about progression. The paper prints
-    no direction to read instead.
+  proposed_skill: MATH.II.4.ii
+  skill_reason: 'Matched ''arithmetic progression'' in the question, which is arithmetic and geometric
+    progressions. Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures:
   - file: docs/questions/utme/mathematics/figures/23436ee7887e3ae481ecf3ddb0065ba3f1afb15c6153e205bf486497964ae000.png
@@ -489,9 +489,9 @@ questions:
     B: '110'
     C: '600'
     D: '200'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.III.1.iii
+  skill_reason: Matched 'circle' once the missing spaces were ignored, which is circle theorems. The source
+    prints many of these words run together.
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/af7281d218cb9c0a61a200e4be6c1a8f18ded536f65f605b72f4d7b4b3c76ac9.png
@@ -563,9 +563,9 @@ questions:
     B: '400'
     C: '600'
     D: '1200'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.III.4.iii
+  skill_reason: Matched 'parallel' once the missing spaces were ignored, which is parallel and perpendicular
+    lines. The source prints many of these words run together.
   notation_suspect: false
   figures: []
 - number: 36
@@ -603,9 +603,9 @@ questions:
     B: '520'
     C: '640'
     D: '820'
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.III.1.i
+  skill_reason: 'Matched ''bisector'' in the question, which is lines and angles. Read from the mathematics
+    itself: this paper prints no directions.'
   notation_suspect: false
   figures:
   - file: docs/questions/utme/mathematics/figures/f9d8ee24d608729d543f4c49d120b8aace090e85ff22964a9fcf426373c278dd.png
@@ -625,9 +625,9 @@ questions:
     B: 84cm
     C: 100cm
     D: 120cm
-  proposed_skill: MATH.III.2.i
-  skill_reason: Proposed from the wording of the question, which is about mensuration. The paper prints
-    no direction to read instead.
+  proposed_skill: MATH.III.1.ii
+  skill_reason: 'Matched ''triangle'' in the question, which is polygons. Read from the mathematics itself:
+    this paper prints no directions.'
   notation_suspect: false
   figures:
   - file: docs/questions/utme/mathematics/figures/15c5452a3702e742c0b81cb0a5758a19964cb9062a669e064181fadf9ab3d803.png
@@ -648,8 +648,8 @@ questions:
     C: 10(tan 350–tan 550)
     D: 10(cot 350– cot 550)
   proposed_skill: MATH.III.5.i
-  skill_reason: Proposed from the wording of the question, which is about trigonometry. The paper prints
-    no direction to read instead.
+  skill_reason: 'Matched ''sin'' in the question, which is trigonometric ratios. Read from the mathematics
+    itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 42
@@ -688,9 +688,9 @@ questions:
     B: 1,100pcm3
     C: 4,400pcm3
     D: 11,000pcm3
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.IV.3.ii
+  skill_reason: Matched 'volume' once the missing spaces were ignored, which is area under a curve. The
+    source prints many of these words run together.
   notation_suspect: false
   figures: []
 - number: 45
@@ -725,8 +725,8 @@ questions:
     C: '112.50'
     D: '157.50'
   proposed_skill: MATH.V.1.ii
-  skill_reason: Proposed from the wording of the question, which is about representation of data. The
-    paper prints no direction to read instead.
+  skill_reason: 'Matched ''sector which represents meat in a pie chart'' in the question, which is histograms,
+    bar charts and pie charts. Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 47
@@ -739,8 +739,8 @@ questions:
     C: 452/ %
     D: 531/ % 3 3
   proposed_skill: MATH.V.1.ii
-  skill_reason: Proposed from the wording of the question, which is about representation of data. The
-    paper prints no direction to read instead.
+  skill_reason: 'Matched ''histogram'' in the question, which is histograms, bar charts and pie charts.
+    Read from the mathematics itself: this paper prints no directions.'
   notation_suspect: true
   figures:
   - file: docs/questions/utme/mathematics/figures/84491c9ba7917dea503c6146b8460122e3591722523a4541cb99b42e5eeb2331.png
@@ -770,9 +770,9 @@ questions:
     B: 40years
     C: 42years
     D: 54years
-  proposed_skill: MATH.I.2.i
-  skill_reason: 'Proposed as a fallback: no keyword matched; parked on basic operations for review. The
-    paper prints no direction, so this needs a person.'
+  proposed_skill: MATH.V.2.i
+  skill_reason: 'Matched ''average'' in the question, which is mean, mode and median. Read from the mathematics
+    itself: this paper prints no directions.'
   notation_suspect: false
   figures: []
 - number: 49
@@ -799,8 +799,8 @@ questions:
     C: 1/3
     D: 1/6
   proposed_skill: MATH.V.5.i
-  skill_reason: Proposed from the wording of the question, which is about probability. The paper prints
-    no direction to read instead.
+  skill_reason: 'Matched ''probabilit'' in the question, which is probability. Read from the mathematics
+    itself: this paper prints no directions.'
   notation_suspect: false
   figures:
   - file: docs/questions/utme/mathematics/figures/c9c535490672090d22b2d86c8fc66fa96109ab36c079773289a70e8bb2c56ad6.png
