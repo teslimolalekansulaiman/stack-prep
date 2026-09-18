@@ -177,6 +177,10 @@ levels:
   proposed_level: 4
   level_confidence: low
   reason: 'base 3 for ENG.B.2.i; +1: the answer ''invigorated'' is long and outside common vocabulary'
+- number: 47
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.2.i
 - number: 48
   proposed_level: 3
   level_confidence: low
@@ -241,6 +245,10 @@ levels:
   proposed_level: 3
   level_confidence: low
   reason: base 3 for ENG.B.1.i
+- number: 65
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.1.i
 - number: 66
   proposed_level: 3
   level_confidence: low
@@ -293,10 +301,6 @@ levels:
   proposed_level: 2
   level_confidence: low
   reason: 'base 3 for ENG.B.3.i; -1: the answer ''very'' is an everyday word'
-- number: 80
-  proposed_level: 2
-  level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; -1: the answer ''of'' is an everyday word'
 - number: 81
   proposed_level: 3
   level_confidence: low

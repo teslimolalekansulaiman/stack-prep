@@ -1,7 +1,7 @@
 # UTME 2018, Use of English — extracted from the text layer of
 # docs/questions/utme/english/JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf.
 #
-# 42 questions kept, 8 rejected.
+# 43 questions kept, 10 rejected.
 # Answers come from the key printed with the paper, which is a compiler's, not
 # JAMB's: they load as `published_key` and still need a person to check them.
 # Skill mappings follow the paper's own printed directions where it prints one;
@@ -574,8 +574,23 @@ questions:
     A: ungrateful
     B: unscrupulous
     C: unskilled
-    D: unsuccessful 36 My hostess greeted her guest in a very relaxed manner
+    D: unsuccessful
   proposed_answer: D
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 36
+  page: 163
+  section: null
+  instruction: choose the options opposite in meaning to the words or phrases in italics
+  stem: My hostess greeted her guest in a very relaxed manner
+  options:
+    A: energetic
+    B: athletic
+    C: stiff
+    D: perplexed
+  proposed_answer: C
   answer_confidence: medium
   proposed_skill: ENG.B.2.i
   skill_reason: Printed direction asks for the option opposite in meaning.

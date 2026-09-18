@@ -209,12 +209,19 @@ OPTION_END_RE = re.compile(
     r"\]|\bIn each of\b|\bChoose the (?:option|most|word)\b|\bSelect the option\b|"
     r"\bPASSAGE\b|\bThe passage below\b|\bFrom the words\b", re.I)
 
+#: A run of shouted words is the paper's own section heading — "LEXIS, STRUCTURE AND ORAL
+#: FORMS" — set between the last option of one section and the first question of the next.
+#: It is matched case-sensitively, because the same words in ordinary case are ordinary
+#: words, and an option that legitimately shouts one word is left alone.
+HEADING_RE = re.compile(r"\b[A-Z]{3,}(?:[ ,]+[A-Z]{2,})+")
+
 
 def trim_option(text: str) -> str:
     """Cut an option at the point where the next thing on the page begins."""
-    match = OPTION_END_RE.search(text)
-    if match and match.start() > 0:
-        text = text[:match.start()]
+    for pattern in (OPTION_END_RE, HEADING_RE):
+        match = pattern.search(text)
+        if match and match.start() > 0:
+            text = text[:match.start()]
     return clean(text)
 
 
@@ -301,6 +308,89 @@ def classify(question: Question) -> None:
             return
     question.skill, question.skill_reason = COMPREHENSION_DEFAULT
     question.weak_mapping = True
+
+
+def rejoin_split_starts(body: list[Line], skip: set[int]) -> int:
+    """Split lines where a question begins in the middle of the one before it.
+
+    QUESTION_RE only matches a number at the start of a line, which is nearly always where a
+    question number is. Nearly: seven times across nine papers the source sets the last option
+    and the next question's number on one line —
+
+        D. useless 62 The lamb is a little feeble animal
+
+    — and a start that is never found is a question that is never extracted. The number then
+    lands inside option D, which is the visible half of the damage; the invisible half is that
+    question 62 is gone from the paper altogether. Six of the seven were.
+
+    A number in the middle of a line is not evidence of anything on its own: this source has
+    numbers in prose, in dates and in citations. So this does not go looking for numbers. It
+    takes the ascending run that `question_starts` already trusts, finds the numbers MISSING
+    from it, and looks for exactly those, only inside the span where they would have to be.
+    A number that is both absent from the run and sitting where the run says it belongs is a
+    question, not prose.
+
+    The same repair covers a second way the source loses a question: printing the number at
+    the start of its own line with no full stop after it — "62 The lamb is a little feeble
+    animal" — which QUESTION_RE requires and therefore skips. There is nothing to split
+    there; the separator is put back instead.
+
+    Returns how many it split, so the caller can say so rather than fixing things silently.
+    """
+    chain = question_starts(body, skip)
+    if len(chain) < 2:
+        return 0
+
+    repaired = 0
+    # Walk from the end so inserting a line never shifts an index still to be examined.
+    for position in range(len(chain) - 2, -1, -1):
+        index, number, _ = chain[position]
+        next_index, next_number, _ = chain[position + 1]
+        for missing in range(next_number - 1, number, -1):
+            for line_index in range(next_index - 1, index - 1, -1):
+                if line_index in skip:
+                    continue
+                line = body[line_index]
+                # A printed direction names question numbers on purpose — "gaps numbered 16
+                # to 25", "In each of questions 36 to 50" — and splitting one of those turns
+                # the second half of the direction into a question. 2012 gained exactly that:
+                # a question 25 whose stem was "Immediately following each gap...", and an
+                # eight-word passage to go with it. Directions are never split.
+                if (
+                    GAPS_RE.search(line.text)
+                    or RANGE_RE.search(line.text)
+                    or re.search(r"\bIn each of\b|\bThe passage below\b", line.text, re.I)
+                ):
+                    continue
+                # The number, then a separator, then something that reads like the start of a
+                # sentence. Not preceded by a digit or a decimal point, so "1.62" and page
+                # ranges do not match.
+                match = re.search(
+                    rf"(?<![\d.]){missing}(?:\s*[.)])?\s+(?=[A-Z\"'(])", line.text
+                )
+                if not match:
+                    continue
+                head = line.text[: match.start()].rstrip()
+                # The far end of a range — "gaps numbered 16 to 25. Immediately following..."
+                # — is a direction, not a question, even when the direction has wrapped and
+                # this line no longer carries the words that would say so. What identifies it
+                # is the connector immediately before the number.
+                if re.search(r"\b(?:to|through|and|or)$|[-–]$", head, re.I):
+                    continue
+                tail = f"{missing}. {line.text[match.end():].lstrip()}"
+                if not tail.strip():
+                    continue
+                if head:
+                    body[line_index] = Line(page=line.page, text=head)
+                    body.insert(line_index + 1, Line(page=line.page, text=tail))
+                else:
+                    # The number already starts its own line; it was missed only because the
+                    # source printed it with no full stop after it, which QUESTION_RE requires.
+                    # Nothing needs splitting — the separator needs putting back.
+                    body[line_index] = Line(page=line.page, text=tail)
+                repaired += 1
+                break
+    return repaired
 
 
 def question_starts(body: list[Line], skip: set[int]) -> list[tuple[int, int, str]]:
@@ -464,6 +554,14 @@ def parse_year(year: int, lines: list[Line]) -> tuple[dict, list[str]]:
                         f"{year} Q{number}: printed as a cloze gap but no options found inline")
 
     # ---- ordinary questions ----------------------------------------------------------
+    # Repair lines that hold the end of one question and the start of the next before the
+    # starts are read, so the repaired starts are the ones everything else is built from.
+    repaired = rejoin_split_starts(body, skip)
+    if repaired:
+        rejections.append(
+            f"{year}: {repaired} question(s) began mid-line, inside the previous question's "
+            "last option, and were split out"
+        )
     starts = question_starts(body, skip)
     questions: list[Question] = []
     spans: list[tuple[int, int]] = []
@@ -605,6 +703,19 @@ def parse_year(year: int, lines: list[Line]) -> tuple[dict, list[str]]:
             rejections.append(
                 f"{year} Q{question.number}: option {','.join(overlong)} runs into the "
                 "following text and cannot be read cleanly")
+            continue
+        # A number sitting inside an option, with a sentence after it, is the page bleeding
+        # in. rejoin_split_starts repairs this where the number is the next question's, which
+        # is nearly every case; what is left is a stray the parser cannot attribute, and an
+        # option we cannot read is a question we should not ask.
+        unreadable = [
+            key for key, value in trimmed.items()
+            if re.search(r"\s\d{1,3}\s+[A-Z]", value)
+        ]
+        if unreadable:
+            rejections.append(
+                f"{year} Q{question.number}: option {','.join(unreadable)} has text from "
+                "elsewhere on the page inside it and cannot be read cleanly")
             continue
         if any(not value for value in trimmed.values()):
             rejections.append(

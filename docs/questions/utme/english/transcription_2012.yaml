@@ -1191,9 +1191,8 @@ questions:
     D: advertisement
   proposed_answer: D
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 68
   page: 63
@@ -1207,9 +1206,8 @@ questions:
     D: taxied
   proposed_answer: A
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 71
   page: 64
@@ -1223,9 +1221,8 @@ questions:
     D: one/he
   proposed_answer: D
   answer_confidence: medium
-  proposed_skill: ENG.B.5.i
-  skill_reason: 'Read from the options: each option pairs two verb forms, which is agreement and concord.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 72
   page: 64
@@ -1269,9 +1266,8 @@ questions:
     D: indestructible
   proposed_answer: C
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 78
   page: 64
@@ -1285,9 +1281,8 @@ questions:
     D: veterinary/unravelled
   proposed_answer: D
   answer_confidence: medium
-  proposed_skill: ENG.B.5.i
-  skill_reason: 'Read from the options: each option pairs two verb forms, which is agreement and concord.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 79
   page: 64
@@ -1301,9 +1296,8 @@ questions:
     D: clothing
   proposed_answer: A
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 80
   page: 64
@@ -1317,9 +1311,8 @@ questions:
     D: laid up
   proposed_answer: B
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: every option is ''laid'' with a different particle, which is idiomatic
-    usage. The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 81
   page: 64
@@ -1333,9 +1326,8 @@ questions:
     D: pathetic
   proposed_answer: A
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 82
   page: 64
@@ -1349,9 +1341,8 @@ questions:
     D: As / upon
   proposed_answer: B
   answer_confidence: medium
-  proposed_skill: ENG.B.5.i
-  skill_reason: 'Read from the options: each option pairs two verb forms, which is agreement and concord.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 83
   page: 65
@@ -1366,9 +1357,8 @@ questions:
     D: arrangement
   proposed_answer: B
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 84
   page: 65

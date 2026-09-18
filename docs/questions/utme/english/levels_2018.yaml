@@ -110,6 +110,10 @@ levels:
   level_confidence: low
   reason: 'base 3 for ENG.A.6.i; +1: long options, so the work is reading and holding four alternatives'
 - number: 35
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for ENG.B.2.i; +1: the answer ''unsuccessful'' is long and outside common vocabulary'
+- number: 36
   proposed_level: 3
   level_confidence: low
   reason: base 3 for ENG.B.2.i

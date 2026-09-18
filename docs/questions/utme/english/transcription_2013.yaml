@@ -1,7 +1,7 @@
 # UTME 2013, Use of English — extracted from the text layer of
 # docs/questions/utme/english/JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf.
 #
-# 97 questions kept, 2 rejected.
+# 98 questions kept, 3 rejected.
 # Answers come from the key printed with the paper, which is a compiler's, not
 # JAMB's: they load as `published_key` and still need a person to check them.
 # Skill mappings follow the paper's own printed directions where it prints one;
@@ -185,7 +185,7 @@ passages:
     in their dealings with Samuel because he would. A. force them to dance with the masquerade. B. try
     his tricks on them to know their secrets C. prepare well ahead of them D. put them to shame. famous
     for her A. lack of fighting spirit B. spiritual powers C. political struggles D. lack of spiritual
-    values B. quiet C. loving D. weak
+    values
 questions:
 - number: 1
   page: 70
@@ -703,7 +703,7 @@ questions:
     A: Okoh's marriage
     B: Mama Okoh's business
     C: Torkwase at Otukpo
-    D: Sgt. Onyilo in the war front LEXIS, STRUCTURE AND ORAL FORMS
+    D: Sgt. Onyilo in the war front
   proposed_answer: B
   answer_confidence: medium
   proposed_skill: ENG.A.1.i
@@ -1120,8 +1120,24 @@ questions:
     A: open
     B: constant
     C: strong
-    D: useless 62 The lamb is a little feeble animal
+    D: useless
   proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 62
+  page: 81
+  section: null
+  instruction: In each of questions 56 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: The lamb is a little feeble animal
+  options:
+    A: fat
+    B: quiet
+    C: loving
+    D: weak
+  proposed_answer: D
   answer_confidence: medium
   proposed_skill: ENG.B.1.i
   skill_reason: Printed direction asks for the option nearest in meaning.
@@ -1186,9 +1202,8 @@ questions:
     D: with
   proposed_answer: C
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 67
   page: 82
@@ -1232,9 +1247,8 @@ questions:
     D: but
   proposed_answer: D
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 70
   page: 82
@@ -1323,9 +1337,8 @@ questions:
     D: with
   proposed_answer: A
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 76
   page: 83
@@ -1354,9 +1367,8 @@ questions:
     D: their's
   proposed_answer: B
   answer_confidence: medium
-  proposed_skill: ENG.B.4.i
-  skill_reason: 'Read from the options: every option is a pronoun, which is word classes and their functions.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 78
   page: 84
@@ -1400,10 +1412,8 @@ questions:
     D: if he had run faster
   proposed_answer: D
   answer_confidence: medium
-  proposed_skill: ENG.B.5.i
-  skill_reason: 'Read from the options: the options are the same statement in different tenses or moods,
-    which is mood, tense, aspect and concord. The paper calls this whole run "Basic Grammar", which the
-    syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 81
   page: 84
@@ -1432,9 +1442,8 @@ questions:
     D: patricide
   proposed_answer: B
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 83
   page: 84
@@ -1448,9 +1457,8 @@ questions:
     D: with
   proposed_answer: A
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 84
   page: 84
@@ -1464,9 +1472,8 @@ questions:
     D: for
   proposed_answer: C
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 85
   page: 84

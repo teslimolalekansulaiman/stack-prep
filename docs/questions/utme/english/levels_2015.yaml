@@ -241,6 +241,10 @@ levels:
   proposed_level: 4
   level_confidence: low
   reason: 'base 3 for ENG.B.1.i; +1: the answer ''terrible'' is long and outside common vocabulary'
+- number: 60
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for ENG.B.1.i; +1: the answer ''essential'' is long and outside common vocabulary'
 - number: 61
   proposed_level: 4
   level_confidence: low
@@ -282,6 +286,10 @@ levels:
   level_confidence: low
   reason: base 3 for ENG.B.3.i
 - number: 72
+  proposed_level: 2
+  level_confidence: low
+  reason: 'base 3 for ENG.B.3.i; -1: the answer ''in'' is an everyday word'
+- number: 73
   proposed_level: 2
   level_confidence: low
   reason: 'base 3 for ENG.B.3.i; -1: the answer ''in'' is an everyday word'

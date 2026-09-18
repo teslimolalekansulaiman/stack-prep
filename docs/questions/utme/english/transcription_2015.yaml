@@ -1,7 +1,7 @@
 # UTME 2015, Use of English — extracted from the text layer of
 # docs/questions/utme/english/JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf.
 #
-# 95 questions kept, 2 rejected.
+# 97 questions kept, 3 rejected.
 # Answers come from the key printed with the paper, which is a compiler's, not
 # JAMB's: they load as `published_key` and still need a person to check them.
 # Skill mappings follow the paper's own printed directions where it prints one;
@@ -151,8 +151,7 @@ passages:
     be timid and hopeful. the party if he had been invited. A. He would not have attended even if he eat
     B. He attended the party before he was invited. C. He was not invited and so, he did not attend D.
     He attended the party without invitation. For these questions, choose the option opposite in meaning
-    to the word or phrase in italics B. Frightening C. Pleasant D. Strange B. extraneous C. essential
-    D. critical B. in C. from D. up
+    to the word or phrase in italics B. Frightening C. Pleasant D. Strange
 questions:
 - number: 1
   page: 108
@@ -1069,8 +1068,23 @@ questions:
     A: terrible
     B: encouraging
     C: Commendable
-    D: rigid 60 Just me the basic facts with needless details
+    D: rigid
   proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
+- number: 60
+  page: 119
+  section: null
+  instruction: choose the option nearest in meaning to the word or phrase in italics
+  stem: Just me the basic facts with needless details
+  options:
+    A: relevant
+    B: extraneous
+    C: essential
+    D: critical
+  proposed_answer: C
   answer_confidence: medium
   proposed_skill: ENG.B.1.i
   skill_reason: Printed direction asks for the option nearest in meaning.
@@ -1162,9 +1176,8 @@ questions:
     D: into
   proposed_answer: A
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 67
   page: 120
@@ -1193,9 +1206,8 @@ questions:
     D: was
   proposed_answer: A
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 69
   page: 120
@@ -1209,9 +1221,8 @@ questions:
     D: splits
   proposed_answer: C
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 70
   page: 120
@@ -1225,10 +1236,8 @@ questions:
     D: would not have rushed into it
   proposed_answer: D
   answer_confidence: medium
-  proposed_skill: ENG.B.5.i
-  skill_reason: 'Read from the options: the options are the same statement in different tenses or moods,
-    which is mood, tense, aspect and concord. The paper calls this whole run "Basic Grammar", which the
-    syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 72
   page: 121
@@ -1239,8 +1248,23 @@ questions:
     A: with
     B: for
     C: in
-    D: to 73 There is no logic --- any of their claims
+    D: to
   proposed_answer: C
+  answer_confidence: medium
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  passage_ref: null
+- number: 73
+  page: 121
+  section: null
+  instruction: choose the option that best completes the gap(s)
+  stem: There is no logic --- any of their claims
+  options:
+    A: with
+    B: in
+    C: from
+    D: up
+  proposed_answer: B
   answer_confidence: medium
   proposed_skill: ENG.B.3.i
   skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
@@ -1257,9 +1281,8 @@ questions:
     D: while
   proposed_answer: D
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 76
   page: 121
@@ -1288,9 +1311,8 @@ questions:
     D: by
   proposed_answer: A
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 78
   page: 121
@@ -1334,9 +1356,8 @@ questions:
     D: kept on
   proposed_answer: B
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: every option is ''kept'' with a different particle, which is idiomatic
-    usage. The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 81
   page: 122
@@ -1365,9 +1386,8 @@ questions:
     D: did she
   proposed_answer: B
   answer_confidence: medium
-  proposed_skill: ENG.B.5.i
-  skill_reason: 'Read from the options: the options are question tags, which is mood, tense and concord.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 83
   page: 122
@@ -1381,9 +1401,8 @@ questions:
     D: stand besides for
   proposed_answer: A
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: every option is ''stand'' with a different particle, which is
-    idiomatic usage. The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 84
   page: 122
@@ -1397,9 +1416,8 @@ questions:
     D: by
   proposed_answer: D
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are particles completing a phrasal verb, which is
-    idiomatic usage. The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 85
   page: 122

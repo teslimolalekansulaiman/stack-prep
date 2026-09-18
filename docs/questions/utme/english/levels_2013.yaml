@@ -245,6 +245,10 @@ levels:
   proposed_level: 3
   level_confidence: low
   reason: base 3 for ENG.B.1.i
+- number: 62
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.1.i
 - number: 63
   proposed_level: 3
   level_confidence: low

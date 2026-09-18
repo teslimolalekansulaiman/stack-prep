@@ -240,7 +240,7 @@ levels:
 - number: 65
   proposed_level: 3
   level_confidence: low
-  reason: base 3 for ENG.B.2.i
+  reason: base 3 for ENG.B.3.i
 - number: 66
   proposed_level: 3
   level_confidence: low
@@ -358,9 +358,9 @@ levels:
   level_confidence: low
   reason: 'base 3 for ENG.C.3.i; +1: ''Advantages'' has about 4 syllables'
 - number: 96
-  proposed_level: 4
+  proposed_level: 2
   level_confidence: low
-  reason: 'base 3 for ENG.C.3.i; +1: ''Intentional'' has about 4 syllables'
+  reason: base 2 for ENG.A.1.i
 - number: 97
   proposed_level: 3
   level_confidence: low

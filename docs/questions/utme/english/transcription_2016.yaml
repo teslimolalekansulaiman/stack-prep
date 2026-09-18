@@ -1,7 +1,7 @@
 # UTME 2016, Use of English — extracted from the text layer of
 # docs/questions/utme/english/JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf.
 #
-# 92 questions kept, 2 rejected.
+# 92 questions kept, 3 rejected.
 # Answers come from the key printed with the paper, which is a compiler's, not
 # JAMB's: they load as `published_key` and still need a person to check them.
 # Skill mappings follow the paper's own printed directions where it prints one;
@@ -163,13 +163,7 @@ passages:
     speeches before the United Nations General --- 15 (a) assembly (b) organisation (c) negotiation. The
     primary advantage is that speech may be highly --- 16 (a) advanced (b) analogue (c) discreet (d) polished
     in terms of word choice, turns of phrase and development of ideas. The main advantage is that this
-    type of delivery is difficult to do well. Reading aloud with meaningful --- 17 (a) vocal (b) bifocal
-    (c) anticipatory (d) profuse inflection speaker to be very familiar with the text. If not the words
-    will come out in a choppy, expressionless way. Such poor delivery could --- 18 (a) decisive (b) positive
-    (c) interactive (d) restrictive --- effects created by the carefully chosen --- 19 (a) dialect (c)
-    slang (d) language --- lack of familiarity with the --- 20 (a) text (b) context (c) exchange (d) note
-    --- could also speaker from maintaining eye contact with the people being addressed. These questions
-    are based on A. H. Mohammed's "The First Days at Forcado High School"
+    type of delivery is difficult to do well. Reading aloud with meaningful ---
 questions:
 - number: 1
   page: 127
@@ -652,7 +646,7 @@ questions:
     A: her admission into the senior class was unusual
     B: she was expelled from her previous school
     C: the students of the school did not like her
-    D: 'she bribed the principal before she was admitted LEXIS, STRUCTURE AND ORAL FORMS: In these questions,'
+    D: she bribed the principal before she was admitted
   proposed_answer: A
   answer_confidence: medium
   proposed_skill: ENG.A.6.i
@@ -1150,9 +1144,8 @@ questions:
     D: picture
   proposed_answer: B
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 70
   page: 140
@@ -1211,9 +1204,8 @@ questions:
     D: did he
   proposed_answer: C
   answer_confidence: medium
-  proposed_skill: ENG.B.5.i
-  skill_reason: 'Read from the options: the options are question tags, which is mood, tense and concord.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 75
   page: 140
@@ -1257,9 +1249,8 @@ questions:
     D: 'no'
   proposed_answer: A
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 78
   page: 141
@@ -1273,9 +1264,8 @@ questions:
     D: for
   proposed_answer: C
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are particles completing a phrasal verb, which is
-    idiomatic usage. The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 79
   page: 141
@@ -1319,9 +1309,8 @@ questions:
     D: florescent
   proposed_answer: C
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 82
   page: 141
@@ -1350,9 +1339,8 @@ questions:
     D: a patient a teacher
   proposed_answer: B
   answer_confidence: medium
-  proposed_skill: ENG.B.5.i
-  skill_reason: 'Read from the options: the options are degrees of comparison, which is mood, tense and
-    degree. The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 84
   page: 142

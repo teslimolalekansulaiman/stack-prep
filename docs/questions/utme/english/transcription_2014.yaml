@@ -1,7 +1,7 @@
 # UTME 2014, Use of English — extracted from the text layer of
 # docs/questions/utme/english/JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf.
 #
-# 92 questions kept, 6 rejected.
+# 93 questions kept, 9 rejected.
 # Answers come from the key printed with the paper, which is a compiler's, not
 # JAMB's: they load as `published_key` and still need a person to check them.
 # Skill mappings follow the paper's own printed directions where it prints one;
@@ -83,10 +83,7 @@ passages:
     D. sub-editor] has to employ a lot of people. Other people working with him are cartographers, editors,
     typesetters, readers, who work in various ways to produce the text of the newspaper, .... 12 ....
     [A. agents B. reporters C. analysts D. vendors ] who go out and collect stories and items of news,
-    and .... only if she worked harder B it would never be possible for her to pass C. He would have to
-    bribe her teachers to enable her to pass D. She would have to cheat in order to pass B. an original
-    C. a revised D. an annotated B. securing C. swapping D. strengthening choose the option that best
-    completes the gap
+    and
 questions:
 - number: 1
   page: 89
@@ -637,7 +634,7 @@ questions:
     A: Way of taking great risk
     B: way to remedy all natural problems
     C: necessary price to pay for the success of their marriage
-    D: bad thing that couple should discourage LEXIS, STRUCTURE AND ORAL FORMS
+    D: bad thing that couple should discourage
   proposed_answer: C
   answer_confidence: medium
   proposed_skill: ENG.A.6.i
@@ -671,8 +668,7 @@ questions:
       well disposed to this
     B: The police may arrest the woman for allowing her neighbours to take care of her children
     C: The woman may be arrested for allowing her children to be a nuisance to her neighbours
-    D: The police wanted remarked for allowing her children to destroy her neighbour's crops 38 Jummai's
-      father remarked that pigs would fly before she passed
+    D: The police wanted remarked for allowing her children to destroy her neighbour's crops
   proposed_answer: B
   answer_confidence: medium
   proposed_skill: ENG.B.3.ii
@@ -784,8 +780,24 @@ questions:
     A: invigorated
     B: isolated
     C: weakened
-    D: destroyed 47 One of the students bought a copy of the book plagiarized
+    D: destroyed
   proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.2.i
+  skill_reason: Printed direction asks for the option opposite in meaning.
+  passage_ref: null
+- number: 47
+  page: 98
+  section: null
+  instruction: In each of questions 46 to 55, choose the option opposite in meaning to the word or phrase
+    in italics
+  stem: One of the students bought a copy of the book plagiarized
+  options:
+    A: a used
+    B: an original
+    C: a revised
+    D: an annotated
+  proposed_answer: B
   answer_confidence: medium
   proposed_skill: ENG.B.2.i
   skill_reason: Printed direction asks for the option opposite in meaning.
@@ -1046,6 +1058,22 @@ questions:
   proposed_skill: ENG.B.1.i
   skill_reason: Printed direction asks for the option nearest in meaning.
   passage_ref: null
+- number: 65
+  page: 101
+  section: null
+  instruction: In each of questions 56 to 65, choose the option nearest in meaning to the word or phrase
+    in italics
+  stem: The dispute between the two countries has resulted in the severing of diplomatic relations
+  options:
+    A: breaking
+    B: securing
+    C: swapping
+    D: strengthening
+  proposed_answer: A
+  answer_confidence: medium
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
+  passage_ref: null
 - number: 66
   page: 101
   section: null
@@ -1058,9 +1086,8 @@ questions:
     D: collude
   proposed_answer: A
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 67
   page: 101
@@ -1074,9 +1101,8 @@ questions:
     D: sight
   proposed_answer: A
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 68
   page: 101
@@ -1105,9 +1131,8 @@ questions:
     D: wood
   proposed_answer: D
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 70
   page: 102
@@ -1151,9 +1176,8 @@ questions:
     D: from
   proposed_answer: C
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 74
   page: 102
@@ -1167,9 +1191,8 @@ questions:
     D: perverting
   proposed_answer: C
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 75
   page: 102
@@ -1213,9 +1236,8 @@ questions:
     D: forte
   proposed_answer: D
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 78
   page: 103
@@ -1229,9 +1251,8 @@ questions:
     D: chronic
   proposed_answer: C
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 79
   page: 103
@@ -1244,22 +1265,6 @@ questions:
     C: hotly
     D: just
   proposed_answer: A
-  answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
-  passage_ref: null
-- number: 80
-  page: 103
-  section: null
-  instruction: In each of questions 66 to 85, choose the option that best completes the gap
-  stem: The chairman is too much--- an idealist for this government
-  options:
-    A: from
-    B: about
-    C: of
-    D: with 12 O'clock two
-  proposed_answer: C
   answer_confidence: medium
   proposed_skill: ENG.B.3.i
   skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
@@ -1276,9 +1281,8 @@ questions:
     D: striking
   proposed_answer: C
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 82
   page: 103
@@ -1292,9 +1296,8 @@ questions:
     D: verdict with
   proposed_answer: A
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: every option is ''verdict'' with a different particle, which is
-    idiomatic usage. The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 83
   page: 104
@@ -1323,9 +1326,8 @@ questions:
     D: remade
   proposed_answer: C
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
-    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 85
   page: 104
@@ -1339,9 +1341,8 @@ questions:
     D: at
   proposed_answer: B
   answer_confidence: medium
-  proposed_skill: ENG.B.7.i
-  skill_reason: 'Read from the options: the options are particles completing a phrasal verb, which is
-    idiomatic usage. The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
+  proposed_skill: ENG.B.3.i
+  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
   passage_ref: null
 - number: 86
   page: 104
