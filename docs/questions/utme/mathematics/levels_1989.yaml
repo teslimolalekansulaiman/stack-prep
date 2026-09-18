@@ -1,0 +1,218 @@
+# UTME 1989, Mathematics — proposed difficulty levels.
+#
+# Produced by database/propose_levels_maths.py, whose docstring states the rule in
+# full. Levels are read from the mathematics in the stem, not from the question's
+# assigned skill: 47% of these questions fell through to a fallback skill during
+# import, because a mathematics paper prints no directions to classify from.
+#
+# Every level is low confidence and loads as model_proposed. A reviewer who
+# disagrees should disagree with the rule and re-run it, not argue one at a time.
+format_version: 1
+paper:
+  exam_year: 1989
+levels:
+- number: 1
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3: no topic recognised, so the middle level; +1: notation the text layer could not carry,
+    so a stacked or nested expression'
+- number: 2
+  proposed_level: 3
+  level_confidence: low
+  reason: 'base 2 for arithmetic and percentages; +1: notation the text layer could not carry, so a stacked
+    or nested expression'
+- number: 3
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3: no topic recognised, so the middle level; +1: notation the text layer could not carry,
+    so a stacked or nested expression'
+- number: 4
+  proposed_level: 3
+  level_confidence: low
+  reason: 'base 3: no topic recognised, so the middle level'
+- number: 5
+  proposed_level: 2
+  level_confidence: low
+  reason: 'base 3 for indices, logarithms and surds; -1: a short, direct instruction'
+- number: 6
+  proposed_level: 2
+  level_confidence: low
+  reason: base 2 for arithmetic and percentages
+- number: 7
+  proposed_level: 2
+  level_confidence: low
+  reason: base 2 for arithmetic and percentages
+- number: 8
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 2 for arithmetic and percentages; +1: stated as a word problem, so it must be translated
+    before it is solved; +1: a long or two-part stem, which usually means more than one step'
+- number: 9
+  proposed_level: 4
+  level_confidence: low
+  reason: base 4 for solids and the earth as a sphere
+- number: 10
+  proposed_level: 2
+  level_confidence: low
+  reason: 'base 3 for indices, logarithms and surds; -1: a short, direct instruction'
+- number: 11
+  proposed_level: 2
+  level_confidence: low
+  reason: 'base 3: no topic recognised, so the middle level; -1: a short, direct instruction'
+- number: 12
+  proposed_level: 3
+  level_confidence: low
+  reason: 'base 3: no topic recognised, so the middle level'
+- number: 14
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3: no topic recognised, so the middle level; +1: notation the text layer could not carry,
+    so a stacked or nested expression'
+- number: 15
+  proposed_level: 5
+  level_confidence: low
+  reason: 'base 3 for algebra; +1: stated as a word problem, so it must be translated before it is solved;
+    +1: a long or two-part stem, which usually means more than one step'
+- number: 16
+  proposed_level: 3
+  level_confidence: low
+  reason: 'base 3: no topic recognised, so the middle level'
+- number: 17
+  proposed_level: 3
+  level_confidence: low
+  reason: 'base 3: no topic recognised, so the middle level'
+- number: 18
+  proposed_level: 2
+  level_confidence: low
+  reason: 'base 3: algebraic notation, whatever the instruction word says; -1: a short, direct instruction'
+- number: 19
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for algebra
+- number: 20
+  proposed_level: 3
+  level_confidence: low
+  reason: 'base 3: no topic recognised, so the middle level'
+- number: 21
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for algebra
+- number: 22
+  proposed_level: 3
+  level_confidence: low
+  reason: 'base 3: no topic recognised, so the middle level'
+- number: 23
+  proposed_level: 3
+  level_confidence: low
+  reason: 'base 3: no topic recognised, so the middle level'
+- number: 24
+  proposed_level: 3
+  level_confidence: low
+  reason: 'base 3: no topic recognised, so the middle level'
+- number: 25
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for algebra; +1: notation the text layer could not carry, so a stacked or nested expression'
+- number: 26
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3: no topic recognised, so the middle level; +1: notation the text layer could not carry,
+    so a stacked or nested expression'
+- number: 27
+  proposed_level: 3
+  level_confidence: low
+  reason: 'base 3: algebraic notation, whatever the instruction word says; -1: a short, direct instruction;
+    +1: notation the text layer could not carry, so a stacked or nested expression'
+- number: 28
+  proposed_level: 5
+  level_confidence: low
+  reason: 'base 4 for calculus; +1: a diagram to read as well as the mathematics'
+- number: 29
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for progressions
+- number: 30
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for progressions; +1: a diagram to read as well as the mathematics'
+- number: 31
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3: no topic recognised, so the middle level; +1: notation the text layer could not carry,
+    so a stacked or nested expression'
+- number: 32
+  proposed_level: 5
+  level_confidence: low
+  reason: 'base 3: no topic recognised, so the middle level; +1: a diagram to read as well as the mathematics;
+    +1: notation the text layer could not carry, so a stacked or nested expression'
+- number: 34
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3: no topic recognised, so the middle level; +1: a diagram to read as well as the mathematics'
+- number: 35
+  proposed_level: 3
+  level_confidence: low
+  reason: 'base 3: no topic recognised, so the middle level'
+- number: 36
+  proposed_level: 3
+  level_confidence: low
+  reason: 'base 3: no topic recognised, so the middle level'
+- number: 37
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for indices, logarithms and surds
+- number: 38
+  proposed_level: 5
+  level_confidence: low
+  reason: 'base 3: no topic recognised, so the middle level; +1: a long or two-part stem, which usually
+    means more than one step; +1: a diagram to read as well as the mathematics'
+- number: 40
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for circle and polygon geometry; +1: a diagram to read as well as the mathematics'
+- number: 41
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for trigonometry; +1: a long or two-part stem, which usually means more than one step'
+- number: 42
+  proposed_level: 3
+  level_confidence: low
+  reason: 'base 3: no topic recognised, so the middle level'
+- number: 43
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3: no topic recognised, so the middle level; +1: stated as a word problem, so it must
+    be translated before it is solved'
+- number: 44
+  proposed_level: 3
+  level_confidence: low
+  reason: 'base 3: no topic recognised, so the middle level'
+- number: 45
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for indices, logarithms and surds; +1: a diagram to read as well as the mathematics'
+- number: 46
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for circle and polygon geometry; +1: a long or two-part stem, which usually means more
+    than one step'
+- number: 47
+  proposed_level: 5
+  level_confidence: low
+  reason: 'base 2 for statistics and charts; +1: stated as a word problem, so it must be translated before
+    it is solved; +1: a long or two-part stem, which usually means more than one step; +1: a diagram to
+    read as well as the mathematics; +1: notation the text layer could not carry, so a stacked or nested
+    expression'
+- number: 48
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3: no topic recognised, so the middle level; +1: a long or two-part stem, which usually
+    means more than one step'
+- number: 49
+  proposed_level: 3
+  level_confidence: low
+  reason: 'base 3: no topic recognised, so the middle level'
+- number: 50
+  proposed_level: 4
+  level_confidence: low
+  reason: 'base 3 for probability; +1: a diagram to read as well as the mathematics'
