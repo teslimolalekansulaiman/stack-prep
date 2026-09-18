@@ -163,7 +163,14 @@ passages:
     speeches before the United Nations General --- 15 (a) assembly (b) organisation (c) negotiation. The
     primary advantage is that speech may be highly --- 16 (a) advanced (b) analogue (c) discreet (d) polished
     in terms of word choice, turns of phrase and development of ideas. The main advantage is that this
-    type of delivery is difficult to do well. Reading aloud with meaningful ---
+    type of delivery is difficult to do well. Reading aloud with meaningful --- select the option that
+    best explains the information conveyed in the sentence For these questions, choose the option opposite
+    in meaning to the word or phrase in italics For these questions, choose the nearest in meaning to
+    the word or phrase in italics choose the option that best completes the gap(s) For these questions,
+    choose the option that has the same sound as the one represented by the letter(s) underlined For these
+    questions, choose the option that rhymes with the given word For these questions, choose the appropriate
+    stress pattern from the options, the stress syllables are written in capital letter(s) For this question,
+    choose the option that is stressed on the first syllable
 questions:
 - number: 1
   page: 127
@@ -781,7 +788,7 @@ questions:
     A: she was acting as a beauty queen
     B: she would pass the drink to the queen who is sitting next to her
     C: she would be accepted by all as a beauty queen
-    D: she walked past the beauty queen For these questions,
+    D: she walked past the beauty queen
   proposed_answer: C
   answer_confidence: medium
   proposed_skill: ENG.B.3.ii
@@ -790,7 +797,7 @@ questions:
 - number: 46
   page: 136
   section: null
-  instruction: choose the option opposite in meaning to the word or phrase in italics
+  instruction: For these questions, choose the option opposite in meaning to the word or phrase in italics
   stem: The relationship between the couple has been frosty
   options:
     A: amenable
@@ -805,7 +812,7 @@ questions:
 - number: 47
   page: 136
   section: null
-  instruction: choose the option opposite in meaning to the word or phrase in italics
+  instruction: For these questions, choose the option opposite in meaning to the word or phrase in italics
   stem: The dressmaker unpicked the seam of the shirt
   options:
     A: tore up
@@ -820,7 +827,7 @@ questions:
 - number: 48
   page: 137
   section: null
-  instruction: choose the option opposite in meaning to the word or phrase in italics
+  instruction: For these questions, choose the option opposite in meaning to the word or phrase in italics
   stem: Some of my neighbours have an antipathy to dogs
   options:
     A: enmity towards
@@ -835,7 +842,7 @@ questions:
 - number: 49
   page: 137
   section: null
-  instruction: choose the option opposite in meaning to the word or phrase in italics
+  instruction: For these questions, choose the option opposite in meaning to the word or phrase in italics
   stem: Chibuzor gave a curt nod and walked away
   options:
     A: rude
@@ -850,7 +857,7 @@ questions:
 - number: 50
   page: 137
   section: null
-  instruction: choose the option opposite in meaning to the word or phrase in italics
+  instruction: For these questions, choose the option opposite in meaning to the word or phrase in italics
   stem: The girl took a cursory glance at the letter and hid it
   options:
     A: brief
@@ -865,7 +872,7 @@ questions:
 - number: 51
   page: 137
   section: null
-  instruction: choose the option opposite in meaning to the word or phrase in italics
+  instruction: For these questions, choose the option opposite in meaning to the word or phrase in italics
   stem: The accused was eventually convicted
   options:
     A: initially
@@ -880,7 +887,7 @@ questions:
 - number: 52
   page: 137
   section: null
-  instruction: choose the option opposite in meaning to the word or phrase in italics
+  instruction: For these questions, choose the option opposite in meaning to the word or phrase in italics
   stem: My niece has an unquenchable thirst for adventure stories
   options:
     A: an illegitimate
@@ -895,7 +902,7 @@ questions:
 - number: 53
   page: 137
   section: null
-  instruction: choose the option opposite in meaning to the word or phrase in italics
+  instruction: For these questions, choose the option opposite in meaning to the word or phrase in italics
   stem: Musa is a gifted but erratic player
   options:
     A: regular
@@ -910,7 +917,7 @@ questions:
 - number: 54
   page: 137
   section: null
-  instruction: choose the option opposite in meaning to the word or phrase in italics
+  instruction: For these questions, choose the option opposite in meaning to the word or phrase in italics
   stem: The testimony of the witness was vague
   options:
     A: real
@@ -925,7 +932,7 @@ questions:
 - number: 55
   page: 138
   section: null
-  instruction: choose the option opposite in meaning to the word or phrase in italics
+  instruction: For these questions, choose the option opposite in meaning to the word or phrase in italics
   stem: As a student, Isa tried communal living for a few years
   options:
     A: shared
@@ -940,13 +947,13 @@ questions:
 - number: 56
   page: 138
   section: null
-  instruction: choose the option opposite in meaning to the word or phrase in italics
+  instruction: For these questions, choose the option opposite in meaning to the word or phrase in italics
   stem: The lamb is a feeble little animal
   options:
     A: fat
     B: weak
     C: loving
-    D: quite For these questions, choose the nearest in meaning to the word or phrase in italics
+    D: quite
   proposed_answer: B
   answer_confidence: medium
   proposed_skill: ENG.B.2.i
@@ -955,7 +962,7 @@ questions:
 - number: 57
   page: 138
   section: null
-  instruction: choose the option opposite in meaning to the word or phrase in italics
+  instruction: For these questions, choose the nearest in meaning to the word or phrase in italics
   stem: The chairman admires incessant meetings
   options:
     A: planned
@@ -964,13 +971,13 @@ questions:
     D: constant
   proposed_answer: D
   answer_confidence: medium
-  proposed_skill: ENG.B.2.i
-  skill_reason: Printed direction asks for the option opposite in meaning.
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
   passage_ref: null
 - number: 58
   page: 138
   section: null
-  instruction: choose the option opposite in meaning to the word or phrase in italics
+  instruction: For these questions, choose the nearest in meaning to the word or phrase in italics
   stem: The exhibition was an eye opener to all
   options:
     A: dispatch
@@ -979,13 +986,13 @@ questions:
     D: display
   proposed_answer: D
   answer_confidence: medium
-  proposed_skill: ENG.B.2.i
-  skill_reason: Printed direction asks for the option opposite in meaning.
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
   passage_ref: null
 - number: 59
   page: 138
   section: null
-  instruction: choose the option opposite in meaning to the word or phrase in italics
+  instruction: For these questions, choose the nearest in meaning to the word or phrase in italics
   stem: The first round of the tournament was a doddle
   options:
     A: exasperating
@@ -994,13 +1001,13 @@ questions:
     D: easy
   proposed_answer: D
   answer_confidence: medium
-  proposed_skill: ENG.B.2.i
-  skill_reason: Printed direction asks for the option opposite in meaning.
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
   passage_ref: null
 - number: 60
   page: 138
   section: null
-  instruction: choose the option opposite in meaning to the word or phrase in italics
+  instruction: For these questions, choose the nearest in meaning to the word or phrase in italics
   stem: As a journalist, Bala has always had a nose for stories
   options:
     A: a command
@@ -1009,13 +1016,13 @@ questions:
     D: an instinct
   proposed_answer: D
   answer_confidence: medium
-  proposed_skill: ENG.B.2.i
-  skill_reason: Printed direction asks for the option opposite in meaning.
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
   passage_ref: null
 - number: 61
   page: 138
   section: null
-  instruction: choose the option opposite in meaning to the word or phrase in italics
+  instruction: For these questions, choose the nearest in meaning to the word or phrase in italics
   stem: The actress screamed when she noticed an object behind her
   options:
     A: wailed
@@ -1024,13 +1031,13 @@ questions:
     D: stormed out
   proposed_answer: A
   answer_confidence: medium
-  proposed_skill: ENG.B.2.i
-  skill_reason: Printed direction asks for the option opposite in meaning.
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
   passage_ref: null
 - number: 62
   page: 139
   section: null
-  instruction: choose the option opposite in meaning to the word or phrase in italics
+  instruction: For these questions, choose the nearest in meaning to the word or phrase in italics
   stem: Today's weather is favourable for a game of tennis
   options:
     A: impartial
@@ -1039,13 +1046,13 @@ questions:
     D: disapproving
   proposed_answer: C
   answer_confidence: medium
-  proposed_skill: ENG.B.2.i
-  skill_reason: Printed direction asks for the option opposite in meaning.
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
   passage_ref: null
 - number: 63
   page: 139
   section: null
-  instruction: choose the option opposite in meaning to the word or phrase in italics
+  instruction: For these questions, choose the nearest in meaning to the word or phrase in italics
   stem: All the candidates looked aghast at the first reading of the questions
   options:
     A: fulfilled
@@ -1054,13 +1061,13 @@ questions:
     D: again
   proposed_answer: B
   answer_confidence: medium
-  proposed_skill: ENG.B.2.i
-  skill_reason: Printed direction asks for the option opposite in meaning.
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
   passage_ref: null
 - number: 64
   page: 139
   section: null
-  instruction: choose the option opposite in meaning to the word or phrase in italics
+  instruction: For these questions, choose the nearest in meaning to the word or phrase in italics
   stem: I am tired of your eternal argument
   options:
     A: open
@@ -1069,28 +1076,29 @@ questions:
     D: useless
   proposed_answer: C
   answer_confidence: medium
-  proposed_skill: ENG.B.2.i
-  skill_reason: Printed direction asks for the option opposite in meaning.
+  proposed_skill: ENG.B.1.i
+  skill_reason: Printed direction asks for the option nearest in meaning.
   passage_ref: null
 - number: 65
   page: 139
   section: null
-  instruction: choose the option opposite in meaning to the word or phrase in italics
+  instruction: From questions 65 to 85, choose the option that best completes the gap(s)
   stem: Joke gave Muhammad a jaunty smile
   options:
     A: frightful
     B: cheerful
     C: discouraging
-    D: Inviting From questions 65 to 85,
+    D: Inviting
   proposed_answer: D
   answer_confidence: medium
-  proposed_skill: ENG.B.2.i
-  skill_reason: Printed direction asks for the option opposite in meaning.
+  proposed_skill: ENG.B.7.i
+  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
+    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 66
   page: 139
   section: null
-  instruction: choose the option that best completes the gap(s)
+  instruction: From questions 65 to 85, choose the option that best completes the gap(s)
   stem: You live in the city now, __ ?
   options:
     A: are you
@@ -1105,7 +1113,7 @@ questions:
 - number: 67
   page: 139
   section: null
-  instruction: choose the option that best completes the gap(s)
+  instruction: From questions 65 to 85, choose the option that best completes the gap(s)
   stem: Concrete is made of __
   options:
     A: sand and cement
@@ -1120,7 +1128,7 @@ questions:
 - number: 68
   page: 139
   section: null
-  instruction: choose the option that best completes the gap(s)
+  instruction: From questions 65 to 85, choose the option that best completes the gap(s)
   stem: Suana___ that hexagons had five sides, but later he knew they were six-sided figures
   options:
     A: would have believed
@@ -1135,7 +1143,7 @@ questions:
 - number: 69
   page: 140
   section: null
-  instruction: choose the option that best completes the gap(s)
+  instruction: From questions 65 to 85, choose the option that best completes the gap(s)
   stem: The___ to the fallen heroes was erected at the market square
   options:
     A: exhibition
@@ -1144,13 +1152,14 @@ questions:
     D: picture
   proposed_answer: B
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.7.i
+  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
+    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 70
   page: 140
   section: null
-  instruction: choose the option that best completes the gap(s)
+  instruction: From questions 65 to 85, choose the option that best completes the gap(s)
   stem: The Flying Eagles of Nigeria couldn't have won the match if they hadn't prepared well,___?
   options:
     A: can't they
@@ -1165,7 +1174,7 @@ questions:
 - number: 71
   page: 140
   section: null
-  instruction: choose the option that best completes the gap(s)
+  instruction: From questions 65 to 85, choose the option that best completes the gap(s)
   stem: They all gathered to exhume the___musician's corpse for examination
   options:
     A: posthumous
@@ -1180,7 +1189,7 @@ questions:
 - number: 72
   page: 140
   section: null
-  instruction: choose the option that best completes the gap(s)
+  instruction: From questions 65 to 85, choose the option that best completes the gap(s)
   stem: I have been doing this exercise___
   options:
     A: for five minutes
@@ -1195,7 +1204,7 @@ questions:
 - number: 73
   page: 140
   section: null
-  instruction: choose the option that best completes the gap(s)
+  instruction: From questions 65 to 85, choose the option that best completes the gap(s)
   stem: Oloyede always sleeps like a baby,___ ?
   options:
     A: does he
@@ -1204,13 +1213,14 @@ questions:
     D: did he
   proposed_answer: C
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.5.i
+  skill_reason: 'Read from the options: the options are question tags, which is mood, tense and concord.
+    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 75
   page: 140
   section: null
-  instruction: choose the option that best completes the gap(s)
+  instruction: From questions 65 to 85, choose the option that best completes the gap(s)
   stem: My father has just bought___
   options:
     A: a peugeot brand new car
@@ -1225,7 +1235,7 @@ questions:
 - number: 76
   page: 141
   section: null
-  instruction: choose the option that best completes the gap(s)
+  instruction: From questions 65 to 85, choose the option that best completes the gap(s)
   stem: The university is a corporate body made___ different colleges
   options:
     A: in with
@@ -1240,7 +1250,7 @@ questions:
 - number: 77
   page: 141
   section: null
-  instruction: choose the option that best completes the gap(s)
+  instruction: From questions 65 to 85, choose the option that best completes the gap(s)
   stem: The secretary hadn't___ money left
   options:
     A: any
@@ -1249,13 +1259,14 @@ questions:
     D: 'no'
   proposed_answer: A
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.7.i
+  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
+    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 78
   page: 141
   section: null
-  instruction: choose the option that best completes the gap(s)
+  instruction: From questions 65 to 85, choose the option that best completes the gap(s)
   stem: The King was recognised___ the scar on his face
   options:
     A: with
@@ -1264,13 +1275,14 @@ questions:
     D: for
   proposed_answer: C
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.7.i
+  skill_reason: 'Read from the options: the options are particles completing a phrasal verb, which is
+    idiomatic usage. The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 79
   page: 141
   section: null
-  instruction: choose the option that best completes the gap(s)
+  instruction: From questions 65 to 85, choose the option that best completes the gap(s)
   stem: Nkiru has lots of friends, but I have___
   options:
     A: only a little
@@ -1285,7 +1297,7 @@ questions:
 - number: 80
   page: 141
   section: null
-  instruction: choose the option that best completes the gap(s)
+  instruction: From questions 65 to 85, choose the option that best completes the gap(s)
   stem: The HOD says she considers her degree certificate___ than as a prize through labour
   options:
     A: rather as a gift of God
@@ -1300,7 +1312,7 @@ questions:
 - number: 81
   page: 141
   section: null
-  instruction: choose the option that best completes the gap(s)
+  instruction: From questions 65 to 85, choose the option that best completes the gap(s)
   stem: Mr Ojo instructed his son to replace the faulty___ tube
   options:
     A: flurescent
@@ -1309,13 +1321,14 @@ questions:
     D: florescent
   proposed_answer: C
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.7.i
+  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
+    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 82
   page: 141
   section: null
-  instruction: choose the option that best completes the gap(s)
+  instruction: From questions 65 to 85, choose the option that best completes the gap(s)
   stem: The employer, not the salesmen___responsible for the loss
   options:
     A: have been
@@ -1330,7 +1343,7 @@ questions:
 - number: 83
   page: 142
   section: null
-  instruction: choose the option that best completes the gap(s)
+  instruction: From questions 65 to 85, choose the option that best completes the gap(s)
   stem: She was___ as anyone could have had
   options:
     A: as patient as teacher
@@ -1339,13 +1352,14 @@ questions:
     D: a patient a teacher
   proposed_answer: B
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.5.i
+  skill_reason: 'Read from the options: the options are degrees of comparison, which is mood, tense and
+    degree. The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 84
   page: 142
   section: null
-  instruction: choose the option that best completes the gap(s)
+  instruction: From questions 65 to 85, choose the option that best completes the gap(s)
   stem: There was a serious___ between the new couple over feeding allowance
   options:
     A: arguement
@@ -1360,22 +1374,24 @@ questions:
 - number: 85
   page: 142
   section: null
-  instruction: choose the option that best completes the gap(s)
+  instruction: From questions 65 to 85, choose the option that best completes the gap(s)
   stem: They thought Musa___ agree if they altered some of the conditions
   options:
     A: can
     B: may
     C: might
-    D: ought For these questions,
+    D: ought
   proposed_answer: C
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.7.i
+  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
+    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 86
   page: 142
   section: null
-  instruction: choose the option that has the same sound as the one represented by the letter(s) underlined
+  instruction: For these questions, choose the option that has the same sound as the one represented by
+    the letter(s) underlined
   stem: Waiter
   options:
     A: flavour
@@ -1391,7 +1407,8 @@ questions:
 - number: 87
   page: 142
   section: null
-  instruction: choose the option that has the same sound as the one represented by the letter(s) underlined
+  instruction: For these questions, choose the option that has the same sound as the one represented by
+    the letter(s) underlined
   stem: Flee
   options:
     A: field
@@ -1407,7 +1424,8 @@ questions:
 - number: 88
   page: 142
   section: null
-  instruction: choose the option that has the same sound as the one represented by the letter(s) underlined
+  instruction: For these questions, choose the option that has the same sound as the one represented by
+    the letter(s) underlined
   stem: Palm
   options:
     A: florid
@@ -1423,7 +1441,8 @@ questions:
 - number: 89
   page: 142
   section: null
-  instruction: choose the option that has the same sound as the one represented by the letter(s) underlined
+  instruction: For these questions, choose the option that has the same sound as the one represented by
+    the letter(s) underlined
   stem: Phantom
   options:
     A: physics
@@ -1439,7 +1458,8 @@ questions:
 - number: 90
   page: 143
   section: null
-  instruction: choose the option that has the same sound as the one represented by the letter(s) underlined
+  instruction: For these questions, choose the option that has the same sound as the one represented by
+    the letter(s) underlined
   stem: Chest
   options:
     A: fixture
@@ -1455,13 +1475,14 @@ questions:
 - number: 91
   page: 143
   section: null
-  instruction: choose the option that has the same sound as the one represented by the letter(s) underlined
+  instruction: For these questions, choose the option that has the same sound as the one represented by
+    the letter(s) underlined
   stem: Epitaph
   options:
     A: pneumonia
     B: fan
     C: paper
-    D: pseudo For these questions,
+    D: pseudo
   proposed_answer: B
   answer_confidence: medium
   proposed_skill: ENG.C.3.i
@@ -1471,7 +1492,7 @@ questions:
 - number: 92
   page: 143
   section: null
-  instruction: choose the option that rhymes with the given word
+  instruction: For these questions, choose the option that rhymes with the given word
   stem: Ever
   options:
     A: never
@@ -1486,7 +1507,7 @@ questions:
 - number: 93
   page: 143
   section: null
-  instruction: choose the option that rhymes with the given word
+  instruction: For these questions, choose the option that rhymes with the given word
   stem: Cable
   options:
     A: bible
@@ -1501,14 +1522,13 @@ questions:
 - number: 94
   page: 143
   section: null
-  instruction: choose the option that rhymes with the given word
+  instruction: For these questions, choose the option that rhymes with the given word
   stem: Mail
   options:
     A: bale
     B: slate
     C: girl
-    D: galle For these questions, choose the appropriate stress pattern from the options, the stress syllables
-      are written in capital letter(s)
+    D: galle
   proposed_answer: A
   answer_confidence: medium
   proposed_skill: ENG.C.3.i
@@ -1517,7 +1537,8 @@ questions:
 - number: 95
   page: 143
   section: null
-  instruction: choose the option that rhymes with the given word
+  instruction: For these questions, choose the appropriate stress pattern from the options, the stress
+    syllables are written in capital letter(s)
   stem: Advantages
   options:
     A: advantaGES
@@ -1526,28 +1547,29 @@ questions:
     D: advanTAges
   proposed_answer: B
   answer_confidence: medium
-  proposed_skill: ENG.C.3.i
-  skill_reason: Printed direction asks which option rhymes with the given word.
+  proposed_skill: ENG.C.4.i
+  skill_reason: Printed direction asks for the stress pattern.
   passage_ref: null
 - number: 96
   page: 143
   section: null
-  instruction: choose the option that rhymes with the given word
+  instruction: For these questions, choose the appropriate stress pattern from the options, the stress
+    syllables are written in capital letter(s)
   stem: Intentional
   options:
     A: inTENtional
     B: INtentional
     C: intentionAL
-    D: intentioNAL For this question,
+    D: intentioNAL
   proposed_answer: A
   answer_confidence: medium
-  proposed_skill: ENG.C.3.i
-  skill_reason: Printed direction asks which option rhymes with the given word.
+  proposed_skill: ENG.C.4.i
+  skill_reason: Printed direction asks for the stress pattern.
   passage_ref: null
 - number: 97
   page: 144
   section: null
-  instruction: choose the option that is stressed on the first syllable
+  instruction: For this question, choose the option that is stressed on the first syllable
   stem: Gap 97 in the cloze passage.
   options:
     A: guitar

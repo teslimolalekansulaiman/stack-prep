@@ -1,0 +1,437 @@
+# UTME Use of English — Antonyms (ENG.B.2.i)
+#
+# Keyed on question_version_id. `steps` is what the board writes; `hint` is offered after a
+# first wrong answer. Written against the question, not generated from it — see README.md.
+format_version: 1
+skill: ENG.B.2.i
+explanations:
+  81aa9b45:
+    steps:
+      - "A mind-bending exercise is one that strains the mind: hard, twisting, demanding."
+      - "Its opposite is an easy one. Difficult is a near-synonym of the word, not its opposite, and it is the option most students take."
+    hint: "You are asked for the opposite, and one option means almost the same thing as the word. Rule that one out first."
+  b0cd82d9:
+    steps:
+      - "A cut-throat rush is fierce and ruthless — people competing hard for the goods."
+      - "Lacklustre is its opposite: dull, with no energy in it. Mad and worrisome describe the rush differently; they do not reverse it."
+    hint: "Ask what the word says about how strong the feeling was, then find the option at the other end of that scale."
+  cf301c46:
+    steps:
+      - "Redundant details are ones that are not needed — the essay could lose them and say the same thing."
+      - "Necessary is the exact opposite. Useless is a synonym of redundant, so it is the trap."
+    hint: "One option means the same as the word in italics. That is never the answer to an antonym question."
+  bb987ed0:
+    steps:
+      - "Myriad means very many — a countless number of obstacles."
+      - "Few is its opposite. Most, all and many all sit on the same side of the scale as myriad."
+    hint: "Three of these options mean 'a lot'. Only one means the reverse."
+  04ac2dd7:
+    steps:
+      - "An ingenuous smile is an innocent, unguarded one — nothing hidden behind it."
+      - "Arrogant is the furthest from that: an arrogant smile is knowing and superior. Naive is close to ingenuous in meaning, not opposite to it."
+    hint: "Ingenuous is not the same word as ingenious. It means open and innocent."
+  9233f7a4:
+    steps:
+      - "A flawless speech has no faults in it at all."
+      - "An imperfect one does. Careless describes how it was made rather than what it was like, so it is not the reverse of flawless."
+    hint: "Break the word up: flaw-less means without flaws. What is the opposite of that?"
+  cf7df9ae:
+    steps:
+      - "A gruff exterior is rough and unfriendly on the outside — which the sentence then contrasts with being kind-hearted."
+      - "Nice is its opposite. Gentle is close, but gruff is about manner rather than force, and the key is the plainer reversal."
+    hint: "Read the whole sentence. The word 'beneath' tells you the exterior is the opposite of what is underneath."
+  fe9eb02c:
+    steps:
+      - "To debase something is to lower its value or cheapen it."
+      - "Elevated is its opposite: raised up. Perverted and overvalued are both criticisms too, so neither reverses the word."
+    hint: "The prefix de- is doing the work here: it means down. Look for the option that means up."
+  0be4ae0f:
+    steps:
+      - "Straightforward means simple and direct — nothing tangled about it."
+      - "Complicated is the opposite. Troublesome and irksome mean annoying, which is a different complaint."
+    hint: "Difficult and annoying are not the same thing. Which option is about how tangled it is?"
+  09aba797:
+    steps:
+      - "A receptive crowd is willing to listen and open to what they are told."
+      - "Hostile is the opposite: not merely unwilling, but against the speaker. Disobedient is about following orders, which is not what receptive means."
+    hint: "Receptive is about welcome, not obedience. What is the opposite of a welcoming crowd?"
+  ebde4cb9:
+    steps:
+      - "Acquiescence is quiet agreement — going along with something without objecting."
+      - "Resistance is its opposite. Agreement is a synonym, which is why it is offered."
+    hint: "One of these options means the same as the word. Antonym questions always put it there."
+  01fa3d32:
+    steps:
+      - "To feel ambivalent is to be pulled both ways at once, unable to settle on how you feel."
+      - "Decisive is the opposite: settled, able to choose. Anxious is a different feeling, not the reverse of this one."
+    hint: "Ambi- means both. Ambivalent is having two minds about something — so what is having one?"
+  8c54f4ea:
+    steps:
+      - "A plethora of details is far too many of them."
+      - "Shortage is the opposite. Multitude means the same as plethora, so it is the trap."
+    hint: "Decide whether the word means too many or too few, then take the other end."
+  de50d980:
+    steps:
+      - "Sultry weather is hot and heavy — close, humid air that is uncomfortable to sit in."
+      - "Cold and friendly reverses both halves. Hot and uncomfortable restates the word rather than reversing it."
+    hint: "This pair of words has to reverse both parts of the description, not just one."
+  b621c9dd:
+    steps:
+      - "Something superfluous is more than is needed — the look made words unnecessary."
+      - "Scanty is the opposite: not enough. Redundant and unnecessary both mean the same as superfluous."
+    hint: "Two of these options are synonyms of the word, which leaves very little to choose between the rest."
+  e61b9ccf:
+    steps:
+      - "To be coerced into something is to be forced into it against your will."
+      - "Persuaded is the opposite: brought round by argument rather than pressure. Driven, compelled and pressured are all forms of force."
+    hint: "Three options describe force. The answer is the one that describes willingness."
+  95103acd:
+    steps:
+      - "A mercenary is a soldier who fights for whoever pays, not for his own country."
+      - "A regular is the opposite: a soldier of the country's own standing army. Recruit and officer describe rank, not allegiance."
+    hint: "The word is about who a soldier fights for, not how senior he is."
+  06c81f88:
+    steps:
+      - "The sentence contrasts Jummai with her cruel husband, so the word must be the reverse of cruel."
+      - "Harsh, brutal and ferocious all mean much the same as cruel. Passionate is the only option that does not, and it is the key."
+    hint: "Cross out every option that means the same as cruel. See what is left."
+  cfce6903:
+    steps:
+      - "Mercy is holding back punishment when you could give it."
+      - "Vengeance is the opposite: paying the wrong back in full. Kindness is close to mercy, and contempt is an attitude rather than an action."
+    hint: "Mercy and vengeance are the two things you can do to someone in your power."
+  9fb93d28:
+    steps:
+      - "Garrulous means talking far too much."
+      - "Reticent is the opposite: holding back, saying little. Outspoken is about saying difficult things, not about saying many."
+    hint: "The word is about quantity of speech, not about its boldness."
+  1d7bf4be:
+    steps:
+      - "A callow youth is young and inexperienced — green, not yet tested."
+      - "Experienced is the opposite. Ignorant is close to callow rather than opposite to it."
+    hint: "Callow is about how much of life someone has seen, not about how much they know."
+  bac949d0:
+    steps:
+      - "A herculean task takes enormous strength — the word comes from Hercules and his labours."
+      - "An easy one is the opposite. Strenuous and demanding are both synonyms of herculean."
+    hint: "Two options mean the same as the word. That narrows it to two."
+  567739d4:
+    steps:
+      - "A novice is a beginner, new to the work."
+      - "A professional is the opposite: skilled and established in it. Manager, clerk and supervisor are job titles, not stages of experience."
+    hint: "The word describes how practised someone is, not what post they hold."
+  743d1f40:
+    steps:
+      - "Candour is frankness — saying plainly what you think, even when it is awkward."
+      - "Dishonesty is the opposite. Frankness is a synonym, offered to catch a student who read the question as a synonym question."
+    hint: "Check the direction of the question before you choose: this one asks for the opposite."
+  27ab03a3:
+    steps:
+      - "Anaemic means short of blood, and so pale and weak-looking."
+      - "Strong is the opposite. Weak and sick both mean much the same as anaemic."
+    hint: "Two of these options say the same thing as the word. Neither can be the answer."
+  8c7a47e8:
+    steps:
+      - "Inconceivable means impossible to imagine — you cannot even picture it happening."
+      - "Credible is the opposite: believable. Unthinkable and impossible are both synonyms of the word."
+    hint: "Strip the in-: conceivable means imaginable. Which option is closest to that?"
+  05ce256b:
+    steps:
+      - "A superficial impression is one that goes no further than the surface."
+      - "A deep one is the opposite. A fake impression is a different criticism — superficial says shallow, not untrue."
+    hint: "Superficial is about depth. Do not read it as a word for lying."
+  fd88661e:
+    steps:
+      - "A prudent businessman is careful and thinks ahead, which is why he leaves nothing to chance."
+      - "Careless is the opposite. Shrewd and frugal are both compliments of the same kind as prudent."
+    hint: "The sentence explains the word for you: he leaves nothing to chance. What is the opposite of that?"
+  888bf3ff:
+    steps:
+      - "Antipathy is a settled dislike — a feeling against something."
+      - "Receptiveness is the opposite: openness to it. Hatred and hostility are both stronger versions of antipathy, not reversals of it."
+    hint: "Anti- means against. Look for the option that means the reverse of being against something."
+  8e6490b3:
+    steps:
+      - "A lethal right foot is a deadly one: the sentence means his shot was powerful enough to settle the match."
+      - "Weak is the opposite. Harmless is close, but lethal here describes force rather than danger, and weak reverses the force."
+    hint: "The word is not being used literally. In football a lethal foot is a powerful one."
+  28f582f0:
+    steps:
+      - "An idiot, in this sentence, is someone of very low ability — the second half says he is weak in class."
+      - "A genius is the opposite. A dunce is a synonym, and an expert describes knowledge in one field rather than ability in general."
+    hint: "The sentence tells you what the word means: weak in class. What is the opposite of that?"
+  2adf40c2:
+    steps:
+      - "To be shocked by news is to be strongly affected by it."
+      - "Unconcerned is the opposite: not affected at all. Astonished, surprised and disconcerted are all degrees of the same reaction."
+    hint: "Three of these are ways of being shocked. The answer is the one that is not a reaction at all."
+  4aaff8db:
+    steps:
+      - "To be flexible on an issue is to be willing to bend — to change position when there is reason to."
+      - "Rigid is the opposite: unwilling to move. Cautious and evasive describe manner, not willingness to shift."
+    hint: "The word is a metaphor about bending. What is the opposite of something that bends?"
+  5355f303:
+    steps:
+      - "To look sober is to look serious and restrained, with nothing lively about the expression."
+      - "Excited is the opposite. Serious is a synonym, offered to catch a student reading too quickly."
+    hint: "Sober here is about mood, not about drink."
+  767c724a:
+    steps:
+      - "Efficiency is doing the work well and without waste, which is why she was promoted."
+      - "Incompetence is the opposite: not being able to do it. Inconsistency is about being uneven, which is a different fault."
+    hint: "Ask what she was promoted for, then look for the reason someone would not be."
+  38e72da8:
+    steps:
+      - "Reticent behaviour is reserved and quiet — saying little, holding back."
+      - "Loquacious is the opposite: talkative. Contemplative is thoughtful, which is a different kind of quiet."
+    hint: "This is the same pair as garrulous and reticent, the other way round."
+  ba8e5994:
+    steps:
+      - "A volatile election process is unstable — it can flare up without warning."
+      - "Calm is the opposite. Sudden describes one event rather than the state, and latent means hidden rather than settled."
+    hint: "Volatile describes how easily something erupts. What is the opposite of easily erupting?"
+  328472ed:
+    steps:
+      - "An abrasive manner rubs people the wrong way: harsh and grating."
+      - "Gentle is the opposite. Rude is a synonym of abrasive; indifferent and lackadaisical describe someone who does not care, which is different again."
+    hint: "Abrasive comes from rubbing. What is the opposite of a manner that scrapes?"
+  aa980b15:
+    steps:
+      - "An ad hoc committee is set up for one purpose and disbanded afterwards — made for the occasion."
+      - "Formal is the key: a standing committee with a fixed place in the structure. Temporary and improvised are both synonyms of ad hoc."
+    hint: "Two of these options mean the same as ad hoc. Look at what is left."
+  8e499f3c:
+    steps:
+      - "Infinitesimal means vanishingly small — so small it is barely there."
+      - "Large is the opposite. Small is a synonym and the obvious trap."
+    hint: "Infinitesimal is not merely small. Read the options for the reverse of small, not another word for it."
+  c0c0e981:
+    steps:
+      - "To adduce a factor is to put it forward as evidence for something."
+      - "Refuted is the opposite: argued against and dismissed. Mentioned and affirmed are both closer to adducing than against it."
+    hint: "Adducing is offering something in support. What is the opposite of supporting an explanation?"
+  b60b5f5e:
+    steps:
+      - "An antidote cures an ailment — it takes the problem away."
+      - "An obstacle does the reverse: it stands in the way instead of clearing it. An answer and a reply are both close to antidote in this sentence."
+    hint: "Think about what an antidote does to a problem, then find the option that does the opposite to it."
+  816d51f4:
+    steps:
+      - "Callous means hard-hearted — unmoved by other people's suffering."
+      - "Compassionate is the opposite. Wicked is a synonym of callous, and the closest wrong answer."
+    hint: "Callous is about feeling for others, not about doing wrong."
+  f9519128:
+    steps:
+      - "Temporal power is worldly power — the power of governments and offices rather than of the church."
+      - "Spiritual is the opposite, and the sentence sets it up: he was respected though he held no worldly office. Mundane is a synonym of temporal."
+    hint: "Temporal here is about this world, not about time."
+  10f1f1e1:
+    steps:
+      - "Hit-and-miss means done without a plan: some of it works, some does not."
+      - "Systematic is the opposite: done to a method. Hasty describes speed rather than planning."
+    hint: "The phrase is about whether there was a method, not about how fast it was done."
+  2243b52e:
+    steps:
+      - "A curt nod is short and abrupt — the least acknowledgement he could give before walking away."
+      - "Gentle is the key. Rude is a synonym of curt, and polite describes what a curt nod is not, but only indirectly."
+    hint: "Curt is about abruptness. Look for the option that means the opposite of abrupt."
+  26205b41:
+    steps:
+      - "A cursory glance is a quick one that takes nothing in."
+      - "Lasting is the opposite. Brief and concise both mean the same as cursory."
+    hint: "Two options mean short. Neither can be the opposite of a word that means short."
+  d36ad4a6:
+    steps:
+      - "A frosty relationship is a cold one — polite, perhaps, but with no warmth in it."
+      - "Cordial is the opposite: warm and friendly. Amenable means agreeable, which is about willingness rather than warmth."
+    hint: "Frosty is a temperature word used about feelings. Find its opposite temperature."
+  fc45a0cb:
+    steps:
+      - "Heinous means wicked — a word for the worst kind of act."
+      - "Laudable is the opposite: deserving praise. Deplorable is a synonym of heinous."
+    hint: "The sentence is about a Nobel laureate's work, which tells you the key is a compliment."
+  afd74f20:
+    steps:
+      - "Eventually means in the end, after everything that came before."
+      - "Initially is the opposite: at the start. Subsequently and consequently both point forward like eventually does."
+    hint: "The word places the conviction at the end of the process. What word places it at the beginning?"
+  b67ed26d:
+    steps:
+      - "The plebs are the ordinary people — the word comes from the plebeians of Rome."
+      - "The elite are the opposite: the few at the top. Masses is a synonym of plebs."
+    hint: "Plebs and elite are the two halves a society is often divided into."
+  3a97ae6d:
+    steps:
+      - "An appalling condition is a shocking one — bad enough to dismay anyone who saw it."
+      - "Pleasant is the opposite. Complex and simple describe difficulty, which is not what appalling measures."
+    hint: "Appalling is about how bad something is, not about how complicated."
+  3454abc2:
+    steps:
+      - "Mordant wit is biting — sharp enough to wound the person it is aimed at."
+      - "The published key gives withering, which means much the same thing rather than the reverse. Kind is the option that actually opposes mordant, and this question is flagged for a second look."
+    hint: "Mordant means biting. Be careful: the options here include more than one word for biting."
+  11260f48:
+    steps:
+      - "To wax is to grow — the war against malaria keeps increasing."
+      - "The published key gives wavering, which means unsteady rather than shrinking. Decreasing is the true opposite of waxing, and this question is flagged for a second look."
+    hint: "Waxing and waning are the pair, as with the moon. Look for the option closest to waning."
+  6d0002a1:
+    steps:
+      - "A dogged defence is a stubborn one: the soldiers refused to give the city up."
+      - "Indifferent is the opposite — not caring enough to hold on. Strong is close to dogged in effect but not in meaning; dogged is about persistence."
+    hint: "Dogged is about refusing to stop, not about being powerful."
+  16a8200b:
+    steps:
+      - "To debilitate an industry is to weaken it until it can barely function."
+      - "Invigorated is the opposite: given new strength. Weakened and destroyed both sit on the same side as debilitated."
+    hint: "Two options mean harm of the same kind. The answer has to be the reverse of harm."
+  aa1d0e7a:
+    steps:
+      - "A plagiarized copy is one taken from someone else's work and passed off as new."
+      - "An original is the opposite. A used, revised or annotated copy can still be genuine — none of those reverses the idea of stealing the work."
+    hint: "Plagiarism is about whose work it is, not about the state the book is in."
+  478569db:
+    steps:
+      - "To be taken aback is to be caught off guard by something you did not expect."
+      - "Unmoved is the opposite: not affected at all. Shocked, surprised and nonplussed are all ways of being taken aback."
+    hint: "Three of these describe the same reaction. The answer is the one that describes no reaction."
+  6d38e77b:
+    steps:
+      - "An erratic player is one you cannot rely on: brilliant one week, poor the next."
+      - "Regular is the opposite — the same every time. Unpredictable and unstable are both synonyms of erratic."
+    hint: "The sentence contrasts the word with gifted, so the word is the complaint. What is the opposite of being unreliable?"
+  72f3df98:
+    steps:
+      - "A translucent lamp shade lets light through but you cannot see shapes through it."
+      - "Opaque is the opposite: no light through at all. Transparent is the trap — it is further along the same scale, not the reverse of it."
+    hint: "Translucent, transparent and opaque are three points on one scale. Which end is furthest from translucent?"
+  dc4e4e9e:
+    steps:
+      - "An unquenchable thirst cannot be satisfied however much you feed it."
+      - "A reduced one is the opposite. Inextinguishable means the same as unquenchable."
+    hint: "Quench means to put out or satisfy. Unquenchable means it cannot be satisfied — so what is the reverse?"
+  bdbc24bb:
+    steps:
+      - "Antipathy is a settled dislike, so neighbours with an antipathy to dogs cannot stand them."
+      - "Affection for is the opposite. Enmity towards means the same as antipathy."
+    hint: "Read the whole phrase, preposition included: the answer has to fit 'an ... to dogs'."
+  a87c3e54:
+    steps:
+      - "To unpick a seam is to take the stitching out of it."
+      - "Sewing it up is the reverse, and that is the key the same question carries in another year. The key printed here is threaded, which is a step in sewing rather than the opposite of unpicking, and this question is flagged for a second look."
+    hint: "The prefix un- tells you the word undoes something. What is the something?"
+  f5b751eb:
+    steps:
+      - "Vague testimony is unclear — it does not pin anything down."
+      - "Clear is the opposite. Ambiguous is a synonym of vague, and true is about honesty rather than clarity."
+    hint: "The word is about how clear the testimony was, not about whether it was honest."
+  d65ff3c3:
+    steps:
+      - "Communal living means sharing a home and its arrangements with others."
+      - "Private is the opposite: living apart. Collective and shared both mean the same as communal."
+    hint: "Three of these words mean together. Only one means alone."
+  a98e7865:
+    steps:
+      - "A media frenzy is wild, noisy excitement — reporters rushing at once."
+      - "Calm is the opposite. Excitement and agitation are both synonyms of frenzy."
+    hint: "Frenzy is a word for uncontrolled activity. Find the option that means no activity at all."
+  16a6dd23:
+    steps:
+      - "To invade a house is to force your way into it."
+      - "Defended is the opposite: keeping others out rather than breaking in. Set up and built describe making a house, not entering one."
+    hint: "The word describes what was done to the house. What is the opposite action?"
+  b257452f:
+    steps:
+      - "A weird attitude is a strange one, outside what people expect."
+      - "Normal is the opposite. Peculiar is a synonym of weird."
+    hint: "Weird measures how usual something is. Look for the word at the usual end."
+  28055811:
+    steps:
+      - "An obscure little town is one nobody has heard of."
+      - "Distinguished is the opposite: well known and well regarded. Secluded is about being hard to reach, which is a different kind of out-of-the-way."
+    hint: "Obscure here means unknown, not hidden or dark."
+  a3a08ec0:
+    steps:
+      - "Bizarre dressing is strikingly odd — the sort people turn to look at."
+      - "Natural is the opposite: ordinary, unremarkable. Weird is a synonym of bizarre."
+    hint: "Two of these words mean strange. Neither can be the opposite of a word that means strange."
+  06e30de7:
+    steps:
+      - "To scurry around town is to move quickly in short hurried steps."
+      - "Dawdle is the opposite: to go slowly and waste time. Scamper, dash and scuttle are all ways of hurrying."
+    hint: "Three options mean fast. The answer is the only one that means slow."
+  23a68957:
+    steps:
+      - "An explicit poem says plainly what it means — nothing left for the reader to guess."
+      - "Ambiguous is the opposite: open to more than one reading. Clear is a synonym of explicit."
+    hint: "Explicit is about whether the meaning is spelled out. What is the opposite of spelled out?"
+  9d68f1fb:
+    steps:
+      - "A scornful smile shows contempt for the person it is aimed at."
+      - "Respectful is the opposite. Derisive and sarcastic are both close to scornful."
+    hint: "Scorn is looking down on someone. What is the opposite of looking down on them?"
+  156e603d:
+    steps:
+      - "Erratic behaviour is unpredictable — it changes without pattern or warning."
+      - "Consistent is the opposite: the same each time. Fitful and bizarre both sit on the same side as erratic."
+    hint: "Erratic is about whether behaviour follows a pattern, not about how odd it is."
+  5c8c5e6b:
+    steps:
+      - "An abstainer is someone who holds back from something — usually, as here, from alcohol."
+      - "The options in this question are definitions rather than opposites, and the key gives the definition of the word itself. The question is flagged for a second look; as printed it tests what abstainer means, not its antonym."
+    hint: "Abstain means to hold back from. Ask what an abstainer holds back from."
+  04ea5dc3:
+    steps:
+      - "A frosty relationship is a cold one — civil, perhaps, but with no warmth."
+      - "Cordial is the opposite: warm and friendly. Amenable is about being easy to deal with, which is not the same as being warm."
+    hint: "Frosty is a temperature word used about feelings. Find its opposite temperature."
+  5787b673:
+    steps:
+      - "To unpick a seam is to take the stitching out of it."
+      - "Sewing it up is the opposite: putting the stitching back. Threaded and picked up describe other steps, not the reverse of this one."
+    hint: "The prefix un- tells you the word undoes something. What is the something?"
+  eb7b7f74:
+    steps:
+      - "Antipathy is a settled dislike, so neighbours with an antipathy to dogs cannot stand them."
+      - "Affection for is the opposite. Enmity towards means the same as antipathy."
+    hint: "Read the whole phrase, preposition included: the answer has to fit 'an ... to dogs'."
+  a75e512f:
+    steps:
+      - "A curt nod is short and abrupt — the least he could give before walking away."
+      - "Polite is the opposite in this year's options. Rude is a synonym of curt."
+    hint: "Curt is about abruptness. Which option describes the manner a curt nod lacks?"
+  3163a061:
+    steps:
+      - "A cursory glance is a quick one that takes nothing in."
+      - "Lasting is the opposite. Brief and concise both mean the same as cursory."
+    hint: "Two options mean short. Neither can be the opposite of a word that means short."
+  6d1ac37d:
+    steps:
+      - "Eventually means in the end, after everything that came before."
+      - "Initially is the opposite: at the start. Finally, subsequently and consequently all point the same way as eventually."
+    hint: "The word places the conviction at the end. What word places it at the beginning?"
+  d1bb3554:
+    steps:
+      - "An unquenchable thirst cannot be satisfied however much you feed it."
+      - "A reduced one is the opposite. Inextinguishable means the same as unquenchable."
+    hint: "Quench means to satisfy or put out. Unquenchable means it cannot be — so what is the reverse?"
+  fc41fd09:
+    steps:
+      - "An erratic player is one you cannot rely on: brilliant one week, poor the next."
+      - "Regular is the opposite. Unstable and unpredictable are both synonyms of erratic."
+    hint: "The sentence contrasts the word with gifted, so the word is the complaint about him."
+  5e881792:
+    steps:
+      - "Vague testimony is unclear — it does not pin anything down."
+      - "Clear is the opposite. Real, factual and true are all about honesty, which is a different question from clarity."
+    hint: "Three options are about whether the testimony was honest. The word is about whether it was clear."
+  a553220c:
+    steps:
+      - "Communal living means sharing a home and its arrangements with others."
+      - "Private is the opposite. Shared, collective and general all sit on the same side as communal."
+    hint: "Three of these words mean together. Only one means alone."
+  e07691ff:
+    steps:
+      - "Feeble means weak — a lamb has little strength in it."
+      - "The printed direction for this question asks for the opposite, and none of fat, loving or quite reverses feeble. Weak is the published key, and it is a synonym rather than an antonym, so the question is flagged for a second look."
+    hint: "Feeble means weak. Check which direction the question is asking for before you choose."

@@ -558,8 +558,7 @@ questions:
     A: is having an illusion
     B: thinks other people are fools
     C: thinks hat working is merely a joke
-    D: is on the verge of insanity. From these questions, choose the options opposite in meaning to the
-      words or phrases in italics
+    D: is on the verge of insanity
   proposed_answer: A
   answer_confidence: medium
   proposed_skill: ENG.A.6.i
@@ -568,7 +567,8 @@ questions:
 - number: 35
   page: 163
   section: null
-  instruction: choose the options opposite in meaning to the words or phrases in italics
+  instruction: From these questions, choose the options opposite in meaning to the words or phrases in
+    italics
   stem: My father is a very prosperous businessman
   options:
     A: ungrateful
@@ -583,7 +583,8 @@ questions:
 - number: 36
   page: 163
   section: null
-  instruction: choose the options opposite in meaning to the words or phrases in italics
+  instruction: From these questions, choose the options opposite in meaning to the words or phrases in
+    italics
   stem: My hostess greeted her guest in a very relaxed manner
   options:
     A: energetic
@@ -598,7 +599,8 @@ questions:
 - number: 37
   page: 163
   section: null
-  instruction: choose the options opposite in meaning to the words or phrases in italics
+  instruction: From these questions, choose the options opposite in meaning to the words or phrases in
+    italics
   stem: Ayo takes his studies rather lightly
   options:
     A: humorously
@@ -613,7 +615,8 @@ questions:
 - number: 38
   page: 163
   section: null
-  instruction: choose the options opposite in meaning to the words or phrases in italics
+  instruction: From these questions, choose the options opposite in meaning to the words or phrases in
+    italics
   stem: The doctor was very gentle with his patients in the examining room
   options:
     A: harsh
@@ -628,7 +631,8 @@ questions:
 - number: 40
   page: 164
   section: null
-  instruction: choose the options opposite in meaning to the words or phrases in italics
+  instruction: From these questions, choose the options opposite in meaning to the words or phrases in
+    italics
   stem: The man who had been seriously ill was convalescing at a seaside resort
   options:
     A: regaining health
@@ -643,7 +647,8 @@ questions:
 - number: 41
   page: 164
   section: null
-  instruction: choose the options opposite in meaning to the words or phrases in italics
+  instruction: From these questions, choose the options opposite in meaning to the words or phrases in
+    italics
   stem: For millions of years, the world resources have remained boundless
   options:
     A: unlimited
@@ -658,7 +663,8 @@ questions:
 - number: 42
   page: 164
   section: null
-  instruction: choose the options opposite in meaning to the words or phrases in italics
+  instruction: From these questions, choose the options opposite in meaning to the words or phrases in
+    italics
   stem: The difference between the experimental procedures was imperceptible to me
   options:
     A: negligible
@@ -673,14 +679,14 @@ questions:
 - number: 43
   page: 164
   section: null
-  instruction: choose the options opposite in meaning to the words or phrases in italics
+  instruction: From these questions, choose the options opposite in meaning to the words or phrases in
+    italics
   stem: His anti-apathy to religion ideas makes him unpopular
   options:
     A: remedy
     B: Consciousness
     C: hostility
-    D: receptiveness For the questions, choose the options that best complete the gap(s) 44, He was ...
-      [A. assisted B duped C. enjoined D. encouraged
+    D: receptiveness
   proposed_answer: D
   answer_confidence: medium
   proposed_skill: ENG.B.2.i
@@ -689,8 +695,8 @@ questions:
 - number: 50
   page: 165
   section: null
-  instruction: choose the options that best complete the gap(s). 44, He was ... [A. assisted B. duped
-    C. enjoined D. encouraged] ... by the trickster
+  instruction: For the questions, choose the options that best complete the gap(s). 44, He was ... [A.
+    assisted B. duped C. enjoined D. encouraged] ... by the trickster
   stem: You can stay here --- ...... --- as you are quiet In each of these questions, choose the option
     nearest in meaning to the word(s) or phrase in italics
   options:

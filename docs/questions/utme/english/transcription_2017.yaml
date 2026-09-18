@@ -126,7 +126,11 @@ passages:
     B. recession C. social decay D. management. This implies that infrastructural development should be
     made to take ...14...[A antecedent B. procedure C. control D. advantage] over other sectors. This
     is be-cause of the immense importance of infrastructure to national ...15...[A. awareness B. orientation
-    C. policy D. growth] This question is based al S.I Manyika's INDEPENDENCE
+    C. policy D. growth] This question is based al S.I Manyika's INDEPENDENCE For this question, select
+    the option that best explains the information conveyed in the sentences For this question, choose
+    the option opposite in meaning to the word or phrase in italics. For this question, choose the option
+    that best completes the gap(s). For this question, choose the option that has the same sound as the
+    one represented by the letter(s) underlined
 questions:
 - number: 1
   page: 147
@@ -563,7 +567,7 @@ questions:
     A: were inexperienced in Western democracy
     B: had taken control of their own affairs
     C: should know their history better
-    D: should speak with one voice For this question,
+    D: should speak with one voice
   proposed_answer: D
   answer_confidence: medium
   proposed_skill: ENG.A.6.i
@@ -572,7 +576,8 @@ questions:
 - number: 26
   page: 150
   section: null
-  instruction: select the option that best explains the information conveyed in the sentences
+  instruction: For this question, select the option that best explains the information conveyed in the
+    sentences
   stem: The government didn't mind my mentioning his name
   options:
     A: He was not angry when I mentioned his name
@@ -587,7 +592,8 @@ questions:
 - number: 27
   page: 151
   section: null
-  instruction: select the option that best explains the information conveyed in the sentences
+  instruction: For this question, select the option that best explains the information conveyed in the
+    sentences
   stem: The leader said he was not unaware of the plight of the people
   options:
     A: He knew of their plight
@@ -602,7 +608,8 @@ questions:
 - number: 28
   page: 151
   section: null
-  instruction: select the option that best explains the information conveyed in the sentences
+  instruction: For this question, select the option that best explains the information conveyed in the
+    sentences
   stem: But for the expense, I'd buy bigger car
   options:
     A: I want to buy a bigger car because it is more expensive
@@ -617,7 +624,8 @@ questions:
 - number: 29
   page: 151
   section: null
-  instruction: select the option that best explains the information conveyed in the sentences
+  instruction: For this question, select the option that best explains the information conveyed in the
+    sentences
   stem: No sooner had he got into the pool than the telephone rang
   options:
     A: He didn't get into the pool because the telephone rang
@@ -632,13 +640,14 @@ questions:
 - number: 30
   page: 151
   section: null
-  instruction: select the option that best explains the information conveyed in the sentences
+  instruction: For this question, select the option that best explains the information conveyed in the
+    sentences
   stem: My father said I might just as well stay at home for another year
   options:
     A: I should stay at home because I had no other choice
     B: I might stay at home and do well
     C: Staying at home was probably the best thing for me
-    D: I ought to stay at home in order to do well For this question,
+    D: I ought to stay at home in order to do well
   proposed_answer: D
   answer_confidence: medium
   proposed_skill: ENG.B.3.ii
@@ -647,7 +656,7 @@ questions:
 - number: 31
   page: 152
   section: null
-  instruction: choose the option opposite in meaning to the word or phrase in italics
+  instruction: For this question, choose the option opposite in meaning to the word or phrase in italics
   stem: The King's security men to the east relegated
   options:
     A: discharge from
@@ -662,7 +671,7 @@ questions:
 - number: 32
   page: 152
   section: null
-  instruction: choose the option opposite in meaning to the word or phrase in italics
+  instruction: For this question, choose the option opposite in meaning to the word or phrase in italics
   stem: The minister averred his commitment
   options:
     A: denied
@@ -677,7 +686,7 @@ questions:
 - number: 33
   page: 152
   section: null
-  instruction: choose the option opposite in meaning to the word or phrase in italics
+  instruction: For this question, choose the option opposite in meaning to the word or phrase in italics
   stem: The company was on the brink of a financial abyss
   options:
     A: difficult
@@ -692,7 +701,7 @@ questions:
 - number: 34
   page: 152
   section: null
-  instruction: choose the option opposite in meaning to the word or phrase in italics
+  instruction: For this question, choose the option opposite in meaning to the word or phrase in italics
   stem: Nosa is indisposed
   options:
     A: anxious
@@ -707,7 +716,7 @@ questions:
 - number: 35
   page: 152
   section: null
-  instruction: choose the option opposite in meaning to the word or phrase in italics
+  instruction: For this question, choose the option opposite in meaning to the word or phrase in italics
   stem: A student conscientious should not receive a reward
   options:
     A: An irresponsible
@@ -722,7 +731,7 @@ questions:
 - number: 37
   page: 152
   section: null
-  instruction: choose the option opposite in meaning to the word or phrase in italics
+  instruction: For this question, choose the option opposite in meaning to the word or phrase in italics
   stem: Sophie anticipated the celebration of her tenth birthday
   options:
     A: suggested
@@ -737,7 +746,7 @@ questions:
 - number: 38
   page: 153
   section: null
-  instruction: choose the option opposite in meaning to the word or phrase in italics
+  instruction: For this question, choose the option opposite in meaning to the word or phrase in italics
   stem: Mr. Bola is an irascible young man
   options:
     A: a weak
@@ -752,7 +761,7 @@ questions:
 - number: 39
   page: 153
   section: null
-  instruction: choose the option opposite in meaning to the word or phrase in italics
+  instruction: For this question, choose the option opposite in meaning to the word or phrase in italics
   stem: She became neurotic as a result of her performance
   options:
     A: balanced
@@ -767,13 +776,13 @@ questions:
 - number: 40
   page: 153
   section: null
-  instruction: choose the option opposite in meaning to the word or phrase in italics
+  instruction: For this question, choose the option opposite in meaning to the word or phrase in italics
   stem: Malam Aliyu lived in lack
   options:
     A: surplus
     B: penury
     C: plenitude
-    D: opulence For this question,
+    D: opulence
   proposed_answer: B
   answer_confidence: medium
   proposed_skill: ENG.B.2.i
@@ -782,7 +791,7 @@ questions:
 - number: 41
   page: 153
   section: null
-  instruction: choose the option that best completes the gap(s)
+  instruction: For this question, choose the option that best completes the gap(s)
   stem: You have to ...... how to make the whole week a memorable one
   options:
     A: thick up
@@ -797,7 +806,7 @@ questions:
 - number: 42
   page: 153
   section: null
-  instruction: choose the option that best completes the gap(s)
+  instruction: For this question, choose the option that best completes the gap(s)
   stem: Last week I ........ your friend in the salon
   options:
     A: came into
@@ -806,13 +815,14 @@ questions:
     D: came over
   proposed_answer: C
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.7.i
+  skill_reason: 'Read from the options: every option is ''came'' with a different particle, which is idiomatic
+    usage. The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 43
   page: 153
   section: null
-  instruction: choose the option that best completes the gap(s)
+  instruction: For this question, choose the option that best completes the gap(s)
   stem: We might wait a little longer, but he would not it ..... soon
   options:
     A: turn out
@@ -821,13 +831,14 @@ questions:
     D: turn over
   proposed_answer: B
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.7.i
+  skill_reason: 'Read from the options: every option is ''turn'' with a different particle, which is idiomatic
+    usage. The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 44
   page: 153
   section: null
-  instruction: choose the option that best completes the gap(s)
+  instruction: For this question, choose the option that best completes the gap(s)
   stem: His are tied, so he could not do anything to help her
   options:
     A: shoulders
@@ -836,13 +847,14 @@ questions:
     D: legs
   proposed_answer: C
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.7.i
+  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
+    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 45
   page: 154
   section: null
-  instruction: choose the option that best completes the gap(s)
+  instruction: For this question, choose the option that best completes the gap(s)
   stem: If you want to be part of the conference, you have to ...... a form on me
   options:
     A: fill up
@@ -851,13 +863,14 @@ questions:
     D: fill over
   proposed_answer: A
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.7.i
+  skill_reason: 'Read from the options: every option is ''fill'' with a different particle, which is idiomatic
+    usage. The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 46
   page: 154
   section: null
-  instruction: choose the option that best completes the gap(s)
+  instruction: For this question, choose the option that best completes the gap(s)
   stem: The flight..... has been postponed
   options:
     A: schedule
@@ -866,13 +879,14 @@ questions:
     D: manifest
   proposed_answer: A
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.7.i
+  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
+    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 47
   page: 154
   section: null
-  instruction: choose the option that best completes the gap(s)
+  instruction: For this question, choose the option that best completes the gap(s)
   stem: My wife should not worry about this trial, I will always her
   options:
     A: stand for
@@ -881,13 +895,14 @@ questions:
     D: stand over
   proposed_answer: B
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.7.i
+  skill_reason: 'Read from the options: every option is ''stand'' with a different particle, which is
+    idiomatic usage. The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 48
   page: 154
   section: null
-  instruction: choose the option that best completes the gap(s)
+  instruction: For this question, choose the option that best completes the gap(s)
   stem: I can tell from the way he talks that he ....... his mentor
   options:
     A: takes after
@@ -896,13 +911,14 @@ questions:
     D: takes back
   proposed_answer: A
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.7.i
+  skill_reason: 'Read from the options: every option is ''takes'' with a different particle, which is
+    idiomatic usage. The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 49
   page: 154
   section: null
-  instruction: choose the option that best completes the gap(s)
+  instruction: For this question, choose the option that best completes the gap(s)
   stem: We have time to -- before the gallery opens
   options:
     A: Make
@@ -911,28 +927,31 @@ questions:
     D: keep
   proposed_answer: C
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.7.i
+  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
+    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 50
   page: 154
   section: null
-  instruction: choose the option that best completes the gap(s)
+  instruction: For this question, choose the option that best completes the gap(s)
   stem: The time has now come policy change in Nigeria
   options:
     A: to
     B: for
     C: by
-    D: at For this question,
+    D: at
   proposed_answer: B
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.7.i
+  skill_reason: 'Read from the options: the options are particles completing a phrasal verb, which is
+    idiomatic usage. The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 51
   page: 154
   section: null
-  instruction: choose the option that has the same sound as the one represented by the letter(s) underlined
+  instruction: For this question, choose the option that has the same sound as the one represented by
+    the letter(s) underlined
   stem: tolerated
   options:
     A: stale
@@ -948,7 +967,8 @@ questions:
 - number: 52
   page: 155
   section: null
-  instruction: choose the option that has the same sound as the one represented by the letter(s) underlined
+  instruction: For this question, choose the option that has the same sound as the one represented by
+    the letter(s) underlined
   stem: gearbox
   options:
     A: bare
@@ -964,7 +984,8 @@ questions:
 - number: 53
   page: 155
   section: null
-  instruction: choose the option that has the same sound as the one represented by the letter(s) underlined
+  instruction: For this question, choose the option that has the same sound as the one represented by
+    the letter(s) underlined
   stem: confusion
   options:
     A: measure
@@ -980,7 +1001,8 @@ questions:
 - number: 54
   page: 155
   section: null
-  instruction: choose the option that has the same sound as the one represented by the letter(s) underlined
+  instruction: For this question, choose the option that has the same sound as the one represented by
+    the letter(s) underlined
   stem: tertiary
   options:
     A: shame
@@ -996,7 +1018,8 @@ questions:
 - number: 55
   page: 155
   section: null
-  instruction: choose the option that has the same sound as the one represented by the letter(s) underlined
+  instruction: For this question, choose the option that has the same sound as the one represented by
+    the letter(s) underlined
   stem: poster
   options:
     A: jotter
@@ -1012,7 +1035,8 @@ questions:
 - number: 56
   page: 155
   section: null
-  instruction: choose the option that has the same sound as the one represented by the letter(s) underlined
+  instruction: For this question, choose the option that has the same sound as the one represented by
+    the letter(s) underlined
   stem: cowed
   options:
     A: low
@@ -1028,7 +1052,8 @@ questions:
 - number: 57
   page: 155
   section: null
-  instruction: choose the option that has the same sound as the one represented by the letter(s) underlined
+  instruction: For this question, choose the option that has the same sound as the one represented by
+    the letter(s) underlined
   stem: distribution
   options:
     A: distriBUtion
@@ -1044,7 +1069,8 @@ questions:
 - number: 58
   page: 155
   section: null
-  instruction: choose the option that has the same sound as the one represented by the letter(s) underlined
+  instruction: For this question, choose the option that has the same sound as the one represented by
+    the letter(s) underlined
   stem: irrevocable
   options:
     A: irreVOcable
@@ -1060,7 +1086,8 @@ questions:
 - number: 59
   page: 155
   section: null
-  instruction: choose the option that has the same sound as the one represented by the letter(s) underlined
+  instruction: For this question, choose the option that has the same sound as the one represented by
+    the letter(s) underlined
   stem: My house is ACROSS the road
   options:
     A: is her house the road?
@@ -1076,7 +1103,8 @@ questions:
 - number: 60
   page: 156
   section: null
-  instruction: choose the option that has the same sound as the one represented by the letter(s) underlined
+  instruction: For this question, choose the option that has the same sound as the one represented by
+    the letter(s) underlined
   stem: The shop closes AT 4pm
   options:
     A: Does the shop close by 4pm?

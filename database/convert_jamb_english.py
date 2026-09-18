@@ -205,8 +205,16 @@ def parse_answer_key(lines: list[Line]) -> tuple[dict[int, str], set[int]]:
 #: The last option on a page has nothing after it to stop at, so it swallows the next
 #: direction, the next passage, or the rest of the cloze sentence. These are the things that
 #: can only be the start of something else.
+#: The last option on a page has nothing after it to stop at, so it swallows whatever comes
+#: next. Usually that is the following section's DIRECTION, and losing a direction costs far
+#: more than one mangled option: every question after it inherits the previous direction, and
+#: the direction is what the classifier reads. That is how nine 2016 questions asking for the
+#: nearest meaning came to be filed as antonyms — the direction between them and the antonym
+#: block ended up inside question 56's option D.
 OPTION_END_RE = re.compile(
-    r"\]|\bIn each of\b|\bChoose the (?:option|most|word)\b|\bSelect the option\b|"
+    r"\]|\bIn each of\b|\bChoose the (?:option|most|word|nearest|appropriate)\b|"
+    r"\bSelect the options?\b|\bPick the option\b|"
+    r"\bFor (?:these|the|this) questions?\b|\bFrom (?:these |the )?questions?\b|"
     r"\bPASSAGE\b|\bThe passage below\b|\bFrom the words\b", re.I)
 
 #: A run of shouted words is the paper's own section heading — "LEXIS, STRUCTURE AND ORAL
@@ -460,9 +468,16 @@ def directions(body: list[Line]) -> tuple[dict[int, str], list[tuple[int, str]]]
             continue
         # A direction can be the tail of a paragraph that began with an option, so keep
         # only from the instruction's own opening.
+        # The openers a direction may begin with. Missing forms are not a small loss: a
+        # direction that is not recognised is a direction every question after it does not
+        # get, and they silently inherit the previous block's. "For these questions, choose
+        # the nearest in meaning" was absent, which is why nine 2016 synonym questions were
+        # filed as antonyms.
         trimmed = re.search(r"(In each of.*|In the following.*|From the words.*|"
-                            r"Choose the (?:option|word|most appropriate|most suitable).*|"
-                            r"Select the option.*|"
+                            r"Choose the (?:option|word|nearest|appropriate|most appropriate|"
+                            r"most suitable).*|"
+                            r"Select the options?.*|Pick the option.*|"
+                            r"For (?:these|the|this) questions?.*|From (?:these )?questions?.*|"
                             r"The passage below.*|Fill each gap.*)", text, re.I)
         if not trimmed:
             continue
@@ -585,6 +600,15 @@ def parse_year(year: int, lines: list[Line]) -> tuple[dict, list[str]]:
         for line in segment[1:]:
             text = line.text.strip()
             if PASSAGE_RE.match(text) or GAPS_RE.search(text):
+                break
+            # The next block's direction is printed between the last option of this block and
+            # the first question of the next, with nothing to mark it. Walking into it puts
+            # the direction inside option D and takes it away from the classifier.
+            #
+            # Only once the options have started: before that, a line opening with the same
+            # words is part of this question's own direction or its passage, and breaking
+            # there loses every option the question has.
+            if option_key is not None and OPTION_END_RE.match(text):
                 break
             consumed += 1
             if not text:

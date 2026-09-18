@@ -185,7 +185,14 @@ passages:
     in their dealings with Samuel because he would. A. force them to dance with the masquerade. B. try
     his tricks on them to know their secrets C. prepare well ahead of them D. put them to shame. famous
     for her A. lack of fighting spirit B. spiritual powers C. political struggles D. lack of spiritual
-    values
+    values select the option that best explains the information conveyed in the sentence. choose the option
+    opposite in meaning to the word or phrase in italics. choose the option nearest in meaning to the
+    word or phrase in italics. choose the option that best completes the gap(s) choose the option that
+    has the same vowel sound as the one ran letter(s) underlined choose the option that has the same consonant
+    sound as the one represented by the letter(s) underlined. choose the option that rhymes with the given
+    word. choose the most appropriate stress pattern from the options. The stressed syllables are written
+    in capital letters the word in capital letters has the emphatic stress. Choose the option to which
+    the given sentence relates
 questions:
 - number: 1
   page: 70
@@ -1202,8 +1209,9 @@ questions:
     D: with
   proposed_answer: C
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.7.i
+  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
+    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 67
   page: 82
@@ -1247,8 +1255,9 @@ questions:
     D: but
   proposed_answer: D
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.7.i
+  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
+    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 70
   page: 82
@@ -1337,8 +1346,9 @@ questions:
     D: with
   proposed_answer: A
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.7.i
+  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
+    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 76
   page: 83
@@ -1367,8 +1377,9 @@ questions:
     D: their's
   proposed_answer: B
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.4.i
+  skill_reason: 'Read from the options: every option is a pronoun, which is word classes and their functions.
+    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 78
   page: 84
@@ -1412,8 +1423,10 @@ questions:
     D: if he had run faster
   proposed_answer: D
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.5.i
+  skill_reason: 'Read from the options: the options are the same statement in different tenses or moods,
+    which is mood, tense, aspect and concord. The paper calls this whole run "Basic Grammar", which the
+    syllabus divides further.'
   passage_ref: null
 - number: 81
   page: 84
@@ -1442,8 +1455,9 @@ questions:
     D: patricide
   proposed_answer: B
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.7.i
+  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
+    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 83
   page: 84
@@ -1457,8 +1471,9 @@ questions:
     D: with
   proposed_answer: A
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.7.i
+  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
+    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 84
   page: 84
@@ -1472,8 +1487,9 @@ questions:
     D: for
   proposed_answer: C
   answer_confidence: medium
-  proposed_skill: ENG.B.3.i
-  skill_reason: 'Printed direction is the Basic Grammar run: choose what completes the gap.'
+  proposed_skill: ENG.B.7.i
+  skill_reason: 'Read from the options: the options are four unrelated words, which is ordinary usage.
+    The paper calls this whole run "Basic Grammar", which the syllabus divides further.'
   passage_ref: null
 - number: 85
   page: 84

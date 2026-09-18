@@ -84,6 +84,17 @@ async def run(folder: Path, reviewer_id: str, dsn: str | None, apply: bool) -> i
         if subject_id is None:
             raise SystemExit(f"no {EXAMINATION} subject with code {SUBJECT}")
 
+        skills = {
+            row["code"]: row["id"]
+            for row in await conn.fetch(
+                """
+                SELECT ci.code, ci.id FROM curriculum_items ci
+                JOIN syllabus_versions v ON v.id = ci.syllabus_version_id
+                WHERE ci.item_type = 'skill' AND v.subject_id = $1
+                """,
+                subject_id,
+            )
+        }
         rows = await conn.fetch(
             """
             SELECT q.id AS question_id, q.exam_year, q.question_number,
@@ -91,9 +102,12 @@ async def run(folder: Path, reviewer_id: str, dsn: str | None, apply: bool) -> i
                    v.solution_steps, v.hints, v.marks, v.expected_seconds, v.option_count,
                    v.authored_by, v.answer_source, v.answer_confidence,
                    v.mastery_level_number, v.level_source, v.level_confidence,
-                   v.solution_source, v.review_status
+                   v.solution_source, v.review_status,
+                   c.curriculum_item_id AS primary_skill
             FROM questions q
             JOIN question_versions v ON v.id = q.current_version_id
+            LEFT JOIN question_classifications c
+              ON c.question_id = q.id AND c.classification_role = 'primary'
             WHERE q.subject_id = $1 AND q.retired_at IS NULL
             ORDER BY q.exam_year, q.question_number
             """,
@@ -102,6 +116,7 @@ async def run(folder: Path, reviewer_id: str, dsn: str | None, apply: bool) -> i
         latest = transcribed(folder)
 
         corrections: list[tuple[asyncpg.Record, dict[str, str]]] = []
+        reclassifications: list[tuple[asyncpg.Record, str, object]] = []
         withdrawals: list[asyncpg.Record] = []
         for row in rows:
             key = (int(row["exam_year"]), str(row["question_number"]))
@@ -118,10 +133,21 @@ async def run(folder: Path, reviewer_id: str, dsn: str | None, apply: bool) -> i
             }
             if stored != dict(question["options"]):
                 corrections.append((row, question))
+            # A re-parse can also change which skill a question tests, because the skill is
+            # read from the printed direction and a direction the parser missed is a whole
+            # block of questions classified from the block before. That is a different repair
+            # from a changed option — the question is unchanged, only what it is filed under —
+            # so it is applied in place rather than by writing a new version.
+            proposed = question.get("proposed_skill")
+            if proposed and skills.get(proposed) and skills[proposed] != row["primary_skill"]:
+                reclassifications.append((row, proposed, skills[proposed]))
 
         print(f"{len(corrections)} question(s) need a corrected version.")
         for row, _ in corrections:
             print(f"  {row['exam_year']} Q{row['question_number']}")
+        print(f"{len(reclassifications)} question(s) are filed under the wrong skill.")
+        for row, code, _ in reclassifications[:12]:
+            print(f"  {row['exam_year']} Q{row['question_number']} -> {code}")
         print(f"{len(withdrawals)} question(s) can no longer be read and will be withdrawn.")
         for row in withdrawals:
             print(f"  {row['exam_year']} Q{row['question_number']}")
@@ -211,6 +237,22 @@ async def run(folder: Path, reviewer_id: str, dsn: str | None, apply: bool) -> i
                     NOTE,
                     reviewer_id,
                     f"Superseded by version {int(row['version']) + 1}.",
+                )
+
+            for row, code, skill_id in reclassifications:
+                await conn.execute(
+                    """
+                    UPDATE question_classifications
+                       SET curriculum_item_id = $2,
+                           classification_reason = $3,
+                           reviewed_by = $4, reviewed_at = now()
+                     WHERE question_id = $1 AND classification_role = 'primary'
+                    """,
+                    row["question_id"],
+                    skill_id,
+                    f"Re-parsed: the printed direction for this block is now read correctly, "
+                    f"and it puts this question under {code}.",
+                    reviewer_id,
                 )
 
             for row in withdrawals:
