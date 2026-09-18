@@ -150,7 +150,8 @@ async def fixture() -> AsyncIterator[dict[str, str]]:
                           answer_source, mastery_level_number, level_source, review_status,
                           reviewed_by, reviewed_at)
                         VALUES (:q, CAST(:s AS uuid), 1, :stem, 'mcq_single', 'auto_key',
-                          CAST(:steps AS jsonb), CAST(:hints AS jsonb), 1, 45, 4, :hash, CAST(:a AS uuid),
+                          CAST(:steps AS jsonb), CAST(:hints AS jsonb), 1, 45, 4,
+                          :hash, CAST(:a AS uuid),
                           'expert_verified', 3, 'expert_verified', 'draft', NULL, NULL)
                         RETURNING id
                         """
