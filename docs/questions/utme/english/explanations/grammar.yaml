@@ -1,0 +1,75 @@
+# UTME Use of English — Mood, tense, concord and question tags (ENG.B.5.i), and word classes
+# (ENG.B.4.i).
+format_version: 1
+skill: ENG.B.5.i and ENG.B.4.i
+explanations:
+  1b1a9970:
+    steps:
+      - "Not only ... but also is a pair, and not only goes immediately before the part it contrasts: gifted not only as a painter, but also as a sculptor."
+      - "The other options break the pair up or put only in front of gifted, which changes what is being contrasted."
+    hint: "Find but also later in the sentence. Not only has to sit in the matching place before it."
+  a12aee28:
+    steps:
+      - "Reported speech moves the tense back and shifts the time words: yesterday becomes the day before."
+      - "The two options keeping direct question order are not reported speech at all, and some days before changes the meaning."
+    hint: "Asked me is past, so everything inside the report steps back one tense."
+  8fc2fd71:
+    steps:
+      - "Who refers to women, so the first verb is plural: who sell. But the subject of the main clause is One, which is singular: has been ordered."
+      - "That split is the whole question. Two verbs, two different subjects, two different numbers."
+    hint: "Find what each verb belongs to before you choose. They do not belong to the same thing."
+  be3daf7f:
+    steps:
+      - "Spread by word of mouth — by names the means."
+      - "Through is possible in some contexts but by is the fixed partner of word of mouth."
+    hint: "Which preposition do you use for the method something is done by?"
+  34d82956:
+    steps:
+      - "A reported question keeps statement order: what time it was, not what time was it."
+      - "The tense also steps back because asked is past, which rules out what time it is."
+    hint: "Reported questions lose their question order and step their tense back."
+  16732a6f:
+    steps:
+      - "Once a sentence starts with one, it has to keep using one throughout: one should be careful how one behaves."
+      - "The published key mixes one and he, which is the inconsistency the question is testing against. This one is flagged for a second look."
+    hint: "Whichever pronoun a sentence starts with, it must stay with it."
+  0be4d9a9:
+    steps:
+      - "Veterinary is spelled with the e after the t, and unravelled doubles the l in British English."
+      - "The other options misspell veterinary or use the American single l."
+    hint: "Two words to check in each option. Reject an option as soon as either is wrong."
+  b676477a:
+    steps:
+      - "Since gives the reason, and frown takes at: your parents frown at our friendship."
+      - "Although would contradict the second half, and frown over and frown upon are less usual with this key."
+    hint: "Check the joining word against the logic first, then the preposition against the verb."
+  ccb22b8c:
+    steps:
+      - "This is a third conditional: would have won needs if he had run faster."
+      - "One option repeats faster twice, and although reverses the logic."
+    hint: "Would have in the main clause always pairs with had in the if clause."
+  bc6bd934:
+    steps:
+      - "Had Aisha realized is an inverted third conditional, so the main clause is would not have rushed."
+      - "Rushes and rush are the wrong forms after have; only the past participle rushed fits."
+    hint: "After have, the verb takes its -ed or third form."
+  419d946b:
+    steps:
+      - "Doesn't like is a negative present with the auxiliary does, so the tag is positive: does she."
+      - "Has, will and did all introduce auxiliaries that are not in the sentence."
+    hint: "The tag borrows the auxiliary already there and flips its polarity."
+  2ff4e28b:
+    steps:
+      - "Sleeps is a positive present simple with no auxiliary, so the tag supplies does and turns negative: doesn't he."
+      - "Does he would repeat the positive, and did he changes the tense."
+    hint: "Positive statement, negative tag — and the auxiliary matches the tense."
+  3cf2cbcb:
+    steps:
+      - "The comparison is as patient as, and the noun it describes needs an article: as patient a teacher as anyone could have had."
+      - "That order — as, adjective, a, noun — is fixed in this construction."
+    hint: "The pattern is as + adjective + a + noun. Test each option against it."
+  8a20db67:
+    steps:
+      - "Theirs is the possessive pronoun and takes no apostrophe: yours is to command, theirs is to obey."
+      - "Their needs a noun after it, and both apostrophe forms are always wrong."
+    hint: "Yours in the first half has no apostrophe. The matching word in the second half has none either."

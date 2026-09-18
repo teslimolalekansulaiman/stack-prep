@@ -1,0 +1,267 @@
+# UTME Use of English — Clause and sentence patterns (ENG.B.3.i)
+#
+# Gap-completion questions testing grammar rather than vocabulary: tense, agreement, word
+# order, spelling of long words, and the shape a phrase has to take.
+format_version: 1
+skill: ENG.B.3.i
+explanations:
+  6c48f83a:
+    steps:
+      - "English fixes the order of adjectives before a noun, and a comparative like more attaches to the adjective it modifies — here rapid."
+      - "More rapid economic growth is the only order an English speaker would produce. The others split more from rapid or put economic in the wrong place."
+    hint: "Say each option aloud. Adjective order is a matter of habit, and the wrong one sounds wrong immediately."
+  1f2e5e3f:
+    steps:
+      - "Two past events, one before the other: the leaving came first, so it takes the past perfect — had left."
+      - "Has left is present perfect and does not sit with a past main clause, and is leaving is present."
+    hint: "When one past action happened before another, the earlier one uses had."
+  6e2745f2:
+    steps:
+      - "The past tense of burst is burst — the word does not change."
+      - "Bursted is not English, and the perfect forms do not fit a simple past narrative."
+    hint: "Burst belongs with cut, put and hit: the same in every form."
+  e1069d67:
+    steps:
+      - "Used to work describes a past habit that has stopped, which is exactly what the sentence says — he is a driver now."
+      - "Use to is the wrong spelling for the past, and the perfect forms suggest the work continues."
+    hint: "The sentence contrasts then with now, which is what used to is for."
+  885ca304:
+    steps:
+      - "To ferret about is to search around persistently, which is what policemen do in a suspicious office."
+      - "Ferreted on its own needs an object, and the source has printed two of the options identically."
+    hint: "Ferret needs a particle here. Which option supplies one?"
+  6c42df41:
+    steps:
+      - "Needn't is the negative of the ordinary verb need, so its question tag uses does: needn't come ... does she."
+      - "Need she would be the tag for the modal need, which behaves differently, and will and can introduce verbs that are not in the sentence."
+    hint: "A tag repeats the auxiliary in the opposite polarity. Work out which auxiliary needn't contains."
+  ef646a8c:
+    steps:
+      - "In furtherance of is the fixed phrase — acting to advance something."
+      - "The preposition pair is set and cannot be changed to on, with or in."
+    hint: "This is a legal-sounding set phrase. Only one arrangement of the prepositions is used."
+  2fb15d65:
+    steps:
+      - "Pronunciation is spelled without the o of pronounce — the noun drops it."
+      - "All three wrong options keep the o or replace the c with a t, which is how most people misspell it."
+    hint: "The verb is pronounce but the noun is pronunciation. The o goes."
+  f4a3fa78:
+    steps:
+      - "Instead of takes a gerund, so the phrase is instead of pleading."
+      - "The extraction has broken this question badly: the words instead and of are separated from each other and from the rest of the sentence. It is flagged for a second look."
+    hint: "Instead of is always followed by an -ing form, never by a bare verb."
+  64ce26f7:
+    steps:
+      - "Of the three girls calls for a superlative, and the superlative of naughty is naughtiest."
+      - "Notorious is not the same word, and so much notorious is not a superlative at all."
+    hint: "Comparing three or more things needs the -est form, not the -er form or the plain adjective."
+  63f3aea5:
+    steps:
+      - "To meddle in someone's affairs is to interfere in them — the fixed phrase takes in."
+      - "Spy from, toy at and complain into are all combinations that do not exist."
+    hint: "Three of these verbs are paired with prepositions they never take."
+  2fa290be:
+    steps:
+      - "Certain reason, without an article, is the form the paper is testing — a reason the speaker will not yet name."
+      - "A certain reason is the commoner English; this question is flagged for a second look."
+    hint: "The second half says the speaker is withholding the reason, which points to certain."
+  403c85f1:
+    steps:
+      - "First and foremost is the phrase: foremost means most prominent, and it is spelled fore- like forehead."
+      - "The other three spellings replace fore with for, form or far."
+    hint: "Foremost contains fore, meaning in front."
+  b4258ae1:
+    steps:
+      - "About three times means roughly three, and it needs no other word before it."
+      - "Like is informal and not used this way in writing, and for about would need a stretch of time rather than a count."
+    hint: "The gap is before a number, so it needs a word meaning approximately."
+  7f3a5e11:
+    steps:
+      - "The two halves contradict each other — she did not trust him, and married him anyway — so the joining word is Though."
+      - "Since and After give reasons or sequence, and Much as would need a comma and a different rhythm."
+    hint: "Ask whether the second half follows naturally from the first, or works against it."
+  f645a32a:
+    steps:
+      - "Onomatopoeia is spelled o-n-o-m-a-t-o-p-o-e-i-a — the oe near the end is what catches people."
+      - "Two options in this question are printed identically, which is a fault in the source."
+    hint: "The word has four o's. Count them in each option."
+  46742632:
+    steps:
+      - "Devote yourself to something, and to here is a preposition, so the verb after it takes -ing: to helping."
+      - "To be helping treats to as part of an infinitive, which is the mistake the question is set to catch."
+    hint: "Devoted to, committed to and used to are all followed by -ing, not by a bare verb."
+  7d46c2be:
+    steps:
+      - "A march past is a parade in which people march past a reviewing officer — the fixed spelling is march past."
+      - "Match is a different word and pass is a different word; the other three options mix them up."
+    hint: "The students were marching, not playing a match."
+  91df087b:
+    steps:
+      - "Do you mind is always followed by an -ing form: do you mind waiting."
+      - "To wait would follow would you like, not do you mind."
+    hint: "Mind, enjoy, avoid and finish all take -ing."
+  17253c19:
+    steps:
+      - "Continuous rain saturates soil — fills it with as much water as it can hold."
+      - "Satiated is used of appetite rather than soil, and mopped up would remove the water rather than add it."
+    hint: "Ask what happens to ground after days of rain: it takes up water until it can take no more."
+  e7e6d3a9:
+    steps:
+      - "To be out of hand is to be beyond control, which is how police would describe an unmanageable boy."
+      - "Up to hand, on by hand and over at hand are not English phrases."
+    hint: "Only one of these four makes a phrase you have heard."
+  8c2b7463:
+    steps:
+      - "Two parties forming one government together form a coalition."
+      - "Collusion is secret cooperation for a dishonest purpose, co-operative is an adjective, and colonial is unrelated."
+    hint: "There is a specific noun for a government made of two parties."
+  30dea489:
+    steps:
+      - "Before a noun, a compound modifier is hyphenated and comes in front: fast-moving luxury buses."
+      - "The other orders either put the modifier after the noun or split the compound."
+    hint: "Say each option aloud. Only one sounds like something a speaker would say before a noun."
+  b255de0a:
+    steps:
+      - "Local governments pass more than one, so the plural is bye-laws — the hyphen stays and the s goes on the end."
+      - "The apostrophes in the other options would make the word possessive, which it is not."
+    hint: "Pluralise the last part of a hyphenated word, and do not add an apostrophe."
+  3f5e722c:
+    steps:
+      - "To agree with a negative statement English uses neither with inversion: neither have I."
+      - "I also never and neither myself are not English constructions, and I myself haven't is emphatic and incomplete."
+    hint: "Agreeing with a negative needs neither or nor, followed by the auxiliary before the subject."
+  e53e9a0e:
+    steps:
+      - "Whoever is the subject of offers, so it takes the subject form: whoever offers it."
+      - "Whomever would be the object form, and the verb after it would have to agree with a singular subject."
+    hint: "Decide whether the word is doing the offering or being offered to."
+  88322b57:
+    steps:
+      - "The less fortunate uses the before an adjective to mean the group of people who are that way."
+      - "Two of the options here are printed identically, which is a fault in the source; without the, the phrase would not name a group."
+    hint: "English turns an adjective into a group of people by putting the in front: the rich, the young."
+  e21c6828:
+    steps:
+      - "As well sits at the end of a clause and means in addition — you may have the pencil, but not the ballpoint as well."
+      - "Either would need a negative before it in this position, and also and furthermore do not go at the end."
+    hint: "Ask where in the sentence the word has to sit. Only one of these four goes at the end."
+  b151842b:
+    steps:
+      - "Cuisine is the style of cooking a restaurant offers, and it is what you go there to enjoy."
+      - "A chef is a person, a suite is a set of rooms, and a la carte describes how a menu is priced."
+    hint: "The gap follows special, so it names the thing that is special about the restaurant."
+  768e3fd3:
+    steps:
+      - "To pace to and fro is to walk back and forth. The phrase is fixed in that order and fro exists only in it."
+      - "The other three reverse the order or change fro to from."
+    hint: "This is a set phrase. Say it aloud and the order will be obvious."
+  7974ba59:
+    steps:
+      - "Words is plural, so the verb is have, and the passive needs the participle been."
+      - "Being is the wrong participle here, and has is singular."
+    hint: "Check the number of the subject first, then whether you need been or being."
+  0e5e4e64:
+    steps:
+      - "Flowers ours is the form the paper is testing, though ours of hers would be the usual pattern."
+      - "Her's is never correct — possessive pronouns take no apostrophe — and our flower does not agree with those."
+    hint: "Those needs a plural noun after it, which rules out two of the options immediately."
+  e98391b1:
+    steps:
+      - "To revive an unconscious man is to bring him back to consciousness, which is what first aid does."
+      - "Restored and reawakened are close but not the medical word, and reformed is about character."
+    hint: "There is a specific verb for bringing someone round after they have passed out."
+  1a99025a:
+    steps:
+      - "A live bomb is one that has not gone off — live here is an adjective, said with a long i."
+      - "Alive cannot stand before a noun, a life is a noun, and a leaf is unrelated."
+    hint: "Live and alive mean nearly the same thing but sit in different places in a sentence."
+  23cb3f1e:
+    steps:
+      - "He ran out is past simple with no auxiliary, so the tag supplies did: didn't he."
+      - "Isn't he and is he would tag a sentence with the verb to be, and does he is present."
+    hint: "A tag borrows the auxiliary. If there is none, did or does steps in, in the sentence's tense."
+  4666293a:
+    steps:
+      - "Somewhere is the adverb for an unnamed place — he travelled somewhere last week."
+      - "Somewhat means to some degree, and two of the options are printed identically in the source."
+    hint: "The gap needs a place, not a degree."
+  22147bb2:
+    steps:
+      - "He was present uses the verb to be, so the tag repeats it in the negative: wasn't he."
+      - "Didn't he would tag a sentence with an ordinary verb, and the other two change the tense."
+    hint: "The tag mirrors whatever verb is already there. Here that verb is was."
+  fd8b93f3:
+    steps:
+      - "These is plural, so the noun after it is plural: types. What follows of stays singular — types of programme."
+      - "The commoner English is types of programmes; this question is flagged for a second look."
+    hint: "These fixes the first noun as plural. The second one is the harder half."
+  41ebeb8d:
+    steps:
+      - "You live is present simple with no auxiliary, so the tag uses do: don't you."
+      - "Are you would tag the verb to be, and didn't and haven't change the tense."
+    hint: "Read the tense of the main clause before you look at the options."
+  1d68e6da:
+    steps:
+      - "Sand and cement are both uncountable here, so neither takes an article."
+      - "The other three options insert a before one or both, which would make them countable things."
+    hint: "Ask whether you can say a sand or a cement. If not, leave the article out."
+  8370b9ed:
+    steps:
+      - "He believed something first and learned better later, so the earlier belief takes the past perfect: had believed."
+      - "Believes and has believed are present, and would have believed is a conditional."
+    hint: "Two past events in order. The earlier one takes had."
+  a8466881:
+    steps:
+      - "The main clause is negative — couldn't have won — so the tag is positive: could they."
+      - "Couldn't they would repeat the negative, and the can options change the tense."
+    hint: "A negative statement takes a positive tag, and the tag keeps the same auxiliary."
+  d97a8b31:
+    steps:
+      - "A post-mortem is an examination after death, which is why the corpse is being exhumed."
+      - "Posthumous describes something happening after a person's death but is not the examination itself, post-natal is after birth, and orthopaedic is about bones."
+    hint: "The sentence says for examination. There is a specific word for that examination."
+  24c83976:
+    steps:
+      - "For five minutes gives the length of time the action has lasted, which is what the present perfect continuous needs."
+      - "Since needs a starting point rather than a length, ago needs a simple past, and during needs a named period."
+    hint: "For measures a stretch; since marks a beginning."
+  dad22c13:
+    steps:
+      - "English orders adjectives before a noun: opinion, age, then origin or make — a brand new peugeot."
+      - "The other three break that order, and they sound wrong to a speaker before they can be analysed."
+    hint: "Say each aloud. Adjective order is learned by ear, not by rule."
+  6764a0d0:
+    steps:
+      - "Made up of is the phrase for what something consists of — a body made up of colleges."
+      - "Made of names the material, and the other two combinations are not English."
+    hint: "Made of wood, but made up of parts. Which does the sentence need?"
+  dcfde494:
+    steps:
+      - "Friends are countable, so the word is few; and the sentence contrasts lots with a small number, so only a few."
+      - "Little and a little are for uncountable nouns."
+    hint: "Countable nouns take few, uncountable take little."
+  036604d7:
+    steps:
+      - "Rather ... than is a pair, and rather comes before the whole phrase it introduces: rather as a gift of God than as a prize."
+      - "The other options break the phrase as a gift of God apart."
+    hint: "Find the word than later in the sentence, then place rather so the two frame matching phrases."
+  ef056745:
+    steps:
+      - "When two subjects are joined by not, the verb agrees with the first one — the employer, which is singular."
+      - "The salesmen sits between the subject and the verb and pulls you towards a plural, which is the trap."
+    hint: "The phrase between commas is not the subject. Cover it and read the sentence again."
+  571584ef:
+    steps:
+      - "Argument is spelled without the e of argue — the verb loses it when -ment is added."
+      - "Two of the wrong options are printed identically, and all of them keep the e."
+    hint: "Argue drops its e before -ment. So does judge in judgment."
+  d83b5e9f:
+    steps:
+      - "To think about something is to consider it, and that is the phrase the sentence needs."
+      - "The published key gives thick on, and three of the four options misspell think as thick. This question is flagged for a second look."
+    hint: "The verb is think, not thick. Then decide which preposition it takes."
+  31f21a04:
+    steps:
+      - "As long as is the conjunction for a condition: you can stay as long as you are quiet."
+      - "So long as is also used, which is why both appear; the paper's key is as long. The next block's direction has run into this question's options in the source."
+    hint: "The word as already appears after the gap, which tells you the first word of the pair."

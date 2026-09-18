@@ -1,0 +1,378 @@
+# UTME Use of English — Ordinary, figurative and idiomatic usage (ENG.B.7.i)
+#
+# These fill a gap, and what is being tested varies: an idiom, a fixed preposition, a spelling
+# that sounds like three other words, or a word that means nearly but not quite the right
+# thing. Each explanation names which of those it is, because the way to answer differs.
+format_version: 1
+skill: ENG.B.7.i
+explanations:
+  52c1e14b:
+    steps:
+      - "To rattle something off is to say it quickly and from memory — dates, names, a list."
+      - "Rattle up, over and out are not English phrasal verbs. The particle is fixed and there is nothing to work out."
+    hint: "This is a phrasal verb you either know or do not. Say each option aloud and listen for the one you have heard before."
+  b8685965:
+    steps:
+      - "The boy is speaking to his mother, so he says I told you — first person for himself, second for her."
+      - "That was the girl he told her about keeps the boy's own words in the third person, which is what a report needs. The other options mix persons, or add a stray her after about."
+    hint: "Work out who is speaking and who is being spoken to, then check each pronoun against that."
+  62286eb6:
+    steps:
+      - "To pull through is to survive a serious illness or injury."
+      - "Pull up, over and back all exist but mean stopping or retreating, not recovering."
+    hint: "She was badly injured. Which of these phrasal verbs is about getting better?"
+  25c5cfe0:
+    steps:
+      - "The subject is range, which is singular, so the verb is singular — a wide range was made available."
+      - "Options is a plural noun sitting between the subject and the verb, and it is there to pull you towards were. Last year makes the verb past."
+    hint: "Find the real subject. The noun nearest the verb is often not it."
+  e74dadf6:
+    steps:
+      - "Pleased takes with when it is about a thing someone did: pleased with my effort."
+      - "Pleased about is used of events, and pleased of is not English at all. The preposition is fixed by the noun that follows."
+    hint: "Try each preposition in the phrase and say it aloud. English fixes these by habit, not by rule."
+  f40a819b:
+    steps:
+      - "Made from is used when the original material can no longer be seen in the product — paper from wood pulp."
+      - "Made of is used when it can: a table made of wood. That difference is the whole question."
+    hint: "Can you still see the wood pulp in a sheet of paper? That decides between of and from."
+  79cc4930:
+    steps:
+      - "The dresses belong to more than one baby, so the plural babies takes an apostrophe after the s: babies'."
+      - "Babys' is not a word, baby has no apostrophe at all, and babies without one is just the plural."
+    hint: "Make the noun plural first, then decide where the apostrophe goes."
+  89a47743:
+    steps:
+      - "Sent on exile is the form the paper is testing — the politician was made to live abroad as a punishment."
+      - "Into and onto both suggest physical movement into a place, and exile is a condition rather than a place."
+    hint: "Exile is a state, not a destination, and the preposition follows from that."
+  e973b643:
+    steps:
+      - "Sighted means saw — from sight, the sense."
+      - "Sited means placed, cited means quoted, and site is the noun for a place. All four sound alike, which is the whole point of the question."
+    hint: "Four homophones, four meanings. Work out which meaning the sentence needs before you look at the spellings."
+  c981c077:
+    steps:
+      - "A legacy is something handed down that outlasts the person or system that left it — which is exactly what western education is said to be here."
+      - "Remnants suggests scraps left over, and evidence and inheritance do not fit the plural phrase one of the ..."
+    hint: "The phrase is one of the ..., so the answer must be a plural noun."
+  136d9d45:
+    steps:
+      - "To proscribe something is to forbid it by law, which is what a government does to child trafficking."
+      - "Prescribed sounds almost identical and means the opposite: to order that something be done."
+    hint: "Proscribe and prescribe differ by two letters and by everything else."
+  53d13208:
+    steps:
+      - "If the son confessed, the others were cleared of blame — exonerated."
+      - "Implicated and accused are the reverse, and punished would not follow from someone else confessing."
+    hint: "Read the logic: one person owned up, so what happened to the rest?"
+  95f71cb3:
+    steps:
+      - "The fixed phrase is no alternative but to — there was nothing else the speaker could do."
+      - "The published key gives than, which goes with other and not with alternative. This question is flagged for a second look."
+    hint: "Say the phrase aloud: I have no alternative ... to hold you responsible."
+  a88c6ce1:
+    steps:
+      - "To circumvent a law is to get around it without technically breaking it."
+      - "Circumspect is an adjective meaning cautious, and cannot follow to. Arrogate and debase mean something else again."
+    hint: "The gap follows to, so the answer must be a verb."
+  d8cabaa6:
+    steps:
+      - "Whenever he switches on the light, the shadow disappears — the two things happen together, every time."
+      - "Until and since would make the shadow's disappearance a one-off, and except does not join two clauses this way."
+    hint: "Ask whether the sentence describes something that happens once or every time."
+  dd90a8d5:
+    steps:
+      - "A fortnight is two weeks. The word comes from fourteen nights, but it is spelled fortnight."
+      - "The other three spellings are invented, and all of them try to put the four back in."
+    hint: "The word has lost its four in the spelling even though it kept it in the meaning."
+  1fb41a62:
+    steps:
+      - "To scour a house is to search it thoroughly, going over every part."
+      - "Scoured is the spelling. Scourged means whipped, scored means marked or won, and scouted means went ahead to look."
+    hint: "Four similar spellings, four different meanings. Decide what he was doing before you choose."
+  52aafa31:
+    steps:
+      - "Eclectic means drawing on several different sources — the right approach when there is more than one way to do the task."
+      - "Only one of the four options is a real spelling; the others are there to test whether you know it."
+    hint: "Three of these are not words. Look for the one you have seen in print."
+  b85f1ba9:
+    steps:
+      - "To make up work is to do later what you missed — which is what a long absence from school leaves you to do."
+      - "Make out means to see or to understand, make off means to run away, and make in is not English."
+    hint: "The sentence is about catching up after missing school."
+  8ab981e3:
+    steps:
+      - "A carrier is the rack on a bicycle you can sit on, and it is spelled with two r's."
+      - "Career is a different word altogether, and the other two spellings are invented."
+    hint: "Say the word and count the r's. A career is what you do for a living."
+  0c11a4ab:
+    steps:
+      - "To seize a chance is to take it quickly. The spelling is seize — one of the few English words where e comes before i after s."
+      - "Sieze is the wrong order, size is about measurement, and cease means to stop."
+    hint: "Seize breaks the i-before-e rule. That is why it is set."
+  e3dbfae1:
+    steps:
+      - "An uphill task is a hard one — you are working against the slope all the way."
+      - "Utmost, upbeat and upfield all begin the same way and none of them is used of a task."
+    hint: "The idiom pictures walking up a hill. Which option keeps that picture?"
+  3f5b19df:
+    steps:
+      - "To studiously avoid doing something is to take care not to do it, so Bola avoided answering."
+      - "Parrying already means avoiding, which would make the sentence say she avoided avoiding it."
+    hint: "The verb avoided is already there. The gap needs the thing she would otherwise have done."
+  ce1d8aca:
+    steps:
+      - "Vacancies are made known to people outside the company, which is what an advertisement does."
+      - "A bulletin and a publication go to people already inside, and publicity is attention rather than a notice."
+    hint: "Ask who needs to see a vacancy, then pick the thing that reaches them."
+  f3c2e12e:
+    steps:
+      - "With the engine off, the car runs down the hill under its own weight — it glides."
+      - "Coasted is the word most often used for exactly this, and is arguably the better answer; the published key gives glided, and this question is flagged for a second look."
+    hint: "The engine is off, so the car is not being driven. What is it doing?"
+  8494ea82:
+    steps:
+      - "If everyone makes mistakes, then nobody is incapable of making them — nobody is infallible."
+      - "Imperfect is the reverse: everyone IS imperfect. Incorrigible and indestructible are about correction and strength, not about error."
+    hint: "The sentence says everyone errs. The gap needs the word for someone who never does."
+  16471a51:
+    steps:
+      - "Clothes is the everyday plural for the things you wear, and it takes some without any measure word."
+      - "Cloth is the material, clothing is the collective word and sounds formal here, and yards measures the material rather than naming the garments."
+    hint: "Ask whether the mother brought garments or the stuff garments are made from."
+  9e77b42e:
+    steps:
+      - "To be laid off is to lose a job because the work has gone — which is what a factory closure does."
+      - "Laid up means ill, laid out means arranged or knocked down, and laid down is used of rules."
+    hint: "Four phrasal verbs from one verb. Only one of them is about employment."
+  812b02ee:
+    steps:
+      - "The driver died, so the accident was fatal — the word means causing death."
+      - "Serious and brutal are both possible descriptions of an accident, but neither says that someone was killed, which is the fact the sentence gives you."
+    hint: "The sentence already tells you the outcome. Pick the adjective that says the same thing."
+  ac37b4f1:
+    steps:
+      - "To tap resources is to draw on them — the company wants to use what it already has."
+      - "Synergy and alignment describe how things work together rather than the act of using them, and arrangement is about order."
+    hint: "The gap follows possible and precedes of available resources, so it needs a noun for an action."
+  476a48ee:
+    steps:
+      - "Averse takes to: she is averse to what others admire."
+      - "The preposition is fixed by the adjective. Averse from was once used but is now archaic, and for and with are not used at all."
+    hint: "Adverse and averse both take to. Learn the pair together."
+  3c09b1ab:
+    steps:
+      - "The two halves of the sentence contrast: she likes one fruit and not the other, so they are joined by but."
+      - "Or offers a choice, so joins two things she might like, and so gives a reason or a result."
+    hint: "Read both halves and ask whether they agree or disagree."
+  7a41e1c7:
+    steps:
+      - "Encourage takes to before the verb: encouraged to carry out."
+      - "Encouraged from and encouraged in would need a noun after them, not a bare verb."
+    hint: "The word after the gap is a verb in its plain form, which narrows it to one preposition."
+  1244ffd7:
+    steps:
+      - "Matricide is the killing of one's mother — mater for mother, and -cide for killing."
+      - "Patricide is the killing of a father. Matriarch and patriarch are people, not acts, so neither can be defined as a killing."
+    hint: "Split the word in two. The first half says which parent and the second says what was done."
+  0431096e:
+    steps:
+      - "Confused takes about when it is about a subject: confused about anything."
+      - "Confused with is used of two things mistaken for each other, which is a different meaning."
+    hint: "Try each preposition in the sentence. Only one describes being unsure about a topic."
+  415028d5:
+    steps:
+      - "The idiom is to have something on your hands — a problem you are stuck with."
+      - "The preposition is fixed and there is nothing to reason out. In your hands would mean under your control, which is the opposite of what a mutiny is."
+    hint: "On your hands and in your hands are different idioms with nearly opposite meanings."
+  8d659ef5:
+    steps:
+      - "To convene is to come together for a meeting, which is what a House does to hear an address."
+      - "Adjourn and rise both mean to end a sitting, and collude means to conspire."
+    hint: "They are meeting to hear the president, so the verb must be about starting, not finishing."
+  8e4b905b:
+    steps:
+      - "At the turn of the century is the fixed phrase for the years around its beginning or end."
+      - "Birth of the century is not said, and event and sight do not fit the frame at the ... of."
+    hint: "This is a set phrase. Say each option in it and listen for the one you have heard."
+  5b10acff:
+    steps:
+      - "Out of the wood is the idiom for past the danger — often heard as out of the woods."
+      - "The other three options make phrases that exist but mean other things, and none of them is the one about danger passing."
+    hint: "The president is saying the trouble is not over. Which place does the idiom use for trouble?"
+  771281ab:
+    steps:
+      - "To testify against someone is to give evidence that harms their case, which is what a wife might refuse to do."
+      - "Testify for would be evidence in his favour, and in, at and from do not go with testify this way."
+    hint: "She refused, which tells you the evidence would have gone against him."
+  d126a183:
+    steps:
+      - "An absorbing film holds your attention completely — you are taken into it."
+      - "Absolving means clearing of blame, nauseating means sickening, and perverting means corrupting. Only one of the four is a compliment."
+    hint: "The sentence says she found the movies interesting, so the word must be positive."
+  fcb7aeb8:
+    steps:
+      - "Someone's forte is the thing they are good at, so cooking has never been Jumoke's strength."
+      - "Purview means the range of someone's authority, and recital and style do not fit the frame has never been ... ."
+    hint: "The sentence is saying she is not good at it. Which word names what a person is good at?"
+  8997626b:
+    steps:
+      - "A concurrent increase is one that happens at the same time as another — wages up, and prices up alongside."
+      - "Concordant means in agreement, sporadic means scattered, and chronic means long-lasting."
+    hint: "The two increases happen together. Which word means at the same time?"
+  bdffdd72:
+    steps:
+      - "Very annoyed is the ordinary intensifier and the only one that fits an adjective like annoyed."
+      - "Hotly goes with verbs such as denied or disputed, neither goes with a single adjective, and just would change the meaning."
+    hint: "The gap sits before an adjective, so it needs an adverb that strengthens adjectives."
+  28069eb4:
+    steps:
+      - "Hours ago places the action firmly in the past, so the verb must be past: the clock struck."
+      - "Strikes and strike are present, and striking cannot stand as the only verb in the sentence."
+    hint: "The time phrase at the end decides the tense before you look at the options."
+  39b9098d:
+    steps:
+      - "A verdict is on a matter — the preposition is fixed by the noun."
+      - "Verdict from would name who gave it, and at and with are not used with verdict at all."
+    hint: "Ask which preposition introduces the subject of a verdict, not its source."
+  440a6b88:
+    steps:
+      - "Laughter animated her face — it brought it to life for a moment."
+      - "Improved and remade are about lasting change, and controlled is about holding something back."
+    hint: "The phrase for a moment tells you the change was brief and lively."
+  7b0d49ac:
+    steps:
+      - "She traced the history by matrilineal descent — by names the method used."
+      - "In and with would need a different kind of noun, and at does not go with trace."
+    hint: "Which preposition do you use for the means by which something is done?"
+  7f31d162:
+    steps:
+      - "Increased from twenty to thirty: from marks the starting number and to the finishing one."
+      - "The pair is fixed. On, at and into do not take a matching to."
+    hint: "The word to is already in the sentence. Which preposition partners it?"
+  25d612ad:
+    steps:
+      - "Brakes is plural, so the verb is were; and the reporting verb did not tell is past, so the tense is past too."
+      - "Is and was are singular, and are is present."
+    hint: "Two things to check: whether the subject is singular or plural, and what tense the sentence is already in."
+  ba46be20:
+    steps:
+      - "The past participle of split is split — the word does not change."
+      - "The published key gives splited, which is not an English word. This question is flagged for a second look; the intended answer is almost certainly split."
+    hint: "Some verbs are the same in all three forms: split, cut, put, hit."
+  0abdd2ec:
+    steps:
+      - "A company deals in the goods it trades — deals in software, in cloth, in shares."
+      - "Deals with means handles or copes with, which is a different meaning, and deals for and to are not used."
+    hint: "Deal in and deal with mean different things. One is trade, the other is coping."
+  644c278e:
+    steps:
+      - "There is no logic in a claim — the logic is inside the argument."
+      - "Logic with and logic from do not go together, and logic up is not English."
+    hint: "Ask where logic would be found: inside the claim, or somewhere else?"
+  94596cd8:
+    steps:
+      - "While the match lasted means throughout it, which is why he stayed on the bench."
+      - "When would mark a single moment, since would need a starting point, and that cannot join these clauses."
+    hint: "The sentence is about a stretch of time, not a moment in it."
+  7b899eff:
+    steps:
+      - "You are an example to someone — the preposition is fixed."
+      - "An example for would suggest the example is provided on their behalf, and from and by reverse who is setting it."
+    hint: "Say the phrase without the rest of the sentence: a good example ... children."
+  b9eec71e:
+    steps:
+      - "To be kept apart from all contacts is to be held away from everyone."
+      - "Kept on, kept for and kept upon are either different meanings or not English, and none of them takes from."
+    hint: "The word from later in the sentence tells you the phrasal verb must mean separation."
+  82314b8e:
+    steps:
+      - "To stand up for someone is to defend them — which is what Oboro always does for his friends."
+      - "Stand down means to withdraw, and the other two are not phrasal verbs at all."
+    hint: "Only one of these four is a real phrasal verb. Say them aloud."
+  30bb06bd:
+    steps:
+      - "You travel by air, by road, by sea — by names the means."
+      - "In air and with air do not describe travel, and for air would be a reason rather than a method."
+    hint: "The same preposition works for by car, by train and by post."
+  528e77d3:
+    steps:
+      - "To overbalance and fall into water is to end up in it."
+      - "Fell from would need a place he fell off, fell for means to be tricked or to fall in love, and fell at is not used this way."
+    hint: "Ask where he ended up, and which preposition puts him there."
+  ec3bb809:
+    steps:
+      - "A jaunty smile is bright and breezy — the smile of someone in good spirits."
+      - "The published key gives inviting, which describes what a smile asks of you rather than the mood behind it; cheerful is the closer match. This question is flagged for a second look."
+    hint: "Jaunty is about mood. Which option names that mood?"
+  62c1aaeb:
+    steps:
+      - "A monument is what is erected to remember the dead — the word fits both the erecting and the heroes."
+      - "An exhibition is put on rather than erected, a myth is a story, and a picture would be hung rather than erected in a square."
+    hint: "The verb erected tells you the answer is a structure."
+  7027e531:
+    steps:
+      - "After a negative verb English uses any: hadn't any money left."
+      - "No money would need had rather than hadn't, none cannot sit before a noun, and anything is a pronoun with no room for money after it."
+    hint: "The sentence is already negative, so the word after it must be any, not no."
+  1266479d:
+    steps:
+      - "Recognised by the scar — by names the mark that made recognition possible."
+      - "With would suggest he used the scar to recognise someone else, and for would give a reason he was famous."
+    hint: "Ask what did the recognising and what was recognised, then pick the preposition that fits that direction."
+  3eabbc4a:
+    steps:
+      - "Fluorescent is the spelling: f-l-u-o-r, from fluorine."
+      - "The other three move or drop the u and the o, and all three are common misspellings rather than words."
+    hint: "The word contains the element fluorine. Keep its letters in that order."
+  e75e90a8:
+    steps:
+      - "They thought is past, so the verb in the reported clause shifts back too: might, not may."
+      - "Can and may are present forms, and ought would need to after it."
+    hint: "Reported speech pulls the tense back one step. May becomes might."
+  1206a8aa:
+    steps:
+      - "To come across someone is to meet them by chance, which is what happened in the salon."
+      - "Came by means visited briefly, came over means crossed to where you are, and came into means inherited."
+    hint: "Four phrasal verbs from one verb. Which one means met unexpectedly?"
+  efbe14d4:
+    steps:
+      - "To turn up is to arrive, often unexpectedly — the sentence is about whether he will come at all."
+      - "Turn out means to prove to be, turn in means to go to bed or to hand over, and turn over means to roll."
+    hint: "The sentence is about waiting for someone. Which phrasal verb is about arriving?"
+  e526287b:
+    steps:
+      - "To have your hands tied is the idiom for being unable to act, even when you want to."
+      - "The other three body parts do not make the idiom, and tied arms or legs would be a literal description rather than a figure of speech."
+    hint: "This is an idiom about being prevented from helping, not about being physically bound."
+  57e1d1bd:
+    steps:
+      - "To fill up a form is the version the paper is testing — completing it in full."
+      - "Fill out is the commoner phrasal verb for a form in most English, and fill on and fill over are not English at all."
+    hint: "Two of these are real phrasal verbs about forms. The other two are not phrasal verbs."
+  785eb5af:
+    steps:
+      - "A flight schedule is the plan of when flights go, and a schedule is what gets postponed."
+      - "A manifest lists who is on board, a timetable is usually of trains or lessons, and a menu is of food."
+    hint: "Ask what can be postponed: the plan, or the list of passengers?"
+  550befd6:
+    steps:
+      - "To stand by someone is to support them through trouble, which is what a husband promises here."
+      - "Stand for means to represent or to tolerate, stand over means to supervise, and stand on is not used of people."
+    hint: "The sentence is about loyalty during a trial. Which phrasal verb means loyalty?"
+  10ccd826:
+    steps:
+      - "To take after someone is to resemble them, in looks or manner — here in the way he talks."
+      - "Take up means to start doing, take back means to retract, and take from means to subtract or to detract."
+    hint: "The sentence is about resemblance, not about beginning or returning anything."
+  180dc43f:
+    steps:
+      - "Time before the gallery opens is time you cannot use, so you conserve it — the paper's chosen word."
+      - "Waste would be the more natural idiom for filling in time, and kill more natural still; this question is flagged for a second look."
+    hint: "Ask whether the sentence means using the time well or getting through it."
+  c5e6b905:
+    steps:
+      - "The time has come for something — for introduces the thing whose time it is."
+      - "Time to would need a verb after it, not a noun phrase, and by and at do not go with time has come."
+    hint: "Look at what follows the gap. A noun phrase needs for; a verb needs to."
