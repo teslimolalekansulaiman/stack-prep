@@ -74,6 +74,7 @@ async def list_subjects(
 @router.get("/items", response_model=CurriculumItemPage, summary="Curriculum items")
 async def list_items(
     conn: Annotated[AsyncConnection, Depends(connection)],
+    subject_id: UUID | None = None,
     syllabus_version_id: UUID | None = None,
     item_type: ItemType | None = None,
     parent_id: UUID | None = None,
@@ -83,6 +84,13 @@ async def list_items(
     filters = ["TRUE"]
     params: dict[str, object] = {"limit": limit, "offset": offset}
 
+    # Subject codes repeat across examinations — "ENG" is UTME's Use of English and also
+    # WAEC's English Language — so a caller filtering by subject really does mean this one
+    # subject. Before this filter existed the parameter was accepted and ignored, and the
+    # caller got whichever curriculum sorted first.
+    if subject_id is not None:
+        filters.append("subject_id = :subject_id")
+        params["subject_id"] = subject_id
     if syllabus_version_id is not None:
         filters.append("syllabus_version_id = :syllabus_version_id")
         params["syllabus_version_id"] = syllabus_version_id

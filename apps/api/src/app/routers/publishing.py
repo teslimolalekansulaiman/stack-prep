@@ -79,6 +79,7 @@ class CurriculumDecision(Decision):
 
 class CurriculumItem(BaseModel):
     curriculum_item_id: UUID
+    syllabus_version_id: UUID
     code: str
     name: str
     item_type: str
@@ -229,7 +230,8 @@ async def curriculum(
     rows = await fetch_all(
         conn,
         """
-        SELECT ci.id AS curriculum_item_id, ci.code, ci.name, ci.item_type,
+        SELECT ci.id AS curriculum_item_id, ci.syllabus_version_id, ci.code, ci.name,
+               ci.item_type,
                parent.code AS parent_code, ci.syllabus_status, ci.pilot_support_status,
                ci.review_status,
                (SELECT count(*) FROM curriculum_evidence ev
@@ -453,6 +455,104 @@ async def publish_version(
         await conn.rollback()
         raise HTTPException(status_code=409, detail=_message(error)) from error
     return await catalogue(conn, subject_id=subject_id)
+
+
+class Passage(BaseModel):
+    passage_id: UUID
+    title: str | None
+    passage_type: str
+    word_count: int | None
+    #: Enough to recognise which passage this is without shipping the whole text around.
+    opening: str
+    licence_status: str
+    review_status: str
+    questions: int
+
+
+class PassageDecision(Decision):
+    licence_status: Literal["verified", "blocked", "pending"] = "verified"
+    approve: bool = True
+
+
+@router.get("/passages", response_model=list[Passage], summary="Passages and their licences")
+async def passages(
+    conn: Annotated[AsyncConnection, Depends(connection)],
+    subject_id: UUID,
+    state: Literal["draft", "approved", "all"] = "draft",
+) -> list[Passage]:
+    """Comprehension and cloze passages, with how many questions each one carries.
+
+    A passage is licensed separately from the paper it was printed in, because it is somebody
+    else's writing quoted inside that paper. A question attached to an unapproved passage
+    cannot be approved at all, so for a subject like Use of English — where a third of the
+    paper hangs off four passages — this is not a detail.
+    """
+    rows = await fetch_all(
+        conn,
+        """
+        SELECT p.id AS passage_id, p.title, p.passage_type, p.word_count,
+               left(btrim(p.body), 90) AS opening, p.licence_status, p.review_status,
+               (SELECT count(*) FROM question_versions v WHERE v.passage_id = p.id) AS questions
+        FROM passages p
+        WHERE p.subject_id = :subject
+          AND (:state = 'all' OR p.review_status = :state)
+        ORDER BY p.created_at
+        """,
+        subject=subject_id,
+        state=state,
+    )
+    return [Passage(**dict(row)) for row in rows]
+
+
+@router.post(
+    "/passages/{passage_id}/decide",
+    response_model=Passage,
+    summary="License and approve a passage",
+)
+async def decide_passage(
+    conn: Annotated[AsyncConnection, Depends(connection)],
+    passage_id: UUID,
+    decision: PassageDecision,
+) -> Passage:
+    """Set a passage's licence and, if asked, approve it in the same call.
+
+    The two move together because the schema will not hold an approved passage on an
+    unverified licence — the same rule as a document, for the same reason.
+    """
+    await _reviewer(conn, decision.reviewer_id)
+    try:
+        updated = (
+            await conn.execute(
+                text(
+                    """
+                    UPDATE passages
+                       SET licence_status = :licence,
+                           review_status = CASE WHEN :approve THEN 'approved'
+                                                ELSE review_status END,
+                           reviewed_by = :reviewer, reviewed_at = now()
+                     WHERE id = :id
+                    RETURNING subject_id
+                    """
+                ),
+                {
+                    "id": passage_id,
+                    "licence": decision.licence_status,
+                    "approve": decision.approve,
+                    "reviewer": decision.reviewer_id,
+                },
+            )
+        ).first()
+        if updated is None:
+            raise HTTPException(status_code=404, detail="passage not found")
+        await conn.commit()
+    except DBAPIError as error:
+        await conn.rollback()
+        raise HTTPException(status_code=409, detail=_message(error)) from error
+
+    for row in await passages(conn, subject_id=updated[0], state="all"):
+        if row.passage_id == passage_id:
+            return row
+    raise HTTPException(status_code=404, detail="passage not found")
 
 
 @router.get("/catalogue", response_model=Catalogue, summary="Is this subject switched on")
