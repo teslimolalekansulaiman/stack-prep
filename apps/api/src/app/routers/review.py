@@ -144,6 +144,21 @@ class ReportDecision(BaseModel):
     note: str
 
 
+class PaperSection(BaseModel):
+    """One part of a paper: what it examines and how many questions it asks."""
+
+    section_id: UUID
+    paper_code: str
+    section_code: str
+    name: str
+    question_count: int
+    marks_total: float | None
+    topic_name: str | None
+    #: Where in the source this claim came from. A reviewer checks this, not our word.
+    source_location: str
+    review_status: str
+
+
 async def _reviewer(conn: AsyncConnection, reviewer_id: UUID) -> None:
     row = await conn.execute(
         text("SELECT 1 FROM academic_reviewers WHERE id = :id AND active"),
@@ -578,3 +593,104 @@ def _message(error: DBAPIError) -> str:
     if original is not None and getattr(original, "args", None):
         return str(original.args[0]).split("\n")[0].strip()
     return str(error).split("\n")[0].strip()
+
+
+@router.get(
+    "/sections", response_model=list[PaperSection], summary="Paper sections awaiting a decision"
+)
+async def sections(
+    conn: Annotated[AsyncConnection, Depends(connection)],
+    subject_id: UUID | None = None,
+    state: Literal["pending", "approved", "all"] = "pending",
+) -> list[PaperSection]:
+    """What each paper examines, as read from the syllabus and waiting to be confirmed.
+
+    These rows decide how much every topic is worth, so nothing downstream uses them until a
+    person agrees with the reading: `topic_exam_weight` counts approved sections only. Each
+    row carries the line of the document it came from, because that is what makes the
+    decision checkable rather than a matter of trust.
+    """
+    conditions = ["1 = 1"]
+    params: dict[str, object] = {}
+    if state != "all":
+        conditions.append("s.review_status = :state")
+        params["state"] = state
+    if subject_id is not None:
+        conditions.append("s.subject_id = :subject")
+        params["subject"] = subject_id
+
+    rows = await fetch_all(
+        conn,
+        f"""
+        SELECT s.id AS section_id, p.paper_code, s.section_code, s.name, s.question_count,
+               s.marks_total, topic.name AS topic_name, s.source_location, s.review_status
+        FROM exam_paper_sections s
+        JOIN exam_papers p ON p.id = s.exam_paper_id
+        LEFT JOIN curriculum_items topic ON topic.id = s.topic_id
+        WHERE {" AND ".join(conditions)}
+        ORDER BY p.paper_code, s.section_code
+        """,
+        **params,
+    )
+    return [
+        PaperSection(
+            section_id=row["section_id"],
+            paper_code=row["paper_code"],
+            section_code=row["section_code"],
+            name=row["name"],
+            question_count=row["question_count"],
+            marks_total=float(row["marks_total"]) if row["marks_total"] is not None else None,
+            topic_name=row["topic_name"],
+            source_location=row["source_location"],
+            review_status=row["review_status"],
+        )
+        for row in rows
+    ]
+
+
+@router.post(
+    "/sections/{section_id}/approve",
+    response_model=PaperSection,
+    summary="Agree that a section reads as recorded",
+)
+async def approve_section(
+    conn: Annotated[AsyncConnection, Depends(connection)],
+    section_id: UUID,
+    decision: Approval,
+) -> PaperSection:
+    """Approve one section, which lets it count towards its topic's weight.
+
+    Approving every section of a paper at once is deliberately not offered: each carries its
+    own citation, and the point of the citation is that someone read it.
+    """
+    await _reviewer(conn, decision.reviewer_id)
+    updated = (
+        await conn.execute(
+            text(
+                """
+                UPDATE exam_paper_sections
+                   SET review_status = 'approved', reviewed_by = :reviewer, reviewed_at = now()
+                 WHERE id = :id AND review_status <> 'approved'
+                RETURNING id
+                """
+            ),
+            {"id": section_id, "reviewer": decision.reviewer_id},
+        )
+    ).first()
+    if updated is None:
+        existing = (
+            await conn.execute(
+                text("SELECT review_status FROM exam_paper_sections WHERE id = :id"),
+                {"id": section_id},
+            )
+        ).first()
+        if existing is None:
+            raise HTTPException(status_code=404, detail="section not found")
+        raise HTTPException(status_code=409, detail="this section is already approved")
+    await conn.commit()
+
+    found = await sections(conn, subject_id=None, state="all")
+    for section in found:
+        if section.section_id == section_id:
+            return section
+    raise HTTPException(status_code=404, detail="section not found")

@@ -14,7 +14,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import get_settings
 from app.db import dispose_engine
-from app.routers import checkup, curriculum, dev, health, review
+from app.routers import checkup, curriculum, dev, health, pool, review
 
 API_VERSION = "0.1.0"
 
@@ -44,6 +44,7 @@ def create_app() -> FastAPI:
     app.include_router(curriculum.router)
     app.include_router(review.router)
     app.include_router(checkup.router)
+    app.include_router(pool.router)
     # Student creation without a login, for building the student side. The router refuses to
     # answer unless app_env is local or ci, so shipping it is not the same as exposing it.
     app.include_router(dev.router)
