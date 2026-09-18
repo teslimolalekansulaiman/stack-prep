@@ -56,8 +56,9 @@ examination:
   exam_body: Joint Admissions and Matriculation Board (JAMB)
   country_code: NG
   description: >-
-    Nigeria's university matriculation examination. Use of English is the compulsory subject
-    taken by every candidate.
+    Nigeria's matriculation examination for admission into tertiary institutions, set by the
+    Joint Admissions and Matriculation Board. Each candidate sits four subjects, of which
+    Use of English is compulsory.
   status: draft
 
 subject:

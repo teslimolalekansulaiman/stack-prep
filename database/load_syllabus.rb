@@ -159,6 +159,38 @@ subject_id = uuid_for("subject:#{exam_id}:#{subject.fetch('code')}")
 document_id = uuid_for("document:#{pdf_hash}")
 version_id = uuid_for("version:#{subject_id}:#{version.fetch('version_label')}")
 
+# One examinations row is shared by every subject seeded under it, and the insert below is
+# ON CONFLICT (id) DO NOTHING — so whichever seed loads FIRST decides the description and
+# every later seed's wording is discarded in silence. That is how the UTME row came to say
+# "This document is the Mathematics syllabus": maths loaded first, and English's description
+# was dropped without a word.
+#
+# The description belongs to the EXAMINATION, so every seed under one examination must state
+# it identically. A difference means a seed has written subject-level or document-level prose
+# into a shared row, which is the bug, not a merge to resolve. Say so and stop, before any
+# writing begins.
+existing_description = run_psql(
+  connection_args,
+  sql: "SELECT 'row:' || coalesce(description, '') FROM stackprep.examinations WHERE id = #{sql_value(exam_id)};"
+)
+unless existing_description.empty?
+  stored = existing_description.delete_prefix('row:')
+  seeded = exam['description'].to_s.strip
+  if stored != seeded
+    fail_with(<<~MESSAGE)
+      The #{exam.fetch('short_name')} examination row already exists with a different description.
+
+        in the database: #{stored}
+        in this seed:    #{seeded}
+
+      One examination row is shared by all its subjects, so the description must say the same
+      thing in every seed that loads under it. Whatever is specific to this subject or to its
+      source document belongs in the seed's header notes or on the source_documents row, not
+      here. Make the two descriptions identical and run again.
+    MESSAGE
+  end
+end
+
 sql = ["BEGIN;", "SET LOCAL search_path = stackprep, public;", "SET LOCAL standard_conforming_strings = on;"]
 sql << "UPDATE curriculum_items SET pilot_support_status = 'undecided' WHERE syllabus_version_id = #{sql_value(version_id)} AND review_status = 'draft' AND syllabus_status = 'uncertain' AND pilot_support_status = 'unsupported';"
 sql << insert_statement('examinations', {

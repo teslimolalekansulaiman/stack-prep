@@ -43,9 +43,9 @@ examination:
   exam_body: Joint Admissions and Matriculation Board (JAMB)
   country_code: NG
   description: >-
-    Nigeria's university matriculation examination. This document is the Mathematics
-    syllabus; it states the subject's content and objectives but not the structure of the
-    examination paper.
+    Nigeria's matriculation examination for admission into tertiary institutions, set by the
+    Joint Admissions and Matriculation Board. Each candidate sits four subjects, of which
+    Use of English is compulsory.
   status: draft
 
 subject:
