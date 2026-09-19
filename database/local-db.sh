@@ -1,7 +1,21 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# The cluster belongs to the checkout, not to a working copy of it. A git worktree gets its
+# own copy of this script, so taking the script's own location would put a second data
+# directory inside the worktree — and initdb it, and then fail to start it, because the
+# cluster already running holds the port. --git-common-dir names the main checkout's .git
+# from anywhere in the repository, including from a worktree; its parent is the checkout
+# the cluster lives in. The path it prints is relative to the working directory when it is
+# not a worktree, so it is resolved by cd rather than by string surgery.
+if common_dir="$(cd "$script_dir" && git rev-parse --git-common-dir 2>/dev/null)"; then
+  repo_root="$(cd "$script_dir" && cd "$common_dir/.." && pwd)"
+else
+  # Not a git checkout at all: an unpacked tarball still has a database/ beside a root.
+  repo_root="$(cd "$script_dir/.." && pwd)"
+fi
 local_root="$repo_root/.local"
 data_dir="$local_root/postgres"
 socket_dir="$local_root/run"
