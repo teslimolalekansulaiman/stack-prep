@@ -18,10 +18,16 @@ move. Within it the question comes at the level the student is working at, and n
 have answered before. So the loop and the projection cannot disagree about what matters — they
 read the same engine.
 
-WHAT IS NOT HERE YET. There is no voice and no board-side generation: the board renders
-`solution_steps`, which are written when the question is imported. And there is no working
-pad, so `attempts.working` stays null; the column exists so that the day the pad lands, the
-attempts already recorded have the shape it needs.
+WHAT THE COACH MAY GENERATE. The board still renders `solution_steps` and nothing else: the
+working a student reads is the working a reviewer checked. What is generated is the answer
+when they ask about it — `/ask`, once the question is already taught and its answer already
+shown, explaining the reviewed steps rather than replacing them. If that tutor is unavailable
+the steps are served in its place, so the lesson degrades and never breaks.
+
+WHAT IS NOT HERE YET. There is no voice: the coach writes and the student types, and student
+speech stays out until the legal review has ruled on recording a minor. And there is no
+working pad, so `attempts.working` stays null; the column exists so that the day the pad
+lands, the attempts already recorded have the shape it needs.
 """
 
 from __future__ import annotations
@@ -30,10 +36,12 @@ from typing import Annotated, Any, Literal
 from uuid import UUID, uuid4
 
 from fastapi import APIRouter, Depends, HTTPException
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 from sqlalchemy import text
 from sqlalchemy.ext.asyncio import AsyncConnection
 
+from app import tutor
+from app.config import Settings, get_settings
 from app.db import connection, fetch_all
 from app.routers.checkup import UnitWeight, _subtopics
 from engine.projection import UnitStanding, project
@@ -66,6 +74,34 @@ class AnswerIn(BaseModel):
     response_ms: int = Field(ge=0, le=3_600_000)
     #: Asked after answering and before being told. None means they were not asked.
     confidence: Confidence | None = None
+
+
+class AskIn(BaseModel):
+    """A question typed at the board."""
+
+    question_version_id: UUID
+    #: Which step was showing. None means the board had finished writing.
+    step_index: int | None = Field(default=None, ge=0, le=40)
+    asked: str = Field(min_length=1, max_length=tutor.MAX_QUESTION_CHARS)
+
+    @field_validator("asked")
+    @classmethod
+    def _not_only_spaces(cls, value: str) -> str:
+        # Stored stripped, so a question of blank space is refused here rather than reaching
+        # the tutor as an empty prompt or the table as a row that says nothing.
+        stripped = value.strip()
+        if not stripped:
+            raise ValueError("ask the coach something")
+        return stripped
+
+
+class TutorReply(BaseModel):
+    reply: str
+    #: How the student got this answer: the tutor, or the reviewed steps standing in for it.
+    source: tutor.Source
+    #: Said out loud so the budget is a thing the student can see coming rather than a wall
+    #: they hit without warning.
+    asks_left: int
 
 
 class Option(BaseModel):
@@ -584,3 +620,210 @@ async def taught(
     test whether they remember being told, which is not the same as knowing.
     """
     return await _state(conn, await _session(conn, session_id))
+
+
+async def _asks_used_today(conn: AsyncConnection, student_id: UUID) -> int:
+    """How many questions this student has already asked today, in their own timezone.
+
+    Counted from the stored turns rather than from anything the client reports, for the same
+    reason the hint ladder is: a budget a browser keeps is not a budget.
+    """
+    return int(
+        (
+            await conn.execute(
+                text(
+                    """
+                    SELECT count(*)
+                    FROM tutor_turns t
+                    JOIN students s ON s.id = t.student_id
+                    WHERE t.student_id = :student
+                      AND t.asked_at >= date_trunc(
+                            'day', now() AT TIME ZONE coalesce(s.timezone, 'UTC')
+                          ) AT TIME ZONE coalesce(s.timezone, 'UTC')
+                    """
+                ),
+                {"student": student_id},
+            )
+        ).scalar()
+        or 0
+    )
+
+
+async def _lesson_on_the_board(
+    conn: AsyncConnection, session_id: UUID, version_id: UUID, step_index: int | None
+) -> tutor.Lesson:
+    """Assemble what the tutor may see, from reviewed content and this session's attempts.
+
+    Everything here is read on the server. The client sends the student's words and which step
+    they were looking at; it does not get to say what the question was, what the working says
+    or what the answer is, so a client cannot widen the tutor's context by asking it to.
+    """
+    found = (
+        (
+            await conn.execute(
+                text(
+                    """
+                    SELECT v.stem, v.solution_steps, sub.name AS subtopic_name
+                    FROM question_versions v
+                    JOIN question_classifications c
+                      ON c.question_id = v.question_id AND c.classification_role = 'primary'
+                    JOIN curriculum_items skill ON skill.id = c.curriculum_item_id
+                    JOIN curriculum_items sub ON sub.id = skill.parent_id
+                    WHERE v.id = :version
+                    """
+                ),
+                {"version": version_id},
+            )
+        )
+        .mappings()
+        .first()
+    )
+    if found is None:
+        raise HTTPException(status_code=404, detail="unknown question")
+
+    steps = [str(step) for step in (found["solution_steps"] or [])]
+    key = (
+        await conn.execute(
+            text(
+                """
+                SELECT option_key FROM question_options
+                WHERE question_version_id = :version AND is_correct
+                """
+            ),
+            {"version": version_id},
+        )
+    ).scalar()
+    if key is None:
+        raise HTTPException(status_code=409, detail="this question has no key")
+
+    # The wrong answer they gave last, and what that particular wrong answer usually means.
+    # Without it the coach can only explain the solution; with it, it can explain their
+    # mistake, which is the thing they actually came to the board with.
+    mistake = (
+        (
+            await conn.execute(
+                text(
+                    """
+                    SELECT a.selected_option_key, m.description
+                    FROM attempts a
+                    LEFT JOIN question_options o
+                      ON o.question_version_id = a.question_version_id
+                     AND o.option_key = a.selected_option_key
+                    LEFT JOIN misconceptions m ON m.id = o.misconception_id
+                    WHERE a.session_id = :session AND a.question_version_id = :version
+                      AND coalesce(a.is_correct, false) IS FALSE
+                    ORDER BY a.answered_at_client DESC
+                    LIMIT 1
+                    """
+                ),
+                {"session": session_id, "version": version_id},
+            )
+        )
+        .mappings()
+        .first()
+    )
+
+    return tutor.Lesson(
+        subtopic_name=str(found["subtopic_name"]),
+        stem=str(found["stem"]),
+        options=[(option.option_key, option.body) for option in await _options(conn, version_id)],
+        correct_option_key=str(key),
+        steps=steps,
+        step_index=step_index,
+        chose=mistake["selected_option_key"] if mistake is not None else None,
+        misconception=mistake["description"] if mistake is not None else None,
+    )
+
+
+@router.post(
+    "/{session_id}/ask",
+    response_model=TutorReply,
+    summary="Ask the coach about the working on the board",
+)
+async def ask(
+    conn: Annotated[AsyncConnection, Depends(connection)],
+    settings: Annotated[Settings, Depends(get_settings)],
+    session_id: UUID,
+    question: AskIn,
+) -> TutorReply:
+    """Answer a question about the solution the student is being shown.
+
+    ONLY AT THE BOARD. The session's own attempts have to say this question was missed twice
+    and never got right — the same test `_state` uses to decide something was taught rather
+    than answered. So a client cannot point this at a question the student is still answering,
+    at one from another sitting, or at anything outside the practice pool it was served from.
+    That is what keeps protected assessment content out of tutor retrieval (S5-AC6), and it
+    means the answer is already written on the board before anything can be asked about it.
+
+    NOTHING HERE IS SCORED. The item was taught, not answered; no attempt is written and no
+    estimate moves. The turn is recorded because assistance is recorded (REQ-05) and because a
+    reviewer reading a complaint needs the lesson that happened, not the one in the bank.
+    """
+    session = await _session(conn, session_id)
+
+    standing = (
+        (
+            await conn.execute(
+                text(
+                    """
+                    SELECT count(*) AS tries,
+                           bool_and(coalesce(is_correct, false) IS FALSE) AS never_right
+                    FROM attempts
+                    WHERE session_id = :session AND question_version_id = :version
+                    """
+                ),
+                {"session": session_id, "version": question.question_version_id},
+            )
+        )
+        .mappings()
+        .first()
+    )
+    assert standing is not None
+    if int(standing["tries"]) < 2 or not standing["never_right"]:
+        raise HTTPException(
+            status_code=409, detail="the coach answers at the board, once a question is taught"
+        )
+
+    lesson = await _lesson_on_the_board(
+        conn, session_id, question.question_version_id, question.step_index
+    )
+
+    used = await _asks_used_today(conn, session["student_id"])
+    allowance = settings.ai_daily_calls_per_student
+    if used >= allowance:
+        # Spent for today. They still get the reviewed step rather than a locked box, and the
+        # turn is still stored — a budget nobody can see being hit is a budget nobody can size.
+        reply = tutor.Reply(text=tutor.fallback_text(lesson), source="budget")
+    else:
+        reply = await tutor.answer(lesson, question.asked, settings)
+
+    await conn.execute(
+        text(
+            """
+            INSERT INTO tutor_turns (student_id, session_id, question_version_id, step_index,
+              asked, reply, source, model, input_tokens, output_tokens, latency_ms)
+            VALUES (:student, :session, :version, :step, :asked, :reply, :source, :model,
+              :input_tokens, :output_tokens, :latency_ms)
+            """
+        ),
+        {
+            "student": session["student_id"],
+            "session": session_id,
+            "version": question.question_version_id,
+            "step": question.step_index,
+            "asked": question.asked,
+            "reply": reply.text,
+            "source": reply.source,
+            "model": reply.model,
+            "input_tokens": reply.input_tokens,
+            "output_tokens": reply.output_tokens,
+            "latency_ms": reply.latency_ms,
+        },
+    )
+    await conn.commit()
+
+    return TutorReply(
+        reply=reply.text,
+        source=reply.source,
+        asks_left=max(0, allowance - (used + 1)),
+    )

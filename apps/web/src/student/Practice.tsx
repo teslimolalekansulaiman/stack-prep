@@ -153,6 +153,9 @@ export function Practice({
         subtitle={`${subjectName} · worked through`}
         steps={state.solution_steps ?? []}
         answerLine={`The answer is ${state.correct_option_key}.`}
+        onAsk={(asked, stepIndex) =>
+          api.practiceAsk(sessionId, question.question_version_id, asked, stepIndex)
+        }
         onDone={() => {
           setBusy(true);
           api

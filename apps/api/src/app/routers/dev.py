@@ -176,6 +176,9 @@ async def clear_students(
                 WITH doomed AS (
                     SELECT id FROM students WHERE external_ref LIKE :prefix || '%'
                 ),
+                cleared_turns AS (
+                    DELETE FROM tutor_turns WHERE student_id IN (SELECT id FROM doomed)
+                ),
                 cleared_attempts AS (
                     DELETE FROM attempts WHERE student_id IN (SELECT id FROM doomed)
                 ),

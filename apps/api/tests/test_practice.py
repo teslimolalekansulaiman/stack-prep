@@ -7,12 +7,13 @@ one of these breaks, the product has started counting help as knowledge.
 from __future__ import annotations
 
 import uuid
-from collections.abc import AsyncIterator
+from collections.abc import AsyncIterator, Iterator
 
 import httpx
 import pytest
 from sqlalchemy import text
 
+from app.config import Settings, get_settings
 from app.db import database_is_reachable, get_engine
 from app.main import app
 
@@ -224,6 +225,7 @@ async def fixture() -> AsyncIterator[dict[str, str]]:
     async with engine.begin() as conn:
         await conn.execute(text("SET LOCAL scorepilot.allow_erasure = 'on'"))
         for statement in (
+            "DELETE FROM tutor_turns WHERE student_id = CAST(:student AS uuid)",
             "DELETE FROM attempts WHERE student_id = CAST(:student AS uuid)",
             "DELETE FROM study_sessions WHERE student_id = CAST(:student AS uuid)",
             "DELETE FROM students WHERE id = CAST(:student AS uuid)",
@@ -357,3 +359,136 @@ async def test_a_session_ends_when_its_questions_are_used_up(
     assert state["stage"] == "finished"
     assert state["question"] is None
     assert "2 of 2 answered without help" in (state["closing_note"] or "")
+
+
+# ---------------------------------------------------------------------------
+# Asking the coach
+#
+# The tests below never reach a model: the settings they install carry no API key, so every
+# answer is the reviewed fallback. That is deliberate. What has to hold here is which
+# questions may be asked at all, that the student always gets something readable back, and
+# that the turn is written down — none of which should depend on a network call.
+# ---------------------------------------------------------------------------
+
+
+@pytest.fixture
+def tutor_settings() -> Iterator[None]:
+    """No API key and a small allowance, so the budget is reachable inside a test."""
+    app.dependency_overrides[get_settings] = lambda: Settings(
+        anthropic_api_key="", ai_daily_calls_per_student=2
+    )
+    yield
+    app.dependency_overrides.pop(get_settings, None)
+
+
+async def ask(client: httpx.AsyncClient, session: str, version: str, asked: str) -> dict:
+    response = await client.post(
+        f"/v1/practice/{session}/ask",
+        json={"question_version_id": version, "step_index": 0, "asked": asked},
+    )
+    return {"status": response.status_code, **(response.json() if response.content else {})}
+
+
+async def turns_for(student: str) -> list[dict]:
+    async with get_engine().connect() as conn:
+        rows = await conn.execute(
+            text(
+                """
+                SELECT asked, reply, source, model, step_index
+                FROM tutor_turns WHERE student_id = CAST(:s AS uuid) ORDER BY asked_at
+                """
+            ),
+            {"s": student},
+        )
+        return [dict(row) for row in rows.mappings()]
+
+
+async def test_the_coach_will_not_answer_about_a_live_question(
+    client: httpx.AsyncClient, fixture: dict[str, str], tutor_settings: None
+) -> None:
+    """A question still being answered is not open to the coach.
+
+    This is the guard that keeps the tutor pointed at the practice pool and at an item whose
+    answer is already on the screen. If it ever softens, a client can ask for help on a
+    question the student is mid-attempt at, which is a different product.
+    """
+    state = await start(client, fixture)
+    version = state["question"]["question_version_id"]
+
+    # Nothing attempted yet.
+    assert (await ask(client, state["session_id"], version, "how?"))["status"] == 409
+
+    # One miss and a hint is not the board either.
+    state = await answer(client, state["session_id"], state, "B")
+    assert state["stage"] == "hint"
+    assert (await ask(client, state["session_id"], version, "how?"))["status"] == 409
+
+
+async def test_a_question_at_the_board_is_answered_and_recorded(
+    client: httpx.AsyncClient, fixture: dict[str, str], tutor_settings: None
+) -> None:
+    state = await start(client, fixture)
+    version = state["question"]["question_version_id"]
+    state = await answer(client, state["session_id"], state, "B")
+    state = await answer(client, state["session_id"], state, "C")
+    assert state["stage"] == "explain"
+
+    reply = await ask(client, state["session_id"], version, "why the first step?")
+    assert reply["status"] == 200
+    # No key, so the reviewed step stands in — and it says so rather than pretending.
+    assert reply["source"] == "fallback"
+    assert "first step" in reply["reply"]
+    assert reply["asks_left"] == 1
+
+    stored = await turns_for(fixture["student"])
+    assert len(stored) == 1
+    assert stored[0]["asked"] == "why the first step?"
+    assert stored[0]["source"] == "fallback"
+    # A turn that did not come from a model does not name one.
+    assert stored[0]["model"] is None
+
+
+async def test_the_daily_allowance_is_counted_by_the_server(
+    client: httpx.AsyncClient, fixture: dict[str, str], tutor_settings: None
+) -> None:
+    """Past the allowance the student still gets the working, and the turn is still stored.
+
+    A budget the client keeps is not a budget, and a budget that returns an error loses the
+    question the student typed. So it degrades to the reviewed step and is recorded as having
+    done so, which is the only way the allowance can later be sized against real use.
+    """
+    state = await start(client, fixture)
+    version = state["question"]["question_version_id"]
+    state = await answer(client, state["session_id"], state, "B")
+    state = await answer(client, state["session_id"], state, "C")
+
+    for _ in range(2):
+        assert (await ask(client, state["session_id"], version, "again?"))["status"] == 200
+
+    spent = await ask(client, state["session_id"], version, "one more?")
+    assert spent["status"] == 200
+    assert spent["source"] == "budget"
+    assert spent["asks_left"] == 0
+    assert "first step" in spent["reply"]
+
+    assert [turn["source"] for turn in await turns_for(fixture["student"])] == [
+        "fallback",
+        "fallback",
+        "budget",
+    ]
+
+
+async def test_a_blank_question_never_becomes_a_turn(
+    client: httpx.AsyncClient, fixture: dict[str, str], tutor_settings: None
+) -> None:
+    """An accidental send spends nothing and records nothing."""
+    state = await start(client, fixture)
+    version = state["question"]["question_version_id"]
+    state = await answer(client, state["session_id"], state, "B")
+    state = await answer(client, state["session_id"], state, "C")
+    response = await client.post(
+        f"/v1/practice/{state['session_id']}/ask",
+        json={"question_version_id": version, "step_index": 0, "asked": "   "},
+    )
+    assert response.status_code == 422, response.text
+    assert await turns_for(fixture["student"]) == []

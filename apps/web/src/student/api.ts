@@ -176,6 +176,13 @@ export interface PracticeState {
   closing_note: string | null;
 }
 
+export interface TutorReply {
+  reply: string;
+  /** 'model' when the coach answered; otherwise the reviewed steps stood in for it. */
+  source: 'model' | 'fallback' | 'budget';
+  asks_left: number;
+}
+
 export interface PracticeAnswerIn {
   question_version_id: string;
   selected_option_key: string;
@@ -254,4 +261,22 @@ export const api = {
     }),
   practiceTaught: (sessionId: string) =>
     call<PracticeState>(`/practice/${sessionId}/taught`, { method: 'POST' }),
+  /**
+   * Ask the coach about the working on the board. Only the words and the step go up: the
+   * server reads the question, the reviewed solution and the wrong answer for itself.
+   */
+  practiceAsk: (
+    sessionId: string,
+    questionVersionId: string,
+    asked: string,
+    stepIndex: number | null,
+  ) =>
+    call<TutorReply>(`/practice/${sessionId}/ask`, {
+      method: 'POST',
+      body: JSON.stringify({
+        question_version_id: questionVersionId,
+        asked,
+        step_index: stepIndex,
+      }),
+    }),
 };

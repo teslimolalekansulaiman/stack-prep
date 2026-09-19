@@ -706,12 +706,48 @@
 .sp-dock .ctl button:disabled {
   opacity: 0.35;
 }
-.sp-soon {
-  display: inline-flex;
-  align-items: center;
+/* The ask box. It takes the width the "voice comes next" line used to, because asking is
+   what that line was promising and this is the part of it that shipped. */
+.sp-ask {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.sp-ask .row {
+  display: flex;
   gap: 8px;
-  font-size: 12.5px;
+  align-items: center;
+}
+.sp-ask input {
+  flex: 1;
+  min-width: 0;
+  font: inherit;
+  font-size: 15px;
+  padding: 11px 14px;
+  border: 2px solid var(--line);
+  border-radius: var(--pill);
+  background: #fff;
+}
+.sp-ask input:focus {
+  outline: none;
+  border-color: var(--purple);
+}
+.sp-ask input:disabled {
+  opacity: 0.55;
+}
+.sp-ask .note {
+  font-size: 12px;
   color: var(--muted);
+  padding-left: 14px;
+}
+/* The student's own words, above the answer to them, so a reply that has scrolled the step
+   caption away still says what it is a reply to. */
+.sp-tutorcard p.asked {
+  color: #c9b8ea;
+  font-style: italic;
+  font-size: 13px;
 }
 .sp-conf {
   display: flex;
