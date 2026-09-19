@@ -61,6 +61,50 @@ class SandboxSubject(BaseModel):
     deliverable_questions: int
 
 
+#: Every table that points at a student, in one statement. Kept at module level so
+#: `tests/test_dev.py` can read it back and check it against the database catalogue.
+CLEAR_STUDENTS_SQL = text(
+    """
+WITH doomed AS (
+    SELECT id FROM students WHERE external_ref LIKE :prefix || '%'
+),
+cleared_turns AS (
+    DELETE FROM tutor_turns WHERE student_id IN (SELECT id FROM doomed)
+),
+cleared_attempts AS (
+    DELETE FROM attempts WHERE student_id IN (SELECT id FROM doomed)
+),
+cleared_sittings AS (
+    DELETE FROM assessment_sittings WHERE student_id IN (SELECT id FROM doomed)
+),
+released_assessments AS (
+    UPDATE assessments SET created_for_student_id = NULL
+     WHERE created_for_student_id IN (SELECT id FROM doomed)
+),
+cleared_sessions AS (
+    DELETE FROM study_sessions WHERE student_id IN (SELECT id FROM doomed)
+),
+cleared_goals AS (
+    DELETE FROM student_exam_goals WHERE student_id IN (SELECT id FROM doomed)
+),
+cleared_ratings AS (
+    DELETE FROM skill_ratings WHERE student_id IN (SELECT id FROM doomed)
+),
+cleared_review_state AS (
+    DELETE FROM review_state WHERE student_id IN (SELECT id FROM doomed)
+),
+cleared_consents AS (
+    DELETE FROM consents WHERE student_id IN (SELECT id FROM doomed)
+),
+cleared_guardian_links AS (
+    DELETE FROM guardian_students WHERE student_id IN (SELECT id FROM doomed)
+)
+DELETE FROM students WHERE id IN (SELECT id FROM doomed)
+RETURNING 1
+"""
+)
+
+
 def _require_dev(settings: Settings) -> None:
     if settings.app_env not in {"local", "ci"}:
         raise HTTPException(
@@ -166,32 +210,28 @@ async def clear_students(
     This is the one place that opens the erasure escape hatch, and only for students whose
     external_ref carries the sandbox prefix. Real students are unreachable from here: the
     WHERE clause cannot match them.
+
+    Every foreign key into `students` is declared ON DELETE RESTRICT, deliberately: a
+    student's record is not something the database will quietly discard on someone else's
+    behalf. The cost is that this statement has to name every table that points at a
+    student, and a table added later without a clause here turns the whole endpoint into a
+    500. So the list below is exhaustive by contract, and
+    `test_dev.py::test_every_table_that_points_at_a_student_is_cleared_here` reads the
+    catalogue and fails when a new one appears.
+
+    Ordering inside the CTE list does not matter: RESTRICT is checked once, after the whole
+    statement has run, so the sub-statements only have to all be present.
+
+    `assessments` is the one reference that is cleared rather than deleted. A paper is
+    content, not the student's own evidence, and it may have been sat by students who are
+    not doomed; `created_for_student_id` is a nullable attribution, so dropping the
+    attribution severs the reference without destroying something shared.
     """
     _require_dev(settings)
     await conn.execute(text("SET LOCAL scorepilot.allow_erasure = 'on'"))
     removed = (
         await conn.execute(
-            text(
-                """
-                WITH doomed AS (
-                    SELECT id FROM students WHERE external_ref LIKE :prefix || '%'
-                ),
-                cleared_turns AS (
-                    DELETE FROM tutor_turns WHERE student_id IN (SELECT id FROM doomed)
-                ),
-                cleared_attempts AS (
-                    DELETE FROM attempts WHERE student_id IN (SELECT id FROM doomed)
-                ),
-                cleared_sessions AS (
-                    DELETE FROM study_sessions WHERE student_id IN (SELECT id FROM doomed)
-                ),
-                cleared_consents AS (
-                    DELETE FROM consents WHERE student_id IN (SELECT id FROM doomed)
-                )
-                DELETE FROM students WHERE id IN (SELECT id FROM doomed)
-                RETURNING 1
-                """
-            ),
+            CLEAR_STUDENTS_SQL,
             {"prefix": SANDBOX_PREFIX},
         )
     ).rowcount
