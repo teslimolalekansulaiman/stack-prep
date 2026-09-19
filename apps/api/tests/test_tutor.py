@@ -10,17 +10,43 @@ that cannot answer still leaves the student holding the lesson.
 from __future__ import annotations
 
 from app.config import Settings
-from app.tutor import Lesson, _packet, answer, fallback_text
+from app.tutor import Attempted, Lesson, _packet, answer, fallback_text
 
 LESSON = Lesson(
     subtopic_name="Simultaneous equations",
+    topic_name="Algebra",
     stem="Solve for x and y.",
     options=[("A", "x = 2"), ("B", "x = 3")],
     correct_option_key="A",
     steps=["Take the first equation.", "Substitute it into the second."],
     step_index=1,
+    hints=["Rearrange one equation first."],
     chose="B",
     misconception="They substitute before rearranging.",
+    level=2,
+    seen=7,
+    right_unaided=2,
+    taught=3,
+    history=[
+        Attempted(
+            stem="Solve 2x + y = 9 and x - y = 0.",
+            chose="C",
+            was_correct=False,
+            misconception="They substitute before rearranging.",
+            needed_hint=True,
+            was_taught=True,
+            days_ago=2,
+        ),
+        Attempted(
+            stem="Find x when 3x = 12.",
+            chose="A",
+            was_correct=True,
+            misconception=None,
+            needed_hint=False,
+            was_taught=False,
+            days_ago=0,
+        ),
+    ],
 )
 
 
@@ -52,6 +78,33 @@ def test_the_student_text_is_fenced_and_last() -> None:
     assert packet.rstrip().endswith('"""')
 
 
+def test_the_packet_carries_the_hints_they_were_given() -> None:
+    """The coach should build on the hint they already had, not repeat it back at them."""
+    assert "Rearrange one equation first." in _packet(LESSON, "why?")
+
+
+def test_the_packet_carries_where_they_are_in_the_topic() -> None:
+    packet = _packet(LESSON, "why?")
+    assert "working at level 2 of 5" in packet
+    assert "7 questions met here, 2 answered without help, 3 explained" in packet
+
+
+def test_the_packet_carries_the_questions_they_have_already_met() -> None:
+    """The history is what turns explaining an item into teaching a pattern.
+
+    The same misconception showing up two days ago and again today is the thing worth
+    saying out loud, and it cannot be said by a coach that can only see today.
+    """
+    packet = _packet(LESSON, "why?")
+    assert "Solve 2x + y = 9 and x - y = 0." in packet
+    assert "(2d ago)" in packet
+    assert "missed it twice and had it explained" in packet
+    assert "they chose C" in packet
+    # A right answer reads as a right answer, so the coach can build on what worked.
+    assert "(today)" in packet
+    assert "got it right" in packet
+
+
 def test_the_packet_is_only_the_lesson() -> None:
     """Nothing about the person. REQ-23 keeps account detail out of tutor context, and there
     is no teaching use for it here in any case."""
@@ -63,6 +116,8 @@ def test_the_packet_is_only_the_lesson() -> None:
                 "QUESTION:",
                 "OPTIONS:",
                 "THE REVIEWED WORKING, AS WRITTEN ON THE BOARD:",
+                "THE REVIEWED HINTS FOR THIS QUESTION (THEY WERE SHOWN THE FIRST ONE ALREADY):",
+                "PRACTICE QUESTIONS THEY HAVE ALREADY MET IN THIS TOPIC, NEWEST FIRST:",
                 "THE STUDENT ASKS:",
             }
 
@@ -78,6 +133,7 @@ def test_the_fallback_after_the_board_has_finished_gives_the_answer() -> None:
     said = fallback_text(
         Lesson(
             subtopic_name=LESSON.subtopic_name,
+            topic_name=LESSON.topic_name,
             stem=LESSON.stem,
             options=LESSON.options,
             correct_option_key="A",

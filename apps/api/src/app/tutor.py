@@ -19,17 +19,31 @@ instead, and the turn is recorded as a fallback. REQ-24 requires that when the t
 unavailable the student gets an approved explanation and keeps their work, so the tutor being
 down has to be a worse lesson and never a broken screen.
 
-WHAT IT IS NOT TOLD. No name, no email, no account or payment detail, no score, no history
-beyond the one wrong option it is explaining — REQ-23 keeps sensitive account information out
-of tutor context, and nothing here has any teaching use for it anyway. The packet is the
-question, the reviewed steps, the option they picked and the misconception that option maps
-to. `Lesson` is the whole of it; if it is not a field there, the model does not see it.
+WHAT IT IS TOLD ABOUT THE STUDENT. Their working level in this subtopic, how much of it they
+have met and how that went, and the practice questions they have already attempted here — the
+stem, what they chose, and the misconception that choice maps to. A coach who can see that the
+same substitution has now gone wrong three times in different clothes teaches the pattern; a
+coach who can only see today's item explains today's item and lets the student meet it again
+next week.
+
+THE ONE LINE THAT CANNOT MOVE. That history is the PRACTICE pool only. Items in the diagnostic
+and held-out pools are how this student is measured, and REQ-13 excludes protected question
+text and solutions from tutoring: a tutor that has read the baseline paper makes every score
+built on it meaningless, and S5-AC6 tests for exactly that. Practice items carry no such
+weight — the student has already sat them, been marked on them and been shown the working — so
+their text is ordinary teaching context. The filter lives in the query that builds `History`,
+and the test that holds it is `test_the_protected_pools_never_reach_the_packet`.
+
+WHAT IT IS STILL NOT TOLD. No name, no email, no account or payment detail, no projected
+score: REQ-23 keeps sensitive account information out of tutor context, and none of it has any
+teaching use. `Lesson` is the whole of what the model sees; if it is not a field there, the
+model does not see it.
 """
 
 from __future__ import annotations
 
 import time
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Literal
 
 from app.config import Settings
@@ -49,11 +63,36 @@ CALL_TIMEOUT_SECONDS = 11.0
 Source = Literal["model", "fallback", "budget"]
 
 
+#: How many earlier practice questions in this subtopic travel with the lesson. Enough to show
+#: a pattern, few enough that the packet stays small and quick.
+HISTORY_DEPTH = 5
+
+
+@dataclass(frozen=True)
+class Attempted:
+    """One practice question this student has already met in this subtopic.
+
+    Never a diagnostic or held-out item: see the module docstring. These are questions the
+    student has sat, been marked on and, where they missed twice, been shown the working for.
+    """
+
+    stem: str
+    chose: str | None
+    was_correct: bool
+    #: Why that wrong choice is a tempting one, when the option carries the explanation.
+    misconception: str | None
+    needed_hint: bool
+    #: Missed twice and explained, rather than answered.
+    was_taught: bool
+    days_ago: int
+
+
 @dataclass(frozen=True)
 class Lesson:
     """Everything the tutor is allowed to know, and nothing else."""
 
     subtopic_name: str
+    topic_name: str
     stem: str
     options: list[tuple[str, str]]
     correct_option_key: str
@@ -61,10 +100,22 @@ class Lesson:
     steps: list[str]
     #: Which step was showing when they asked. None means the board had finished.
     step_index: int | None
+    #: The reviewed hints for this item — including the one they were already given, so the
+    #: coach can build on it rather than repeat it back at them.
+    hints: list[str] = field(default_factory=list)
     #: The wrong option they last chose, and why that option is tempting, when the question
     #: bank records it. This is what lets the coach answer the mistake they actually made.
     chose: str | None = None
     misconception: str | None = None
+    #: Where they are working in this subtopic, 1 to 5.
+    level: int = 3
+    #: Their record in this subtopic across every pool: counts only, which is all a summary
+    #: of a protected assessment may contribute.
+    seen: int = 0
+    right_unaided: int = 0
+    taught: int = 0
+    #: Practice questions already met here, newest first.
+    history: list[Attempted] = field(default_factory=list)
 
     @property
     def current_step(self) -> str | None:
@@ -92,6 +143,12 @@ Your one job is to make the working on the board make sense to this student. Rul
 
 - Explain only from the steps you are given. They have been checked by a subject reviewer. \
 Do not introduce a different method, a shortcut or a formula that is not in them.
+- You are shown what this student has already done in this topic. Use it to choose WHAT to \
+explain — if they have made the same mistake before, teach the pattern rather than this one \
+question. Do not use it to tell them what kind of student they are, do not recite their \
+record back at them, and never say anything that sounds like a verdict on their ability. One \
+encouraging sentence about a specific thing they got right is welcome; a progress report is \
+not.
 - If the steps do not settle what was asked, say so plainly and offer to pass it to a human \
 reviewer. Never fill the gap by guessing. Being wrong here is far worse than saying you are \
 not sure.
@@ -114,7 +171,7 @@ def _packet(lesson: Lesson, asked: str) -> str:
     """
     options = "\n".join(f"  {key}. {body}" for key, body in lesson.options)
     lines = [
-        f"TOPIC: {lesson.subtopic_name}",
+        f"TOPIC: {lesson.topic_name} — {lesson.subtopic_name}",
         "",
         f"QUESTION:\n{lesson.stem}",
         "",
@@ -125,6 +182,13 @@ def _packet(lesson: Lesson, asked: str) -> str:
         "THE REVIEWED WORKING, AS WRITTEN ON THE BOARD:",
         *(f"  step {number}. {step}" for number, step in enumerate(lesson.steps, start=1)),
     ]
+
+    if lesson.hints:
+        lines += [
+            "",
+            "THE REVIEWED HINTS FOR THIS QUESTION (they were shown the first one already):",
+            *(f"  - {hint}" for hint in lesson.hints),
+        ]
 
     current = lesson.current_step
     if current is not None:
@@ -138,6 +202,33 @@ def _packet(lesson: Lesson, asked: str) -> str:
         if lesson.misconception:
             mistake += f" Students pick {lesson.chose} when: {lesson.misconception}"
         lines += ["", f"WHAT THEY GOT WRONG: {mistake}"]
+
+    lines += [
+        "",
+        f"WHERE THEY ARE IN THIS TOPIC: working at level {lesson.level} of 5. "
+        f"{lesson.seen} question{'' if lesson.seen == 1 else 's'} met here, "
+        f"{lesson.right_unaided} answered without help, "
+        f"{lesson.taught} explained rather than answered.",
+    ]
+
+    if lesson.history:
+        lines += ["", "PRACTICE QUESTIONS THEY HAVE ALREADY MET IN THIS TOPIC, NEWEST FIRST:"]
+        for past in lesson.history:
+            when = "today" if past.days_ago == 0 else f"{past.days_ago}d ago"
+            if past.was_correct:
+                went = "got it right"
+                if past.needed_hint:
+                    went += ", but needed a hint"
+            elif past.was_taught:
+                went = "missed it twice and had it explained"
+            else:
+                went = "got it wrong"
+            note = f"  - ({when}) {past.stem}\n      {went}"
+            if past.chose and not past.was_correct:
+                note += f"; they chose {past.chose}"
+                if past.misconception:
+                    note += f", which is what students pick when: {past.misconception}"
+            lines.append(note)
 
     lines += ["", "THE STUDENT ASKS:", f'"""{asked}"""']
     return "\n".join(lines)

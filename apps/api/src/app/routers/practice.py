@@ -649,8 +649,145 @@ async def _asks_used_today(conn: AsyncConnection, student_id: UUID) -> int:
     )
 
 
+async def _record_in(
+    conn: AsyncConnection, student_id: UUID, subtopic_id: str
+) -> dict[str, int]:
+    """Counts for this student in this subtopic, across every pool.
+
+    Counts and nothing else. A skill-level result summary is what tutoring may receive from a
+    protected assessment, so the check-up and the held-out forms contribute here — three
+    numbers — and nowhere else in the packet.
+    """
+    row = (
+        (
+            await conn.execute(
+                text(
+                    """
+                    SELECT count(DISTINCT a.question_version_id) AS seen,
+                           count(*) FILTER (WHERE a.id IN (
+                             SELECT s.id FROM scoring_attempts s WHERE s.is_correct
+                           )) AS right_unaided,
+                           (SELECT count(*) FROM (
+                              SELECT t.question_version_id
+                              FROM attempts t
+                              JOIN question_versions tv ON tv.id = t.question_version_id
+                              JOIN question_classifications tc
+                                ON tc.question_id = tv.question_id
+                               AND tc.classification_role = 'primary'
+                              JOIN curriculum_items ts ON ts.id = tc.curriculum_item_id
+                              WHERE t.student_id = :student
+                                AND ts.parent_id = CAST(:sub AS uuid)
+                              GROUP BY t.question_version_id
+                              HAVING count(*) >= 2
+                                 AND bool_and(coalesce(t.is_correct, false) IS FALSE)
+                            ) AS explained) AS taught
+                    FROM attempts a
+                    JOIN question_versions v ON v.id = a.question_version_id
+                    JOIN question_classifications c
+                      ON c.question_id = v.question_id AND c.classification_role = 'primary'
+                    JOIN curriculum_items skill ON skill.id = c.curriculum_item_id
+                    WHERE a.student_id = :student AND skill.parent_id = CAST(:sub AS uuid)
+                    """
+                ),
+                {"student": student_id, "sub": subtopic_id},
+            )
+        )
+        .mappings()
+        .first()
+    )
+    if row is None:
+        return {"seen": 0, "right_unaided": 0, "taught": 0}
+    return {
+        "seen": int(row["seen"] or 0),
+        "right_unaided": int(row["right_unaided"] or 0),
+        "taught": int(row["taught"] or 0),
+    }
+
+
+async def _practice_history(
+    conn: AsyncConnection, student_id: UUID, subtopic_id: str, exclude_version: UUID
+) -> list[tutor.Attempted]:
+    """The practice questions this student has already met in this subtopic.
+
+    `q.usage_pool = 'practice'` is the line that matters. The diagnostic and held-out pools
+    are how this student is measured, and REQ-13 keeps protected question text out of
+    tutoring: a tutor that has read the baseline paper makes the baseline worthless. Practice
+    items carry no such weight — they have been sat, marked and explained already — so their
+    text is ordinary teaching context, and it is the context that lets a coach say "this is
+    the third time that same substitution has gone wrong" rather than explaining one item.
+    """
+    rows = await fetch_all(
+        conn,
+        """
+        -- One row per QUESTION, not per attempt. The guided loop records two attempts for
+        -- every question that reaches the board, so listing attempts would show the same
+        -- question twice, spend half the history on it, and leave the coach thinking the
+        -- student has met twice as much of this topic as they have.
+        WITH per_question AS (
+          SELECT a.question_version_id,
+                 bool_or(coalesce(a.is_correct, false))     AS was_correct,
+                 max(a.hint_count)                          AS hint_count,
+                 -- Taught rather than answered: missed twice and never got right. The same
+                 -- test `_state` counts with. NOT solution_viewed_before_answer, which marks
+                 -- an answer given AFTER the board and so is false for every question that
+                 -- ended at it.
+                 (count(*) >= 2
+                  AND bool_and(coalesce(a.is_correct, false) IS FALSE)) AS was_taught,
+                 max(a.answered_at_client)                  AS last_at,
+                 (array_agg(a.selected_option_key
+                            ORDER BY a.answered_at_client DESC))[1] AS chose
+          FROM attempts a
+          JOIN question_versions v ON v.id = a.question_version_id
+          JOIN questions q ON q.id = v.question_id
+          JOIN question_classifications c
+            ON c.question_id = q.id AND c.classification_role = 'primary'
+          JOIN curriculum_items skill ON skill.id = c.curriculum_item_id
+          WHERE a.student_id = :student
+            AND skill.parent_id = CAST(:sub AS uuid)
+            AND q.usage_pool = 'practice'
+            AND a.question_version_id <> :version
+          GROUP BY a.question_version_id
+        )
+        SELECT v.stem,
+               p.chose AS selected_option_key,
+               p.was_correct,
+               p.hint_count,
+               p.was_taught AS solution_viewed_before_answer,
+               m.description AS misconception,
+               (current_date - p.last_at::date) AS days_ago
+        FROM per_question p
+        JOIN question_versions v ON v.id = p.question_version_id
+        LEFT JOIN question_options o
+          ON o.question_version_id = p.question_version_id AND o.option_key = p.chose
+        LEFT JOIN misconceptions m ON m.id = o.misconception_id
+        ORDER BY p.last_at DESC
+        LIMIT :depth
+        """,
+        student=student_id,
+        sub=subtopic_id,
+        version=exclude_version,
+        depth=tutor.HISTORY_DEPTH,
+    )
+    return [
+        tutor.Attempted(
+            stem=str(row["stem"]),
+            chose=row["selected_option_key"],
+            was_correct=bool(row["was_correct"]),
+            misconception=row["misconception"],
+            needed_hint=int(row["hint_count"] or 0) > 0,
+            was_taught=bool(row["solution_viewed_before_answer"]),
+            days_ago=int(row["days_ago"] or 0),
+        )
+        for row in rows
+    ]
+
+
 async def _lesson_on_the_board(
-    conn: AsyncConnection, session_id: UUID, version_id: UUID, step_index: int | None
+    conn: AsyncConnection,
+    session_id: UUID,
+    student_id: UUID,
+    version_id: UUID,
+    step_index: int | None,
 ) -> tutor.Lesson:
     """Assemble what the tutor may see, from reviewed content and this session's attempts.
 
@@ -663,12 +800,15 @@ async def _lesson_on_the_board(
             await conn.execute(
                 text(
                     """
-                    SELECT v.stem, v.solution_steps, sub.name AS subtopic_name
+                    SELECT v.stem, v.solution_steps, v.hints,
+                           sub.id AS subtopic_id, sub.name AS subtopic_name,
+                           topic.name AS topic_name
                     FROM question_versions v
                     JOIN question_classifications c
                       ON c.question_id = v.question_id AND c.classification_role = 'primary'
                     JOIN curriculum_items skill ON skill.id = c.curriculum_item_id
                     JOIN curriculum_items sub ON sub.id = skill.parent_id
+                    JOIN curriculum_items topic ON topic.id = sub.parent_id
                     WHERE v.id = :version
                     """
                 ),
@@ -723,15 +863,21 @@ async def _lesson_on_the_board(
         .first()
     )
 
+    subtopic_id = str(found["subtopic_id"])
     return tutor.Lesson(
         subtopic_name=str(found["subtopic_name"]),
+        topic_name=str(found["topic_name"]),
         stem=str(found["stem"]),
         options=[(option.option_key, option.body) for option in await _options(conn, version_id)],
         correct_option_key=str(key),
         steps=steps,
+        hints=[str(hint) for hint in (found["hints"] or [])],
         step_index=step_index,
         chose=mistake["selected_option_key"] if mistake is not None else None,
         misconception=mistake["description"] if mistake is not None else None,
+        level=await _level_for(conn, student_id, subtopic_id),
+        **await _record_in(conn, student_id, subtopic_id),
+        history=await _practice_history(conn, student_id, subtopic_id, version_id),
     )
 
 
@@ -785,7 +931,7 @@ async def ask(
         )
 
     lesson = await _lesson_on_the_board(
-        conn, session_id, question.question_version_id, question.step_index
+        conn, session_id, session["student_id"], question.question_version_id, question.step_index
     )
 
     used = await _asks_used_today(conn, session["student_id"])

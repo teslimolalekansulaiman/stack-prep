@@ -16,6 +16,7 @@ from sqlalchemy import text
 from app.config import Settings, get_settings
 from app.db import database_is_reachable, get_engine
 from app.main import app
+from app.routers.practice import _practice_history, _record_in
 
 pytestmark = pytest.mark.integration
 
@@ -492,3 +493,196 @@ async def test_a_blank_question_never_becomes_a_turn(
     )
     assert response.status_code == 422, response.text
     assert await turns_for(fixture["student"]) == []
+
+
+async def _add_question_in_pool(ids: dict[str, str], pool: str, stem: str) -> str:
+    """A question in the same subtopic as the fixture's, in the pool named. Returns its version."""
+    async with get_engine().connect() as conn:
+        question_id = (
+            await conn.execute(
+                text(
+                    """
+                    INSERT INTO questions (subject_id, origin, usage_pool, created_by)
+                    VALUES (CAST(:s AS uuid), 'authored', :pool, CAST(:a AS uuid))
+                    RETURNING id
+                    """
+                ),
+                {"s": ids["subject_id"], "a": ids["author_id"], "pool": pool},
+            )
+        ).scalar_one()
+        version_id = (
+            await conn.execute(
+                text(
+                    """
+                    INSERT INTO question_versions (question_id, subject_id, version, stem,
+                      response_format, marking_method, solution_steps, hints, marks,
+                      expected_seconds, option_count, content_hash, authored_by,
+                      answer_source, mastery_level_number, level_source, review_status)
+                    VALUES (:q, CAST(:s AS uuid), 1, :stem, 'mcq_single', 'auto_key',
+                      '["a step"]'::jsonb, '["a hint"]'::jsonb, 1, 45, 4, :hash,
+                      CAST(:a AS uuid), 'expert_verified', 3, 'expert_verified', 'draft')
+                    RETURNING id
+                    """
+                ),
+                {
+                    "q": question_id,
+                    "s": ids["subject_id"],
+                    "stem": stem,
+                    "hash": uuid.uuid4().hex + uuid.uuid4().hex,
+                    "a": ids["author_id"],
+                },
+            )
+        ).scalar_one()
+        await conn.execute(
+            text(
+                """
+                INSERT INTO question_classifications (question_id, subject_id,
+                  curriculum_item_id, syllabus_version_id, classification_role,
+                  classification_reason, review_status, reviewed_by, reviewed_at, proposed_by)
+                VALUES (:q, CAST(:s AS uuid), CAST(:skill AS uuid), CAST(:ver AS uuid),
+                  'primary', 'fixture', 'approved', CAST(:r AS uuid), now(), 'human')
+                """
+            ),
+            {
+                "q": question_id,
+                "s": ids["subject_id"],
+                "skill": ids["skill_id"],
+                "ver": ids["version_id"],
+                "r": ids["reviewer_id"],
+            },
+        )
+        # An attempt belongs to exactly one sitting, so the measured pools need one of their
+        # own: this is the check-up, which is where a diagnostic item is actually met.
+        session_id = (
+            await conn.execute(
+                text(
+                    """
+                    INSERT INTO study_sessions (student_id, subject_id, session_type,
+                      engine_version)
+                    VALUES (CAST(:student AS uuid), CAST(:s AS uuid), 'checkup', 'test')
+                    RETURNING id
+                    """
+                ),
+                {"student": ids["student"], "s": ids["subject_id"]},
+            )
+        ).scalar_one()
+        await conn.execute(
+            text(
+                """
+                INSERT INTO attempts (id, student_id, question_version_id, session_id, context,
+                  selected_option_key, is_correct, answered_at_client, engine_version)
+                VALUES (gen_random_uuid(), CAST(:student AS uuid), :v, :session, 'checkup',
+                  'B', false, now(), 'test')
+                """
+            ),
+            {"student": ids["student"], "v": version_id, "session": session_id},
+        )
+        await conn.commit()
+    return str(version_id)
+
+
+async def test_the_protected_pools_never_reach_the_packet(
+    client: httpx.AsyncClient, fixture: dict[str, str], tutor_settings: None
+) -> None:
+    """The line the whole richer context rests on.
+
+    Practice items the student has already sat are ordinary teaching context. Diagnostic and
+    held-out items are how this student is MEASURED, and REQ-13 keeps their text out of
+    tutoring: a tutor that has read the baseline paper makes every score built on it
+    meaningless, and S5-AC6 tests for exactly that. Both are attempts by the same student in
+    the same subtopic, so nothing but the pool tells them apart.
+    """
+    await _add_question_in_pool(fixture, "held_out", "HELD OUT: this must never be shown")
+    await _add_question_in_pool(fixture, "diagnostic", "DIAGNOSTIC: this must never be shown")
+
+    # One practice question answered and left behind, then a second one missed twice: the
+    # history is about the questions BEFORE this one, so there has to be one.
+    state = await start(client, fixture)
+    earlier = state["question"]["question_version_id"]
+    state = await answer(client, state["session_id"], state, "A", confidence="sure")
+    assert state["stage"] == "asking"
+    version = state["question"]["question_version_id"]
+    assert version != earlier
+    state = await answer(client, state["session_id"], state, "B")
+    state = await answer(client, state["session_id"], state, "C")
+    assert state["stage"] == "explain"
+
+    async with get_engine().connect() as conn:
+        subtopic = (
+            await conn.execute(
+                text("SELECT parent_id FROM curriculum_items WHERE id = CAST(:s AS uuid)"),
+                {"s": fixture["skill_id"]},
+            )
+        ).scalar_one()
+        history = await _practice_history(
+            conn, uuid.UUID(fixture["student"]), str(subtopic), uuid.UUID(version)
+        )
+
+    stems = [past.stem for past in history]
+    assert not any("HELD OUT" in stem for stem in stems), stems
+    assert not any("DIAGNOSTIC" in stem for stem in stems), stems
+    # And the practice questions they really did meet are there, or the filter is just
+    # returning nothing and proving nothing.
+    assert any(stem.startswith("Question ") for stem in stems), stems
+
+
+async def test_the_record_counts_every_pool_even_though_the_text_stays_out(
+    client: httpx.AsyncClient, fixture: dict[str, str], tutor_settings: None
+) -> None:
+    """A skill-level result summary is what a protected assessment may contribute: a number.
+
+    So the check-up attempt is counted in `seen` while its stem is refused by the test above.
+    """
+    await _add_question_in_pool(fixture, "held_out", "HELD OUT: this must never be shown")
+
+    async with get_engine().connect() as conn:
+        subtopic = (
+            await conn.execute(
+                text("SELECT parent_id FROM curriculum_items WHERE id = CAST(:s AS uuid)"),
+                {"s": fixture["skill_id"]},
+            )
+        ).scalar_one()
+        record = await _record_in(conn, uuid.UUID(fixture["student"]), str(subtopic))
+
+    assert record["seen"] == 1
+
+
+async def test_the_history_is_one_row_per_question_not_per_attempt(
+    client: httpx.AsyncClient, fixture: dict[str, str], tutor_settings: None
+) -> None:
+    """Every question that reaches the board was attempted twice; it is still one question.
+
+    Listing attempts would show it twice, spend half the coach's history on it, and leave the
+    coach believing the student has met twice as much of this topic as they have. And a
+    question that ended at the board reads as taught, which is not what
+    `solution_viewed_before_answer` records — that marks an answer given AFTER the board, so
+    it is false for exactly the questions this is about.
+    """
+    state = await start(client, fixture)
+    missed_stem = state["question"]["stem"]
+    state = await answer(client, state["session_id"], state, "B")
+    state = await answer(client, state["session_id"], state, "C")
+    assert state["stage"] == "explain"
+
+    # Move on, so the missed question becomes history rather than the current item.
+    response = await client.post(f"/v1/practice/{state['session_id']}/taught")
+    assert response.status_code == 200, response.text
+    state = response.json()
+    current = state["question"]["question_version_id"]
+
+    async with get_engine().connect() as conn:
+        subtopic = (
+            await conn.execute(
+                text("SELECT parent_id FROM curriculum_items WHERE id = CAST(:s AS uuid)"),
+                {"s": fixture["skill_id"]},
+            )
+        ).scalar_one()
+        history = await _practice_history(
+            conn, uuid.UUID(fixture["student"]), str(subtopic), uuid.UUID(current)
+        )
+
+    mine = [past for past in history if past.stem == missed_stem]
+    assert len(mine) == 1, [past.stem for past in history]
+    assert mine[0].was_taught is True
+    assert mine[0].was_correct is False
+    assert mine[0].chose == "C"
