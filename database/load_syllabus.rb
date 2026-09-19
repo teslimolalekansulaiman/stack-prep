@@ -144,7 +144,10 @@ end
 connection_args = if options[:database_url] && !options[:database_url].empty?
   ['--dbname', options[:database_url]]
 else
-  ['--host', ROOT.join('.local/run').to_s, '--port', '55439', '--dbname', 'scorepilot']
+  # TCP, not the Unix socket under ROOT: ROOT is this working copy, so from a git worktree
+  # the socket path points at a directory that does not exist — and a socket path is capped
+  # at 103 bytes, which a worktree path can exceed on its own.
+  ['--host', '127.0.0.1', '--port', '55439', '--dbname', 'scorepilot']
 end
 
 existing_schema = run_psql(connection_args, sql: "SELECT to_regclass('stackprep.examinations') IS NOT NULL;")
