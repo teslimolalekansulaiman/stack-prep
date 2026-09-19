@@ -65,7 +65,10 @@ async def run(corrections: Path, reviewer_id: str, dsn: str | None, apply: bool)
     wanted: dict[str, str] = json.loads(corrections.read_text())
     conn = await asyncpg.connect(
         dsn=dsn,
-        host=None if dsn else str(ROOT / ".local/run"),
+        # TCP, not the Unix socket under ROOT: ROOT is this working copy, so from a git
+        # worktree the socket path points at a directory that does not exist — and a
+        # socket path is capped at 103 bytes, which a worktree path can exceed on its own.
+        host=None if dsn else "127.0.0.1",
         port=None if dsn else 55439,
         database=None if dsn else "scorepilot",
     )

@@ -19,9 +19,12 @@ ruby database/load_syllabus.rb
 ```
 
 The loader applies `migrations/001_curriculum.sql` when the schema is absent. It
-uses the local project database `scorepilot` over a Unix socket in `.local/run`
-on port 55439. `.local/postgres` contains persistent data and is ignored by Git.
-The local server also listens on `127.0.0.1:55439` for DBeaver. Use database
+uses the local project database `scorepilot` on `127.0.0.1:55439`. The cluster
+also accepts a Unix socket in `.local/run`, but everything here connects over TCP:
+a socket path is capped at 103 bytes and `.local` belongs to the main checkout, so
+the socket is out of reach from a git worktree on both counts.
+`.local/postgres` contains persistent data and is ignored by Git. The same
+`127.0.0.1:55439` is what DBeaver wants. Use database
 `scorepilot`, username `teslimsulaiman`, and leave the password blank. This local
 development cluster uses trust authentication for loopback connections. Tables
 are in the `stackprep` schema. Stop it with:
@@ -64,10 +67,10 @@ altering the old one.
 ## Check the result
 
 ```sh
-psql -h "$PWD/.local/run" -p 55439 -d scorepilot \
+psql -h 127.0.0.1 -p 55439 -d scorepilot \
   -c "SELECT item_type, count(*) FROM stackprep.curriculum_items GROUP BY item_type ORDER BY item_type;"
 
-psql -h "$PWD/.local/run" -p 55439 -d scorepilot \
+psql -h 127.0.0.1 -p 55439 -d scorepilot \
   -c "SELECT count(*) FROM stackprep.published_curriculum_scope;"
 ```
 
