@@ -217,6 +217,14 @@ OPTION_END_RE = re.compile(
     r"\bFor (?:these|the|this) questions?\b|\bFrom (?:these |the )?questions?\b|"
     r"\bPASSAGE\b|\bThe passage below\b|\bFrom the words\b", re.I)
 
+#: The sentence that introduces the block AFTER a cloze passage. Deliberately narrow: the
+#: cloze's own direction also says "choose the option", so a general direction pattern would
+#: cut the passage off at its own first line. These phrases only ever introduce the
+#: interpretation block that follows.
+NEXT_BLOCK_RE = re.compile(
+    r"After each of the following|a list of possible interpretations|"
+    r"choose the interpretation|possible interpretations of the sentence", re.I)
+
 #: A run of shouted words is the paper's own section heading — "LEXIS, STRUCTURE AND ORAL
 #: FORMS" — set between the last option of one section and the first question of the next.
 #: It is matched case-sensitively, because the same words in ordinary case are ordinary
@@ -249,6 +257,16 @@ def parse_cloze(lines: list[Line], first: int | None,
     brackets, parentheses, dots, dashes and letter case comes out the same.
     """
     body = " ".join(line.text for line in lines)
+    # A cloze block ends where the next block's direction begins. When the paper prints a gap
+    # range — "gaps numbered 11 to 20" — that bound does the work, but several years print no
+    # range at all, and then every numbered thing after the passage looks like a gap: the
+    # following section's question numbers are each followed by four lettered options, which
+    # is exactly the shape a gap has. 2018 lost eleven sentence-interpretation questions that
+    # way, their stems replaced by "Gap 23 in the cloze passage".
+    if first is None:
+        opener = NEXT_BLOCK_RE.search(body)
+        if opener is not None:
+            body = body[: opener.start()]
     page_of: dict[int, int] = {}
     for line in lines:
         for number in re.findall(r"(?:[-.…]\s*){1,10}(\d{1,3})\b", line.text):
