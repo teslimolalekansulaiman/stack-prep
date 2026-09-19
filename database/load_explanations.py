@@ -48,7 +48,8 @@ async def run(folder: Path, dsn: str | None, apply: bool) -> int:
         await conn.execute("SET search_path = stackprep, public")
         rows = await conn.fetch(
             """
-            SELECT v.id, left(v.id::text, 8) AS short, v.review_status
+            SELECT v.id, left(v.id::text, 8) AS short, v.review_status, v.solution_source,
+                   v.solution_steps, v.hints
             FROM question_versions v
             JOIN questions q ON q.id = v.question_id AND q.current_version_id = v.id
             WHERE left(v.id::text, 8) = ANY($1::text[])
@@ -72,12 +73,27 @@ async def run(folder: Path, dsn: str | None, apply: bool) -> int:
             return 0
 
         updated = 0
+        unchanged = 0
         async with conn.transaction():
             for key, row in current.items():
                 entry = written[key]
                 steps = [str(step) for step in (entry.get("steps") or [])]
                 hint = str(entry.get("hint") or "").strip()
                 if not steps or not hint:
+                    continue
+                # Skip a row whose explanation is already exactly this. Re-running the loader
+                # should be free, and an update that changes nothing still trips the rule that
+                # a rewrite must restate its provenance.
+                # asyncpg hands jsonb back as text, so these have to be parsed before they
+                # can be compared; comparing the raw strings would never match.
+                stored_steps = json.loads(row["solution_steps"] or "[]")
+                stored_hints = json.loads(row["hints"] or "[]")
+                if (
+                    row["solution_source"] == "expert_verified"
+                    and stored_steps == steps
+                    and stored_hints == [hint]
+                ):
+                    unchanged += 1
                     continue
                 await conn.execute(
                     """
@@ -95,7 +111,10 @@ async def run(folder: Path, dsn: str | None, apply: bool) -> int:
         waiting = await conn.fetchval(
             "SELECT count(*) FROM questions_awaiting_explanation_check"
         )
-        print(f"{updated} explanations loaded. {waiting} questions still waiting for one.")
+        print(
+            f"{updated} explanations loaded, {unchanged} already as written."
+        )
+        print(f"{waiting} questions still waiting for one.")
         return 0
     finally:
         await conn.close()

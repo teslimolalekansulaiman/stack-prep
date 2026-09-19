@@ -66,7 +66,21 @@ BEGIN
     RAISE EXCEPTION 'the kept explanation is not the one that was replaced';
   END IF;
 
-  -- A rewrite that does not say where the new text came from is refused.
+  -- Once it is checked, the same person may correct their own wording without flipping the
+  -- provenance to something else and back. The history row is still written, which is what
+  -- the audit actually rests on (018).
+  UPDATE question_versions SET solution_steps = '["Prosperous means wealthy."]'::jsonb
+   WHERE id = v_version;
+  SELECT count(*) INTO v_kept FROM question_explanation_history
+   WHERE question_version_id = v_version;
+  IF v_kept <> 2 THEN
+    RAISE EXCEPTION 'correcting a checked explanation did not keep the replaced text: % rows',
+      v_kept;
+  END IF;
+
+  -- But replacing an UNCHECKED explanation still has to say who checked it.
+  UPDATE question_versions SET solution_steps = '["thin again"]'::jsonb,
+    solution_source = 'model_proposed' WHERE id = v_version;
   v_rejected := false;
   BEGIN
     UPDATE question_versions SET solution_steps = '["changed again"]'::jsonb WHERE id = v_version;
@@ -75,8 +89,9 @@ BEGIN
     v_rejected := true;
   END;
   IF NOT v_rejected THEN
-    RAISE EXCEPTION 'an explanation changed without its provenance changing';
+    RAISE EXCEPTION 'an unchecked explanation changed without its provenance changing';
   END IF;
+  UPDATE question_versions SET solution_source = 'expert_verified' WHERE id = v_version;
 
   -- Everything that defines the question is still frozen.
   v_rejected := false;
