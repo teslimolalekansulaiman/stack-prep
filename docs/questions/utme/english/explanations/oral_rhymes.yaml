@@ -189,20 +189,20 @@ explanations:
   19928856:
     steps:
       - "Distribution is stressed on its third syllable: dis-tri-BU-tion."
-      - "This is a word-stress question rather than a rhyme, and it sits in the rhyme block in the source. It is flagged for re-classification."
+      - "It is a word-stress question rather than a rhyme, and sits in the rhyme block only because that is where the paper printed it; it has been re-filed under word stress."
     hint: "Say the word at normal speed and feel which syllable you push hardest."
   e3179bb5:
     steps:
       - "Irrevocable is stressed on its second syllable: ir-RE-vo-cable — or, in the spelling the paper uses, irreVOcable."
-      - "This is a word-stress question rather than a rhyme, and it is flagged for re-classification."
+      - "It is a word-stress question rather than a rhyme, and has been re-filed under word stress."
     hint: "The stress is earlier in this word than most people expect. Say it in a sentence."
   c9bd757c:
     steps:
       - "Stressing ACROSS in 'My house is across the road' answers the question of where the house is in relation to the road."
-      - "Is my house on the road? is the question that stress is answering. This is an emphatic-stress question rather than a rhyme, and it is flagged for re-classification."
+      - "Is my house on the road? is the question that stress is answering. It is an emphatic-stress question rather than a rhyme, and has been re-filed under emphatic stress."
     hint: "The stressed word is the answer. Work out what question that word would be answering."
   5dac3f36:
     steps:
       - "Stressing AT in 'The shop closes at 4pm' insists on the exact time rather than an approximate one."
-      - "Does the shop close by 4pm? is the question that stress answers. This is an emphatic-stress question rather than a rhyme, and it is flagged for re-classification."
+      - "Does the shop close by 4pm? is the question that stress answers. It is an emphatic-stress question rather than a rhyme, and has been re-filed under emphatic stress."
     hint: "Emphasis on a small word like at usually corrects something. What is being corrected?"
