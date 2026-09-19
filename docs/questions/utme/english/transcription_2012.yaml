@@ -17,25 +17,21 @@ source:
 passages:
 - id: cloze_2012
   label: CLOZE PASSAGE
-  text: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options are
-    provided. Choose the most appropriate options for each gap. Each question carries 3 marks The medical
-    definition of miscarriage is the spontaneous loss of a pregnancy before twenty-four weeks. Miscarriage
-    is very common, occurring in ten to twenty per cent, of conformed pregnancies. Most of these feature
-    …16… [A. In the penultimate B. In the first C. around D. For] twelve week of pregnancy. The most common
-    …17… [A. type B. Cause C. Period D. Symptom] is vaginal bleeding, which can range from light spotting
-    to heavier than a period. You may see blood clots, brown discharge or other tissues that are not …18…
-    [A. clearly B. naturally C. directly D. Medically] identifiable. Sometimes a sac-like structure is
-    seen. Often, there is cramping with pelvic or back pain. You may find that the usual symptoms of pregnancy,
-    such as breast tenderness, feeling sick and urine more …19… having to pass [A. painfully B. frequently
-    C. gradually D. Commonly] than usual stop unexpectedly. Sometimes there are no signs or symptoms of
-    miscarriage and pregnancy symptoms continue, only …20… and the miscarriage is [A. prevented B. managed
-    C. discovered D. Stopped] in a routine scan. About half of all early miscarriages happen because of
-    a problem in the way the genetic material from the egg and sperm combined during …21… [A. have pregnancy
-    B. incubation C. mating D. Fertilization]. It can be difficult to find out why this has …22… [A. occurred
-    B. enlarged C. continued D. emerged], but it is more likely to be due to random chance than to any
-    underlying problem with either parent. Imbalances in pregnancy hormones, problems in the immune …23…
-    [A. syndrome B. process C. response D. system], and some serious infections are also thought to make
-    miscarriages more likely. The risk …24… [A. increases of miscarriage B. starts C. reduces D. appears]
+  text: Most of these feature …16… [A. In the penultimate B. In the first C. around D. For] twelve week
+    of pregnancy. The most common …17… [A. type B. Cause C. Period D. Symptom] is vaginal bleeding, which
+    can range from light spotting to heavier than a period. You may see blood clots, brown discharge or
+    other tissues that are not …18… [A. clearly B. naturally C. directly D. Medically] identifiable. Sometimes
+    a sac-like structure is seen. Often, there is cramping with pelvic or back pain. You may find that
+    the usual symptoms of pregnancy, such as breast tenderness, feeling sick and urine more …19… having
+    to pass [A. painfully B. frequently C. gradually D. Commonly] than usual stop unexpectedly. Sometimes
+    there are no signs or symptoms of miscarriage and pregnancy symptoms continue, only …20… and the miscarriage
+    is [A. prevented B. managed C. discovered D. Stopped] in a routine scan. About half of all early miscarriages
+    happen because of a problem in the way the genetic material from the egg and sperm combined during
+    …21… [A. have pregnancy B. incubation C. mating D. Fertilization]. It can be difficult to find out
+    why this has …22… [A. occurred B. enlarged C. continued D. emerged], but it is more likely to be due
+    to random chance than to any underlying problem with either parent. Imbalances in pregnancy hormones,
+    problems in the immune …23… [A. syndrome B. process C. response D. system], and some serious infections
+    are also thought to make miscarriages more likely. The risk …24… [A.
 - id: passage_2012_passage_i
   label: PASSAGE_I
   text: 'Religion in its various forms is very strong in Nigeria. In order words, Nigerian people are

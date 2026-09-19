@@ -166,41 +166,41 @@ levels:
   level_confidence: low
   reason: base 3 for ENG.B.3.i
 - number: 42
-  proposed_level: 3
-  level_confidence: low
-  reason: base 3 for ENG.B.3.i
-- number: 43
-  proposed_level: 3
-  level_confidence: low
-  reason: base 3 for ENG.B.3.i
-- number: 44
-  proposed_level: 3
-  level_confidence: low
-  reason: base 3 for ENG.B.3.i
-- number: 45
-  proposed_level: 3
-  level_confidence: low
-  reason: base 3 for ENG.B.3.i
-- number: 46
-  proposed_level: 3
-  level_confidence: low
-  reason: base 3 for ENG.B.3.i
-- number: 47
-  proposed_level: 3
-  level_confidence: low
-  reason: base 3 for ENG.B.3.i
-- number: 48
-  proposed_level: 3
-  level_confidence: low
-  reason: base 3 for ENG.B.3.i
-- number: 49
   proposed_level: 4
   level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; +1: the answer ''conserve'' is long and outside common vocabulary'
-- number: 50
-  proposed_level: 2
+  reason: base 4 for ENG.B.7.i
+- number: 43
+  proposed_level: 4
   level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; -1: the answer ''for'' is an everyday word'
+  reason: base 4 for ENG.B.7.i
+- number: 44
+  proposed_level: 4
+  level_confidence: low
+  reason: base 4 for ENG.B.7.i
+- number: 45
+  proposed_level: 4
+  level_confidence: low
+  reason: base 4 for ENG.B.7.i
+- number: 46
+  proposed_level: 4
+  level_confidence: low
+  reason: base 4 for ENG.B.7.i
+- number: 47
+  proposed_level: 4
+  level_confidence: low
+  reason: base 4 for ENG.B.7.i
+- number: 48
+  proposed_level: 4
+  level_confidence: low
+  reason: base 4 for ENG.B.7.i
+- number: 49
+  proposed_level: 5
+  level_confidence: low
+  reason: 'base 4 for ENG.B.7.i; +1: the answer ''conserve'' is long and outside common vocabulary'
+- number: 50
+  proposed_level: 3
+  level_confidence: low
+  reason: 'base 4 for ENG.B.7.i; -1: the answer ''for'' is an everyday word'
 - number: 51
   proposed_level: 4
   level_confidence: low

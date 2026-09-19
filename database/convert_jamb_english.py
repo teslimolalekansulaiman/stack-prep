@@ -215,6 +215,8 @@ OPTION_END_RE = re.compile(
     r"\]|\bIn each of\b|\bChoose the (?:option|most|word|nearest|appropriate)\b|"
     r"\bSelect the options?\b|\bPick the option\b|"
     r"\bFor (?:these|the|this) questions?\b|\bFrom (?:these |the )?questions?\b|"
+    r"\bIn (?:each|the) questions?\b|"
+    r"\b(?:These\s+)?questions?\s+\d{1,3}\s+to\s+\d{1,3}\s+are based\b|"
     r"\bPASSAGE\b|\bThe passage below\b|\bFrom the words\b", re.I)
 
 #: The sentence that introduces the block AFTER a cloze passage. Deliberately narrow: the
@@ -247,6 +249,39 @@ def clean(text: str) -> str:
     return text.strip(" .;:")
 
 
+def close_unclosed(found: dict[str, str]) -> dict[str, str]:
+    """Cut a runaway last option back to the length of the ones beside it.
+
+    Bracketed option lists end at their closing bracket, but the source does not always print
+    one — 2013's gap 19 reads "(A. form B. atmosphere C. space D. height around the bomb. The
+    gravity waves can also resemble ordinary" with the bracket never closed, and option D
+    swallows the rest of the sentence.
+
+    The four options of a cloze gap are parallel by construction: they are the same part of
+    speech, filling the same slot, and they are printed at the same length. So where the last
+    one runs to several times the length of every other, the excess is prose rather than
+    option, and it is cut at the word count its siblings share. Anything less lopsided is left
+    alone, because a genuinely longer option is possible and a guess is not worth its loss.
+    """
+    letters = sorted(found)
+    if len(letters) < 2:
+        return found
+    last = letters[-1]
+    sizes = {letter: len(found[letter].split()) for letter in letters}
+    others = max(sizes[letter] for letter in letters[:-1])
+    if sizes[last] > max(2 * others, others + 3):
+        found = dict(found)
+        found[last] = clean(" ".join(found[last].split()[:others]))
+    # A cloze option is a word or a phrase; it never runs from one sentence into the next. So
+    # a full stop followed by a capital inside the last option is where the option stopped and
+    # the passage carried on — 2017's gap 13 kept "management. This" after the cut above.
+    tail = re.split(r"\.\s+(?=[A-Z])", found[last])[0]
+    if tail != found[last]:
+        found = dict(found)
+        found[last] = clean(tail)
+    return found
+
+
 def parse_cloze(lines: list[Line], first: int | None,
                 last: int | None) -> tuple[list[Question], str]:
     """Gaps numbered inside the passage prose.
@@ -256,7 +291,12 @@ def parse_cloze(lines: list[Line], first: int | None,
     the option markers are found separately and then walked in order, so any mixture of
     brackets, parentheses, dots, dashes and letter case comes out the same.
     """
-    body = " ".join(line.text for line in lines)
+    pieces, line_starts, cursor = [], set(), 0
+    for line in lines:
+        line_starts.add(cursor)
+        pieces.append(line.text)
+        cursor += len(line.text) + 1
+    body = " ".join(pieces)
     # A cloze block ends where the next block's direction begins. When the paper prints a gap
     # range — "gaps numbered 11 to 20" — that bound does the work, but several years print no
     # range at all, and then every numbered thing after the passage looks like a gap: the
@@ -272,9 +312,31 @@ def parse_cloze(lines: list[Line], first: int | None,
         for number in re.findall(r"(?:[-.…]\s*){1,10}(\d{1,3})\b", line.text):
             page_of.setdefault(int(number), line.page)
 
-    gap_re = re.compile(r"(?:[-.…]\s*){1,12}(\d{1,3})\s*(?:[-.…]\s*)*")
+    gap_re = re.compile(r"((?:[-.…]\s*){1,12})(\d{1,3})\s*((?:[-.…]\s*)*)")
     option_re = re.compile(r"[(\[]\s*([A-Da-d])\s*[).\]]\s*|(?:(?<=\s)|^)([A-Da-d])[.)]\s+")
-    gaps = [(m.start(), m.end(), int(m.group(1))) for m in gap_re.finditer(body)]
+    # What separates a cloze gap from an ordinary question number is not how many dots sit
+    # beside it — a sentence ending in a full stop puts one there too — but WHERE it is. A gap
+    # is inside the passage prose; a question number begins a line. Joining the lines into one
+    # string throws that away, so the line starts are kept and a candidate that begins one is
+    # not a gap.
+    #
+    # This is what lost the stems of 2015 questions 40 to 45 and 2018's 23 to 28: each follows
+    # a sentence ending in a full stop, each begins its own line, and each is a
+    # sentence-interpretation question that came out stored as "Gap 40 in the cloze passage".
+    def is_gap(match: re.Match[str]) -> bool:
+        digits_at = match.start() + len(match.group(1))
+        if not any(start <= digits_at <= start + 2 for start in line_starts):
+            return True
+        # A gap can fall at the start of a line all the same: the passage is set in two narrow
+        # columns and the line breaks wherever the column ends, which for 2010 put four of its
+        # ten gaps at the left margin. What separates the two is what FOLLOWS the number. A
+        # question number takes one full stop or bracket and then its stem, and the stop it
+        # inherits from the end of the line above is a single one; a gap is marked by a
+        # leader — "..... 11", "--- 17 (a)" — which is a run of them, on one side or both.
+        leader = re.compile(r"…|[-.]{2,}")
+        return bool(leader.search(match.group(1)) or leader.search(match.group(3)))
+
+    gaps = [(m.start(), m.end(), int(m.group(2))) for m in gap_re.finditer(body) if is_gap(m)]
     options = [(m.start(), m.end(), (m.group(1) or m.group(2)).upper())
                for m in option_re.finditer(body)]
 
@@ -297,9 +359,15 @@ def parse_cloze(lines: list[Line], first: int | None,
         found: dict[str, str] = {}
         for index, (_s, text_start, letter) in enumerate(picked):
             text_end = picked[index + 1][0] if index + 1 < len(picked) else limit
-            found[letter] = clean(re.split(r"[-.…]{2,}", body[text_start:text_end])[0])
+            piece = re.split(r"[-.…]{2,}", body[text_start:text_end])[0]
+            # An inline option list is printed inside brackets, so the last option ends at the
+            # closing bracket. Without this the prose that follows the list is stored as part
+            # of option D: 2013's gap 13 came out as "scale), it is impossible to describe
+            # what happens in details. However we can be reasonably sure of the main effects..."
+            found[letter] = clean(re.split(r"[)\]}]", piece)[0])
         if any(not value for value in found.values()):
             continue
+        found = close_unclosed(found)
         questions.append(Question(
             number=number,
             page=page_of.get(number, lines[0].page if lines else 1),
@@ -315,7 +383,23 @@ def parse_cloze(lines: list[Line], first: int | None,
         if question.number not in seen:
             seen.add(question.number)
             unique.append(question)
-    passage = re.sub(r"\s+", " ", body).strip()
+    # The passage a student is shown should be the passage the gaps are in, not everything the
+    # parser happened to be handed. Where no gap range is printed, `body` can be a whole year's
+    # comprehension section: 2013's cloze passage came out at 1,847 words carrying two
+    # unrelated passages, when the gaps all sit in one of them. Trim to the span the gaps
+    # actually cover, with a sentence of run-up and run-out so the first and last gaps still
+    # have their context.
+    span = body
+    kept = [g for g in gaps if any(q.number == g[2] for q in unique)]
+    if kept:
+        first_at = min(g[0] for g in kept)
+        last_at = max(g[1] for g in kept)
+        opening = body.rfind(". ", 0, max(0, first_at - 1))
+        start = 0 if opening < 0 or first_at - opening > 600 else opening + 2
+        closing = body.find(". ", last_at)
+        end = len(body) if closing < 0 or closing - last_at > 600 else closing + 1
+        span = body[start:end]
+    passage = re.sub(r"\s+", " ", span).strip()
     return unique, passage
 
 
@@ -492,8 +576,9 @@ def directions(body: list[Line]) -> tuple[dict[int, str], list[tuple[int, str]]]
         # the nearest in meaning" was absent, which is why nine 2016 synonym questions were
         # filed as antonyms.
         trimmed = re.search(r"(In each of.*|In the following.*|From the words.*|"
-                            r"Choose the (?:option|word|nearest|appropriate|most appropriate|"
-                            r"most suitable).*|"
+                            r"Choose the (?:option|word|nearest|appropriate|interpretation|"
+                            r"most appropriate|most suitable).*|"
+                            r"After each of the following.*|"
                             r"Select the options?.*|Pick the option.*|"
                             r"For (?:these|the|this) questions?.*|From (?:these )?questions?.*|"
                             r"The passage below.*|Fill each gap.*)", text, re.I)

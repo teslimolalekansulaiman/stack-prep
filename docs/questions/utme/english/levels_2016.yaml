@@ -49,22 +49,6 @@ levels:
   proposed_level: 4
   level_confidence: low
   reason: base 4 for ENG.A.3.i
-- number: 16
-  proposed_level: 4
-  level_confidence: low
-  reason: 'base 3 for ENG.A.6.i; +1: long options, so the work is reading and holding four alternatives'
-- number: 17
-  proposed_level: 4
-  level_confidence: low
-  reason: 'base 3 for ENG.A.6.i; +1: long options, so the work is reading and holding four alternatives'
-- number: 18
-  proposed_level: 2
-  level_confidence: low
-  reason: 'base 3 for ENG.A.6.i; -1: short stem and short options, so little to hold at once'
-- number: 20
-  proposed_level: 2
-  level_confidence: low
-  reason: 'base 3 for ENG.A.6.i; -1: short stem and short options, so little to hold at once'
 - number: 21
   proposed_level: 3
   level_confidence: low
@@ -208,39 +192,39 @@ levels:
 - number: 57
   proposed_level: 3
   level_confidence: low
-  reason: base 3 for ENG.B.2.i
+  reason: base 3 for ENG.B.1.i
 - number: 58
   proposed_level: 3
   level_confidence: low
-  reason: base 3 for ENG.B.2.i
+  reason: base 3 for ENG.B.1.i
 - number: 59
   proposed_level: 2
   level_confidence: low
-  reason: 'base 3 for ENG.B.2.i; -1: the answer ''easy'' is an everyday word'
+  reason: 'base 3 for ENG.B.1.i; -1: the answer ''easy'' is an everyday word'
 - number: 60
   proposed_level: 3
   level_confidence: low
-  reason: base 3 for ENG.B.2.i
+  reason: base 3 for ENG.B.1.i
 - number: 61
   proposed_level: 3
   level_confidence: low
-  reason: base 3 for ENG.B.2.i
+  reason: base 3 for ENG.B.1.i
 - number: 62
   proposed_level: 3
   level_confidence: low
-  reason: base 3 for ENG.B.2.i
+  reason: base 3 for ENG.B.1.i
 - number: 63
   proposed_level: 4
   level_confidence: low
-  reason: 'base 3 for ENG.B.2.i; +1: the answer ''dismayed'' is long and outside common vocabulary'
+  reason: 'base 3 for ENG.B.1.i; +1: the answer ''dismayed'' is long and outside common vocabulary'
 - number: 64
   proposed_level: 3
   level_confidence: low
-  reason: base 3 for ENG.B.2.i
+  reason: base 3 for ENG.B.1.i
 - number: 65
-  proposed_level: 3
+  proposed_level: 5
   level_confidence: low
-  reason: base 3 for ENG.B.3.i
+  reason: 'base 4 for ENG.B.7.i; +1: the answer ''Inviting'' is long and outside common vocabulary'
 - number: 66
   proposed_level: 3
   level_confidence: low
@@ -254,9 +238,9 @@ levels:
   level_confidence: low
   reason: base 3 for ENG.B.3.i
 - number: 69
-  proposed_level: 4
+  proposed_level: 5
   level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; +1: the answer ''monument'' is long and outside common vocabulary'
+  reason: 'base 4 for ENG.B.7.i; +1: the answer ''monument'' is long and outside common vocabulary'
 - number: 70
   proposed_level: 3
   level_confidence: low
@@ -272,7 +256,7 @@ levels:
 - number: 73
   proposed_level: 3
   level_confidence: low
-  reason: base 3 for ENG.B.3.i
+  reason: base 3 for ENG.B.5.i
 - number: 75
   proposed_level: 3
   level_confidence: low
@@ -282,13 +266,13 @@ levels:
   level_confidence: low
   reason: base 3 for ENG.B.3.i
 - number: 77
-  proposed_level: 2
+  proposed_level: 3
   level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; -1: the answer ''any'' is an everyday word'
+  reason: 'base 4 for ENG.B.7.i; -1: the answer ''any'' is an everyday word'
 - number: 78
-  proposed_level: 2
+  proposed_level: 3
   level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; -1: the answer ''by'' is an everyday word'
+  reason: 'base 4 for ENG.B.7.i; -1: the answer ''by'' is an everyday word'
 - number: 79
   proposed_level: 2
   level_confidence: low
@@ -298,9 +282,9 @@ levels:
   level_confidence: low
   reason: base 3 for ENG.B.3.i
 - number: 81
-  proposed_level: 4
+  proposed_level: 5
   level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; +1: the answer ''fluorescent'' is long and outside common vocabulary'
+  reason: 'base 4 for ENG.B.7.i; +1: the answer ''fluorescent'' is long and outside common vocabulary'
 - number: 82
   proposed_level: 3
   level_confidence: low
@@ -308,15 +292,15 @@ levels:
 - number: 83
   proposed_level: 3
   level_confidence: low
-  reason: base 3 for ENG.B.3.i
+  reason: base 3 for ENG.B.5.i
 - number: 84
   proposed_level: 4
   level_confidence: low
   reason: 'base 3 for ENG.B.3.i; +1: the answer ''argument'' is long and outside common vocabulary'
 - number: 85
-  proposed_level: 2
+  proposed_level: 3
   level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; -1: the answer ''might'' is an everyday word'
+  reason: 'base 4 for ENG.B.7.i; -1: the answer ''might'' is an everyday word'
 - number: 86
   proposed_level: 3
   level_confidence: low
@@ -356,11 +340,11 @@ levels:
 - number: 95
   proposed_level: 4
   level_confidence: low
-  reason: 'base 3 for ENG.C.3.i; +1: ''Advantages'' has about 4 syllables'
+  reason: 'base 3 for ENG.C.4.i; +1: ''Advantages'' has about 4 syllables'
 - number: 96
-  proposed_level: 2
+  proposed_level: 4
   level_confidence: low
-  reason: base 2 for ENG.A.1.i
+  reason: 'base 3 for ENG.C.4.i; +1: ''Intentional'' has about 4 syllables'
 - number: 97
   proposed_level: 3
   level_confidence: low

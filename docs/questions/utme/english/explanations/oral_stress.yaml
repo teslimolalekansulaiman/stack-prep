@@ -51,7 +51,7 @@ explanations:
       - "Imperialism is stressed on its second syllable: im-PE-ria-lism."
       - "It follows imperial, and the -ism ending does not move the stress."
     hint: "Say imperial, then add -ism without changing where you push."
-  bbe3c388:
+  dd5918cf:
     steps:
       - "Dedication is stressed on its third syllable: de-di-CA-tion, like every other -ation word."
       - "The options as printed have lost their capitals, so none of them shows that stress clearly. This question is flagged for a second look."
@@ -61,7 +61,7 @@ explanations:
       - "International is stressed on its third syllable: in-ter-NA-tio-nal."
       - "It follows national, which is stressed on NA, and the prefix inter- does not take the stress."
     hint: "Say national, then put inter- in front without moving the push."
-  9c8b898c:
+  2b8be043:
     steps:
       - "Information is stressed on its third syllable: in-for-MA-tion."
       - "All four options as printed are identical, so the question cannot be answered as it stands. It is flagged for a second look."
@@ -71,12 +71,12 @@ explanations:
       - "Valedictory is stressed on its third syllable: va-le-DIC-to-ry."
       - "The same shape as satisfactory: -ory pulls the stress two syllables back from the end."
     hint: "Compare it with satisfactory, which is stressed the same way."
-  1a12090d:
+  398bcdc2:
     steps:
       - "Congratulation is stressed on its fourth syllable: con-gra-tu-LA-tion — the a before -tion, like every -ation word."
       - "The published key gives CONgratulation, which puts the stress on the prefix. This question is flagged for a second look."
     hint: "Say congratulations aloud as you would to a friend and feel where the push lands."
-  c1c0d254:
+  d69a47e1:
     steps:
       - "Conspiracy is stressed on its second syllable: con-SPI-ra-cy."
       - "The published key gives conspiraCY, which stresses the last syllable. This question is flagged for a second look."
@@ -91,7 +91,7 @@ explanations:
       - "Certification is stressed on its fourth syllable: cer-ti-fi-CA-tion."
       - "The -ation rule again: the stress falls on the a before -tion, however long the word is."
     hint: "Ignore everything but the ending. -ation decides it."
-  8bc24517:
+  e4efc155:
     steps:
       - "Motivation is stressed on its third syllable: mo-ti-VA-tion."
       - "The same -ation rule. Note that the printed direction for the next block has run into this question's last option in the source."
@@ -116,7 +116,7 @@ explanations:
       - "Incapacitate is stressed on its third syllable: in-ca-PA-ci-tate."
       - "It follows capacity, which is stressed on PA, and the prefix in- does not take the stress."
     hint: "Prefixes are almost never stressed. Look inside the word for the part that is."
-  0683a860:
+  218c9668:
     steps:
       - "Encouragement is stressed on its second syllable: en-COU-rage-ment — it follows encourage."
       - "The published key gives Encouragement, which stresses the prefix. This question is flagged for a second look."

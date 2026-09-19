@@ -56,7 +56,7 @@ explanations:
       - "The a in glacier is a short /æ/ in the pronunciation this paper is testing — the a of cat."
       - "Glass has that same short a. Gleam has a long ee and feign has the vowel of day."
     hint: "Compare the first syllables. Two of the options have long vowels there."
-  c762d66c:
+  dda4edf3:
     steps:
       - "Laud is said /lɔːd/ — the long aw of saw."
       - "The published key gives loud, which has the ow of now. Core is the option with the same /ɔː/, and this question is flagged for a second look."
@@ -66,7 +66,7 @@ explanations:
       - "The o in coma is the long /əʊ/ of go."
       - "Cogent has that same long o. Comma and come both have short vowels, and colonel is said kernel."
     hint: "Coma and comma differ by one letter and by a whole vowel sound."
-  f0b40fb5:
+  a960018a:
     steps:
       - "Cool has the long /uː/ — a full, held oo."
       - "The published key gives full, which has the short /ʊ/ of put. Luke is the option with the same long oo, and this question is flagged for a second look."
@@ -106,7 +106,7 @@ explanations:
       - "The ge in prestige is said /ʒ/ — the soft buzz in the middle of vision."
       - "Leisure has that same sound. Badge and reggae have the harder /dʒ/ and /g/."
     hint: "Prestige is a French word and keeps its French ending. It does not end like badge."
-  51ca1547:
+  2be551e3:
     steps:
       - "In knot the k is silent, so the word begins with /n/."
       - "Norm begins with that same n. Cot and king begin with a k sound, and keep does too."

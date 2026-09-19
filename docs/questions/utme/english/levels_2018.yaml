@@ -68,47 +68,51 @@ levels:
 - number: 23
   proposed_level: 3
   level_confidence: low
-  reason: base 3 for ENG.A.6.i
+  reason: base 3 for ENG.B.3.ii
 - number: 24
   proposed_level: 3
   level_confidence: low
-  reason: base 3 for ENG.A.6.i
+  reason: base 3 for ENG.B.3.ii
 - number: 25
   proposed_level: 3
   level_confidence: low
-  reason: base 3 for ENG.A.6.i
+  reason: base 3 for ENG.B.3.ii
 - number: 26
-  proposed_level: 2
+  proposed_level: 3
   level_confidence: low
-  reason: 'base 3 for ENG.A.6.i; -1: short stem and short options, so little to hold at once'
+  reason: base 3 for ENG.B.3.ii
 - number: 27
   proposed_level: 3
   level_confidence: low
-  reason: base 3 for ENG.A.6.i
+  reason: base 3 for ENG.B.3.ii
 - number: 28
-  proposed_level: 2
+  proposed_level: 3
   level_confidence: low
-  reason: 'base 3 for ENG.A.6.i; -1: short stem and short options, so little to hold at once'
+  reason: base 3 for ENG.B.3.ii
 - number: 29
   proposed_level: 4
   level_confidence: low
-  reason: 'base 3 for ENG.A.6.i; +1: long options, so the work is reading and holding four alternatives'
+  reason: 'base 3 for ENG.B.3.ii; +1: long options, so the work is reading and holding four alternatives'
 - number: 30
-  proposed_level: 4
+  proposed_level: 3
   level_confidence: low
-  reason: 'base 3 for ENG.A.6.i; +1: long options, so the work is reading and holding four alternatives'
+  reason: base 3 for ENG.B.3.ii
 - number: 31
   proposed_level: 4
   level_confidence: low
-  reason: 'base 3 for ENG.A.6.i; +1: long options, so the work is reading and holding four alternatives'
+  reason: 'base 3 for ENG.B.3.ii; +1: long options, so the work is reading and holding four alternatives'
 - number: 32
   proposed_level: 3
   level_confidence: low
-  reason: base 3 for ENG.A.6.i
+  reason: base 3 for ENG.B.3.ii
 - number: 33
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.3.ii
+- number: 34
   proposed_level: 4
   level_confidence: low
-  reason: 'base 3 for ENG.A.6.i; +1: long options, so the work is reading and holding four alternatives'
+  reason: 'base 3 for ENG.B.2.i; +1: the answer ''carefree'' is long and outside common vocabulary'
 - number: 35
   proposed_level: 4
   level_confidence: low
@@ -138,9 +142,9 @@ levels:
   level_confidence: low
   reason: base 3 for ENG.B.2.i
 - number: 43
-  proposed_level: 3
+  proposed_level: 4
   level_confidence: low
-  reason: base 3 for ENG.B.2.i
+  reason: 'base 3 for ENG.B.2.i; +1: the answer ''receptiveness'' is long and outside common vocabulary'
 - number: 50
   proposed_level: 3
   level_confidence: low

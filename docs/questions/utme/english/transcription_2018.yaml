@@ -17,28 +17,26 @@ source:
 passages:
 - id: cloze_2018
   label: CLOZE PASSAGE
-  text: The passage below has gaps immediately following each gap, four options are provided. Choose the
-    most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
-    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
-    others including ... 8... [A. catarrh B. runny-nose C. headache D. influenza] known also as the ...
-    9... cold [A. common B. sporadic C. universal D. regular]. Outbreaks of many of these diseases have
-    been brought under control in the last fifty years. Some 10... [A. pains B. fevers C. infection D.
-    traces] like measles and whooping cough still pose a great danger to younger children. The ...11...
-    symptoms B. appearance C. feels D. signs] of measles are more easily ... 12... [A. diagnosed B. treated
-    C. dealt with a handled] than those of whooping cough. Unlike that of many others, the virus of measles
-    more easily remain ...13... [A. unchanged B. constant C. undiscovered D. erratic] for hundreds of
-    years. However, once you have had an ...14...[A. epidemic B. encounter C. attack D. indisposition]
-    of this dreadful disease, you develop an ... 15... [ A. impurity B. armour C. immunity D. ability]
-    which is almost complete and long lasting. Modern science has made available ... 16 ...[A. injections
-    B. medicine C. tablets D. vaccines to prevent many childhood diseases and this is the only guarantee
-    of ... 17... [A. freedom B. discharge C. cure 0. protection] from these scourges. More effective treatment
-    of Complication arising from these childhood diseases using penicillin and other ...18... [A. relievers
-    B. treatments C. antibiotics D. Pills] has also helped to reduce the ... 19... [A. high B. mortality
-    C. killing D dangerous] rate among children. It is universally accepted that good ...20... [A. health
-    B. body C. sense D. development] is the right of every human being and children. You do not have to
-    die from these diseases which wiped out the whole ...21... [A. countries B. areas C. communities D.
-    states] in the middle Ages. We have today ...22... [A. bitter B. lovely C. potent D. marvellous] drugs
-    which give protection against most childhood diseases.
+  text: Mankind has been ravaged by many virus and ...7... [A. germ B. bacterial C. dirty D. mosquito]
+    diseases such as measles, but tuberculosis, diarrhoea and many others including ... 8... [A. catarrh
+    B. runny-nose C. headache D. influenza] known also as the ... 9... cold [A. common B. sporadic C.
+    universal D. regular]. Outbreaks of many of these diseases have been brought under control in the
+    last fifty years. Some 10... [A. pains B. fevers C. infection D. traces] like measles and whooping
+    cough still pose a great danger to younger children. The ...11... symptoms B. appearance C. feels
+    D. signs] of measles are more easily ... 12... [A. diagnosed B. treated C. dealt with a handled] than
+    those of whooping cough. Unlike that of many others, the virus of measles more easily remain ...13...
+    [A. unchanged B. constant C. undiscovered D. erratic] for hundreds of years. However, once you have
+    had an ...14...[A. epidemic B. encounter C. attack D. indisposition] of this dreadful disease, you
+    develop an ... 15... [ A. impurity B. armour C. immunity D. ability] which is almost complete and
+    long lasting. Modern science has made available ... 16 ...[A. injections B. medicine C. tablets D.
+    vaccines to prevent many childhood diseases and this is the only guarantee of ... 17... [A. freedom
+    B. discharge C. cure 0. protection] from these scourges. More effective treatment of Complication
+    arising from these childhood diseases using penicillin and other ...18... [A. relievers B. treatments
+    C. antibiotics D. Pills] has also helped to reduce the ... 19... [A. high B. mortality C. killing
+    D dangerous] rate among children. It is universally accepted that good ...20... [A. health B. body
+    C. sense D. development] is the right of every human being and children. You do not have to die from
+    these diseases which wiped out the whole ...21... [A. countries B. areas C. communities D. states]
+    in the middle Ages. We have today ...22... [A.
 - id: passage_2018_passage_a
   label: PASSAGE_A
   text: 'Read the following passage and answer the questions that follow. Returning home after a decade
@@ -248,7 +246,7 @@ questions:
     A: injections
     B: medicine
     C: tablets
-    D: vaccines to prevent many childhood diseases and this is the only guarantee of
+    D: vaccines
   proposed_answer: D
   answer_confidence: medium
   proposed_skill: ENG.A.6.i
@@ -329,10 +327,8 @@ questions:
 - number: 23
   page: 161
   section: null
-  instruction: The passage below has gaps immediately following each gap, four options are provided. Choose
-    the most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
-    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
-    others including ... 8... [A. catarrh
+  instruction: After each of the following sentences, a list of possible interpretations of the sentence
+    is given. Choose the interpretation that you consider appropriate for each sentence
   stem: When asked to state her side of the story, Bunmi started by beating about the bush. This means
     that Bunmi
   options:
@@ -342,16 +338,14 @@ questions:
     D: approached the subject without coming to the point
   proposed_answer: D
   answer_confidence: medium
-  proposed_skill: ENG.A.6.i
-  skill_reason: Printed direction is the cloze passage.
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
   passage_ref: passage_2018_passage_b
 - number: 24
   page: 161
   section: null
-  instruction: The passage below has gaps immediately following each gap, four options are provided. Choose
-    the most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
-    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
-    others including ... 8... [A. catarrh
+  instruction: After each of the following sentences, a list of possible interpretations of the sentence
+    is given. Choose the interpretation that you consider appropriate for each sentence
   stem: The amount he donated was small. He said it was his widow's mite. This means that
   options:
     A: he was a widow
@@ -360,16 +354,14 @@ questions:
     D: he could have given more
   proposed_answer: C
   answer_confidence: medium
-  proposed_skill: ENG.A.6.i
-  skill_reason: Printed direction is the cloze passage.
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
   passage_ref: passage_2018_passage_b
 - number: 25
   page: 161
   section: null
-  instruction: The passage below has gaps immediately following each gap, four options are provided. Choose
-    the most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
-    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
-    others including ... 8... [A. catarrh
+  instruction: After each of the following sentences, a list of possible interpretations of the sentence
+    is given. Choose the interpretation that you consider appropriate for each sentence
   stem: The friendship between Segun and Shehu has turned sour. This means that Segun and Shehu are
   options:
     A: no longer friends
@@ -378,16 +370,14 @@ questions:
     D: getting to understand each other
   proposed_answer: A
   answer_confidence: medium
-  proposed_skill: ENG.A.6.i
-  skill_reason: Printed direction is the cloze passage.
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
   passage_ref: passage_2018_passage_b
 - number: 26
   page: 161
   section: null
-  instruction: The passage below has gaps immediately following each gap, four options are provided. Choose
-    the most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
-    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
-    others including ... 8... [A. catarrh
+  instruction: After each of the following sentences, a list of possible interpretations of the sentence
+    is given. Choose the interpretation that you consider appropriate for each sentence
   stem: The driver smelled a rat when the policemen asked him to stop This means that the driver was
   options:
     A: reckless
@@ -396,16 +386,14 @@ questions:
     D: offensive
   proposed_answer: B
   answer_confidence: medium
-  proposed_skill: ENG.A.6.i
-  skill_reason: Printed direction is the cloze passage.
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
   passage_ref: null
 - number: 27
   page: 161
   section: null
-  instruction: The passage below has gaps immediately following each gap, four options are provided. Choose
-    the most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
-    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
-    others including ... 8... [A. catarrh
+  instruction: After each of the following sentences, a list of possible interpretations of the sentence
+    is given. Choose the interpretation that you consider appropriate for each sentence
   stem: The students were as advised to face their studies and let the sleeping dog lie. This means that
     the students should
   options:
@@ -415,16 +403,14 @@ questions:
     D: be as watchful as sleeping dogs
   proposed_answer: C
   answer_confidence: medium
-  proposed_skill: ENG.A.6.i
-  skill_reason: Printed direction is the cloze passage.
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
   passage_ref: null
 - number: 28
   page: 161
   section: null
-  instruction: The passage below has gaps immediately following each gap, four options are provided. Choose
-    the most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
-    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
-    others including ... 8... [A. catarrh
+  instruction: After each of the following sentences, a list of possible interpretations of the sentence
+    is given. Choose the interpretation that you consider appropriate for each sentence
   stem: From the way Ngozi behaves, it is obvious she is a greenhorn This means that Ngozi is
   options:
     A: arrogant
@@ -433,16 +419,14 @@ questions:
     D: uncivilised
   proposed_answer: C
   answer_confidence: medium
-  proposed_skill: ENG.A.6.i
-  skill_reason: Printed direction is the cloze passage.
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
   passage_ref: null
 - number: 29
   page: 162
   section: null
-  instruction: The passage below has gaps immediately following each gap, four options are provided. Choose
-    the most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
-    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
-    others including ... 8... [A. catarrh
+  instruction: After each of the following sentences, a list of possible interpretations of the sentence
+    is given. Choose the interpretation that you consider appropriate for each sentence
   stem: The economic situation is so bad that many wage earners are hardly able to make both ends meet.
     This means that
   options:
@@ -452,16 +436,14 @@ questions:
     D: most people engage in activities that bring them extra pay
   proposed_answer: C
   answer_confidence: medium
-  proposed_skill: ENG.A.6.i
-  skill_reason: Printed direction is the cloze passage.
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
   passage_ref: null
 - number: 30
   page: 162
   section: null
-  instruction: The passage below has gaps immediately following each gap, four options are provided. Choose
-    the most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
-    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
-    others including ... 8... [A. catarrh
+  instruction: After each of the following sentences, a list of possible interpretations of the sentence
+    is given. Choose the interpretation that you consider appropriate for each sentence
   stem: Since I found out his hypocritical nature, I have been keeping him at arm's length. This means
     that I
   options:
@@ -471,16 +453,14 @@ questions:
     D: stop visiting him
   proposed_answer: A
   answer_confidence: medium
-  proposed_skill: ENG.A.6.i
-  skill_reason: Printed direction is the cloze passage.
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
   passage_ref: null
 - number: 31
   page: 162
   section: null
-  instruction: The passage below has gaps immediately following each gap, four options are provided. Choose
-    the most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
-    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
-    others including ... 8... [A. catarrh
+  instruction: After each of the following sentences, a list of possible interpretations of the sentence
+    is given. Choose the interpretation that you consider appropriate for each sentence
   stem: I knew Okoronkwo's father very well and I must say that his son is a chip off the old block. Thy
     means that Okoronkwo
   options:
@@ -490,16 +470,14 @@ questions:
     D: has taken up a different profession from his father's
   proposed_answer: B
   answer_confidence: medium
-  proposed_skill: ENG.A.6.i
-  skill_reason: Printed direction is the cloze passage.
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
   passage_ref: null
 - number: 32
   page: 162
   section: null
-  instruction: The passage below has gaps immediately following each gap, four options are provided. Choose
-    the most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
-    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
-    others including ... 8... [A. catarrh
+  instruction: After each of the following sentences, a list of possible interpretations of the sentence
+    is given. Choose the interpretation that you consider appropriate for each sentence
   stem: The debating team was warned to make convincing points and not to play to the gallery This means
     that the team should not
   options:
@@ -509,16 +487,14 @@ questions:
     D: attempt to win cheap popularity
   proposed_answer: D
   answer_confidence: medium
-  proposed_skill: ENG.A.6.i
-  skill_reason: Printed direction is the cloze passage.
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
   passage_ref: null
 - number: 33
   page: 162
   section: null
-  instruction: The passage below has gaps immediately following each gap, four options are provided. Choose
-    the most appropriate option for each gap. Mankind has been ravaged by many virus and ...7... [A. germ
-    B. bacterial C. dirty D. mosquito] diseases such as measles, but tuberculosis, diarrhoea and many
-    others including ... 8... [A. catarrh
+  instruction: After each of the following sentences, a list of possible interpretations of the sentence
+    is given. Choose the interpretation that you consider appropriate for each sentence
   stem: Anyone who thinks that he can succeed in life without working hard is living in a fool's paradise.
     This means is that such a person
   options:
@@ -528,8 +504,8 @@ questions:
     D: is on the verge of insanity
   proposed_answer: A
   answer_confidence: medium
-  proposed_skill: ENG.A.6.i
-  skill_reason: Printed direction is the cloze passage.
+  proposed_skill: ENG.B.3.ii
+  skill_reason: Printed direction asks what information the sentence conveys.
   passage_ref: null
 - number: 34
   page: 163

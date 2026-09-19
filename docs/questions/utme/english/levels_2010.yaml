@@ -73,7 +73,7 @@ levels:
   proposed_level: 2
   level_confidence: low
   reason: 'base 3 for ENG.A.6.i; -1: short stem and short options, so little to hold at once'
-- number: 19
+- number: 18
   proposed_level: 2
   level_confidence: low
   reason: 'base 3 for ENG.A.6.i; -1: short stem and short options, so little to hold at once'
@@ -82,18 +82,6 @@ levels:
   level_confidence: low
   reason: 'base 3 for ENG.A.6.i; -1: short stem and short options, so little to hold at once'
 - number: 21
-  proposed_level: 2
-  level_confidence: low
-  reason: 'base 3 for ENG.A.6.i; -1: short stem and short options, so little to hold at once'
-- number: 22
-  proposed_level: 2
-  level_confidence: low
-  reason: 'base 3 for ENG.A.6.i; -1: short stem and short options, so little to hold at once'
-- number: 23
-  proposed_level: 3
-  level_confidence: low
-  reason: base 3 for ENG.A.6.i
-- number: 24
   proposed_level: 2
   level_confidence: low
   reason: 'base 3 for ENG.A.6.i; -1: short stem and short options, so little to hold at once'
@@ -260,83 +248,83 @@ levels:
 - number: 66
   proposed_level: 3
   level_confidence: low
-  reason: base 3 for ENG.B.3.i
+  reason: base 3 for ENG.B.5.i
 - number: 67
-  proposed_level: 2
-  level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; -1: the answer ''off'' is an everyday word'
-- number: 68
   proposed_level: 3
   level_confidence: low
-  reason: base 3 for ENG.B.3.i
+  reason: 'base 4 for ENG.B.7.i; -1: the answer ''off'' is an everyday word'
+- number: 68
+  proposed_level: 4
+  level_confidence: low
+  reason: base 4 for ENG.B.7.i
 - number: 69
   proposed_level: 3
   level_confidence: low
-  reason: base 3 for ENG.B.3.i
+  reason: base 3 for ENG.B.5.i
 - number: 70
-  proposed_level: 3
-  level_confidence: low
-  reason: base 3 for ENG.B.3.i
-- number: 71
-  proposed_level: 3
-  level_confidence: low
-  reason: base 3 for ENG.B.3.i
-- number: 72
   proposed_level: 4
   level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; +1: the answer ''sells/has'' is long and outside common vocabulary'
+  reason: base 4 for ENG.B.7.i
+- number: 71
+  proposed_level: 4
+  level_confidence: low
+  reason: base 4 for ENG.B.7.i
+- number: 72
+  proposed_level: 3
+  level_confidence: low
+  reason: base 3 for ENG.B.5.i
 - number: 73
   proposed_level: 3
   level_confidence: low
   reason: base 3 for ENG.B.3.i
 - number: 74
-  proposed_level: 2
+  proposed_level: 3
   level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; -1: the answer ''with'' is an everyday word'
+  reason: 'base 4 for ENG.B.7.i; -1: the answer ''with'' is an everyday word'
 - number: 75
-  proposed_level: 2
+  proposed_level: 3
   level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; -1: the answer ''from'' is an everyday word'
+  reason: 'base 4 for ENG.B.7.i; -1: the answer ''from'' is an everyday word'
 - number: 76
   proposed_level: 3
   level_confidence: low
   reason: base 3 for ENG.B.3.i
 - number: 77
-  proposed_level: 3
+  proposed_level: 4
   level_confidence: low
-  reason: base 3 for ENG.B.3.i
+  reason: base 4 for ENG.B.7.i
 - number: 78
-  proposed_level: 2
-  level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; -1: the answer ''on'' is an everyday word'
-- number: 79
   proposed_level: 3
   level_confidence: low
-  reason: base 3 for ENG.B.3.i
+  reason: 'base 4 for ENG.B.7.i; -1: the answer ''on'' is an everyday word'
+- number: 79
+  proposed_level: 4
+  level_confidence: low
+  reason: base 4 for ENG.B.7.i
 - number: 80
-  proposed_level: 4
+  proposed_level: 3
   level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; +1: the answer ''information/by'' is long and outside common vocabulary'
+  reason: base 3 for ENG.B.5.i
 - number: 81
-  proposed_level: 4
+  proposed_level: 5
   level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; +1: the answer ''legacies'' is long and outside common vocabulary'
+  reason: 'base 4 for ENG.B.7.i; +1: the answer ''legacies'' is long and outside common vocabulary'
 - number: 82
-  proposed_level: 4
+  proposed_level: 5
   level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; +1: the answer ''proscribed'' is long and outside common vocabulary'
+  reason: 'base 4 for ENG.B.7.i; +1: the answer ''proscribed'' is long and outside common vocabulary'
 - number: 83
-  proposed_level: 4
+  proposed_level: 5
   level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; +1: the answer ''exonerated'' is long and outside common vocabulary'
+  reason: 'base 4 for ENG.B.7.i; +1: the answer ''exonerated'' is long and outside common vocabulary'
 - number: 84
-  proposed_level: 2
+  proposed_level: 3
   level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; -1: the answer ''than'' is an everyday word'
+  reason: 'base 4 for ENG.B.7.i; -1: the answer ''than'' is an everyday word'
 - number: 85
-  proposed_level: 4
+  proposed_level: 5
   level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; +1: the answer ''circumvent'' is long and outside common vocabulary'
+  reason: 'base 4 for ENG.B.7.i; +1: the answer ''circumvent'' is long and outside common vocabulary'
 - number: 86
   proposed_level: 2
   level_confidence: low

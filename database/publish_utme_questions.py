@@ -254,6 +254,7 @@ async def run(subject_code: str, reviewer_id: str, dsn: str | None, apply: bool)
                    skill.code AS skill_code, sub.code AS subtopic_code,
                    v.answer_source,
                    jsonb_array_length(v.solution_steps) AS solution_steps,
+                   v.solution_source, v.hints,
                    EXISTS (
                      SELECT 1 FROM question_assets a
                      WHERE a.question_version_id = v.id
@@ -331,6 +332,12 @@ async def run(subject_code: str, reviewer_id: str, dsn: str | None, apply: bool)
                     steps: str | None = json.dumps(
                         [solution.format(key=row["key"] or "no option"), UNCHECKED]
                     )
+                    # A written explanation is not replaced by a generated one. This matters
+                    # for a question restored after a parser fix: it comes back as a draft and
+                    # passes through here again, and its explanation was written by a person
+                    # in between.
+                    if row["solution_source"] == "expert_verified":
+                        steps = None
                 else:
                     hint = MATHS[row["subtopic_code"]]
                     # Mathematics solutions were worked out with the answers and are the real
@@ -345,14 +352,18 @@ async def run(subject_code: str, reviewer_id: str, dsn: str | None, apply: bool)
                            level_confidence = 'low',
                            solution_steps = coalesce($2::jsonb, solution_steps),
                            hints = $3::jsonb,
-                           solution_source = 'model_proposed',
+                           solution_source = CASE WHEN $5 THEN solution_source
+                                                  ELSE 'model_proposed' END,
                            expected_seconds = $4
                      WHERE id = $1
                     """,
                     row["version_id"],
                     steps,
-                    json.dumps([hint]),
+                    # Keep a written hint too; only fill one in where none was written.
+                    row["hints"] if row["solution_source"] == "expert_verified"
+                    else json.dumps([hint]),
                     SECONDS_BY_LEVEL.get(int(row["level"] or 3), 60),
+                    row["solution_source"] == "expert_verified",
                 )
                 await conn.execute(
                     """

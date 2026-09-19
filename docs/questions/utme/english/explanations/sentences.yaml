@@ -45,7 +45,7 @@ explanations:
       - "Pronunciation is spelled without the o of pronounce — the noun drops it."
       - "All three wrong options keep the o or replace the c with a t, which is how most people misspell it."
     hint: "The verb is pronounce but the noun is pronunciation. The o goes."
-  f4a3fa78:
+  613b72c2:
     steps:
       - "Instead of takes a gerund, so the phrase is instead of pleading."
       - "The extraction has broken this question badly: the words instead and of are separated from each other and from the rest of the sentence. It is flagged for a second look."
@@ -60,7 +60,7 @@ explanations:
       - "To meddle in someone's affairs is to interfere in them — the fixed phrase takes in."
       - "Spy from, toy at and complain into are all combinations that do not exist."
     hint: "Three of these verbs are paired with prepositions they never take."
-  2fa290be:
+  2f3de05e:
     steps:
       - "Certain reason, without an article, is the form the paper is testing — a reason the speaker will not yet name."
       - "A certain reason is the commoner English; this question is flagged for a second look."
@@ -190,7 +190,7 @@ explanations:
       - "He was present uses the verb to be, so the tag repeats it in the negative: wasn't he."
       - "Didn't he would tag a sentence with an ordinary verb, and the other two change the tense."
     hint: "The tag mirrors whatever verb is already there. Here that verb is was."
-  fd8b93f3:
+  cc68678e:
     steps:
       - "These is plural, so the noun after it is plural: types. What follows of stays singular — types of programme."
       - "The commoner English is types of programmes; this question is flagged for a second look."

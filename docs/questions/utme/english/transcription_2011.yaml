@@ -17,27 +17,8 @@ source:
 passages:
 - id: cloze_2011
   label: CLOZE PASSAGE
-  text: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options are
-    provided. Choose the most appropriate option for each gap. Believe it or not, change is to human existence
-    what the blood is to the human body. We live in an era of amazing ……16…. [A. well-define, B. fast-paced,
-    C. favourable, D. social] change spawned by advancing technology and industrialization. However, man’s…...17….
-    [A. Knowledge of, B. attitude to, C. commitment to, D. opinion of] promoting and defending change
-    in a deliberate effort to establish ….18… [A customs, B companies, C trade-zone, D variations] that
-    man’s stimulate advancement for concern is proving unfavourable to the climate with threatening ….19….
-    [A repercussions B clouds C pressure D implication] Human-induced climate change has awakened widespread
-    concern across the globe. As a matter of fact, climate change is now….20….. [A. an acceptable B a
-    foremost C the only D the last] globe issue. It is a major test of [A popularity B Africa’s….21… energy
-    C ingenuity D incapability]! The forth Assessment Report (AR4) of the intergovernmental panel of climate
-    change (IPCC) confirm that human action are changing the earth’s climate and creating major disturbance
-    in human….22….[A. geography B society C systems D life] and ecosystems. The IPCC reports that world
-    has warmed by an average of 0.760c since pre- Industrial times. The rising global …23…. [A command
-    B demand C warning D supply] for energy and the adverse changes on each were commensurate with the
-    level of ….24…. [ A structure greenhouse B paints C emulsion D emissions] it spews out, perhaps Africa
-    would have been spared and would probably be just an amused spectator. But as it, this is not the
-    case. Here again, we see well-meaning global citizen appealing for the rest of the world to take responsibility
-    for the problem of Africa, a strategy that cannot, ……25…. thus far, be termed [A notable B liable
-    C credible D flexible]. LEXIS, STRUCTURE AND ORAL FORMS In each of questions 26 to 35, select the
-    option that best explains the information conveyed in the sentence.
+  text: We live in an era of amazing ……16…. [A. well-define, B. fast-paced, C. favourable, D. social]
+    change spawned by advancing technology and industrialization. However, man’s…...17…. [A.
 - id: passage_2011_passage_i
   label: PASSAGE_I
   text: 'In 1962, a team of scientists produce a special radio station that had a range of fifteen miles.
@@ -1639,7 +1620,7 @@ questions:
     A: cot
     B: keep
     C: norm
-    D: king In each question 92 to 94,
+    D: king
   proposed_answer: C
   answer_confidence: medium
   proposed_skill: ENG.C.2.i

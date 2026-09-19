@@ -251,7 +251,7 @@ explanations:
       - "Neither of us has seen it — the second clause repeats the first negative with either."
       - "My brother and I haven't seen the movie says it. The other three have one of them seeing it."
     hint: "Hasn't either means the same as neither has. Both of them are in the same position."
-  ce5a637a:
+  1d7a7a96:
     steps:
       - "Would have been given ... if his father had not complained is a third conditional: the condition failed, so the outcome did not happen."
       - "He wasn't given the car because his father complained keeps both halves. The others have him receiving it."
@@ -306,7 +306,7 @@ explanations:
       - "Didn't mind means was not bothered by it."
       - "He was not angry when I mentioned his name says it. The other options make him angry, or change what happened."
     hint: "Mind here means object to. Not minding is not objecting."
-  231369de:
+  7a2f0ca2:
     steps:
       - "Not unaware is a double negative: he was aware of their plight."
       - "The published key gives he felt their plight, which goes further than knowing; he knew of their plight is the match. This question is flagged for a second look."
@@ -321,8 +321,93 @@ explanations:
       - "No sooner had A happened than B happened means B followed immediately after A."
       - "The telephone rang just after he got into the pool says it. The options putting the call before or during change the order."
     hint: "No sooner ... than always puts the two events in order, with almost no gap."
-  1690a5e3:
+  c6496046:
     steps:
       - "Might just as well means there is no better alternative — staying at home is the sensible course."
       - "The published key gives I ought to stay at home in order to do well, which adds a purpose; staying at home was probably the best thing for me is the match. This question is flagged for a second look."
     hint: "Might as well suggests resignation to the best available option, not an aim."
+  9af03074:
+    steps:
+      - "The question asks why the others were wary of Samuel — the answer is what they feared he would do."
+      - "Try his tricks on them to know their secrets is what the caution was against. The other options describe embarrassments rather than the reason for watching him."
+    hint: "Caution is always against something. Read on to find what they thought he might do."
+  ee531535:
+    steps:
+      - "To halt the march of time is to stop events from taking their course — and nobody can."
+      - "She cannot change the way things happen says it. The options about marching and peace marches read the phrase literally."
+    hint: "Time is pictured as marching. What would halting it amount to?"
+  6dcfb97b:
+    steps:
+      - "A road to Damascus is a sudden change of conviction — the phrase comes from Saul's conversion on that road."
+      - "An experience that changes the way she thinks says it. The options about travelling to Damascus read the place literally."
+    hint: "The phrase is about a change of mind, not about a journey."
+  69722937:
+    steps:
+      - "A backwoodsman lives out in the backwoods — far from towns and from what goes on in them."
+      - "One of those that live in a distant and underdeveloped area says it. The option about the most developed part of the city is its reverse."
+    hint: "Split the word: back, and woods. Where does that put someone?"
+  5dbfb87d:
+    steps:
+      - "To pitch your tent with someone is to throw in your lot with them, as an army camps beside its allies."
+      - "He would support the club says it. The building options read tent and pitch literally."
+    hint: "The tent is a picture of taking sides, not of camping."
+  c6b26295:
+    steps:
+      - "To lose heart is to give up hope, so the advice is not to despair."
+      - "Try not to become sad and hopeless says it. The other options pair hopeful or bold with words that contradict them."
+    hint: "Heart here means courage. Losing it means losing hope."
+  999e268a:
+    steps:
+      - "Would have attended ... if he had been invited is a third conditional: the condition failed, so neither did the outcome."
+      - "He was not invited and so did not attend keeps both halves. Two options have him attending, which the construction rules out."
+    hint: "Would have plus if he had always describes something that did not happen."
+  a18d396c:
+    steps:
+      - "To beat about the bush is to avoid coming to the point, circling it instead."
+      - "Approached the subject without coming to the point says it. Went straight to the point is its opposite, and the bush path option reads it literally."
+    hint: "The bush is a picture of what she was avoiding, not a place she walked."
+  75597fc0:
+    steps:
+      - "A widow's mite is a small gift that costs the giver everything they have — the phrase comes from the Gospel story of the widow's two coins."
+      - "It was all he could honestly afford says it. The option calling him a widow reads the phrase literally."
+    hint: "The point of the story is not the size of the gift but what it cost the giver."
+  3605d93c:
+    steps:
+      - "When a friendship turns sour it has gone bad — the two are no longer friends."
+      - "Better friends now and getting to understand each other are both its reverse."
+    hint: "Sour is what milk goes. Apply that to a friendship."
+  9c23bbc3:
+    steps:
+      - "To smell a rat is to sense that something is wrong — the driver suspected the police."
+      - "Suspicious says it. Careful describes how he then behaved rather than what he sensed."
+    hint: "The rat is a picture of something hidden and wrong, not an animal."
+  990212a0:
+    steps:
+      - "Let sleeping dogs lie means leave a settled trouble alone rather than stirring it up again."
+      - "Leave matters as they are now says it. The watchful dogs option reads the phrase literally and reverses it."
+    hint: "The advice is about what NOT to disturb."
+  e658e78d:
+    steps:
+      - "A greenhorn is a newcomer with no experience — green in the sense of unripe."
+      - "Inexperienced says it. Arrogant and uncivilised are criticisms of a different kind."
+    hint: "Green is used of fruit that is not ready. Applied to a person, it means the same."
+  c2f893ef:
+    steps:
+      - "To make both ends meet is to have just enough income to cover what you must spend — and hardly able to means they do not."
+      - "People's earnings are not sufficient for their essential needs says it. The option about income exceeding expenditure is its reverse."
+    hint: "The two ends are what comes in and what goes out. Read the word hardly."
+  7010309b:
+    steps:
+      - "A chip off the old block is a piece of the same wood — a son much like his father."
+      - "Is very much like his father says it. Two options say the opposite, and one reads block as a career."
+    hint: "The block is the father and the chip is cut from him. What does that say about the son?"
+  356980b5:
+    steps:
+      - "To play to the gallery is to court the cheapest applause instead of making a real case."
+      - "Attempt to win cheap popularity says it. The warning is set against making convincing points, which tells you what it rules out."
+    hint: "The gallery is the cheap seats. Playing to them means performing for easy approval."
+  37fc41a1:
+    steps:
+      - "To live in a fool's paradise is to be happy on a belief that is not true."
+      - "Is having an illusion says it. Thinking other people are fools reads the phrase as being about other people rather than about the person holding the belief."
+    hint: "The paradise is imaginary. Whose mistake is it?"

@@ -17,26 +17,20 @@ source:
 passages:
 - id: cloze_2014
   label: CLOZE PASSAGE
-  text: 'The passage below has gaps numbered 11 to 20. Immediately following each gap, four options are
-    provided. Choose the most appropriate option for each gap. Each question carries 2 marks. Setting
-    up a newspaper involves a lot of preparations. The .....11 .... [A. processor B. lithographer C. proprietor
-    D. sub-editor] has to employ a lot of people. Other people working with him are cartographers, editors,
-    typesetters, readers, who work in various ways to produce the text of the newspaper, .... 12 ....
-    [A. agents B. reporters C. analysts D. vendors ] who go out and collect stories and items of news,
-    and .... 13 ..... [A. correspondents B.distributors C. listeners D. newscasters ], who specialize
-    in one kind of topic. Another important person who works closely with the editor --in - - chief is
-    the ... 14 ... [A. announcer B. news editor C. proofreader D. reporter], who has to choose the most
-    important stories .... 15 .... [A. subeditors B. writers C. agents D. producers] go through stories
-    sent to make necessary adjustments The Editor-in-chief could determine for instance, whether a particular
-    journalist should write articles daily or weekly in a particular column. Such a journalist is known
-    as ..... 16 ..... [A. a freelancer B. a composer C. a columnist D. an essayist]. The editorials of
-    the newspaper will be coordinated by ..... 17 ..... [A. a guild of researchers B. an editorial board
-    C. all readers D. an agent]. The publisher could decide to establish ..... 18 ..... [A. an article
-    B. column C. magazine D. a gazetteer] which would be on sale weekly, fortnightly or monthly .....
-    19 ..... [A. a contrast from B. a contrast in C. a contrast to D. a contrast for] the eye catching,
-    screaming headlines and captions of newspapers on sale everyday from the ..... 20 ..... [A. readers
-    B.distributors C. pressmen D. salesmen] Adapted from idowu, et al. (1998) Round-up English: A complete
-    Course. Lagos: Longman Questions 21 to 30 are based on Chukwuemeka Ike’s The potters wheel.'
+  text: The .....11 .... [A. processor B. lithographer C. proprietor D. sub-editor] has to employ a lot
+    of people. Other people working with him are cartographers, editors, typesetters, readers, who work
+    in various ways to produce the text of the newspaper, .... 12 .... [A. agents B. reporters C. analysts
+    D. vendors ] who go out and collect stories and items of news, and .... 13 ..... [A. correspondents
+    B.distributors C. listeners D. newscasters ], who specialize in one kind of topic. Another important
+    person who works closely with the editor --in - - chief is the ... 14 ... [A. announcer B. news editor
+    C. proofreader D. reporter], who has to choose the most important stories .... 15 .... [A. subeditors
+    B. writers C. agents D. producers] go through stories sent to make necessary adjustments The Editor-in-chief
+    could determine for instance, whether a particular journalist should write articles daily or weekly
+    in a particular column. Such a journalist is known as ..... 16 ..... [A. a freelancer B. a composer
+    C. a columnist D. an essayist]. The editorials of the newspaper will be coordinated by ..... 17 .....
+    [A. a guild of researchers B. an editorial board C. all readers D. an agent]. The publisher could
+    decide to establish ..... 18 ..... [A. an article B. column C. magazine D. a gazetteer] which would
+    be on sale weekly, fortnightly or monthly ..... 19 ..... [A.
 - id: passage_2014_passage_i
   label: PASSAGE_I
   text: Political change and social transformation in the form of revolutions have radically altered the
@@ -83,15 +77,15 @@ passages:
     D. sub-editor] has to employ a lot of people. Other people working with him are cartographers, editors,
     typesetters, readers, who work in various ways to produce the text of the newspaper, .... 12 ....
     [A. agents B. reporters C. analysts D. vendors ] who go out and collect stories and items of news,
-    and .... select the option that best explains the information conveyed in the sentence. Each question
-    carries 2 marks. choose the option opposite in meaning to the word or phrase in italics. choose the
-    option nearest in meaning to the word or phrase in italics. choose the option that best completes
-    the gap choose the option that has the same vowel sound as the one represented by the letter(s) underlined.
-    choose the option that has the same consonant sound as the one represented by the letter(s) underlined.
-    Choose the option that rhymes with the given word. choose the most appropriate stress pattern from
-    the options. The stressed syllables are written in capital letter. In each of questions 98 to 100,
-    the world in capital letters has the emphatic stress. Choose the option to which the given sentence
-    relates
+    and .... on Chukwuemeka Ike's The potters wheel. on Jerry Agada`s The Successors select the option
+    that best explains the information conveyed in the sentence. Each question carries 2 marks. choose
+    the option opposite in meaning to the word or phrase in italics. choose the option nearest in meaning
+    to the word or phrase in italics. choose the option that best completes the gap choose the option
+    that has the same vowel sound as the one represented by the letter(s) underlined. choose the option
+    that has the same consonant sound as the one represented by the letter(s) underlined. Choose the option
+    that rhymes with the given word. choose the most appropriate stress pattern from the options. The
+    stressed syllables are written in capital letter. In each of questions 98 to 100, the world in capital
+    letters has the emphatic stress. Choose the option to which the given sentence relates
 questions:
 - number: 1
   page: 89
@@ -556,7 +550,7 @@ questions:
     A: had lost its taste
     B: would get struck in his throat
     C: would make him sick
-    D: was not well prepared Question 31 to 35 are based on Jerry Agada`s The Successors
+    D: was not well prepared
   proposed_answer: C
   answer_confidence: medium
   proposed_skill: ENG.A.6.i

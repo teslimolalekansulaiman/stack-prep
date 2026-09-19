@@ -122,7 +122,11 @@ async def run(folder: Path, reviewer_id: str, dsn: str | None, apply: bool) -> i
             key = (int(row["exam_year"]), str(row["question_number"]))
             question = latest.get(key)
             if question is None:
-                withdrawals.append(row)
+                # A question already withdrawn for this reason is left as it is: withdrawing
+                # it again writes a second identical open report, and the first one is still
+                # the one waiting to be transcribed.
+                if row["review_status"] != "withdrawn":
+                    withdrawals.append(row)
                 continue
             stored = {
                 record["option_key"]: record["body"]

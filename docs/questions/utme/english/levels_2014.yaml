@@ -138,9 +138,9 @@ levels:
   level_confidence: low
   reason: 'base 3 for ENG.A.6.i; -1: short stem and short options, so little to hold at once'
 - number: 35
-  proposed_level: 4
+  proposed_level: 3
   level_confidence: low
-  reason: 'base 3 for ENG.A.6.i; +1: long options, so the work is reading and holding four alternatives'
+  reason: base 3 for ENG.A.6.i
 - number: 36
   proposed_level: 4
   level_confidence: low
@@ -250,21 +250,21 @@ levels:
   level_confidence: low
   reason: base 3 for ENG.B.1.i
 - number: 66
+  proposed_level: 4
+  level_confidence: low
+  reason: base 4 for ENG.B.7.i
+- number: 67
   proposed_level: 3
   level_confidence: low
-  reason: base 3 for ENG.B.3.i
-- number: 67
-  proposed_level: 2
-  level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; -1: the answer ''turn'' is an everyday word'
+  reason: 'base 4 for ENG.B.7.i; -1: the answer ''turn'' is an everyday word'
 - number: 68
   proposed_level: 3
   level_confidence: low
   reason: base 3 for ENG.B.3.i
 - number: 69
-  proposed_level: 2
+  proposed_level: 3
   level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; -1: the answer ''wood'' is an everyday word'
+  reason: 'base 4 for ENG.B.7.i; -1: the answer ''wood'' is an everyday word'
 - number: 70
   proposed_level: 3
   level_confidence: low
@@ -274,13 +274,13 @@ levels:
   level_confidence: low
   reason: base 3 for ENG.B.3.i
 - number: 73
-  proposed_level: 3
-  level_confidence: low
-  reason: base 3 for ENG.B.3.i
-- number: 74
   proposed_level: 4
   level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; +1: the answer ''nauseating'' is long and outside common vocabulary'
+  reason: base 4 for ENG.B.7.i
+- number: 74
+  proposed_level: 5
+  level_confidence: low
+  reason: 'base 4 for ENG.B.7.i; +1: the answer ''nauseating'' is long and outside common vocabulary'
 - number: 75
   proposed_level: 3
   level_confidence: low
@@ -290,37 +290,37 @@ levels:
   level_confidence: low
   reason: base 3 for ENG.B.3.i
 - number: 77
-  proposed_level: 3
-  level_confidence: low
-  reason: base 3 for ENG.B.3.i
-- number: 78
   proposed_level: 4
   level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; +1: the answer ''concurrent'' is long and outside common vocabulary'
+  reason: base 4 for ENG.B.7.i
+- number: 78
+  proposed_level: 5
+  level_confidence: low
+  reason: 'base 4 for ENG.B.7.i; +1: the answer ''concurrent'' is long and outside common vocabulary'
 - number: 79
-  proposed_level: 2
+  proposed_level: 3
   level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; -1: the answer ''very'' is an everyday word'
+  reason: 'base 4 for ENG.B.7.i; -1: the answer ''very'' is an everyday word'
 - number: 81
-  proposed_level: 3
+  proposed_level: 4
   level_confidence: low
-  reason: base 3 for ENG.B.3.i
+  reason: base 4 for ENG.B.7.i
 - number: 82
-  proposed_level: 3
+  proposed_level: 4
   level_confidence: low
-  reason: base 3 for ENG.B.3.i
+  reason: base 4 for ENG.B.7.i
 - number: 83
   proposed_level: 3
   level_confidence: low
   reason: base 3 for ENG.B.3.i
 - number: 84
-  proposed_level: 4
+  proposed_level: 5
   level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; +1: the answer ''animated'' is long and outside common vocabulary'
+  reason: 'base 4 for ENG.B.7.i; +1: the answer ''animated'' is long and outside common vocabulary'
 - number: 85
-  proposed_level: 2
+  proposed_level: 3
   level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; -1: the answer ''by'' is an everyday word'
+  reason: 'base 4 for ENG.B.7.i; -1: the answer ''by'' is an everyday word'
 - number: 86
   proposed_level: 2
   level_confidence: low

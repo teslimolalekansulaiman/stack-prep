@@ -242,13 +242,13 @@ levels:
   level_confidence: low
   reason: base 3 for ENG.B.3.i
 - number: 68
-  proposed_level: 4
+  proposed_level: 5
   level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; +1: the answer ''whenever'' is long and outside common vocabulary'
+  reason: 'base 4 for ENG.B.7.i; +1: the answer ''whenever'' is long and outside common vocabulary'
 - number: 69
-  proposed_level: 4
+  proposed_level: 5
   level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; +1: the answer ''fortnight'' is long and outside common vocabulary'
+  reason: 'base 4 for ENG.B.7.i; +1: the answer ''fortnight'' is long and outside common vocabulary'
 - number: 70
   proposed_level: 3
   level_confidence: low
@@ -258,17 +258,17 @@ levels:
   level_confidence: low
   reason: base 3 for ENG.B.3.i
 - number: 72
-  proposed_level: 3
+  proposed_level: 4
   level_confidence: low
-  reason: base 3 for ENG.B.3.i
+  reason: base 4 for ENG.B.7.i
 - number: 73
   proposed_level: 3
   level_confidence: low
-  reason: base 3 for ENG.B.3.i
+  reason: base 3 for ENG.B.5.i
 - number: 74
-  proposed_level: 4
+  proposed_level: 5
   level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; +1: the answer ''eclectic'' is long and outside common vocabulary'
+  reason: 'base 4 for ENG.B.7.i; +1: the answer ''eclectic'' is long and outside common vocabulary'
 - number: 75
   proposed_level: 3
   level_confidence: low
@@ -286,29 +286,29 @@ levels:
   level_confidence: low
   reason: 'base 3 for ENG.B.3.i; +1: the answer ''naughtiest'' is long and outside common vocabulary'
 - number: 79
-  proposed_level: 3
+  proposed_level: 4
   level_confidence: low
-  reason: base 3 for ENG.B.3.i
+  reason: base 4 for ENG.B.7.i
 - number: 80
-  proposed_level: 3
+  proposed_level: 4
   level_confidence: low
-  reason: base 3 for ENG.B.3.i
+  reason: base 4 for ENG.B.7.i
 - number: 81
-  proposed_level: 3
+  proposed_level: 4
   level_confidence: low
-  reason: base 3 for ENG.B.3.i
+  reason: base 4 for ENG.B.7.i
 - number: 82
-  proposed_level: 3
+  proposed_level: 4
   level_confidence: low
-  reason: base 3 for ENG.B.3.i
+  reason: base 4 for ENG.B.7.i
 - number: 83
   proposed_level: 3
   level_confidence: low
   reason: base 3 for ENG.B.3.i
 - number: 84
-  proposed_level: 3
+  proposed_level: 4
   level_confidence: low
-  reason: base 3 for ENG.B.3.i
+  reason: base 4 for ENG.B.7.i
 - number: 85
   proposed_level: 3
   level_confidence: low

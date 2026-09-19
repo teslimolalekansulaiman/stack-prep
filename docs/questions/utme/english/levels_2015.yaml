@@ -164,35 +164,35 @@ levels:
 - number: 40
   proposed_level: 3
   level_confidence: low
-  reason: base 3 for ENG.A.6.i
+  reason: base 3 for ENG.B.3.ii
 - number: 41
   proposed_level: 4
   level_confidence: low
-  reason: 'base 3 for ENG.A.6.i; +1: long options, so the work is reading and holding four alternatives'
+  reason: 'base 3 for ENG.B.3.ii; +1: long options, so the work is reading and holding four alternatives'
 - number: 42
   proposed_level: 4
   level_confidence: low
-  reason: 'base 3 for ENG.A.6.i; +1: long options, so the work is reading and holding four alternatives'
+  reason: 'base 3 for ENG.B.3.ii; +1: long options, so the work is reading and holding four alternatives'
 - number: 43
   proposed_level: 3
   level_confidence: low
-  reason: base 3 for ENG.A.6.i
+  reason: base 3 for ENG.B.3.ii
 - number: 44
   proposed_level: 3
   level_confidence: low
-  reason: base 3 for ENG.A.6.i
+  reason: base 3 for ENG.B.3.ii
 - number: 45
   proposed_level: 4
   level_confidence: low
-  reason: 'base 3 for ENG.A.6.i; +1: long options, so the work is reading and holding four alternatives'
+  reason: 'base 3 for ENG.B.3.ii; +1: long options, so the work is reading and holding four alternatives'
 - number: 46
   proposed_level: 3
   level_confidence: low
   reason: base 3 for ENG.B.2.i
 - number: 47
-  proposed_level: 3
+  proposed_level: 4
   level_confidence: low
-  reason: base 3 for ENG.A.6.i
+  reason: 'base 3 for ENG.B.2.i; +1: the answer ''Pleasant'' is long and outside common vocabulary'
 - number: 48
   proposed_level: 3
   level_confidence: low
@@ -266,45 +266,45 @@ levels:
   level_confidence: low
   reason: base 3 for ENG.B.1.i
 - number: 66
-  proposed_level: 2
+  proposed_level: 3
   level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; -1: the answer ''from'' is an everyday word'
+  reason: 'base 4 for ENG.B.7.i; -1: the answer ''from'' is an everyday word'
 - number: 67
   proposed_level: 3
   level_confidence: low
   reason: base 3 for ENG.B.3.i
 - number: 68
-  proposed_level: 3
+  proposed_level: 4
   level_confidence: low
-  reason: base 3 for ENG.B.3.i
+  reason: base 4 for ENG.B.7.i
 - number: 69
-  proposed_level: 3
+  proposed_level: 4
   level_confidence: low
-  reason: base 3 for ENG.B.3.i
+  reason: base 4 for ENG.B.7.i
 - number: 70
   proposed_level: 3
   level_confidence: low
-  reason: base 3 for ENG.B.3.i
+  reason: base 3 for ENG.B.5.i
 - number: 72
-  proposed_level: 2
+  proposed_level: 3
   level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; -1: the answer ''in'' is an everyday word'
+  reason: 'base 4 for ENG.B.7.i; -1: the answer ''in'' is an everyday word'
 - number: 73
-  proposed_level: 2
+  proposed_level: 3
   level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; -1: the answer ''in'' is an everyday word'
+  reason: 'base 4 for ENG.B.7.i; -1: the answer ''in'' is an everyday word'
 - number: 75
-  proposed_level: 2
+  proposed_level: 3
   level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; -1: the answer ''while'' is an everyday word'
+  reason: 'base 4 for ENG.B.7.i; -1: the answer ''while'' is an everyday word'
 - number: 76
   proposed_level: 3
   level_confidence: low
   reason: base 3 for ENG.B.3.i
 - number: 77
-  proposed_level: 2
+  proposed_level: 3
   level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; -1: the answer ''to'' is an everyday word'
+  reason: 'base 4 for ENG.B.7.i; -1: the answer ''to'' is an everyday word'
 - number: 78
   proposed_level: 4
   level_confidence: low
@@ -314,9 +314,9 @@ levels:
   level_confidence: low
   reason: base 3 for ENG.B.3.i
 - number: 80
-  proposed_level: 3
+  proposed_level: 4
   level_confidence: low
-  reason: base 3 for ENG.B.3.i
+  reason: base 4 for ENG.B.7.i
 - number: 81
   proposed_level: 3
   level_confidence: low
@@ -324,19 +324,19 @@ levels:
 - number: 82
   proposed_level: 3
   level_confidence: low
-  reason: base 3 for ENG.B.3.i
+  reason: base 3 for ENG.B.5.i
 - number: 83
-  proposed_level: 3
+  proposed_level: 4
   level_confidence: low
-  reason: base 3 for ENG.B.3.i
+  reason: base 4 for ENG.B.7.i
 - number: 84
-  proposed_level: 2
-  level_confidence: low
-  reason: 'base 3 for ENG.B.3.i; -1: the answer ''by'' is an everyday word'
-- number: 85
   proposed_level: 3
   level_confidence: low
-  reason: base 3 for ENG.B.3.i
+  reason: 'base 4 for ENG.B.7.i; -1: the answer ''by'' is an everyday word'
+- number: 85
+  proposed_level: 4
+  level_confidence: low
+  reason: base 4 for ENG.B.7.i
 - number: 86
   proposed_level: 2
   level_confidence: low
@@ -376,15 +376,15 @@ levels:
 - number: 95
   proposed_level: 4
   level_confidence: low
-  reason: 'base 3 for ENG.C.3.i; +1: ''Programmatic'' has about 4 syllables'
+  reason: 'base 3 for ENG.C.4.i; +1: ''Programmatic'' has about 4 syllables'
 - number: 96
   proposed_level: 4
   level_confidence: low
-  reason: 'base 3 for ENG.C.3.i; +1: ''Certification'' has about 5 syllables'
+  reason: 'base 3 for ENG.C.4.i; +1: ''Certification'' has about 5 syllables'
 - number: 97
   proposed_level: 4
   level_confidence: low
-  reason: 'base 3 for ENG.C.3.i; +1: ''Motivation'' has about 4 syllables'
+  reason: 'base 3 for ENG.C.4.i; +1: ''Motivation'' has about 4 syllables'
 - number: 98
   proposed_level: 4
   level_confidence: low

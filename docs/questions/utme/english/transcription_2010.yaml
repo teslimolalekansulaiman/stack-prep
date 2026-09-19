@@ -17,26 +17,23 @@ source:
 passages:
 - id: cloze_2010
   label: CLOZE PASSAGE
-  text: The passage below has gaps numbered 16 to 25. Immediately following each gap, four options are
-    provided. Choose the most appropriate option for each gap. Each question carries 2 marks Drought is
-    a word that invokes strong emotions. This is not surprising as the … 16 … [A. ideology B. phenomenon
-    C. idea D. component] is usually accompanied by a number of unpleasant developments. These developments
-    have … 17 … [A. feedback B. Results C. Implications D. outcomes] for all citizens, starting from the
-    peasant farmers to the state and federal governments which may be plunged into emergency and crises
-    situations which, if not successfully …18… [A. managed B. examined D. studied] could result in social
-    unrest. The timeliness of the onset of the rains in various regions of the country and their adequate
-    distribution thereafter have …19… [A. objects B. become subjects C. issues D. topics] of considerable
-    anxiety to all people. The fact, however, is that periodic normal …20… [A. reduction in amount B.
-    supply C. size D. flood] of rainfall in the country is not new. Since large areas of the country are
-    drought prone, the consequences are …21… [A. effective B. disastrous C. evident D. inevitable]. Dry
-    spells could be very severe. There are two aspects of coping with drought. One has to do with emergency
-    measures and the other with …22… [A. routine B. organized C. urgent D. delayed] measures. An immediate
-    consequence of any drought would be famine. In addition, where whole populations are forced to abandon
-    their lands or pastures in search of food, there are bound to be …23… [A. other lasting and longitudinal
-    B. objective C. simultaneous D. parallel] consequences such as distress, sales of cattle by livestock
-    owners in order to buy food. Government should provide farmers with agricultural inputs and ensure
-    that they have easy access to these inputs under the …24… [A. action B. process relief C. scheme D.
-    plan].
+  text: This is not surprising as the … 16 … [A. ideology B. phenomenon C. idea D. component] is usually
+    accompanied by a number of unpleasant developments. These developments have … 17 … [A. feedback B.
+    Results C. Implications D. outcomes] for all citizens, starting from the peasant farmers to the state
+    and federal governments which may be plunged into emergency and crises situations which, if not successfully
+    …18… [A. managed B. examined D. studied] could result in social unrest. The timeliness of the onset
+    of the rains in various regions of the country and their adequate distribution thereafter have …19…
+    [A. objects B. become subjects C. issues D. topics] of considerable anxiety to all people. The fact,
+    however, is that periodic normal …20… [A. reduction in amount B. supply C. size D. flood] of rainfall
+    in the country is not new. Since large areas of the country are drought prone, the consequences are
+    …21… [A. effective B. disastrous C. evident D. inevitable]. Dry spells could be very severe. There
+    are two aspects of coping with drought. One has to do with emergency measures and the other with …22…
+    [A. routine B. organized C. urgent D. delayed] measures. An immediate consequence of any drought would
+    be famine. In addition, where whole populations are forced to abandon their lands or pastures in search
+    of food, there are bound to be …23… [A. other lasting and longitudinal B. objective C. simultaneous
+    D. parallel] consequences such as distress, sales of cattle by livestock owners in order to buy food.
+    Government should provide farmers with agricultural inputs and ensure that they have easy access to
+    these inputs under the …24… [A.
 - id: passage_2010_passage_i
   label: PASSAGE_I
   text: 'One of the interesting things to me about spaceship is that it is a mechanical vehicle, just

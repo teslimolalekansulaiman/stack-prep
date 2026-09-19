@@ -62,7 +62,7 @@ explanations:
       - "The rains have become a matter people worry about, so the gap needs a verb as well as a noun: have become subjects of considerable anxiety."
       - "The other three options are nouns only, which would leave have with nothing to complete it."
     hint: "Look at the word have before the gap. What has to follow it?"
-  cb9e1d8a:
+  73493472:
     steps:
       - "The sentence is about drought, and a periodic normal shortfall of rainfall is what drought means."
       - "The published key gives supply, which describes rainfall arriving rather than failing; reduction in amount is what the passage is about, and this question is flagged for a second look."
@@ -152,7 +152,7 @@ explanations:
       - "What gets embedded in a budget is the costing — the figures for what infrastructure will take."
       - "Estimates is that. Two of the options printed here are identical, which is a fault in the source."
     hint: "What goes into a budget: figures, or processes?"
-  adb1afb4:
+  91f8bad8:
     steps:
       - "The sentence sets up a consequence: where these are glaringly something, development can be impaired — so the gap means left out."
       - "The published key gives altered; omitted is what the sentence needs, and this question is flagged for a second look."
@@ -167,7 +167,7 @@ explanations:
       - "Developing countries are said to put other interests above infrastructure — the interests of particular parts of the country or particular groups."
       - "Sectional is the word for that. Sectorial would mean by sector, which is a different division and not standard English here."
     hint: "The complaint is about favouring one part over the whole."
-  159f39dc:
+  41b43f87:
     steps:
       - "A country that neglects infrastructure is said to go on suffering, and the passage is about national development rather than about money alone."
       - "Social decay is the key. Note that this option has the following sentence bled into it in the source."
@@ -192,7 +192,7 @@ explanations:
       - "Having had measles leaves you protected against it afterwards, almost completely and for a long time."
       - "Immunity is the word for that protection. Armour is the metaphor behind it but is not used medically, and impurity is unrelated."
     hint: "There is one medical word for protection gained by having had the disease."
-  6fcfc64e:
+  f6b97fe5:
     steps:
       - "What modern science has made available to prevent childhood diseases, rather than to treat them, is vaccines."
       - "Injections and tablets describe how medicine is given rather than what prevents disease. This option also has the following clause bled into it in the source."
@@ -217,22 +217,22 @@ explanations:
       - "The drugs in question are effective enough to protect against most childhood diseases."
       - "Potent means powerful in effect, which is the point being made. Lovely and marvellous are vague praise and say nothing about how well a drug works."
     hint: "The sentence is about how well the drugs work, not about how welcome they are."
-  1fba2295:
+  8023b69d:
     steps:
       - "The advantage of a written-out speech is that its language can be worked over in advance — word choice, turns of phrase, development of ideas."
       - "Polished is the word for language that has been worked on. Discreet is about tact, and analogue and advanced say nothing about wording."
     hint: "The words after the gap tell you what kind of quality is meant: choice of words and phrasing."
-  838371f4:
+  80927aee:
     steps:
       - "Reading aloud with meaningful something inflection — inflection is the rise and fall of the voice, so the gap qualifies the voice."
       - "Vocal is that. Bifocal is about spectacles and is there only because it rhymes."
     hint: "Inflection follows the gap. What kind of inflection does a speaker produce?"
-  a83b9a5b:
+  cc5c5cdd:
     steps:
       - "Poor delivery works against what the carefully chosen language was meant to achieve, so the gap describes an effect that cuts something down."
       - "The published key gives interactive; restrictive is what the sentence needs, and this question is flagged for a second look."
     hint: "The sentence is about poor delivery spoiling something. Which option describes limiting an effect?"
-  2d1042a4:
+  bc7c3b6a:
     steps:
       - "A speaker unfamiliar with what is in front of them cannot look up at the audience, so the gap is the written speech itself."
       - "The published key gives context; text is what a speaker must be familiar with to lift their eyes from it, and this question is flagged for a second look."
@@ -252,12 +252,12 @@ explanations:
       - "This question has the following question bled into its last option, and its own passage is not the one stored against it."
       - "It is flagged: unusable as stored, and needing the source re-read."
     hint: "The option list here contains a second question. The source has not been read cleanly."
-  38b3879e:
+  3a7a97bf:
     steps:
       - "Parents with pre-conceived notions push their children towards the professions that carry standing — which is why the passage then complains they ignore interest and aptitude."
       - "Prestigious is what the sentence needs. The published key gives insignificant, which reverses it, and this question is flagged for a second look."
     hint: "Ask which professions parents insist on: the admired ones, or the overlooked ones?"
-  9f161d6e:
+  9cb7c9d2:
     steps:
       - "The sentence says career decisions were also something by the type of school attended — the school shaped the choice."
       - "Influenced is the word for that. The published key gives subdued, which would mean the decisions were suppressed, and this question is flagged for a second look."
@@ -267,12 +267,12 @@ explanations:
       - "Private schools each strove to outdo the others in sports or academics, so competition between them was strong."
       - "High says that. Minimal and low are its opposite, and the next sentence describes rivalry."
     hint: "Read the sentence after the gap. It describes schools striving against each other."
-  69f9fc43:
+  935f0225:
     steps:
       - "Each school tried to carve something for itself by excelling — what a school carves out is a reputation."
       - "Image is the word that goes with carve. The published key gives attitude, which is not something carved, and this question is flagged for a second look."
     hint: "The verb is carve. Which of these can be carved out for yourself?"
-  6d48a6c2:
+  1829fada:
     steps:
       - "Junior students followed the example of their seniors, which is why the passage says students often ended up in the same professions."
       - "Emulate is the word for following an example. The published key gives appreciate, which is only admiration, and this question is flagged for a second look."
@@ -282,7 +282,7 @@ explanations:
       - "The shortage is named as one of the problems besetting government involvement, so it is severe."
       - "Acute is the word used of a severe shortage. Mild and average would not make it a problem worth naming."
     hint: "The word shortage takes a particular adjective when it is serious."
-  66fbd346:
+  ea18d5b8:
     steps:
       - "There are few officers and the passage is listing problems, so those few rarely get the chance to practise."
       - "Seldom fits the complaint. The published key gives often, which would not be a problem at all, and this question is flagged for a second look."
@@ -322,3 +322,53 @@ explanations:
       - "Guilty is GUIL-ty, stressed on the first syllable; guitar is gui-TAR, stressed on the second."
       - "The published key gives guitar, which is the one word here that is not stressed first. The stem was also lost and the following direction has bled into the last option, so this question is flagged."
     hint: "Say guitar and guilty one after the other. The stress falls in different places."
+  24662a10:
+    steps:
+      - "The sentence classifies the explosion with certain rare natural things, and then gives its example: a volcanic eruption."
+      - "An eruption is something that happens, so the gap needs a word for things that happen. Programmes are planned, resources are what we have, and laws are rules — none of them is an event."
+    hint: "The example given straight after the gap tells you what kind of thing the gap names."
+  d278def6:
+    steps:
+      - "The gap follows the adjective volcanic, so the word has to be what a volcano does."
+      - "A volcano erupts, and the noun for that is eruption. An insurrection is a revolt, exhaustion is being worn out, and an expulsion is being thrown out."
+      - "Three of the four options end in -tion and belong to the same sort of register, which is what makes them tempting; only one of them is about a volcano."
+    hint: "Say the adjective and the noun together: volcanic ____."
+  c8df5dc3:
+    steps:
+      - "The phrase is as with all events on this ____, and the sentence goes on to say it is impossible to describe what happens in detail."
+      - "On this scale is the set phrase for how large an event is, and the size is what makes the detail impossible. A scanner, a skate and snow are objects, and none of them says anything about size."
+    hint: "Events on this ____ is a fixed phrase. Ask what it usually says about an event."
+  bb0645bc:
+    steps:
+      - "The most impressive of the main effects arises from the gap, and the two sentences after it describe a blast wave and then another kind of wave altogether."
+      - "Pressure waves is the one option that is a wave, which is what the rest of the passage goes on to explain. Pressure air and pressure gauge are not phrases an effect can arise from, and pressure volume names a quantity rather than a thing that travels."
+      - "The published key gives pressure volume, and this question is flagged for a second look."
+    hint: "Read the two sentences after the gap before choosing. They say what the effect is made of."
+  1f18ec60:
+    steps:
+      - "The gap is the immediate result of the ____ is that the air surrounding the bomb is raised very rapidly to a high temperature."
+      - "What has that result is the bomb going off, and the noun for a bomb going off is detonation. A reduction is a decrease, a commotion is a disturbance among people, and a distortion is a change of shape."
+      - "The published key gives distortion, which the sentence does not support, so this question is flagged for a second look."
+    hint: "Ask what happened first. The gap names the event whose result the rest of the sentence describes."
+  7d89ab29:
+    steps:
+      - "The air around the bomb is raised very rapidly to a high ____, and the next sentence begins the hot gases expand violently."
+      - "Air raised to a high temperature is the phrase, and the word hot confirms it. A high class and a high profile are about standing rather than heat, and enormously way is not English."
+    hint: "The word hot in the next sentence is the clue."
+  6de7a9cd:
+    steps:
+      - "The hot gases expand violently as great ____, so the gap names what the expanding gas becomes."
+      - "Burning gas expanding into a ball of flame is a fireball. Firearms are guns, fireworks are set off for display, and firesmokes is not a word."
+      - "The published key gives firearms, which is a weapon rather than a body of burning gas, so this question is flagged for a second look."
+    hint: "The subject of the sentence is hot gases. What shape does expanding burning gas take?"
+  f036a948:
+    steps:
+      - "The paragraph opens by saying another kind of wave arises because of the weight of the air, and the gap is what the force of the explosion lifts."
+      - "It lifts the atmosphere — the air whose weight has just been given as the reason. Space has no weight to lift, and form and height are not things that sit around a bomb."
+      - "The published key gives space, though the sentence before the gap is about the weight of the air, so this question is flagged for a second look."
+    hint: "The sentence before the gap says what is heavy. That is what gets lifted."
+  003a8043:
+    steps:
+      - "The waves being described are gravity waves, and the gap says which ordinary ____ waves they resemble."
+      - "Ocean waves are the everyday example of waves that gravity drives. A stream, a lake and a river are far smaller bodies of water, and their surfaces are not what these waves are being compared to."
+    hint: "Which body of water is known for its waves?"
