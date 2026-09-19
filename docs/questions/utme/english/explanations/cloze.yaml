@@ -1,0 +1,324 @@
+# UTME Use of English — Cloze passage (ENG.A.6.i)
+#
+# A cloze gap is settled by the sentence around it, and usually by what comes AFTER it rather
+# than before. Each explanation names the clue in the passage that decides the gap, and says
+# what the tempting wrong option is doing there — which for these is nearly always a word from
+# the same field that the sentence does not have room for.
+format_version: 1
+skill: ENG.A.6.i
+explanations:
+  9fc3f11b:
+    steps:
+      - "The gap is the person who has to employ a lot of people, and the sentence goes on to list everyone who works with him."
+      - "The proprietor owns the paper and does the employing. A sub-editor and a lithographer are among the people employed, so neither can be the one hiring them."
+    hint: "Read on to the end of the sentence. The gap is filled by whoever the others work for."
+  e4d61ccb:
+    steps:
+      - "The gap is defined by the words immediately after it: who go out and collect stories and items of news."
+      - "Reporters do that. Vendors sell the paper and agents handle business, neither of which is collecting news."
+    hint: "The relative clause after the gap is the definition. Match the option to it."
+  bced5052:
+    steps:
+      - "The gap works closely with the editor-in-chief and has to choose the most important stories."
+      - "The news editor does exactly that. A proofreader checks text and a reporter gathers it; neither chooses what leads."
+    hint: "Two clues: who they work with, and what they decide."
+  8c3b4c1a:
+    steps:
+      - "The gap go through stories sent in to make necessary adjustments — that is editing after the fact."
+      - "Sub-editors do that work. Writers produce the stories in the first place and producers belong to broadcasting."
+    hint: "The verb after the gap is go through, not write. Who reads and corrects?"
+  a100e200:
+    steps:
+      - "The sentence describes a journalist writing in a particular column, daily or weekly, and then names them."
+      - "A columnist is the word for that. A freelancer describes how someone is employed rather than what they write."
+    hint: "The word column is in the sentence. The answer is built from it."
+  0a2c3dcb:
+    steps:
+      - "Editorials are the paper's own opinion pieces, and the gap is what coordinates them."
+      - "An editorial board is the body that does so. Readers and agents have no part in writing editorials."
+    hint: "The word editorials points straight at the answer."
+  b39a4d3d:
+    steps:
+      - "The gap is something a publisher establishes and which goes on sale weekly, fortnightly or monthly."
+      - "A magazine is a publication with its own schedule. An article and a column are parts of a publication, not things put on sale by themselves."
+    hint: "Ask what can be sold on its own, on its own timetable."
+  ff30e4c6:
+    steps:
+      - "The magazine's slower schedule is being set against the daily headlines of newspapers, so the gap needs the phrase for that opposition."
+      - "The published key gives a contrast from; in contrast to is the standard English, and this question is flagged for a second look."
+    hint: "Contrast takes a preposition. Say the phrase aloud and choose the one you have heard."
+  2316e520:
+    steps:
+      - "Drought is being referred to again, and the sentence says it is accompanied by unpleasant developments — so the gap names drought as a thing that happens in the world."
+      - "A phenomenon is exactly that. An ideology and an idea are things people hold in their heads, and a drought is not one."
+    hint: "Ask whether drought is something that happens or something someone believes."
+  7cc78f9b:
+    steps:
+      - "The developments reach forward to everyone from peasant farmers to governments — they carry consequences that have still to work themselves out."
+      - "Implications is the word for consequences of that kind. Results and outcomes describe what has already happened."
+    hint: "Two options mean what has happened; the sentence is about what will follow."
+  f34b29c0:
+    steps:
+      - "The rains have become a matter people worry about, so the gap needs a verb as well as a noun: have become subjects of considerable anxiety."
+      - "The other three options are nouns only, which would leave have with nothing to complete it."
+    hint: "Look at the word have before the gap. What has to follow it?"
+  cb9e1d8a:
+    steps:
+      - "The sentence is about drought, and a periodic normal shortfall of rainfall is what drought means."
+      - "The published key gives supply, which describes rainfall arriving rather than failing; reduction in amount is what the passage is about, and this question is flagged for a second look."
+    hint: "The paragraph is about drought. Does the gap describe rain arriving or rain failing?"
+  ec63c3dc:
+    steps:
+      - "Large areas are drought prone, so the consequences cannot be avoided."
+      - "Inevitable says that. Disastrous describes how bad they are rather than that they must come, which is what the word since sets up."
+    hint: "The sentence begins with Since, which announces a cause. The gap is what must follow from it."
+  cb008a6a:
+    steps:
+      - "The sentence sets two kinds of measure against each other: emergency ones, and the other kind."
+      - "Routine is the natural opposite of emergency. Urgent means the same as emergency, so it cannot be the contrast."
+    hint: "The phrase the other with tells you the gap contrasts with emergency."
+  5a7fb61d:
+    steps:
+      - "People abandoning their land sell their cattle, and the passage calls those consequences ones that persist."
+      - "Other lasting and longitudinal names consequences that go on over time. Simultaneous and parallel say they happen alongside, which is not the point being made."
+    hint: "The example given — selling cattle to buy food — has effects that outlast the drought."
+  99f3ee58:
+    steps:
+      - "Government provides inputs and ensures access to them under an organised arrangement."
+      - "Scheme is the word for such an arrangement. Action and plan are looser, and process relief is not English."
+    hint: "Which of these words names a government programme that farmers can be enrolled in?"
+  4ea2c5d2:
+    steps:
+      - "Miscarriage is defined as loss before twenty-four weeks, and the sentence then says most occur within the earliest part of that span — the first twelve weeks."
+      - "In the first fits the phrase twelve weeks of pregnancy. Penultimate would mean the second-to-last, which contradicts most."
+    hint: "Twelve weeks is half of twenty-four. Which end of the pregnancy is that?"
+  ceaa4e29:
+    steps:
+      - "Vaginal bleeding is something the patient notices, and the sentence goes on to list cramping and pain alongside it."
+      - "Symptom is the word for what a patient notices. Cause would be why the miscarriage happened, which bleeding is not."
+    hint: "Ask whether bleeding is the reason for the miscarriage or a sign of it."
+  09d6060f:
+    steps:
+      - "The passage says you may see tissue that cannot be made out for what it is."
+      - "Clearly identifiable is the natural phrase. Medically identifiable would say a doctor could not name it, which is a stronger claim than the passage makes."
+    hint: "The sentence is about what the patient can see, not about what a laboratory could determine."
+  0194836c:
+    steps:
+      - "The list is of pregnancy symptoms — breast tenderness, sickness, and needing to pass urine more often than usual."
+      - "Frequently is the word for more often. Painfully describes a different symptom that the passage does not mention here."
+    hint: "The phrase is having to pass urine more ... than usual. What changes about it in pregnancy?"
+  c96d73d7:
+    steps:
+      - "Where there are no signs at all, the miscarriage comes to light only when someone looks — in a routine scan."
+      - "Discovered is that. Prevented and stopped would mean the scan changed the outcome, which a scan cannot do."
+    hint: "A scan finds things out. It does not alter them."
+  d6ae0afe:
+    steps:
+      - "The gap follows genetic material from the egg and sperm combined during — which is the moment the two join."
+      - "Fertilization is the word for it. Mating is the act before, and incubation comes after."
+    hint: "The sentence describes egg and sperm combining. There is one word for that."
+  aa492f41:
+    steps:
+      - "This refers back to the genetic problem just described, so the gap needs a plain verb for it having happened."
+      - "Occurred is that. Emerged and enlarged describe something appearing or growing, which is not what a combining error does."
+    hint: "The subject is this, meaning the problem. What is the neutral verb for a problem coming about?"
+  f1cd1c82:
+    steps:
+      - "The body's defences against infection are called the immune system, and the passage lists problems in it beside hormone imbalances."
+      - "System is the fixed collocation. Immune response exists but names one reaction rather than the whole apparatus, which is what problems in suggests."
+    hint: "Immune goes with one of these words far more often than with the others."
+  00a7cd7e:
+    steps:
+      - "The paragraph has been listing what makes miscarriage more likely, so the sentence about risk continues in that direction."
+      - "Increases of miscarriage carries that, though the phrase as printed has its words out of order — the source reads the risk of miscarriage increases."
+    hint: "The paragraph is about what raises the risk. Which option keeps that direction?"
+  e19c1a6a:
+    steps:
+      - "Planning is said to go hand in hand with infrastructural something, and the passage is about building infrastructure up."
+      - "Development is the noun that goes with infrastructural throughout the passage. Projected is an adjective and cannot follow infrastructural here."
+    hint: "The phrase infrastructural ... appears several times later in the passage. Look ahead for it."
+  7f51033f:
+    steps:
+      - "If planning takes infrastructure in as well as everything else, it covers the whole."
+      - "Holistic means exactly that. A partial is its opposite, which would be a criticism rather than the recommendation the sentence is making."
+    hint: "The sentence says including infrastructure improves the planning. Which word means complete?"
+  e88577d1:
+    steps:
+      - "The gap describes the kind of provisions in which infrastructure should be embedded — provisions of money."
+      - "Budgetary provisions is the fixed phrase. Planning provisions would repeat the word the sentence has just used."
+    hint: "Provisions here are financial. Which option describes where money is set aside?"
+  3f6274a9:
+    steps:
+      - "What gets embedded in a budget is the costing — the figures for what infrastructure will take."
+      - "Estimates is that. Two of the options printed here are identical, which is a fault in the source."
+    hint: "What goes into a budget: figures, or processes?"
+  adb1afb4:
+    steps:
+      - "The sentence sets up a consequence: where these are glaringly something, development can be impaired — so the gap means left out."
+      - "The published key gives altered; omitted is what the sentence needs, and this question is flagged for a second look."
+    hint: "The word glaringly goes with something missing, not with something changed."
+  05a2b61f:
+    steps:
+      - "If infrastructure is left out, national development is damaged."
+      - "Impaired says damaged without saying how much. Denied would mean stopped altogether, which is stronger than greatly."
+    hint: "The word greatly before the gap tells you the gap is a matter of degree."
+  70cdc54e:
+    steps:
+      - "Developing countries are said to put other interests above infrastructure — the interests of particular parts of the country or particular groups."
+      - "Sectional is the word for that. Sectorial would mean by sector, which is a different division and not standard English here."
+    hint: "The complaint is about favouring one part over the whole."
+  159f39dc:
+    steps:
+      - "A country that neglects infrastructure is said to go on suffering, and the passage is about national development rather than about money alone."
+      - "Social decay is the key. Note that this option has the following sentence bled into it in the source."
+    hint: "The passage's subject is development and integration, not the economy on its own."
+  bdee71b0:
+    steps:
+      - "The sentence closes by naming why infrastructure matters: what it does for the nation."
+      - "Growth is the word the passage has been building towards. Awareness and orientation are not things infrastructure produces."
+    hint: "Read the whole passage's argument. What is infrastructure said to be important for?"
+  18a87b73:
+    steps:
+      - "The sentence contrasts measles with many other viruses: the measles virus stays the same over centuries, which is why immunity to it lasts."
+      - "Unchanged says that. Undiscovered would be about whether anyone had found it, which is a different claim, and erratic is its opposite."
+    hint: "Read on to the next sentence about lasting immunity. It only works if the virus does not change."
+  7bbcc396:
+    steps:
+      - "The sentence is about having had the disease once — one bout of it."
+      - "Attack is the word used of a single bout of illness. An epidemic is an outbreak across a population, not something one person has."
+    hint: "The phrase is once you have had an ... of this disease. Which word describes one person's episode?"
+  e249e4b9:
+    steps:
+      - "Having had measles leaves you protected against it afterwards, almost completely and for a long time."
+      - "Immunity is the word for that protection. Armour is the metaphor behind it but is not used medically, and impurity is unrelated."
+    hint: "There is one medical word for protection gained by having had the disease."
+  6fcfc64e:
+    steps:
+      - "What modern science has made available to prevent childhood diseases, rather than to treat them, is vaccines."
+      - "Injections and tablets describe how medicine is given rather than what prevents disease. This option also has the following clause bled into it in the source."
+    hint: "The sentence says prevent. Which of these prevents rather than treats?"
+  398d9847:
+    steps:
+      - "Penicillin is named, and the gap is the class of drug it belongs to."
+      - "Antibiotics is that class. Relievers and pills describe what a drug does or its form, not what penicillin is."
+    hint: "Penicillin and other ... — the gap names the family the example belongs to."
+  2f061c07:
+    steps:
+      - "The sentence is about a right every human being has, in a passage about disease and its prevention."
+      - "Health is what that passage has been about throughout. Body and sense are not things described as rights."
+    hint: "Read the whole paragraph. What has it been arguing everyone should have?"
+  ffd9f9e5:
+    steps:
+      - "In the Middle Ages these diseases wiped out whole settlements — groups of people living together."
+      - "Communities is the word for that. Countries and states are political units and are too large for what a local outbreak destroys."
+    hint: "The scale matters. A disease wipes out a village, not a country."
+  563c84d6:
+    steps:
+      - "The drugs in question are effective enough to protect against most childhood diseases."
+      - "Potent means powerful in effect, which is the point being made. Lovely and marvellous are vague praise and say nothing about how well a drug works."
+    hint: "The sentence is about how well the drugs work, not about how welcome they are."
+  1fba2295:
+    steps:
+      - "The advantage of a written-out speech is that its language can be worked over in advance — word choice, turns of phrase, development of ideas."
+      - "Polished is the word for language that has been worked on. Discreet is about tact, and analogue and advanced say nothing about wording."
+    hint: "The words after the gap tell you what kind of quality is meant: choice of words and phrasing."
+  838371f4:
+    steps:
+      - "Reading aloud with meaningful something inflection — inflection is the rise and fall of the voice, so the gap qualifies the voice."
+      - "Vocal is that. Bifocal is about spectacles and is there only because it rhymes."
+    hint: "Inflection follows the gap. What kind of inflection does a speaker produce?"
+  a83b9a5b:
+    steps:
+      - "Poor delivery works against what the carefully chosen language was meant to achieve, so the gap describes an effect that cuts something down."
+      - "The published key gives interactive; restrictive is what the sentence needs, and this question is flagged for a second look."
+    hint: "The sentence is about poor delivery spoiling something. Which option describes limiting an effect?"
+  2d1042a4:
+    steps:
+      - "A speaker unfamiliar with what is in front of them cannot look up at the audience, so the gap is the written speech itself."
+      - "The published key gives context; text is what a speaker must be familiar with to lift their eyes from it, and this question is flagged for a second look."
+    hint: "The passage has used the word text already for the written-out speech."
+  92929106:
+    steps:
+      - "The change described is driven by advancing technology and industrialization, which is change happening quickly."
+      - "Fast-paced says that. Favourable makes a judgement the sentence does not, and social narrows it to one kind."
+    hint: "The cause given is technology advancing. What does that do to the speed of change?"
+  7286f1fe:
+    steps:
+      - "The sentence is about man deliberately promoting and defending change — a deliberate effort implies something stronger than an opinion."
+      - "Commitment to carries that deliberateness. Knowledge of and opinion of are passive by comparison."
+    hint: "The words deliberate effort later in the sentence tell you how strong the gap must be."
+  7cce1772:
+    steps:
+      - "This question has the following question bled into its last option, and its own passage is not the one stored against it."
+      - "It is flagged: unusable as stored, and needing the source re-read."
+    hint: "The option list here contains a second question. The source has not been read cleanly."
+  38b3879e:
+    steps:
+      - "Parents with pre-conceived notions push their children towards the professions that carry standing — which is why the passage then complains they ignore interest and aptitude."
+      - "Prestigious is what the sentence needs. The published key gives insignificant, which reverses it, and this question is flagged for a second look."
+    hint: "Ask which professions parents insist on: the admired ones, or the overlooked ones?"
+  9f161d6e:
+    steps:
+      - "The sentence says career decisions were also something by the type of school attended — the school shaped the choice."
+      - "Influenced is the word for that. The published key gives subdued, which would mean the decisions were suppressed, and this question is flagged for a second look."
+    hint: "The word also links this to the parents' effect in the sentence before. Schools did the same kind of thing."
+  967b234f:
+    steps:
+      - "Private schools each strove to outdo the others in sports or academics, so competition between them was strong."
+      - "High says that. Minimal and low are its opposite, and the next sentence describes rivalry."
+    hint: "Read the sentence after the gap. It describes schools striving against each other."
+  69f9fc43:
+    steps:
+      - "Each school tried to carve something for itself by excelling — what a school carves out is a reputation."
+      - "Image is the word that goes with carve. The published key gives attitude, which is not something carved, and this question is flagged for a second look."
+    hint: "The verb is carve. Which of these can be carved out for yourself?"
+  6d48a6c2:
+    steps:
+      - "Junior students followed the example of their seniors, which is why the passage says students often ended up in the same professions."
+      - "Emulate is the word for following an example. The published key gives appreciate, which is only admiration, and this question is flagged for a second look."
+    hint: "The passage says juniors ended up in the same careers. What were they doing to their seniors' choices?"
+  b705fb02:
+    steps:
+      - "The shortage is named as one of the problems besetting government involvement, so it is severe."
+      - "Acute is the word used of a severe shortage. Mild and average would not make it a problem worth naming."
+    hint: "The word shortage takes a particular adjective when it is serious."
+  66fbd346:
+    steps:
+      - "There are few officers and the passage is listing problems, so those few rarely get the chance to practise."
+      - "Seldom fits the complaint. The published key gives often, which would not be a problem at all, and this question is flagged for a second look."
+    hint: "The paragraph is a list of problems. Does the gap describe something going well or badly?"
+  02627deb:
+    steps:
+      - "The options here — lauded, muffled, enunciated — belong to a pronunciation question, not to a gap about government policy, and two of them are printed identically."
+      - "The question is flagged: the option list has come from elsewhere on the page."
+    hint: "These options do not fit the sentence at all. The source has not been read cleanly here."
+  ea5c256d:
+    steps:
+      - "The passage complains that provision stops at secondary level while the current view is that career development should start earlier and go on longer."
+      - "Rejects catches that opposition, and contradicts would do as well; both say the situation and the view are at odds."
+    hint: "The situation described and the current view pull against each other. Which options say so?"
+  04e5b9c7:
+    steps:
+      - "These options are from a pronunciation question and the following section's direction has bled into the last one."
+      - "The question is flagged: the option list has come from elsewhere on the page."
+    hint: "These options do not belong to the passage this question is stored against."
+  f26d9570:
+    steps:
+      - "The question asks which word is stressed on its first syllable, and madam is MA-dam."
+      - "Eighteen, invent and command all take the stress on the second syllable. The stem was lost at import and the question is stored as a cloze gap, so it is flagged for re-classification."
+    hint: "Say each word naturally and feel which part you push."
+  434ed855:
+    steps:
+      - "Mother is MO-ther, stressed on the first syllable."
+      - "Nineteen, estate and announce are all stressed second. The stem was lost at import and the question is flagged for re-classification."
+    hint: "Two-syllable nouns are usually stressed first; two-syllable verbs usually second."
+  2329c569:
+    steps:
+      - "As a noun, export is EX-port, stressed first; as a verb it is ex-PORT."
+      - "The question's own options name the part of speech for exactly that reason. The stem was lost at import and the question is flagged for re-classification."
+    hint: "Several English words shift their stress between noun and verb. The label in brackets is the clue."
+  48bbcf91:
+    steps:
+      - "Guilty is GUIL-ty, stressed on the first syllable; guitar is gui-TAR, stressed on the second."
+      - "The published key gives guitar, which is the one word here that is not stressed first. The stem was also lost and the following direction has bled into the last option, so this question is flagged."
+    hint: "Say guitar and guilty one after the other. The stress falls in different places."
