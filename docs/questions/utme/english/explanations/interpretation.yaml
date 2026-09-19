@@ -309,7 +309,7 @@ explanations:
   7a2f0ca2:
     steps:
       - "Not unaware is a double negative: he was aware of their plight."
-      - "The published key gives he felt their plight, which goes further than knowing; he knew of their plight is the match. This question is flagged for a second look."
+      - "The key printed with the source gave D; it was corrected to A on review, because the question's own wording does not support it."
     hint: "Cancel the not against the un-. What is left is awareness, not sympathy."
   8458b96a:
     steps:
@@ -324,7 +324,7 @@ explanations:
   c6496046:
     steps:
       - "Might just as well means there is no better alternative — staying at home is the sensible course."
-      - "The published key gives I ought to stay at home in order to do well, which adds a purpose; staying at home was probably the best thing for me is the match. This question is flagged for a second look."
+      - "The key printed with the source gave D; it was corrected to C on review, because the question's own wording does not support it."
     hint: "Might as well suggests resignation to the best available option, not an aim."
   9af03074:
     steps:

@@ -589,14 +589,23 @@ async def load(args: argparse.Namespace) -> int:
                 question_id = uuid_for(f"question:{pdf_sha}:{paper_code}:{item['number']}")
                 version_id = uuid_for(f"version:{question_id}:1")
 
+                # Against the version the question is ON, not the one it arrived as. A
+                # question that has since been corrected — a repaired option list, a key put
+                # right — is on version 2 or 3, and version 1 still holds the text that was
+                # wrong. Comparing with version 1 asks whether the transcription matches a row
+                # nobody reads, and the answer for every corrected question is no: the whole
+                # paper is refused on the strength of a difference that was the point.
                 existing = await conn.fetchrow(
                     """
-                    SELECT stem, marks, expected_seconds, review_status
-                    FROM question_versions WHERE id = $1
+                    SELECT v.id, v.stem, v.marks, v.expected_seconds, v.review_status
+                    FROM questions q
+                    JOIN question_versions v ON v.id = q.current_version_id
+                    WHERE q.id = $1
                     """,
-                    version_id,
+                    question_id,
                 )
                 if existing is not None:
+                    version_id = existing["id"]
                     if normalise(existing["stem"]) != item["stem"]:
                         fail(
                             f"question {item['number']} already exists with different text; "

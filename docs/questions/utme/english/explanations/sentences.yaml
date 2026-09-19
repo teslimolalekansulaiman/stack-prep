@@ -48,7 +48,8 @@ explanations:
   613b72c2:
     steps:
       - "Instead of takes a gerund, so the phrase is instead of pleading."
-      - "The extraction has broken this question badly: the words instead and of are separated from each other and from the rest of the sentence. It is flagged for a second look."
+      - "The extraction has broken this question badly: the words instead and of are separated from each other and from the rest of the sentence."
+      - "The key printed with the source gave A; it was corrected to D on review, because the question's own wording does not support it."
     hint: "Instead of is always followed by an -ing form, never by a bare verb."
   64ce26f7:
     steps:
@@ -63,7 +64,7 @@ explanations:
   2f3de05e:
     steps:
       - "Certain reason, without an article, is the form the paper is testing — a reason the speaker will not yet name."
-      - "A certain reason is the commoner English; this question is flagged for a second look."
+      - "The key printed with the source gave A; it was corrected to D on review, because the question's own wording does not support it."
     hint: "The second half says the speaker is withholding the reason, which points to certain."
   403c85f1:
     steps:
@@ -193,7 +194,7 @@ explanations:
   cc68678e:
     steps:
       - "These is plural, so the noun after it is plural: types. What follows of stays singular — types of programme."
-      - "The commoner English is types of programmes; this question is flagged for a second look."
+      - "The key printed with the source gave A; it was corrected to C on review, because the question's own wording does not support it."
     hint: "These fixes the first noun as plural. The second one is the harder half."
   41ebeb8d:
     steps:

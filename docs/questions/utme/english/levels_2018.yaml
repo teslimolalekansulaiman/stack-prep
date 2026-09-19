@@ -46,9 +46,9 @@ levels:
   level_confidence: low
   reason: 'base 3 for ENG.A.6.i; -1: short stem and short options, so little to hold at once'
 - number: 16
-  proposed_level: 3
+  proposed_level: 2
   level_confidence: low
-  reason: base 3 for ENG.A.6.i
+  reason: 'base 3 for ENG.A.6.i; -1: short stem and short options, so little to hold at once'
 - number: 18
   proposed_level: 2
   level_confidence: low

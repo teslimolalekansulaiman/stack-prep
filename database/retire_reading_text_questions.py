@@ -41,6 +41,22 @@ TEXTS = {
     2017: "S. I. Manyika's Independence",
 }
 
+#: The range each paper prints above the block, read off the attribution line itself —
+#: "Questions 21 to 30 are based on Chukwuemeka Ike's The Potter's Wheel". The reports below
+#: only reach a question someone wrote an explanation for, and the papers set more of these
+#: than anyone has read: 2013's question 21 sat approved and live because its stem says
+#: "David and others" rather than "in the novel", which is no kind of evidence either way.
+#: The printed range is the paper's own statement of what the block covers, so it is used.
+#:
+#: 2015 prints "question 21 to 36", but 36 is "The workers tightened their hold on the
+#: capital" with four paraphrases under it — a sentence-interpretation item, printed with the
+#: block that follows. The range is recorded as the paper means it rather than as it reads.
+RANGES: dict[int, list[tuple[int, int]]] = {
+    2013: [(21, 35)],
+    2014: [(21, 35)],
+    2015: [(21, 35)],
+}
+
 GENERAL = (
     "Set on the approved reading text for its own cycle. JAMB replaces that text periodically, "
     "so the question cannot serve a candidate sitting a paper set on a different novel. "
@@ -77,6 +93,29 @@ async def run(reviewer_id: str, dsn: str | None, apply: bool) -> int:
             ORDER BY q.exam_year, q.question_number
             """
         )
+        in_range = await conn.fetch(
+            """
+            SELECT q.id AS question_id, v.id AS version_id, q.exam_year, ci.code AS skill
+            FROM questions q
+            JOIN question_versions v ON v.id = q.current_version_id
+            JOIN subjects s ON s.id = q.subject_id
+            JOIN examinations e ON e.id = s.examination_id
+            LEFT JOIN question_classifications c
+              ON c.question_id = q.id AND c.classification_role = 'primary'
+            LEFT JOIN curriculum_items ci ON ci.id = c.curriculum_item_id
+            WHERE e.short_name = 'UTME' AND s.code = 'ENG' AND q.retired_at IS NULL
+              AND (q.exam_year, q.question_number::int) IN (
+                SELECT * FROM unnest($1::int[], $2::int[]))
+            ORDER BY q.exam_year, q.question_number
+            """,
+            [year for year, spans in RANGES.items() for low, high in spans
+             for _ in range(low, high + 1)],
+            [number for _, spans in RANGES.items() for low, high in spans
+             for number in range(low, high + 1)],
+        )
+        seen = {row["question_id"] for row in rows}
+        rows = list(rows) + [row for row in in_range if row["question_id"] not in seen]
+        rows.sort(key=lambda row: row["exam_year"])
         misfiled = [row for row in rows if row["skill"] != "ENG.A.4.i"]
         by_year: dict[int, int] = {}
         for row in rows:
@@ -129,6 +168,16 @@ async def run(reviewer_id: str, dsn: str | None, apply: bool) -> int:
                       updated_at = now() WHERE id = $1
                     """,
                     row["question_id"], reason,
+                )
+                # A retired question's version must not read "approved". Most of these were
+                # withdrawn before they were retired, because they came in through a report;
+                # one reached here straight off the printed range while it was still live.
+                await conn.execute(
+                    """
+                    UPDATE question_versions SET review_status = 'withdrawn'
+                     WHERE id = $1 AND review_status = 'approved'
+                    """,
+                    row["version_id"],
                 )
                 await conn.execute(
                     """

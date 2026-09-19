@@ -48,7 +48,8 @@ explanations:
   cd6d2758:
     steps:
       - "To speak offhand is to speak without preparation — no notes, nothing written beforehand."
-      - "Unprepared is the match. The published key gives calmly, which describes how a speech sounds rather than how it was made, and this question is flagged for a second look."
+      - "Unprepared is the match."
+      - "The key printed with the source gave A; it was corrected to D on review, because the question's own wording does not support it."
     hint: "Offhand is about preparation, not about manner."
   69e7c8a7:
     steps:
@@ -113,7 +114,8 @@ explanations:
   e2a15859:
     steps:
       - "Corrugated sheets are folded into ridges, which is what makes them stiff enough to roof with."
-      - "Folded is the match. The published key gives iron, which is what the sheets are made of rather than what corrugated means, and this question is flagged for a second look."
+      - "Folded is the match."
+      - "The key printed with the source gave B; it was corrected to A on review, because the question's own wording does not support it."
     hint: "Corrugated describes the shape of the sheet, not the metal it is made from."
   1e42a1ca:
     steps:
@@ -208,7 +210,8 @@ explanations:
   7a22adb4:
     steps:
       - "To speak extempore is to speak without notes, making it up as you go."
-      - "Off the cuff is the idiom for exactly that, and it is the better answer. The published key gives out-of-hand, which usually means refused without consideration, and this question is flagged for a second look."
+      - "Off the cuff is the idiom for exactly that, and it is the better answer."
+      - "The key printed with the source gave A; it was corrected to B on review, because the question's own wording does not support it."
     hint: "Extempore is about speaking without preparation. Which option is the idiom for that?"
   ea7d0744:
     steps:
@@ -343,7 +346,8 @@ explanations:
   a559bd00:
     steps:
       - "The sentence asks for the basic facts and warns against needless details — details that are not required."
-      - "Extraneous is the word for details that do not belong, and it is the closest match. The published key gives essential, which is the reverse, and this question is flagged for a second look."
+      - "Extraneous is the word for details that do not belong, and it is the closest match."
+      - "The key printed with the source gave C; it was corrected to B on review, because the question's own wording does not support it."
     hint: "Needless means not needed. Which option means the same?"
   4ce3505d:
     steps:
@@ -413,17 +417,20 @@ explanations:
   4fac1129:
     steps:
       - "To aver something is to state it firmly: the witness said plainly that she had seen Dosun there."
-      - "Affirmed and confirmed both carry that meaning. The published key gives denied, which is the reverse, and this question is flagged for a second look."
+      - "Affirmed and confirmed both carry that meaning."
+      - "The key printed with the source gave C; it was corrected to B on review, because the question's own wording does not support it."
     hint: "Averring is asserting. Two options here mean assert."
   e18e723e:
     steps:
       - "Frugality is carefulness with money — spending little, which is what a high cost of living calls for."
-      - "Economy is the match, and prudence is close. The published key gives extravagance, which is the opposite, and this question is flagged for a second look."
+      - "Economy is the match, and prudence is close."
+      - "The key printed with the source gave A; it was corrected to D on review, because the question's own wording does not support it."
     hint: "The sentence says the cost of living is high. Does that call for spending more or less?"
   26a3ec98:
     steps:
       - "To underscore a point is to underline it — to give it extra weight."
-      - "Emphasizes is the match. The published key gives clarifies, which is about making a point clear rather than making it strongly, and this question is flagged for a second look."
+      - "Emphasizes is the match."
+      - "The key printed with the source gave D; it was corrected to C on review, because the question's own wording does not support it."
     hint: "Underscore is literally to draw a line under. Why do people underline things?"
   48703e6a:
     steps:
@@ -433,5 +440,6 @@ explanations:
   3cbcec3d:
     steps:
       - "An ignoble role is a shameful one, which is why the principal took exception to it."
-      - "Dishonourable is the match. The published key gives honourable, which is the reverse, and this question is flagged for a second look."
+      - "Dishonourable is the match."
+      - "The key printed with the source gave B; it was corrected to D on review, because the question's own wording does not support it."
     hint: "The prefix ig- here is a negative: ignoble is the opposite of noble."

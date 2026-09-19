@@ -268,12 +268,12 @@ explanations:
   44ceba90:
     steps:
       - "Mordant wit is biting — sharp enough to wound the person it is aimed at."
-      - "The published key gives withering, which means much the same thing rather than the reverse. Kind is the option that actually opposes mordant, and this question is flagged for a second look."
+      - "The key printed with the source gave D; it was corrected to A on review, because the question's own wording does not support it."
     hint: "Mordant means biting. Be careful: the options here include more than one word for biting."
   23bded03:
     steps:
       - "To wax is to grow — the war against malaria keeps increasing."
-      - "The published key gives wavering, which means unsteady rather than shrinking. Decreasing is the true opposite of waxing, and this question is flagged for a second look."
+      - "The key printed with the source gave D; it was corrected to B on review, because the question's own wording does not support it."
     hint: "Waxing and waning are the pair, as with the moon. Look for the option closest to waning."
   6d0002a1:
     steps:
@@ -433,12 +433,14 @@ explanations:
   37360231:
     steps:
       - "Feeble means weak — a lamb has little strength in it."
-      - "The printed direction for this question asks for the opposite, and none of fat, loving or quite reverses feeble. Weak is the published key, and it is a synonym rather than an antonym, so the question is flagged for a second look."
+      - "The printed direction for this question asks for the opposite, and none of fat, loving or quite reverses feeble."
+      - "The key printed with the source gave B; it was corrected to C on review, because the question's own wording does not support it."
     hint: "Feeble means weak. Check which direction the question is asking for before you choose."
   01ab3905:
     steps:
       - "To be relegated to somewhere is to be sent down to it — moved out of favour and away from the centre."
-      - "Known in is the key printed here, but none of these options reverses relegated cleanly; discharge from is closer to it than against it. The stem has also lost a word in extraction. This question is flagged for a second look."
+      - "The stem has also lost a word in extraction."
+      - "The key printed with the source gave B; it was corrected to A on review, because the question's own wording does not support it."
     hint: "Relegate means to send down or push aside. Ask which option describes the opposite of being pushed aside."
   c418496b:
     steps:
@@ -463,7 +465,7 @@ explanations:
   bd8afa1f:
     steps:
       - "To anticipate a birthday is to look forward to it before it comes."
-      - "Imagined is the key printed here, which is weaker than an opposite. Hoped for and waited for are both closer to anticipating than against it, and this question is flagged for a second look."
+      - "The key printed with the source gave C; it was corrected to D on review, because the question's own wording does not support it."
     hint: "Anticipating is expecting something ahead of time. Ask which option does not involve expecting it."
   2cc109ac:
     steps:
@@ -473,12 +475,12 @@ explanations:
   f77d1869:
     steps:
       - "To become neurotic is to become anxious and unsettled, out of proportion to the cause."
-      - "Disturbed is the key printed here, which is a synonym rather than an opposite; balanced and rational are both true opposites. This question is flagged for a second look."
+      - "The key printed with the source gave B; it was corrected to A on review, because the question's own wording does not support it."
     hint: "Neurotic means unsettled. Look for the option that means settled."
   1dae78e8:
     steps:
       - "To live in lack is to live without enough — in poverty."
-      - "Penury is the key printed here, and it means poverty, so it is a synonym. Surplus, plenitude and opulence are the true opposites, and this question is flagged for a second look."
+      - "The key printed with the source gave B; it was corrected to C on review, because the question's own wording does not support it."
     hint: "Lack means not having enough. The opposite is having more than enough."
   6901177c:
     steps:

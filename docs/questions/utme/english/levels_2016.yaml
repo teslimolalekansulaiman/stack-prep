@@ -49,6 +49,22 @@ levels:
   proposed_level: 4
   level_confidence: low
   reason: base 4 for ENG.A.3.i
+- number: 16
+  proposed_level: 2
+  level_confidence: low
+  reason: 'base 3 for ENG.A.6.i; -1: short stem and short options, so little to hold at once'
+- number: 17
+  proposed_level: 2
+  level_confidence: low
+  reason: 'base 3 for ENG.A.6.i; -1: short stem and short options, so little to hold at once'
+- number: 18
+  proposed_level: 2
+  level_confidence: low
+  reason: 'base 3 for ENG.A.6.i; -1: short stem and short options, so little to hold at once'
+- number: 20
+  proposed_level: 2
+  level_confidence: low
+  reason: 'base 3 for ENG.A.6.i; -1: short stem and short options, so little to hold at once'
 - number: 21
   proposed_level: 3
   level_confidence: low
@@ -346,9 +362,9 @@ levels:
   level_confidence: low
   reason: 'base 3 for ENG.C.4.i; +1: ''Intentional'' has about 4 syllables'
 - number: 97
-  proposed_level: 3
+  proposed_level: 2
   level_confidence: low
-  reason: base 3 for ENG.A.6.i
+  reason: 'base 3 for ENG.A.6.i; -1: short stem and short options, so little to hold at once'
 - number: 98
   proposed_level: 3
   level_confidence: low

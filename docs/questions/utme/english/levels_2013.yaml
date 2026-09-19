@@ -50,37 +50,45 @@ levels:
   level_confidence: low
   reason: 'base 2 for ENG.A.1.i; +1: long options, so the work is reading and holding four alternatives'
 - number: 11
-  proposed_level: 3
+  proposed_level: 2
   level_confidence: low
-  reason: base 3 for ENG.A.6.i
+  reason: 'base 3 for ENG.A.6.i; -1: short stem and short options, so little to hold at once'
 - number: 12
   proposed_level: 2
   level_confidence: low
   reason: 'base 3 for ENG.A.6.i; -1: short stem and short options, so little to hold at once'
 - number: 13
-  proposed_level: 4
+  proposed_level: 2
   level_confidence: low
-  reason: 'base 3 for ENG.A.6.i; +1: long options, so the work is reading and holding four alternatives'
+  reason: 'base 3 for ENG.A.6.i; -1: short stem and short options, so little to hold at once'
 - number: 14
   proposed_level: 3
   level_confidence: low
   reason: base 3 for ENG.A.6.i
 - number: 15
-  proposed_level: 3
+  proposed_level: 2
   level_confidence: low
-  reason: base 3 for ENG.A.6.i
+  reason: 'base 3 for ENG.A.6.i; -1: short stem and short options, so little to hold at once'
 - number: 16
   proposed_level: 2
   level_confidence: low
   reason: 'base 3 for ENG.A.6.i; -1: short stem and short options, so little to hold at once'
 - number: 17
-  proposed_level: 3
+  proposed_level: 2
   level_confidence: low
-  reason: base 3 for ENG.A.6.i
+  reason: 'base 3 for ENG.A.6.i; -1: short stem and short options, so little to hold at once'
+- number: 18
+  proposed_level: 2
+  level_confidence: low
+  reason: 'base 3 for ENG.A.6.i; -1: short stem and short options, so little to hold at once'
 - number: 19
-  proposed_level: 3
+  proposed_level: 2
   level_confidence: low
-  reason: base 3 for ENG.A.6.i
+  reason: 'base 3 for ENG.A.6.i; -1: short stem and short options, so little to hold at once'
+- number: 20
+  proposed_level: 2
+  level_confidence: low
+  reason: 'base 3 for ENG.A.6.i; -1: short stem and short options, so little to hold at once'
 - number: 21
   proposed_level: 2
   level_confidence: low
@@ -118,9 +126,9 @@ levels:
   level_confidence: low
   reason: base 2 for ENG.A.1.i
 - number: 30
-  proposed_level: 2
+  proposed_level: 1
   level_confidence: low
-  reason: base 2 for ENG.A.1.i
+  reason: 'base 2 for ENG.A.1.i; -1: short stem and short options, so little to hold at once'
 - number: 31
   proposed_level: 4
   level_confidence: low

@@ -65,7 +65,7 @@ explanations:
   73493472:
     steps:
       - "The sentence is about drought, and a periodic normal shortfall of rainfall is what drought means."
-      - "The published key gives supply, which describes rainfall arriving rather than failing; reduction in amount is what the passage is about, and this question is flagged for a second look."
+      - "The key printed with the source gave B; it was corrected to A on review, because the question's own wording does not support it."
     hint: "The paragraph is about drought. Does the gap describe rain arriving or rain failing?"
   ec63c3dc:
     steps:
@@ -155,7 +155,7 @@ explanations:
   91f8bad8:
     steps:
       - "The sentence sets up a consequence: where these are glaringly something, development can be impaired — so the gap means left out."
-      - "The published key gives altered; omitted is what the sentence needs, and this question is flagged for a second look."
+      - "The key printed with the source gave D; it was corrected to C on review, because the question's own wording does not support it."
     hint: "The word glaringly goes with something missing, not with something changed."
   05a2b61f:
     steps:
@@ -230,12 +230,12 @@ explanations:
   cc5c5cdd:
     steps:
       - "Poor delivery works against what the carefully chosen language was meant to achieve, so the gap describes an effect that cuts something down."
-      - "The published key gives interactive; restrictive is what the sentence needs, and this question is flagged for a second look."
+      - "The key printed with the source gave C; it was corrected to D on review, because the question's own wording does not support it."
     hint: "The sentence is about poor delivery spoiling something. Which option describes limiting an effect?"
   bc7c3b6a:
     steps:
       - "A speaker unfamiliar with what is in front of them cannot look up at the audience, so the gap is the written speech itself."
-      - "The published key gives context; text is what a speaker must be familiar with to lift their eyes from it, and this question is flagged for a second look."
+      - "The key printed with the source gave B; it was corrected to A on review, because the question's own wording does not support it."
     hint: "The passage has used the word text already for the written-out speech."
   92929106:
     steps:
@@ -255,12 +255,14 @@ explanations:
   3a7a97bf:
     steps:
       - "Parents with pre-conceived notions push their children towards the professions that carry standing — which is why the passage then complains they ignore interest and aptitude."
-      - "Prestigious is what the sentence needs. The published key gives insignificant, which reverses it, and this question is flagged for a second look."
+      - "Prestigious is what the sentence needs."
+      - "The key printed with the source gave A; it was corrected to B on review, because the question's own wording does not support it."
     hint: "Ask which professions parents insist on: the admired ones, or the overlooked ones?"
   9cb7c9d2:
     steps:
       - "The sentence says career decisions were also something by the type of school attended — the school shaped the choice."
-      - "Influenced is the word for that. The published key gives subdued, which would mean the decisions were suppressed, and this question is flagged for a second look."
+      - "Influenced is the word for that."
+      - "The key printed with the source gave C; it was corrected to A on review, because the question's own wording does not support it."
     hint: "The word also links this to the parents' effect in the sentence before. Schools did the same kind of thing."
   967b234f:
     steps:
@@ -270,12 +272,14 @@ explanations:
   935f0225:
     steps:
       - "Each school tried to carve something for itself by excelling — what a school carves out is a reputation."
-      - "Image is the word that goes with carve. The published key gives attitude, which is not something carved, and this question is flagged for a second look."
+      - "Image is the word that goes with carve."
+      - "The key printed with the source gave A; it was corrected to B on review, because the question's own wording does not support it."
     hint: "The verb is carve. Which of these can be carved out for yourself?"
   1829fada:
     steps:
       - "Junior students followed the example of their seniors, which is why the passage says students often ended up in the same professions."
-      - "Emulate is the word for following an example. The published key gives appreciate, which is only admiration, and this question is flagged for a second look."
+      - "Emulate is the word for following an example."
+      - "The key printed with the source gave A; it was corrected to B on review, because the question's own wording does not support it."
     hint: "The passage says juniors ended up in the same careers. What were they doing to their seniors' choices?"
   b705fb02:
     steps:
@@ -285,7 +289,8 @@ explanations:
   ea18d5b8:
     steps:
       - "There are few officers and the passage is listing problems, so those few rarely get the chance to practise."
-      - "Seldom fits the complaint. The published key gives often, which would not be a problem at all, and this question is flagged for a second look."
+      - "Seldom fits the complaint."
+      - "The key printed with the source gave C; it was corrected to A on review, because the question's own wording does not support it."
     hint: "The paragraph is a list of problems. Does the gap describe something going well or badly?"
   02627deb:
     steps:
@@ -342,13 +347,13 @@ explanations:
     steps:
       - "The most impressive of the main effects arises from the gap, and the two sentences after it describe a blast wave and then another kind of wave altogether."
       - "Pressure waves is the one option that is a wave, which is what the rest of the passage goes on to explain. Pressure air and pressure gauge are not phrases an effect can arise from, and pressure volume names a quantity rather than a thing that travels."
-      - "The published key gives pressure volume, and this question is flagged for a second look."
+      - "The key printed with the source gave B; it was corrected to A on review, because the question's own wording does not support it."
     hint: "Read the two sentences after the gap before choosing. They say what the effect is made of."
   1f18ec60:
     steps:
       - "The gap is the immediate result of the ____ is that the air surrounding the bomb is raised very rapidly to a high temperature."
       - "What has that result is the bomb going off, and the noun for a bomb going off is detonation. A reduction is a decrease, a commotion is a disturbance among people, and a distortion is a change of shape."
-      - "The published key gives distortion, which the sentence does not support, so this question is flagged for a second look."
+      - "The key printed with the source gave D; it was corrected to C on review, because the question's own wording does not support it."
     hint: "Ask what happened first. The gap names the event whose result the rest of the sentence describes."
   7d89ab29:
     steps:
@@ -359,16 +364,21 @@ explanations:
     steps:
       - "The hot gases expand violently as great ____, so the gap names what the expanding gas becomes."
       - "Burning gas expanding into a ball of flame is a fireball. Firearms are guns, fireworks are set off for display, and firesmokes is not a word."
-      - "The published key gives firearms, which is a weapon rather than a body of burning gas, so this question is flagged for a second look."
+      - "The key printed with the source gave A; it was corrected to B on review, because the question's own wording does not support it."
     hint: "The subject of the sentence is hot gases. What shape does expanding burning gas take?"
   f036a948:
     steps:
       - "The paragraph opens by saying another kind of wave arises because of the weight of the air, and the gap is what the force of the explosion lifts."
       - "It lifts the atmosphere — the air whose weight has just been given as the reason. Space has no weight to lift, and form and height are not things that sit around a bomb."
-      - "The published key gives space, though the sentence before the gap is about the weight of the air, so this question is flagged for a second look."
+      - "The key printed with the source gave C; it was corrected to B on review, because the question's own wording does not support it."
     hint: "The sentence before the gap says what is heavy. That is what gets lifted."
   003a8043:
     steps:
       - "The waves being described are gravity waves, and the gap says which ordinary ____ waves they resemble."
       - "Ocean waves are the everyday example of waves that gravity drives. A stream, a lake and a river are far smaller bodies of water, and their surfaces are not what these waves are being compared to."
     hint: "Which body of water is known for its waves?"
+  164bef85:
+    steps:
+      - "The gap is named again immediately after it: what is called ____, or blast wave."
+      - "A shock wave is a blast wave, so the apposition settles it. Shock troops are soldiers, shock therapy is a treatment, and a shock jock is a broadcaster — all of them are phrases built on shock, and none of them travels through air."
+    hint: "The words just after the gap give the answer a second name. Find the option that means the same as blast wave."

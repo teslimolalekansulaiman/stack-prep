@@ -59,7 +59,8 @@ explanations:
   dc141098:
     steps:
       - "Tax ends in /æks/ — a short a, then the ks that x stands for."
-      - "Lacks is the same sound, spelled with cks. The published key gives ask, which has neither the same vowel nor the same ending, and this question is flagged for a second look."
+      - "Lacks is the same sound, spelled with cks."
+      - "The key printed with the source gave D; it was corrected to B on review, because the question's own wording does not support it."
     hint: "The letter x is two sounds, k and s. Which option ends with both?"
   60588a8b:
     steps:

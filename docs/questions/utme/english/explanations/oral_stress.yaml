@@ -54,7 +54,8 @@ explanations:
   dd5918cf:
     steps:
       - "Dedication is stressed on its third syllable: de-di-CA-tion, like every other -ation word."
-      - "The options as printed have lost their capitals, so none of them shows that stress clearly. This question is flagged for a second look."
+      - "The options as printed have lost their capitals, so none of them shows that stress clearly."
+      - "The key printed with the source gave C; it was corrected to A on review, because the question's own wording does not support it."
     hint: "Whatever the options look like, an -ation word is stressed on the a before -tion."
   60f7ac21:
     steps:
@@ -64,7 +65,8 @@ explanations:
   2b8be043:
     steps:
       - "Information is stressed on its third syllable: in-for-MA-tion."
-      - "All four options as printed are identical, so the question cannot be answered as it stands. It is flagged for a second look."
+      - "All four options as printed are identical, so the question cannot be answered as it stands."
+      - "The key printed with the source gave A; it was corrected to B on review, because the question's own wording does not support it."
     hint: "An -ation word is stressed on the a before -tion."
   da789037:
     steps:
@@ -74,12 +76,12 @@ explanations:
   398bcdc2:
     steps:
       - "Congratulation is stressed on its fourth syllable: con-gra-tu-LA-tion — the a before -tion, like every -ation word."
-      - "The published key gives CONgratulation, which puts the stress on the prefix. This question is flagged for a second look."
+      - "The key printed with the source gave C; it was corrected to A on review, because the question's own wording does not support it."
     hint: "Say congratulations aloud as you would to a friend and feel where the push lands."
   d69a47e1:
     steps:
       - "Conspiracy is stressed on its second syllable: con-SPI-ra-cy."
-      - "The published key gives conspiraCY, which stresses the last syllable. This question is flagged for a second look."
+      - "The key printed with the source gave B; it was corrected to A on review, because the question's own wording does not support it."
     hint: "Find the verb conspire inside the word; the stress stays where the verb has it."
   1eb4e70c:
     steps:
@@ -119,7 +121,7 @@ explanations:
   218c9668:
     steps:
       - "Encouragement is stressed on its second syllable: en-COU-rage-ment — it follows encourage."
-      - "The published key gives Encouragement, which stresses the prefix. This question is flagged for a second look."
+      - "The key printed with the source gave A; it was corrected to B on review, because the question's own wording does not support it."
     hint: "Say the verb encourage first. The stress does not move when -ment is added."
   ac8d0ca3:
     steps:
