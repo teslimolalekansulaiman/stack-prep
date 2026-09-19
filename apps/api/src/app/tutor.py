@@ -261,25 +261,30 @@ async def answer(lesson: Lesson, asked: str, settings: Settings) -> Reply:
     Never raises. Every failure becomes a fallback the student can read, because the caller's
     job is to keep the lesson going and not to surface an exception at the board.
     """
-    if not settings.anthropic_api_key:
+    if not settings.openai_api_key:
         return Reply(text=fallback_text(lesson), source="fallback")
 
     # Imported here rather than at module scope so that the API boots, serves the board and
     # serves this fallback on a deployment where the SDK is not installed. The tutor is the
     # part that is allowed to be missing; the lesson is not.
     try:
-        from anthropic import AsyncAnthropic
+        from openai import AsyncOpenAI
     except ImportError:
         return Reply(text=fallback_text(lesson), source="fallback")
 
-    client = AsyncAnthropic(api_key=settings.anthropic_api_key, timeout=CALL_TIMEOUT_SECONDS)
+    client = AsyncOpenAI(api_key=settings.openai_api_key, timeout=CALL_TIMEOUT_SECONDS)
     started = time.monotonic()
     try:
-        message = await client.messages.create(
+        # max_completion_tokens rather than max_tokens: the older parameter is refused by the
+        # reasoning models outright, and this one is accepted by every chat model, so the
+        # ceiling holds whichever model the deployment is configured with.
+        message = await client.chat.completions.create(
             model=settings.ai_runtime_model,
-            max_tokens=REPLY_MAX_TOKENS,
-            system=SYSTEM,
-            messages=[{"role": "user", "content": _packet(lesson, asked)}],
+            max_completion_tokens=REPLY_MAX_TOKENS,
+            messages=[
+                {"role": "system", "content": SYSTEM},
+                {"role": "user", "content": _packet(lesson, asked)},
+            ],
         )
     except Exception:
         # Timeout, rate limit, bad key, outage. The student is mid-lesson and waiting; what
@@ -291,18 +296,24 @@ async def answer(lesson: Lesson, asked: str, settings: Settings) -> Reply:
         )
 
     latency_ms = int((time.monotonic() - started) * 1000)
-    # getattr rather than isinstance: importing TextBlock to narrow the union would pull the
-    # SDK in at module scope, and the whole point of the lazy import above is that this file
-    # works without it. A block with no text contributes nothing, which is what we want.
-    said = "".join(getattr(block, "text", "") for block in message.content).strip()
+    # getattr all the way down rather than indexing and narrowing types: the whole point of
+    # the lazy import above is that this file works without the SDK installed, so nothing
+    # here may name one of its classes. A response with no choices, or a choice whose content
+    # is empty because the model stopped at the token ceiling, contributes nothing — which is
+    # what we want, because the fallback below is a better lesson than half a sentence.
+    choices = getattr(message, "choices", None) or []
+    said = ""
+    if choices:
+        said = (getattr(getattr(choices[0], "message", None), "content", "") or "").strip()
     if not said:
         return Reply(text=fallback_text(lesson), source="fallback", latency_ms=latency_ms)
 
+    usage = getattr(message, "usage", None)
     return Reply(
         text=said,
         source="model",
         model=settings.ai_runtime_model,
-        input_tokens=message.usage.input_tokens,
-        output_tokens=message.usage.output_tokens,
+        input_tokens=getattr(usage, "prompt_tokens", 0) or 0,
+        output_tokens=getattr(usage, "completion_tokens", 0) or 0,
         latency_ms=latency_ms,
     )

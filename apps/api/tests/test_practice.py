@@ -376,7 +376,7 @@ async def test_a_session_ends_when_its_questions_are_used_up(
 def tutor_settings() -> Iterator[None]:
     """No API key and a small allowance, so the budget is reachable inside a test."""
     app.dependency_overrides[get_settings] = lambda: Settings(
-        anthropic_api_key="", ai_daily_calls_per_student=2
+        openai_api_key="", ai_daily_calls_per_student=2
     )
     yield
     app.dependency_overrides.pop(get_settings, None)

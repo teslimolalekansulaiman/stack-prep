@@ -146,7 +146,7 @@ def test_the_fallback_after_the_board_has_finished_gives_the_answer() -> None:
 
 async def test_without_a_key_the_lesson_still_arrives() -> None:
     """No key is an operator's problem, not a broken screen for the student."""
-    reply = await answer(LESSON, "why?", Settings(anthropic_api_key=""))
+    reply = await answer(LESSON, "why?", Settings(openai_api_key=""))
     assert reply.source == "fallback"
     assert reply.model is None
     assert "Substitute it into the second." in reply.text

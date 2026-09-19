@@ -28,8 +28,17 @@ Two hard constraints:
   items.
 - **The model never decides curriculum, plans or ratings.** It explains what the
   engine chose.
-- **Models:** Claude Haiku 4.5 at runtime, Claude Sonnet 5 for batch generation,
-  behind our own interface so a provider change touches one module.
+- **Models:** set by `AI_RUNTIME_MODEL` and `AI_BATCH_MODEL`, behind our own interface
+  so a provider change touches one module.
+  *Amended 19 September 2026: the provider is OpenAI, `gpt-4o` for both. The original
+  decision paired a cheap runtime model with a larger batch one, and that pairing is
+  dropped: the runtime call is the coach at the board, whose whole job is to explain
+  the reviewed working, invent no method and reveal nothing early. That is refusal
+  behaviour, and refusal is the first thing a smaller model gives up — so the saving
+  would come out of the one property S5-AC7 treats as critical. The per-student daily
+  cap is what holds the cost down instead. Revisit when the refusal behaviour has been
+  measured rather than assumed. The claim that a provider change touches one module was
+  tested by making one: `app.tutor` and the two settings were the whole of it.*
 - **Controls:** every call logged with tokens, cost and latency; per-student daily
   cap; response caching; no student names in prompts; provider configured not to
   train on our data.

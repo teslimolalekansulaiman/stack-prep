@@ -11,7 +11,7 @@ dependencies = [
     "sqlalchemy[asyncio]>=2.0.35",
     "asyncpg>=0.30",
     "arq>=0.26",
-    "anthropic>=0.40",
+    "openai>=1.60",
     "score-pilot-engine",
 ]
 

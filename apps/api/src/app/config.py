@@ -26,9 +26,12 @@ class Settings(BaseSettings):
 
     cors_origins: str = "http://127.0.0.1:5173,http://localhost:5173"
 
-    anthropic_api_key: str = ""
-    ai_runtime_model: str = "claude-haiku-4-5-20251001"
-    ai_batch_model: str = "claude-sonnet-5"
+    openai_api_key: str = ""
+    # Deliberately not the cheap model. What the coach is asked to do — explain the reviewed
+    # working, invent nothing, reveal nothing early — is refusal behaviour, and refusal is
+    # what a smaller model gives up first. The daily cap is what holds the cost down.
+    ai_runtime_model: str = "gpt-4o"
+    ai_batch_model: str = "gpt-4o"
     ai_daily_calls_per_student: int = Field(default=20, ge=0)
 
     @field_validator("database_schema")
