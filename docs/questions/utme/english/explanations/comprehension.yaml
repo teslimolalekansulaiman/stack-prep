@@ -1,0 +1,174 @@
+# UTME Use of English — Comprehension (ENG.A.1.i), words in context (ENG.A.2.i) and
+# reasoning (ENG.A.3.i)
+#
+# Every one of these is answered from the passage. The explanations therefore point at the
+# part of the passage that settles it, rather than reasoning from general knowledge — which
+# is the habit these questions are set to break.
+format_version: 1
+skill: ENG.A.1.i, ENG.A.2.i and ENG.A.3.i
+explanations:
+  04ace0b9:
+    steps:
+      - "The passage admits bad thoughts will come — we cannot keep thieves from looking in at our window — but insists we need not let them in."
+      - "Evil thoughts may come but there is virtue in keeping them out states both halves. The other options take one image from the passage and turn it into a claim the writer never makes."
+    hint: "The writer concedes something and then argues against it. Find the option that keeps both parts."
+  ec5ba3b7:
+    steps:
+      - "The first paragraph says that if thoughts turn into our enemies they will drag us down to ruin — that is a warning about consequences."
+      - "Too many evil thoughts leave fatal consequences says it. The option about stopping the pendulum reads the clock image as advice, which it is not."
+    hint: "The pendulum is only a picture of how fast the mind moves. The claim is about what follows."
+  46497607:
+    steps:
+      - "The second paragraph's test is whether we hate bad thoughts or welcome them: the man who turns a morsel over in his mouth does so because he likes the flavour."
+      - "People who treasure and ruminate on them is that image in plain words."
+    hint: "Find the sentence about rolling a morsel round the mouth. It is about dwelling on something on purpose."
+  385904b6:
+    steps:
+      - "Think of the devil and he will appear is followed immediately by turn your thoughts toward evil and your hands will soon follow — thought leading to action."
+      - "Uncontrolled evil thoughts may lead to evil deeds says it. The other options stop at the thought and never reach the hands."
+    hint: "Read the sentence after the quoted one. It explains what the saying is being used for."
+  765bc90e:
+    steps:
+      - "The fourth paragraph piles up images of accumulation: slime left behind, traffic making mire, every wave adding to the corruption."
+      - "The more evil we think, the more vile we are likely to become is the argument those images make."
+    hint: "The paragraph is about what builds up over time, not about any one thought."
+  dedc0985:
+    steps:
+      - "The writer does not describe learning by experience neutrally — it is called tough, costly and inconvenient, and we are told to make a clean break with it."
+      - "Critical is the word for that. Objective and non-committal would fit a writer who left the question open."
+    hint: "Count the judgements the writer makes. A neutral writer makes none."
+  f4defe44:
+    steps:
+      - "The whole passage argues that learning by wisdom is better and more convenient than learning by experience."
+      - "Wise thoughts are more desirable than experience says it. Three options state the reverse of the writer's case."
+    hint: "The question asks what can be deduced, and the passage argues one thing throughout."
+  6134cc8a:
+    steps:
+      - "The passage says life is simply the outcome of decisions, and that our future will be determined by our decisions of today."
+      - "The totality of our actions should be decided by our judgement is that claim. The others contradict the passage or reverse its argument."
+    hint: "Find the sentence about decisions. It is the passage's central claim."
+  3aec42a5:
+    steps:
+      - "The last paragraph says we must be disciplined to remain with our resolve to make a clean break with experience as our best teacher."
+      - "The published key gives choosing the learning opportunity that comes our way; decide against making experience our teacher is what the passage actually says, and this question is flagged for a second look."
+    hint: "Read the sentence containing the word disciplined and take what follows it."
+  d1441964:
+    steps:
+      - "Wholehearted devotion is glossed by the passage itself: resolved, resolute and resilient, without detour."
+      - "Acting without doubt is that meaning. The other options bring in pain, tension or teaching, none of which the phrase carries."
+    hint: "The words around the phrase explain it. Look for resolute and resilient."
+  de062722:
+    steps:
+      - "This asks which paper type the candidate was given. It is an instruction from the invigilator's page, not a question about English."
+      - "It should have been rejected at import and is flagged for removal from the bank."
+    hint: "Nothing in the passage bears on this. It is not an English question."
+  e67a231f:
+    steps:
+      - "Electricity from living cells is no new idea is the writer stepping in to correct an assumption the reader might hold, and the paragraph then lists evidence for it."
+      - "Contentious describes a writer arguing a point. Logical would describe the reasoning rather than the posture."
+    hint: "Ask what the sentence is doing: stating a fact, or answering an objection?"
+  03b65da7:
+    steps:
+      - "The passage says early bio cells were powered with sugar, but a wide range of fuel can be used."
+      - "Bio cells at the beginning derived their energy from sugar is that sentence. The option pairing sugar and fuel adds something the passage does not say."
+    hint: "Find the word sugar in the passage and read the sentence it is in."
+  24d6a2cd:
+    steps:
+      - "The passage says some scientists feel it will one day produce power cheaply, and will use materials otherwise considered waste."
+      - "Yield a source of energy without much spending is that claim. The options about all machines and all ships claim more than the passage does."
+    hint: "The justification is about cost. Find the sentence with cheaply in it."
+  f69a0cc4:
+    steps:
+      - "The passage says man experienced the strange shock produced by some fish even before electricity was really discovered."
+      - "Fish came first — before Franklin's lightning and before Galvani's animals. That order is the answer."
+    hint: "The paragraph gives a sequence. Read it from the beginning and take the first."
+  442c47b2:
+    steps:
+      - "The passage opens with affluent living habits measured against income as an indicator of corruption."
+      - "Unnecessary affluence is that. Public officers are who is corrupt, not what triggers it, which is the distinction the question turns on."
+    hint: "The question asks what sets corruption off, not who commits it."
+  4900c3b9:
+    steps:
+      - "The passage treats corruption as a brake on a country's development."
+      - "It impedes the progress of a nation is the consequence stated. The other options describe benefits to individuals, which is not what the writer calls a consequence."
+    hint: "The question asks about consequences for the nation, not for the corrupt."
+  cb2d5eff:
+    steps:
+      - "The passage puts the duty of preventing corruption on government, as the body that sets and enforces standards."
+      - "Corrupt public officers are the problem rather than the remedy, and lawyers and police are instruments rather than the responsible party."
+    hint: "Find where the passage says whose job prevention is."
+  0486f4e7:
+    steps:
+      - "Democratic governance is named in the passage as the mark of ethical standards in government."
+      - "Bloated expenditure and socio-economic instability are symptoms of the opposite."
+    hint: "Three of these options describe problems. Only one describes a standard being met."
+  fec7bc46:
+    steps:
+      - "The passage's argument is that fighting corruption is worth doing because of what it makes possible, not because of who it punishes."
+      - "Promote good governance is that purpose. Sending people to jail and punishing politicians are means, not the essence."
+    hint: "The word essence asks for the purpose, not the method."
+  d2ebaccb:
+    steps:
+      - "To relate to something experimentally is to know it by having gone through it, which is why the passage says studying stress yields personal as well as professional benefit."
+      - "It is better understood when experienced says that. Everybody encounters it is true but is not what the phrase means."
+    hint: "The question asks what the expression means, not whether the statement is true."
+  979131a1:
+    steps:
+      - "The passage says most stress is self-generated, and that because we cause most of our own we can do something about it."
+      - "Stress is better handled by the individual follows from that. The published key gives the relaxation option, which the passage does not support, and this question is flagged for a second look."
+    hint: "Find the sentence about who causes most stress. The answer follows from it."
+  eaab1bc4:
+    steps:
+      - "The passage states the premise plainly: to master stress, figure out what you are doing that contributes to the problem, and change it."
+      - "Changing one's attitude to stressors is that step. Doctors and exercise are not what the passage names."
+    hint: "The last sentence of the extract gives the method in one line."
+  722c4e41:
+    steps:
+      - "Experts say we create the majority of our own upset, which is precisely why we have a measure of control."
+      - "It is individually initiated is that reason. The other options give effects rather than the reason given."
+    hint: "The passage links control to cause. Find the sentence that does so."
+  a3b9f1eb:
+    steps:
+      - "Since most stress is self-generated, the passage treats it as something people bring on themselves."
+      - "Individually induced problems is the deduction. The options about bodily reactions describe symptoms rather than what stress is said to be."
+    hint: "The question says deduced, so take the passage's central claim and state it generally."
+  67aa6a9a:
+    steps:
+      - "The writer says the outstandingly important fact about Spaceship Earth is that no instruction book came with it."
+      - "Has no instruction manual is that fact. The published key gives an option about ease of operation, and the passage argues the opposite; this question is flagged for a second look."
+    hint: "Find the sentence beginning Now there is one outstanding important fact."
+  44cbdad0:
+    steps:
+      - "Lacking instructions, people had to work out which mangoes were safe, and so devised experimental procedures."
+      - "Challenged man's inquisitiveness is that outcome. Made man helpless is the reverse of what the passage describes."
+    hint: "The missing manual had a consequence the writer treats as good. What was it?"
+  fa162cd8:
+    steps:
+      - "The passage describes people forced to experiment, interpret findings and go on doing so."
+      - "By his nature is in constant search of knowledge is the deduction. Learns by chance contradicts the emphasis on deliberate method."
+    hint: "The writer treats the missing manual as purposeful. What does that say about people?"
+  e196ca0a:
+    steps:
+      - "The writer neither laments the missing manual nor celebrates it; the passage explains what followed from it and leaves the judgement open."
+      - "Non-committal fits. Pessimism and frustration would need complaints the passage does not make."
+    hint: "Count the writer's complaints and the writer's boasts. If there are neither, the mood is neutral."
+  0de3f133:
+    steps:
+      - "This question depends on a part of the passage the extraction did not capture — the text stops before the section on leading and motivating others."
+      - "It is flagged as unanswerable from the passage as stored, and needs the full text restored before it can be used."
+    hint: "The passage as printed here does not reach this point."
+  d2af344f:
+    steps:
+      - "This question refers to a sentence about balance that the stored passage does not contain — the extract is cut short."
+      - "It is flagged as unanswerable from the passage as stored."
+    hint: "The passage as printed here does not reach this point."
+  313bc340:
+    steps:
+      - "The passage says we behave differently where our understanding differs, and the same where it is the same, giving eating and clothing as examples."
+      - "People do certain things in life because they know the repercussion states that, and is the better answer; the published key gives an option about visible acquisition, and this question is flagged for a second look."
+    hint: "Find the sentences about eating and wearing clothes. They are given as examples of a rule."
+  62e44c75:
+    steps:
+      - "The passage says some of us consciously imbibe assumptions and decide based on them, while for others it is unconscious."
+      - "People make conscious effort to acquire hidden knowledge is the inference the key takes. The option claiming all managerial decisions rest on assumptions overstates a passage that says some do."
+    hint: "Watch the words all and some. An option that says all is usually too strong for a passage that says some."
